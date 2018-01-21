@@ -1,0 +1,3 @@
+[submodule "lib/openpgp"]
+	path = lib/openpgp
+	url = ssh://git@github.com/clevertree/openpgp-php
