@@ -8,13 +8,12 @@
         <link rel="stylesheet" href="assets/theme/minimal.css" />
         <script src="assets/site.js"></script>
 
-        <link rel="stylesheet" href="assets/game.css" />
-        <script src="../game.js"></script>
+        <script src="game/game.js"></script>
 
         <script>"use strict";
 
             document.addEventListener("DOMContentLoaded", function() {
-                ForgottenFuture.setBaseURL('../');
+                ForgottenFuture.setBaseURL('game/');
                 ForgottenFuture.play();
             });
             setTimeout(
@@ -25,6 +24,17 @@
                 380000
             );
         </script>
+        <style>
+            .ff-default-canvas {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                left: 0;
+                top: 0;
+                /* background: rgb(216, 216, 216); */
+                background-image: linear-gradient(0deg, #070707 58%, #0059b5 100%);
+            }
+        </style>
     </head>
     <body class='theme-minimal'>
         <header class="page-header">
