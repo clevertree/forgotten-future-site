@@ -9,4 +9,5 @@
 set_include_path(dirname(__DIR__, 1));
 spl_autoload_register();
 
+\FFSite\PGP\PGPWrapper::_test();
 \FFSite\Table\UserRow::_test();
