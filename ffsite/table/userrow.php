@@ -217,6 +217,7 @@ class UserRow
     // Unit Test
 
     public static function _test() {
+        echo "\nTesting " . __CLASS__ . "...\n";
         set_include_path(dirname(__DIR__, 2));
         spl_autoload_register();
         $TestUser = UserRow::createNewUser('_testuser', 'Test User');

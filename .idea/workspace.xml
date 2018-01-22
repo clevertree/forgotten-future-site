@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ffsite/test.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" afterPath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" />
+      <change beforePath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" afterPath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" />
+      <change beforePath="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" afterPath="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
+      <change beforePath="$PROJECT_DIR$/ffsite/table/userrow.php" afterPath="$PROJECT_DIR$/ffsite/table/userrow.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,63 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userrow.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/table/userrow.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4686">
-              <caret line="218" column="27" lean-forward="false" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
-              <folding>
-                <element signature="e#113#133#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/032728da-242c-4d4c-ad36-399c01f39123/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pgpwrapper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ffsite/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/payment/paypal/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="844">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,38 +42,38 @@
       <file leaf-file-name="openpgp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-488">
+              <caret line="1693" column="6" lean-forward="false" selection-start-line="1693" selection-start-column="6" selection-end-line="1693" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitmodules" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitmodules">
+      <file leaf-file-name="pure.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RSA.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RSA.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10692">
-              <caret line="533" column="35" lean-forward="false" selection-start-line="533" selection-start-column="31" selection-end-line="533" selection-end-column="35" />
+            <state relative-caret-position="114">
+              <caret line="555" column="82" lean-forward="true" selection-start-line="555" selection-start-column="82" selection-end-line="555" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openpgp_crypt_rsa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_rsa.php">
+      <file leaf-file-name="keygen.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+            <state relative-caret-position="343">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,6 +87,19 @@
       <find>createKey(</find>
       <find>$partial</find>
       <find>partialkey</find>
+      <find>wordwrap</find>
+      <find>wordwrap(</find>
+      <find>OpenPGP_Message::parse</find>
+      <find>wrap</find>
+      <find>_convertPrivateKey</find>
+      <find>BEGIN PUBLIC KEY</find>
+      <find>BEGIN PUBLIC</find>
+      <find>BEGIN PRIVATE</find>
+      <find>enarmor</find>
+      <find>new OpenPGP_PublicKey</find>
+      <find>keyp</find>
+      <find>$privKey</find>
+      <find>BEGIN RSA PRI</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
@@ -158,12 +123,16 @@
         <option value="$PROJECT_DIR$/ffsite/gpg/PGPWrapper.php" />
         <option value="$PROJECT_DIR$/lib/openpgp/examples/keygen.php" />
         <option value="$PROJECT_DIR$/lib/openpgp/lib/openpgp_crypt_rsa.php" />
-        <option value="$PROJECT_DIR$/ffsite/table/userrow.php" />
-        <option value="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
         <option value="$PROJECT_DIR$/.gitmodules" />
         <option value="$PROJECT_DIR$/ffsite/pgp/PGPWrapper.php" />
         <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_rsa.php" />
         <option value="$PROJECT_DIR$/ffsite/test.php" />
+        <option value="$PROJECT_DIR$/ffsite/table/userrow.php" />
+        <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php" />
+        <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php" />
+        <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php" />
+        <option value="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
+        <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" />
       </list>
     </option>
   </component>
@@ -211,6 +180,70 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="examples" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="table" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="game" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -246,26 +279,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php">
-    <configuration name="api.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/payment/paypal/api.php" scriptParameters="--test" />
+  <component name="RunManager" selected="PHP Script.pgpwrapper.php">
+    <configuration name="encryptDecrypt.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/encryptDecrypt.php" />
     <configuration name="keygen.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php" />
     <configuration name="pgpwrapper.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
+    <configuration name="pure.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php" />
     <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/test.php" />
-    <configuration name="userrow.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/table/userrow.php" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.api.php" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.userrow.php" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.keygen.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.pgpwrapper.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.test.php" />
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.keygen.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.pgpwrapper.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.test.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.encryptDecrypt.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.pure.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.test.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.pgpwrapper.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.userrow.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.keygen.php" />
-        <item index="4" class="java.lang.String" itemvalue="PHP Script.api.php" />
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.pgpwrapper.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.pure.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.keygen.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.encryptDecrypt.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.test.php" />
       </list>
     </recent_temporary>
   </component>
@@ -283,12 +316,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
-      <workItem from="1516586343539" duration="293000" />
+      <workItem from="1516586343539" duration="6283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3899000" />
+    <option name="totallyTimeSpent" value="9889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -299,6 +332,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -310,7 +344,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -325,7 +358,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/ffsite/table/userrow.php</url>
-          <line>221</line>
+          <line>222</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -333,10 +366,34 @@
           <line>28</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/encryptDecrypt.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php</url>
+          <line>619</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="32" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PhpLocalRunConfigurationType">
+        <watch expression="$config" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ffsite/table/userrow.php">
@@ -345,6 +402,11 @@
           <caret line="218" column="27" lean-forward="false" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
           <folding>
             <element signature="e#113#133#0#PHP" expanded="true" />
+            <marker date="1516586703936" expanded="true" signature="421:463" ph="SELECT u.* F... user" />
+            <marker date="1516586703936" expanded="true" signature="1442:1518" ph="UPDATE user... " />
+            <marker date="1516586703936" expanded="true" signature="2081:2149" ph="UPDATE user... " />
+            <marker date="1516586703936" expanded="true" signature="2544:2578" ph="DELETE from user... " />
+            <marker date="1516586703936" expanded="true" signature="3516:3751" ph="INSERT INTO user... " />
           </folding>
         </state>
       </provider>
@@ -465,22 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10692">
-          <caret line="533" column="35" lean-forward="false" selection-start-line="533" selection-start-column="31" selection-end-line="533" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/032728da-242c-4d4c-ad36-399c01f39123/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -489,44 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/table/userrow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4686">
-          <caret line="218" column="27" lean-forward="false" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
-          <folding>
-            <element signature="e#113#133#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_rsa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -551,6 +563,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/table/userrow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="129" column="34" lean-forward="false" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
+          <folding>
+            <element signature="e#113#133#0#PHP" expanded="true" />
+            <marker date="1516586703936" expanded="true" signature="421:463" ph="SELECT u.* F... user" />
+            <marker date="1516586703936" expanded="true" signature="1442:1518" ph="UPDATE user... " />
+            <marker date="1516586703936" expanded="true" signature="2081:2149" ph="UPDATE user... " />
+            <marker date="1516586703936" expanded="true" signature="2544:2578" ph="DELETE from user... " />
+            <marker date="1516586703936" expanded="true" signature="3516:3751" ph="INSERT INTO user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Serializer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="130" column="10" lean-forward="false" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/tests/data/hello.gpg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/tests/data/helloKey.gpg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_rsa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2798">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_symmetric.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/sign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/deASCIIdeCrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/encryptDecrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/clearsign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="1693" column="6" lean-forward="false" selection-start-line="1693" selection-start-column="6" selection-end-line="1693" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="555" column="82" lean-forward="true" selection-start-line="555" selection-start-column="82" selection-end-line="555" selection-end-column="82" />
           <folding />
         </state>
       </provider>
