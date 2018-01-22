@@ -9,8 +9,8 @@ namespace FFSite\PGP;
 
 use phpseclib\Crypt\RSA;
 
-require_once dirname(__DIR__, 2).'/lib/openpgp/lib/openpgp.php';
-require_once dirname(__DIR__, 2).'/lib/openpgp/lib/openpgp_crypt_rsa.php';
+require_once __DIR__ . '/lib/openpgp/lib/openpgp.php';
+require_once __DIR__ . '/lib/openpgp/lib/openpgp_crypt_rsa.php';
 
 class PGPWrapper
 {
