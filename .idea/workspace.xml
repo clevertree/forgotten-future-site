@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ffsite/pgp/PGPWrapper.php" afterPath="$PROJECT_DIR$/ffsite/pgp/pgpwrapper2.php" />
-      <change beforePath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" afterPath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" />
+      <change beforePath="$PROJECT_DIR$/ffsite/pgp/pgpwrapper2.php" afterPath="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +47,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pgpwrapper2.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper2.php">
+      <file leaf-file-name="pgpwrapper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
@@ -290,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
-      <workItem from="1516586343539" duration="152000" />
+      <workItem from="1516586343539" duration="182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3758000" />
+    <option name="totallyTimeSpent" value="3788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -363,7 +361,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper2.php">
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
@@ -534,7 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper2.php">
+    <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
