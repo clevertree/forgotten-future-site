@@ -1,3 +1,6 @@
 [submodule "lib/openpgp"]
 	path = lib/openpgp
 	url = ssh://git@github.com/clevertree/openpgp-php
+[submodule "game"]
+	path = game
+	url = ssh://git@github.com/clevertree/forgotten-future
