@@ -9,7 +9,7 @@
 namespace Site\Messenger\API;
 
 
-use Site\DB\Table\UserTokenRow;
+use FFSite\Table\UserTokenRow;
 
 class MessengerAPI
 {

@@ -6,9 +6,10 @@
  * Time: 3:03 PM
  */
 
-namespace Site\DB\Table;
+namespace FFSite\Table;
 
-use Site\DB\Database;
+use FFSite\Database;
+use FFSite\PGP\PGPWrapper;
 
 class UserRow
 {
@@ -117,24 +118,31 @@ class UserRow
     /**
      * @param $name
      * @param $full_name
+     * @param int $bitCount
      * @return UserRow
-     * @throws \Exception
      */
     public static function createNewUser(
         $name,
-        $full_name
+        $full_name,
+        $bitCount = 1024
     ){
+        $PGP = new PGPWrapper();
+        $keypair = $PGP->generateKeyPair($bitCount);
 
         $values = array(
             ':uid' => self::generateReferenceNumber(),
             ':name' => $name,
             ':full_name' => $full_name,
+            ':private_key' => $keypair[0],
+            ':public_key' => $keypair[1],
         );
 
         $SQL = "INSERT INTO user SET 
             `uid` = :uid,
             `name` = :name,
             `full_name` = :full_name,
+            `public_key` = :public_key,
+            `private_key` = :private_key,
             `created` = UTC_TIMESTAMP()
             ";
 
@@ -201,4 +209,21 @@ class UserRow
     public static function generateReferenceNumber() {
         return 'U-' . sprintf('%04X%04X-%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
     }
+
+
+    // Static
+
+
+    // Unit Test
+
+    public static function _test() {
+        set_include_path(dirname(__DIR__, 2));
+        spl_autoload_register();
+        $TestUser = UserRow::createNewUser('_testuser', 'Test User');
+        UserRow::delete($TestUser);
+        print_r($TestUser);
+    }
 }
+
+if(@$argv[0] === __FILE__)
+    UserRow::_test();

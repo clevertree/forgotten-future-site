@@ -6,8 +6,8 @@
  * Time: 4:07 PM
  */
 
-use Site\DB\Database;
-use Site\DB\Table\UserTokenRow;
+use FFSite\Database;
+use FFSite\Table\UserTokenRow;
 
 chdir('../../');
 spl_autoload_register();

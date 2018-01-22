@@ -6,7 +6,7 @@
  * Time: 2:43 PM
  */
 
-namespace Site\DB;
+namespace FFSite;
 
 
 class Database

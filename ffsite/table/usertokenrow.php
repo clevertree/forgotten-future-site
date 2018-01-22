@@ -6,39 +6,35 @@
  * Time: 3:03 PM
  */
 
-namespace Site\DB\Table;
+namespace FFSite\Table;
 
-use Site\DB\Database;
+use FFSite\Database;
 
-class PaymentRow
+class UserTokenRow
 {
     const _CLASS = __CLASS__;
-    const TABLE = 'payment';
+    const TABLE = 'user_token';
 
     // Table ticket
     protected $id;
-    protected $uid;
-    protected $status;
-    protected $type;
-    protected $amount;
-    protected $email;
-    protected $date;
-    protected $full_name;
     protected $user_id;
+    protected $token;
+    protected $created;
     protected $extra;
 
     const SQL_SELECT = "
         SELECT
-            p.*
-        FROM payment p
-        LEFT JOIN user u on u.id = p.user_id
+            ut.*
+        FROM user_token ut
+        LEFT JOIN user u on u.id = ut.user_id
 ";
     const SQL_GROUP_BY = ""; // "\nGROUP BY s.id";
-    const SQL_ORDER_BY = "\nORDER BY p.id DESC";
+    const SQL_ORDER_BY = "\nORDER BY ut.id DESC";
 
     public function getID()             { return $this->id; }
     public function getUserID()         { return $this->user_id; }
-    public function getCreateDate()     { return $this->date; }
+    public function getToken()          { return $this->token; }
+    public function getCreateDate()     { return $this->created; }
     public function getExtra() {
         if(!is_array($this->extra))
             $this->extra = json_decode($this->extra, false);
@@ -56,7 +52,7 @@ class PaymentRow
             ':id' => $this->id
         );
 
-        $SQL = "UPDATE payment SET 
+        $SQL = "UPDATE user_token SET 
             `extra` = :extra
         WHERE id = :id";
 
@@ -76,68 +72,45 @@ class PaymentRow
 
     /**
      * Delete a row
-     * @param PaymentRow $PaymentRow
+     * @param UserTokenRow $UserTokenRow
      */
-    public static function delete(PaymentRow $PaymentRow) {
-        $SQL = "DELETE from payment WHERE id = :id";
+    public static function delete(UserTokenRow $UserTokenRow) {
+        $SQL = "DELETE from user_token WHERE id = :id";
         $DB = Database::getInstance();
         $stmt = $DB->prepare($SQL);
         $ret = $stmt->execute(array(
-            ':id' => $PaymentRow->getID()
+            ':id' => $UserTokenRow->getID()
         ));
 
         if(!$ret)
             throw new \PDOException("Failed to delete row");
         if($stmt->rowCount() === 0)
-            error_log("Failed to delete row: " . print_r($PaymentRow, true));
+            error_log("Failed to delete row: " . print_r($UserTokenRow, true));
     }
 
     /**
-     * @param $status
-     * @param $type
-     * @param $amount
-     * @param $email
-     * @param $full_name
-     * @param $timestamp
-     * @param null $uid
      * @param UserRow $UserRow
+     * @param string $token
      * @param array|null $extra
-     * @return PaymentRow
+     * @return UserTokenRow
      */
-    public static function createNewPaymentEntry(
-        $status,
-        $type,
-        $amount,
-        $email,
-        $full_name,
-        $timestamp,
-        $uid = null,
+    public static function createNewToken(
+        $token,
         UserRow $UserRow=null,
         Array $extra = NULL
     ){
 
         $values = array(
-            ':uid' => $uid ?: self::generateReferenceNumber(),
-            ':status' => $status,
-            ':type' => $type,
-            ':amount' => $amount,
-            ':email' => $email,
-            ':full_name' => $full_name,
-            ':date' => $timestamp ?: time(),
+            ':token' => $token,
             ':user_id' => $UserRow ? $UserRow->getID() : NULL,
             ':extra' => $extra ? json_encode($extra, JSON_PRETTY_PRINT) : NULL,
         );
 
-        $SQL = "INSERT INTO payment SET 
-            `uid` = :uid,
-            `status` = :status,
-            `type` = :type,
-            `amount` = :amount,
-            `email` = :email,
-            `full_name` = :full_name,
+        $SQL = "INSERT INTO user_token SET 
+            `token` = :token,
             `user_id` = :user_id,
             `extra` = :extra,
-            `date` = FROM_UNIXTIME(:date)
+            `created` = UTC_TIMESTAMP()
             ";
 
         $DB = Database::getInstance();
@@ -153,7 +126,7 @@ class PaymentRow
 
     public static function queryByField($field, $value) {
         $DB = Database::getInstance();
-        $Query = $DB->prepare(static::SQL_SELECT . "WHERE p.{$field} = ?");
+        $Query = $DB->prepare(static::SQL_SELECT . "WHERE ut.{$field} = ?");
         /** @noinspection PhpMethodParametersCountMismatchInspection */
         $Query->setFetchMode(\PDO::FETCH_CLASS, self::_CLASS);
         $Query->execute(array($value));
@@ -164,7 +137,7 @@ class PaymentRow
      * @param $field
      * @param $value
      * @param bool $throwException
-     * @return PaymentRow
+     * @return UserTokenRow
      */
     public static function fetchByField($field, $value, $throwException=true) {
         $Row = static::queryByField($field, $value)
@@ -176,19 +149,19 @@ class PaymentRow
 
 
     /**
-     * @param string $uid
+     * @param string $token
      * @param bool $throwException
-     * @return PaymentRow
+     * @return UserTokenRow
      * @throws \Exception
      */
-    public static function fetchByUID($uid, $throwException=true) {
-        return static::fetchByField('uid', $uid, $throwException);
+    public static function fetchByToken($token, $throwException=true) {
+        return static::fetchByField('token', $token, $throwException);
     }
 
     /**
      * @param string $id
      * @param bool $throwException
-     * @return PaymentRow
+     * @return UserTokenRow
      */
     public static function fetchByID($id, $throwException=true) {
         return static::fetchByField('id', $id, $throwException);
@@ -201,6 +174,6 @@ class PaymentRow
      * @return string
      */
     public static function generateReferenceNumber() {
-        return 'P-' . sprintf('%04X%04X-%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
+        return 'U-' . sprintf('%04X%04X-%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
     }
 }

@@ -1,14 +1,13 @@
-<?php namespace Listener;
+<?php namespace Payment\Paypal;
 
 require('PaypalIPN.php');
 
-//chdir('../../../');
-set_include_path(dirname(dirname(dirname(__DIR__))));
+set_include_path(dirname(__DIR__, 2));
 spl_autoload_register();
 
 use PaypalIPN;
-use Site\DB\Table\PaymentRow;
-use Site\DB\Table\UserRow;
+use FFSite\Table\PaymentRow;
+use FFSite\Table\UserRow;
 
 $ipn = new PaypalIPN();
 
