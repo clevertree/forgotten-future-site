@@ -36,37 +36,37 @@ var messenger = (function() {
             //     } })
             navigator.serviceWorker.register('ffsite/messenger/messenger-worker.js')
                 .then(function(registration) {
+                    var messaging = firebase.messaging();
                     messaging.useServiceWorker(registration);
-                });
+                    messaging.getToken()
+                        .then(function (existingToken) {
+                            console.log('Existing Token found:', existingToken);
+                            if(existingToken)
+                                clientToken = existingToken;
+                            updateSubscriptionUI();
+                        })
+                        .catch(function (err) {
+                            console.log('Unable to retrieve existing token ', err);
+                        });
 
-            var messaging = firebase.messaging();
-            messaging.getToken()
-                .then(function (existingToken) {
-                    console.log('Existing Token found:', existingToken);
-                    if(existingToken)
-                        clientToken = existingToken;
-                    updateSubscriptionUI();
-                })
-                .catch(function (err) {
-                    console.log('Unable to retrieve existing token ', err);
-                });
-
-            // Callback fired if Instance ID token is updated.
-            messaging.onTokenRefresh(function () {
-                messaging.getToken()
-                    .then(function (refreshedToken) {
-                        console.log('Token refreshed:', refreshedToken);
-                        if(refreshedToken)
-                            clientToken = refreshedToken;
+                    // Callback fired if Instance ID token is updated.
+                    messaging.onTokenRefresh(function () {
+                        messaging.getToken()
+                            .then(function (refreshedToken) {
+                                console.log('Token refreshed:', refreshedToken);
+                                if(refreshedToken)
+                                    clientToken = refreshedToken;
 
 
-                        // sendTokenToServer(refreshedToken);
-                    })
-                    .catch(function (err) {
-                        console.log('Unable to retrieve refreshed token ', err);
-                        // showToken('Unable to retrieve refreshed token ', err);
+                                // sendTokenToServer(refreshedToken);
+                            })
+                            .catch(function (err) {
+                                console.log('Unable to retrieve refreshed token ', err);
+                                // showToken('Unable to retrieve refreshed token ', err);
+                            });
                     });
-            });
+
+                });
 
             Messenger.prototype.requestNotificationPermission = function(callback) {
                 // var messaging = firebase.messaging();
