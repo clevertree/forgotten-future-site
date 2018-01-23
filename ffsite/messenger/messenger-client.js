@@ -34,9 +34,10 @@ var messenger = (function() {
             //         registration.unregister();
             //         console.log("UNREGISTER ", registration);
             //     } })
+            var messaging = firebase.messaging();
+
             navigator.serviceWorker.register('ffsite/messenger/messenger-worker.js')
                 .then(function(registration) {
-                    var messaging = firebase.messaging();
                     messaging.useServiceWorker(registration);
                     messaging.getToken()
                         .then(function (existingToken) {
