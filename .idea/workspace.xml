@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/api.php" afterPath="$PROJECT_DIR$/ffsite/api.php" />
       <change beforePath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" afterPath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" />
-      <change beforePath="$PROJECT_DIR$/ffsite/test.php" afterPath="$PROJECT_DIR$/ffsite/test.php" />
+      <change beforePath="$PROJECT_DIR$/game" afterPath="$PROJECT_DIR$/game" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/messenger/api/messengerapi.php" afterPath="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
+      <change beforePath="$PROJECT_DIR$/messenger/messenger-client.js" afterPath="$PROJECT_DIR$/ffsite/messenger/messenger-client.js" />
+      <change beforePath="$PROJECT_DIR$/messenger/messenger-worker.js" afterPath="$PROJECT_DIR$/ffsite/messenger/messenger-worker.js" />
+      <change beforePath="$PROJECT_DIR$/messenger/messenger.php" afterPath="$PROJECT_DIR$/ffsite/messenger/api.php" />
+      <change beforePath="$PROJECT_DIR$/payment/paypal/PaypalIPN.php" afterPath="$PROJECT_DIR$/ffsite/payment/paypal/PaypalIPN.php" />
+      <change beforePath="$PROJECT_DIR$/payment/paypal/api.php" afterPath="$PROJECT_DIR$/ffsite/payment/paypal/api.php" />
+      <change beforePath="$PROJECT_DIR$/payment/paypal/cert/cacert.pem" afterPath="$PROJECT_DIR$/ffsite/payment/paypal/cert/cacert.pem" />
+      <change beforePath="$PROJECT_DIR$/payment/paypal/example_usage_advanced.php" afterPath="$PROJECT_DIR$/ffsite/payment/paypal/example_usage_advanced.php" />
+      <change beforePath="$PROJECT_DIR$/payment/paypal/return.php" afterPath="$PROJECT_DIR$/ffsite/payment/paypal/return.php" />
+      <change beforePath="$PROJECT_DIR$/script/git.php" afterPath="$PROJECT_DIR$/ffsite/git.php" />
+      <change beforePath="$PROJECT_DIR$/script/interface.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,51 +40,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pgpwrapper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php">
+      <file leaf-file-name="messenger-client.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="139" column="36" lean-forward="false" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ffsite/test.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="330">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="71" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openpgp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp.php">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffsite/messenger/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-488">
-              <caret line="1693" column="6" lean-forward="false" selection-start-line="1693" selection-start-column="6" selection-end-line="1693" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="794">
+              <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+              <folding>
+                <element signature="e#88#108#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RSA.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php">
+      <file leaf-file-name="messengerapi.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffsite/messenger/messengerapi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="555" column="82" lean-forward="true" selection-start-line="555" selection-start-column="82" selection-end-line="555" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keygen.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="716">
+              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -97,6 +103,11 @@
       <find>keyp</find>
       <find>$privKey</find>
       <find>BEGIN RSA PRI</find>
+      <find>MessengerAPI</find>
+      <find>messenger.php</find>
+      <find>messenger-</find>
+      <find>getToken</find>
+      <find>sendTokenToServer</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
@@ -130,6 +141,12 @@
         <option value="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
         <option value="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php" />
         <option value="$PROJECT_DIR$/ffsite/test.php" />
+        <option value="$PROJECT_DIR$/messenger/messenger.php" />
+        <option value="$PROJECT_DIR$/ffsite/messenger/api/messengerapi.php" />
+        <option value="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
+        <option value="$PROJECT_DIR$/ffsite/messenger/api.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/ffsite/messenger/messenger-client.js" />
       </list>
     </option>
   </component>
@@ -178,70 +195,20 @@
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="messenger" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="payment" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="examples" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="openpgp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="table" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="game" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="payment" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="paypal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -261,6 +228,8 @@
       <recent name="D:\Dev\forgotten-future\payment\paypal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\forgotten-future-site\ffsite\messenger" />
+      <recent name="D:\Dev\forgotten-future-site\ffsite" />
       <recent name="D:\Dev\forgotten-future\ffsite\pgp" />
     </key>
   </component>
@@ -313,12 +282,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
-      <workItem from="1516586343539" duration="6392000" />
+      <workItem from="1516586343539" duration="12909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9998000" />
+    <option name="totallyTimeSpent" value="16515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -378,8 +347,13 @@
           <line>619</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/ffsite/messenger/api.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpLocalRunConfigurationType">
@@ -393,7 +367,7 @@
         <state relative-caret-position="4686">
           <caret line="218" column="27" lean-forward="false" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
           <folding>
-            <element signature="e#113#133#0#PHP" expanded="true" />
+            <element signature="e#113#133#0#PHP" expanded="false" />
             <marker date="1516586703936" expanded="true" signature="421:463" ph="SELECT u.* F... user" />
             <marker date="1516586703936" expanded="true" signature="1442:1518" ph="UPDATE user... " />
             <marker date="1516586703936" expanded="true" signature="2081:2149" ph="UPDATE user... " />
@@ -455,6 +429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -485,6 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -493,21 +469,6 @@
         <state relative-caret-position="66">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment/paypal/PaypalIPN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment/paypal/return.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -535,28 +496,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment/paypal/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/table/userrow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="129" column="34" lean-forward="false" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
           <folding>
-            <element signature="e#113#133#0#PHP" expanded="true" />
+            <element signature="e#113#133#0#PHP" expanded="false" />
             <marker date="1516586703936" expanded="true" signature="421:463" ph="SELECT u.* F... user" />
             <marker date="1516586703936" expanded="true" signature="1442:1518" ph="UPDATE user... " />
             <marker date="1516586703936" expanded="true" signature="2081:2149" ph="UPDATE user... " />
@@ -673,7 +618,7 @@
     <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/vendor/phpseclib/phpseclib/phpseclib/Crypt/RSA.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="555" column="82" lean-forward="true" selection-start-line="555" selection-start-column="82" selection-end-line="555" selection-end-column="82" />
+          <caret line="555" column="82" lean-forward="false" selection-start-line="555" selection-start-column="82" selection-end-line="555" selection-end-column="82" />
           <folding />
         </state>
       </provider>
@@ -686,10 +631,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/payment/paypal/PaypalIPN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/payment/paypal/return.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="44">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/payment/paypal/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/messenger/messengerapi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/messenger/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+          <folding>
+            <element signature="e#88#108#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="71" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="139" column="36" lean-forward="false" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
           <folding />
         </state>
       </provider>

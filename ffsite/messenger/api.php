@@ -8,8 +8,9 @@
 
 use FFSite\Database;
 use FFSite\Table\UserTokenRow;
+use FFSite\Messenger\MessengerAPI;
 
-chdir('../../');
+set_include_path(dirname(__DIR__, 2));
 spl_autoload_register();
 
 header("Content-Type: application/json");
@@ -40,11 +41,11 @@ try {
 
         case 'subscribe':
             $token = htmlspecialchars($params['token']);
-            $topic = htmlspecialchars(@$params['topic'] ?: 'default');
+            $topics = explode(',', htmlspecialchars(@$params['topics'] ?: 'default'));
 
             $Token = UserTokenRow::fetchByToken($token, false);
             if($Token) {
-                http_response_code(409);
+//                http_response_code(409);
                 $json = array(
                     'message' => "Token was already found",
 //                'user_id' => 1,
@@ -57,11 +58,22 @@ try {
                 );
             }
 
-            $API = new \Site\Messenger\API\MessengerAPI();
-            $API->subscribeToTopic($Token, $topic);
+            $API = new MessengerAPI();
+
+            foreach(array('news', 'dev') as $availableTopic) {
+                if(in_array($availableTopic, $topics)) {
+                    $API->subscribeToTopic($Token, $availableTopic);
+                } else {
+                    $API->unSubscribeToTopic($Token, $availableTopic);
+                }
+                unset($topics[$availableTopic]);
+            }
+            if($topics)
+                error_log("Invalid Topics: " . print_r($topics, true));
             break;
     }
 } catch (Exception $ex) {
+    http_response_code(400);
     $json = array(
         'error' => $ex->getMessage(),
         'trace' => $ex->getTraceAsString(),

@@ -5,6 +5,7 @@ var messenger = (function() {
     }
 
     var clientToken = null;
+    var clientTopics = (localStorage.getItem('messenger.topics') || '').split(', ');
 
     // Messenger.prototype.requestNotificationPermission = unavailable;
     // Messenger.prototype.getNotificationToken = unavailable;
@@ -27,12 +28,22 @@ var messenger = (function() {
                 messagingSenderId: "249322981702"
             };
             firebase.initializeApp(config);
-            navigator.serviceWorker.register('messenger/messenger-worker.js')
+            navigator.serviceWorker.register('ffsite/messenger/messenger-worker.js')
                 .then(function(registration) {
                     messaging.useServiceWorker(registration);
                 });
 
             var messaging = firebase.messaging();
+            messaging.getToken()
+                .then(function (existingToken) {
+                    console.log('Existing Token found:', existingToken);
+                    if(existingToken)
+                        clientToken = existingToken;
+                    updateSubscriptionUI();
+                })
+                .catch(function (err) {
+                    console.log('Unable to retrieve existing token ', err);
+                });
 
             // Callback fired if Instance ID token is updated.
             messaging.onTokenRefresh(function () {
@@ -42,7 +53,8 @@ var messenger = (function() {
                         if(refreshedToken)
                             clientToken = refreshedToken;
 
-                        sendTokenToServer(refreshedToken);
+
+                        // sendTokenToServer(refreshedToken);
                     })
                     .catch(function (err) {
                         console.log('Unable to retrieve refreshed token ', err);
@@ -86,7 +98,9 @@ var messenger = (function() {
                     });
             };
 
-            Messenger.prototype.subscribe = function () {
+            Messenger.prototype.subscribe = function (topics) {
+                clientTopics = topics;
+                localStorage.setItem('messenger.topics', topics.join(', '));
                 console.log("Requesting permission for notification");
                 messenger.requestNotificationPermission(function () {
                     console.log("Requesting notification token");
@@ -99,8 +113,9 @@ var messenger = (function() {
 
                         if(token) {
                             clientToken = token;
-                            console.info("Notification Token: ", token);
-                            sendTokenToServer(token);
+                            updateSubscriptionUI();
+                            console.info("Subscribed to topics: ", topics, " with token ", token);
+                            sendTokenToServer(token, topics);
                             // updateUIForPushEnabled(currentToken);
 
                         } else {
@@ -119,20 +134,38 @@ var messenger = (function() {
 
     });
 
-    function sendTokenToServer(token) {
+    function updateSubscriptionUI() {
+        var UI = [
+            ['subscription-topic-news', 'news'],
+            ['subscription-topic-dev', 'dev']
+        ];
+
+        var checked = clientTopics.length > 0;
+        for(var i=0; i<UI.length; i++) {
+            var elms = document.getElementsByName(UI[i][0]);
+            for(var j=0; j<elms.length; j++) {
+                elms[j].checked = clientTopics.indexOf(UI[i][1]) !== -1;
+            }
+        }
+    }
+
+    function sendTokenToServer(token, topics) {
         // Send Instance ID token to server.
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "messenger/messenger.php");
+        xmlhttp.open("POST", "ffsite/messenger/api.php");
         xmlhttp.setRequestHeader("Content-Type", "application/json");
         xmlhttp.send(JSON.stringify({
             action: 'subscribe',
-            token:  token
+            token:  token,
+            topics: topics.join(", ")
         }));
         xmlhttp.onreadystatechange = function () {
             if(xmlhttp.readyState === XMLHttpRequest.DONE) {
                 var json = JSON.parse(xmlhttp.responseText);
                 if(xmlhttp.status === 200) {
                     console.log(xmlhttp.message);
+                } else if (xmlhttp.status === 409) {
+                    console.warn('Token already registered: ' + xmlhttp.responseText);
                 } else {
                     console.error(xmlhttp.responseText);
                 }

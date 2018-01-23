@@ -6,7 +6,7 @@
  * Time: 4:18 PM
  */
 
-namespace Site\Messenger\API;
+namespace FFSite\Messenger;
 
 
 use FFSite\Table\UserTokenRow;
@@ -17,12 +17,17 @@ class MessengerAPI
         return "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U";
     }
 
-    function subscribeToTopic(UserTokenRow $Token, $topic) {
+    /**
+     * @param UserTokenRow $Token
+     * @param $topic
+     * @throws \Exception
+     */
+    function subscribeToTopic(UserTokenRow $Token, $topic, $verb = "POST") {
         $URL = "https://iid.googleapis.com/iid/v1/{$Token->getToken()}/rel/topics/$topic";
         $auth_key = $this->getAuthorizationKey();
 
         $ch = curl_init($URL);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $verb);
 //        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
 //        curl_setopt($ch, CURLOPT_HEADER  , true);  // we want headers
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -37,6 +42,16 @@ class MessengerAPI
 //        echo $httpcode;
         if($httpcode !== 200)
             throw new \Exception($result);
+    }
+
+    /**
+     * @param UserTokenRow $Token
+     * @param $topic
+     * @param string $verb
+     * @throws \Exception
+     */
+    function unSubscribeToTopic(UserTokenRow $Token, $topic, $verb = "DELETE") {
+        $this->subscribeToTopic($Token, $topic, $verb);
     }
 }
 
