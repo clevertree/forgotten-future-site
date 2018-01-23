@@ -13,9 +13,8 @@ use FFSite\Table\UserTokenRow;
 
 class MessengerAPI
 {
-    function getAuthorizationKey() {
-        return "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U";
-    }
+    static $AUTH_KEY = "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U";
+    static $PROJECT_ID = "forgotten-future";
 
     /**
      * @param UserTokenRow $Token
@@ -24,7 +23,6 @@ class MessengerAPI
      */
     function subscribeToTopic(UserTokenRow $Token, $topic, $verb = "POST") {
         $URL = "https://iid.googleapis.com/iid/v1/{$Token->getToken()}/rel/topics/$topic";
-        $auth_key = $this->getAuthorizationKey();
 
         $ch = curl_init($URL);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $verb);
@@ -33,7 +31,7 @@ class MessengerAPI
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 "Content-Type: application/json",
-                "Authorization: key=$auth_key",
+                "Authorization: key=" . self::$AUTH_KEY,
                 'Content-Length: 0', // . strlen($data_string))
         ));
 
@@ -42,6 +40,40 @@ class MessengerAPI
 //        echo $httpcode;
         if($httpcode !== 200)
             throw new \Exception($result);
+    }
+
+    function sendMessage(UserTokenRow $Token, $body, $title) {
+        $URL = "https://fcm.googleapis.com/v1/projects/" . MessengerAPI::$PROJECT_ID . "/messages:send";
+        $params = array(
+            'message' => array(
+                'token' => $Token->getToken(),
+                'notification' => array(
+                    'body' => $body,
+                    'title' => $title,
+                )
+            )
+        );
+        $param_string = json_encode($params, JSON_PRETTY_PRINT);
+
+        $ch = curl_init($URL);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $param_string);
+//        curl_setopt($ch, CURLOPT_HEADER  , true);  // we want headers
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Content-Type: application/json",
+            "Authorization: Bearer " . self::$AUTH_KEY,
+            'Content-Length: ' . strlen($param_string)
+        ));
+
+        $result = curl_exec($ch);
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+//        echo $httpcode;
+        if($httpcode !== 200)
+            throw new \Exception($result);
+
+        $json = json_decode($result, true);
+        return $json;
     }
 
     /**

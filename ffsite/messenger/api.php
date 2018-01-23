@@ -60,6 +60,8 @@ try {
 
             $API = new MessengerAPI();
 
+            $API->sendMessage($Token, "WELCOME TEST BODY", "TEST TITLE");
+
             foreach(array('news', 'dev') as $availableTopic) {
                 if(in_array($availableTopic, $topics)) {
                     $API->subscribeToTopic($Token, $availableTopic);
