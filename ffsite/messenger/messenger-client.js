@@ -31,7 +31,8 @@ var messenger = (function() {
             firebase.initializeApp(config);
             // navigator.serviceWorker.getRegistrations().then(function(registrations) {
             //     for(let registration of registrations) {
-            //         registration.unregister()
+            //         registration.unregister();
+            //         console.log("UNREGISTER ", registration);
             //     } })
             navigator.serviceWorker.register('ffsite/messenger/messenger-worker.js')
                 .then(function(registration) {

@@ -60,7 +60,6 @@ try {
 
             $API = new MessengerAPI();
 
-            $API->sendMessage($Token, "WELCOME TEST BODY", "TEST TITLE");
 
             foreach(array('news', 'dev') as $availableTopic) {
                 if(in_array($availableTopic, $topics)) {
@@ -72,6 +71,9 @@ try {
             }
             if($topics)
                 error_log("Invalid Topics: " . print_r($topics, true));
+
+            $json['message_result'] = $API->sendMessage($Token, "WELCOME TEST BODY", "TEST TITLE");
+
             break;
     }
 } catch (Exception $ex) {
