@@ -4,12 +4,12 @@ importScripts('https://www.gstatic.com/firebasejs/4.1.1/firebase.js');
 
 
 var config = {
-    apiKey: "<APIKEY>",
-    authDomain: "<PROJECTID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE NAME>.firebaseio.com",
-    projectId: "<PROJECT ID>",
-    storageBucket: "<PROJECT ID>.appspot.com",
-    messagingSenderId: "<SENDER ID>"
+    apiKey: "AIzaSyD4wjBH_zXgZJfcmLrY7EO8jKgwFTwq9BE",
+    authDomain: "forgotten-future.firebaseapp.com",
+    databaseURL: "https://forgotten-future.firebaseio.com",
+    projectId: "forgotten-future",
+    storageBucket: "",
+    messagingSenderId: "249322981702"
 };
 firebase.initializeApp(config);
 const messaging = firebase.messaging();

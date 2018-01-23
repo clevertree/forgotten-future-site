@@ -4,6 +4,15 @@ var messenger = (function() {
     function Messenger() {
     }
 
+    var config = {
+        apiKey: "AIzaSyD4wjBH_zXgZJfcmLrY7EO8jKgwFTwq9BE",
+        authDomain: "forgotten-future.firebaseapp.com",
+        databaseURL: "https://forgotten-future.firebaseio.com",
+        projectId: "forgotten-future",
+        storageBucket: "",
+        messagingSenderId: "249322981702"
+    };
+
     var clientToken = null;
     var clientTopics = (localStorage.getItem('messenger.topics') || '').split(', ');
 
@@ -19,15 +28,11 @@ var messenger = (function() {
 
         if(firebase) {
             // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U",
-                authDomain: "forgotten-future.firebaseapp.com",
-                databaseURL: "https://forgotten-future.firebaseio.com",
-                projectId: "forgotten-future",
-                storageBucket: "",
-                messagingSenderId: "249322981702"
-            };
             firebase.initializeApp(config);
+            // navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            //     for(let registration of registrations) {
+            //         registration.unregister()
+            //     } })
             navigator.serviceWorker.register('ffsite/messenger/messenger-worker.js')
                 .then(function(registration) {
                     messaging.useServiceWorker(registration);
@@ -163,7 +168,7 @@ var messenger = (function() {
             if(xmlhttp.readyState === XMLHttpRequest.DONE) {
                 var json = JSON.parse(xmlhttp.responseText);
                 if(xmlhttp.status === 200) {
-                    console.log(xmlhttp.message);
+                    console.log(xmlhttp.responseText);
                 } else if (xmlhttp.status === 409) {
                     console.warn('Token already registered: ' + xmlhttp.responseText);
                 } else {

@@ -13,7 +13,7 @@ use FFSite\Table\UserTokenRow;
 
 class MessengerAPI
 {
-    static $AUTH_KEY = "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U";
+    static $AUTH_KEY = "AIzaSyD4wjBH_zXgZJfcmLrY7EO8jKgwFTwq9BE"; // "AIzaSyCAt5-jWUZm44niJxq4c1PonrnQdJI0v-U";
     static $PROJECT_ID = "forgotten-future";
 
     /**
@@ -43,14 +43,13 @@ class MessengerAPI
     }
 
     function sendMessage(UserTokenRow $Token, $body, $title) {
-        $URL = "https://fcm.googleapis.com/v1/projects/" . MessengerAPI::$PROJECT_ID . "/messages:send";
+//        $URL = "https://fcm.googleapis.com/v1/projects/" . MessengerAPI::$PROJECT_ID . "/messages:send";
+        $URL = "https://fcm.googleapis.com/fcm/send";
         $params = array(
-            'message' => array(
-                'token' => $Token->getToken(),
-                'notification' => array(
-                    'body' => $body,
-                    'title' => $title,
-                )
+            'to' => $Token->getToken(),
+            'data' => array(
+                'body' => $body,
+                'title' => $title,
             )
         );
         $param_string = json_encode($params, JSON_PRETTY_PRINT);
@@ -62,7 +61,7 @@ class MessengerAPI
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             "Content-Type: application/json",
-            "Authorization: Bearer " . self::$AUTH_KEY,
+            "Authorization: key=" . self::$AUTH_KEY,
             'Content-Length: ' . strlen($param_string)
         ));
 
