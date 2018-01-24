@@ -50,10 +50,8 @@ class MessengerAPI
             'to' => '/topics/news',
             'data' => array(
                 'title' => $title,
-                'options' => array(
-                    'body' => $body,
-                    'icon' => 'assets/img/icon/logo_192.png',
-                )
+                'body' => $body,
+                'icon' => 'assets/img/icon/logo_192.png',
             )
         );
         $param_string = json_encode($params, JSON_PRETTY_PRINT);
