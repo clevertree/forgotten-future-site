@@ -15,8 +15,9 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging();
 console.log('[messenger-worker.js] initiated ', firebase);
 
-messaging.setBackgroundMessageHandler(function(data) {
-    console.log('[messenger-worker.js] Received background message: ', data);
+messaging.setBackgroundMessageHandler(function(payload) {
+    console.log('[messenger-worker.js] Received background message: ', payload);
+    var data = payload || {};
     var title = data.title || "No Title";
     var options = data.options || data;
     if(typeof options === 'string')
