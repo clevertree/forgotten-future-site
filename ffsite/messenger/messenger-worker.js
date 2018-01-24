@@ -17,9 +17,10 @@ console.log('[messenger-worker.js] initiated ', firebase);
 
 messaging.setBackgroundMessageHandler(function(payload) {
     console.log('[messenger-worker.js] Received background message: ', payload);
+    var data = payload.data || {};
 
     return self.registration.showNotification(
-        payload.title,
-        payload.options
+        data.title,
+        data.options
     );
 });

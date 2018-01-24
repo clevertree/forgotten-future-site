@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/ffsite/messenger/messenger-worker.js" afterPath="$PROJECT_DIR$/ffsite/messenger/messenger-worker.js" />
-      <change beforePath="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" afterPath="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +38,8 @@
       <file leaf-file-name="messenger-worker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-worker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+            <state relative-caret-position="440">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -293,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
-      <workItem from="1516586343539" duration="23462000" />
+      <workItem from="1516586343539" duration="23918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27068000" />
+    <option name="totallyTimeSpent" value="27524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -733,8 +732,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-worker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
