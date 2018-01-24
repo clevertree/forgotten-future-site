@@ -13,6 +13,7 @@ var config = {
 };
 firebase.initializeApp(config);
 const messaging = firebase.messaging();
+console.log('[messenger-worker.js] initiated ', firebase);
 
 messaging.setBackgroundMessageHandler(function(payload) {
     console.log('[messenger-worker.js] Received background messenger ', payload);

@@ -46,7 +46,8 @@ class MessengerAPI
 //        $URL = "https://fcm.googleapis.com/v1/projects/" . MessengerAPI::$PROJECT_ID . "/messages:send";
         $URL = "https://fcm.googleapis.com/fcm/send";
         $params = array(
-            'to' => $Token->getToken(),
+//            'to' => $Token->getToken(),
+            'to' => '/topics/news',
             'data' => array(
                 'body' => $body,
                 'title' => $title,
