@@ -16,14 +16,10 @@ const messaging = firebase.messaging();
 console.log('[messenger-worker.js] initiated ', firebase);
 
 messaging.setBackgroundMessageHandler(function(payload) {
-    console.log('[messenger-worker.js] Received background messenger ', payload);
-    // Customize notification here
-    const notificationTitle = 'Background Message Title';
-    const notificationOptions = {
-        body: 'Background Message body.',
-        icon: '/firebase-logo.png'
-    };
+    console.log('[messenger-worker.js] Received background message: ', payload);
 
-    return self.registration.showNotification(notificationTitle,
-        notificationOptions);
+    return self.registration.showNotification(
+        payload.title,
+        payload.options
+    );
 });
