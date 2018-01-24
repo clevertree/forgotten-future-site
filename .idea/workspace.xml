@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-worker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -292,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
-      <workItem from="1516586343539" duration="24749000" />
+      <workItem from="1516586343539" duration="24879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28355000" />
+    <option name="totallyTimeSpent" value="28485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -733,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-worker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
         </state>
       </provider>
