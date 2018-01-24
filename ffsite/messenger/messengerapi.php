@@ -41,6 +41,30 @@ class MessengerAPI
         if($httpcode !== 200)
             throw new \Exception($result);
     }
+/**
+
+actions: [
+{
+action: 'coffee-action',
+title: 'Coffee',
+icon: '/images/demos/action-1-128x128.png'
+},
+{
+action: 'doughnut-action',
+title: 'Doughnut',
+icon: '/images/demos/action-2-128x128.png'
+},
+{
+action: 'gramophone-action',
+title: 'gramophone',
+icon: '/images/demos/action-3-128x128.png'
+},
+{
+action: 'atom-action',
+title: 'Atom',
+icon: '/images/demos/action-4-128x128.png'
+}
+ */
 
     function sendMessage(UserTokenRow $Token, $body, $title) {
 //        $URL = "https://fcm.googleapis.com/v1/projects/" . MessengerAPI::$PROJECT_ID . "/messages:send";
@@ -51,7 +75,8 @@ class MessengerAPI
             'data' => array(
                 'title' => $title,
                 'body' => $body,
-                'icon' => 'assets/img/icon/logo_192.png',
+                'icon' => '/assets/img/icon/logo_192.png',
+//                'tag' => 'reuse'
             )
         );
         $param_string = json_encode($params, JSON_PRETTY_PRINT);
