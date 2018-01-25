@@ -72,7 +72,7 @@ try {
             if($topics)
                 error_log("Invalid Topics: " . print_r($topics, true));
 
-            $json['message_result'] = $API->sendMessage($Token, "WELCOME TEST BODY", "TEST TITLE");
+//            $json['message_result'] = $API->sendMessage($Token, "WELCOME TEST BODY", "TEST TITLE");
 
             break;
     }
