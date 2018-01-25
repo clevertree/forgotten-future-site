@@ -41,9 +41,11 @@
 }
 
 .theme-minimal p.themed {
+    color: #a7feef;
     text-indent: 1em;
     max-width: 960px;
     margin: 1em auto;
+    animation: flickerAnimation 14s infinite;
 }
 .theme-minimal p:first-letter {
     /*font-size: larger;*/
@@ -51,6 +53,18 @@
     font-weight: bold;
     padding-right: 3px;
 }
+@keyframes flickerAnimation {
+    0%  { color: #a7feef; }
+    84%  { color: #a7feef; }
+    88%  { color: #aaf0e5; }
+    89.5% { color: #72c3b6; }
+    90%  { color: #a7feef; }
+    96% { color: #72c3b6; }
+    97.9% { color: #a7feef; }
+    98%  { color: #a1dbd1; }
+    100% { color: #a7feef; }
+}
+
 
 /** Footer **/
 
