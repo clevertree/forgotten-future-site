@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" />
-      <change beforePath="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" afterPath="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
+      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +29,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+            <state relative-caret-position="506">
+              <caret line="92" column="78" lean-forward="false" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contribute.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contribute.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -133,6 +140,7 @@
         <option value="$PROJECT_DIR$/ffsite/messenger/messenger-worker.js" />
         <option value="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
         <option value="$PROJECT_DIR$/media.html" />
+        <option value="$PROJECT_DIR$/contribute.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -313,12 +321,12 @@
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
       <workItem from="1516586343539" duration="26511000" />
-      <workItem from="1516829357852" duration="2527000" />
+      <workItem from="1516829357852" duration="2812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32644000" />
+    <option name="totallyTimeSpent" value="32929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -384,14 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ffsite/messenger/messengerapi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/messenger/messenger-client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -751,10 +751,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contribute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+        <state relative-caret-position="506">
+          <caret line="92" column="78" lean-forward="false" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
           <folding />
         </state>
       </provider>
