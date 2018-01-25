@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
+      <change beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
+      <change beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/locations.html" afterPath="$PROJECT_DIR$/locations.html" />
       <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
+      <change beforePath="$PROJECT_DIR$/media/concept/index.html" afterPath="$PROJECT_DIR$/media/concept/index.html" />
+      <change beforePath="$PROJECT_DIR$/technology.html" afterPath="$PROJECT_DIR$/technology.html" />
+      <change beforePath="$PROJECT_DIR$/timeline.html" afterPath="$PROJECT_DIR$/timeline.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,8 +76,8 @@
       <file leaf-file-name="media.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/media.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
+            <state relative-caret-position="969">
+              <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -109,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$privKey</find>
       <find>BEGIN RSA PRI</find>
       <find>MessengerAPI</find>
       <find>messenger.php</find>
@@ -139,11 +146,13 @@
       <find>manifest</find>
       <find>rel=&quot;stylesheet&quot; href=&quot;assets/theme/minimal.css&quot;</find>
       <find>rel=&quot;stylesheet&quot; href=&quot;assets/site.css&quot;</find>
+      <find>site.js&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
       <replace>rel=&quot;stylesheet&quot; href=&quot;assets/theme/minimal.css?v=1&quot;</replace>
       <replace>rel=&quot;stylesheet&quot; href=&quot;assets/site.css?v=1&quot;</replace>
+      <replace>site.js?v=1&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -390,12 +399,12 @@
       <workItem from="1516582224645" duration="3606000" />
       <workItem from="1516586343539" duration="26511000" />
       <workItem from="1516829357852" duration="3985000" />
-      <workItem from="1516850195220" duration="9532000" />
+      <workItem from="1516850195220" duration="10154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43634000" />
+    <option name="totallyTimeSpent" value="44256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -813,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/media.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
+        <state relative-caret-position="969">
+          <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding />
         </state>
       </provider>
