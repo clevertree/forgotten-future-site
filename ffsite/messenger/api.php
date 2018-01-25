@@ -41,7 +41,7 @@ try {
 
         case 'subscribe':
             $token = htmlspecialchars($params['token']);
-            $topics = explode(',', htmlspecialchars(@$params['topics'] ?: 'default'));
+            $topics = explode(', ', htmlspecialchars(@$params['topics'] ?: 'default'));
 
             $Token = UserTokenRow::fetchByToken($token, false);
             if($Token) {
@@ -67,7 +67,7 @@ try {
                 } else {
                     $API->unSubscribeToTopic($Token, $availableTopic);
                 }
-                unset($topics[$availableTopic]);
+                unset($topics[array_search($availableTopic, $topics)]);
             }
             if($topics)
                 error_log("Invalid Topics: " . print_r($topics, true));
