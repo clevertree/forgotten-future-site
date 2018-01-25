@@ -4,3 +4,6 @@
 [submodule "ffsite/pgp/lib/openpgp"]
 	path = ffsite/pgp/lib/openpgp
 	url = ssh://git@github.com/clevertree/openpgp-php
+[submodule "media/concept"]
+	path = media/concept
+	url = ssh://git@github.com/clevertree/forgotten-future-concept

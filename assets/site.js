@@ -8,7 +8,7 @@ var site = (function() {
             ['Media', 'media.html'],
             ['FAQ', 'faq.html'],
             ['Cataclysm', 'timeline.html'],
-            ['Characters', 'characters.html'],
+            // ['Characters', 'characters.html'],
             ['Locations', 'locations.html'],
             ['Technology', 'technology.html'],
             ['Demo', 'demo.html']
@@ -16,7 +16,6 @@ var site = (function() {
     }
 
     Site.prototype.getUrlParams = function() {
-
         var match,
             pl     = /\+/g,  // Regex for replacing addition symbol with a space
             search = /([^&=]+)=?([^&]*)/g,

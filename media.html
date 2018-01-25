@@ -9,6 +9,17 @@
         <link rel="stylesheet" href="assets/theme/minimal.css" />
 
         <script src="assets/site.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var scIframe = document.getElementById('soundcloud-autoplay-iframe');
+                if(site.getUrlParams()['autoplay']) {
+                    scIframe.src = scIframe.src.replace('auto_play=false', 'auto_play=true');
+                    console.info("Auto playing song ", scIframe);
+                } else {
+
+                }
+            })
+        </script>
     </head>
     <body class='theme-minimal'>
         <header class="page-header">
@@ -23,36 +34,38 @@
 
             <section class="themed">
                 <h2 id="music">Preview material from Forgotten Future.</h2>
-                <div class="page-option page-option-header">
+                <div class="page-option-header">
                     Forgotten Future Main Theme Preview
                 </div>
                 <div class="page-option">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/386739185&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+                    <iframe id="soundcloud-autoplay-iframe" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/386739185&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
                 </div>
-                <div class="page-option page-option-footer">
+                <div class="page-option-footer">
                     The FF OST will be available as a <a href="contribute.html">digital download</a>
                 </div>
             </section>
 
             <section class="themed">
                 <h2 id="art">Preview concept art from Forgotten Future.</h2>
-                <div class="page-option page-option-header">
-                    Forgotten Future Concept Art Preview (coming soon)
+                <div class="page-option-header">
+                    Forgotten Future Concept Art Preview
                 </div>
-                <div class="page-option">
+                <div class="page-option" style="max-height: 600px; overflow-y: visible;">
                     Coming Soon
                 </div>
-                <div class="page-option page-option-footer">
+                <div class="page-option-footer">
                     Unlock more development material by making a <a href="contribute.html">contribution</a>
                 </div>
             </section>
 
+            
             <section class="themed">
                 <h2>Make a Donation</h2>
                 <p class="themed">The Forgotten Future Project needs your contribution. Become an official <a href="contribute.html">sponsor</a> and
                     help bring this game to life.
-                <div class="page-option page-option-header">
+                    Also make sure to check out <a href="contribute.html#tiers">reward tiers</a> available to everyone who contributes!
+                <div class="page-option-header">
                     Make a donation
                 </div>
                 <div class="page-option">
@@ -62,7 +75,7 @@
                     </a>
 
                 </div>
-                <div class="page-option page-option-footer">
+                <div class="page-option-footer">
                     Sponsors receive <a href="contribute.html">Tier Rewards</a> based on their donation.
                 </div>
             </section>
