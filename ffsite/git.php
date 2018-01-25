@@ -17,6 +17,7 @@ if($params && $params[0] === '{') {
 
 echo "Executing Git Pull...\n";
 echo exec("git pull");
+echo exec("git submodule update --recursive --remote");
 
 echo "\nParameters: \n";
 print_r ($params);

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
-      <change beforePath="$PROJECT_DIR$/game/README.md" afterPath="$PROJECT_DIR$/game/README.md" />
+      <change beforePath="$PROJECT_DIR$/ffsite/git.php" afterPath="$PROJECT_DIR$/ffsite/git.php" />
+      <change beforePath="$PROJECT_DIR$/game" afterPath="$PROJECT_DIR$/game" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -55,6 +55,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,6 +166,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contribute.html" />
         <option value="$PROJECT_DIR$/game/README.md" />
+        <option value="$PROJECT_DIR$/ffsite/git.php" />
       </list>
     </option>
   </component>
@@ -200,6 +211,11 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
@@ -286,12 +302,12 @@
       <updated>1516582221346</updated>
       <workItem from="1516582224645" duration="3606000" />
       <workItem from="1516586343539" duration="26511000" />
-      <workItem from="1516829357852" duration="3651000" />
+      <workItem from="1516829357852" duration="3875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33768000" />
+    <option name="totallyTimeSpent" value="33992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -614,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/messenger/lib/src/Google/Client.php" />
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
@@ -732,6 +741,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
