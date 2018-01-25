@@ -19,6 +19,8 @@ echo "Executing Git Pull...\n";
 echo exec("git pull");
 chdir('../game');
 echo exec("git pull");
+chdir('../media/concept');
+echo exec("git pull");
 
 echo "\nParameters: \n";
 print_r ($params);

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="" />
+    <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ffsite/git.php" afterPath="$PROJECT_DIR$/ffsite/git.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="character-sheet-lem.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="character-sheet-lem.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/media/concept/character/lem/character-sheet-lem.png">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -133,12 +145,12 @@
         <option value="$PROJECT_DIR$/ffsite/messenger/messengerapi.php" />
         <option value="$PROJECT_DIR$/contribute.html" />
         <option value="$PROJECT_DIR$/game/README.md" />
-        <option value="$PROJECT_DIR$/ffsite/git.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/timeline.html" />
         <option value="$PROJECT_DIR$/assets/site.js" />
         <option value="$PROJECT_DIR$/assets/site.css" />
         <option value="$PROJECT_DIR$/media.html" />
+        <option value="$PROJECT_DIR$/ffsite/git.php" />
       </list>
     </option>
   </component>
@@ -189,6 +201,11 @@
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
@@ -313,12 +330,12 @@
       <workItem from="1516582224645" duration="3606000" />
       <workItem from="1516586343539" duration="26511000" />
       <workItem from="1516829357852" duration="3985000" />
-      <workItem from="1516850195220" duration="5417000" />
+      <workItem from="1516850195220" duration="5556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39519000" />
+    <option name="totallyTimeSpent" value="39658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -647,14 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/locations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -737,6 +746,14 @@
     <entry file="file://$PROJECT_DIR$/media/concept/character/lem/character-sheet-lem.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
