@@ -75,8 +75,9 @@ icon: '/images/demos/action-4-128x128.png'
             'data' => array(
                 'title' => $title,
                 'body' => $body,
-                'icon' => '/assets/img/icon/logo_192.png',
+                'icon' => '../../assets/img/icon/logo_192.png',
 //                'tag' => 'reuse'
+//                vibrate: [200, 100, 200, 100, 200, 100, 200],
             )
         );
         $param_string = json_encode($params, JSON_PRETTY_PRINT);
