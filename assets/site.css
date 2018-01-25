@@ -223,4 +223,6 @@ input:checked + .slider:before {
 
 /** Images **/
 
-.concept-art-image {max-width: 500px;}
+.concept-art-image {
+    max-width: 500px;
+}

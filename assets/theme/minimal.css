@@ -47,6 +47,17 @@
     margin: 1em auto;
     animation: flickerAnimation 14s infinite;
 }
+.theme-minimal p.themed:nth-of-type(2) {
+    animation: flickerAnimation 17s infinite;
+}
+.theme-minimal p.themed:nth-of-type(3) {
+    animation: flickerAnimation 15s infinite;
+}
+.theme-minimal p.themed:nth-of-type(4) {
+    animation: flickerAnimation 16s infinite;
+}
+
+
 .theme-minimal p:first-letter {
     /*font-size: larger;*/
     line-height: 1.25em;
