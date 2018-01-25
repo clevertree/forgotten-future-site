@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ffsite/messenger/api.php" afterPath="$PROJECT_DIR$/ffsite/messenger/api.php" />
+      <change beforePath="$PROJECT_DIR$/assets/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,79 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/media.html">
+      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ffsite/messenger/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-              <folding>
-                <element signature="e#88#108#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lem_concept3.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/media/concept/character/lem/concept/lem_concept3.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="character-sheet-lem.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/media/concept/character/lem/character-sheet-lem.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="git.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ffsite/git.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/index.html">
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/site.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="225" column="38" lean-forward="false" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -109,8 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BEGIN PRIVATE</find>
-      <find>enarmor</find>
       <find>new OpenPGP_PublicKey</find>
       <find>keyp</find>
       <find>$privKey</find>
@@ -139,6 +88,8 @@
       <find>page-option</find>
       <find>Invalid Topi</find>
       <find>autoplay</find>
+      <find>launcher-icon</find>
+      <find>manifest</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
@@ -182,9 +133,11 @@
         <option value="$PROJECT_DIR$/assets/site.js" />
         <option value="$PROJECT_DIR$/assets/site.css" />
         <option value="$PROJECT_DIR$/ffsite/git.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/media.html" />
         <option value="$PROJECT_DIR$/ffsite/messenger/api.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/manifest.json" />
+        <option value="$PROJECT_DIR$/manifest.json" />
       </list>
     </option>
   </component>
@@ -235,6 +188,19 @@
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="icon" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
@@ -298,14 +264,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dev\forgotten-future-site\ffsite" />
-      <recent name="D:\Dev\forgotten-future\payment\paypal" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\forgotten-future-site" />
       <recent name="D:\Dev\forgotten-future-site\ffsite\messenger" />
       <recent name="D:\Dev\forgotten-future-site\ffsite" />
       <recent name="D:\Dev\forgotten-future\ffsite\pgp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\forgotten-future-site\ffsite" />
+      <recent name="D:\Dev\forgotten-future\payment\paypal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,12 +326,12 @@
       <workItem from="1516582224645" duration="3606000" />
       <workItem from="1516586343539" duration="26511000" />
       <workItem from="1516829357852" duration="3985000" />
-      <workItem from="1516850195220" duration="6000000" />
+      <workItem from="1516850195220" duration="6709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40102000" />
+    <option name="totallyTimeSpent" value="40811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -430,21 +397,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/lib/openpgp_crypt_rsa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/keygen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -762,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -782,11 +726,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/messenger/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-          <folding>
-            <element signature="e#88#108#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
