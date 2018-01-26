@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/site.css" afterPath="$PROJECT_DIR$/assets/site.css" />
-      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" />
+      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
+      <change beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
+      <change beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/locations.html" afterPath="$PROJECT_DIR$/locations.html" />
+      <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
+      <change beforePath="$PROJECT_DIR$/technology.html" afterPath="$PROJECT_DIR$/technology.html" />
+      <change beforePath="$PROJECT_DIR$/timeline.html" afterPath="$PROJECT_DIR$/timeline.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="67" />
+            <state relative-caret-position="748">
+              <caret line="51" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -47,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minimal.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="minimal.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
@@ -57,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="faq.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="476">
+              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -111,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BEGIN RSA PRI</find>
       <find>MessengerAPI</find>
       <find>messenger.php</find>
       <find>messenger-</find>
@@ -133,7 +137,6 @@
       <find>characters.html</find>
       <find>-header</find>
       <find>addEventListener</find>
-      <find>page-option</find>
       <find>Invalid Topi</find>
       <find>autoplay</find>
       <find>launcher-icon</find>
@@ -141,12 +144,16 @@
       <find>rel=&quot;stylesheet&quot; href=&quot;assets/theme/minimal.css&quot;</find>
       <find>rel=&quot;stylesheet&quot; href=&quot;assets/site.css&quot;</find>
       <find>site.js&quot;</find>
+      <find>rel=&quot;stylesheet&quot; href=&quot;assets/site.css?v=1&quot;</find>
+      <find>rel=&quot;stylesheet&quot; href=&quot;assets/theme/minimal.css?v=1&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
       <replace>rel=&quot;stylesheet&quot; href=&quot;assets/theme/minimal.css?v=1&quot;</replace>
       <replace>rel=&quot;stylesheet&quot; href=&quot;assets/site.css?v=1&quot;</replace>
       <replace>site.js?v=1&quot;</replace>
+      <replace>href=&quot;assets/site.css?v=1&quot; rel=&quot;stylesheet&quot;</replace>
+      <replace>href=&quot;assets/theme/minimal.css?v=1&quot; rel=&quot;stylesheet&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -193,6 +200,7 @@
         <option value="$PROJECT_DIR$/media.html" />
         <option value="$PROJECT_DIR$/assets/site.css" />
         <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
+        <option value="$PROJECT_DIR$/faq.html" />
       </list>
     </option>
   </component>
@@ -237,85 +245,6 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="icon" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ffsite" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="messenger" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="character" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="character" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lem" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="character" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="concept" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="character" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scans" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -394,12 +323,12 @@
       <workItem from="1516586343539" duration="26511000" />
       <workItem from="1516829357852" duration="3985000" />
       <workItem from="1516850195220" duration="10172000" />
-      <workItem from="1516901178206" duration="263000" />
+      <workItem from="1516901178206" duration="832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44537000" />
+    <option name="totallyTimeSpent" value="45106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -410,6 +339,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -421,7 +351,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -661,6 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,6 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -692,6 +623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,6 +639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="92" column="126" lean-forward="false" selection-start-line="92" selection-start-column="126" selection-end-line="92" selection-end-column="126" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -742,26 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -802,6 +719,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding />
         </state>
       </provider>
