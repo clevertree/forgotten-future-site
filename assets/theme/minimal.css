@@ -35,6 +35,11 @@
     color: #bddfe9;
 }
 
+/** Section **/
+.theme-minimal section.themed {
+    padding-bottom: 2em;
+}
+
 /** Paragraphs **/
 .theme-minimal article > p {
     text-align: justify;
