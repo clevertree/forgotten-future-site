@@ -11,3 +11,4 @@ spl_autoload_register();
 
 \FFSite\PGP\PGPWrapper::_test();
 \FFSite\Table\UserRow::_test();
+\FFSite\Table\UserTokenRow::_test();

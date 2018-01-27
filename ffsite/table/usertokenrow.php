@@ -89,26 +89,41 @@ class UserTokenRow
     }
 
     /**
-     * @param UserRow $UserRow
      * @param string $token
+     * @param UserRow $UserRow
+     * @param null $ip_address
+     * @param null $hostname
+     * @param null $agent
      * @param array|null $extra
      * @return UserTokenRow
      */
     public static function createNewToken(
         $token,
         UserRow $UserRow=null,
+        $ip_address = null,
+        $hostname = null,
+        $agent = null,
         Array $extra = NULL
     ){
+        $ip_address = $ip_address   ?: @$_SERVER['REMOTE_ADDR'];
+        $hostname = $hostname       ?: gethostbyaddr($ip_address);
+        $agent = $agent             ?: @$_SERVER['HTTP_USER_AGENT'];
 
         $values = array(
             ':token' => $token,
             ':user_id' => $UserRow ? $UserRow->getID() : NULL,
+            ':ip_address' => $ip_address,
+            ':hostname' => $hostname,
+            ':agent' => $agent,
             ':extra' => $extra ? json_encode($extra, JSON_PRETTY_PRINT) : NULL,
         );
 
         $SQL = "INSERT INTO user_token SET 
             `token` = :token,
             `user_id` = :user_id,
+            `ip_address` = :ip_address,
+            `hostname` = :hostname,
+            `agent` = :agent,
             `extra` = :extra,
             `created` = UTC_TIMESTAMP()
             ";
@@ -176,4 +191,18 @@ class UserTokenRow
     public static function generateReferenceNumber() {
         return 'U-' . sprintf('%04X%04X-%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
     }
+
+    // Unit Test
+
+    public static function _test() {
+        echo "\nTesting " . __CLASS__ . "...\n";
+        set_include_path(dirname(__DIR__, 2));
+        spl_autoload_register();
+        $TestUserToken = UserTokenRow::createNewToken('_testtoken');
+        UserTokenRow::delete($TestUserToken);
+        print_r($TestUserToken);
+    }
 }
+
+if(@$argv[0] === __FILE__)
+    UserTokenRow::_test();
