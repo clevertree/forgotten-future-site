@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/ffsite/table/usertokenrow.php" afterPath="$PROJECT_DIR$/ffsite/table/usertokenrow.php" />
-      <change beforePath="$PROJECT_DIR$/ffsite/test.php" afterPath="$PROJECT_DIR$/ffsite/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,22 +25,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usertokenrow.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="usertokenrow.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ffsite/table/usertokenrow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="194" column="16" lean-forward="true" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
               <folding>
-                <marker date="1517073357028" expanded="true" signature="384:480" ph="SELECT ut.* user_token" />
-                <marker date="1517073357028" expanded="true" signature="1335:1409" ph="UPDATE user_token... " />
-                <marker date="1517073357028" expanded="true" signature="1824:1861" ph="DELETE from user_token... " />
-                <marker date="1517073357028" expanded="true" signature="3200:3467" ph="INSERT INTO user_token... " />
+                <marker date="1517073490523" expanded="true" signature="384:480" ph="SELECT ut.* user_token" />
+                <marker date="1517073490523" expanded="true" signature="1335:1409" ph="UPDATE user_token... " />
+                <marker date="1517073490523" expanded="true" signature="1824:1861" ph="DELETE from user_token... " />
+                <marker date="1517073490523" expanded="true" signature="3200:3467" ph="INSERT INTO user_token... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ffsite/test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -155,8 +154,8 @@
         <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/ffsite/messenger/api.php" />
-        <option value="$PROJECT_DIR$/ffsite/table/usertokenrow.php" />
         <option value="$PROJECT_DIR$/ffsite/test.php" />
+        <option value="$PROJECT_DIR$/ffsite/table/usertokenrow.php" />
       </list>
     </option>
   </component>
@@ -262,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php">
+  <component name="RunManager" selected="PHP Script.usertokenrow.php">
     <configuration name="git.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/git.php" />
     <configuration name="pgpwrapper.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/pgpwrapper.php" />
     <configuration name="pure.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ffsite/pgp/lib/openpgp/examples/pure.php" />
@@ -277,8 +276,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.test.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.usertokenrow.php" />
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.usertokenrow.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.test.php" />
         <item index="2" class="java.lang.String" itemvalue="PHP Script.git.php" />
         <item index="3" class="java.lang.String" itemvalue="PHP Script.pgpwrapper.php" />
         <item index="4" class="java.lang.String" itemvalue="PHP Script.pure.php" />
@@ -304,12 +303,12 @@
       <workItem from="1516850195220" duration="10172000" />
       <workItem from="1516901178206" duration="832000" />
       <workItem from="1516938372810" duration="420000" />
-      <workItem from="1517040630671" duration="1120000" />
+      <workItem from="1517040630671" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46646000" />
+    <option name="totallyTimeSpent" value="46724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3848" y="-1088" width="2576" height="1416" extended-state="6" />
@@ -705,24 +704,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ffsite/table/usertokenrow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <marker date="1517073357028" expanded="true" signature="384:480" ph="SELECT ut.* user_token" />
-            <marker date="1517073357028" expanded="true" signature="1335:1409" ph="UPDATE user_token... " />
-            <marker date="1517073357028" expanded="true" signature="1824:1861" ph="DELETE from user_token... " />
-            <marker date="1517073357028" expanded="true" signature="3200:3467" ph="INSERT INTO user_token... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ffsite/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/table/usertokenrow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="194" column="16" lean-forward="true" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+          <folding>
+            <marker date="1517073490523" expanded="true" signature="384:480" ph="SELECT ut.* user_token" />
+            <marker date="1517073490523" expanded="true" signature="1335:1409" ph="UPDATE user_token... " />
+            <marker date="1517073490523" expanded="true" signature="1824:1861" ph="DELETE from user_token... " />
+            <marker date="1517073490523" expanded="true" signature="3200:3467" ph="INSERT INTO user_token... " />
+          </folding>
         </state>
       </provider>
     </entry>

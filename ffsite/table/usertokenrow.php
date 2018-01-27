@@ -198,7 +198,7 @@ class UserTokenRow
         echo "\nTesting " . __CLASS__ . "...\n";
         set_include_path(dirname(__DIR__, 2));
         spl_autoload_register();
-        $TestUserToken = UserTokenRow::createNewToken('_testtoken');
+        $TestUserToken = UserTokenRow::createNewToken('_testtoken', null, '192.168.0.1', 'fakehost', 'fakeagent');
         UserTokenRow::delete($TestUserToken);
         print_r($TestUserToken);
     }
