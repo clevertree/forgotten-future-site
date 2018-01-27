@@ -3,14 +3,18 @@
 var site = (function() {
     function Site() {
         this.links = [
-            ['Game', 'index.html'],
+            ['Game', 'index.html', [
+                ['Cataclysm', 'story.html#timeline'],
+            ]],
+            ['Story', 'story.html', [
+                ['Human History', 'story.html#timeline'],
+                ['Characters', 'story.html#characters'],
+                ['Locations', 'story.html#locations'],
+                ['Technology', 'story.html#technology'],
+            ]],
             ['Contribute', 'contribute.html'],
             ['Media', 'media.html'],
             ['FAQ', 'faq.html'],
-            ['Cataclysm', 'timeline.html'],
-            // ['Characters', 'characters.html'],
-            ['Locations', 'locations.html'],
-            ['Technology', 'technology.html'],
             ['Demo', 'demo.html']
         ]
     }
@@ -42,7 +46,12 @@ var site = (function() {
     };
 
     Site.prototype.generateNavLinks = function(container) {
-        var fileName = location.href.split("/").slice(-1)[0];
+        var fileName = location.href.split("/").slice(-1)[0], hash=null;
+        var hashSplit = fileName.split('#');
+        if(hashSplit.length > 1) {
+            fileName = hashSplit[1];
+            hash = hashSplit[1];
+        }
         for (var i = 0; i < this.links.length; i++) {
             var liElm = document.createElement('li');
             var aElm = document.createElement('a');
@@ -51,8 +60,24 @@ var site = (function() {
             container.appendChild(liElm);
             liElm.appendChild(aElm);
 
-            if(this.links[i][1] === fileName)
+            if(this.links[i][1] === fileName) {
                 liElm.classList.add('highlight');
+                // TODO sub section links
+                // if(this.links[i][2]) {
+                //     for(var j=0; j<this.links[i][2].length; j++) {
+                //         var sublink = this.links[i][2][j];
+                //         var liElm2 = document.createElement('li');
+                //         var aElm2 = document.createElement('a');
+                //         aElm2.href = sublink[1];
+                //         aElm2.innerHTML = sublink[0];
+                //         container.appendChild(liElm2);
+                //         liElm2.appendChild(aElm2);
+                //         if(sublink[1] === hash) {
+                //             liElm2.classList.add('highlight');
+                //         }
+                //     }
+                // }
+            }
         }
     };
 
