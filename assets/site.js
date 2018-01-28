@@ -3,17 +3,23 @@
 var site = (function() {
     function Site() {
         this.links = [
-            ['Game', 'index.html', [
-                ['Cataclysm', 'story.html#timeline'],
-            ]],
+            ['Game', 'index.html'],
             ['Story', 'story.html', [
                 ['Human History', 'story.html#timeline'],
-                ['Characters', 'story.html#characters'],
                 ['Locations', 'story.html#locations'],
                 ['Technology', 'story.html#technology'],
+                ['Characters', 'story.html#characters'],
+                ['Vehicles', 'story.html#vehicles'],
             ]],
-            ['Contribute', 'contribute.html'],
-            ['Media', 'media.html'],
+            ['Contribute', 'contribute.html', [
+                ['By Playing', 'contribute.html#play'],
+                ['By Sponsoring', 'contribute.html#sponsor'],
+                ['By Developing', 'contribute.html#develop'],
+            ]],
+            ['Media', 'media.html', [
+                ['FF OST Sample', 'media.html#music'],
+                ['FF Concept Art', 'media.html#art'],
+            ]],
             ['FAQ', 'faq.html'],
             ['Demo', 'demo.html']
         ]

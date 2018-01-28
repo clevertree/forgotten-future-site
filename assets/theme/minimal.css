@@ -108,7 +108,7 @@
     margin: 0 0;
     background-color: rgba(0, 49, 77, 0.9);
     /* border-radius: 4px; */
-    font-size: 0px;
+    font-size: 0;
 }
 
 .theme-minimal li.menu-link-container {
@@ -149,6 +149,9 @@ ul.submenu-links {
     margin: 0;
     transition: all 3s;
 }
+ul.submenu-links:hover {
+    z-index: 9;
+}
 
 .menu-links li.menu-link-container:hover > ul.submenu-links {
     display: block;
@@ -183,6 +186,9 @@ ul.submenu-links {
 /** Mobile/Responsive View **/
 @media only screen and (max-width: 500px) {
 
+    ul.submenu-links {
+        display: none;
+    }
     /** Mobile Page Header **/
     .theme-minimal header.page-header {
         position: fixed;
