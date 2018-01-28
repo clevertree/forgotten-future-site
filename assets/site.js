@@ -49,34 +49,42 @@ var site = (function() {
         var fileName = location.href.split("/").slice(-1)[0], hash=null;
         var hashSplit = fileName.split('#');
         if(hashSplit.length > 1) {
-            fileName = hashSplit[1];
+            fileName = hashSplit[0];
             hash = hashSplit[1];
         }
+        console.log("generating nav links: ", fileName, hash);
         for (var i = 0; i < this.links.length; i++) {
-            var liElm = document.createElement('li');
-            var aElm = document.createElement('a');
-            aElm.href = this.links[i][1];
-            aElm.innerHTML = this.links[i][0];
-            container.appendChild(liElm);
-            liElm.appendChild(aElm);
+            var liMenuContainer = document.createElement('li');
+            liMenuContainer.classList.add('menu-link-container');
+            var aMenuLink = document.createElement('a');
+            aMenuLink.href = this.links[i][1];
+            aMenuLink.classList.add('menu-link');
+            aMenuLink.innerHTML = this.links[i][0];
+            container.appendChild(liMenuContainer);
+            liMenuContainer.appendChild(aMenuLink);
 
             if(this.links[i][1] === fileName) {
-                liElm.classList.add('highlight');
-                // TODO sub section links
-                // if(this.links[i][2]) {
-                //     for(var j=0; j<this.links[i][2].length; j++) {
-                //         var sublink = this.links[i][2][j];
-                //         var liElm2 = document.createElement('li');
-                //         var aElm2 = document.createElement('a');
-                //         aElm2.href = sublink[1];
-                //         aElm2.innerHTML = sublink[0];
-                //         container.appendChild(liElm2);
-                //         liElm2.appendChild(aElm2);
-                //         if(sublink[1] === hash) {
-                //             liElm2.classList.add('highlight');
-                //         }
-                //     }
-                // }
+                aMenuLink.classList.add('highlight');
+            }
+            if(this.links[i][2]) {
+                var ulSubMenu = document.createElement('ul');
+                ulSubMenu.classList.add('menu-links', 'submenu-links');
+                liMenuContainer.appendChild(ulSubMenu);
+                for(var j=0; j<this.links[i][2].length; j++) {
+                    var liSubMenuContainer = document.createElement('li');
+                    liSubMenuContainer.classList.add('menu-link-container', 'submenu-link-container');
+                    ulSubMenu.appendChild(liSubMenuContainer);
+
+                    var sublink = this.links[i][2][j];
+                    var aSubmenuLink = document.createElement('a');
+                    aSubmenuLink.href = sublink[1];
+                    aSubmenuLink.classList.add('menu-link', 'submenu-link');
+                    aSubmenuLink.innerHTML = sublink[0];
+                    liSubMenuContainer.appendChild(aSubmenuLink);
+                    // if(sublink[1] === fileName + '#' + hash)
+                    //     aSubmenuLink.classList.add('highlight');
+
+                }
             }
         }
     };
@@ -96,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Auto-generate nav bar
     (function() {
-        var pageLinks = document.getElementsByClassName('page-links');
+        var pageLinks = document.getElementsByClassName('menu-links');
         for(var i=0; i<pageLinks.length; i++)
             if(pageLinks[i].classList.contains('autogenerate'))
                 site.generateNavLinks(pageLinks[i]);
