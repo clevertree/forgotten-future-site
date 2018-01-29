@@ -178,6 +178,7 @@ ul.submenu-links {
     border-radius: 8px;
     user-select: none;
     outline: 0;
+    float: right;
 }
 
 .menu.theme-minimal .toggle-page-menu {

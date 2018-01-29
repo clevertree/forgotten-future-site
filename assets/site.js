@@ -100,8 +100,9 @@ var site = (function() {
     function onMenuClick(e) {
         // if(this.classList.contains('highlight')) {
         var menu = this.parentNode;
-        console.info("Toggle Menu", menu);
-        if(!menu.classList.contains('open')) {
+        var submenu = this.nextSibling;
+        console.info("Toggle Menu", menu, submenu);
+        if(!menu.classList.contains('open') && submenu) {
             e.preventDefault();
             menu.classList.add('open');
         }
