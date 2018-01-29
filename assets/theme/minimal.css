@@ -125,7 +125,7 @@
 .theme-minimal a.menu-link{
     display: block;
     text-align: left;
-    padding: 7px;
+    padding: 8px;
     text-decoration: none;
     color: #7fe3ff;
 }
@@ -230,11 +230,11 @@ ul.submenu-links {
     }
 
     .theme-minimal ul.menu-links > li {
-        border: 1px outset #333;
+        /* border: 1px outset #333; */
     }
     .theme-minimal ul.menu-links > li.highlight,
     .theme-minimal ul.menu-links > li:hover {
-        border: 1px outset #888;
+        /* border: 1px outset #888; */
     }
 
     .theme-minimal ul.menu-links li {
@@ -242,7 +242,9 @@ ul.submenu-links {
     }
 
 
+    .theme-minimal ul.menu-links li a:before { content: " : "; }
     .theme-minimal ul.menu-links li a {
+        padding: 12px;
     }
 
     /** Menu Open **/
