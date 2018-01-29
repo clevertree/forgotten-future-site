@@ -253,12 +253,13 @@ ul.submenu-links {
         z-index: 9;
     }
 
-    .theme-minimal.menu ul.menu-links li.menu-link-container ul.submenu-links {
+    /** Submenu **/
+    .theme-minimal.menu  li.menu-link-container ul.submenu-links {
         position: relative;
         max-height: 0px;
         transition: max-height 1s;
     }
-    .theme-minimal.menu ul.menu-links li.menu-link-container.open ul.submenu-links {
+    .theme-minimal.menu li.menu-link-container.open ul.submenu-links {
         position: relative;
         max-height: 500px;
         transition: max-height 1s;
