@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22de97c4-ed1b-4fd3-ae02-0134ebb54324" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" />
+      <change beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
       <change beforePath="$PROJECT_DIR$/game" afterPath="$PROJECT_DIR$/game" />
       <change beforePath="$PROJECT_DIR$/game/game.js" afterPath="$PROJECT_DIR$/game/game.js" />
+      <change beforePath="$PROJECT_DIR$/game/index.html" afterPath="$PROJECT_DIR$/game/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/game.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -50,11 +51,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>http://</find>
       <find>scrolling</find>
       <find>page-option</find>
       <find>page-option-header</find>
@@ -84,6 +104,7 @@
       <find>site/timeline.html</find>
       <find>?v=1</find>
       <find>?v=2</find>
+      <find>game.js</find>
     </findStrings>
     <replaceStrings>
       <replace>DB</replace>
@@ -104,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game/index.html" />
         <option value="$PROJECT_DIR$/db/database.php" />
         <option value="$PROJECT_DIR$/db/table/paymentrow.php" />
         <option value="$PROJECT_DIR$/payment/paypal/api.php" />
@@ -141,12 +161,13 @@
         <option value="$PROJECT_DIR$/story.html" />
         <option value="$PROJECT_DIR$/contribute.html" />
         <option value="$PROJECT_DIR$/media.html" />
-        <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/assets/site.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
         <option value="$PROJECT_DIR$/game/game.js" />
+        <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/game/index.html" />
       </list>
     </option>
   </component>
@@ -296,12 +317,12 @@
       <workItem from="1516901178206" duration="832000" />
       <workItem from="1516938372810" duration="420000" />
       <workItem from="1517040630671" duration="4483000" />
-      <workItem from="1517117564078" duration="13115000" />
+      <workItem from="1517117564078" duration="13257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66822000" />
+    <option name="totallyTimeSpent" value="66964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
@@ -655,22 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2838">
@@ -715,6 +720,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="160" column="37" lean-forward="false" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding />
         </state>
       </provider>
