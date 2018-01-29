@@ -66,12 +66,13 @@ var site = (function() {
             aMenuLink.href = this.links[i][1];
             aMenuLink.classList.add('menu-link');
             aMenuLink.innerHTML = this.links[i][0];
+            aMenuLink.addEventListener('click', onMenuClick);
             container.appendChild(liMenuContainer);
             liMenuContainer.appendChild(aMenuLink);
 
-            if(this.links[i][1] === fileName) {
+            if(this.links[i][1] === fileName)
                 aMenuLink.classList.add('highlight');
-            }
+
             if(this.links[i][2]) {
                 var ulSubMenu = document.createElement('ul');
                 ulSubMenu.classList.add('menu-links', 'submenu-links');
@@ -83,6 +84,7 @@ var site = (function() {
 
                     var sublink = this.links[i][2][j];
                     var aSubmenuLink = document.createElement('a');
+                    aSubmenuLink.addEventListener('click', onSubMenuClick);
                     aSubmenuLink.href = sublink[1];
                     aSubmenuLink.classList.add('menu-link', 'submenu-link');
                     aSubmenuLink.innerHTML = sublink[0];
@@ -94,6 +96,31 @@ var site = (function() {
             }
         }
     };
+
+    function onMenuClick(e) {
+        // if(this.classList.contains('highlight')) {
+        var menu = this.parentNode;
+        console.info("Toggle Menu", menu);
+        if(!menu.classList.contains('open')) {
+            e.preventDefault();
+            menu.classList.add('open');
+        }
+        var menus = document.getElementsByClassName('menu-link-container');
+        for(var i=0; i<menus.length; i++) {
+            if(menus[i] === menu)
+                continue;
+            menus[i].classList.remove('open');
+        }
+        // } else {
+        //     document.body.classList.remove('menu');
+        // }
+    }
+
+    function onSubMenuClick(e) {
+        // e.preventDefault();
+        // this.parentNode.parentNode.parentNode.classList.remove('open');
+        document.body.classList.remove('menu');
+    }
 
     return new Site;
 })();
