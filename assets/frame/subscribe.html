@@ -2,14 +2,12 @@
 <html>
     <head>
         <base href="../../" />
-        <title>Forgotten Future</title>
-        <meta name="keywords" CONTENT="forgotten future, game, music, relay, open-source, platformer, 2.5D, sidescroller, action, moon, donate, subscribe">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Cache-control" content="public">
-        <link href="assets/site.css?v=3" rel="stylesheet" />
-        <link href="assets/theme/minimal.css?v=3" rel="stylesheet" />
+        <link href="assets/site.css?v=4" rel="stylesheet" />
+        <link href="assets/theme/minimal.css?v=4" rel="stylesheet" />
 
-        <script src="assets/site.js?v=3"></script>
+        <script src="assets/site.js?v=4"></script>
         <script src="ffsite/messenger/messenger-client.js"></script>
 
         <script>
@@ -23,9 +21,20 @@
                     messenger.subscribe(topics);
                 });
             });
+
         </script>
     </head>
     <body style="overflow: hidden;">
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=24371359772&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <section class="themed theme-minimal">
             <h2 id="subscribe">Subscribe for updates</h2>
             <div class="page-option-header">
@@ -50,6 +59,42 @@
                         <input name="subscription-topic-dev" class="subscription-checkbox" type="checkbox" />
                         <span class="slider round"></span>
                     </label>
+                </div>
+
+                <div class="page-option">
+                    <span>Social Media</span>
+
+                    <div style="margin-top: 0px; display: inline-block;">
+                        <!-- Rounded switch -->
+                        <div class="fb-like"
+                             data-href="https://www.facebook.com/forgottenfuturegame/"
+                             data-layout="button_count"
+                             data-action="like"
+                             data-size="small"
+                             data-show-faces="true"
+                             data-share="true">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 5px; display: inline-block;">
+                        <!-- Place this tag where you want the widget to render. -->
+                        <div class="g-follow"
+                             style="margin-top: 4px;"
+                             data-annotation="bubble"
+                             data-height="20"
+                             data-href="//plus.google.com/u/1/107041646572227293252"
+                             data-rel="author"></div>
+
+                        <!-- Place this tag after the last widget tag. -->
+                        <script type="text/javascript">
+                            (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/platform.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                            })();
+                        </script>
+                    </div>
+
                 </div>
             </form>
 
