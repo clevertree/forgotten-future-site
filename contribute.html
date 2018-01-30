@@ -8,6 +8,15 @@
         <script src="assets/site.js?v=5"></script>
         <link href="assets/site.css?v=5" rel="stylesheet" />
         <link href="assets/theme/minimal.css?v=5" rel="stylesheet" />
+        <style>
+            .number-percentage:after {
+                content: '%'
+            }
+            .number-percentage {
+                display: inline-block;
+                min-width: 32px;
+            }
+        </style>
     </head>
     <body class='theme-minimal'>
         <header class="page-header">
@@ -111,9 +120,23 @@
                 Contributors that donate above a certain amount may request developer access to the source repository.
             </p>
 
+            <h2 id="status">Development Status</h2>
+            <ul class="themed">
+                <li><span class="number-percentage" style="color: green;">80</span>
+                    <a href="https://github.com/clevertree/forgotten-future-site" target="_blank">Informational Website</a></li>
+                <li><span class="number-percentage" style="color: yellow">20</span>
+                    <a href="https://github.com/clevertree/forgotten-future/tree/master/render/shader" target="_blank">WebGL Shaders</a></li>
+                <li><span class="number-percentage" style="color: red">5</span>
+                    <a href="https://github.com/clevertree/forgotten-future/tree/master/sprite" target="_blank">Sprite Sheets</a></li>
+                <li><span class="number-percentage" style="color: red">5</span>
+                    <a href="https://github.com/clevertree/forgotten-future/tree/master/terrain" target="_blank">Physics & Terrain</a></li>
+            </ul>
+
             <p class="themed">
-                More Coming Soon...
+                Check back soon...
             </p>
+
+            <hr style="clear: both;"/>
 
             <h2 id="donate">Make a Donation</h2>
             <section class="themed theme-minimal">
