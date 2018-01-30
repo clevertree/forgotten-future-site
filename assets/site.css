@@ -95,12 +95,10 @@ ul.tier-description .includes {
 }
 
 /** Tier Content Mobile/Responsive View **/
-@media only screen and (max-width: 750px) {
-    .tier-categories {
-        float: none;
-        margin-top: 48px;
-        max-width: 750px;
-    }
+body.mobile .tier-categories {
+    float: none;
+    margin-top: 48px;
+    max-width: 750px;
 }
 
 .page-section {

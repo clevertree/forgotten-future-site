@@ -4,16 +4,16 @@
     margin: 0 0;
     font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
+
+/** Background Image **/
 body.theme-minimal {
-    color: #a7feef;
-    margin: 0 0;
     background: #010101 url(../img/bk/bk-moon.png) no-repeat fixed center;
-    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
 
 
 /** Page Articles **/
-.theme-minimal > article {
+.theme-minimal > article,
+.theme-minimal article.themed {
     padding: 40px 8px 8px 8px;
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.0) 100%);
     margin: 0 auto;
@@ -21,6 +21,11 @@ body.theme-minimal {
     min-height: 480px;
 }
 
+
+/** Section **/
+.theme-minimal section.themed {
+    padding-bottom: 2em;
+}
 
 /** Page Headings **/
 .theme-minimal h1.themed,
@@ -46,39 +51,34 @@ body.theme-minimal {
     color: #bddfe9;
 }
 
-/** Section **/
-.theme-minimal section.themed {
-    padding-bottom: 2em;
-}
-
 /** Paragraphs **/
-.theme-minimal article > p {
-    text-align: justify;
-}
-
+.theme-minimal article > p,
 .theme-minimal p.themed {
+    text-align: justify;
     color: #a7feef;
-    text-indent: 1em;
+    text-indent: 1.5em;
     max-width: 960px;
     margin: 1em auto;
     animation: flickerAnimation 14s infinite;
 }
 .theme-minimal p.themed:nth-of-type(2) {
-    animation: flickerAnimation 17s infinite;
-}
-.theme-minimal p.themed:nth-of-type(3) {
     animation: flickerAnimation 15s infinite;
 }
-.theme-minimal p.themed:nth-of-type(4) {
+.theme-minimal p.themed:nth-of-type(3) {
     animation: flickerAnimation 16s infinite;
 }
-
+.theme-minimal p.themed:nth-of-type(4) {
+    animation: flickerAnimation 17s infinite;
+}
+.theme-minimal p.themed:nth-of-type(5) {
+    animation: flickerAnimation 18s infinite;
+}
 
 .theme-minimal p:first-letter {
     /*font-size: larger;*/
-    line-height: 1.25em;
-    font-weight: bold;
-    padding-right: 3px;
+    /*line-height: 1.25em;*/
+    /*font-weight: bold;*/
+    /*padding-right: 3px;*/
 }
 @keyframes flickerAnimation {
     0%  { color: #a7feef; }
@@ -97,7 +97,7 @@ body.theme-minimal {
 .theme-minimal ul.themed {
     max-width: 900px;
     margin: 1em auto;
-    animation: flickerAnimation 12s infinite;
+    animation: flickerAnimation 22s infinite;
 }
 
 /** Footer **/
@@ -170,6 +170,7 @@ ul.submenu-links {
     transition-delay: 0.2s;
 }
 
+.menu-links li.menu-link-container:hover > ul.submenu-links,
 .menu-links li.menu-link-container.open > ul.submenu-links {
     opacity: 1;
     display: block;
@@ -205,82 +206,79 @@ ul.submenu-links {
 
 
 /** Mobile/Responsive View **/
-@media only screen and (max-width: 500px) {
 
-
-    /** Mobile Page Header **/
-    .theme-minimal header.page-header {
-        position: fixed;
-        z-index: 1;
-    }
-
-    /** Mobile Articles **/
-    .theme-minimal article {
-        opacity: 1;
-        transition: opacity 1s 0.5s ease-in;
-    }
-    .menu.theme-minimal article {
-        opacity: 0.05;
-        transition: opacity 0.2s ease-in;
-    }
-
-    /** Page Menu Toggle **/
-    .theme-minimal .toggle-page-menu {
-        display: block;
-        /* position: absolute; */
-    }
-
-    /** Mobile Page Links **/
-    .theme-minimal ul.menu-links {
-        /*position: absolute;*/
-        background-color: #000;
-        /*padding: 3em 1em;*/
-        font-size: x-large;
-        list-style: circle;
-        max-width: 0;
-        max-height: 0;
-        transition: max-width 1s;
-        overflow: hidden;
-        white-space: nowrap;
-        /*         padding: 0.5em; */
-    }
-
-    .theme-minimal ul.menu-links > li {
-        /* border: 1px outset #333; */
-    }
-    .theme-minimal ul.menu-links > li.highlight,
-    .theme-minimal ul.menu-links > li:hover {
-        /* border: 1px outset #888; */
-    }
-
-    .theme-minimal ul.menu-links li {
-        display: block;
-    }
-
-
-    .theme-minimal ul.menu-links li a:before { content: " : "; }
-    .theme-minimal ul.menu-links li a {
-        padding: 12px;
-        font-size: larger;
-    }
-
-    /** Menu Open **/
-    .menu.theme-minimal ul.menu-links {
-        max-width: 500px;
-        max-height: 1000px;
-        z-index: 9;
-    }
-
-    /** Submenu **/
-    .theme-minimal.menu  li.menu-link-container ul.submenu-links {
-        position: relative;
-        max-height: 0px;
-        transition: max-height 1s;
-    }
-    .theme-minimal.menu li.menu-link-container.open ul.submenu-links {
-        position: relative;
-        max-height: 500px;
-        transition: max-height 1s;
-    }
-
+/** Mobile Page Header **/
+.theme-minimal.mobile header.page-header {
+    position: fixed;
+    z-index: 1;
 }
+
+/** Mobile Articles **/
+.theme-minimal.mobile article {
+    opacity: 1;
+    transition: opacity 1s 0.5s ease-in;
+}
+.theme-minimal.mobile.menu article {
+    opacity: 0.05;
+    transition: opacity 0.2s ease-in;
+}
+
+/** Page Menu Toggle **/
+.theme-minimal.mobile .toggle-page-menu {
+    display: block;
+    /* position: absolute; */
+}
+
+/** Mobile Page Links **/
+.theme-minimal.mobile ul.menu-links {
+    /*position: absolute;*/
+    background-color: #000;
+    /*padding: 3em 1em;*/
+    font-size: x-large;
+    list-style: circle;
+    max-width: 0;
+    max-height: 0;
+    transition: max-width 1s;
+    overflow: hidden;
+    white-space: nowrap;
+    /*         padding: 0.5em; */
+}
+
+.theme-minimal.mobile ul.menu-links > li {
+    /* border: 1px outset #333; */
+}
+.theme-minimal.mobile ul.menu-links > li.highlight,
+.theme-minimal.mobile ul.menu-links > li:hover {
+    /* border: 1px outset #888; */
+}
+
+.theme-minimal.mobile ul.menu-links li {
+    display: block;
+}
+
+
+.theme-minimal.mobile ul.menu-links li a:before { content: " : "; }
+.theme-minimal.mobile ul.menu-links li a {
+    padding: 12px;
+    font-size: larger;
+}
+
+/** Menu Open **/
+.theme-minimal.mobile.menu ul.menu-links {
+    max-width: 500px;
+    max-height: 1000px;
+    z-index: 9;
+}
+
+/** Submenu **/
+.theme-minimal.mobile.menu  li.menu-link-container ul.submenu-links {
+    position: relative;
+    max-height: 0px;
+    transition: max-height 1s;
+}
+.theme-minimal.mobile.menu li.menu-link-container.open ul.submenu-links {
+    position: relative;
+    max-height: 500px;
+    transition: max-height 1s;
+}
+
