@@ -86,6 +86,13 @@ body.theme-minimal {
     100% { color: #a7feef; }
 }
 
+/** Lists **/
+
+.theme-minimal ul.themed {
+    max-width: 900px;
+    margin: 1em auto;
+    animation: flickerAnimation 12s infinite;
+}
 
 /** Footer **/
 
