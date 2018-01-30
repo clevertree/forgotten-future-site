@@ -15,6 +15,7 @@ var site = (function() {
                 ['By Playing', 'contribute.html#play'],
                 ['By Sponsoring', 'contribute.html#sponsor'],
                 ['By Developing', 'contribute.html#develop'],
+                ['Check Status', 'contribute.html#status'],
             ]],
             ['Media', 'media.html', [
                 ['FF OST Sample', 'media.html#music'],
