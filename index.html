@@ -10,19 +10,6 @@
 
         <script src="assets/site.js?v=3"></script>
         <script src="ffsite/messenger/messenger-client.js"></script>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                site.onEvent('subscription-checkbox', 'click', function(e) {
-                    var topics = [], elm;
-                    if((elm = document.getElementsByName('subscription-topic-news')[0]) && elm.checked)
-                        topics.push('news');
-                    if((elm = document.getElementsByName('subscription-topic-dev')[0]) && elm.checked)
-                        topics.push('dev');
-                    messenger.subscribe(topics);
-                });
-            });
-        </script>
     </head>
     <body class='theme-minimal'>
         <header class="page-header">
@@ -56,57 +43,13 @@
                 </p>
             </section>
 
-            <section class="themed">
-                <h2 id="subscribe">Subscribe for updates</h2>
-                <div class="page-option-header">
-                    Subscribe for updates
-                </div>
-                <form action="ffsite/messenger/api.php">
-                    <div class="page-option">
-                        <span>News & Announcements</span>
+            <iframe src="assets/frame/subscribe.html" style="border: 0; width: 100%; height: 300px; overflow: hidden;">
 
-                        <!-- Rounded switch -->
-                        <label class="page-option-slider">
-                            <input name="subscription-topic-news" class="subscription-checkbox" type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="page-option">
-                        <span>Developer Updates</span>
+            </iframe>
 
-                        <!-- Rounded switch -->
-                        <label class="page-option-slider">
-                            <input name="subscription-topic-dev" class="subscription-checkbox" type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </form>
-                <div class="page-option-footer">
-                    You will get a browser notification for updates.
-                </div>
-            </section>
+            <iframe src="assets/frame/donate.html" style="border: 0; width: 100%; height: 300px; overflow: hidden;">
 
-            <section class="themed">
-                <h2>Make a Donation</h2>
-                <p class="themed">
-                    The Forgotten Future Project needs your contribution. Become an official <a href="contribute.html">sponsor</a> and
-                    help bring this game to life.
-                    Also make sure to check out <a href="contribute.html#tiers">reward tiers</a> available to everyone who contributes!
-                </p>
-                <div class="page-option-header">
-                    Make a donation
-                </div>
-                <div class="page-option">
-                    <span>By PayPal</span>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GV3VQ8K2LZD8G">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    </a>
-
-                </div>
-                <div class="page-option-footer">
-                    Sponsors receive <a href="contribute.html">Tier Rewards</a> based on their donation.
-                </div>
-            </section>
+            </iframe>
 
         </article>
         <footer>

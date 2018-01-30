@@ -21,7 +21,7 @@ var site = (function() {
                 ['FF Concept Art', 'media.html#art'],
             ]],
             ['FAQ', 'faq.html'],
-            ['Demo', 'demo.html']
+            ['WebGL Demo', 'demo.html']
         ]
     }
 

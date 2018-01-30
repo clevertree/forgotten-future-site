@@ -2,6 +2,11 @@
 .theme-minimal {
     color: #a7feef;
     margin: 0 0;
+    font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+}
+body.theme-minimal {
+    color: #a7feef;
+    margin: 0 0;
     background: #010101 url(../img/bk/bk-moon.png) no-repeat fixed center;
     font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 }
