@@ -58,7 +58,7 @@ var site = (function() {
             fileName = hashSplit[0];
             hash = hashSplit[1];
         }
-        console.log("generating nav links: ", fileName, hash);
+        // console.log("generating nav links: ", fileName, hash);
         for (var i = 0; i < this.links.length; i++) {
             var liMenuContainer = document.createElement('li');
             liMenuContainer.classList.add('menu-link-container');
@@ -101,7 +101,7 @@ var site = (function() {
         // if(this.classList.contains('highlight')) {
         var menu = this.parentNode;
         var submenu = this.nextSibling;
-        console.info("Toggle Menu", menu, submenu);
+        // console.info("Toggle Menu", menu, submenu);
         if(!menu.classList.contains('open') && submenu) {
             e.preventDefault();
             menu.classList.add('open');
