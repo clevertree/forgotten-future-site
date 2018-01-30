@@ -23,17 +23,23 @@ body.theme-minimal {
 
 
 /** Page Headings **/
-.theme-minimal article > h1 {
+.theme-minimal h1.themed,
+.theme-minimal article > h1,
+.theme-minimal section > h1 {
     font-size: 2.5em;
     color: #daf7ff;
 }
 
-.theme-minimal article > h2 {
+.theme-minimal h2.themed,
+.theme-minimal article > h2,
+.theme-minimal section > h2 {
     font-size: x-large /*     padding: 0 0.5em; */;
     color: beige;
 }
 
-.theme-minimal article > h3 {
+.theme-minimal h3.themed,
+.theme-minimal article > h3,
+.theme-minimal section > h3 {
     font-size:larger
 /*     padding: 0 0.5em; */;
     margin-left: .5em;
