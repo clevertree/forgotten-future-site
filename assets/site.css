@@ -134,6 +134,7 @@ ul.tier-description .includes {
     font-size: 10px;
     /*font-style: italic;*/
     color: #888888;
+    white-space: nowrap;
 }
 
 .page-option {
@@ -159,7 +160,7 @@ ul.tier-description .includes {
     overflow: hidden;
 }
 .iframe-subscribe {
-    min-height: 268px;
+    min-height: 279px;
 }
 .iframe-donate {
     min-height: 170px;
