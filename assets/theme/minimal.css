@@ -14,11 +14,15 @@ body.theme-minimal {
 /** Page Articles **/
 .theme-minimal > article,
 .theme-minimal article.themed {
-    padding: 40px 8px 8px 8px;
+    padding: 40px 1vw 8px 2vw;
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.0) 100%);
     margin: 0 auto;
     max-width: 1080px;
     min-height: 480px;
+    border: solid;
+    border-width: 0 1px 0 1px;
+    border-image:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0)) 1 100%;
 }
 
 
@@ -80,6 +84,22 @@ body.theme-minimal {
     /*font-weight: bold;*/
     /*padding-right: 3px;*/
 }
+
+/** Lists **/
+
+.theme-minimal ul.themed {
+    max-width: 900px;
+    margin: 1em auto;
+    animation: flickerAnimation 22s infinite;
+}
+
+/** Emphasis **/
+
+.theme-minimal p.themed > em:nth-of-type(1) { animation: flickerAnimation 13s infinite; }
+.theme-minimal p.themed > em:nth-of-type(2) { animation: flickerAnimation 12s infinite; }
+.theme-minimal p.themed > i { animation: flickerAnimation 11s infinite; }
+.theme-minimal p.themed > b { animation: flickerAnimation 10s infinite; }
+
 @keyframes flickerAnimation {
     0%  { color: #a7feef; }
     84%  { color: #a7feef; }
@@ -90,14 +110,6 @@ body.theme-minimal {
     97.9% { color: #a7feef; }
     98%  { color: #a1dbd1; }
     100% { color: #a7feef; }
-}
-
-/** Lists **/
-
-.theme-minimal ul.themed {
-    max-width: 900px;
-    margin: 1em auto;
-    animation: flickerAnimation 22s infinite;
 }
 
 /** Footer **/
@@ -216,7 +228,7 @@ ul.submenu-links {
 /** Mobile Articles **/
 .theme-minimal.mobile article {
     opacity: 1;
-    transition: opacity 1s 0.5s ease-in;
+    transition: opacity 1s 0.2s ease-in;
 }
 .theme-minimal.mobile.menu article {
     opacity: 0.05;

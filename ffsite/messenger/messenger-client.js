@@ -41,7 +41,7 @@ var messenger = (function() {
                     messaging.useServiceWorker(registration);
                     messaging.getToken()
                         .then(function (existingToken) {
-                            console.log('Existing Token found:', existingToken);
+//                             console.log('Existing Token found:', existingToken);
                             if(existingToken)
                                 clientToken = existingToken;
                             updateSubscriptionUI();

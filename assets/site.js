@@ -1,6 +1,29 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
+    /** Site Links **/
+    site.links = [
+        ['Game', 'index.html'],
+        ['Story', 'story.html', [
+            ['Human History', 'story.html#timeline'],
+            ['Locations', 'story.html#locations'],
+            ['Technology', 'story.html#technology'],
+            ['Characters', 'story.html#characters'],
+            ['Vehicles', 'story.html#vehicles'],
+        ]],
+        ['Contribute', 'contribute.html', [
+            ['By Playing', 'contribute.html#play'],
+            ['By Sponsoring', 'contribute.html#sponsor'],
+            ['By Developing', 'contribute.html#develop'],
+            ['Check Status', 'contribute.html#status'],
+        ]],
+        ['Media', 'media.html', [
+            ['FF OST Sample', 'media.html?autoplay=true'],
+            ['FF Concept Art', 'media.html#art'],
+        ]],
+        ['FAQ', 'faq.html'],
+        ['WebGL Demo', 'demo.html']
+    ];
 
     // Event Listeners
     site.onEvent('toggle-page-menu', 'click', togglePageMenu);
@@ -29,28 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var site = (function() {
     function Site() {
-        this.links = [
-            ['Game', 'index.html'],
-            ['Story', 'story.html', [
-                ['Human History', 'story.html#timeline'],
-                ['Locations', 'story.html#locations'],
-                ['Technology', 'story.html#technology'],
-                ['Characters', 'story.html#characters'],
-                ['Vehicles', 'story.html#vehicles'],
-            ]],
-            ['Contribute', 'contribute.html', [
-                ['By Playing', 'contribute.html#play'],
-                ['By Sponsoring', 'contribute.html#sponsor'],
-                ['By Developing', 'contribute.html#develop'],
-                ['Check Status', 'contribute.html#status'],
-            ]],
-            ['Media', 'media.html', [
-                ['FF OST Sample', 'media.html#music'],
-                ['FF Concept Art', 'media.html#art'],
-            ]],
-            ['FAQ', 'faq.html'],
-            ['WebGL Demo', 'demo.html']
-        ]
+        this.links = [];
     }
 
     Site.prototype.getUrlParams = function() {
