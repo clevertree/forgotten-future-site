@@ -85,9 +85,9 @@ var site = (function() {
         var fileName = location.href.split("/").slice(-1)[0], hash=null;
         var hashSplit = fileName.split('#');
         if(hashSplit.length > 1) {
-            fileName = hashSplit[0];
             hash = hashSplit[1];
         }
+        fileName = hashSplit[0].split('?')[0];
         // console.log("generating nav links: ", fileName, hash);
         for (var i = 0; i < this.links.length; i++) {
             var liMenuContainer = document.createElement('li');
@@ -100,9 +100,11 @@ var site = (function() {
             container.appendChild(liMenuContainer);
             liMenuContainer.appendChild(aMenuLink);
 
-            if(this.links[i][1] === fileName)
+            if(this.links[i][1] === fileName) {
                 aMenuLink.classList.add('highlight');
-
+                if(document.body.classList.contains('mobile'))
+                    liMenuContainer.classList.add('open');
+            }
             if(this.links[i][2]) {
                 var ulSubMenu = document.createElement('ul');
                 ulSubMenu.classList.add('submenu-links'); // 'menu-links',
