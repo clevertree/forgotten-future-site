@@ -19,10 +19,9 @@ body.theme-minimal {
     margin: 0 auto;
     max-width: 1080px;
     min-height: 480px;
-    border: solid;
-    border-width: 0 1px 0 1px;
-    border-image:
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0)) 1 100%;
+    border: inset;
+    border-width: 0 2px 0 2px;
+    border-image: linear-gradient(to bottom, rgba(0, 44, 69, 0.75), rgba(0, 44, 69, 0.0)) 1 100%;
 }
 
 
@@ -132,7 +131,8 @@ body.theme-minimal {
 
 /** Page Navigation Links **/
 
-.theme-minimal ul.menu-links {
+.theme-minimal ul.menu-links,
+.theme-minimal ul.submenu-links {
     list-style: none;
     text-align: center;
     padding: 0 0;
