@@ -250,7 +250,7 @@ ul.submenu-links {
 .theme-minimal.mobile .toggle-page-menu {
     display: block;
     /* position: absolute; */
-    cursor:;
+    cursor: pointer;
 }
 
 /** Mobile Page Links **/
