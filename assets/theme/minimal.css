@@ -14,7 +14,7 @@ body.theme-minimal {
 /** Page Articles **/
 .theme-minimal > article,
 .theme-minimal article.themed {
-    padding: 40px 1vw 8px 2vw;
+    padding: 38px 2vw 0px 2vw;
     background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0.0) 100%);
     margin: 0 auto;
     max-width: 1080px;
@@ -37,6 +37,7 @@ body.theme-minimal {
 .theme-minimal section > h1 {
     font-size: 2.5em;
     color: #daf7ff;
+    margin: 6px 0px;
 }
 
 .theme-minimal h2.themed,
@@ -204,16 +205,25 @@ ul.submenu-links {
     margin: 1em;
     width: 48px;
     height: 48px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition: transform 0.3s;
-    border-radius: 8px;
+    border-radius: 12px;
     user-select: none;
     outline: 0;
     float: right;
+    background: #79797940;
+    border: 0;
+    background-image:  url('../img/button/btn_menu.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.theme-minimal .toggle-page-menu>* {
+    content: '|||';
 }
 
 .menu.theme-minimal .toggle-page-menu {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 
 
@@ -229,6 +239,7 @@ ul.submenu-links {
 .theme-minimal.mobile article {
     opacity: 1;
     transition: opacity 1s 0.2s ease-in;
+    padding: 1px 2vw 1px 2vw;
 }
 .theme-minimal.mobile.menu article {
     opacity: 0.05;
@@ -239,6 +250,7 @@ ul.submenu-links {
 .theme-minimal.mobile .toggle-page-menu {
     display: block;
     /* position: absolute; */
+    cursor:;
 }
 
 /** Mobile Page Links **/
