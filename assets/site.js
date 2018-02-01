@@ -105,7 +105,7 @@ var site = (function() {
 
             if(this.links[i][2]) {
                 var ulSubMenu = document.createElement('ul');
-                ulSubMenu.classList.add('menu-links', 'submenu-links');
+                ulSubMenu.classList.add('submenu-links'); // 'menu-links',
                 liMenuContainer.appendChild(ulSubMenu);
                 for(var j=0; j<this.links[i][2].length; j++) {
                     var liSubMenuContainer = document.createElement('li');
@@ -116,7 +116,7 @@ var site = (function() {
                     var aSubmenuLink = document.createElement('a');
                     aSubmenuLink.addEventListener('click', onSubMenuClick);
                     aSubmenuLink.href = sublink[1];
-                    aSubmenuLink.classList.add('menu-link', 'submenu-link');
+                    aSubmenuLink.classList.add('submenu-link'); // 'menu-link',
                     aSubmenuLink.innerHTML = sublink[0];
                     liSubMenuContainer.appendChild(aSubmenuLink);
                     // if(sublink[1] === fileName + '#' + hash)

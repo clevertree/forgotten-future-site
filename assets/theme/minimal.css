@@ -281,10 +281,13 @@ ul.submenu-links {
 }
 
 
-.theme-minimal.mobile ul.menu-links li a:before { content: " : "; }
+.theme-minimal.mobile ul.menu-links li a:before {/* content: ":"; */}
 .theme-minimal.mobile ul.menu-links li a {
     padding: 12px;
-    font-size: larger;
+    font-size: 24px;
+}
+.theme-minimal.mobile ul.submenu-links li a {
+    font-size: 16px;
 }
 
 /** Menu Open **/
@@ -304,5 +307,6 @@ ul.submenu-links {
     position: relative;
     max-height: 500px;
     transition: max-height 1s;
+    padding-left: 12px;
 }
 
