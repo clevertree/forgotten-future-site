@@ -195,7 +195,7 @@ ul.submenu-links {
 }
 
 /** Anchor Links **/
-.theme-minimal > article a {
+.theme-minimal a {
     color: #fbd9ff;
     text-decoration: none;
 }
