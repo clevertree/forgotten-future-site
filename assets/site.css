@@ -9,6 +9,7 @@
 /** Page Menu **/
 .toggle-page-menu {
     display: none;
+    user-select: none;
 }
 
 .page-button {max-width: 42em;margin: 0 auto;}
