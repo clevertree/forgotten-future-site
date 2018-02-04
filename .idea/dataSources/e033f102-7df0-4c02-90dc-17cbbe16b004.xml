@@ -1449,65 +1449,95 @@
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="358" parent="338" name="extra">
+    <column id="358" parent="338" name="private_key">
       <Position>6</Position>
       <DataType>text|0</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="359" parent="338" name="PRIMARY">
+    <column id="359" parent="338" name="public_key">
+      <Position>7</Position>
+      <DataType>text|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="360" parent="338" name="extra">
+      <Position>8</Position>
+      <DataType>text|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="361" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="360" parent="339" name="id">
+    <column id="362" parent="339" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="339" name="user_id">
+    <column id="363" parent="339" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="339" name="created">
+    <column id="364" parent="339" name="created">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="339" name="token">
+    <column id="365" parent="339" name="token">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="339" name="extra">
+    <column id="366" parent="339" name="ip_address">
       <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="367" parent="339" name="hostname">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="368" parent="339" name="agent">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="369" parent="339" name="extra">
+      <Position>8</Position>
       <DataType>text|0</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="365" parent="339" name="user_token_unique_token">
+    <index id="370" parent="339" name="user_token_unique_token">
       <ColNames>token</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="366" parent="339" name="user_token_user_id_idx">
+    <index id="371" parent="339" name="user_token_user_id_idx">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="367" parent="339" name="PRIMARY">
+    <key id="372" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="368" parent="339" name="user_token_unique_token">
+    <key id="373" parent="339" name="user_token_unique_token">
       <ColNames>token</ColNames>
       <UnderlyingIndexName>user_token_unique_token</UnderlyingIndexName>
     </key>
-    <foreign-key id="369" parent="339" name="user_token_user_id">
+    <foreign-key id="374" parent="339" name="user_token_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>ff-production</RefSchemaName>
       <RefTableName>user</RefTableName>

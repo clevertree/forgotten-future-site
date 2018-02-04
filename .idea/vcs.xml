@@ -4,6 +4,5 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/game" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/media/concept" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../jewbeii.com" vcs="Git" />
   </component>
 </project>
