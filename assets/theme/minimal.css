@@ -25,30 +25,22 @@ body.theme-minimal {
 }
 
 
-/** Section **/
-.theme-minimal section.themed {
-    /* padding-bottom: 2em; */
-}
-
 /** Page Headings **/
 .theme-minimal h1.themed,
-.theme-minimal article > h1,
-.theme-minimal section > h1 {
+.theme-minimal .themed > h1 {
     font-size: 2.5em;
     color: #daf7ff;
     margin: 6px 0px;
 }
 
 .theme-minimal h2.themed,
-.theme-minimal article > h2,
-.theme-minimal section > h2 {
+.theme-minimal .themed > h2 {
     font-size: x-large /*     padding: 0 0.5em; */;
     color: beige;
 }
 
 .theme-minimal h3.themed,
-.theme-minimal article > h3,
-.theme-minimal section > h3 {
+.theme-minimal .themed > h3 {
     font-size:larger
 /*     padding: 0 0.5em; */;
     margin-left: .5em;
@@ -56,7 +48,7 @@ body.theme-minimal {
 }
 
 /** Paragraphs **/
-.theme-minimal section.themed p,
+.theme-minimal .themed p,
 .theme-minimal p.themed {
     text-align: justify;
     color: #a7feef;
@@ -87,9 +79,9 @@ body.theme-minimal {
 
 /** Lists **/
 
-.theme-minimal section.themed > ol,
+.theme-minimal .themed > ol,
 .theme-minimal ol.themed,
-.theme-minimal section.themed > ul,
+.theme-minimal .themed > ul,
 .theme-minimal ul.themed {
     max-width: 900px;
     margin: 1em auto;
