@@ -96,6 +96,7 @@ body.theme-minimal {
     animation: flickerAnimation 22s infinite;
 }
 
+.theme-minimal ol {}
 /** Emphasis **/
 
 .theme-minimal p.themed > em:nth-of-type(1) { animation: flickerAnimation 13s infinite; }
@@ -215,12 +216,9 @@ ul.submenu-links {
     user-select: none;
     outline: 0;
     float: right;
-    background: #00000040;
     border: 0;
-    background-image:  url('../img/button/btn_menu.png');
     background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background: #00000040 url('../img/button/btn_menu.png') no-repeat 50% 50%;
 }
 .theme-minimal .toggle-page-menu>* {
     content: '|||';
