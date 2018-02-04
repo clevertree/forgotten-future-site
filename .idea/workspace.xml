@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/frame/donate.html" afterPath="$PROJECT_DIR$/assets/frame/donate.html" />
-      <change beforePath="$PROJECT_DIR$/assets/frame/subscribe.html" afterPath="$PROJECT_DIR$/assets/frame/subscribe.html" />
-      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" />
-      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
-      <change beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
-      <change beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
       <change beforePath="$PROJECT_DIR$/story.html" afterPath="$PROJECT_DIR$/story.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +64,8 @@
       <file leaf-file-name="story.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/story.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="193" column="9" lean-forward="true" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="175" column="65" lean-forward="false" selection-start-line="175" selection-start-column="65" selection-end-line="175" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -226,12 +218,12 @@
       <updated>1517771226766</updated>
       <workItem from="1517771229187" duration="93000" />
       <workItem from="1517771389537" duration="51000" />
-      <workItem from="1517776307933" duration="1963000" />
+      <workItem from="1517776307933" duration="2050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2107000" />
+    <option name="totallyTimeSpent" value="2194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="193" column="9" lean-forward="true" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="175" column="65" lean-forward="false" selection-start-line="175" selection-start-column="65" selection-end-line="175" selection-end-column="65" />
           <folding />
         </state>
       </provider>
