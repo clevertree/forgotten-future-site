@@ -52,7 +52,6 @@
 
 .tier-categories {
     float: right;
-    margin-top: 32px;
     max-width: 400px;
 }
 
@@ -98,7 +97,7 @@ ul.tier-description .includes {
 /** Tier Content Mobile/Responsive View **/
 body.mobile .tier-categories {
     float: none;
-    margin-top: 48px;
+    /* margin-top: 48px; */
     max-width: 750px;
 }
 
