@@ -48,8 +48,8 @@ body.theme-minimal {
 }
 
 /** Paragraphs **/
-.theme-minimal .themed p,
-.theme-minimal p.themed {
+.theme-minimal p.themed,
+.theme-minimal .themed > p {
     text-align: justify;
     color: #a7feef;
     text-indent: 1.5em;
