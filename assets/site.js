@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             ['Human History', 'story.html#timeline'],
             ['Locations', 'story.html#locations'],
             ['Technology', 'story.html#technology'],
+            ['Life Forms', 'story.html#lifeforms'],
             ['Characters', 'story.html#characters'],
             ['Vehicles', 'story.html#vehicles'],
         ]],
