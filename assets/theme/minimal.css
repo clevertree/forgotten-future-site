@@ -87,8 +87,41 @@ body.theme-minimal {
     margin: 1em auto;
     animation: flickerAnimation 22s infinite;
 }
-
 .theme-minimal ol {}
+
+/** Tables **/
+.theme-minimal .themed > table,
+.theme-minimal table.themed {
+    max-width: 900px;
+    margin: 1em auto;
+    animation: flickerAnimation 32s infinite;
+    border-collapse: collapse;
+    /*border: 1px solid #002c4580;*/
+    border-radius: 8px;
+    background: #002c4540;
+}
+
+/** Table Header **/
+.theme-minimal .themed > table > thead > tr > th,
+.theme-minimal table.themed > thead > tr > th {
+    background: #002c4580;
+    border: 1px outset #002c45;
+    padding: 6px;
+}
+
+/** Table Body Header **/
+.theme-minimal .themed > table > tbody > tr > th,
+.theme-minimal table.themed > tbody > tr > th {
+    padding: 5px 20px 5px 20px;
+    /*background: #002c4560;*/
+}
+
+/** Table Row **/
+.theme-minimal .themed > table > tbody > tr > td,
+.theme-minimal table.themed > tbody > tr > td {
+    padding: 6px;
+}
+
 /** Emphasis **/
 
 .theme-minimal p.themed > em:nth-of-type(1) { animation: flickerAnimation 13s infinite; }

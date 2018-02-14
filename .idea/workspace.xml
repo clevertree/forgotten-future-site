@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/assets/frame/donate.html" afterPath="$PROJECT_DIR$/assets/frame/donate.html" />
+      <change beforePath="$PROJECT_DIR$/assets/frame/subscribe.html" afterPath="$PROJECT_DIR$/assets/frame/subscribe.html" />
+      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" />
+      <change beforePath="$PROJECT_DIR$/contribute.html" afterPath="$PROJECT_DIR$/contribute.html" />
+      <change beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
+      <change beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
       <change beforePath="$PROJECT_DIR$/game" afterPath="$PROJECT_DIR$/game" />
       <change beforePath="$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js" afterPath="$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js" />
       <change beforePath="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" afterPath="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/media.html" afterPath="$PROJECT_DIR$/media.html" />
       <change beforePath="$PROJECT_DIR$/story.html" afterPath="$PROJECT_DIR$/story.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +56,28 @@
       <file leaf-file-name="story.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/story.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="76" lean-forward="true" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+            <state relative-caret-position="588">
+              <caret line="194" column="58" lean-forward="false" selection-start-line="194" selection-start-column="58" selection-end-line="194" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/site.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minimal.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="786">
+              <caret line="121" column="14" lean-forward="false" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -67,11 +96,15 @@
       <find>translates</find>
       <find>README</find>
       <find>Schema</find>
+      <find>.themed &gt; p</find>
+      <find>.themed &gt;</find>
+      <find>?v=a</find>
     </findStrings>
     <replaceStrings>
       <replace>?v=a</replace>
       <replace>p</replace>
       <replace>ul</replace>
+      <replace>?v=1.1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -80,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/media.html" />
         <option value="$PROJECT_DIR$/contribute.html" />
@@ -88,6 +120,7 @@
         <option value="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" />
         <option value="$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js" />
         <option value="$PROJECT_DIR$/assets/site.js" />
+        <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
         <option value="$PROJECT_DIR$/story.html" />
       </list>
     </option>
@@ -100,8 +133,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1912" />
+    <option name="y" value="-94" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -232,12 +265,12 @@
       <workItem from="1517889891179" duration="75000" />
       <workItem from="1517890578500" duration="123000" />
       <workItem from="1518554098302" duration="386000" />
-      <workItem from="1518621599631" duration="1704000" />
+      <workItem from="1518621599631" duration="6010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8408000" />
+    <option name="totallyTimeSpent" value="12714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,7 +282,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-94" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -283,13 +316,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
@@ -477,13 +503,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
-    <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -568,10 +587,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="121" column="14" lean-forward="false" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="76" lean-forward="true" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+        <state relative-caret-position="588">
+          <caret line="194" column="58" lean-forward="false" selection-start-line="194" selection-start-column="58" selection-end-line="194" selection-end-column="58" />
           <folding />
         </state>
       </provider>
