@@ -16,10 +16,11 @@ if($params && $params[0] === '{') {
 }
 
 echo "Executing Git Pull...\n";
+chdir('/var/www/forgotten-future');
 echo exec("git pull");
-chdir('../game');
+chdir('/var/www/forgotten-future/game');
 echo exec("git pull");
-chdir('../media/concept');
+chdir('/var/www/forgotten-future/media/concept');
 echo exec("git pull");
 
 echo "\nParameters: \n";
