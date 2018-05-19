@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/game/render/shader/polygon.shader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game" beforeDir="false" afterPath="$PROJECT_DIR$/game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,34 +43,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="polygon.shader.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="polygon.shader.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/render/shader/polygon.shader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="83" column="36" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="36" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stage.prototype.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/render/prototype/stage.prototype.js">
+      <file leaf-file-name="lem.sprite.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2057" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.prototype.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/render/prototype/platform.prototype.js">
+      <file leaf-file-name="sprite.shader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/render/shader/sprite.shader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315" />
+            <state relative-caret-position="1666">
+              <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridmap2d.shader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js">
+      <file leaf-file-name="RAV.sprite.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="221" column="122" selection-start-line="221" selection-start-column="122" selection-end-line="221" selection-end-column="122" />
+            <state relative-caret-position="493">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moon1.platform.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/platform/moon/moon1.platform.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235926">
+              <caret line="13891" column="4" selection-start-line="13891" selection-start-column="4" selection-end-line="13891" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sprite.prototype.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/render/prototype/sprite.prototype.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2380">
+              <caret line="140" column="56" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -80,13 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section.theme</find>
-      <find>?v=9</find>
-      <find>border-radius</find>
-      <find>p class=&quot;themed&quot;</find>
-      <find>ul class</find>
-      <find>ul class=&quot;themed&quot;</find>
-      <find>translates</find>
       <find>README</find>
       <find>Schema</find>
       <find>.themed &gt; p</find>
@@ -97,6 +120,26 @@
       <find>intro</find>
       <find>Sprite</find>
       <find>bufVertexPosition</find>
+      <find>highp</find>
+      <find>.gender</find>
+      <find>bufTextureCoordinate</find>
+      <find>aVertexPosition</find>
+      <find>PROGRAM</find>
+      <find>vao</find>
+      <find>VAO</find>
+      <find>drawArrays</find>
+      <find>aTextureCoordinate</find>
+      <find>vTextureCoordinate</find>
+      <find>enableVertexAttribArray</find>
+      <find>program.attr</find>
+      <find>uColor</find>
+      <find>DIR_SPRITE</find>
+      <find>drawElement</find>
+      <find>indexList</find>
+      <find>RAV.indexList</find>
+      <find>new Float32</find>
+      <find>new Uint</find>
+      <find>Util.loadImage</find>
     </findStrings>
     <replaceStrings>
       <replace>?v=a</replace>
@@ -104,6 +147,10 @@
       <replace>ul</replace>
       <replace>?v=1.1</replace>
       <replace>Polygon</replace>
+      <replace>varyTextureCoordinate</replace>
+      <replace>attr</replace>
+      <replace>uniformColor</replace>
+      <replace>indexList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -119,26 +166,34 @@
         <option value="$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js" />
         <option value="$PROJECT_DIR$/assets/site.js" />
         <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
-        <option value="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" />
         <option value="$PROJECT_DIR$/story.html" />
         <option value="$PROJECT_DIR$/game/terrain/terrain.prototype.js" />
-        <option value="$PROJECT_DIR$/game/render/shader/polygon.shader.js" />
         <option value="$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js" />
+        <option value="$PROJECT_DIR$/game/render/shader/polygon.shader.js" />
+        <option value="$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="x" value="1911" />
+    <option name="y" value="-1083" />
+    <option name="width" value="3858" />
+    <option name="height" value="2118" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,19 +218,6 @@
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="moon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="render" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,6 +233,42 @@
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="render" type="462c0819:PsiDirectoryNode" />
               <item name="shader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+              <item name="lem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="sprite" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicle" type="462c0819:PsiDirectoryNode" />
+              <item name="RAV" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
@@ -219,7 +297,7 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -268,11 +346,17 @@
       <workItem from="1521585407749" duration="34000" />
       <workItem from="1521849561997" duration="31000" />
       <workItem from="1524195834559" duration="1835000" />
+      <workItem from="1525740568595" duration="887000" />
+      <workItem from="1526572362594" duration="8256000" />
+      <workItem from="1526646803863" duration="35000" />
+      <workItem from="1526705654725" duration="3090000" />
+      <workItem from="1526737676886" duration="3048000" />
+      <workItem from="1526743783782" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23118000" />
+    <option name="totallyTimeSpent" value="38681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,24 +368,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="3858" height="2130" extended-state="6" />
+    <frame x="1915" y="-1079" width="2571" height="1411" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08984375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.089418195" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32946146" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -356,9 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2975">
@@ -400,9 +482,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -416,9 +495,6 @@
           <caret line="175" column="65" selection-start-line="175" selection-start-column="65" selection-end-line="175" selection-end-column="65" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -496,7 +572,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/sprite/sprite.prototype.js" />
-    <entry file="file://$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js" />
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5356">
@@ -505,63 +580,77 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/terrain/terrain.prototype.js" />
-    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/game/render/prototype/stage.prototype.js" />
+    <entry file="file://$PROJECT_DIR$/game/render/prototype/platform.prototype.js" />
+    <entry file="file://$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js" />
+    <entry file="file://$PROJECT_DIR$/game/stage/stage1/stage1.stage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/render/shader/tilemap.shader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="436" selection-start-line="436" selection-end-line="437" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/render/shader/heightmap.shader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="105" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/render/shader/polygon.shader.js.old" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235926">
+          <caret line="13891" column="4" selection-start-line="13891" selection-start-column="4" selection-end-line="13891" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/render/prototype/sprite.prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/stage/stage1/stage1.stage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/render/shader/sprite.shader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1047">
-          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/platform/moon/moon1.platform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/render/prototype/stage.prototype.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2057" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/render/prototype/platform.prototype.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="221" column="122" selection-start-line="221" selection-start-column="122" selection-end-line="221" selection-end-column="122" />
+        <state relative-caret-position="2380">
+          <caret line="140" column="56" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/render/shader/polygon.shader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="83" column="36" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="36" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/render/shader/sprite.shader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/platform/moon/moon1.platform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/sprite/vehicle/RAV/RAV.sprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="36" />
         </state>
       </provider>
     </entry>
