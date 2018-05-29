@@ -20,7 +20,7 @@ chdir('/var/www/forgotten-future');
 echo exec("git pull");
 chdir('/var/www/forgotten-future/game');
 echo exec("git pull");
-chdir('/var/www/forgotten-future/media/concept');
+chdir('/var/www/forgotten-future/media');
 echo exec("git pull");
 
 echo "\nParameters: \n";
