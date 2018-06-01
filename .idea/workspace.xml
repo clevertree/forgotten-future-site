@@ -2,47 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/28751532-ce70ec08-74be-11e7-83f9-7f3892025f77.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/character-sheet-lem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/concept/lem_concept9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/scans/IMG_20170717_0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/scans/IMG_20170717_0012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/scans/IMG_20170717_0017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/scans/IMG_20170717_0018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/lem/scans/IMG_20170718_0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170717_0009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170717_0010.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170718_0001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170718_0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170719_0001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/misc/IMG_20170719_0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/character-sheet-switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/concept/switch_concept1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/concept/switch_concept2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/scans/switch_scan1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/scans/switch_scan2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/scans/switch_scan3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/switch/scans/switch_scan4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/wedge/concept/wedge_concept2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/character/wedge/wedge_concept1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concept" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ffsite/git.php" beforeDir="false" afterPath="$PROJECT_DIR$/ffsite/git.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ffsite/pgp/lib/openpgp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game" beforeDir="false" afterPath="$PROJECT_DIR$/game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/media.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/concept" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/story.html" beforeDir="false" afterPath="$PROJECT_DIR$/story.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,20 +47,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RAV.sprite.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/sprites/vehicle/RAV/RAV.sprite.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/game.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2346">
               <caret line="138" column="38" selection-start-line="138" selection-start-column="38" selection-end-line="138" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -117,15 +92,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridmap2d.shader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6239">
-              <caret line="367" selection-start-line="367" selection-end-line="368" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="moon1.platform.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/platforms/moon/moon1.platform.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,7 +104,7 @@
       <file leaf-file-name="lem.sprite.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="612">
               <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
             </state>
           </provider>
@@ -147,20 +113,26 @@
       <file leaf-file-name="story.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="1717">
               <caret line="101" selection-end-line="302" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="git.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitmodules" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitmodules">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -217,7 +189,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/game" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -250,6 +222,7 @@
         <option value="$PROJECT_DIR$/story.html" />
         <option value="$PROJECT_DIR$/media/concept/README.md" />
         <option value="$PROJECT_DIR$/game/README.md" />
+        <option value="$PROJECT_DIR$/.gitmodules" />
       </list>
     </option>
   </component>
@@ -288,6 +261,29 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="ffsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="songs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,7 +380,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64971000" />
+    <option name="totallyTimeSpent" value="65390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,28 +392,46 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1915" y="-1079" width="2571" height="1411" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18703632" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0890625" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Debug" order="4" weight="0.28582585" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954165" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0890625" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" id="Debug" order="4" weight="0.28582585" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,8 +456,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e033f102-7df0-4c02-90dc-17cbbe16b004/console.sql" />
     <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -683,28 +695,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="612">
           <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="1717">
           <caret line="101" selection-end-line="302" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/concept/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="340">
-            <caret line="20" column="11" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/concept/README.md" />
     <entry file="file://$PROJECT_DIR$/game/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -712,6 +715,20 @@
             <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitmodules">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
