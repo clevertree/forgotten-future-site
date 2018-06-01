@@ -1,9 +1,6 @@
 [submodule "game"]
 	path = game
 	url = ssh://git@github.com/clevertree/forgotten-future
-[submodule "ffsite/pgp/lib/openpgp"]
-	path = ffsite/pgp/lib/openpgp
-	url = ssh://git@github.com/clevertree/openpgp-php
 [submodule "media"]
 	path = media
 	url = ssh://git@github.com/clevertree/forgotten-future-concept
