@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsDialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/audio/library/oscillator/simple.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game" beforeDir="false" afterPath="$PROJECT_DIR$/game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/song-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/song-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo-minimal.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo-minimal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo-notes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo-notes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/render/prototype/platform.prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/render/prototype/platform.prototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/render/prototype/sprite.prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/render/prototype/sprite.prototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/render/prototype/stage.prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/render/prototype/stage.prototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/render/shader/tilemap.shader.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/render/shader/tilemap.shader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/sprites/vehicle/RAV/RAV.sprite.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/sprites/vehicle/RAV/RAV.sprite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/stages/stage1/stage1.stage.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/stages/stage1/stage1.stage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,56 +45,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo-notes.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-notes.csv">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="342">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo-editor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
+      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="59" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo-minimal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-minimal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+            <state relative-caret-position="274">
+              <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
             </state>
           </provider>
         </entry>
@@ -126,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>v2VertexPosition</find>
       <find>4,1</find>
       <find>bufTextureCoordinate</find>
       <find>attrRotateX</find>
@@ -156,6 +104,7 @@
       <find>1,</find>
       <find>'default'</find>
       <find>this.seekPosition</find>
+      <find>.p</find>
     </findStrings>
     <replaceStrings>
       <replace>?v=a</replace>
@@ -184,7 +133,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/media.html" />
         <option value="$PROJECT_DIR$/contribute.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/assets/site.js" />
         <option value="$PROJECT_DIR$/assets/theme/minimal.css" />
         <option value="$PROJECT_DIR$/game/terrain/terrain.prototype.js" />
@@ -223,8 +171,10 @@
         <option value="$PROJECT_DIR$/server/client/index.js" />
         <option value="$PROJECT_DIR$/server/client/Html.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/faq.html" />
+        <option value="$PROJECT_DIR$/server/routes.js" />
       </list>
     </option>
   </component>
@@ -248,7 +198,6 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1865" />
@@ -283,6 +232,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/game" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -375,12 +325,12 @@
       <workItem from="1527628280562" duration="1015000" />
       <workItem from="1527883198599" duration="9000" />
       <workItem from="1528028267683" duration="6702000" />
-      <workItem from="1528039001395" duration="8674000" />
+      <workItem from="1528039001395" duration="12998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85621000" />
+    <option name="totallyTimeSpent" value="89945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,9 +349,9 @@
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960325" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32960325" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08847185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08847185" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32756868" />
@@ -457,27 +407,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contribute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="49" selection-start-line="49" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/stage/stage.prototype.js" />
     <entry file="file://$PROJECT_DIR$/game/terrain/moon/moon1.terrain.js" />
     <entry file="file://$PROJECT_DIR$/assets/site.js">
@@ -651,13 +580,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.js" />
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="210" column="99" selection-start-line="210" selection-start-column="99" selection-end-line="210" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -749,17 +671,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,15 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const routes = require(__dirname + '/routes.js');
+var bodyParser = require('body-parser');
 
-// app.get('/', (req, res) => res.send('Hello World!'));
-app.use('/', express.static(path.dirname(__dirname)));
+// configure app to use bodyParser()
+// this will let us get the data from a POST
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
+// Register Routes
+app.use('/', routes);
+
+// Start
 app.listen(3000, () => console.log('Example app listening on port 3000!'));

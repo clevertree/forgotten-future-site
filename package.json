@@ -4,14 +4,19 @@
   "description": "Forgotten Future Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "run": "node server/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/clevertree/forgotten-future-site.git"
   },
-  "keywords": ["webgl","video","game","music"],
+  "keywords": [
+    "webgl",
+    "video",
+    "game",
+    "music"
+  ],
   "author": "Ari Asulin",
   "license": "ISC",
   "bugs": {
@@ -19,6 +24,7 @@
   },
   "homepage": "https://github.com/clevertree/forgotten-future-site#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "simple-git": "^1.95.1"
   }
 }
