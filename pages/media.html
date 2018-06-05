@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>Forgotten Future: Media</title>
-        <meta name="keywords" CONTENT="forgotten future, game, music, relay, open-source, platformer, 2.5D, sidescroller, action, moon">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="../" />
+        <script src="assets/site.js?v=1.1"></script>
         <link href="assets/site.css?v=1.1" rel="stylesheet" />
         <link href="assets/theme/minimal.css?v=1.1" rel="stylesheet" />
 
-        <script src="assets/site.js?v=1.1"></script>
+        <meta name="keywords" CONTENT="forgotten future, game, music, relay, open-source, platformer, 2.5D, sidescroller, action, moon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var scIframe = document.getElementById('soundcloud-autoplay-iframe');
@@ -23,8 +25,43 @@
     <body class='theme-minimal'>
         <header class="page-header">
             <button class="toggle-page-menu"></button>
-            <ul class="menu-links autogenerate">
-                <!--<li><a href="demo.html">Demo</a></li>-->
+            <ul class="menu-links">
+                <li class="menu-link-container">
+                    <a href="index.html" class="menu-link">Game</a>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/story.html" class="menu-link">Story</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/story.html#timeline">Human History</a></li>
+                        <li><a href="pages/story.html#locations">Locations</a></li>
+                        <li><a href="pages/story.html#technology">Technology</a></li>
+                        <li><a href="pages/story.html#lifeforms">Life Forms</a></li>
+                        <li><a href="pages/story.html#characters">Characters</a></li>
+                        <li><a href="pages/story.html#vehicles">Vehicles</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/contribute.html" class="menu-link">Contribute</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/contribute.html#play">By Playing</a></li>
+                        <li><a href="pages/contribute.html#sponsor">By Sponsoring</a></li>
+                        <li><a href="pages/contribute.html#develop">By Developing</a></li>
+                        <li><a href="pages/contribute.html#status">Check Status</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/media.html" class="menu-link highlight">Media</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/media.html?autoplay=true">FF OST Sample</a></li>
+                        <li><a href="pages/media.html#art">FF Concept Art</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/faq.html" class="menu-link">FAQ</a>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/demo.html" class="menu-link">WebGL Demo</a>
+                </li>
             </ul>
         </header>
 
@@ -63,8 +100,8 @@
                 </div>
                 <div class="page-option" style="max-height: 600px; overflow-y: scroll; text-align: center;">
                     <span>Character Sprite Sheet: Lem</span>
-                    <a href="game/sprites/character/lem/lem-default.256.sprite-sheet.png" target="_blank">
-                        <img src="game/sprites/character/lem/lem-default.256.sprite-sheet.png" class="concept-art-image" />
+                    <a href="../game/sprites/character/lem/lem-default.256.sprite-sheet.png" target="_blank">
+                        <img src="../game/sprites/character/lem/lem-default.256.sprite-sheet.png" class="concept-art-image" />
                     </a>
                     <span>Character Concept: Lem</span>
                     <a href="media/concept/character/lem/concept/lem_concept3.jpg" target="_blank">
@@ -93,13 +130,13 @@
             </section>
 
 
-            <h2 id="subscribe">Subscribe for updates</h2>
-            <section class="themed theme-minimal">
-                <p>
-                    Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.
-                </p>
-                <iframe src="assets/frame/subscribe.html" class="iframe-subscribe"></iframe>
-            </section>
+            <!--<h2 id="subscribe">Subscribe for updates</h2>-->
+            <!--<section class="themed theme-minimal">-->
+                <!--<p>-->
+                    <!--Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.-->
+                <!--</p>-->
+                <!--<iframe src="pages/frames/subscribe.html" class="iframe-subscribe"></iframe>-->
+            <!--</section>-->
 
             <h2 id="donate">Make a Donation</h2>
             <section class="themed theme-minimal">
@@ -108,7 +145,7 @@
                     help bring this game to life.
                     Also make sure to check out <a href="contribute.html#tiers">reward tiers</a> available to everyone who contributes!
                 </p>
-                <iframe src="assets/frame/donate.html" class="iframe-donate"></iframe>
+                <iframe src="pages/frames/donate.html" class="iframe-donate"></iframe>
             </section>
         </article>
         <footer>

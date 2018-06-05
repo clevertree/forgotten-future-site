@@ -2,18 +2,54 @@
 <html>
     <head>
         <title>Forgotten Future: Contribute</title>
-
-        <meta name="keywords" CONTENT="contribute, purchase, buy, free, play, develop">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="../" />
         <script src="assets/site.js?v=1.1"></script>
         <link href="assets/site.css?v=1.1" rel="stylesheet" />
         <link href="assets/theme/minimal.css?v=1.1" rel="stylesheet" />
+
+        <meta name="keywords" CONTENT="contribute, purchase, buy, free, play, develop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class='theme-minimal'>
         <header class="page-header">
             <button class="toggle-page-menu"></button>
-            <ul class="menu-links autogenerate">
-                <!--<li><a href="demo.html">Demo</a></li>-->
+            <ul class="menu-links">
+                <li class="menu-link-container">
+                    <a href="index.html" class="menu-link">Game</a>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/story.html" class="menu-link">Story</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/story.html#timeline">Human History</a></li>
+                        <li><a href="pages/story.html#locations">Locations</a></li>
+                        <li><a href="pages/story.html#technology">Technology</a></li>
+                        <li><a href="pages/story.html#lifeforms">Life Forms</a></li>
+                        <li><a href="pages/story.html#characters">Characters</a></li>
+                        <li><a href="pages/story.html#vehicles">Vehicles</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/contribute.html" class="menu-link highlight">Contribute</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/contribute.html#play">By Playing</a></li>
+                        <li><a href="pages/contribute.html#sponsor">By Sponsoring</a></li>
+                        <li><a href="pages/contribute.html#develop">By Developing</a></li>
+                        <li><a href="pages/contribute.html#status">Check Status</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/media.html" class="menu-link">Media</a>
+                    <ul class="submenu-links">
+                        <li><a href="pages/media.html?autoplay=true">FF OST Sample</a></li>
+                        <li><a href="pages/media.html#art">FF Concept Art</a></li>
+                    </ul>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/faq.html" class="menu-link">FAQ</a>
+                </li>
+                <li class="menu-link-container">
+                    <a href="pages/demo.html" class="menu-link">WebGL Demo</a>
+                </li>
             </ul>
         </header>
 
@@ -90,7 +126,7 @@
             <p>
                 The first way is: play the game! Feedback (through anonymous statistics or the old fashioned way)
                 helps the contributors improve the game over time.
-                <a href="index.html#subscribe">Subscribe</a> to browser updates so you know when Forgotten Future is launched.
+                <a href="../index.html#subscribe">Subscribe</a> to browser updates so you know when Forgotten Future is launched.
             </p>
 
             <h2 id="sponsor">Sponsor the game (Make a donation)</h2>
@@ -147,16 +183,16 @@
                     help bring this game to life.
                     Also make sure to check out <a href="contribute.html#tiers">reward tiers</a> available to everyone who contributes!
                 </p>
-                <iframe src="assets/frame/donate.html" class="iframe-donate"></iframe>
+                <iframe src="pages/frames/donate.html" class="iframe-donate"></iframe>
             </section>
 
-            <h2 id="subscribe">Subscribe for updates</h2>
-            <section class="themed theme-minimal">
-                <p>
-                    Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.
-                </p>
-                <iframe src="assets/frame/subscribe.html" class="iframe-subscribe"></iframe>
-            </section>
+            <!--<h2 id="subscribe">Subscribe for updates</h2>-->
+            <!--<section class="themed theme-minimal">-->
+                <!--<p>-->
+                    <!--Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.-->
+                <!--</p>-->
+                <!--<iframe src="pages/frames/subscribe.html" class="iframe-subscribe"></iframe>-->
+            <!--</section>-->
         </article>
         <footer>
             <a class="created-by" target='_blank' href='https://github.com/clevertree/forgotten-future'>Created by CleverTree</a>

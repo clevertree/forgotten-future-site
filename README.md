@@ -31,14 +31,14 @@ Human History Timeline
 World Peace
 -----------
 
-Humanity achieves the means to stop eons of constant warfare. The world population is freed to move unhindered across the planet's surface. Forbidden [technologies](story.html#technology) are rediscovered and utilized for the good of humankind. However, after a series of public accidents, restrictions on experimentation and usage of [Aetheric Technology](story.html#aetec) are agreed upon by all world leaders. When humanity discovers proof of other intelligent life, _first contact_ seems imminent. This proof was a message of peace coming from the _far side of the [Moon](story.html#moon)_...
+Humanity achieves the means to stop eons of constant warfare. The world population is freed to move unhindered across the planet's surface. Forbidden [technologies](pages/story.html#technology) are rediscovered and utilized for the good of humankind. However, after a series of public accidents, restrictions on experimentation and usage of [Aetheric Technology](pages/story.html#aetec) are agreed upon by all world leaders. When humanity discovers proof of other intelligent life, _first contact_ seems imminent. This proof was a message of peace coming from the _far side of the [Moon](pages/story.html#moon)_...
 
 Invasion
 --------
 
 Peace is shattered as unexpectedly an alien invasion commences and all major human cities are attacked. Human artifacts and monuments are destroyed worldwide. Mysterious mass evacuations begin to occur in most human cities. The surface of the Earth quickly becomes unsafe as monstrous war machines overwhelm the remaining human military forces. Those who could afford it move deep underground in an attempt to avoid the war. Those who could not were conscripted into the Resistance effort.
 
-Unable to confront the invaders directly, the military executes it's most desperate plan yet; an assault on the _far side of the [Moon](story.html#moon)_ and the source of the alien peace message...
+Unable to confront the invaders directly, the military executes it's most desperate plan yet; an assault on the _far side of the [Moon](pages/story.html#moon)_ and the source of the alien peace message...
 
 Cataclysm
 ---------
@@ -58,7 +58,7 @@ Facing away from the Earth, the far side of the moon is the perfect home base fo
 The Dead Zones
 --------------
 
-The Dead Zones are areas of very low atmospheric light due to a ongoing destruction of the environment. Common to the the _Dead Zones_ are the ancient automated war-machines, left over from the planet's war-torn civilization. These [AeTec](story.html#aetec) machines are huge masses of organic technology that resemble monstrous death-machines, with animal-like bodies and simple minds. These death-machines live by instinct, caught in a cycle/loop which keeps them on their continual destructive path. The true source of the Dead Zones are the [Fire Cities](story.html#fire-cities).
+The Dead Zones are areas of very low atmospheric light due to a ongoing destruction of the environment. Common to the the _Dead Zones_ are the ancient automated war-machines, left over from the planet's war-torn civilization. These [AeTec](pages/story.html#aetec) machines are huge masses of organic technology that resemble monstrous death-machines, with animal-like bodies and simple minds. These death-machines live by instinct, caught in a cycle/loop which keeps them on their continual destructive path. The true source of the Dead Zones are the [Fire Cities](pages/story.html#fire-cities).
 
 Fire Cities
 -----------
@@ -86,7 +86,7 @@ A dimensional reference point that blueprints and reflects all living beings. Af
 Schema Refactor & Reawakening
 -----------------------------
 
-Over the course of a life form's living experience, a schema accumulates a wealth of knowledge and subroutines. At some point this schema will become 'full' exceeding it's current capabilities and be unable to take on new information. When this happens, a schema may go through a refactoring phase testing every bit of knowledge it has. Any data that is not consistent, well formed or useful is discarded. What is left is a 'new' schema product that benefits the life form with new abilities and mental clarity. This process forms the basis for [spiravi](story.html#spiravi) evolution.
+Over the course of a life form's living experience, a schema accumulates a wealth of knowledge and subroutines. At some point this schema will become 'full' exceeding it's current capabilities and be unable to take on new information. When this happens, a schema may go through a refactoring phase testing every bit of knowledge it has. Any data that is not consistent, well formed or useful is discarded. What is left is a 'new' schema product that benefits the life form with new abilities and mental clarity. This process forms the basis for [spiravi](pages/story.html#spiravi) evolution.
 
 Primary Element
 ---------------
@@ -111,9 +111,9 @@ _Scintilla_ are the smallest components of schema-based technology required to r
 Soul Memory
 -----------
 
-The memories created by living beings are mostly destroyed when they die. However, some memories common to all experiences are retained in reincarnation. These types of _Soul Memories_ operate at the basic instinct level and do not have to be re-learned. These might include the fears related to predators, isolation, social exclusion, personal security, etc. Utilizing [Schema Technology](story.html#schema) it becomes possible to retain a more complete memory record by storing specific references to memory events within the schema of Soul Memory during [Incarnation](story.html#incarnation).
+The memories created by living beings are mostly destroyed when they die. However, some memories common to all experiences are retained in reincarnation. These types of _Soul Memories_ operate at the basic instinct level and do not have to be re-learned. These might include the fears related to predators, isolation, social exclusion, personal security, etc. Utilizing [Schema Technology](pages/story.html#schema) it becomes possible to retain a more complete memory record by storing specific references to memory events within the schema of Soul Memory during [Incarnation](pages/story.html#incarnation).
 
-The [Fire Cities](story.html#fire-cities) are an unfortunate side-effect of Soul Memory. It is believed the Fire Cities came into existence as a result of unresolved negative human soul energy after the [Cataclysm](story.html#timeline). The Fire Cities themselves resemble the slave-master social structure inherent in most preceding human societies, operating on economical programming embedded deep within the Soul Memory of the deceased human population. One of many flaws inherent in all Fire Machines Soul Memory is the need to perform at optimal productivity. However, since the machines immediately consume everything they produce, their productivity rate is stuck at 0%.
+The [Fire Cities](pages/story.html#fire-cities) are an unfortunate side-effect of Soul Memory. It is believed the Fire Cities came into existence as a result of unresolved negative human soul energy after the [Cataclysm](pages/story.html#timeline). The Fire Cities themselves resemble the slave-master social structure inherent in most preceding human societies, operating on economical programming embedded deep within the Soul Memory of the deceased human population. One of many flaws inherent in all Fire Machines Soul Memory is the need to perform at optimal productivity. However, since the machines immediately consume everything they produce, their productivity rate is stuck at 0%.
 
 Life Forms
 ==========
@@ -125,11 +125,11 @@ This mechanical-spiritual form of life emerged as a side-effect of Incarnation T
 
 ### Fire Machines
 
-Fire Machines are the only living inhabitants of the [Fire Cities](story.html#fire-cities). Based on warfare and resource gathering these machines defend the Fire Cities and keep them running. They are at all times deadly to humans and cannot be controlled.
+Fire Machines are the only living inhabitants of the [Fire Cities](pages/story.html#fire-cities). Based on warfare and resource gathering these machines defend the Fire Cities and keep them running. They are at all times deadly to humans and cannot be controlled.
 
 Fire Machine Traits
 
-* [Primary Element](story.html#element): Fire
+* [Primary Element](pages/story.html#element): Fire
 
 * Special Skill: Capable of withstanding blasting temperatures beyond 2000C
 
@@ -139,11 +139,11 @@ Fire Machine Traits
 
 ### Water Machines
 
-Water machines at all times rely on water to function. Always in balance with their surrounding environments, these machines use water for memory, communication, repairs, energy and even [incarnation](story.html#incarnation). Unlike other types of [spiravi machines](story.html#spiravi), water machines can incarnate almost anywhere there is a water source, and do not rely on a technology infrastructure. As a result of this, an immeasurable count of spiravi water machine species have evolved in such places as oceans and swamps.
+Water machines at all times rely on water to function. Always in balance with their surrounding environments, these machines use water for memory, communication, repairs, energy and even [incarnation](pages/story.html#incarnation). Unlike other types of [spiravi machines](pages/story.html#spiravi), water machines can incarnate almost anywhere there is a water source, and do not rely on a technology infrastructure. As a result of this, an immeasurable count of spiravi water machine species have evolved in such places as oceans and swamps.
 
 Water Machine Traits
 
-* [Primary Element](story.html#element): Water
+* [Primary Element](pages/story.html#element): Water
 
 * Special Skill: Capable of proselytizing Fire Machines into Water Elements
 
@@ -167,12 +167,12 @@ Characters
 Lem
 ---
 
-The protagonist Lem lived an ordinary life as a conductor of a passenger train in the city until he was conscripted into the [Resistance Effort](story.html#cataclysm) as a driver. During the moon assault, Lem is required to navigate a [RAV](story.html#rav). Lem has no experience in fighting or warfare.
+The protagonist Lem lived an ordinary life as a conductor of a passenger train in the city until he was conscripted into the [Resistance Effort](pages/story.html#cataclysm) as a driver. During the moon assault, Lem is required to navigate a [RAV](pages/story.html#rav). Lem has no experience in fighting or warfare.
 
 Ma'adim
 -------
 
-Stationed on the _far side of the Moon_, _Ma'adim_ is the only known contact Earth has with the alien race. He is believed to be a human male and considered extremely dangerous. The primary goal of the [SAS](story.html#cataclysm) fleet's mission to the Moon is to detain the alien agent and secure the [Moon Spire](story.html#moon).
+Stationed on the _far side of the Moon_, _Ma'adim_ is the only known contact Earth has with the alien race. He is believed to be a human male and considered extremely dangerous. The primary goal of the [SAS](pages/story.html#cataclysm) fleet's mission to the Moon is to detain the alien agent and secure the [Moon Spire](pages/story.html#moon).
 
 Little is officially known about this self-described harbinger of peace.
 
@@ -189,7 +189,7 @@ More Coming Soon...
 Make a Donation
 ---------------
 
-The Forgotten Future Project needs your contribution. Become an official [sponsor](contribute.html) and help bring this game to life. Also make sure to check out [reward tiers](contribute.html#tiers) available to everyone who contributes!
+The Forgotten Future Project needs your contribution. Become an official [sponsor](pages/contribute.html) and help bring this game to life. Also make sure to check out [reward tiers](pages/contribute.html#tiers) available to everyone who contributes!
 
 [Created by CleverTree](https://github.com/clevertree/forgotten-future)
 

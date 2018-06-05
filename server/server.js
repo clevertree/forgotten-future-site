@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const routes = require(__dirname + '/routes.js');
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST

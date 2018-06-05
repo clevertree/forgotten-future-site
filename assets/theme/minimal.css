@@ -171,19 +171,20 @@ body.theme-minimal {
     font-size: 0;
 }
 
+.theme-minimal ul.submenu-links > li,
 .theme-minimal li.menu-link-container {
     display: inline-block;
     margin: 1px;
     transition: background-color  .2s ease-in;
     font-size: 16px;
 }
-.theme-minimal li.submenu-link-container {
+.theme-minimal ul.submenu-links > li {
     display: block;
 }
 
 
 .theme-minimal a.menu-link,
-.theme-minimal a.submenu-link{
+.theme-minimal ul.submenu-links > li > a{
     display: block;
     text-align: left;
     padding: 8px;
