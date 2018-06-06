@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/editor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/manager/song-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo-editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo.song" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,88 +46,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="song-loader.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/audio/manager/song-loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.song" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.song">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contribute.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/contribute.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="195" column="18" lean-forward="true" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/site.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/frames/donate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/frames/subscribe.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/media.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manifest.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-editor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -140,13 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>concept/medi</find>
-      <find>options</find>
-      <find>Script callb</find>
-      <find>SEEK_TIME</find>
-      <find>1,</find>
-      <find>'default'</find>
-      <find>this.seekPosition</find>
       <find>.p</find>
       <find>class=&quot;menu-link-container submenu-link-container&quot;</find>
       <find>menu-links autogenerate</find>
@@ -170,6 +126,13 @@
       <find>frames/subsc</find>
       <find>Subscribe for up</find>
       <find>class=&quot;submenu-link&quot;</find>
+      <find>0,</find>
+      <find>p,.25</find>
+      <find>n,osc</find>
+      <find>);</find>
+      <find>;</find>
+      <find>pause(</find>
+      <find>SongManager</find>
     </findStrings>
     <replaceStrings>
       <replace>?v=a</replace>
@@ -192,17 +155,20 @@
       <replace>assets/frame</replace>
       <replace>pages/frames</replace>
       <replace />
+      <replace>n,osc,</replace>
+      <replace>p(.25)</replace>
+      <replace>note(osc</replace>
+      <replace>)</replace>
+      <replace>p(</replace>
+      <replace>SongLoader</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/game" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game/render/shader/polygon.shader.js" />
-        <option value="$PROJECT_DIR$/game/render/prototype/sprite.prototype.js" />
-        <option value="$PROJECT_DIR$/game/stage/stage1/stage1.stage.js" />
         <option value="$PROJECT_DIR$/game/sprite/character/lem/lem.sprite.js" />
         <option value="$PROJECT_DIR$/game/render/shader/gridmap2d.shader.js" />
         <option value="$PROJECT_DIR$/game/render/prototype/stage.prototype.js" />
@@ -229,8 +195,6 @@
         <option value="$PROJECT_DIR$/game/game.js" />
         <option value="$PROJECT_DIR$/game/audio/library/oscilator/oscilator.js" />
         <option value="$PROJECT_DIR$/game/audio/library/oscillator/simple.js" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo-editor.js" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo-notes.csv" />
         <option value="$PROJECT_DIR$/server/client/App.js" />
         <option value="$PROJECT_DIR$/server/client/index.js" />
         <option value="$PROJECT_DIR$/server/client/Html.js" />
@@ -250,6 +214,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/media.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo-editor.js" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo-notes.csv" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo-notes.song" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo.song" />
+        <option value="$PROJECT_DIR$/game/audio/manager/song-loader.js" />
         <option value="$PROJECT_DIR$/pages/editor/index.html" />
       </list>
     </option>
@@ -271,11 +240,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2343" />
-    <option name="y" value="-1089" />
-    <option name="width" value="1866" />
-    <option name="height" value="1059" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1865" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -283,6 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,13 +262,46 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="songs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,15 +319,16 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/game/audio/manager" />
+      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
+      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
+      <recent name="C:\Dev\forgotten-future-site\game\render\shader" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dev\forgotten-future-site\pages\frames\" />
       <recent name="C:\Dev\forgotten-future-site\pages\frames" />
       <recent name="C:\Dev\forgotten-future-site\pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\shader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,7 +415,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93319000" />
+    <option name="totallyTimeSpent" value="99020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,7 +427,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1915" y="-1079" width="2571" height="1411" extended-state="6" />
+    <frame x="0" y="23" width="1865" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
@@ -433,25 +436,37 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09761812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321716" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32696715" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32696715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Debug" order="4" weight="0.2847185" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09761812" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" id="Debug" order="4" weight="0.2847185" />
       <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,13 +504,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game/render/shader/polygon.shader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -590,13 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/media/concept/README.md" />
     <entry file="file://$PROJECT_DIR$/game/README.md" />
-    <entry file="file://$PROJECT_DIR$/ffsite/git.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ffsite/git.php" />
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -622,38 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/song-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/library/oscillator/simple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-notes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -668,13 +642,6 @@
     <entry file="file://$PROJECT_DIR$/server/client/index.js" />
     <entry file="file://$PROJECT_DIR$/server/client/Html.js" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -778,10 +745,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/song-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.song">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/manager/song-loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
