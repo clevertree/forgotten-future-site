@@ -7,13 +7,17 @@
         <link href="assets/site.css" rel="stylesheet" />
         <link href="assets/theme/minimal.css" rel="stylesheet" />
 
+
+        <script src="pages/editor/song-editor.js"></script>
+        <link href="pages/editor/assets/editor.css" rel="stylesheet" />
+
         <meta name="keywords" CONTENT="song, editor, publish, jvi">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="game/audio/manager/song-loader.js" ></script>
         <script>
-            var mySong = new SongLoader('game/audio/songs/demo.song');
-            mySong.play();
+            // var myEditor = new SongEditor('game/audio/songs/demo.song');
+            // myEditor.
         </script>
     </head>
     <body class='theme-minimal'>
@@ -26,7 +30,10 @@
             </ul>
         </header>
 
-        <article class="themed">
+        <article class="themed editor-container">
+            <song-editor>
+
+            </song-editor>
         </article>
         <footer>
             <a class="created-by" target='_blank' href='https://github.com/clevertree/forgotten-future'>Created by CleverTree</a>
