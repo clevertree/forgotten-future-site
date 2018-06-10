@@ -56,7 +56,7 @@
             for(var i=0; i<commandGroup.length; i++) {
                 var command = commandGroup[i];
                 if(command instanceof SongLoader.Pause) {
-                    var rowElm = new SongEditorGridRowElement(command); // TODO: check for pause
+                    var rowElm = new SongEditorGridRowElement(command.pauseLength);
                     rowElm.addNotes(rowCommands);
                     rowCommands = [];
                     this.gridElement.appendChild(rowElm);
@@ -74,12 +74,12 @@
     class SongEditorGridRowElement extends HTMLElement {
         /**
          *
-         * @param {SongLoader.Pause} pauseCommand
+         * @param pauseCommand
          */
-        constructor(pauseCommand) {
+        constructor(pauseLength) {
             super();
-            if(pauseCommand)
-               this.setAttribute('pause', pauseCommand.pauseLength)
+            if(pauseLength)
+               this.setAttribute('pause', pauseLength)
         }
 
         addNotes(noteList) {
@@ -93,8 +93,9 @@
 
             // TODO get command args and display them
 
-            for(var j=1; j<command.length; j++) {
-                var argElm = new SongEditorGridParameterElement(command[j]);
+            for(var i=0; i<command.args.length; i++) {
+                var arg = command.args[i];
+                var argElm = new SongEditorGridParameterElement(arg); // Don't customize parameter styles here
                 this.appendChild(argElm);
             }
         }
