@@ -13,5 +13,22 @@ song-editor-grid-row {
 
 song-editor-grid-cell {
     display: table-cell;
+    padding: 0px 2px;
+}
+
+
+song-editor-grid-command {
+    padding: 0px 2px;
+    color: greenyellow;
+}
+
+song-editor-grid-command.instrument {
+    padding: 0px 2px;
+    color: deepskyblue;
+}
+
+song-editor-grid-parameter {
+    padding: 0px 2px;
+    color: green;
 }
 

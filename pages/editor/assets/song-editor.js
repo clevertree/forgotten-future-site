@@ -57,7 +57,7 @@
                 var command = commandGroup[i];
                 if(command instanceof SongLoader.Pause) {
                     var rowElm = new SongEditorGridRowElement(command.pauseLength);
-                    rowElm.addNotes(rowCommands);
+                    rowElm.addCommands(rowCommands);
                     rowCommands = [];
                     this.gridElement.appendChild(rowElm);
                 } else {
@@ -82,17 +82,17 @@
                this.setAttribute('pause', pauseLength)
         }
 
-        addNotes(noteList) {
-            for(var i=0; i<noteList.length; i++)
-                this.addNote(noteList[i]);
+        addCommands(commandList) {
+            for(var i=0; i<commandList.length; i++)
+                this.addCommand(commandList[i]);
         }
 
-        addNote(command) {
+        addCommand(command) {
             if(!command)
                 throw new Error("Invalid command");
             var cellElm = new SongEditorGridCellElement();
             var commandElm = new SongEditorGridCommandElement(command.instrumentName);
-            commandElm.innerHTML = command.instrumentName;
+            commandElm.innerHTML = command.constructor.name;
             cellElm.appendChild(commandElm);
 
             // TODO get command args and display them
