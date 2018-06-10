@@ -41,11 +41,88 @@
             }.bind(this));
         }
 
-        updateEditor() {
-            console.log('Updating Editor:', this.songLoader.noteGroups);
+        updateEditor(options) {
+            options = options || {};
+            var noteGroupName = options.noteGroup || 'default';
+            var commandGroup = this.songLoader.noteGroups[noteGroupName];
+            if(!commandGroup)
+                throw new Error("Note group not found: " + noteGroupName);
+            console.log('Updating Editor:', commandGroup);
 
+            this.innerHTML = '';
+
+
+            var rowCommands = [];
+            for(var i=0; i<commandGroup.length; i++) {
+                var command = commandGroup[i];
+                if(command instanceof SongLoader.Pause) {
+                    var rowElm = new SongEditorGridRowElement(command); // TODO: check for pause
+                    rowElm.addNotes(rowCommands);
+                    rowCommands = [];
+                    this.gridElement.appendChild(rowElm);
+                } else {
+                    rowCommands.push(command);
+                }
+            }
         }
     }
+
+
+    class SongEditorGridElement extends HTMLElement {
+    }
+
+    class SongEditorGridRowElement extends HTMLElement {
+        /**
+         *
+         * @param {SongLoader.Pause} pauseCommand
+         */
+        constructor(pauseCommand) {
+            super();
+            if(pauseCommand)
+               this.setAttribute('pause', pauseCommand.pauseLength)
+        }
+
+        addNotes(noteList) {
+            for(var i=0; i<noteList.length; i++)
+                this.addNote(noteList);
+        }
+
+        addNote(command) {
+            var commandElm = new SongEditorGridCommandElement(command);
+            this.appendChild(commandElm);
+
+            // TODO get command args and display them
+
+            for(var j=1; j<command.length; j++) {
+                var argElm = new SongEditorGridParameterElement(command[j]);
+                this.appendChild(argElm);
+            }
+        }
+        connectedCallback() {
+            console.log("Connected: ", this);
+        }
+    }
+
+    class SongEditorGridEntryElement extends HTMLElement {
+    }
+
+    class SongEditorGridCommandElement extends HTMLElement {
+        constructor(commandName) {
+            super();
+            if(commandName)
+                this.setAttribute('name', commandName)
+        }
+    }
+
+    class SongEditorGridParameterElement extends HTMLElement {
+        constructor(parameterValue) {
+            super();
+            if(parameterValue)
+                this.setAttribute('value', parameterValue)
+        }
+    }
+
+    // Menu
 
     class SongEditorMenuElement extends HTMLElement {
         constructor() {
@@ -58,19 +135,12 @@
         }
     }
 
-    class SongEditorGridCommandElement extends HTMLElement {
-    }
-
-    class SongEditorGridParameterElement extends HTMLElement {
-    }
-
-
 
     customElements.define('song-editor', SongEditorElement);
     customElements.define('song-editor-menu', SongEditorMenuElement);
-    // customElements.define('song-editor-grid', SongEditorGridElement);
-    // customElements.define('song-editor-grid-row', SongEditorGridRowElement);
-    // customElements.define('song-editor-grid-entry', SongEditorGridEntryElement);
+    customElements.define('song-editor-grid', SongEditorGridElement);
+    customElements.define('song-editor-grid-row', SongEditorGridRowElement);
+    customElements.define('song-editor-grid-entry', SongEditorGridEntryElement);
     customElements.define('song-editor-grid-command', SongEditorGridCommandElement);
     customElements.define('song-editor-grid-parameter', SongEditorGridParameterElement);
 
