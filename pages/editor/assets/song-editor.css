@@ -6,3 +6,12 @@ song-editor-grid {
     display: table;
 }
 
+song-editor-grid-row {
+    display: table-row;
+}
+
+
+song-editor-grid-cell {
+    display: table-cell;
+}
+
