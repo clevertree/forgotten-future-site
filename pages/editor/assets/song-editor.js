@@ -58,6 +58,8 @@
                 if(command instanceof SongLoader.Pause) {
                     var rowElm = new SongEditorGridRowElement(command.pauseLength);
                     rowElm.addCommands(rowCommands);
+                    if(this.gridElement.children.length % 2 === 0)
+                        rowElm.classList.add('odd');
                     rowCommands = [];
                     this.gridElement.appendChild(rowElm);
                 } else {
@@ -137,12 +139,16 @@
     class SongEditorMenuElement extends HTMLElement {
         constructor() {
             super();
-            let shadowRoot = this.attachShadow({mode: 'open'});
-            shadowRoot.innerHTML = `
+        }
+
+        connectedCallback() {
+            // let shadowRoot = this.attachShadow({mode: 'open'});
+            this.innerHTML = `
 <song-editor-menu-item>File</song-editor-menu-item>
 <song-editor-menu-item>Edit</song-editor-menu-item>
 `;
         }
+
     }
 
 
