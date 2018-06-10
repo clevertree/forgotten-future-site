@@ -25,6 +25,7 @@
             this.gridElement = this.querySelector('song-editor-grid');
             if(this.getSongURL())
                 this.loadSong(this.getSongURL());
+
         }
 
         getSongURL() { return this.getAttribute('src');}
@@ -67,6 +68,7 @@
                 }
             }
         }
+
     }
 
 
@@ -83,6 +85,11 @@
             if(pauseLength)
                this.setAttribute('pause', pauseLength)
         }
+
+        connectedCallback() {
+            this.addEventListener('click', this.onclick.bind(this));
+        }
+
 
         addCommands(commandList) {
             for(var i=0; i<commandList.length; i++)
@@ -110,12 +117,22 @@
 
             this.appendChild(cellElm);
         }
-        connectedCallback() {
-            console.log("Connected: ", this);
+
+        onclick(e) {
+            clearElementClass('selected', 'song-editor-grid-row.selected');
+            this.classList.add('selected');
         }
     }
 
     class SongEditorGridCellElement extends HTMLElement {
+        connectedCallback() {
+            this.addEventListener('click', this.onclick.bind(this));
+        }
+
+        onclick(e) {
+            clearElementClass('selected', 'song-editor-grid-cell.selected');
+            this.classList.add('selected');
+        }
     }
 
     class SongEditorGridCommandElement extends HTMLElement {
@@ -190,5 +207,11 @@
             styleSheetElm.onload = onLoaded;
             document.head.appendChild(styleSheetElm);
         }
+    }
+
+    function clearElementClass(className, selector) {
+        var clearElms = document.querySelectorAll(selector || '.' + className);
+        for(var i=0; i<clearElms.length; i++)
+            clearElms[i].classList.remove(className);
     }
 })();
