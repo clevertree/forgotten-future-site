@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" afterDir="false" />
-    </list>
+    <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +79,11 @@
           </file>
           <file leaf-file-name=".gitmodules" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitmodules">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -370,7 +369,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -476,12 +475,12 @@
       <workItem from="1528478456236" duration="636000" />
       <workItem from="1528495866070" duration="2468000" />
       <workItem from="1528555081500" duration="17096000" />
-      <workItem from="1528637958379" duration="6106000" />
+      <workItem from="1528637958379" duration="6325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139264000" />
+    <option name="totallyTimeSpent" value="139483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,7 +493,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1915" y="-1079" width="2571" height="1411" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
@@ -542,6 +540,7 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/media/concept" />
+      <path value="$PROJECT_DIR$/game" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
@@ -789,7 +788,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
