@@ -44,6 +44,7 @@ song-editor-grid-cell {
     color: green;
 }
 
+song-editor-grid-cell.selected,
 song-editor-grid-cell:hover {
     max-width: 1000px;
 }
@@ -86,6 +87,7 @@ song-editor-grid-parameter {
     color: turquoise;
 }
 
+song-editor-grid-cell.selected > song-editor-grid-parameter,
 song-editor-grid-cell:hover > song-editor-grid-parameter {
     max-width: 1000px;
 }
