@@ -14,18 +14,17 @@
         }
 
         connectedCallback() {
-            // let shadowRoot = this.attachShadow({mode: 'open'});
-            this.innerHTML = `
-<song-editor-menu>
-</song-editor-menu>
-<song-editor-grid>
-</song-editor-grid>
-`;
-            // shadowRoot.appendChild(instance);
-            this.gridElement = this.querySelector('song-editor-grid');
+            this.gridElement = new SongEditorGridElement();
+
+            this.appendChild(new SongEditorMenuElement())
+            this.appendChild(this.gridElement)
+
             if(this.getSongURL())
                 this.loadSong(this.getSongURL());
 
+            if(!this.getAttribute('tabindex'))
+                this.setAttribute('tabindex', 1);
+            this.addEventListener('keydown', this.onKeydown.bind(this));
         }
 
         getSongURL() { return this.getAttribute('src');}
@@ -69,6 +68,40 @@
             }
         }
 
+        onKeydown(e) {
+            var selectedElement = this.querySelector('song-editor-grid-cell.selected')
+                || this.querySelector('song-editor-grid-cell');
+            var selectedRow = selectedElement.parentNode;
+            switch(e.key) {
+                case 'ArrowRight':
+                    if(selectedElement.nextSibling) {
+                        selectedElement.nextSibling.select();
+                    } else if(selectedRow.nextSibling) {
+                        selectedRow.nextSibling.firstChild.select();
+                    }
+                    break;
+                case 'ArrowLeft':
+                    if(selectedElement.previousSibling) {
+                        selectedElement.previousSibling.select();
+                    } else if(selectedRow.previousSibling) {
+                        selectedRow.previousSibling.lastChild.select();
+                    }
+                    break;
+                case 'ArrowDown':
+                    if(selectedRow.nextSibling) {
+                        selectedRow.nextSibling.firstChild.select();
+                    }
+                    break;
+                case 'ArrowUp':
+                    if(selectedRow.previousSibling) {
+                        selectedRow.previousSibling.firstChild.select();
+                    }
+                    break;
+                default:
+                    console.info('Unused keydown', e.key);
+                    break;
+            }
+        }
     }
 
 
@@ -118,9 +151,13 @@
             this.appendChild(cellElm);
         }
 
-        onclick(e) {
+        select() {
             clearElementClass('selected', 'song-editor-grid-row.selected');
             this.classList.add('selected');
+        }
+
+        onclick(e) {
+            this.select();
         }
     }
 
@@ -129,9 +166,14 @@
             this.addEventListener('click', this.onclick.bind(this));
         }
 
-        onclick(e) {
+        select() {
+            this.parentNode.select();
             clearElementClass('selected', 'song-editor-grid-cell.selected');
             this.classList.add('selected');
+        }
+
+        onclick(e) {
+            this.select();
         }
     }
 

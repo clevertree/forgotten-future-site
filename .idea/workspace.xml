@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/theme/minimal.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme/minimal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" afterDir="false" />
     </list>
@@ -45,24 +45,34 @@
     <splitter split-orientation="horizontal" split-proportion="0.6622475">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1149">
-                  <caret line="134" selection-start-line="134" selection-end-line="134" />
-                  <folding>
-                    <element signature="e#903#1382#0" />
-                    <element signature="e#1414#2328#0" />
-                  </folding>
+                <state relative-caret-position="856">
+                  <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="song-editor.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="contentscript.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/js/contentscript.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
+          <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="143667">
+                  <caret line="8451" column="18" selection-start-line="8451" selection-start-column="18" selection-end-line="8451" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="song-editor.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pause(</find>
-      <find>SongManager</find>
       <find>?v=1.1</find>
       <find>context</find>
       <find>processNotes</find>
@@ -124,6 +132,8 @@
       <find>processArgs</find>
       <find>onkeydown(</find>
       <find>Row</find>
+      <find>lastSibling</find>
+      <find>lastChild</find>
     </findStrings>
     <replaceStrings>
       <replace>?v=a</replace>
@@ -154,6 +164,7 @@
       <replace />
       <replace>instrument</replace>
       <replace>cell</replace>
+      <replace>previousSibling</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -211,8 +222,8 @@
         <option value="$PROJECT_DIR$/game/audio/loader/song-loader.js" />
         <option value="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" />
         <option value="$PROJECT_DIR$/.gitmodules" />
-        <option value="$PROJECT_DIR$/pages/editor/assets/song-editor.js" />
         <option value="$PROJECT_DIR$/pages/editor/assets/song-editor.css" />
+        <option value="$PROJECT_DIR$/pages/editor/assets/song-editor.js" />
       </list>
     </option>
   </component>
@@ -242,10 +253,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1911" />
-    <option name="y" value="-1065" />
-    <option name="width" value="3858" />
-    <option name="height" value="2118" />
+    <option name="x" value="2721" />
+    <option name="y" value="-1085" />
+    <option name="width" value="2904" />
+    <option name="height" value="1584" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -255,6 +266,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -320,17 +342,6 @@
               <item name="pages" type="cbb8eebc:String" user="pages" />
               <item name="editor" type="cbb8eebc:String" user="editor" />
               <item name="assets" type="cbb8eebc:String" user="assets" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,12 +467,13 @@
       <workItem from="1528478456236" duration="636000" />
       <workItem from="1528495866070" duration="2468000" />
       <workItem from="1528555081500" duration="17096000" />
-      <workItem from="1528637958379" duration="8666000" />
+      <workItem from="1528637958379" duration="10344000" />
+      <workItem from="1528653870963" duration="686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141824000" />
+    <option name="totallyTimeSpent" value="144188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,19 +488,18 @@
     <frame x="1915" y="-1079" width="2571" height="1411" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12963685" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09722765" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Debug" order="6" visible="true" weight="0.28426397" />
+      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.31003514" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -501,6 +512,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info id="Capture Tool" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +542,12 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="84" />
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -755,28 +772,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="3306" column="4" selection-start-line="3306" selection-start-column="4" selection-end-line="3306" selection-end-column="4" />
+        <state relative-caret-position="143667">
+          <caret line="8451" column="18" selection-start-line="8451" selection-start-column="18" selection-end-line="8451" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1149">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-          <folding>
-            <element signature="e#903#1382#0" />
-            <element signature="e#1414#2328#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="856">
+          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
         </state>
       </provider>
     </entry>
