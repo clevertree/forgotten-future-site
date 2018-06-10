@@ -56,6 +56,7 @@
             for(var i=0; i<commandGroup.length; i++) {
                 var command = commandGroup[i];
                 if(command instanceof SongLoader.Pause) {
+                    rowCommands.push(command);
                     var rowElm = new SongEditorGridRowElement(command.pauseLength);
                     rowElm.addCommands(rowCommands);
                     if(this.gridElement.children.length % 2 === 0)
@@ -120,7 +121,7 @@
         }
 
         connectedCallback() {
-            this.addEventListener('click', this.onclick.bind(this));
+            this.addEventListener('click', this.select.bind(this));
         }
 
 
@@ -133,9 +134,11 @@
             if(!command)
                 throw new Error("Invalid command");
             var cellElm = new SongEditorGridCellElement();
-            var commandElm = new SongEditorGridCommandElement(command.instrumentName);
-            commandElm.innerHTML = command.constructor.name;
+            var commandElm = new SongEditorGridCommandElement(command.constructor.name);
+            commandElm.innerHTML = command.constructor.name[0];
             cellElm.appendChild(commandElm);
+            if(command instanceof SongLoader.Pause)
+                cellElm.classList.add('pause-command');
 
             // TODO get command args and display them
 
@@ -155,25 +158,17 @@
             clearElementClass('selected', 'song-editor-grid-row.selected');
             this.classList.add('selected');
         }
-
-        onclick(e) {
-            this.select();
-        }
     }
 
     class SongEditorGridCellElement extends HTMLElement {
         connectedCallback() {
-            this.addEventListener('click', this.onclick.bind(this));
+            this.addEventListener('click', this.select.bind(this));
         }
 
         select() {
             this.parentNode.select();
             clearElementClass('selected', 'song-editor-grid-cell.selected');
             this.classList.add('selected');
-        }
-
-        onclick(e) {
-            this.select();
         }
     }
 
@@ -183,6 +178,16 @@
             if(commandName)
                 this.setAttribute('name', commandName)
         }
+
+        connectedCallback() {
+            this.addEventListener('click', this.select.bind(this));
+        }
+
+        select() {
+            this.parentNode.select();
+            clearElementClass('selected', 'song-editor-grid-command.selected');
+            this.classList.add('selected');
+        }
     }
 
     class SongEditorGridParameterElement extends HTMLElement {
@@ -190,6 +195,16 @@
             super();
             if(parameterValue)
                 this.setAttribute('value', parameterValue)
+        }
+
+        connectedCallback() {
+            this.addEventListener('click', this.select.bind(this));
+        }
+
+        select() {
+            this.parentNode.select();
+            clearElementClass('selected', 'song-editor-grid-parameter.selected');
+            this.classList.add('selected');
         }
     }
 

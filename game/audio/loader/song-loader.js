@@ -246,20 +246,17 @@
 
                 case 'ge':
                 case 'groupexecute':
-                    this.noteGroups[currentNoteGroup].push(
-                        new GroupExecute(args));
+                    this.noteGroups[currentNoteGroup].push(new GroupExecute(args));
                     break;
 
                 case 'p':
                 case 'pause':
-                    this.noteGroups[currentNoteGroup].push(
-                        new Pause(parseFloat(args[0])));
+                    this.noteGroups[currentNoteGroup].push(new Pause(args));
                     break;
 
                 case 'n':
                 case 'note':
-                    this.noteGroups[currentNoteGroup].push(
-                        new Note(args));
+                    this.noteGroups[currentNoteGroup].push(new Note(args));
                     break;
             }
         }
@@ -307,11 +304,11 @@
     }
 
     SongLoader.Pause = Pause;
-    function Pause(pauseLength) {
-        this.pauseLength = pauseLength;
+    function Pause(args) {
+        this.args = args;
         this.execute = function(song) {
-            song.currentPosition += this.pauseLength * (240 / (song.getBPM()));
-            console.info("PAUSE", this.pauseLength, song.currentPosition);
+            song.currentPosition += this.args[0] * (240 / (song.getBPM()));
+            console.info("PAUSE", this.args[0], song.currentPosition);
             return 0;
         }
     }

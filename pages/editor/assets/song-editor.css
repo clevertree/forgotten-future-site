@@ -1,6 +1,7 @@
 song-editor {
     background-color: #000;
     display: block;
+    font-size: 16px;
 }
 
 song-editor-menu {
@@ -18,7 +19,8 @@ song-editor-grid-row {
     display: block;
     /*display: table-row;*/
     background-color: #111;
-    height: 23px;
+    height: 20px;
+    clear: both;
 }
 
 song-editor-grid-row.odd {
@@ -32,9 +34,10 @@ song-editor-grid-row.selected {
 
 song-editor-grid-cell {
     /*display: table-cell;*/
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
     white-space: nowrap;
-    margin: 0px 6px 0px 0px;
+    margin-right: 6px;
     min-width: 120px;
     max-width: 120px;
     overflow: hidden;
@@ -43,13 +46,23 @@ song-editor-grid-cell {
     height: 22px;
     color: green;
 }
+song-editor-grid-cell:last-child {
+    margin-right: 0;
+
+}
+@media only screen and (min-width: 600px)  {
+    song-editor-grid-cell.pause-command {
+        float: right;
+        min-width: 60px;
+    }
+}
 
 song-editor-grid-cell.selected,
 song-editor-grid-cell:hover {
     max-width: 1000px;
 }
 song-editor-grid-cell.selected {
-    background-color: #444;
+    /*background-color: #444;*/
     color: greenyellow;
 }
 
@@ -61,11 +74,9 @@ song-editor-grid-command {
     padding: 0px 5px 0px 2px;
     border: 1px solid green;
     border-radius: 4px 0 0 4px;
-}
-song-editor-grid-command::first-letter {
-    /*color: green;*/
     font-weight: bold;
 }
+
 song-editor-grid-cell.selected > song-editor-grid-command,
 song-editor-grid-cell.selected > song-editor-grid-parameter {
     border-color: greenyellow;
