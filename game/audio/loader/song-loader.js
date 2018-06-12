@@ -300,8 +300,25 @@
                 return 0;
             }
             return instrument.apply(song, this.args);       // Execute Note
-        }
+        };
+        this.setNote = function(newNote, song) {
+            var instrument = song ? song.getInstrument(this.args[0]) : null;
+            if(instrument && instrument.setNote)
+                instrument.setNote(newNote);
+            else
+                this.args[1] = newNote;
+        };
+        // this.onKeyDown = function(e) {
+        //     var i = Note.KEYNOTES.indexOf(e.key);
+        //     if(i !== -1) {
+        //         console.log("Set Note: ", e.key, i);
+        //     } else {
+        //         console.warn("Unhandled keydown", e);
+        //     }
+        //     e.preventDefault();
+        // };
     }
+
 
     SongLoader.Pause = Pause;
     function Pause(args) {
@@ -311,6 +328,10 @@
             console.info("PAUSE", this.args[0], song.currentPosition);
             return 0;
         }
+        this.onKeyDown = function(e) {
+            console.warn("Unhandled keydown", e);
+            e.preventDefault();
+        };
     }
 
     SongLoader.GroupExecute = GroupExecute;
@@ -320,6 +341,10 @@
             console.info("Executing Group: ", this.args[0], this.args);
             song.activeGroups.push({name: this.args[0], start: song.currentPosition});
             return 0;
-        }
+        };
+        this.onKeyDown = function(e) {
+            console.warn("Unhandled keydown", e);
+            e.preventDefault();
+        };
     }
 })();

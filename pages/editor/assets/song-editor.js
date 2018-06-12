@@ -24,7 +24,7 @@
 
             if(!this.getAttribute('tabindex'))
                 this.setAttribute('tabindex', 1);
-            this.addEventListener('keydown', this.onKeydown.bind(this));
+            this.addEventListener('keydown', this.onKeyDown.bind(this));
         }
 
         getSongURL() { return this.getAttribute('src');}
@@ -69,21 +69,21 @@
             }
         }
 
-        onKeydown(e) {
-            var selectedElement = this.querySelector('song-editor-grid-cell.selected')
+        onKeyDown(e) {
+            var selectedCell = this.querySelector('song-editor-grid-cell.selected')
                 || this.querySelector('song-editor-grid-cell');
-            var selectedRow = selectedElement.parentNode;
+            var selectedRow = selectedCell.parentNode;
             switch(e.key) {
                 case 'ArrowRight':
-                    if(selectedElement.nextSibling) {
-                        selectedElement.nextSibling.select();
+                    if(selectedCell.nextSibling) {
+                        selectedCell.nextSibling.select();
                     } else if(selectedRow.nextSibling) {
                         selectedRow.nextSibling.firstChild.select();
                     }
                     break;
                 case 'ArrowLeft':
-                    if(selectedElement.previousSibling) {
-                        selectedElement.previousSibling.select();
+                    if(selectedCell.previousSibling) {
+                        selectedCell.previousSibling.select();
                     } else if(selectedRow.previousSibling) {
                         selectedRow.previousSibling.lastChild.select();
                     }
@@ -99,12 +99,15 @@
                     }
                     break;
                 default:
-                    console.info('Unused keydown', e.key);
+                    selectedCell.onKeyDown(e);
+                    if(!e.defaultPrevented)
+                        console.info('Unused keydown', e.key);
                     break;
             }
         }
     }
 
+    // Grid elements
 
     class SongEditorGridElement extends HTMLElement {
     }
@@ -133,24 +136,7 @@
         addCommand(command) {
             if(!command)
                 throw new Error("Invalid command");
-            var cellElm = new SongEditorGridCellElement();
-            var commandElm = new SongEditorGridCommandElement(command.constructor.name);
-            commandElm.innerHTML = command.constructor.name[0];
-            cellElm.appendChild(commandElm);
-            if(command instanceof SongLoader.Pause)
-                cellElm.classList.add('pause-command');
-
-            // TODO get command args and display them
-
-            if(command.args) {
-                for (var i = 0; i < command.args.length; i++) {
-                    var arg = command.args[i];
-                    var argElm = new SongEditorGridParameterElement(arg); // Don't customize parameter styles here
-                    cellElm.appendChild(argElm);
-                    argElm.innerHTML = arg;
-                }
-            }
-
+            var cellElm = new SongEditorGridCellElement(command);
             this.appendChild(cellElm);
         }
 
@@ -161,8 +147,34 @@
     }
 
     class SongEditorGridCellElement extends HTMLElement {
+
+        constructor(command) {
+            super();
+            this.command = command;
+        }
+
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
+            this.refresh();
+        }
+
+        refresh() {
+            this.innerHTML = '';
+            var command = this.command;
+            this.classList.add('command-' + command.constructor.name.toLowerCase());
+
+            var commandElm = new SongEditorGridCommandElement(command.constructor.name);
+            commandElm.innerHTML = command.constructor.name[0];
+            this.appendChild(commandElm);
+
+            if(command.args) {
+                for (var i = 0; i < command.args.length; i++) {
+                    var arg = command.args[i];
+                    var argElm = new SongEditorGridParameterElement(arg); // Don't customize parameter styles here
+                    this.appendChild(argElm);
+                    argElm.innerHTML = arg;
+                }
+            }
         }
 
         select() {
@@ -170,7 +182,34 @@
             clearElementClass('selected', 'song-editor-grid-cell.selected');
             this.classList.add('selected');
         }
+
+        onKeyDown(e) {
+            switch(this.command.constructor.name.toLowerCase()) {
+                case 'note':
+                    var keyboard = SongEditorGridCellElement.keyboardLayout;
+                    if(keyboard[e.key]) {
+                        var playNote = keyboard[e.key];
+                        console.log("Play Note: ", playNote);
+                        this.command.setNote(playNote);
+                        this.refresh();
+                        e.preventDefault();
+                        return;
+                    }
+                    break;
+                default:
+                    console.log("Unused keydown: ", this, this.command, e);
+                    e.preventDefault();
+                    break;
+            }
+        }
     }
+
+    SongEditorGridCellElement.keyboardLayout = {
+        '2':'Cs5', '3':'Ds5', '5':'Fs5', '6':'Gs5', '7':'As6', '9':'Cs6', '0':'Ds6',
+        'q':'C5', 'w':'D5', 'e':'E5', 'r':'F5', 't':'G5', 'y':'A6', 'u':'B6', 'i':'C6', 'o':'D6', 'p':'E6',
+        's':'Cs4', 'd':'Ds4', 'g':'Fs4', 'h':'Gs4', 'j':'As5', 'l':'Cs5', ';':'Ds5',
+        'z':'C4', 'x':'D4', 'c':'E4', 'v':'F4', 'b':'G4', 'n':'A5', 'm':'B5', ',':'C5', '.':'D5', '/':'E5',
+    };
 
     class SongEditorGridCommandElement extends HTMLElement {
         constructor(commandName) {
@@ -208,7 +247,7 @@
         }
     }
 
-    // Menu
+    // Menu elements
 
     class SongEditorMenuElement extends HTMLElement {
         constructor() {
@@ -226,6 +265,7 @@
     }
 
 
+    // Define custom elements
     customElements.define('song-editor', SongEditorElement);
     customElements.define('song-editor-menu', SongEditorMenuElement);
     customElements.define('song-editor-grid', SongEditorGridElement);
