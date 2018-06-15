@@ -293,12 +293,14 @@
     SongLoader.Note = Note;
     function Note(args) {
         this.args = args;
-        this.execute = function(song) {
+        this.getInstrument = function(song) {
             var instrument = song.getInstrument(this.args[0]);
-            if(!instrument) {
-                console.error("Instrument is not loaded: " + this.args[0]);
-                return 0;
-            }
+            if(!instrument)
+                throw new Error("Instrument is not loaded: " + this.args[0]);
+            return instrument;
+        };
+        this.execute = function(song) {
+            var instrument = this.getInstrument(song);
             return instrument.apply(song, this.args);       // Execute Note
         };
         this.setNote = function(newNote, song) {

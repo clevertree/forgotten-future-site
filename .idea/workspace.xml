@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/game/audio/editor/song-editor.js" line="464" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo-minimal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e033f102-7df0-4c02-90dc-17cbbe16b004.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e033f102-7df0-4c02-90dc-17cbbe16b004.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsDialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsDialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/audio/loader/song-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/loader/song-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo.song" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo.song" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,32 +55,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.js">
+      <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="e#238#4018#0" />
-                <element signature="e#933#1412#0" />
-                <element signature="e#1444#2540#0" />
-                <element signature="e#4025#4080#0" />
-                <element signature="e#6313#6825#0" />
-                <element signature="e#6613#7139#0" />
-                <element signature="e#7158#7515#0" />
-                <element signature="e#8193#8846#0" />
-                <element signature="e#8901#9388#0" />
-                <element signature="e#9442#9629#0" />
+                <element signature="e#1377#1595#0" />
+                <element signature="e#1633#2945#0" />
+                <element signature="e#2977#4216#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song-loader.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game/audio/loader/song-loader.js">
+      <file leaf-file-name="demo.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="304" column="75" selection-start-line="304" selection-start-column="75" selection-end-line="304" selection-end-column="75" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -77,8 +81,8 @@
       <file leaf-file-name="simple.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state relative-caret-position="450">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -95,26 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>load</find>
-      <find>Keyboard.</find>
-      <find>customElements</find>
-      <find>SongLoader</find>
-      <find>song-loader</find>
-      <find>.onLo</find>
-      <find>connectedCallback</find>
-      <find>getInstrument</find>
-      <find>NoteCommand</find>
-      <find>song</find>
-      <find>Command</find>
-      <find>NoteGroup</find>
-      <find>noteGroups</find>
-      <find>this</find>
-      <find>args</find>
-      <find>this.instrument</find>
-      <find>SongEditorGridEntryElement</find>
-      <find>entry</find>
-      <find>noteLength</find>
-      <find>transition</find>
       <find>processArgs</find>
       <find>onkeydown(</find>
       <find>Row</find>
@@ -123,11 +107,30 @@
       <find>#444</find>
       <find>inline-block</find>
       <find>onKeydown</find>
-      <find>SongEditorGridCellElement</find>
+      <find>dialect</find>
+      <find>ES6</find>
+      <find>this</find>
+      <find>ediotr</find>
+      <find>loadScript</find>
+      <find>loadJSON</find>
+      <find>this.song</find>
+      <find>socillator</find>
       <find>command</find>
+      <find>pause</find>
+      <find>command-</find>
+      <find>SongEditorGridCellElement</find>
+      <find>context =</find>
+      <find>null,</find>
+      <find>gridElement</find>
+      <find>playInstrumentNote</find>
+      <find>playInstrumentNote`</find>
+      <find>\</find>
+      <find>playNote</find>
+      <find>playNoteInstrument</find>
+      <find>playInstrument</find>
+      <find>Ignor</find>
     </findStrings>
     <replaceStrings>
-      <replace>?v=a</replace>
       <replace>p</replace>
       <replace>ul</replace>
       <replace>?v=1.1</replace>
@@ -157,6 +160,7 @@
       <replace>cell</replace>
       <replace>previousSibling</replace>
       <replace>onKeyDown</replace>
+      <replace>notes</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -165,10 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game/render/file/file.js" />
-        <option value="$PROJECT_DIR$/game/sprites/vehicle/RAV/RAV.sprite.js" />
-        <option value="$PROJECT_DIR$/game/stages/stage1/stage1.stage.js" />
-        <option value="$PROJECT_DIR$/game/platforms/moon/moon1.platform.js" />
         <option value="$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js" />
         <option value="$PROJECT_DIR$/story.html" />
         <option value="$PROJECT_DIR$/media/concept/README.md" />
@@ -210,12 +210,16 @@
         <option value="$PROJECT_DIR$/pages/editor/song-editor.js" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.idea/forgotten-future-site.iml" />
-        <option value="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" />
         <option value="$PROJECT_DIR$/.gitmodules" />
-        <option value="$PROJECT_DIR$/pages/editor/index.html" />
         <option value="$PROJECT_DIR$/pages/editor/assets/song-editor.css" />
         <option value="$PROJECT_DIR$/pages/editor/assets/song-editor.js" />
+        <option value="$PROJECT_DIR$/.idea/jsDialects.xml" />
         <option value="$PROJECT_DIR$/game/audio/loader/song-loader.js" />
+        <option value="$PROJECT_DIR$/pages/editor/index.html" />
+        <option value="$PROJECT_DIR$/game/audio/editor/song-editor.css" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo.json" />
+        <option value="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" />
+        <option value="$PROJECT_DIR$/game/audio/editor/song-editor.js" />
       </list>
     </option>
   </component>
@@ -244,9 +248,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1852" />
+    <option name="width" value="1855" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -257,6 +261,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="audio" type="cbb8eebc:String" user="audio" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="audio" type="cbb8eebc:String" user="audio" />
+              <item name="instruments" type="cbb8eebc:String" user="instruments" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="audio" type="cbb8eebc:String" user="audio" />
+              <item name="instruments" type="cbb8eebc:String" user="instruments" />
+              <item name="oscillator" type="cbb8eebc:String" user="oscillator" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="audio" type="cbb8eebc:String" user="audio" />
+              <item name="loader" type="cbb8eebc:String" user="loader" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="audio" type="cbb8eebc:String" user="audio" />
+              <item name="songs" type="cbb8eebc:String" user="songs" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="pages" type="cbb8eebc:String" user="pages" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
+              <item name="pages" type="cbb8eebc:String" user="pages" />
+              <item name="editor" type="cbb8eebc:String" user="editor" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +345,13 @@
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
@@ -323,84 +396,7 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-              <item name="codeStyles" type="cbb8eebc:String" user="codeStyles" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-              <item name="dataSources" type="cbb8eebc:String" user="dataSources" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-              <item name="inspectionProfiles" type="cbb8eebc:String" user="inspectionProfiles" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="game" type="cbb8eebc:String" user="game" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="game" type="cbb8eebc:String" user="game" />
-              <item name="audio" type="cbb8eebc:String" user="audio" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="game" type="cbb8eebc:String" user="game" />
-              <item name="audio" type="cbb8eebc:String" user="audio" />
-              <item name="songs" type="cbb8eebc:String" user="songs" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="pages" type="cbb8eebc:String" user="pages" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="pages" type="cbb8eebc:String" user="pages" />
-              <item name="editor" type="cbb8eebc:String" user="editor" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="forgotten-future-site" type="cbb8eebc:String" user="forgotten-future-site" />
-              <item name="pages" type="cbb8eebc:String" user="pages" />
-              <item name="editor" type="cbb8eebc:String" user="editor" />
-              <item name="assets" type="cbb8eebc:String" user="assets" />
             </path>
           </expand>
           <select />
@@ -420,21 +416,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/game/audio/manager" />
-      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\shader" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dev\forgotten-future-site\pages\editor\assets" />
       <recent name="C:\Dev\forgotten-future-site\pages\editor\asset" />
       <recent name="C:\Dev\forgotten-future-site\pages\frames\" />
       <recent name="C:\Dev\forgotten-future-site\pages\frames" />
       <recent name="C:\Dev\forgotten-future-site\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/game/audio/songs" />
+      <recent name="$PROJECT_DIR$/game/audio/manager" />
+      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
+      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
+      <recent name="C:\Dev\forgotten-future-site\game\render\shader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -529,11 +526,15 @@
       <workItem from="1528637958379" duration="10344000" />
       <workItem from="1528653870963" duration="1189000" />
       <workItem from="1528756069789" duration="8661000" />
+      <workItem from="1528999626294" duration="548000" />
+      <workItem from="1529001859497" duration="598000" />
+      <workItem from="1529080754850" duration="4784000" />
+      <workItem from="1529088765873" duration="2057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157663000" />
+    <option name="totallyTimeSpent" value="177034000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,22 +546,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1852" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1855" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12884097" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12904967" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.3099352" />
+      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22857143" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -573,6 +573,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info id="Capture Tool" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,49 +600,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/pages/editor/assets/song-editor.js</url>
-          <line>225</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="javascript-exception">
-          <properties />
-        </breakpoint>
-      </default-breakpoints>
-      <option name="time" value="91" />
+      <option name="time" value="108" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
         <watch expression="playEvent" />
+        <watch expression="this.command.execute.__proto__" />
+        <watch expression="this.command.execute.__proto__" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.js" />
-    <entry file="file://$PROJECT_DIR$/game/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/App.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/index.js" />
     <entry file="file://$PROJECT_DIR$/server/client/Html.js" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
     <entry file="file://$PROJECT_DIR$/server/routes.js">
@@ -712,13 +686,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.html" />
     <entry file="file://$PROJECT_DIR$/game/audio/song-manager.js" />
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4950">
@@ -758,8 +725,8 @@
     <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-notes.csv" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="401" column="26" selection-start-line="401" selection-start-column="26" selection-end-line="401" selection-end-column="26" />
+        <state relative-caret-position="373">
+          <caret line="394" column="29" selection-start-line="394" selection-start-column="29" selection-end-line="394" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -776,9 +743,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/jsDialects.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/forgotten-future-site.iml">
@@ -803,27 +767,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/codeStyles/Project.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.song">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143667">
-          <caret line="8451" column="18" selection-start-line="8451" selection-start-column="18" selection-end-line="8451" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -831,50 +774,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.css">
+    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.css" />
+    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.js" />
+    <entry file="file://$PROJECT_DIR$/.idea/jsDialects.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="60">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.song">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-minimal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="83" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/editor/assets/song-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
-          <folding>
-            <element signature="e#238#4018#0" />
-            <element signature="e#933#1412#0" />
-            <element signature="e#1444#2540#0" />
-            <element signature="e#4025#4080#0" />
-            <element signature="e#6313#6825#0" />
-            <element signature="e#6613#7139#0" />
-            <element signature="e#7158#7515#0" />
-            <element signature="e#8193#8846#0" />
-            <element signature="e#8901#9388#0" />
-            <element signature="e#9442#9629#0" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/loader/song-loader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="304" column="75" selection-start-line="304" selection-start-column="75" selection-end-line="304" selection-end-column="75" />
+        <state relative-caret-position="1920">
+          <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="153" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="906">
+          <caret line="10800" column="4" selection-start-line="10800" selection-start-column="4" selection-end-line="10800" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="1184" column="4" selection-start-line="1184" selection-start-column="4" selection-end-line="1184" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#1377#1595#0" />
+            <element signature="e#1633#2945#0" />
+            <element signature="e#2977#4216#0" />
+          </folding>
         </state>
       </provider>
     </entry>

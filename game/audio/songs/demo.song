@@ -10,8 +10,8 @@ a(perc, oscillator)
 // Default note group
 g()             // Group 'default'
 ge(beat)	    // Execute group 'beat'
-n(osc,A4,1,sine)
-n(osc,A3,.2,sawtooth)
+n(osc.sine,A4,1)
+n(osc.sawtooth,A3,.2)
 p(.25)
 n(osc,C4)
 p(.25)
@@ -21,8 +21,8 @@ n(osc,C6)
 p(.25)
 
 ge(beat)	    // Execute group 'beat'
-n(osc,Gs4,1,sine)
-n(osc,A3,.2,sawtooth)
+n(osc.sine,Gs4,1)
+n(osc.sawtooth,A3,.2)
 p(.25)
 n(osc,C4)
 p(.25)

@@ -51,7 +51,7 @@ song-editor-grid-cell:last-child {
 
 }
 @media only screen and (min-width: 600px)  {
-    song-editor-grid-cell.pause-command {
+    song-editor-grid-cell.command-pause {
         float: right;
         min-width: 60px;
     }

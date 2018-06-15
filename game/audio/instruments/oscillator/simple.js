@@ -3,7 +3,9 @@
 (function() {
     if(!window.instruments)             window.instruments = {};
     if(!window.instruments.oscillator)  window.instruments.oscillator = {};
-    window.instruments.oscillator.simple = OscillatorSimple;
+    window.instruments.oscillator.sine = OscillatorSimpleSine;
+    window.instruments.oscillator.sawtooth = OscillatorSimpleSawtooth;
+    window.instruments.oscillator.square = OscillatorSimpleSquare;
     window.instruments.oscillator.default = OscillatorSimple;
     window.instruments.oscillator.kick = OscillatorSimple;
     window.instruments.oscillator.snare = OscillatorSimple;
@@ -12,26 +14,41 @@
 
     /**
      * Oscillator Instrument
-     * @returns {number}
-     * @param instrumentName
+     * @param context
+     * @param noteStartTime
      * @param noteFrequency
      * @param noteLength
-     * @param oscillatorType
+     * @param {object} options
+     * @returns OscillatorNode
+     * @constructor
      */
-    function OscillatorSimple(instrumentName, noteFrequency, noteLength, oscillatorType) {
-        var context = this.getContext();
-        var noteStartTime = this.getStartTime() + this.getCurrentPosition();
+    function OscillatorSimple(context, noteFrequency, noteStartTime, noteLength, options) {
+        options = options || {};
+        if(!noteStartTime) noteStartTime = context.currentTime;
 
         var osc = context.createOscillator();   // instantiate an oscillator
-        osc.type = oscillatorType || 'square';  // set Type
-        osc.frequency.value = this.getNoteFrequency(noteFrequency);    // set Frequency (hz)
+        osc.type = options.type || 'triangle';  // set Type
+        osc.frequency.value = noteFrequency;    // set Frequency (hz)
 
         // Play note
-        osc.connect(context.destination);       // connect it to the destination
+        osc.connect(options.destination || context.destination);       // connect it to the destination
         osc.start(noteStartTime);               // start the oscillator
-        osc.stop(noteStartTime + (parseFloat(noteLength) * (240 / (this.getBPM()))));
+        if(noteLength)
+            osc.stop(noteStartTime + noteLength);
         // console.info("OSC", noteStartTime, noteEndTime);
-        return 1;
+        return osc;
+    }
+
+    function OscillatorSimpleSquare(context, noteStartTime, noteFrequency, noteLength) {
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'square'});
+    }
+
+    function OscillatorSimpleSine(context, noteStartTime, noteFrequency, noteLength) {
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'sine'});
+    }
+
+    function OscillatorSimpleSawtooth(context, noteStartTime, noteFrequency, noteLength) {
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'sawtooth'});
     }
 
 })();
