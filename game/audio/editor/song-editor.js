@@ -15,8 +15,10 @@
             this.audioContext = options.context || new (window.AudioContext || window.webkitAudioContext)();
             this.depressedKeys = [];
             this.song = null;
-            this.bufferLength = 1;
             this.bpm = 120;
+            this.seekLength = 240 / this.bpm;
+            this.seekPosition = 0;
+            this.playing = false;
         }
 
         getSong() { return this.song; }
@@ -84,10 +86,10 @@
 
         updateEditor(options) {
             options = options || {};
-            var noteGroupName = options.noteGroup || 'default';
-            var commandGroup = this.song.notes[noteGroupName];
-            if(!commandGroup)
-                throw new Error("Note group not found: " + noteGroupName);
+            var commandGroup = this.song.notes; // options.noteGroup || 'default';
+            // var commandGroup = this.song.notes[noteGroupName];
+            // if(!commandGroup)
+            //     throw new Error("Note group not found: " + noteGroupName);
             console.log('Updating Editor:', commandGroup);
 
             this.gridElement.innerHTML = '';
@@ -125,9 +127,92 @@
         playNote(noteArgs, noteStartTime, bpm) {
             var instrumentName = noteArgs[1];
             var noteFrequency = noteArgs[2];
-            var noteLength = noteArgs[3] * (240 / bpm);
+            var noteLength = (noteArgs[3] || 1) * (240 / bpm);
             var options = noteArgs[4];
             return this.playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options);
+        }
+
+        playNotes(commandList, startPosition, seekLength) {
+            var currentPosition = 0;
+            var currentBPM = this.getCurrentBPM();
+            var noteEvents = [];
+            for(var i=0; i<commandList.length; i++) {
+                var command = commandList[i];
+                var commandName = normalizeCommandName(command[0]);
+                switch(commandName) {
+                    case 'Note':
+                        if(currentPosition < startPosition)
+                            continue;   // Notes were already played
+                        var noteEvent = this.playNote(command, currentPosition, currentBPM);
+                        noteEvents.push(noteEvent);
+                        // noteBuffer.push([currentPosition, note]);
+                        // notesPlayed += this.playInstrument(note) ? 0 : 1;
+                        break;
+
+                    case 'Pause':
+                        currentPosition += command[1] * (240 / currentBPM);
+                        break;
+
+                    case 'GroupExecute':
+                        // if(currentPosition < startPosition) // Execute all groups each time
+                        //     continue;
+                        var noteGroupList = this.song.noteGroups[command[1]];
+                        if(!noteGroupList)
+                            throw new Error("Note group not found: " + command[1]);
+                        var groupNoteEvents = this.playNotes(noteGroupList, startPosition - currentPosition, seekLength);
+                        noteEvents = noteEvents.concat(groupNoteEvents);
+                        break;
+                }
+                if(seekLength && currentPosition >= startPosition + seekLength)
+                    break;
+            }
+            return noteEvents;
+        }
+
+        play (seekPosition) {
+            if(seekPosition)
+                this.seekPosition = seekPosition;
+
+            // this.lastNotePosition = 0;
+            this.startTime = this.audioContext.currentTime - this.seekPosition;
+            this.playing = true;
+            this.processPlayback();
+
+            document.dispatchEvent(new CustomEvent('song:started', {
+                detail: this
+            }));
+        }
+
+        pause() {
+            this.playing = false;
+        }
+
+        processPlayback () {
+            if(this.playing === false) {
+                console.info("Playing paused");
+                return;
+            }
+            var noteEvents = this.playNotes(this.song.notes, this.seekPosition, this.seekLength);
+
+            this.seekPosition += this.seekLength;
+
+            if(noteEvents.length > 0) {
+                console.log("Notes playing:", noteEvents, this.seekPosition, this.currentPosition);
+                setTimeout(this.processPlayback.bind(this), this.seekLength * 1000);
+
+                document.dispatchEvent(new CustomEvent('song:playing', {
+                    detail: this
+                }));
+            } else{
+                console.log("Song finished");
+                this.seekPosition = 0;
+                this.playing = false;
+
+                // Update UI
+                document.dispatchEvent(new CustomEvent('song:finished', {
+                    detail: this
+                }));
+            }
         }
 
         getInstrument(path) {
@@ -181,98 +266,6 @@
         }
 
 
-        play (seekPosition) {
-            this.seekPosition = seekPosition || 0;
-            this.currentPosition = null;
-            this.noteBuffer = [];
-
-            // this.lastNotePosition = 0;
-            this.startTime = this.audioContext.currentTime - this.seekPosition;
-            this.processPlayback();
-
-            document.dispatchEvent(new CustomEvent('song:started', {
-                detail: this
-            }));
-        }
-
-        processNoteBuffer(noteList, startPosition, bufferLength) {
-            // endPosition = endPosition || 1;
-            startPosition = startPosition || 0;
-            var currentPosition = startPosition;
-            var noteBuffer = [];
-            var currentBPM = this.getCurrentBPM();
-
-            for(var i=0; i<noteList.length) {
-                var note = noteList[i];
-                var noteCommand = normalizeCommandName(note[0]);
-                switch(noteCommand) {
-                    case 'Note':
-                        if(currentPosition < startPosition)
-                            continue;
-                        noteBuffer.push([currentPosition, note]);
-                        // notesPlayed += this.playInstrument(note) ? 0 : 1;
-                        break;
-
-                    case 'Pause':
-                        currentPosition += note[1] * (240 / currentBPM);
-
-                        break;
-
-                    case 'GroupExecute':
-                        if(currentPosition < startPosition)
-                            continue;
-                        var noteGroupList = this.song.noteGroups[note[1]];
-                        if(!noteGroupList)
-                            throw new Error("Note group not found: " + note[1]);
-                        var groupNoteBuffer = this.processNoteBuffer(noteGroupList);
-                        for(var j=0; j<groupNoteBuffer.length; j++) {
-                            var noteEntry = groupNoteBuffer[j];
-                            noteEntry[0] += currentPosition;
-                            noteBuffer.push(noteEntry);
-                        }
-                        break;
-                }
-                if(bufferLength && currentPosition > (startPosition + bufferLength))
-                    break;
-            }
-            return noteBuffer;
-        }
-
-        processPlayback () {
-            var noteBuffer = this.processNoteBuffer(this.song.notes, this.currentPosition, this.bufferLength);
-            var bpm = this.getCurrentBPM();
-
-            for(var i=0; i<noteBuffer.length; i++) {
-                var currentPosition = noteBuffer[i][0];
-                var noteArgs = noteBuffer[i][1];
-                var noteCommand = normalizeCommandName(noteArgs[0]);
-                switch(noteCommand) {
-                    case 'Note':
-                        this.playNote(noteArgs, currentPosition, bpm) ? 0 : 1;
-                        break;
-                }
-                // this.lastNotePosition++;
-            }
-
-
-            this.seekPosition += this.seekLength;
-            if(noteBuffer.length > 0) {
-                console.log("Notes Played:", noteBuffer, this.seekPosition, this.currentPosition);
-                setTimeout(this.processPlayback.bind(this), this.seekLength * 1000);
-
-                document.dispatchEvent(new CustomEvent('song:playing', {
-                    detail: this
-                }));
-            } else{
-                console.log("Song finished");
-
-                // Update UI
-                document.dispatchEvent(new CustomEvent('song:finished', {
-                    detail: this
-                }));
-            }
-        };
-
         onKeyDown(e) {
             if(this.depressedKeys.indexOf(e.key) > -1) {
                 // console.info("Ignoring repeat keydown: ", e);
@@ -308,6 +301,12 @@
                         selectedRow.previousSibling.firstChild.select();
                     }
                     break;
+
+                case ' ':
+                    if(this.playing)    this.pause();
+                    else                this.play();
+                    break;
+
                 default:
                     selectedCell.onKeyDown(e);
                     if(!e.defaultPrevented)
