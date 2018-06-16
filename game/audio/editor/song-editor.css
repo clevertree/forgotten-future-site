@@ -48,7 +48,6 @@ song-editor-grid-cell {
 }
 song-editor-grid-cell:last-child {
     margin-right: 0;
-
 }
 @media only screen and (min-width: 600px)  {
     song-editor-grid-cell.command-pause {
@@ -64,6 +63,10 @@ song-editor-grid-cell:hover {
 song-editor-grid-cell.selected {
     /*background-color: #444;*/
     color: greenyellow;
+}
+
+song-editor-grid-cell.playing {
+    font-weight: bold;
 }
 
 song-editor-grid-command {

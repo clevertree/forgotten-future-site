@@ -128,7 +128,10 @@
             var instrumentName = noteArgs[1];
             var noteFrequency = noteArgs[2];
             var noteLength = (noteArgs[3] || 1) * (240 / bpm);
-            var options = noteArgs[4];
+            var options = noteArgs[4] || {};
+            if(noteArgs.associatedElement)
+                options.associatedElement = noteArgs.associatedElement;
+
             return this.playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options);
         }
 
@@ -200,7 +203,7 @@
                 console.log("Notes playing:", noteEvents, this.seekPosition, this.currentPosition);
                 setTimeout(this.processPlayback.bind(this), this.seekLength * 1000);
 
-                document.dispatchEvent(new CustomEvent('song:playing', {
+                this.dispatchEvent(new CustomEvent('song:playing', {
                     detail: this
                 }));
             } else{
@@ -209,7 +212,7 @@
                 this.playing = false;
 
                 // Update UI
-                document.dispatchEvent(new CustomEvent('song:finished', {
+                this.dispatchEvent(new CustomEvent('song:finished', {
                     detail: this
                 }));
             }
@@ -367,6 +370,7 @@
         constructor(command) {
             super();
             this.command = command;
+            command.associatedElement = this;
         }
 
         getEditor() {
@@ -413,7 +417,9 @@
                         e.preventDefault();
 
                         var editor = this.getEditor();
-                        var noteEvent = editor.playInstrument(this.command[1], this.command[2]);
+                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], null, null, {
+                            associatedElement: this
+                        });
                         var noteUpCallback = function(e2) {
                             if(e.key === e2.key) {
                                 editor.removeEventListener('keyup', noteUpCallback);

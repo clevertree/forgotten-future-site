@@ -36,19 +36,28 @@
         if(noteLength)
             osc.stop(noteStartTime + noteLength);
         // console.info("OSC", noteStartTime, noteEndTime);
+        if(options.associatedElement) {
+            options.associatedElement.classList.add('playing');
+            osc.addEventListener('ended', function() {
+                options.associatedElement.classList.remove('playing');
+            }.bind(this));
+        }
         return osc;
     }
 
-    function OscillatorSimpleSquare(context, noteStartTime, noteFrequency, noteLength) {
-        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'square'});
+    function OscillatorSimpleSquare(context, noteStartTime, noteFrequency, noteLength, options) {
+        options = options || {}; options.type = 'square';
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, options);
     }
 
-    function OscillatorSimpleSine(context, noteStartTime, noteFrequency, noteLength) {
-        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'sine'});
+    function OscillatorSimpleSine(context, noteStartTime, noteFrequency, noteLength, options) {
+        options = options || {}; options.type = 'sine';
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, options);
     }
 
-    function OscillatorSimpleSawtooth(context, noteStartTime, noteFrequency, noteLength) {
-        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, {type: 'sawtooth'});
+    function OscillatorSimpleSawtooth(context, noteStartTime, noteFrequency, noteLength, options) {
+        options = options || {}; options.type = 'sawtooth';
+        return OscillatorSimple(context, noteStartTime, noteFrequency, noteLength, options);
     }
 
 })();
