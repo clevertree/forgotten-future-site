@@ -15,7 +15,7 @@
             this.audioContext = options.context || new (window.AudioContext || window.webkitAudioContext)();
             this.depressedKeys = [];
             this.song = null;
-            this.bpm = 120;
+            this.bpm = 160;
             this.seekLength = 240 / this.bpm;
             this.seekPosition = 0;
             this.playing = false;
@@ -120,7 +120,21 @@
         playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options) {
             var instrument = this.getInstrument(instrumentName);
             noteFrequency = this.getNoteFrequency(noteFrequency || 'C4');
-            return instrument(this.audioContext, noteFrequency, noteStartTime, noteLength, options);
+
+            var noteEvent = instrument(this.audioContext, noteFrequency, noteStartTime, noteLength, options);
+            if(options.associatedElement) {
+                if(noteStartTime - .5 > this.audioContext.currentTime)
+                    setTimeout(function() {
+                        options.associatedElement.classList.add('playing');
+                    }, (noteStartTime - this.audioContext.currentTime) * 1000);
+                else
+                    options.associatedElement.classList.add('playing');
+
+                setTimeout(function() {
+                    options.associatedElement.classList.remove('playing');
+                }, (noteStartTime + noteLength - this.audioContext.currentTime) * 1000);
+            }
+            return noteEvent;
         }
 
         playNote(noteArgs, noteStartTime, bpm) {
@@ -177,7 +191,7 @@
 
             // this.lastNotePosition = 0;
             this.startTime = this.audioContext.currentTime - this.seekPosition;
-            console.log("Start playback:", this.startTime);
+            // console.log("Start playback:", this.startTime);
             this.playing = true;
             this.processPlayback();
 
@@ -206,7 +220,7 @@
             this.seekPosition = this.audioContext.currentTime - this.startTime;
 
             if(noteEvents.length > 0) {
-                console.log("Notes playing:", noteEvents, this.seekPosition, this.currentPosition);
+                // console.log("Notes playing:", noteEvents, this.seekPosition, this.currentPosition);
                 setTimeout(this.processPlayback.bind(this), this.seekLength * 1000);
 
                 this.dispatchEvent(new CustomEvent('song:playing', {

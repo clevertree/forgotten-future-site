@@ -24,7 +24,6 @@
      */
     function OscillatorSimple(context, noteFrequency, noteStartTime, noteLength, options) {
         options = options || {};
-        // if(!noteStartTime) noteStartTime = context.currentTime;
 
         var osc = context.createOscillator();   // instantiate an oscillator
         osc.type = options.type || 'triangle';  // set Type
@@ -35,13 +34,8 @@
         osc.start(noteStartTime);               // start the oscillator
         if(noteLength)
             osc.stop(noteStartTime + noteLength);
-        console.info("OSC", noteStartTime, noteLength);
-        if(options.associatedElement) {
-            options.associatedElement.classList.add('playing');
-            osc.addEventListener('ended', function() {
-                options.associatedElement.classList.remove('playing');
-            });
-        }
+        // console.info("OSC", noteStartTime, noteLength);
+
         return osc;
     }
 
