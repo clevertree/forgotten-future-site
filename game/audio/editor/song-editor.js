@@ -14,11 +14,13 @@
             this.loadSongData({});
             this.audioContext = options.context || new (window.AudioContext || window.webkitAudioContext)();
             this.depressedKeys = [];
+            this.song = null;
+            this.bufferLength = 1;
+            this.bpm = 120;
         }
 
-        getSong() {
-            return this.song;
-        }
+        getSong() { return this.song; }
+        getCurrentBPM() { return this.bpm; }
 
         connectedCallback() {
             this.addEventListener('keydown', this.onKeyDown.bind(this));
@@ -44,7 +46,7 @@
 
         loadSongData(songData) {
             songData.notes = songData.notes || {};
-            songData.notes.default = songData.notes.default || {};
+            songData.noteGroups = songData.noteGroups || {};
             songData.aliases = songData.aliases || {};
             this.song = songData;
         }
@@ -113,14 +115,19 @@
             }
         }
 
-        playInstrument(instrumentName, noteFrequencyName, noteStartTime, noteLength, options) {
+        playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options) {
             var instrument = this.getInstrument(instrumentName);
-            var noteFrequency = this.getNoteFrequency(noteFrequencyName || 'C4');
+            noteFrequency = this.getNoteFrequency(noteFrequency || 'C4');
             noteStartTime = noteStartTime || this.audioContext.currentTime;
-            // var noteLength = null; // args[3] * bpmRatio; // TODO keyup
-            var noteEvent = instrument(this.audioContext, noteFrequency, noteStartTime, noteLength, options);
-            // console.info("Playing Instrument: ", noteEvent);
-            return noteEvent;
+            return instrument(this.audioContext, noteFrequency, noteStartTime, noteLength, options);
+        }
+
+        playNote(noteArgs, noteStartTime, bpm) {
+            var instrumentName = noteArgs[1];
+            var noteFrequency = noteArgs[2];
+            var noteLength = noteArgs[3] * (240 / bpm);
+            var options = noteArgs[4];
+            return this.playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options);
         }
 
         getInstrument(path) {
@@ -172,6 +179,99 @@
             // Return frequency of note
             return 440 * Math.pow(2, (keyNumber- 49) / 12);
         }
+
+
+        play (seekPosition) {
+            this.seekPosition = seekPosition || 0;
+            this.currentPosition = null;
+            this.noteBuffer = [];
+
+            // this.lastNotePosition = 0;
+            this.startTime = this.audioContext.currentTime - this.seekPosition;
+            this.processPlayback();
+
+            document.dispatchEvent(new CustomEvent('song:started', {
+                detail: this
+            }));
+        }
+
+        processNoteBuffer(noteList, startPosition, bufferLength) {
+            // endPosition = endPosition || 1;
+            startPosition = startPosition || 0;
+            var currentPosition = startPosition;
+            var noteBuffer = [];
+            var currentBPM = this.getCurrentBPM();
+
+            for(var i=0; i<noteList.length) {
+                var note = noteList[i];
+                var noteCommand = normalizeCommandName(note[0]);
+                switch(noteCommand) {
+                    case 'Note':
+                        if(currentPosition < startPosition)
+                            continue;
+                        noteBuffer.push([currentPosition, note]);
+                        // notesPlayed += this.playInstrument(note) ? 0 : 1;
+                        break;
+
+                    case 'Pause':
+                        currentPosition += note[1] * (240 / currentBPM);
+
+                        break;
+
+                    case 'GroupExecute':
+                        if(currentPosition < startPosition)
+                            continue;
+                        var noteGroupList = this.song.noteGroups[note[1]];
+                        if(!noteGroupList)
+                            throw new Error("Note group not found: " + note[1]);
+                        var groupNoteBuffer = this.processNoteBuffer(noteGroupList);
+                        for(var j=0; j<groupNoteBuffer.length; j++) {
+                            var noteEntry = groupNoteBuffer[j];
+                            noteEntry[0] += currentPosition;
+                            noteBuffer.push(noteEntry);
+                        }
+                        break;
+                }
+                if(bufferLength && currentPosition > (startPosition + bufferLength))
+                    break;
+            }
+            return noteBuffer;
+        }
+
+        processPlayback () {
+            var noteBuffer = this.processNoteBuffer(this.song.notes, this.currentPosition, this.bufferLength);
+            var bpm = this.getCurrentBPM();
+
+            for(var i=0; i<noteBuffer.length; i++) {
+                var currentPosition = noteBuffer[i][0];
+                var noteArgs = noteBuffer[i][1];
+                var noteCommand = normalizeCommandName(noteArgs[0]);
+                switch(noteCommand) {
+                    case 'Note':
+                        this.playNote(noteArgs, currentPosition, bpm) ? 0 : 1;
+                        break;
+                }
+                // this.lastNotePosition++;
+            }
+
+
+            this.seekPosition += this.seekLength;
+            if(noteBuffer.length > 0) {
+                console.log("Notes Played:", noteBuffer, this.seekPosition, this.currentPosition);
+                setTimeout(this.processPlayback.bind(this), this.seekLength * 1000);
+
+                document.dispatchEvent(new CustomEvent('song:playing', {
+                    detail: this
+                }));
+            } else{
+                console.log("Song finished");
+
+                // Update UI
+                document.dispatchEvent(new CustomEvent('song:finished', {
+                    detail: this
+                }));
+            }
+        };
 
         onKeyDown(e) {
             if(this.depressedKeys.indexOf(e.key) > -1) {

@@ -9,32 +9,31 @@
     "osc": "oscillator",
     "perc": "oscillator"
   },
-  "notes": {
-    "default": [
-      ["ge", "beat"],
-      ["n", "osc.sine", "A4", 1],
-      ["n", "osc.sawtooth", "A3", 0.2],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C4"],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C5"],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C6"],
-      ["p", 0.25],
+  "notes": [
+    ["ge", "beat"],
+    ["n", "osc.sine", "A4", 1],
+    ["n", "osc.sawtooth", "A3", 0.2],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C4"],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C5"],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C6"],
+    ["p", 0.25],
 
-      ["ge", "beat"],
-      ["n", "osc.sine", "Gs4", 1],
-      ["n", "osc.sawtooth", "Gs3", 0.2],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C4"],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C5"],
-      ["p", 0.25],
-      ["n", "osc.sawtooth", "C6"],
-      ["p", 0.25]
-    ],
+    ["ge", "beat"],
+    ["n", "osc.sine", "Gs4", 1],
+    ["n", "osc.sawtooth", "Gs3", 0.2],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C4"],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C5"],
+    ["p", 0.25],
+    ["n", "osc.sawtooth", "C6"],
+    ["p", 0.25]
+  ],
+  "noteGroups": {
     "beat": [
-
       ["n", "perc.kick"],
       ["p", 0.25],
       ["n", "perc.kick"], ["n", "perc.snare"],

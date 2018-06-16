@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/game/audio/editor/song-editor.js" line="464" />
+    <bookmark url="file://$PROJECT_DIR$/game/audio/editor/song-editor.js" line="564" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/game/audio/songs/demo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e033f102-7df0-4c02-90dc-17cbbe16b004.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e033f102-7df0-4c02-90dc-17cbbe16b004.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsDialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsDialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/loader/song-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/loader/song-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo.song" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo.song" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/assets/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/audio/songs/demo.json" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/songs/demo.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,40 +44,58 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#1377#1595#0" />
-                <element signature="e#1633#2945#0" />
-                <element signature="e#2977#4216#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6979866">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="402">
+                  <caret line="241" selection-start-line="241" selection-end-line="241" />
+                  <folding>
+                    <element signature="e#1633#2945#0" />
+                    <element signature="e#2977#4216#0" />
+                    <element signature="e#9664#10330#0" />
+                    <element signature="e#10542#11721#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="demo.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="simple.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="demo.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="36" selection-start-line="36" selection-end-line="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,16 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>processArgs</find>
-      <find>onkeydown(</find>
-      <find>Row</find>
-      <find>lastSibling</find>
-      <find>lastChild</find>
-      <find>#444</find>
-      <find>inline-block</find>
-      <find>onKeydown</find>
-      <find>dialect</find>
-      <find>ES6</find>
       <find>this</find>
       <find>ediotr</find>
       <find>loadScript</find>
@@ -129,6 +127,16 @@
       <find>playNoteInstrument</find>
       <find>playInstrument</find>
       <find>Ignor</find>
+      <find>Stopping</find>
+      <find>Playing Instr</find>
+      <find>Ignoring</find>
+      <find>this.args</find>
+      <find>this.song.notes</find>
+      <find>noteBuffer</find>
+      <find>bufferLeng</find>
+      <find>lastNotePosition</find>
+      <find>bpm</find>
+      <find>240</find>
     </findStrings>
     <replaceStrings>
       <replace>p</replace>
@@ -217,8 +225,8 @@
         <option value="$PROJECT_DIR$/game/audio/loader/song-loader.js" />
         <option value="$PROJECT_DIR$/pages/editor/index.html" />
         <option value="$PROJECT_DIR$/game/audio/editor/song-editor.css" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo.json" />
         <option value="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" />
+        <option value="$PROJECT_DIR$/game/audio/songs/demo.json" />
         <option value="$PROJECT_DIR$/game/audio/editor/song-editor.js" />
       </list>
     </option>
@@ -529,12 +537,12 @@
       <workItem from="1528999626294" duration="548000" />
       <workItem from="1529001859497" duration="598000" />
       <workItem from="1529080754850" duration="4784000" />
-      <workItem from="1529088765873" duration="2057000" />
+      <workItem from="1529088765873" duration="7584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177034000" />
+    <option name="totallyTimeSpent" value="182561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,18 +557,19 @@
     <frame x="0" y="23" width="1855" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12884097" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12884097" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22857143" />
+      <window_info anchor="right" id="Debug" order="6" weight="0.22857143" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -573,7 +582,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info id="Capture Tool" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +611,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="108" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -825,24 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/loader/song-loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="153" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="906">
           <caret line="10800" column="4" selection-start-line="10800" selection-start-column="4" selection-end-line="10800" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -860,14 +854,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/loader/song-loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="402">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
           <folding>
-            <element signature="e#1377#1595#0" />
             <element signature="e#1633#2945#0" />
             <element signature="e#2977#4216#0" />
+            <element signature="e#9664#10330#0" />
+            <element signature="e#10542#11721#0" />
           </folding>
         </state>
       </provider>
