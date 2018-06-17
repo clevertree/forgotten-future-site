@@ -18,6 +18,7 @@
             this.seekLength = 240 / this.bpm;
             this.seekPosition = 0;
             this.playing = false;
+            this.config = DEFAULT_CONFIG;
 
             this.gridElement = new SongEditorGridElement();
             this.menuElement = new SongEditorMenuElement();
@@ -115,7 +116,7 @@
                         break;
 
                     case 'Pause':
-                        rowCommands.push(args);
+                        // rowCommands.push(args);
                         var rowElm = new SongEditorGridRowElement(args);
                         rowElm.addCommands(rowCommands);
                         if(this.gridElement.children.length % 2 === 0)
@@ -128,35 +129,35 @@
             }
         }
 
-        playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options) {
+        playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options, associatedElement) {
             var instrument = this.getInstrument(instrumentName);
             noteFrequency = this.getNoteFrequency(noteFrequency || 'C4');
 
             var noteEvent = instrument(this.audioContext, noteFrequency, noteStartTime, noteLength, options);
-            if(options.associatedElement) {
+            if(associatedElement) {
                 if(noteStartTime - .5 > this.audioContext.currentTime)
                     setTimeout(function() {
-                        options.associatedElement.classList.add('playing');
+                        associatedElement.classList.add('playing');
                     }, (noteStartTime - this.audioContext.currentTime) * 1000);
                 else
-                    options.associatedElement.classList.add('playing');
+                    associatedElement.classList.add('playing');
 
                 setTimeout(function() {
-                    options.associatedElement.classList.remove('playing');
+                    associatedElement.classList.remove('playing');
                 }, (noteStartTime + noteLength - this.audioContext.currentTime) * 1000);
             }
             return noteEvent;
         }
 
-        playNote(noteArgs, noteStartTime, bpm) {
+        playNote(noteArgs, noteStartTime, bpm, associatedElement) {
             var instrumentName = noteArgs[1];
             var noteFrequency =  noteArgs[2];
             var noteLength = (noteArgs[3] || 1) * (240 / bpm);
             var options = noteArgs[4] || {};
-            if(noteArgs.associatedElement)
-                options.associatedElement = noteArgs.associatedElement;
+            if(!associatedElement && noteArgs.associatedElement)
+                associatedElement = noteArgs.associatedElement;
 
-            return this.playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options);
+            return this.playInstrument(instrumentName, noteFrequency, noteStartTime, noteLength, options, associatedElement);
         }
 
         playNotes(commandList, startPosition, seekLength, playbackOffset) {
@@ -313,46 +314,32 @@
                     }
                     this.depressedKeys.push(e.key);
 
+                    if(e.altKey) {
+                        if(keyboardActions.alt[e.key]) {
+                            keyboardActions.alt[e.key].call(this, e);
+                            e.preventDefault();
+                            return;
+                        }
+                    }
+                    if(e.ctrlKey) {
+                        if(keyboardActions.ctrl[e.key]) {
+                            keyboardActions.ctrl[e.key].call(this, e);
+                            e.preventDefault();
+                            return;
+                        }
+                    }
+                    if(keyboardActions.default[e.key]) {
+                        keyboardActions.default[e.key].call(this, e);
+                        e.preventDefault();
+                        return;
+                    }
+
                     var selectedCell = this.querySelector('song-editor-grid-cell.selected')
                         || this.querySelector('song-editor-grid-cell');
-                    var selectedRow = selectedCell.parentNode;
-                    switch(e.key) {
-                        case 'ArrowRight':
-                            if(selectedCell.nextSibling) {
-                                selectedCell.nextSibling.select();
-                            } else if(selectedRow.nextSibling) {
-                                selectedRow.nextSibling.firstChild.select();
-                            }
-                            break;
-                        case 'ArrowLeft':
-                            if(selectedCell.previousSibling) {
-                                selectedCell.previousSibling.select();
-                            } else if(selectedRow.previousSibling) {
-                                selectedRow.previousSibling.lastChild.select();
-                            }
-                            break;
-                        case 'ArrowDown':
-                            if(selectedRow.nextSibling) {
-                                selectedRow.nextSibling.firstChild.select();
-                            }
-                            break;
-                        case 'ArrowUp':
-                            if(selectedRow.previousSibling) {
-                                selectedRow.previousSibling.firstChild.select();
-                            }
-                            break;
 
-                        case ' ':
-                            if(this.playing)    this.pause();
-                            else                this.play();
-                            break;
-
-                        default:
-                            selectedCell.onKeyDown(e);
-                            if(!e.defaultPrevented)
-                                console.info('Unused keydown', e.key);
-                            break;
-                    }
+                    selectedCell.onInput(e);
+                    if(!e.defaultPrevented)
+                        console.info('Unused input', e);
                     break;
 
                 case 'keyup':
@@ -448,34 +435,49 @@
             this.classList.add('selected');
         }
 
-        onKeyDown(e) {
-            var commandName = normalizeCommandName(this.command[0]);
-            switch(commandName) {
-                case 'Note':
-                    var keyboard = SongEditorGridCellElement.keyboardLayout;
-                    if(keyboard[e.key]) {
-                        this.command[2] = keyboard[e.key];
-                        this.refresh();
-                        e.preventDefault();
+        playNote() {
+            this.editor.playNote(
+                this.command,
+                this.editor.audioContext.currentTime,
+                this.editor.getCurrentBPM(),
+                this,
+            );
+        }
 
-                        var noteEvent = this.editor.playInstrument(this.command[1], this.command[2], this.editor.audioContext.currentTime, null, {
-                            associatedElement: this
-                        });
-                        var noteUpCallback = function(e2) {
-                            if(e.key === e2.key) {
-                                this.editor.removeEventListener('keyup', noteUpCallback);
-                                noteEvent.stop(0);
-                                // console.info("Stopping Note: ", noteEvent);
-                                e2.preventDefault();
-                            }
-                        }.bind(this);
-                        this.editor.addEventListener('keyup', noteUpCallback);
-                        return;
-                    }
+        onInput(e) {
+            switch(e.type) {
+                case 'click':
                     break;
-                default:
-                    console.log("Unused keydown: ", this, this.command, e);
-                    e.preventDefault();
+                case 'keydown':
+                    var commandName = normalizeCommandName(this.command[0]);
+                    switch(commandName) {
+                        case 'Note':
+                            var keyboard = SongEditorGridCellElement.keyboardLayout;
+                            if(keyboard[e.key]) {
+                                this.command[2] = keyboard[e.key];
+                                this.refresh();
+                                e.preventDefault();
+
+                                var noteEvent = this.editor.playInstrument(this.command[1], this.command[2], this.editor.audioContext.currentTime, null, {
+                                    associatedElement: this
+                                });
+                                var noteUpCallback = function(e2) {
+                                    if(e.key === e2.key) {
+                                        this.editor.removeEventListener('keyup', noteUpCallback);
+                                        noteEvent.stop(0);
+                                        // console.info("Stopping Note: ", noteEvent);
+                                        e2.preventDefault();
+                                    }
+                                }.bind(this);
+                                this.editor.addEventListener('keyup', noteUpCallback);
+                                return;
+                            }
+                            break;
+                        default:
+                            console.log("Unused keydown: ", this, this.command, e);
+                            e.preventDefault();
+                            break;
+                    }
                     break;
             }
         }
@@ -559,6 +561,16 @@
                 console.warn("No menu item found", e.target);
                 return;
             }
+
+            switch(e.type) {
+                case 'keydown':
+                    switch(e.key) {
+                        case 'Tab':
+                            return;
+                    }
+                    break;
+            }
+
             console.log("Menu", e, target);
             if(target.action) {
                 var menuAction = menuActions[target.action];
@@ -580,8 +592,8 @@
     class SongEditorMenuItemElement extends HTMLElement {
         constructor() {
             super();
-            // if(!this.getAttribute('tabindex'))
-            //     this.setAttribute('tabindex', '1');
+            if(!this.getAttribute('tabindex'))
+                this.setAttribute('tabindex', '1');
         }
 
         get editor() { return findParentNode(this, SongEditorElement); }
@@ -711,11 +723,11 @@
                 <span>File</span>
                 <song-editor-submenu>
                     <song-editor-menu-item>
-                        <span>Load from memory ></span>
+                        <span>Open from memory ></span>
                         ${renderEditorMenuLoadFromMemory()}
                     </song-editor-menu-item>
-                    <song-editor-menu-item action="load:file">Load from file</song-editor-menu-item>
-                    <song-editor-menu-item action="load:url">Load from url</song-editor-menu-item>
+                    <song-editor-menu-item action="load:file">Open from file</song-editor-menu-item>
+                    <song-editor-menu-item action="load:url">Open from url</song-editor-menu-item>
                     
                     <hr/>
                     <song-editor-menu-item action="save:memory">Save to memory</song-editor-menu-item>
@@ -726,9 +738,9 @@
                 </song-editor-submenu>
             </song-editor-menu-item>
             
-            <song-editor-menu-item>Invite</song-editor-menu-item>
-            <song-editor-menu-item>Notes</song-editor-menu-item>
+            <song-editor-menu-item>Editor</song-editor-menu-item>
             <song-editor-menu-item>Instruments</song-editor-menu-item>
+            <song-editor-menu-item>Invite</song-editor-menu-item>
         `;
     }
 
@@ -765,7 +777,63 @@
     }
 
     const menuActions = {
-        'save:memory': function(editor) { editor.saveSongToMemory(); },
-        'load:memory': function(editor) { editor.loadSongFromMemory(this.getAttribute('guid')); },
+        'save:memory': function() { this.saveSongToMemory(); },
+        'load:memory': function() { this.loadSongFromMemory(this.getAttribute('guid')); },
     };
+    const keyboardActions = {
+        'default': {
+            'ArrowRight': handleArrowKeyEvent,
+            'ArrowLeft': handleArrowKeyEvent,
+            'ArrowDown': handleArrowKeyEvent,
+            'ArrowUp': handleArrowKeyEvent,
+            ' ': function() { this.play(); }
+        },
+        'alt': {
+
+        },
+        'ctrl': {
+            'ArrowRight': handleArrowKeyEvent,
+            'ArrowLeft': handleArrowKeyEvent,
+            'ArrowDown': handleArrowKeyEvent,
+            'ArrowUp': handleArrowKeyEvent,
+            's': function () { this.saveSongToMemory(); },
+        },
+    };
+
+    function handleArrowKeyEvent(e) {
+        var selectedCell = this.querySelector('song-editor-grid-cell.selected')
+            || this.querySelector('song-editor-grid-cell');
+        var newSelectedCell = selectedCell;
+
+        var selectedRow = selectedCell.parentNode;
+        switch(e.key) {
+            case 'ArrowRight':
+                newSelectedCell = selectedCell.nextSibling
+                    || (selectedRow.nextSibling ? selectedRow.nextSibling.firstChild : null);
+                break;
+            case 'ArrowLeft':
+                newSelectedCell = selectedCell.previousSibling
+                    || (selectedRow.previousSibling ? selectedRow.previousSibling.lastChild : null);
+                break;
+            case 'ArrowDown':
+                if(selectedRow.nextSibling)
+                    newSelectedCell = selectedRow.nextSibling.firstChild;
+                break;
+            case 'ArrowUp':
+                if(selectedRow.previousSibling)
+                    newSelectedCell = selectedRow.previousSibling.firstChild;
+                break;
+        }
+        if(newSelectedCell !== selectedCell) {
+            newSelectedCell.select();
+            if(this.config.playNotesOnSelect !== false)
+                newSelectedCell.playNote();
+        }
+
+    }
+
+    const DEFAULT_CONFIG = {
+        playNotesOnSelect: true,
+    }
+
 })();
