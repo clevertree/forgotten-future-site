@@ -30,9 +30,9 @@
 
             this.gridElement = new SongEditorGridElement();
 
-            var menuElm = new SongEditorMenuElement()
-            initEditorMenu(menuElm);
+            var menuElm = new SongEditorMenuElement();
             this.appendChild(menuElm);
+            menuElm.innerHTML = renderEditorMenuContent();
             this.appendChild(this.gridElement);
 
             if(this.getSongURL())
@@ -353,6 +353,7 @@
     // Grid elements
 
     class SongEditorGridElement extends HTMLElement {
+        get editor() { return findEditorParentNode(this); }
     }
 
     class SongEditorGridRowElement extends HTMLElement {
@@ -365,6 +366,7 @@
             if(pauseLength)
                this.setAttribute('pause', pauseLength)
         }
+        get editor() { return findEditorParentNode(this); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -397,10 +399,7 @@
             command.associatedElement = this;
         }
 
-        getEditor() {
-            return this.parentNode.parentNode.parentNode;
-
-        }
+        get editor() { return findEditorParentNode(this); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -440,8 +439,7 @@
                         this.refresh();
                         e.preventDefault();
 
-                        var editor = this.getEditor();
-                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], editor.audioContext.currentTime, null, {
+                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], this.editor.audioContext.currentTime, null, {
                             associatedElement: this
                         });
                         var noteUpCallback = function(e2) {
@@ -480,6 +478,8 @@
                 this.setAttribute('name', commandName)
         }
 
+        get editor() { return findEditorParentNode(this); }
+
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
         }
@@ -498,6 +498,8 @@
                 this.setAttribute('value', parameterValue)
         }
 
+        get editor() { return findEditorParentNode(this); }
+
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
         }
@@ -512,44 +514,17 @@
     // Menu elements
 
     class SongEditorMenuElement extends HTMLElement {
-        constructor(title) {
+        constructor() {
             super();
-            this.title = title;
         }
 
-        getEditor() {
-            return this.parentNode;
-        }
+        get editor() { return findEditorParentNode(this); }
 
         connectedCallback() {
-            // var editor = this.getEditor();
             this.addEventListener('keydown', this.onInput.bind(this));
             this.addEventListener('click', this.onInput.bind(this));
             // let shadowRoot = this.attachShadow({mode: 'open'});
         }
-
-        addMenuGroup(groupTitle, callback) {
-            var menuItem = new SongEditorMenuItemElement(groupTitle, callback);
-            this.appendChild(menuItem);
-            var menuGroup = new SongEditorMenuElement(groupTitle);
-            this.appendChild(menuGroup);
-            return menuGroup;
-        }
-
-        addMenuItem(groupName, itemTitle, callback) {
-            var subMenus = this.querySelectorAll('song-editor-menu');
-            for(var i=0; i<subMenus.length; i++) {
-                var subMenuElm = subMenus[i];
-                if(groupName === subMenuElm.title) {
-                    var menuItem = new SongEditorMenuItemElement(itemTitle, callback);
-                    subMenuElm.appendChild(menuItem);
-                    return menuItem;
-                }
-            }
-            throw new Error("Menu group not found: " + groupName);
-        }
-
-
 
 
         onInput(e) {
@@ -561,33 +536,32 @@
                     break;
 
             }
-            console.log("Menu", e);
+            // console.log("Menu", e);
             if(e.target instanceof SongEditorMenuItemElement) {
-                console.log("Executing menu item ", e.target);
+                // console.log("Executing menu item ", e.target);
                 e.target.executeMenuCommand();
             }
         }
 
     }
+    class SongEditorSubMenuElement extends SongEditorMenuElement {
 
+    }
 
     class SongEditorMenuItemElement extends HTMLElement {
-        constructor(title, menuCommand) {
+        constructor() {
             super();
-            this.title = title;
-            this.menuCommand = menuCommand || this.menuCommandToggleGroup;
         }
+
+        get action() { return this.getAttribute('action'); }
 
         executeMenuCommand() {
-            this.menuCommand.call(this);
-        }
-
-        connectedCallback() {
-            this.innerHTML = this.title;
-        }
-
-        menuCommandToggleGroup(e) {
-            this.classList.toggle('open');
+            if(!this.action)
+                return;
+            var menuAction = menuActions[this.action];
+            if(!menuAction)
+                throw new Error("Unknown menu action: " + this.action);
+            menuAction();
         }
     }
 
@@ -595,6 +569,7 @@
     // Define custom elements
     customElements.define('song-editor', SongEditorElement);
     customElements.define('song-editor-menu', SongEditorMenuElement);
+    customElements.define('song-editor-submenu', SongEditorSubMenuElement);
     customElements.define('song-editor-menu-item', SongEditorMenuItemElement);
     customElements.define('song-editor-grid', SongEditorGridElement);
     customElements.define('song-editor-grid-row', SongEditorGridRowElement);
@@ -657,44 +632,79 @@
         throw new Error("Unknown command: " + commandString);
     }
 
-    function playNoteInstrument(args) {
-        var instrumentName = args[0];
-        console.log("TODO Play Note: ", args, instrumentName);
-    }
-
-    function getInstrumentCustomArguments(instrumentCallback) {
-        var args = instrumentCallback.toString().replace (/[\r\n\s]+/g, ' ').
-            match (/(?:function\s*\w*)?\s*(?:\((.*?)\)|([^\s]+))/).
-            slice (1,3).
-            join ('').
-            split (/\s*,\s*/);
-        args.shift();
-        args.shift();
-        args.shift();
-        args.shift();
-        return args;
-    }
-
     function clearElementClass(className, selector) {
         var clearElms = document.querySelectorAll(selector || '.' + className);
         for(var i=0; i<clearElms.length; i++)
             clearElms[i].classList.remove(className);
     }
 
+    // Element commands
+
+    function findEditorParentNode(editorChildElement) {
+        while(editorChildElement = editorChildElement.parentNode)
+            if(editorChildElement instanceof SongEditorElement)
+                break;
+        return editorChildElement;
+    }
+
     // Menu commands
 
-    function initEditorMenu(menu) {
-        menu.innerHTML = ``;
-        menu.addMenuGroup('File');
-        menu.addMenuItem('File', 'Load from memory', menuCommandFileLoadFromMemory);
-        menu.addMenuItem('File', 'Load from file', menuCommandFileLoadFromMemory);
-        menu.addMenuItem('File', 'Load from url', menuCommandFileLoadFromMemory);
+    function renderEditorMenuContent() {
+        return `
+            <song-editor-menu-item>
+                <span>File</span>
+                <song-editor-submenu>
+                    <song-editor-menu-item>
+                        <span>Load from memory ></span>
+                        ${renderEditorMenuLoadFromMemory()}
+                    </song-editor-menu-item>
+                    <song-editor-menu-item action="load:file">Load from file</song-editor-menu-item>
+                    <song-editor-menu-item action="load:url">Load from url</song-editor-menu-item>
+                    
+                    <hr/>
+                    <song-editor-menu-item action="save:memory">Save to memory</song-editor-menu-item>
+                    <song-editor-menu-item action="save:file">Save to file</song-editor-menu-item>
+                    
+                    <hr/>
+                    <song-editor-menu-item action="export:file"><span>Export to audio file</span></song-editor-menu-item>
+                </song-editor-submenu>
+            </song-editor-menu-item>
+            
+            <song-editor-menu-item>Invite</song-editor-menu-item>
+            <song-editor-menu-item>Notes</song-editor-menu-item>
+            <song-editor-menu-item>Instruments</song-editor-menu-item>
+        `;
+    }
 
-        menu.addMenuGroup('Edit');
-        menu.addMenuItem('Edit', 'Edit stuff', menuCommandFileLoadFromMemory);
+    function renderEditorMenuLoadFromMemory() {
+        return `
+            <song-editor-submenu>
+                <song-editor-menu-item><span>No Recent Items</span></song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
+                ${renderSubItems()}
+            </song-editor-submenu>
+        `;
+        function renderSubItems() {
+            var recentSongs = localStorage.getItem('song-editor-recent');
+            console.log("Loading song list from memory: ", recentSongs);
+            return ``;
+        }
     }
 
     function menuCommandFileLoadFromMemory() {
+        var subMenu = this.nextSibling;
+        console.log('Submenu', subMenu);
 
+        this.classList.add('open');
     }
+
+    const menuActions = {
+
+    };
 })();

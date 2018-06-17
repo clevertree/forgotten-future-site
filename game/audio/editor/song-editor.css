@@ -9,28 +9,66 @@ song-editor {
 song-editor-menu {
     display: inline-block;
     border: 1px solid grey;
-}
-
-song-editor-menu-item {
-    display: inline-block;
-    padding-right: 10px;
     background-color: #333;
 }
 
-song-editor-menu > song-editor-menu > song-editor-menu-item {
+song-editor-submenu {
+    display: none;
+    border: 1px solid grey;
+    background-color: #333;
+    position: absolute;
+    opacity: 0;
+    max-height: 0px;
+    transition: max-height 2s, opacity 0.5s;
+     /*overflow: hidden;*/
+    /* min-width: 200px; */
+}
+
+song-editor-submenu:hover,
+song-editor-menu-item:hover > song-editor-submenu {
+    /* display: block; */
+    display: inline-block;
+    opacity: 1;
+    max-height: 800px;
+    transition: max-height 2s, opacity 1s;
+    /*transition: max-height 2s;*/
+    z-index: 1;
+}
+
+
+song-editor-menu hr {
+    margin: 4px 0;
+    border: 1px #666 solid;
+}
+
+song-editor-menu-item {
+    vertical-align: top;
+    display: inline-block;
+    padding: 3px 8px;
+    position: relative;
+    cursor: pointer;
+}
+song-editor-menu-item:hover {
+    background-color: #555;
+}
+song-editor-menu-item:active {
+    background-color: #888;
+}
+
+
+song-editor-menu-item > span {
+    white-space: nowrap;
+}
+
+song-editor-submenu > song-editor-menu-item {
     display: block;
 }
 
-song-editor-menu > song-editor-menu {
-    display: none;
-    position: absolute;
-    opacity: 0;
+song-editor-submenu > song-editor-menu-item > song-editor-submenu {
+    /*margin-left: 40px;*/
+    /*display: inline-block;*/
 }
-song-editor-menu > song-editor-menu:hover,
-song-editor-menu-item:hover + song-editor-menu {
-    display: block;
-    opacity: 1;
-}
+
 
 song-editor-grid {
     cursor: pointer;
