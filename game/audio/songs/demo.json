@@ -1,5 +1,6 @@
 {
   "name": "Demo Song",
+  "guid": "AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE",
   "version": "0.0.1",
   "description": "Demonstration song",
   "load": [

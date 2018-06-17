@@ -86,6 +86,10 @@
             }.bind(this));
         }
 
+        saveSongToMemory() {
+            saveSongToMemory(this.song);
+        }
+
         updateEditor(options) {
             options = options || {};
             var commandGroup = this.song.notes; // options.noteGroup || 'default';
@@ -553,6 +557,7 @@
             super();
         }
 
+        get editor() { return findEditorParentNode(this); }
         get action() { return this.getAttribute('action'); }
 
         executeMenuCommand() {
@@ -561,7 +566,7 @@
             var menuAction = menuActions[this.action];
             if(!menuAction)
                 throw new Error("Unknown menu action: " + this.action);
-            menuAction();
+            menuAction.call(this, this.editor);
         }
     }
 
@@ -647,6 +652,28 @@
         return editorChildElement;
     }
 
+    // File Commands
+
+    function saveSongToMemory(song) {
+        if(!song.guid)
+            song.guid = generateGUID();
+        var songList = JSON.parse(localStorage.getItem('song-editor-saved-list') || "[]");
+        if(songList.indexOf(song.guid) === -1)
+            songList.push(song.guid);
+        console.log("Saving song: ", song, songList);
+        localStorage.setItem('song:' + song.guid, JSON.stringify(song));
+        localStorage.setItem('song-editor-saved-list', JSON.stringify(songList));
+    }
+
+    function generateGUID() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+    }
+
     // Menu commands
 
     function renderEditorMenuContent() {
@@ -705,6 +732,6 @@
     }
 
     const menuActions = {
-
+        'save:memory': function(editor) { editor.saveSongToMemory(); }
     };
 })();
