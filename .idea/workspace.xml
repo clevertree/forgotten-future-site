@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +49,8 @@
           <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="665" selection-start-line="665" selection-end-line="665" />
+                <state relative-caret-position="533">
+                  <caret line="306" column="23" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -74,16 +72,6 @@
           </file>
           <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
             <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="adblock-uiscripts-rightclick_hook.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/adblock-uiscripts-rightclick_hook.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="extensions::messaging" pinned="false" current-in-tab="false">
-            <entry file="mock://extensions::messaging">
               <provider selected="true" editor-type-id="vmFileEditor" />
             </entry>
           </file>
@@ -566,12 +554,12 @@
       <workItem from="1529088765873" duration="7584000" />
       <workItem from="1529184786960" duration="3390000" />
       <workItem from="1529190963884" duration="11184000" />
-      <workItem from="1529249140786" duration="3489000" />
+      <workItem from="1529249140786" duration="4368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205473000" />
+    <option name="totallyTimeSpent" value="206352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,7 +633,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="171" />
+      <option name="time" value="172" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -910,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="665" selection-start-line="665" selection-end-line="665" />
+        <state relative-caret-position="533">
+          <caret line="306" column="23" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
         </state>
       </provider>
     </entry>
