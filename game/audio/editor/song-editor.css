@@ -24,8 +24,7 @@ song-editor-submenu {
     /* min-width: 200px; */
 }
 
-song-editor-submenu:hover,
-song-editor-menu-item:hover > song-editor-submenu {
+song-editor-menu-item.open > song-editor-submenu {
     /* display: block; */
     display: inline-block;
     opacity: 1;
@@ -48,7 +47,7 @@ song-editor-menu-item {
     position: relative;
     cursor: pointer;
 }
-song-editor-menu-item:hover {
+song-editor-menu-item.open {
     background-color: #555;
 }
 song-editor-menu-item:active {
@@ -118,7 +117,7 @@ song-editor-grid-cell:last-child {
 }
 
 song-editor-grid-cell.selected,
-song-editor-grid-cell:hover {
+song-editor-grid-cell.open {
     max-width: 1000px;
 }
 song-editor-grid-cell.selected {
@@ -163,6 +162,6 @@ song-editor-grid-parameter {
 }
 
 song-editor-grid-cell.selected > song-editor-grid-parameter,
-song-editor-grid-cell:hover > song-editor-grid-parameter {
+song-editor-grid-cell.open > song-editor-grid-parameter {
     max-width: 1000px;
 }

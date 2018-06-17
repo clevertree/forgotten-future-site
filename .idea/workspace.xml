@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/game/audio/editor/song-editor.css" line="120" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,20 +45,41 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.73824257">
+    <splitter split-orientation="horizontal" split-proportion="0.82031906">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="450" column="37" selection-start-line="450" selection-start-column="37" selection-end-line="450" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#13413#13468#0" />
-                    <element signature="e#13474#14377#0" />
-                  </folding>
+                <state relative-caret-position="180">
+                  <caret line="665" selection-start-line="665" selection-end-line="665" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
+          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
+          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
+          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
+          <file leaf-file-name="adblock-uiscripts-rightclick_hook.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/adblock-uiscripts-rightclick_hook.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
             </entry>
           </file>
           <file leaf-file-name="extensions::messaging" pinned="false" current-in-tab="false">
@@ -66,11 +92,16 @@
               <provider selected="true" editor-type-id="vmFileEditor" />
             </entry>
           </file>
+          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
+            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
+              <provider selected="true" editor-type-id="vmFileEditor" />
+            </entry>
+          </file>
           <file leaf-file-name="song-editor.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+                <state relative-caret-position="106">
+                  <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -102,14 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.args</find>
-      <find>this.song.notes</find>
-      <find>noteBuffer</find>
-      <find>bufferLeng</find>
-      <find>lastNotePosition</find>
-      <find>bpm</find>
-      <find>240</find>
-      <find>playNotes</find>
       <find>endPosition</find>
       <find>this.currentPosition</find>
       <find>this.bufferLength</find>
@@ -120,7 +143,6 @@
       <find>Note:</find>
       <find>song-editor-menu-item</find>
       <find>menuCommandFileLoadFromMemory</find>
-      <find>findEditorParentNode</find>
       <find>getEditor</find>
       <find>SongEditorGridMenuElement</find>
       <find>SongEditorMenuElement</find>
@@ -130,12 +152,19 @@
       <find>render</find>
       <find>song-editor-menu</find>
       <find>max-heigh</find>
-      <find>menuActions</find>
       <find>saveSongtoMemory</find>
+      <find>hover</find>
+      <find>tab</find>
+      <find>findEditorParentNode</find>
+      <find>editor() { return findEditorParentNode(this);</find>
+      <find>focus</find>
+      <find>:focus</find>
+      <find>getAttribute('guid</find>
+      <find>menuActions</find>
+      <find>songGUID</find>
+      <find>unnamed</find>
     </findStrings>
     <replaceStrings>
-      <replace>ul</replace>
-      <replace>?v=1.1</replace>
       <replace>Polygon</replace>
       <replace>varyTextureCoordinate</replace>
       <replace>attr</replace>
@@ -164,6 +193,8 @@
       <replace>onKeyDown</replace>
       <replace>notes</replace>
       <replace>#</replace>
+      <replace>editor() { return findParentNode(this, SongEditorElement);</replace>
+      <replace>.open</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -220,8 +251,8 @@
         <option value="$PROJECT_DIR$/game/audio/loader/song-loader.js" />
         <option value="$PROJECT_DIR$/pages/editor/index.html" />
         <option value="$PROJECT_DIR$/game/audio/instruments/oscillator/simple.js" />
-        <option value="$PROJECT_DIR$/game/audio/editor/song-editor.css" />
         <option value="$PROJECT_DIR$/game/audio/songs/demo.json" />
+        <option value="$PROJECT_DIR$/game/audio/editor/song-editor.css" />
         <option value="$PROJECT_DIR$/game/audio/editor/song-editor.js" />
       </list>
     </option>
@@ -534,12 +565,13 @@
       <workItem from="1529080754850" duration="4784000" />
       <workItem from="1529088765873" duration="7584000" />
       <workItem from="1529184786960" duration="3390000" />
-      <workItem from="1529190963884" duration="10575000" />
+      <workItem from="1529190963884" duration="11184000" />
+      <workItem from="1529249140786" duration="3489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201375000" />
+    <option name="totallyTimeSpent" value="205473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,22 +583,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1855" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1852" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12884097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12850972" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22857143" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22840172" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -608,7 +640,12 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="152" />
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="171" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -850,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -871,14 +901,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="450" column="37" selection-start-line="450" selection-start-column="37" selection-end-line="450" selection-end-column="37" />
-          <folding>
-            <element signature="e#13413#13468#0" />
-            <element signature="e#13474#14377#0" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="665" selection-start-line="665" selection-end-line="665" />
         </state>
       </provider>
     </entry>

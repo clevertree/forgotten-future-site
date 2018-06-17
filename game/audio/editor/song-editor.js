@@ -11,7 +11,6 @@
         constructor(options) {
             options = options || {};
             super();
-            this.loadSongData({});
             this.audioContext = options.context || new (window.AudioContext || window.webkitAudioContext)();
             this.depressedKeys = [];
             this.song = null;
@@ -19,6 +18,9 @@
             this.seekLength = 240 / this.bpm;
             this.seekPosition = 0;
             this.playing = false;
+
+            this.gridElement = new SongEditorGridElement();
+            this.loadSongData({});
         }
 
         getSong() { return this.song; }
@@ -28,7 +30,6 @@
             this.addEventListener('keydown', this.onKeyDown.bind(this));
             this.addEventListener('keyup', this.onKeyUp.bind(this));
 
-            this.gridElement = new SongEditorGridElement();
 
             var menuElm = new SongEditorMenuElement();
             this.appendChild(menuElm);
@@ -53,6 +54,7 @@
             songData.noteGroups = songData.noteGroups || {};
             songData.aliases = songData.aliases || {};
             this.song = songData;
+            this.updateEditor();
         }
 
         loadSong(songURL, onLoaded) {
@@ -89,9 +91,11 @@
         saveSongToMemory() {
             saveSongToMemory(this.song);
         }
+        loadSongFromMemory(guid) {
+            this.loadSongData(loadSongFromMemory(guid));
+        }
 
-        updateEditor(options) {
-            options = options || {};
+        updateEditor() {
             var commandGroup = this.song.notes; // options.noteGroup || 'default';
             // var commandGroup = this.song.notes[noteGroupName];
             // if(!commandGroup)
@@ -357,7 +361,7 @@
     // Grid elements
 
     class SongEditorGridElement extends HTMLElement {
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
     }
 
     class SongEditorGridRowElement extends HTMLElement {
@@ -370,7 +374,7 @@
             if(pauseLength)
                this.setAttribute('pause', pauseLength)
         }
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -403,7 +407,7 @@
             command.associatedElement = this;
         }
 
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -482,7 +486,7 @@
                 this.setAttribute('name', commandName)
         }
 
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -502,7 +506,7 @@
                 this.setAttribute('value', parameterValue)
         }
 
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
 
         connectedCallback() {
             this.addEventListener('click', this.select.bind(this));
@@ -522,7 +526,7 @@
             super();
         }
 
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
 
         connectedCallback() {
             this.addEventListener('keydown', this.onInput.bind(this));
@@ -530,44 +534,46 @@
             // let shadowRoot = this.attachShadow({mode: 'open'});
         }
 
+        close() {
+            var openElements = this.querySelectorAll('song-editor-menu-item.open');
+            for(var i=openElements.length-1; i>=0; i--)
+                openElements[i].classList.remove('open');
+        }
 
         onInput(e) {
-            switch(e.type) {
-                case 'click':
-                    break;
-
-                case 'keydown':
-                    break;
-
+            var target = e.target instanceof SongEditorMenuItemElement
+                ? e.target
+                : findParentNode(e.target, SongEditorMenuItemElement);
+            if(!target) {
+                console.warn("No menu item found", e.target);
+                return;
             }
-            // console.log("Menu", e);
-            if(e.target instanceof SongEditorMenuItemElement) {
-                // console.log("Executing menu item ", e.target);
-                e.target.executeMenuCommand();
+            console.log("Menu", e, target);
+            if(target.action) {
+                var menuAction = menuActions[target.action];
+                if(!menuAction)
+                    throw new Error("Unknown menu action: " + target.action);
+                menuAction.call(target, this.editor);
+                this.close();
+            } else {
+                target.classList.toggle('open');
             }
         }
 
     }
-    class SongEditorSubMenuElement extends SongEditorMenuElement {
+    class SongEditorSubMenuElement extends HTMLElement {
 
     }
 
     class SongEditorMenuItemElement extends HTMLElement {
         constructor() {
             super();
+            // if(!this.getAttribute('tabindex'))
+            //     this.setAttribute('tabindex', '1');
         }
 
-        get editor() { return findEditorParentNode(this); }
+        get editor() { return findParentNode(this, SongEditorElement); }
         get action() { return this.getAttribute('action'); }
-
-        executeMenuCommand() {
-            if(!this.action)
-                return;
-            var menuAction = menuActions[this.action];
-            if(!menuAction)
-                throw new Error("Unknown menu action: " + this.action);
-            menuAction.call(this, this.editor);
-        }
     }
 
 
@@ -645,9 +651,9 @@
 
     // Element commands
 
-    function findEditorParentNode(editorChildElement) {
+    function findParentNode(editorChildElement, parentNodeClass) {
         while(editorChildElement = editorChildElement.parentNode)
-            if(editorChildElement instanceof SongEditorElement)
+            if(editorChildElement instanceof parentNodeClass)
                 break;
         return editorChildElement;
     }
@@ -664,6 +670,17 @@
         localStorage.setItem('song:' + song.guid, JSON.stringify(song));
         localStorage.setItem('song-editor-saved-list', JSON.stringify(songList));
     }
+
+    function loadSongFromMemory(songGUID) {
+        var songDataString = localStorage.getItem('song:' + songGUID);
+        if(!songDataString)
+            throw new Error("Song Data not found for guid: " + songGUID);
+        var songData = JSON.parse(songDataString);
+        if(!songData)
+            throw new Error("Invalid Song Data: " + songDataString);
+        return songData;
+    }
+
 
     function generateGUID() {
         function s4() {
@@ -704,24 +721,28 @@
     }
 
     function renderEditorMenuLoadFromMemory() {
+        var songGUIDs = JSON.parse(localStorage.getItem('song-editor-saved-list') || '[]');
+        console.log("Loading song list from memory: ", songGUIDs);
+
+        var menuItemsHTML = '';
+        for(var i=0; i<songGUIDs.length; i++) {
+            var songGUID = songGUIDs[i];
+            var song = loadSongFromMemory(songGUID);
+            if(song) {
+                menuItemsHTML +=
+                    `<song-editor-menu-item action="load:memory" guid="${songGUID}">
+                        <span>${song.name || "unnamed"}</span>
+                    </song-editor-menu-item>`;
+            } else {
+                console.error("Song GUID not found: " + songGUID);
+            }
+        }
+
         return `
             <song-editor-submenu>
-                <song-editor-menu-item><span>No Recent Items</span></song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                <song-editor-menu-item>No Recent Items</song-editor-menu-item>
-                ${renderSubItems()}
+                ${menuItemsHTML}
             </song-editor-submenu>
         `;
-        function renderSubItems() {
-            var recentSongs = localStorage.getItem('song-editor-recent');
-            console.log("Loading song list from memory: ", recentSongs);
-            return ``;
-        }
     }
 
     function menuCommandFileLoadFromMemory() {
@@ -732,6 +753,7 @@
     }
 
     const menuActions = {
-        'save:memory': function(editor) { editor.saveSongToMemory(); }
+        'save:memory': function(editor) { editor.saveSongToMemory(); },
+        'load:memory': function(editor) { editor.loadSongFromMemory(this.getAttribute('guid')); },
     };
 })();
