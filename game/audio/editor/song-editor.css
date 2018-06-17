@@ -4,9 +4,32 @@ song-editor {
     font-size: 16px;
 }
 
+/** Menu **/
+
 song-editor-menu {
-    display: block;
+    display: inline-block;
     border: 1px solid grey;
+}
+
+song-editor-menu-item {
+    display: inline-block;
+    padding-right: 10px;
+    background-color: #333;
+}
+
+song-editor-menu > song-editor-menu > song-editor-menu-item {
+    display: block;
+}
+
+song-editor-menu > song-editor-menu {
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+song-editor-menu > song-editor-menu:hover,
+song-editor-menu-item:hover + song-editor-menu {
+    display: block;
+    opacity: 1;
 }
 
 song-editor-grid {

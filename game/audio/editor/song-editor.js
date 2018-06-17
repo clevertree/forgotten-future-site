@@ -30,7 +30,9 @@
 
             this.gridElement = new SongEditorGridElement();
 
-            this.appendChild(new SongEditorMenuElement());
+            var menuElm = new SongEditorMenuElement()
+            initEditorMenu(menuElm);
+            this.appendChild(menuElm);
             this.appendChild(this.gridElement);
 
             if(this.getSongURL())
@@ -284,6 +286,8 @@
                 keyNumber = keyNumber + ((octave - 1) * 12) + 1;
             }
 
+            // console.log("Note: ", note, octave, keyNumber);
+
             // Return frequency of note
             return 440 * Math.pow(2, (keyNumber- 49) / 12);
         }
@@ -437,7 +441,7 @@
                         e.preventDefault();
 
                         var editor = this.getEditor();
-                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], this.audioContext.currentTime, null, {
+                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], editor.audioContext.currentTime, null, {
                             associatedElement: this
                         });
                         var noteUpCallback = function(e2) {
@@ -463,10 +467,10 @@
     }
 
     SongEditorGridCellElement.keyboardLayout = {
-        '2':'Cs5', '3':'Ds5', '5':'Fs5', '6':'Gs5', '7':'As6', '9':'Cs6', '0':'Ds6',
-        'q':'C5', 'w':'D5', 'e':'E5', 'r':'F5', 't':'G5', 'y':'A6', 'u':'B6', 'i':'C6', 'o':'D6', 'p':'E6',
-        's':'Cs4', 'd':'Ds4', 'g':'Fs4', 'h':'Gs4', 'j':'As5', 'l':'Cs5', ';':'Ds5',
-        'z':'C4', 'x':'D4', 'c':'E4', 'v':'F4', 'b':'G4', 'n':'A5', 'm':'B5', ',':'C5', '.':'D5', '/':'E5',
+        '2':'C#5', '3':'D#5', '5':'F#5', '6':'G#5', '7':'A#5', '9':'C#6', '0':'D#6',
+        'q':'C5', 'w':'D5', 'e':'E5', 'r':'F5', 't':'G5', 'y':'A5', 'u':'B5', 'i':'C6', 'o':'D6', 'p':'E6',
+        's':'C#4', 'd':'D#4', 'g':'F#4', 'h':'G#4', 'j':'A#4', 'l':'C#5', ';':'D#5',
+        'z':'C4', 'x':'D4', 'c':'E4', 'v':'F4', 'b':'G4', 'n':'A4', 'm':'B4', ',':'C5', '.':'D5', '/':'E5',
     };
 
     class SongEditorGridCommandElement extends HTMLElement {
@@ -508,24 +512,90 @@
     // Menu elements
 
     class SongEditorMenuElement extends HTMLElement {
-        constructor() {
+        constructor(title) {
             super();
+            this.title = title;
+        }
+
+        getEditor() {
+            return this.parentNode;
         }
 
         connectedCallback() {
+            // var editor = this.getEditor();
+            this.addEventListener('keydown', this.onInput.bind(this));
+            this.addEventListener('click', this.onInput.bind(this));
             // let shadowRoot = this.attachShadow({mode: 'open'});
-            this.innerHTML = `
-<song-editor-menu-item>File</song-editor-menu-item>
-<song-editor-menu-item>Edit</song-editor-menu-item>
-`;
         }
 
+        addMenuGroup(groupTitle, callback) {
+            var menuItem = new SongEditorMenuItemElement(groupTitle, callback);
+            this.appendChild(menuItem);
+            var menuGroup = new SongEditorMenuElement(groupTitle);
+            this.appendChild(menuGroup);
+            return menuGroup;
+        }
+
+        addMenuItem(groupName, itemTitle, callback) {
+            var subMenus = this.querySelectorAll('song-editor-menu');
+            for(var i=0; i<subMenus.length; i++) {
+                var subMenuElm = subMenus[i];
+                if(groupName === subMenuElm.title) {
+                    var menuItem = new SongEditorMenuItemElement(itemTitle, callback);
+                    subMenuElm.appendChild(menuItem);
+                    return menuItem;
+                }
+            }
+            throw new Error("Menu group not found: " + groupName);
+        }
+
+
+
+
+        onInput(e) {
+            switch(e.type) {
+                case 'click':
+                    break;
+
+                case 'keydown':
+                    break;
+
+            }
+            console.log("Menu", e);
+            if(e.target instanceof SongEditorMenuItemElement) {
+                console.log("Executing menu item ", e.target);
+                e.target.executeMenuCommand();
+            }
+        }
+
+    }
+
+
+    class SongEditorMenuItemElement extends HTMLElement {
+        constructor(title, menuCommand) {
+            super();
+            this.title = title;
+            this.menuCommand = menuCommand || this.menuCommandToggleGroup;
+        }
+
+        executeMenuCommand() {
+            this.menuCommand.call(this);
+        }
+
+        connectedCallback() {
+            this.innerHTML = this.title;
+        }
+
+        menuCommandToggleGroup(e) {
+            this.classList.toggle('open');
+        }
     }
 
 
     // Define custom elements
     customElements.define('song-editor', SongEditorElement);
     customElements.define('song-editor-menu', SongEditorMenuElement);
+    customElements.define('song-editor-menu-item', SongEditorMenuItemElement);
     customElements.define('song-editor-grid', SongEditorGridElement);
     customElements.define('song-editor-grid-row', SongEditorGridRowElement);
     customElements.define('song-editor-grid-cell', SongEditorGridCellElement);
@@ -609,5 +679,22 @@
         var clearElms = document.querySelectorAll(selector || '.' + className);
         for(var i=0; i<clearElms.length; i++)
             clearElms[i].classList.remove(className);
+    }
+
+    // Menu commands
+
+    function initEditorMenu(menu) {
+        menu.innerHTML = ``;
+        menu.addMenuGroup('File');
+        menu.addMenuItem('File', 'Load from memory', menuCommandFileLoadFromMemory);
+        menu.addMenuItem('File', 'Load from file', menuCommandFileLoadFromMemory);
+        menu.addMenuItem('File', 'Load from url', menuCommandFileLoadFromMemory);
+
+        menu.addMenuGroup('Edit');
+        menu.addMenuItem('Edit', 'Edit stuff', menuCommandFileLoadFromMemory);
+    }
+
+    function menuCommandFileLoadFromMemory() {
+
     }
 })();

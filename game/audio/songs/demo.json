@@ -10,7 +10,6 @@
     "perc": "oscillator"
   },
   "notes": [
-    ["ge", "beat"],
     ["n", "osc.sine", "A4", 1],
     ["n", "osc.sawtooth", "A3", 0.2],
     ["p", 0.25],
@@ -21,7 +20,6 @@
     ["n", "osc.sawtooth", "C6"],
     ["p", 0.25],
 
-    ["ge", "beat"],
     ["n", "osc.sine", "Gs4", 1],
     ["n", "osc.sawtooth", "Gs3", 0.2],
     ["p", 0.25],
@@ -33,16 +31,15 @@
     ["p", 0.25]
   ],
   "noteGroups": {
-    "beat": [],
-    "beat1": [
+    "beat": [
       ["n", "perc.kick"],
-      ["p", 0.25],
+      ["p", 0.05],
       ["n", "perc.kick"], ["n", "perc.snare"],
-      ["p", 0.25],
+      ["p", 0.05],
       ["n", "perc.kick"],
-      ["p", 0.25],
+      ["p", 0.05],
       ["n", "perc.kick"], ["n", "perc.snare"],
-      ["p", 0.25]
+      ["p", 0.05]
     ]
   }
 }
