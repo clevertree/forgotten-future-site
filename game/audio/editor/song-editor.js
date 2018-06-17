@@ -443,18 +443,18 @@
                         this.refresh();
                         e.preventDefault();
 
-                        var noteEvent = editor.playInstrument(this.command[1], this.command[2], this.editor.audioContext.currentTime, null, {
+                        var noteEvent = this.editor.playInstrument(this.command[1], this.command[2], this.editor.audioContext.currentTime, null, {
                             associatedElement: this
                         });
                         var noteUpCallback = function(e2) {
                             if(e.key === e2.key) {
-                                editor.removeEventListener('keyup', noteUpCallback);
+                                this.editor.removeEventListener('keyup', noteUpCallback);
                                 noteEvent.stop(0);
                                 // console.info("Stopping Note: ", noteEvent);
                                 e2.preventDefault();
                             }
-                        };
-                        editor.addEventListener('keyup', noteUpCallback);
+                        }.bind(this);
+                        this.editor.addEventListener('keyup', noteUpCallback);
                         return;
                     }
                     break;
