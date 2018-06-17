@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/editor/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +49,8 @@
           <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="780" column="40" selection-start-line="780" selection-start-column="40" selection-end-line="780" selection-end-column="40" />
+                <state relative-caret-position="380">
+                  <caret line="578" column="46" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -153,7 +151,6 @@
       <find>focus</find>
       <find>:focus</find>
       <find>getAttribute('guid</find>
-      <find>menuActions</find>
       <find>songGUID</find>
       <find>unnamed</find>
       <find>tabind1</find>
@@ -163,6 +160,7 @@
       <find>keyboardActions</find>
       <find>playInstrument</find>
       <find>playNote</find>
+      <find>menuActions</find>
     </findStrings>
     <replaceStrings>
       <replace>Polygon</replace>
@@ -566,12 +564,12 @@
       <workItem from="1529088765873" duration="7584000" />
       <workItem from="1529184786960" duration="3390000" />
       <workItem from="1529190963884" duration="11184000" />
-      <workItem from="1529249140786" duration="9795000" />
+      <workItem from="1529249140786" duration="9983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211779000" />
+    <option name="totallyTimeSpent" value="211967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +596,7 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22840172" />
+      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22786178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -637,14 +635,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/game/audio/editor/song-editor.js</url>
-          <line>798</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="180" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -913,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="780" column="40" selection-start-line="780" selection-start-column="40" selection-end-line="780" selection-end-column="40" />
+        <state relative-caret-position="380">
+          <caret line="578" column="46" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
         </state>
       </provider>
     </entry>

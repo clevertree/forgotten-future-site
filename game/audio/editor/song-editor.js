@@ -576,7 +576,7 @@
                 var menuAction = menuActions[target.action];
                 if(!menuAction)
                     throw new Error("Unknown menu action: " + target.action);
-                menuAction.call(target, this.editor);
+                menuAction.call(this.editor, e);
                 this.close();
             } else {
                 target.classList.toggle('open');
@@ -778,7 +778,7 @@
 
     const menuActions = {
         'save:memory': function() { this.saveSongToMemory(); },
-        'load:memory': function() { this.loadSongFromMemory(this.getAttribute('guid')); },
+        'load:memory': function(e) { this.loadSongFromMemory(e.target.getAttribute('guid')); },
     };
     const keyboardActions = {
         'default': {
