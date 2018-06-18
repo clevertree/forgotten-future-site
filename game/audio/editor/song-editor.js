@@ -302,6 +302,41 @@
             return 440 * Math.pow(2, (keyNumber- 49) / 12);
         }
 
+        // Edit Song
+
+        setNote(position, noteArgs, groupName) {
+            var noteList = this.getNotes(groupName);
+            if(noteList.length < position)
+                throw new Error("Invalid note position: " + position + (groupName ? " for group: " + groupName : ''));
+            noteList[position] = noteArgs;
+        }
+
+        getNotes(groupName) {
+            if(groupName) {
+                var noteList = this.song.noteGroups[groupName];
+                if(!noteList)
+                    throw new Error("Note group not found: " + groupName);
+                return noteList;
+            }
+            return this.song.notes;
+        }
+
+        getNotePosition(note, groupName) {
+            var noteList = this.getNotes(groupName);
+            var p = noteList.indexOf(note);
+            if(p === -1)
+                throw new Error("Note not found in note list");
+            return p;
+        }
+
+        swapNotes(note1, note2, groupName) {
+            var p1 = this.getNotePosition(note1, groupName);
+            var p2 = this.getNotePosition(note2, groupName);
+            this.setNote(p2, note1);
+            this.setNote(p1, note2);
+        }
+
+        // Input
 
         onInput(e) {
             if(e.defaultPrevented)
@@ -429,10 +464,12 @@
             }
         }
 
-        select() {
+        select(previewNote) {
             this.parentNode.select();
             clearElementClass('selected', 'song-editor-grid-cell.selected');
             this.classList.add('selected');
+            if(previewNote && this.editor.config.previewNotesOnSelect !== false)
+                this.playNote();
         }
 
         playNote() {
@@ -442,6 +479,16 @@
                 this.editor.getCurrentBPM(),
                 this,
             );
+        }
+
+        swapNoteElement(targetCellElement) {
+            this.editor.swapNotes(
+                this.command,
+                targetCellElement.command
+            );
+            this.editor.updateEditor();
+            if(this.command.associatedElement)
+                this.command.associatedElement.select();
         }
 
         onInput(e) {
@@ -740,7 +787,7 @@
             
             <song-editor-menu-item>Editor</song-editor-menu-item>
             <song-editor-menu-item>Instruments</song-editor-menu-item>
-            <song-editor-menu-item>Invite</song-editor-menu-item>
+            <song-editor-menu-item>Collaborate</song-editor-menu-item>
         `;
     }
 
@@ -789,13 +836,12 @@
             ' ': function() { this.play(); }
         },
         'alt': {
-
-        },
-        'ctrl': {
             'ArrowRight': handleArrowKeyEvent,
             'ArrowLeft': handleArrowKeyEvent,
             'ArrowDown': handleArrowKeyEvent,
             'ArrowUp': handleArrowKeyEvent,
+        },
+        'ctrl': {
             's': function () { this.saveSongToMemory(); },
         },
     };
@@ -824,16 +870,21 @@
                     newSelectedCell = selectedRow.previousSibling.firstChild;
                 break;
         }
-        if(newSelectedCell !== selectedCell) {
-            newSelectedCell.select();
-            if(this.config.playNotesOnSelect !== false)
-                newSelectedCell.playNote();
-        }
 
+        if(newSelectedCell) {
+            if (e.altKey) {
+                selectedCell.swapNoteElement(newSelectedCell);
+
+            } else {
+                if (newSelectedCell !== selectedCell) {
+                    newSelectedCell.select(true);
+                }
+            }
+        }
     }
 
     const DEFAULT_CONFIG = {
-        playNotesOnSelect: true,
+        previewNotesOnSelect: true,
     }
 
 })();

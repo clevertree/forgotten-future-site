@@ -49,8 +49,8 @@
           <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="578" column="46" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
+                <state relative-caret-position="307">
+                  <caret line="789" column="46" selection-start-line="789" selection-start-column="46" selection-end-line="789" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -131,9 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Note:</find>
-      <find>song-editor-menu-item</find>
-      <find>menuCommandFileLoadFromMemory</find>
       <find>getEditor</find>
       <find>SongEditorGridMenuElement</find>
       <find>SongEditorMenuElement</find>
@@ -161,9 +158,11 @@
       <find>playInstrument</find>
       <find>playNote</find>
       <find>menuActions</find>
+      <find>swapNoteElement</find>
+      <find>playNotesOnSelect</find>
+      <find>Invite</find>
     </findStrings>
     <replaceStrings>
-      <replace>Polygon</replace>
       <replace>varyTextureCoordinate</replace>
       <replace>attr</replace>
       <replace>uniformColor</replace>
@@ -193,6 +192,7 @@
       <replace>#</replace>
       <replace>editor() { return findParentNode(this, SongEditorElement);</replace>
       <replace>.open</replace>
+      <replace>previewNotesOnSelect</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -564,12 +564,12 @@
       <workItem from="1529088765873" duration="7584000" />
       <workItem from="1529184786960" duration="3390000" />
       <workItem from="1529190963884" duration="11184000" />
-      <workItem from="1529249140786" duration="9983000" />
+      <workItem from="1529249140786" duration="12034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211967000" />
+    <option name="totallyTimeSpent" value="214018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -638,7 +638,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="181" />
+      <option name="time" value="184" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -903,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="578" column="46" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
+        <state relative-caret-position="307">
+          <caret line="789" column="46" selection-start-line="789" selection-start-column="46" selection-end-line="789" selection-end-column="46" />
         </state>
       </provider>
     </entry>
