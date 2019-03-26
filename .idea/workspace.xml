@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/game/audio/editor/song-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/audio/editor/song-editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/forgotten-future-site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/forgotten-future-site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsDialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsDialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/game/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/editor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/frames/donate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/frames/subscribe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/media.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/story.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,83 +61,40 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.82031906">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="song-editor.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="789" column="46" selection-start-line="789" selection-start-column="46" selection-end-line="789" selection-end-column="46" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-          <file leaf-file-name="polyfill.js" pinned="false" current-in-tab="false">
-            <entry file="mock://chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/polyfill.js">
-              <provider selected="true" editor-type-id="vmFileEditor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="demo.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/mail/mail.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,12 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getEditor</find>
-      <find>SongEditorGridMenuElement</find>
-      <find>SongEditorMenuElement</find>
-      <find>.title</find>
-      <find>initEditorMenu</find>
-      <find>initEdi</find>
       <find>render</find>
       <find>song-editor-menu</find>
       <find>max-heigh</find>
@@ -161,9 +130,14 @@
       <find>swapNoteElement</find>
       <find>playNotesOnSelect</find>
       <find>Invite</find>
+      <find>promptCallback=null</find>
+      <find>promptCallback</find>
+      <find>async configure(</find>
+      <find>Configuring D</find>
+      <find>'mail.</find>
+      <find>mailConfig</find>
     </findStrings>
     <replaceStrings>
-      <replace>varyTextureCoordinate</replace>
       <replace>attr</replace>
       <replace>uniformColor</replace>
       <replace>indexList</replace>
@@ -193,6 +167,7 @@
       <replace>editor() { return findParentNode(this, SongEditorElement);</replace>
       <replace>.open</replace>
       <replace>previewNotesOnSelect</replace>
+      <replace>'client.</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -201,14 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/game/sprites/character/lem/lem.sprite.js" />
-        <option value="$PROJECT_DIR$/story.html" />
-        <option value="$PROJECT_DIR$/media/concept/README.md" />
-        <option value="$PROJECT_DIR$/game/README.md" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo.js" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo-minimal.js" />
-        <option value="$PROJECT_DIR$/game/audio/songs/demo.html" />
-        <option value="$PROJECT_DIR$/game/audio/song-manager.js" />
         <option value="$PROJECT_DIR$/game/audio/library/oscilator.jvi/oscilator.jvi.js" />
         <option value="$PROJECT_DIR$/game/game.js" />
         <option value="$PROJECT_DIR$/game/audio/library/oscilator/oscilator.js" />
@@ -252,6 +219,14 @@
         <option value="$PROJECT_DIR$/game/audio/editor/song-editor.css" />
         <option value="$PROJECT_DIR$/pages/editor/index.html" />
         <option value="$PROJECT_DIR$/game/audio/editor/song-editor.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/user/session/session.api.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/task/task.api.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/http/http.server.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/database/database.manager.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/config/config.manager.js" />
+        <option value="$PROJECT_DIR$/node_modules/clevertree-cms/mail/mail.server.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -260,30 +235,17 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1855" />
-    <option name="height" value="1057" />
+    <option name="x" value="1220" />
+    <option name="y" value="580" />
+    <option name="width" value="1390" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -308,65 +270,53 @@
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="bk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="button" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-              <item name="instruments" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="icon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-              <item name="instruments" type="462c0819:PsiDirectoryNode" />
-              <item name="oscillator" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-              <item name="songs" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="clevertree-cms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forgotten-future-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forgotten-future-site" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="clevertree-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -440,8 +390,8 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/editor" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.10.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -451,19 +401,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node_modules/clevertree-cms" />
+      <recent name="$PROJECT_DIR$/game/audio/songs" />
+      <recent name="$PROJECT_DIR$/game/audio/manager" />
+      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
+      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dev\forgotten-future-site\pages\editor\assets" />
       <recent name="C:\Dev\forgotten-future-site\pages\editor\asset" />
       <recent name="C:\Dev\forgotten-future-site\pages\frames\" />
       <recent name="C:\Dev\forgotten-future-site\pages\frames" />
       <recent name="C:\Dev\forgotten-future-site\pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/game/audio/songs" />
-      <recent name="$PROJECT_DIR$/game/audio/manager" />
-      <recent name="C:\Dev\forgotten-future-site\pages\editor" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\util" />
-      <recent name="C:\Dev\forgotten-future-site\game\render\shader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -478,26 +428,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
-    <configuration name="demo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forgotten-future-site/game/audio/songs/demo.html" />
-    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forgotten-future-site/game/index.html" />
-    <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forgotten-future-site/pages/editor/index.html" />
-    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forgotten-future-site/pages/editor/index.html" />
-    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/server" />
+  <component name="RunManager" selected="Node.js.server.js">
+    <configuration name="demo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forgotten-future-site/game/audio/songs/demo.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forgotten-future-site/pages/editor/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forgotten-future-site/pages/editor/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js --configure" type="NodeJSConfigurationType" application-parameters="--configure" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.demo.html" />
-      <item itemvalue="Node.js.server.js" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.index.html (3)" />
+      <item itemvalue="Node.js.server.js --configure" />
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="Node.js.server.js (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Node.js.server.js (1)" />
         <item itemvalue="JavaScript Debug.index.html (3)" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="Node.js.server.js" />
         <item itemvalue="JavaScript Debug.demo.html" />
-        <item itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -565,11 +529,14 @@
       <workItem from="1529184786960" duration="3390000" />
       <workItem from="1529190963884" duration="11184000" />
       <workItem from="1529249140786" duration="12034000" />
+      <workItem from="1552923084513" duration="61000" />
+      <workItem from="1552924200304" duration="3011000" />
+      <workItem from="1552950838377" duration="1194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214018000" />
+    <option name="totallyTimeSpent" value="218284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,34 +548,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1852" height="1057" extended-state="6" />
+    <frame x="0" y="-2" width="3840" height="2162" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12850972" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13020559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="right" id="Debug" order="6" visible="true" weight="0.22786178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3262032" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960325" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32946146" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925898" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32874015" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Debug" order="6" weight="0.34528202" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296875" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,9 +591,6 @@
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/media/concept" />
@@ -635,10 +599,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="184" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/clevertree-cms/config/config.manager.js</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -649,65 +616,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack.config.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
-    <entry file="file://$PROJECT_DIR$/server/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/story.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="83" lean-forward="true" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/frames/subscribe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/frames/donate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -887,26 +795,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="1553">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/audio/songs/demo.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="38">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/http/http.server.js" />
     <entry file="file://$PROJECT_DIR$/game/audio/editor/song-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="14991">
           <caret line="789" column="46" selection-start-line="789" selection-start-column="46" selection-end-line="789" selection-end-column="46" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/config/config.manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/task/task.api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/user/session/session.api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/editor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/database/database.manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/theme/minimal.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clevertree-cms/mail/mail.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

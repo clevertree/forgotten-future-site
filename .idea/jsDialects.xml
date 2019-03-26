@@ -3,6 +3,5 @@
   <component name="JSDialectsMappings">
     <file url="file://$PROJECT_DIR$" dialect="JS_1_8_5" />
     <file url="file://$PROJECT_DIR$/game/audio/editor" dialect="ES6" />
-    <file url="file://$PROJECT_DIR$/server" dialect="ES6" />
   </component>
 </project>
