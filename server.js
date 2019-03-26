@@ -21,7 +21,7 @@ app.use(clevertreeCMS.getMiddleware({
         database: 'ffga_me_cms'
     },
     server: {
-        httpPort: 8080,
+        httpPort: 8092,
         sslEnable: false
         // sslPort: 8443,
     },
