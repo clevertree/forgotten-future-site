@@ -40,7 +40,7 @@ app.use(clevertreeCMS.getMiddleware({
 
 
 // Launch your server
-const httpPort = 8080;
+const httpPort = 8092;
 app.listen(httpPort, function() {
     console.log('Example app listening on port: ' + httpPort);
 });
