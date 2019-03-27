@@ -26,6 +26,6 @@
   "dependencies": {
     "express": "^4.16.3",
     "simple-git": "^1.95.1",
-    "clevertree-cms": "^1.0.7"
+    "clevertree-cms": "^1.1.3"
   }
 }
