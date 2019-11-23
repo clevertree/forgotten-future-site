@@ -1,0 +1,7 @@
+/** Background Image **/
+body {
+    /*font-size: 12px;*/
+    background: #011011 url('img/bk/bk-lem.jpg') no-repeat top fixed;
+    background-size: contain;
+}
+

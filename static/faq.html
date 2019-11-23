@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>FAQ</title>
+    <base href="">
+    <link href="./:content/:client/theme/minimal/minimal.theme.css" rel="stylesheet">
+    <link href="./:content/:client/theme/minimal/future/future.theme.css" rel="stylesheet">
+    <link href="assets/site.css" rel="stylesheet">
+    <script src="assets/site.js"></script>
+    <meta charset="UTF-8">
+    <meta content="Welcome to Forgotten Future" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="content:id" content="110">
+    <script src="./:content/:client/nav/content-nav.element.js"></script>
+</head>
+
+<body class="theme-minimal theme-minimal-future">
+    <header>
+        <h1 class="title"><a href="faq.html">FAQ</a></h1>
+        <content-nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="demo.html" target="_blank">WebGL Demo</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </content-nav>
+    </header>
+    <article class="themed">
+        <section class="themed">
+            <h2 id="what-is">What is <em>Forgotten Future</em>?</h2>
+            <p>
+                <em>Forgotten Future</em> is an upcoming <a href="https://github.com/clevertree/forgotten-future" target="_blank">open source</a> video game built in Javascript and WebGL. In Forgotten Future, a city-rail driver named Lem is conscripted into an assault mission to the Earth&apos;s Moon in an attempt to recapture it from an unknown alien invasion force. When the mission suffers unexpected setbacks, Lem finds himself in the center of a cataclysmic event that would threaten to change the course of human history forever. </p>
+            <h2 id="about-open-source">What does open-source mean?</h2>
+            <p>
+                <a href="https://github.com/clevertree/forgotten-future" target="_blank">Open source</a> means free to play and anyone can <a href="https://ffga.me/contribute.html">contribute</a>. </p>
+            <ul>
+                <li>Free to play forever</li>
+                <li>Free to <a href="https://github.com/clevertree/forgotten-future">fork</a> and start your own game project</li>
+                <li>Anyone can <a href="https://ffga.me/contribute.html">contribute</a>
+                    <a href="https://ffga.me/contribute.html#develop">artwork, code</a>, <a href="https://ffga.me/contribute.html#play">time</a>, and <a href="https://ffga.me/contribute.html#donate">$$</a>
+                </li>
+                <li>All contributors qualify for <a href="https://ffga.me/contribute.html#tiers">Tier Rewards</a> </li>
+            </ul>
+            <h2 id="about-game">What kind of game is it?</h2>
+            <p> A <a href="https://en.wikipedia.org/wiki/Parallax_scrolling" target="_blank">parallax scrolling</a> video game, which means fast-paced side-scrolling action. In <em>Forgotten Future</em> you will be able to: </p>
+            <ul>
+                <li>Intense 2.5D side-scrolling action</li>
+                <li>Explore boundless landscapes and deep undergrounds</li>
+                <li>Engage in intense fighting action involving weapons, hand-to-hand combat, and vehicle warfare</li>
+                <li>Hone <a href="story.html#schema">abilities</a> based on the 5 elements: Earth, Water, Fire, Wood, and Metal</li>
+                <li>Hunt for lost weapons and relics and trade them in villages</li>
+            </ul>
+            <h2 id="about-story">What is it about?</h2>
+            <p>
+                <em>Forgotten Future</em> is a story about the distant future of a post-cataclysmic planet Earth. As the protagonist <a href="story.html#characters">Lem</a>, the player explores a desolate landscape in search of clues that unlock the past. Read more on the <a href="story.html#timeline">story page</a>. </p>
+            <h2 id="about-play">How can I play it?</h2>
+            <p> Ideally <em>Forgotten Future</em> can be played on any modern web browser by connecting a <a href="https://www.polygon.com/2016/1/11/9848652/best-game-controller-custom-controller-windows-pc-2016" target="_blank">game pad</a>. Alternately, a keyboard and mouse may be used instead. Console releases will also be made available. Check the <a href="https://ffga.me/contribute.html#status">development timeline</a> for more information and release dates. </p>
+            <!--<p>-->
+            <!--<em>Deception</em> is a reoccurring theme-->
+            <!--</p>-->
+            <h2 id="system-requirements">What are the System Requirements?</h2>
+            <p>
+                <em>Forgotten Future</em> will run on any modern browser that <a href="https://caniuse.com/#feat=webgl">supports</a> WebGL. A dedicated graphics card is recommended to take advantage of shader performance. </p>
+        </section>
+        <section id="development" class="themed">
+            <h2 id="dev-process">What is the development process for Forgotten Future?</h2>
+            <ol>
+                <li> Javscript WebGL Engine <p>
+                        <em>Forgotten Future</em> is being developed in Javascript using WebGL and will work in any modern browser or mobile device. </p>
+                    <ol type="a">
+                        <li> Shaders <p> Written in <a href="https://webglfundamentals.org/webgl/lessons/webgl-shaders-and-glsl.html" target="_blank">GLSL</a>, the <em>FF</em> engine uses vertex/fragment shaders for optimal rendering performance. Shaders include rendering classes such as <a href="https://github.com/clevertree/forgotten-future/blob/master/render/shader/sprite.shader.js" target="_blank">Sprites</a>, <a href="https://github.com/clevertree/forgotten-future/blob/master/render/shader/heightmap.shader.js" target="_blank">HeightMaps</a>, and <a href="https://github.com/clevertree/forgotten-future/blob/master/render/shader/heightmap.shader.js" target="_blank">TileMaps</a>, For an updated list of shaders used by <em>FF</em> check out the <a href="https://github.com/clevertree/forgotten-future/blob/master/render/shader/" target="_blank">source code</a>. </p>
+                        </li>
+                        <li> Engine <p> Coming soon... </p>
+                        </li>
+                    </ol>
+                </li>
+                <li> Contiguous Episode Releases <p>
+                        <em>Forgotten Future</em> will be released in a series of <i>contiguous episodes</i>. This means the game will be playable during the early stages of development. With each episode, the user will be taken to a new point in the storyline from where they left off. Users will also be able to re-explore revised and expanded sections of the existing game. The final version of the game will be playable from the beginning to the end without episode breaks. </p>
+                </li>
+                <li> Future Ports <p> Upon completion of the WebGL Engine <em>Forgotten Future</em> will be <a href="https://www.google.com/search?q=port+webgl+to+opengl" target="_blank">ported</a> to compilable C/OpenGL and released on all available consoles and deployment platforms such as <a href="http://store.steampowered.com/" target="_blank">Steam</a>. </p>
+                </li>
+            </ol>
+            <h2 id="dev-who">Who is currently working on the project?</h2>
+            <p> Current developers actively working on the project </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/clevertree" target="_blank">Ari Asulin</a>, <a href="https://github.com/katleikin" target="_blank">Katie Kinkel</a>
+                </li>
+            </ul>
+            <p> Sprite Sheet &amp; Concept Artists </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/MOEZA" target="_blank">MOEZA</a>, <a href="https://github.com/eithanarr" target="_blank">eithanarr</a>, <a href="https://github.com/AnastasErmolina" target="_blank">Anastas Ermolina</a>, <a href="https://github.com/Sokasoka" target="_blank">Sokasoka</a>, </li>
+            </ul>
+            <h2 id="dev-help">Who is allowed to help?</h2>
+            <p> Everyone. Check out the <a href="https://github.com/clevertree/forgotten-future/blob/master/README.md" target="_blank">developer README</a> for instructions on getting started. </p>
+            <h2 id="dev-contribute">How does one contribute material to the Forgotten Future Project?</h2>
+            <p> Coming soon... </p>
+            <h2 id="dev-funds">How are contributed funds spent?</h2>
+            <p> Coming soon... </p>
+        </section>
+        <br>
+        <section class="themed">
+            <h2 id="ask">I have a question</h2>
+            <p> Please <a target="_blank" href="contact.html">contact</a> us your question and we&apos;ll post the answer on this FAQ! </p>
+        </section>
+        <br>
+        <!--<h2 id="subscribe">Subscribe for updates</h2>-->
+        <!--<section class="themed theme-minimal">-->
+        <!--<p>-->
+        <!--Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.-->
+        <!--</p>-->
+        <!--<iframe src="pages/frames/subscribe.html" class="iframe-subscribe"></iframe>-->
+        <!--</section>-->
+    </article>
+    <footer>
+        <div>
+            <h2>Created With</h2>
+            <div><a class="created-by" target="_blank" href="https://github.com/clevertree/cms">CleverTree CMS</a></div>
+            <div><a href="./:content.html">[Site Index]</a> <a href="./:user.html">[User Index]</a></div>
+        </div>
+        <div>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <div>Email: <a href="mailto:ari@ffga.me">ari@ffga.me</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
