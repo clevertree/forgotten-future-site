@@ -28,10 +28,10 @@ app.use(clevertreeCMS.getMiddleware({
     mail: {
         client: {
             auth: {
-                user: "mail@ffga.me",
+                user: "mail@static",
                 pass: "mailmail"
             },
-            host: "mail.ffga.me",
+            host: "mail.static",
             port: 587
         }
     }
