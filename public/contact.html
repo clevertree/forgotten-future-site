@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <base href="">
+    <link href="./:content/:client/theme/minimal/minimal.theme.css" rel="stylesheet">
+    <link href="./:content/:client/theme/minimal/future/future.theme.css" rel="stylesheet">
+    <link href="assets/site.css" rel="stylesheet">
+    <script src="assets/site.js"></script>
+    <meta charset="UTF-8">
+    <meta content="Welcome to Forgotten Future" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="content:id" content="108">
+    <script src="./:content/:client/nav/content-nav.element.js"></script>
+    <script src="./:user/:client/message/user-message-send.element.js"></script>
+</head>
+
+<body class="theme-minimal theme-minimal-future">
+    <header>
+        <h1 class="title"><a href="contact.html">Contact Us</a></h1>
+        <content-nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="demo.html" target="_blank">WebGL Demo</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </content-nav>
+    </header>
+    <article>
+        <section class="themed" style="max-width: 800px; margin: 0 auto; padding: 1em 2em 2em 2em; text-align: justify;">
+            <h2>Contact Us</h2>
+            <user-message-send>
+                <form class="user user-message-send themed" action="https://ffga.me/:user/:message" method="POST">
+                    <table class="user themed">
+                        <caption>Send us a message</caption>
+                        <thead>
+                            <tr>
+                                <td colspan="5" class="status">
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label for="to">To:</label></td>
+                                <td> Admin <input name="to" id="to" type="hidden" value="admin">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="name">Your Name:</label></td>
+                                <td><input name="name" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="from">Your Email:</label></td>
+                                <td><input name="from" id="from" type="email" placeholder="your@email.com" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="subject">Subject:</label></td>
+                                <td><input name="subject" id="subject" type="text" placeholder="ex. Question about this site" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="body">Message:</label></td>
+                                <td>
+                                    <textarea name="body" id="body" placeholder="ex. Hi there, I&apos;d like to help out!" required></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="themed">Submit</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </user-message-send>
+        </section>
+    </article>
+    <footer>
+        <div>
+            <h2>Created With</h2>
+            <div><a class="created-by" target="_blank" href="https://github.com/clevertree/cms">CleverTree CMS</a></div>
+            <div><a href="./:content.html">[Site Index]</a> <a href="./:user.html">[User Index]</a></div>
+        </div>
+        <div>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <div>Email: <a href="mailto:ari@ffga.me">ari@ffga.me</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,134 +1,82 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Forgotten Future</title>
-        <meta name="keywords" CONTENT="forgotten future, game, music, relay, open-source, platformer, 2.5D, sidescroller, action, moon, donate, subscribe">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/site.css" rel="stylesheet" />
-        <link href="assets/theme/minimal.css" rel="stylesheet" />
-        <link rel="manifest" href="manifest.json">
 
-        <script src="assets/site.js"></script>
-    </head>
-    <body class='theme-minimal'>
-        <header class="page-header">
-            <button class="toggle-page-menu"></button>
-            <ul class="menu-links">
-                <li class="menu-link-container">
-                    <a href="index.html" class="menu-link highlight">Game</a>
-                </li>
-                <li class="menu-link-container">
-                    <a href="pages/story.html" class="menu-link">Story</a>
-                    <ul class="submenu-links">
-                        <li><a href="pages/story.html#timeline">Human History</a></li>
-                        <li><a href="pages/story.html#locations">Locations</a></li>
-                        <li><a href="pages/story.html#technology">Technology</a></li>
-                        <li><a href="pages/story.html#lifeforms">Life Forms</a></li>
-                        <li><a href="pages/story.html#characters">Characters</a></li>
-                        <li><a href="pages/story.html#vehicles">Vehicles</a></li>
-                    </ul>
-                </li>
-                <li class="menu-link-container">
-                    <a href="pages/contribute.html" class="menu-link">Contribute</a>
-                    <ul class="submenu-links">
-                        <li><a href="pages/contribute.html#play">By Playing</a></li>
-                        <li><a href="pages/contribute.html#sponsor">By Sponsoring</a></li>
-                        <li><a href="pages/contribute.html#develop">By Developing</a></li>
-                        <li><a href="pages/contribute.html#status">Check Status</a></li>
-                    </ul>
-                </li>
-                <li class="menu-link-container">
-                    <a href="pages/media.html" class="menu-link">Media</a>
-                    <ul class="submenu-links">
-                        <li><a href="pages/media.html?autoplay=true">FF OST Sample</a></li>
-                        <li><a href="pages/media.html#art">FF Concept Art</a></li>
-                    </ul>
-                </li>
-                <li class="menu-link-container">
-                    <a href="pages/faq.html" class="menu-link">FAQ</a>
-                </li>
-                <li class="menu-link-container">
-                    <a href="pages/demo.html" class="menu-link">WebGL Demo</a>
-                </li>
-            </ul>
-        </header>
+<head>
+    <title>Home</title>
+    <base href="">
+    <link href="./:content/:client/theme/minimal/minimal.theme.css" rel="stylesheet">
+    <link href="./:content/:client/theme/minimal/future/future.theme.css" rel="stylesheet">
+    <link href="assets/site.css" rel="stylesheet">
+    <script src="assets/site.js"></script>
+    <meta charset="UTF-8">
+    <meta content="Welcome to Forgotten Future" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="content:id" content="106">
+    <script src="./:content/:client/nav/content-nav.element.js"></script>
+</head>
 
-        <article class="themed">
-            <h1>Forgotten Future</h1>
-            <section class="themed">
-                <h2 id="project">Project Introduction</h2>
-                <p>
-                    Welcome to the Forgotten Future Project Page.
-                    You'll find information on the upcoming
-                    <a href="https://github.com/clevertree/forgotten-future" target="_blank">open source</a>
-                    <a href="https://en.wikipedia.org/wiki/Parallax_scrolling" target="_blank">parallax scrolling</a>
-                    action/adventure game <em>Forgotten Future</em>.
-                    Feel free to listen to the
-                    <a href="pages/media.html?autoplay=true">Forgotten Future Title Theme</a> and check out some of the
-                    <a href="pages/media.html#art">concept art</a>. Don't forget to read up on the coming <a href="pages/story.html#timeline">cataclysm</a>...
-                </p>
+<body class="theme-minimal theme-minimal-future">
+    <header>
+        <h1 class="title"><a href="index.html">Home</a></h1>
+        <content-nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="demo.html" target="_blank">WebGL Demo</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </content-nav>
+    </header>
+    <article class="themed">
+        <section class="themed">
+            <h2 id="project">Project Introduction</h2>
+            <p> Welcome to the Forgotten Future Project Page. You&apos;ll find information on the upcoming <a href="https://github.com/clevertree/forgotten-future" target="_blank">open source</a>
+                <a href="https://en.wikipedia.org/wiki/Parallax_scrolling" target="_blank">parallax scrolling</a> action/adventure game <em>Forgotten Future</em>. Feel free to listen to the <a href="media%3Fautoplay=true.html">Forgotten Future Title Theme</a> and check out some of the <a href="media.html#art">concept art</a>. Don&apos;t forget to read up on the coming <a href="story.html#timeline">cataclysm</a>... </p>
+            <h2 id="what-is">What&apos;s the Story?</h2>
+            <p> In <em>Forgotten Future</em>, a city-rail driver named Lem is conscripted into an assault mission to the Earth&apos;s Moon in an attempt to recapture it from an unknown alien invasion force. When the mission suffers unexpected setbacks, Lem finds himself in the center of a cataclysmic event that would threaten to change the course of human history forever. </p>
+            <p> Read More: <a href="story.html">The Story So far...</a>
+            </p>
+            <h2 id="status">Development Status</h2>
+            <p> Each section describes the current completeness of the targeted feature. Click each section to view the source code behind each feature. If it&apos;s something you think you can help with <a href="https://github.com/clevertree/forgotten-future/blob/master/README.md" target="_blank">please do!</a> Subscribe below to receive updates on the <em>Forgotten Future</em> development process. </p>
+            <table class="themed">
+                <caption>Development Status</caption>
+                <tbody>
+                    <tr>
+                        <th>Target</th>
+                        <th>Complete</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/clevertree/forgotten-future-site" target="_blank">Informational Website</a></td>
+                        <td><span style="color: green;">85</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/clevertree/forgotten-future/tree/master/render/shader" target="_blank">WebGL Shaders</a></td>
+                        <td><span style="color: yellow">20</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/clevertree/forgotten-future/tree/master/sprite" target="_blank">Sprite Sheets</a></td>
+                        <td><span style="color: red">5</span></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/clevertree/forgotten-future/tree/master/terrain" target="_blank">Physics &amp; Terrain</a></td>
+                        <td><span style="color: red">10</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <footer>
+        <div>
+            <h2>Created With</h2>
+            <div><a class="created-by" target="_blank" href="https://github.com/clevertree/cms">CleverTree CMS</a></div>
+            <div><a href="./:content.html">[Site Index]</a> <a href="./:user.html">[User Index]</a></div>
+        </div>
+        <div>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <div>Email: <a href="mailto:ari@ffga.me">ari@ffga.me</a></div>
+        </div>
+    </footer>
+</body>
 
-                <p>
-                    Forgotten Future will be officially launched in late 2018 and will be free to play.
-                    <a href="https://en.wikipedia.org/wiki/Porting#Porting_of_video_games"  target="_blank">Console ports</a> will become available thereafter depending on development time.
-                    <strong>In order to get us there (and faster) consider <a href="pages/contribute.html">making a donation</a></strong>.
-                    All donation funds are spent (<a href="https://www.upwork.com/ab/find-work/" target="_blank">wisely</a>)
-                    on essential <a href="pages/media.html#art">concept art</a>.
-                </p>
-
-                <p>
-                    While you're here don't forget to <a href="#subscribe">subscribe</a> to browser updates so you'll know when Forgotten Future is launched.
-                </p>
-
-                <h2 id="what-is">What's the Story?</h2>
-                <p>
-                    In <em>Forgotten Future</em>, a city-rail driver named Lem is conscripted into an assault mission
-                    to the Earth's Moon in an attempt to recapture it from an unknown alien invasion force.
-                    When the mission suffers unexpected setbacks, Lem finds himself in the center of a
-                    cataclysmic event that would threaten to change the course of human history forever.
-                </p>
-
-                <h2 id="status">Development Status</h2>
-                <p>
-                    Each section describes the current completeness of the targeted feature.
-                    Click each section to view the source code behind each feature.
-                    If it's something you think you can help with
-                    <a href="https://github.com/clevertree/forgotten-future/blob/master/README.md" target="_blank">please do!</a>
-                    Subscribe below to receive updates on the <em>Forgotten Future</em> development process.
-                </p>
-                <ul>
-                    <li><span class="number-percentage" style="color: green;">85</span>
-                        <a href="https://github.com/clevertree/forgotten-future-site" target="_blank">Informational Website</a></li>
-                    <li><span class="number-percentage" style="color: yellow">20</span>
-                        <a href="https://github.com/clevertree/forgotten-future/tree/master/render/shader" target="_blank">WebGL Shaders</a></li>
-                    <li><span class="number-percentage" style="color: red">5</span>
-                        <a href="https://github.com/clevertree/forgotten-future/tree/master/sprite" target="_blank">Sprite Sheets</a></li>
-                    <li><span class="number-percentage" style="color: red">10</span>
-                        <a href="https://github.com/clevertree/forgotten-future/tree/master/terrain" target="_blank">Physics & Terrain</a></li>
-                </ul>
-            </section>
-
-            <!--<h2 id="subscribe">Subscribe for updates</h2>-->
-            <!--<section class="themed theme-minimal">-->
-                <!--<p>-->
-                    <!--Subscribe for browser updates and get notified when <em>Forgotten Future</em> is launched.-->
-                <!--</p>-->
-                <!--<iframe src="pages/frames/subscribe.html" class="iframe-subscribe"></iframe>-->
-            <!--</section>-->
-
-            <h2 id="donate">Make a Donation</h2>
-            <section class="themed theme-minimal">
-                <p>
-                    The Forgotten Future Project needs your contribution. Become an official <a href="pages/contribute.html">sponsor</a> and
-                    help bring this game to life.
-                    Also make sure to check out <a href="pages/contribute.html#tiers">reward tiers</a> available to everyone who contributes!
-                </p>
-                <iframe src="pages/frames/donate.html" class="iframe-donate"></iframe>
-            </section>
-
-        </article>
-        <footer>
-            <a class="created-by" target='_blank' href='https://github.com/clevertree/forgotten-future'>Created by CleverTree</a>
-        </footer>
-    </body>
 </html>
