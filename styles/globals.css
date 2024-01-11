@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fg-color: #000;
+  --fg-color-link: #33a;
+  --bg-color: #C0C0C0;
+  --bg-color2: #DDD;
+  --nav-bg-color: #999;
+  --nav-fg-color: #33A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg-color: #FFF;
+    --fg-color-link: #77f;
+    --bg-color: #222;
+    --bg-color2: #333;
+    --nav-bg-color: #555;
+    --nav-fg-color: #99A;
+  }
+}
+
+body {
+  color: var(--fg-color);
+  background: var(--bg-color);
+}

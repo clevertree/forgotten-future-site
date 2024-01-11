@@ -12,9 +12,9 @@ Welcome to the Forgotten Future Development Team, this document will get you sta
 2. Please provide your github account to the administrator of this project so you can gain access.
 
 3. Clone the source repository!
-[GitHub For Beginners: Don't Get Scared, Get Started](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
+   [GitHub For Beginners: Don't Get Scared, Get Started](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
 
-4. Once you have the source repository cloned on your PC, you're all set! You can now make changes to the source files, add new source files, and *push* the changes back to Github for everyone else to see. 
+4. Once you have the source repository cloned on your PC, you're all set! You can now make changes to the source files, add new source files, and *push* the changes back to Github for everyone else to see.
 
 ### Folders
 
@@ -23,7 +23,7 @@ Welcome to the Forgotten Future Development Team, this document will get you sta
 * stage - Stages
 * Platform - Platform and Level Textures
 
-    
+
 
 Human History Timeline
 ======================
