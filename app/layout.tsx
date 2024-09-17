@@ -1,5 +1,6 @@
 import type {Metadata} from 'next'
 import React from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 /** Styles **/
 
@@ -81,6 +82,7 @@ export default async function RootLayout(
         </div>
     </footer>
     </body>
+    <Analytics />
 
     </html>)
 }
