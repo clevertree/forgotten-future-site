@@ -9,7 +9,7 @@ export default function MediaPage() {
         { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
         { src: '/media/teaser/hero_great_beast.png', title: 'The Great Beast', meta: 'Elder Monolith Schematic' },
         { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
-        { src: '/media/teaser/hero_moon_eruption_v2.png', title: 'Lunar Eruption', meta: 'Day 0 Post-Reset' },
+        { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Disintegration', meta: 'Day 0 Post-Reset' },
         { src: '/media/teaser/hero_burning_forest.png', title: 'Scorched Earth', meta: 'Resource Reclamation' },
         { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
     ];
