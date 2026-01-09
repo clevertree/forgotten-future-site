@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import React from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
@@ -22,8 +23,18 @@ export default function RootLayout({
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 no-print">
                     <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                        <Link href="/" className="text-2xl font-bold tracking-tighter text-cyan-400 text-glow">
-                            FORGOTTEN FUTURE
+                        <Link href="/" className="flex items-center gap-3 group">
+                            <div className="relative w-8 h-8 md:w-10 md:h-10">
+                                <Image 
+                                    src="/icon.png" 
+                                    alt="Forgotten Future Icon" 
+                                    fill
+                                    className="object-contain group-hover:scale-110 transition-transform duration-300"
+                                />
+                            </div>
+                            <span className="text-2xl font-bold tracking-tighter text-cyan-400 text-glow">
+                                FORGOTTEN FUTURE
+                            </span>
                         </Link>
                         <div className="flex gap-8 uppercase text-sm tracking-widest font-medium">
                             <Link href="/story" className="hover:text-cyan-400 transition-colors">Story</Link>
