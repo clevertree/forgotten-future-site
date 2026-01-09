@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function ManuscriptPage() {
     const chapters = [
-        { id: 1, title: 'An Ordinary Distance', summary: 'Lem\'s suburban life shatters as machines appear on the horizon.' },
+        { id: 1, title: 'An Ordinary Distance', summary: 'Lem\'s suburban life shatters as machines appear on the horizon.', audio: '/audio/manuscript/chapter_01.mp3' },
         { id: 2, title: 'Lynn', summary: 'Lynn arrives and forces Lem into activation.' },
         { id: 3, title: 'The Doorway', summary: 'Lem discovers he is not human; Lynn installs remote compulsion.' },
         { id: 4, title: 'Drafted', summary: 'Lem is embedded with soldiers for a desperate Moon mission.' },
@@ -22,12 +22,20 @@ export default function ManuscriptPage() {
                     <div className="glass-panel sticky top-32">
                         <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
-                            <div className="flex items-center justify-center h-32 text-gray-600 italic text-center text-sm">
-                                [ Audiobook in progress... Chapters 1-15 are being recorded. ]
+                            <div className="flex flex-col items-center justify-center space-y-4">
+                                <div className="text-xs text-zinc-500 uppercase tracking-widest">Available Now</div>
+                                <div className="text-2xl font-bold text-glow text-cyan-400">Chapter 1</div>
+                                <div className="text-[10px] text-zinc-600 italic text-center">
+                                    "An Ordinary Distance" <br/>
+                                    (Narrated by Fable)
+                                </div>
+                                <audio controls className="w-full h-8 accent-cyan-500 mt-2">
+                                    <source src="/audio/manuscript/chapter_01.mp3" type="audio/mpeg" />
+                                </audio>
                             </div>
                         </div>
                         <p className="text-xs text-gray-500 leading-relaxed mb-6">
-                            Since the story gets updated as we iron out the details, we regenerate the audio bits to match. It's a work in progress.
+                            Audio is generated iteratively. Each chapter is narrated as the draft stabilizes to ensure narrative accuracy.
                         </p>
                         <div className="space-y-4">
                             <Link href="/manuscript/full-text" className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
@@ -78,10 +86,16 @@ export default function ManuscriptPage() {
                                 <p className="text-sm text-gray-400 leading-relaxed">
                                     {chapter.summary}
                                 </p>
-                                <div className="mt-4 flex gap-4 no-print">
-                                    <button className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-3 py-1 rounded hover:bg-cyan-900/20">
+                                <div className="mt-4 flex gap-4 no-print items-center">
+                                    <button className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all">
                                         Read Chapter
                                     </button>
+                                    {chapter.audio && (
+                                        <div className="flex items-center gap-2 text-zinc-500">
+                                            <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></span>
+                                            <span className="text-[10px] uppercase tracking-widest font-bold">Audio Ready</span>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}
