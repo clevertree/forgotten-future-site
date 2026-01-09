@@ -6,7 +6,10 @@ import Link from 'next/link';
 export default function Home() {
     const images = [
         '/media/teaser/hero_front_bg.png',
-        '/media/teaser/hero_lem_moon.png'
+        '/media/teaser/hero_lem_moon.png',
+        '/media/teaser/hero_incubating_cube.png',
+        '/media/teaser/hero_witch_humanoids.png',
+        '/media/teaser/hero_melting_building.png'
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
 

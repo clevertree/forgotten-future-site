@@ -14,6 +14,9 @@ export default function MediaPage() {
         { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
         { src: '/media/teaser/hero_front_bg.png', title: 'The Scorch', meta: 'Post-Fry Adaptation' },
         { src: '/media/teaser/hero_lem_moon.png', title: 'Isolation', meta: 'Lunar Surface Fragment' },
+        { src: '/media/teaser/hero_incubating_cube.png', title: 'Incubation', meta: 'Vessel Synthesis' },
+        { src: '/media/teaser/hero_witch_humanoids.png', title: 'The Vanguard', meta: 'Metal Vessel Activation' },
+        { src: '/media/teaser/hero_melting_building.png', title: 'Structural Decay', meta: 'Resonance Meltdown' },
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
