@@ -3,7 +3,13 @@ import React from 'react';
 export default function StoryPage() {
   return (
     <div className="container mx-auto px-6 py-12 max-w-4xl">
-      <h1 className="text-5xl mb-12 text-glow">THE LORE OF FORGOTTEN FUTURE</h1>
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <h1 className="text-5xl text-glow uppercase tracking-tighter">THE LORE</h1>
+        <div className="flex items-center gap-2 bg-red-900/20 border border-red-500/30 px-3 py-1 rounded">
+          <span className="text-red-500 text-[10px] font-bold uppercase tracking-widest leading-none">Spoiler Warning</span>
+          <span className="text-zinc-500 text-[10px] uppercase tracking-tighter leading-none">Content includes major plot details</span>
+        </div>
+      </div>
       
       <section className="mb-16">
         <h2 className="text-2xl mb-6 border-b border-cyan-500/30 pb-2">The Timeline</h2>

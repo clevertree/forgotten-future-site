@@ -75,7 +75,10 @@ export default function MediaPage() {
 
             {/* Visual Archive Section */}
             <section className="mb-24">
-                <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">Visual Schematics</h2>
+                <div className="flex items-center justify-between mb-8 border-b border-cyan-500/30 pb-2">
+                    <h2 className="text-2xl uppercase tracking-widest">Visual Schematics</h2>
+                    <span className="text-[9px] text-zinc-500 uppercase tracking-widest italic opacity-50">May contain visual spoilers</span>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {images.map((item, i) => (
                         <div key={i} className="glass-panel group cursor-pointer overflow-hidden" onClick={() => openImage(i)}>
