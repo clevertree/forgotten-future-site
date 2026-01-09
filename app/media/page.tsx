@@ -6,21 +6,21 @@ export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
     const images = [
-        { src: '/media/teaser/ff-title.png', title: 'Logo Concept', meta: 'Official Wuxing Alignment' },
-        { src: '/media/teaser/hero_3_desert_base_3.png', title: 'The Core Technocracy', meta: 'Cradle Zero Outpost' },
-        { src: '/media/teaser/hero_2_mechanical_white_forest_2.png', title: 'Mechanical Forest', meta: 'Synodic Flora Evolution' },
         { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
         { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
         { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Great Fry', meta: 'Day 0 Post-Reset' },
         { src: '/media/teaser/hero_windows_sigh.png', title: 'Windows Sigh', meta: 'Structural Meltdown' },
+        { src: '/media/teaser/hero_great_fry.png', title: 'Self-replicating machine', meta: 'Synodic Shard Accumulation' },
         { src: '/media/teaser/hero_lightning_scars.png', title: 'Lightning Scars', meta: 'Electrical Resonance' },
+        { src: '/media/teaser/hero_melting_building.png', title: 'Resonance Meltdown', meta: 'Resonance Meltdown' },
         { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
-        { src: '/media/teaser/hero_front_bg.png', title: 'The Desert Base', meta: 'Post-Fry Adaptation' },
-        { src: '/media/teaser/hero_lem_moon.png', title: 'Isolation', meta: 'Lunar Surface Fragment' },
         { src: '/media/teaser/hero_incubating_cube.png', title: 'Reincarnation', meta: 'Vessel Synthesis' },
         { src: '/media/teaser/hero_witch_humanoids.png', title: 'The Vanguard', meta: 'Metal Vessel Activation' },
-        { src: '/media/teaser/hero_melting_building.png', title: 'Resonance Meltdown', meta: 'Resonance Meltdown' },
-        { src: '/media/teaser/hero_great_fry.png', title: 'Self-replicating machine', meta: 'Synodic Shard Accumulation' },
+        { src: '/media/teaser/hero_lem_moon.png', title: 'Isolation', meta: 'Lunar Surface Fragment' },
+        { src: '/media/teaser/hero_front_bg.png', title: 'The Desert Base', meta: 'Post-Fry Adaptation' },
+        { src: '/media/teaser/hero_2_mechanical_white_forest_2.png', title: 'Mechanical Forest', meta: 'Synodic Flora Evolution' },
+        { src: '/media/teaser/hero_3_desert_base_3.png', title: 'The Core Technocracy', meta: 'Cradle Zero Outpost' },
+        { src: '/media/teaser/ff-title.png', title: 'Logo Concept', meta: 'Official Wuxing Alignment' },
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
