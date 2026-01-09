@@ -18,7 +18,7 @@ export default function ManuscriptPage() {
         <div className="container mx-auto px-6 py-12">
             <div className="flex flex-col md:flex-row gap-12">
                 {/* Audiobook Sidebar */}
-                <aside className="md:w-1/3">
+                <aside className="md:w-1/3 no-print">
                     <div className="glass-panel sticky top-32">
                         <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
@@ -78,7 +78,7 @@ export default function ManuscriptPage() {
                                 <p className="text-sm text-gray-400 leading-relaxed">
                                     {chapter.summary}
                                 </p>
-                                <div className="mt-4 flex gap-4">
+                                <div className="mt-4 flex gap-4 no-print">
                                     <button className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-3 py-1 rounded hover:bg-cyan-900/20">
                                         Read Chapter
                                     </button>

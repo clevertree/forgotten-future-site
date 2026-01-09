@@ -676,9 +676,9 @@ export default function FullTextManuscript() {
 
     return (
         <div className="container mx-auto px-6 py-12 max-w-4xl">
-            <div className="mb-12 flex justify-between items-center">
+            <div className="mb-12 flex justify-between items-center no-print">
                 <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
-                    ← Back to Index
+                    ← Back to Manuscript Page
                 </Link>
                 <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
                     Optimized for Text-to-Speech

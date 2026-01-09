@@ -34,3 +34,31 @@ body {
 .glass-panel {
   @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-6;
 }
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .glass-panel {
+    @apply border-none p-0 bg-transparent backdrop-blur-none shadow-none !important;
+  }
+
+  h1, h2, h3, h4, .text-glow {
+    color: black !important;
+    text-shadow: none !important;
+  }
+
+  p {
+    color: black !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+}

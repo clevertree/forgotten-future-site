@@ -16,7 +16,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="bg-black text-white selection:bg-cyan-500/30">
-                <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+                <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 no-print">
                     <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                         <Link href="/" className="text-2xl font-bold tracking-tighter text-cyan-400 text-glow">
                             FORGOTTEN FUTURE
@@ -35,7 +35,7 @@ export default function RootLayout({
                     {children}
                 </main>
 
-                <footer className="bg-black border-t border-white/10 py-12 mt-24">
+                <footer className="bg-black border-t border-white/10 py-12 mt-24 no-print">
                     <div className="container mx-auto px-6 text-center text-gray-500 text-sm">
                         <p>&copy; 2026 FORGOTTEN FUTURE. AN AI-DRIVEN NARRATIVE EXPERIMENT.</p>
                         <div className="mt-4 flex justify-center gap-6">
