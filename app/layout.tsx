@@ -23,8 +23,8 @@ export default function RootLayout({
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 no-print">
                     <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                        <Link href="/" className="flex items-center gap-3 group">
-                            <div className="relative w-8 h-8 md:w-10 md:h-10">
+                        <Link href="/" className="flex items-center gap-4 group">
+                            <div className="relative w-16 h-16 md:w-20 md:h-20">
                                 <Image 
                                     src="/icon.png" 
                                     alt="Forgotten Future Icon" 
@@ -32,7 +32,7 @@ export default function RootLayout({
                                     className="object-contain group-hover:scale-110 transition-transform duration-300"
                                 />
                             </div>
-                            <span className="text-2xl font-bold tracking-tighter text-cyan-400 text-glow">
+                            <span className="text-3xl font-bold tracking-tighter text-cyan-400 text-glow">
                                 FORGOTTEN FUTURE
                             </span>
                         </Link>
