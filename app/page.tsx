@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center">
             {/* Hero Section */}
-            <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+            <section className="relative w-full h-[85vh] flex flex-col items-center justify-end pb-12 md:pb-20 text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     {images.map((src, i) => (
                         <img
