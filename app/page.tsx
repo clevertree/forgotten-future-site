@@ -1,24 +1,44 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
+    const images = [
+        '/media/teaser/hero_front_bg.png',
+        '/media/teaser/hero_lem_moon.png'
+    ];
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % images.length);
+        }, 6000); // 6 second fade interval
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
         <div className="flex flex-col items-center">
             {/* Hero Section */}
             <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img
-                        src="/media/teaser/hero_front_bg.png"
-                        alt="Atmospheric Background"
-                        className="w-full h-full object-cover mix-blend-overlay"
-                    />
+                    {images.map((src, i) => (
+                        <img
+                            key={src}
+                            src={src}
+                            alt="Atmospheric Background"
+                            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[3000ms] mix-blend-overlay ${
+                                i === currentIndex ? 'opacity-100' : 'opacity-0'
+                            }`}
+                        />
+                    ))}
                     <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>
                 </div>
-                <div className="z-10 max-w-4xl p-8 md:p-12 rounded-3xl bg-black/30 backdrop-blur-[2px] border border-white/5">
-                    <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-glow">
+                <div className="z-10 max-w-2xl p-6 md:p-10 rounded-2xl bg-black/40 backdrop-blur-[4px] border border-white/5">
+                    <h1 className="text-3xl md:text-4xl font-black mb-4 tracking-tighter text-glow">
                         STARS DIE
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 mb-12 tracking-wide max-w-2xl mx-auto">
+                    <p className="text-base md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto">
                         A thousand years of human history, erased in a single lunar discharge.
                         A new Dark Age has begun.
                     </p>
