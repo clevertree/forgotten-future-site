@@ -8,7 +8,7 @@ export default function Home() {
             <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/media/teaser/hero_background_spheres.png"
+                        src="/media/teaser/hero_front_bg.png"
                         alt="Atmospheric Background"
                         className="w-full h-full object-cover mix-blend-overlay"
                     />
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
                 <div className="relative aspect-square bg-gray-900 rounded-lg overflow-hidden border border-white/10">
                     <img
-                        src="/media/teaser/hero_background_spheres.png"
+                        src="/media/teaser/hero_front_bg.png"
                         alt="The Great Fry"
                         className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
                     />
