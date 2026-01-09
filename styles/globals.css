@@ -3,26 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --fg-color: #000;
-  --fg-color-link: #33a;
-  --bg-color: #C0C0C0;
-  --bg-color2: #DDD;
-  --nav-bg-color: #999;
-  --nav-fg-color: #33A;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg-color: #FFF;
-    --fg-color-link: #77f;
-    --bg-color: #222;
-    --bg-color2: #333;
-    --nav-bg-color: #555;
-    --nav-fg-color: #99A;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 15;
+  --background-end-rgb: 0, 0, 0;
+  --accent-color: #00d4ff;
 }
 
 body {
-  color: var(--fg-color);
-  background: var(--bg-color);
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
 }
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-wider uppercase text-cyan-400;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-6;
+}
+
