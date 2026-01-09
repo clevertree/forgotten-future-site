@@ -98,6 +98,12 @@ export default function StoryPage() {
                             primary arms, designed for planetary reconstruction.
                         </p>
                     </div>
+                    <div className="glass-panel">
+                        <h3 className="mb-4">The Builders (Gorgons)</h3>
+                        <p className="text-sm text-gray-400">
+                            Fire-aligned mechanical lifeforms engineered as "perfect slaves." Brittle without heat, they migrate to Fire Cities like Cradle Zero for survival. They possess a shared hivemind and utilize invisible heat rays.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -108,14 +114,13 @@ export default function StoryPage() {
                         <strong className="text-cyan-400 block uppercase mb-1">Cradle Zero</strong>
                         <p className="text-gray-400 text-sm">
                             The original terrestrial base, now a restricted "Fire City." A Pillar of Fire stretches into the
-                            blackened sky, guarded by the dormant Elder Monolith known as The Great Beast.
+                            blackened sky, attracting thousands of **Builders** seeking warmth and energy. It is guarded by the dormant Elder Monolith known as The Great Beast.
                         </p>
                     </li>
                     <li>
                         <strong className="text-cyan-400 block uppercase mb-1">Apex Hub</strong>
                         <p className="text-gray-400 text-sm">
-                            The primary Archivist lunar base on the far side of the moon ruins. It remains the center of
-                            Synodic power and the source of the Fallacy broadcasts.
+                            The primary Archivist lunar base on the far side of the moon ruins. It is where the **Builders** were first evolved as a Core experiment.
                         </p>
                     </li>
                     <li>
