@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ManuscriptPage() {
   const chapters = [
@@ -25,11 +26,24 @@ export default function ManuscriptPage() {
                 [Audiobook Engine Initializing... Current progress: Chapters 1-16 being synthesized.]
               </div>
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed italic">
+            <p className="text-xs text-gray-500 leading-relaxed italic mb-6">
               The Forgotten Future audiobook is a living record. As the manuscript is refined through 
               Lore Hardening, this audio stream is regenerated to reflect the absolute latest iteration 
               of the truth.
             </p>
+            <div className="space-y-4">
+              <Link href="/manuscript/full-text" className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
+                Open Full Text for Listening
+              </Link>
+              <div className="pt-4 border-t border-white/5">
+                <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-2">Recommended Plugins</p>
+                <ul className="text-[10px] text-zinc-600 space-y-1">
+                  <li>• Google "Listen to this page" (Mobile)</li>
+                  <li>• Read Aloud (Chrome Extension)</li>
+                  <li>• NaturalReader</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </aside>
 
