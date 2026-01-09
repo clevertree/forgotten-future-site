@@ -47,35 +47,35 @@ export default function StoryPage() {
                     <div>
                         <h3 className="text-cyan-400 text-lg mb-2">Wood (Lem)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The Vessel of Growth and Memory. Hidden in suburban anonymity, Lem's nature was only revealed during the 
+                            The Vessel of Growth and Memory. Hidden in suburban anonymity, Lem's nature was only revealed during the
                             Cataclysm. He carries the software legacy of the Water element.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-red-400 text-lg mb-2">Fire (Rahu)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The Vessel of Transmission. After his defection, Rahu became the broadcast voice of the Moon, his 
+                            The Vessel of Transmission. After his defection, Rahu became the broadcast voice of the Moon, his
                             warnings twisted by Archivists into propaganda.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-blue-400 text-lg mb-2">Water (Lynn)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The Vessel of Flow and Preservation. Lynn dissolved into the Lunar Capacitor to initiate the reset. 
+                            The Vessel of Flow and Preservation. Lynn dissolved into the Lunar Capacitor to initiate the reset.
                             She survives as an AI guided by Lem's Aether-Drive.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-amber-600 text-lg mb-2">Earth (Tor)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The Vessel of Stability. Once a high-ranking human general, his shattering obedience during the 
+                            The Vessel of Stability. Once a high-ranking human general, his shattering obedience during the
                             Cataclysm led him to become a wanderer seeking the true nature of the Fallacy.
                         </p>
                     </div>
                     <div className="md:col-span-2 border-t border-white/5 pt-8">
                         <h3 className="text-zinc-500 text-lg mb-2">Metal (The Synanthropes)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            The element of standardized Order. Shared-consciousness units led by the reset forms of Tor and Rahu. 
+                            The element of standardized Order. Shared-consciousness units led by the reset forms of Tor and Rahu.
                             They serve as the physical enforcers of the Archivist Thousand-Year Fallacy.
                         </p>
                     </div>

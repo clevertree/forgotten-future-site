@@ -49,7 +49,11 @@ body {
     @apply border-none p-0 bg-transparent backdrop-blur-none shadow-none !important;
   }
 
-  h1, h2, h3, h4, .text-glow {
+  h1,
+  h2,
+  h3,
+  h4,
+  .text-glow {
     color: black !important;
     text-shadow: none !important;
   }

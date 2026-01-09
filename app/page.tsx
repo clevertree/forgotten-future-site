@@ -30,9 +30,8 @@ export default function Home() {
                             key={src}
                             src={src}
                             alt="Atmospheric Background"
-                            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[3000ms] mix-blend-overlay ${
-                                i === currentIndex ? 'opacity-100' : 'opacity-0'
-                            }`}
+                            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[3000ms] mix-blend-overlay ${i === currentIndex ? 'opacity-100' : 'opacity-0'
+                                }`}
                         />
                     ))}
                     <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>

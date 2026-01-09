@@ -23,7 +23,7 @@ export default function ManuscriptPage() {
                         <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
                             <div className="flex items-center justify-center h-32 text-gray-600 italic text-center text-sm">
-                                [ Audiobook in progress... Chapters 1-16 are being recorded. ]
+                                [ Audiobook in progress... Chapters 1-15 are being recorded. ]
                             </div>
                         </div>
                         <p className="text-xs text-gray-500 leading-relaxed mb-6">

@@ -13,7 +13,7 @@ export default function ContactPage() {
                 <div className="space-y-8">
                     <div>
                         <h3 className="text-xs uppercase tracking-[0.3em] text-cyan-500 mb-2">Primary Frequency</h3>
-                        <p className="text-2xl font-bold tracking-tight">ari@asu.edu</p>
+                        <a href="mailto:ari@asu.edu" className="text-2xl font-bold tracking-tight hover:text-cyan-400 transition-colors">ari@asu.edu</a>
                     </div>
                     <div>
                         <h3 className="text-xs uppercase tracking-[0.3em] text-cyan-500 mb-2">Digital Archive</h3>
