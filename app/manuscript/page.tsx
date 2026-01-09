@@ -20,27 +20,38 @@ export default function ManuscriptPage() {
         {/* Audiobook Sidebar */}
         <aside className="md:w-1/3">
           <div className="glass-panel sticky top-32">
-            <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">FULL AUDIOBOOK</h2>
+            <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">Full Audiobook</h2>
             <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
               <div className="flex items-center justify-center h-32 text-gray-600 italic text-center text-sm">
-                [Audiobook Engine Initializing... Current progress: Chapters 1-16 being synthesized.]
+                [ Audiobook in progress... Chapters 1-16 are being recorded. ]
               </div>
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed italic mb-6">
-              The Forgotten Future audiobook is a living record. As the manuscript is refined through 
-              Lore Hardening, this audio stream is regenerated to reflect the absolute latest iteration 
-              of the truth.
+            <p className="text-xs text-gray-500 leading-relaxed mb-6">
+              Since the story gets updated as we iron out the details, we regenerate the audio bits to match. It's a work in progress.
             </p>
             <div className="space-y-4">
               <Link href="/manuscript/full-text" className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
-                Open Full Text for Listening
+                Read as Full Text
               </Link>
               <div className="pt-4 border-t border-white/5">
-                <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-2">Recommended Plugins</p>
-                <ul className="text-[10px] text-zinc-600 space-y-1">
-                  <li>• Google "Listen to this page" (Mobile)</li>
-                  <li>• Read Aloud (Chrome Extension)</li>
-                  <li>• NaturalReader</li>
+                <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3 font-bold">Try these for listening:</p>
+                <ul className="text-[10px] text-zinc-600 space-y-2">
+                  <li className="flex flex-col">
+                    <span className="text-zinc-400">• Read Aloud</span>
+                    <span>Chrome / Edge extension</span>
+                  </li>
+                  <li className="flex flex-col">
+                    <span className="text-zinc-400">• NaturalReader</span>
+                    <span>Browser extension / App</span>
+                  </li>
+                  <li className="flex flex-col">
+                    <span className="text-zinc-400">• Speechify</span>
+                    <span>Focused reading tool</span>
+                  </li>
+                  <li className="flex flex-col mt-2 pt-2 border-t border-white/5 uppercase tracking-tighter">
+                    <span className="text-cyan-500/50">Pro Tip:</span>
+                    <span>On mobile, use Google's "Listen to this page" in Chrome.</span>
+                  </li>
                 </ul>
               </div>
             </div>
