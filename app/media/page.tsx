@@ -35,14 +35,19 @@ export default function MediaPage() {
                 <div className="glass-panel">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h3 className="text-3xl font-black mb-2 text-glow">STARS DIE TEASER</h3>
+                            <div className="flex items-center gap-3 mb-2">
+                                <h3 className="text-3xl font-black text-glow uppercase">Stars Die Teaser</h3>
+                                <span className="text-[10px] bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-2 py-0.5 rounded uppercase tracking-[0.2em] animate-pulse">Coming Soon</span>
+                            </div>
                             <p className="text-cyan-500 text-sm mb-6 uppercase tracking-widest font-bold">
                                 Featuring song by Porcupine Tree • 1995
                             </p>
                             <p className="text-gray-400 mb-8 leading-relaxed">
-                                This teaser serves as the atmospheric threshold for the <strong>Forgotten Future</strong> narrative.
-                                It depicts the final moments of the Pre-Time era, the shattering of the Moon, and the
+                                This teaser serves as the atmospheric threshold for the <strong>Forgotten Future</strong> narrative. 
+                                It depicts the final moments of the Pre-Time era, the shattering of the Moon, and the 
                                 descent of the stadium-sized Monoliths.
+                                <br /><br />
+                                <span className="text-zinc-500 italic text-xs">Note: The full animated sequence is currently in production. The records below represent the finalized visual atmosphere and auditory foundation.</span>
                             </p>
                             <div className="bg-zinc-900/80 p-6 rounded-lg border border-white/5">
                                 <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">Teaser Audio Stream</p>
