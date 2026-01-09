@@ -20,9 +20,9 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 md:gap-4 group z-50">
                 <div className="relative w-12 h-12 md:w-20 md:h-20">
-                    <Image 
-                        src="/icon.png" 
-                        alt="Forgotten Future Icon" 
+                    <Image
+                        src="/icon.png"
+                        alt="Forgotten Future Icon"
                         fill
                         className="object-contain group-hover:scale-110 transition-transform duration-300"
                     />
@@ -42,7 +42,7 @@ export default function Navigation() {
             </div>
 
             {/* Mobile Hamburger Button */}
-            <button 
+            <button
                 className="lg:hidden z-50 p-2 text-cyan-400 focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle Menu"
@@ -55,12 +55,12 @@ export default function Navigation() {
             </button>
 
             {/* Mobile Nav Overlay */}
-            <div className={`fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transition-transform duration-500 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed inset-0 bg-zinc-950 z-40 transition-transform duration-500 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="flex flex-col items-center justify-center h-full space-y-8 uppercase text-xl tracking-[0.3em] font-light">
                     {navLinks.map(link => (
-                        <Link 
-                            key={link.href} 
-                            href={link.href} 
+                        <Link
+                            key={link.href}
+                            href={link.href}
                             className="hover:text-cyan-400 transition-colors"
                             onClick={() => setIsOpen(false)}
                         >

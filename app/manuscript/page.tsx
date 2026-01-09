@@ -1,21 +1,55 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 
 export default function ManuscriptPage() {
+    const [playingId, setPlayingId] = useState<number | null>(null);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+
     const chapters = [
-        { id: 1, title: 'An Ordinary Distance', summary: 'Lem\'s suburban life shatters as machines appear on the horizon.', audio: '/audio/manuscript/chapter_01.mp3' },
-        { id: 2, title: 'Lynn', summary: 'Lynn arrives and forces Lem into activation.' },
+        {
+            id: 1,
+            title: 'An Ordinary Distance',
+            summary: "Lem's suburban life shatters as machines appear on the horizon.",
+            audio: '/audio/manuscript/chapter_01.mp3'
+        },
+        {
+            id: 2,
+            title: 'Lynn',
+            summary: 'Lynn arrives and forces Lem into activation.',
+            audio: '/audio/manuscript/chapter_02.mp3' // Placeholder if it exists or we plan to generate it
+        },
         { id: 3, title: 'The Doorway', summary: 'Lem discovers he is not human; Lynn installs remote compulsion.' },
         { id: 4, title: 'Drafted', summary: 'Lem is embedded with soldiers for a desperate Moon mission.' },
         { id: 5, title: 'The Briefing He Never Had', summary: 'Soldiers discuss psychological warfare and hidden truths.' },
         { id: 6, title: 'The Near Moon', summary: 'Visual confirmation that the Moon is not what humanity was taught.' },
         { id: 7, title: 'Zenith', summary: 'Ship reaches lunar altitude; Lynn makes a ruthless decision.' },
         { id: 8, title: 'The Shattered Approach', summary: 'The Moon begins to fragment; The Caucasian Eagle is struck.' },
-        // Simplified for now, can be expanded to all 16 chapters
     ];
+
+    const togglePlay = (id: number, url: string) => {
+        if (playingId === id) {
+            audioRef.current?.pause();
+            setPlayingId(null);
+        } else {
+            setPlayingId(id);
+            if (audioRef.current) {
+                audioRef.current.src = url;
+                audioRef.current.play();
+            }
+        }
+    };
 
     return (
         <div className="container mx-auto px-6 py-12">
+            {/* Hidden audio element for global control */}
+            <audio
+                ref={audioRef}
+                onEnded={() => setPlayingId(null)}
+                className="hidden"
+            />
+
             <div className="flex flex-col lg:flex-row gap-12">
                 {/* Audiobook Sidebar */}
                 <aside className="lg:w-1/3 no-print order-2 lg:order-1">
@@ -29,9 +63,17 @@ export default function ManuscriptPage() {
                                     "An Ordinary Distance" <br />
                                     (Narrated by Fable)
                                 </div>
-                                <audio controls className="w-full h-8 accent-cyan-500 mt-2">
-                                    <source src="/audio/manuscript/chapter_01.mp3" type="audio/mpeg" />
-                                </audio>
+                                <div className="w-full pt-4">
+                                    <button
+                                        onClick={() => togglePlay(1, '/audio/manuscript/chapter_01.mp3')}
+                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${playingId === 1
+                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                            }`}
+                                    >
+                                        {playingId === 1 ? '⏸ Playing' : '▶ Play Audio'}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <p className="text-xs text-gray-500 leading-relaxed mb-6">
@@ -86,14 +128,31 @@ export default function ManuscriptPage() {
                                 <p className="text-sm text-gray-400 leading-relaxed">
                                     {chapter.summary}
                                 </p>
-                                <div className="mt-4 flex gap-4 no-print items-center">
+                                <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
                                     <button className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all">
                                         Read Chapter
                                     </button>
+
+                                    <button
+                                        disabled={!chapter.audio}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            if (chapter.audio) togglePlay(chapter.id, chapter.audio);
+                                        }}
+                                        className={`text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded transition-all border ${!chapter.audio
+                                                ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
+                                                : playingId === chapter.id
+                                                    ? 'bg-cyan-500 text-black border-cyan-500'
+                                                    : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
+                                            }`}
+                                    >
+                                        {playingId === chapter.id ? '⏸ Pause' : '▶ Play Audio'}
+                                    </button>
+
                                     {chapter.audio && (
-                                        <div className="flex items-center gap-2 text-zinc-500">
+                                        <div className="flex items-center gap-2 text-zinc-500 ml-2">
                                             <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></span>
-                                            <span className="text-[10px] uppercase tracking-widest font-bold">Audio Ready</span>
+                                            <span className="text-[10px] uppercase tracking-widest font-bold">Live</span>
                                         </div>
                                     )}
                                 </div>

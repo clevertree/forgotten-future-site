@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="bg-black text-white selection:bg-cyan-500/30">
-                <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 no-print">
+                <header className="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10 no-print">
                     <Navigation />
                 </header>
 
