@@ -6,14 +6,21 @@ export default function Home() {
         <div className="flex flex-col items-center">
             {/* Hero Section */}
             <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/20 to-black z-0"></div>
+                <div className="absolute inset-0 z-0">
+                    <img 
+                      src="/media/teaser/hero_background_spheres.png" 
+                      alt="Atmospheric Background" 
+                      className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/40 to-black"></div>
+                </div>
                 <div className="z-10 max-w-4xl">
                     <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-glow">
                         THE STARS DIE
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 mb-12 tracking-wide max-w-2xl mx-auto">
                         A hundred thousand years of human history, erased in a single lunar discharge.
-                        The age of the Monoliths has begun.
+                        A new Dark Age has begun.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
                         <Link href="/manuscript" className="px-8 py-4 bg-cyan-500 text-black font-bold uppercase tracking-widest hover:bg-cyan-400 transition-all">
@@ -43,10 +50,12 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="relative aspect-square bg-gray-900 rounded-lg overflow-hidden border border-white/10">
-                    {/* Placeholder for atmospheric art */}
-                    <div className="absolute inset-0 flex items-center justify-center italic text-gray-700">
-                        [Visual: The Lunar Debris Field over a darkening Earth]
-                    </div>
+                    <img 
+                      src="/media/teaser/hero_background_spheres.png" 
+                      alt="The Great Fry" 
+                      className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                 </div>
             </section>
 

@@ -12,6 +12,7 @@ export default function MediaPage() {
         { src: '/media/teaser/hero_windows_sigh.png', title: 'Windows Sigh', meta: 'Structural Meltdown' },
         { src: '/media/teaser/hero_lightning_scars.png', title: 'Lightning Scars', meta: 'Electrical Resonance' },
         { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
+        { src: '/media/teaser/hero_background_spheres.png', title: 'Mechanical Ecology', meta: 'Post-Fry Adaptation' },
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
