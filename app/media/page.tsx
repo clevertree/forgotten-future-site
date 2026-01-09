@@ -1,9 +1,33 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 export default function MediaPage() {
+    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+    const images = [
+        { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
+        { src: '/media/teaser/hero_great_beast.png', title: 'The Great Beast', meta: 'Elder Monolith Schematic' },
+        { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
+        { src: '/media/teaser/hero_moon_eruption_v2.png', title: 'Lunar Eruption', meta: 'Day 0 Post-Reset' },
+        { src: '/media/teaser/hero_burning_forest.png', title: 'Scorched Earth', meta: 'Resource Reclamation' },
+        { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
+    ];
+
+    const openImage = (index: number) => setSelectedImageIndex(index);
+    const closeImage = () => setSelectedImageIndex(null);
+    const prevImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setSelectedImageIndex((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null));
+    };
+    const nextImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setSelectedImageIndex((prev) => (prev !== null ? (prev + 1) % images.length : null));
+    };
+
     return (
         <div className="container mx-auto px-6 py-12">
-            <h1 className="text-5xl mb-12 text-glow">RECORDS OF THE REVELATION</h1>
+            <h1 className="text-5xl mb-12 text-glow uppercase tracking-tighter">RECORDS OF THE REVELATION</h1>
 
             {/* Featured Teaser Section */}
             <section className="mb-24">
@@ -48,15 +72,8 @@ export default function MediaPage() {
             <section className="mb-24">
                 <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">Visual Schematics</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {[
-                        { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
-                        { src: '/media/teaser/hero_great_beast.png', title: 'The Great Beast', meta: 'Elder Monolith Schematic' },
-                        { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
-                        { src: '/media/teaser/hero_moon_eruption_v2.png', title: 'Lunar Eruption', meta: 'Day 0 Post-Reset' },
-                        { src: '/media/teaser/hero_burning_forest.png', title: 'Scorched Earth', meta: 'Resource Reclamation' },
-                        { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
-                    ].map((item, i) => (
-                        <div key={i} className="glass-panel group cursor-pointer overflow-hidden">
+                    {images.map((item, i) => (
+                        <div key={i} className="glass-panel group cursor-pointer overflow-hidden" onClick={() => openImage(i)}>
                             <div className="aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
                                 <img
                                     src={item.src}
@@ -71,6 +88,56 @@ export default function MediaPage() {
                 </div>
             </section>
 
+            {/* Full Page Image Viewer */}
+            {selectedImageIndex !== null && (
+                <div 
+                    className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
+                    onClick={closeImage}
+                >
+                    <button 
+                        className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors z-[110]"
+                        onClick={closeImage}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <button 
+                        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
+                        onClick={prevImage}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <button 
+                        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
+                        onClick={nextImage}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <div className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
+                        <div className="relative w-full h-[70vh] flex items-center justify-center">
+                            <img 
+                                src={images[selectedImageIndex].src} 
+                                alt={images[selectedImageIndex].title} 
+                                className="max-w-full max-h-full object-contain shadow-2xl shadow-cyan-500/10"
+                            />
+                        </div>
+                        <div className="mt-8 text-center">
+                            <h3 className="text-2xl font-bold text-cyan-400 uppercase tracking-widest mb-2">{images[selectedImageIndex].title}</h3>
+                            <p className="text-zinc-500 uppercase tracking-[0.2em] text-xs">{images[selectedImageIndex].meta}</p>
+                            <p className="mt-4 text-zinc-600 text-[10px] uppercase tracking-widest">{selectedImageIndex + 1} / {images.length}</p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
+
