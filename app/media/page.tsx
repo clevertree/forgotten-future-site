@@ -6,6 +6,9 @@ export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
     const images = [
+        { src: '/media/teaser/ff-title.png', title: 'Logo Concept', meta: 'Official Wuxing Alignment' },
+        { src: '/media/teaser/hero_3_desert_base_3.png', title: 'The Core Technocracy', meta: 'Cradle Zero Outpost' },
+        { src: '/media/teaser/hero_2_mechanical_white_forest_2.png', title: 'Mechanical Forest', meta: 'Synodic Flora Evolution' },
         { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
         { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
         { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Great Fry', meta: 'Day 0 Post-Reset' },
@@ -67,8 +70,8 @@ export default function MediaPage() {
                         </div>
                         <div className="relative aspect-video bg-black rounded-lg overflow-hidden border border-white/10 group">
                             <img
-                                src="/media/teaser/hero_synodic_walkers.png"
-                                alt="Synodic Walkers in the City"
+                                src="/media/teaser/ff-title.png"
+                                alt="Forgotten Future Logo"
                                 className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-700"
                             />
                             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
