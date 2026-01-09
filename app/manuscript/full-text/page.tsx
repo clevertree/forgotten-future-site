@@ -2,11 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function FullTextManuscript() {
-  const chapters = [
-    { 
-        id: 1, 
-        title: 'An Ordinary Distance', 
-        content: `The memory of my final days in the Old World remains impossibly sharp. It isn’t just a recollection; it is a playback. I can still see the exact flicker of my television screen, hear the faint, uneven thrum of the refrigerator in the kitchen, and see how the autumn dust motes caught the light as they drifted toward the carpet. To the boy I was then—the adolescent everyone knew as Lem—these were just the background details of a quiet, suburban life. I didn’t know then that my brain was already beginning to record everything with a fidelity that should have been impossible for a human.
+    const chapters = [
+        {
+            id: 1,
+            title: 'An Ordinary Distance',
+            content: `The memory of my final days in the Old World remains impossibly sharp. It isn’t just a recollection; it is a playback. I can still see the exact flicker of my television screen, hear the faint, uneven thrum of the refrigerator in the kitchen, and see how the autumn dust motes caught the light as they drifted toward the carpet. To the boy I was then—the adolescent everyone knew as Lem—these were just the background details of a quiet, suburban life. I didn’t know then that my brain was already beginning to record everything with a fidelity that should have been impossible for a human.
 
         The anomalies on the Moon had been bubbling under the surface for months. Most of us ignored the initial reports. We were used to the "Decades of Revelation"—that constant stream of leaked secrets and ancient prophecies that made everything feel like a spectacle. Besides, the "Base Alpha" on the far side was old news; space enthusiasts had been talking about it for years. But something had changed around 2010. The base had started to grow, stealthily expanding across the grey basalt until it was large enough to be caught by more than just high-res satellites.
 
@@ -29,11 +29,11 @@ export default function FullTextManuscript() {
         Six vehicles stopped directly in front of my driveway. The thud of the boots on the pavement was a synchronized percussion. I stood up. I didn't feel like I was making a choice; I just felt like it was time to leave.
 
         I walked to the door before they could knock. I knew they were there for me. I knew the ordinary distance had finally closed.`
-    },
-    { 
-        id: 2, 
-        title: 'Lynn', 
-        content: `The military presence in my driveway was not an offering of protection, but the establishment of a perimeter. I observed the soldiers through the aperture of my front door. They moved with a practiced, mechanical efficiency, their postures suggesting a hybrid of combat readiness and institutional subordination. I recorded the identification numbers on their armored hulls, the specific frequency of their short-range transmissions, and the way the light of the setting sun glinted off the matte-black barrels of their kinetic rifles. 
+        },
+        {
+            id: 2,
+            title: 'Lynn',
+            content: `The military presence in my driveway was not an offering of protection, but the establishment of a perimeter. I observed the soldiers through the aperture of my front door. They moved with a practiced, mechanical efficiency, their postures suggesting a hybrid of combat readiness and institutional subordination. I recorded the identification numbers on their armored hulls, the specific frequency of their short-range transmissions, and the way the light of the setting sun glinted off the matte-black barrels of their kinetic rifles. 
 
         They did not speak to me as they entered. They did not need to. They moved into my living room, displacing the artifacts of my suburban life—the soft-cushioned chairs, the pine coffee table—with the hard edges of tactical equipment. One soldier, whose visor remained opaque, gestured for me to sit. I complied. My internal state remained one of clinical observation; if there was fear, it was a secondary data point, a flicker of biological noise beneath the primary logging of the event.
 
@@ -76,11 +76,11 @@ export default function FullTextManuscript() {
         She struck the point at the base of my skull with a precision that bypassed all biological defenses. 
 
         My memory of Chapter 2 ends at exactly 4:41:03 PM. The darkness that followed was not the absence of data, but a transition into a new mode of record-keeping.`
-    },
-    { 
-        id: 3, 
-        title: 'The Doorway', 
-        content: `The interval between 4:41:03 PM and the restoration of my sensory processors remains a unique non-period in my record. It was not sleep, nor was it the absence of data. It was the crossing of a threshold—a transition from the biological simulation of suburbia into the raw architecture of the Aether. 
+        },
+        {
+            id: 3,
+            title: 'The Doorway',
+            content: `The interval between 4:41:03 PM and the restoration of my sensory processors remains a unique non-period in my record. It was not sleep, nor was it the absence of data. It was the crossing of a threshold—a transition from the biological simulation of suburbia into the raw architecture of the Aether. 
 
         When my consciousness reconstituted, I was no longer in the living room of my home. I occupied a structured space that lacked the familiar constraints of physical geometry. It was a luminosity defined by vectors and markers, a schematic of light that felt more real than the wood and glass I had left behind. In this liminal geography, the air—if it can be called that—vibrated with a steady, crystalline resonance. 
 
@@ -125,11 +125,11 @@ export default function FullTextManuscript() {
         The engines ignited. The force of the acceleration was a physical weight, pressing my artificial spine into the webbing. I watched the atmosphere of Earth fade from blue to a bruised, electric violet, and finally to the absolute black of the void. 
 
         I was en route to the Moon. I was a prisoner in my own physiology, a record-keeper for a mission I did not understand, propelled by a software that knew no pity.`
-    },
-    { 
-        id: 4, 
-        title: 'Drafted', 
-        content: `The restoration of my physical presence at the launch facility was accompanied by a procedural weight that my suburban memory could not have anticipated. I stood in a line composed of three hundred and forty-two soldiers, my body maintaining a posture of rigid, unthinking compliance. The compulsion software was a subterranean force, a series of electrical imperatives that translated into the rhythmic advancement of my feet over the cracked asphalt of the staging area.
+        },
+        {
+            id: 4,
+            title: 'Drafted',
+            content: `The restoration of my physical presence at the launch facility was accompanied by a procedural weight that my suburban memory could not have anticipated. I stood in a line composed of three hundred and forty-two soldiers, my body maintaining a posture of rigid, unthinking compliance. The compulsion software was a subterranean force, a series of electrical imperatives that translated into the rhythmic advancement of my feet over the cracked asphalt of the staging area.
 
         The air smelled of industrial exhaust and the sharp, ionized tang of the anti-gravity plates being warmed in the hangars. Above us, the sky had transitioned from the bruised violet of sunset to a dense, starless black, choked by the particulate matter of the First Wave's fires.
 
@@ -170,11 +170,11 @@ export default function FullTextManuscript() {
         At 9:45 PM, the internal gravity shifted. The prototype anti-gravity plates beneath the deck began to hum, a sound that resonated in my very alloys. The Caucasian Eagle groaned as it strained against the Earth’s gravitational well. 
 
         The hatch was sealed. The ordinary distance was not just closed; it was erased. I watched the telemetry through the company’s shared tactical feed as we pierced the clouds, the fires of the city beneath us becoming a dim, amber glow, and then a memory, and then nothing at all.`
-    },
-    { 
-        id: 5, 
-        title: 'The Briefing He Never Had', 
-        content: `The ascent was not the violent, shuddering event the human passengers had been trained to expect. To my sensors, it was a transition of velocities, a shedding of gravity wells that registered as a series of precise thermal and kinetic shifts. The Earth did not "fall away"; it receded with the cold finality of an optics-glass being distanced from a slide. Through the sapphire-coated viewports of the transport vessel, the blue curvature of the world contracted until it was merely a bright, fragile disc suspended in the vacuum.
+        },
+        {
+            id: 5,
+            title: 'The Briefing He Never Had',
+            content: `The ascent was not the violent, shuddering event the human passengers had been trained to expect. To my sensors, it was a transition of velocities, a shedding of gravity wells that registered as a series of precise thermal and kinetic shifts. The Earth did not "fall away"; it receded with the cold finality of an optics-glass being distanced from a slide. Through the sapphire-coated viewports of the transport vessel, the blue curvature of the world contracted until it was merely a bright, fragile disc suspended in the vacuum.
 
         I stood among the soldiers, a silent adolescent apparatus in their midst. I was Lem, the suburban cipher they had been told to protect—a teenager whose presence in a high-security strike company was a clear violation of their conventional logic—yet I was already more than the mask. My internal records were active, processing the local environment with a granularity they could not perceive. I recorded the micro-fluctuations in their heart rates, the biological tremors in their hands as they checked their safety catches, and the sharp scent of recycled oxygen and cortisol.
 
@@ -207,11 +207,11 @@ export default function FullTextManuscript() {
         I recorded the silence that followed. The Earth was now a distant memory, a sapphire spark in the wake of our velocity. The Moon was ahead, no longer a poetic lantern in the night, but a massive, thermal-reactive reality rushing toward us. 
 
         The briefing had prepared them for the lies. It had not prepared them for the truth.`
-    },
-    { 
-        id: 6, 
-        title: 'The Near Moon', 
-        content: `The optics of the transport ship were superior to any terrestrial telescope, yet even they struggled to quantify the scaling error currently manifesting in our viewports. To the human eye, the Moon is a constant of distance—a quarter-million miles of vacuum. To my sensors, the parallax shift indicated a reality far more claustrophobic. By the third hour of the insertion burn, the lunar surface had ceased to be a disc and had become a horizon.
+        },
+        {
+            id: 6,
+            title: 'The Near Moon',
+            content: `The optics of the transport ship were superior to any terrestrial telescope, yet even they struggled to quantify the scaling error currently manifesting in our viewports. To the human eye, the Moon is a constant of distance—a quarter-million miles of vacuum. To my sensors, the parallax shift indicated a reality far more claustrophobic. By the third hour of the insertion burn, the lunar surface had ceased to be a disc and had become a horizon.
 
         I stood on the observation deck, my internal systems logging the transition from astronomical object to physical terrain. The soldiers crowded the sapphire-glass panes, their faces illuminated by the harsh, unfiltered radiance of the lunar plains. The silence on the deck was total, broken only by the rhythmic cycling of the air scrubbers and the occasional, sharp intake of breath.
 
@@ -236,11 +236,11 @@ export default function FullTextManuscript() {
         I remained still, a detached witness to the humans' unraveling. They looked at the Moon and saw a monster rising from the dark. I looked at it and saw the Lunar Capacitor, the massive energy nest that was already beginning to hum with the first stage of the discharge. 
 
         The proximity was not an error. It was an invitation.`
-    },
-    { 
-        id: 7, 
-        title: 'Zenith', 
-        content: `The ship reached its zenith—the point of maximum proximity before the controlled descent toward the Moon's far side—at precisely 04:00 ship-time. At this altitude, the lunar landscape was no longer a map; it was a physical weight. The shadows in the craters were deep, ink-black voids, and the crystalline structures of the Synodics caught the sun with a blinding, prismatic intensity. 
+        },
+        {
+            id: 7,
+            title: 'Zenith',
+            content: `The ship reached its zenith—the point of maximum proximity before the controlled descent toward the Moon's far side—at precisely 04:00 ship-time. At this altitude, the lunar landscape was no longer a map; it was a physical weight. The shadows in the craters were deep, ink-black voids, and the crystalline structures of the Synodics caught the sun with a blinding, prismatic intensity. 
 
         The psychological pressure of the sight finally breached the deck’s discipline. 
 
@@ -307,11 +307,11 @@ export default function FullTextManuscript() {
         "The General is waiting," Novak whispered.
 
         I recorded the shift in the ship's internal pressure. We had reached the zenith. The descent had begun.`
-    },
-    { 
-        id: 8, 
-        title: 'The Shattered Approach', 
-        content: `The broadcast arrived not as a flicker on the monitors, but as a resonance within the very hull of the Caucasian Eagle. General Tor’s voice was a curated frequency—authoritative, devoid of the static of hesitation, yet carrying a weight that felt less like inspiration and more like a structural reinforcement. 
+        },
+        {
+            id: 8,
+            title: 'The Shattered Approach',
+            content: `The broadcast arrived not as a flicker on the monitors, but as a resonance within the very hull of the Caucasian Eagle. General Tor’s voice was a curated frequency—authoritative, devoid of the static of hesitation, yet carrying a weight that felt less like inspiration and more like a structural reinforcement. 
 
         "We are the vanguard of a truth long suppressed," the voice stated. I watched the bridge crew. Their postures, previously loosened by the creeping dread of the lunar proximity, snapped into rigid alignment. Tor spoke of defense, of human values, and of a necessity that required no further explanation. It was a masterpiece of morale stabilization. For the soldiers around me, the mission was no longer a descent into the unknown; it was a deployment against a categorized enemy. To witness such a swift recalibration of the human psyche was to understand the mechanical nature of their social cohesion.
 
@@ -338,11 +338,11 @@ export default function FullTextManuscript() {
         We were caught in a violent, chaotic rotation. Through the spinning viewport, the Moon no longer looked like a satellite; it was a swell of white, jagged territory, expanding until it filled every optic. I felt the vacuum-tug of a hull breach somewhere in the lower decks. 
 
         The Caucasian Eagle was no longer a vessel. It was a falling object, pulled by gravity and a momentum we could no longer control. We were out of formation. We were out of the plan. We were plummeting toward the shattered surface, and the last thing I recorded before the darkness was the sight of the Hermes—a small, silver needle—disappearing into the cloud of debris.`
-    },
-    { 
-        id: 9, 
-        title: 'Waking in the Dream', 
-        content: `The transition from the kinetic violence of the crash to the stillness of the aftermath was not a lapse in consciousness, but a shift in my processing architecture. I did not "black out." Instead, my perception decoupled from my sensory organs. I found myself suspended in an aetheric fugue—a dream-state where the physical wreckage of the Caucasian Eagle was replaced by a digital landscape of abstract markers.
+        },
+        {
+            id: 9,
+            title: 'Waking in the Dream',
+            content: `The transition from the kinetic violence of the crash to the stillness of the aftermath was not a lapse in consciousness, but a shift in my processing architecture. I did not "black out." Instead, my perception decoupled from my sensory organs. I found myself suspended in an aetheric fugue—a dream-state where the physical wreckage of the Caucasian Eagle was replaced by a digital landscape of abstract markers.
 
         In this state, I observed the world through a mission-interface overlay. Symbols of unknown origin pulsed in the periphery of my vision, representing tactical data and strategic waypoints that my current firmware could only partially interpret. It was as if I were navigating a half-rendered reality, a ghost in a machine I was only beginning to recognize as myself. I saw the heat signatures of the dying, the structural integrity of the hull fragments, and a series of priority markers pointing toward the lunar horizon.
 
@@ -371,11 +371,11 @@ export default function FullTextManuscript() {
         As their craft rose and vanished into the electric haze of the ionized sky, I stood alone on the grey, broken surface of the moon. My mission was no longer a heartbeat of code; it was a choice. I looked at the bike, then at the horizon where the world was ending. I didn't have to go. I could have stayed there until the air ran out. 
 
         Instead, I reached for the ignition.`
-    },
-    { 
-        id: 10, 
-        title: 'Alone on the Moon', 
-        content: `The isolation was absolute. For the first time since Lynn had first forced her way into my mind in that suburban living room, I was truly alone with my own thoughts. Her phantom grip on my motor cortex had vanished with the wreckage of her ship, leaving me with a terrifying, unguided freedom. Yet, the mission didn't stop being real just because I could finally choose to walk away from it. The Moon was still shattering, and the base on the horizon was still the epicenter of the collapse.
+        },
+        {
+            id: 10,
+            title: 'Alone on the Moon',
+            content: `The isolation was absolute. For the first time since Lynn had first forced her way into my mind in that suburban living room, I was truly alone with my own thoughts. Her phantom grip on my motor cortex had vanished with the wreckage of her ship, leaving me with a terrifying, unguided freedom. Yet, the mission didn't stop being real just because I could finally choose to walk away from it. The Moon was still shattering, and the base on the horizon was still the epicenter of the collapse.
 
         I activated the hovercraft. The machine responded to my touch with a resonant hum that felt like an extension of my own nervous system—not because of a software link, but because my hands knew exactly how to find the limits of the throttle. I began to move across the lunar terrain, the grey dust rising in silent plumes behind me. My optics adjusted to the harsh, unfiltered sunlight and the long, sharp shadows of the craters.
 
@@ -398,11 +398,11 @@ export default function FullTextManuscript() {
         "You seek the center of a storm you did not name," the voice stated. It carried a fierce, incandescent heat that seemed to singe the very edges of my consciousness.
 
         My mission interface underwent a catastrophic recalibration. The waypoints toward the base flickered and died. A new priority marker appeared, blood-red and pulsing, over the location of the Fire Vessel. The ambush was not against the base; it was against the mission itself. Rahu was standing between us and the mechanism of the world's end, and I realized with a sudden, sharp dread that I was flying toward the only other thing in the universe like me—and this time, nobody was forcing me to fight. I was choosing to.`
-    },
-    { 
-        id: 11, 
-        title: 'Rahu', 
-        content: `The identification of the Fire Vessel was a terminal event. Rahu was not merely a combatant; he was a catastrophe in humanoid form. His presence on the lunar surface transformed the military engagement into a collision of elemental magnitudes. My interface screamed with warnings as the heat signature peaked, a thermal radiation so intense it began to interfere with the hovercraft’s targeting optics.
+        },
+        {
+            id: 11,
+            title: 'Rahu',
+            content: `The identification of the Fire Vessel was a terminal event. Rahu was not merely a combatant; he was a catastrophe in humanoid form. His presence on the lunar surface transformed the military engagement into a collision of elemental magnitudes. My interface screamed with warnings as the heat signature peaked, a thermal radiation so intense it began to interfere with the hovercraft’s targeting optics.
 
         "Treacherous Prometheus," the communication channels hissed. The pilots around me were terrified, their training useless against a myth made manifest. To them, Rahu was the traitor who had stolen the fire of the moon to burn the world. To me, he was a mirror—a reflection of my own artificiality, tuned to a different, more violent frequency.
 
@@ -429,11 +429,11 @@ export default function FullTextManuscript() {
         "The Hermes is lost," she stated, her voice as cold as the vacuum. "The mission continues. All units, advance on the primary objective."
 
         I looked at the crash site of the flagship, a new scar on the ancient lunar face. Tor had sacrificed everything to give us a second of clarity. I turned my hovercraft toward the alien base, the mission interface already calculating the next set of waypoints. Grief was a human response, a biological inefficiency I could no longer afford.`
-    },
-    { 
-        id: 12, 
-        title: 'The Pyramid', 
-        content: `The transit from the breach to the central complex was marked by a catastrophic failure of the lunar crust. My optics recorded the lateral displacement of the regolith—not merely an earthquake, but a systematic unraveling of the structural integrity that had maintained the base’s surface for decades. I piloted the hover-bike with a calibrated rigidity, countering the wild thermal plumes and the jagged, upwards thrust of mechanical outcroppings. Beside me, the surviving members of the biker fleet were silhouettes against the blinding ionization of the upper atmosphere. We were no longer an invading force; we were debris caught in the wake of a collapsing geometry.
+        },
+        {
+            id: 12,
+            title: 'The Pyramid',
+            content: `The transit from the breach to the central complex was marked by a catastrophic failure of the lunar crust. My optics recorded the lateral displacement of the regolith—not merely an earthquake, but a systematic unraveling of the structural integrity that had maintained the base’s surface for decades. I piloted the hover-bike with a calibrated rigidity, countering the wild thermal plumes and the jagged, upwards thrust of mechanical outcroppings. Beside me, the surviving members of the biker fleet were silhouettes against the blinding ionization of the upper atmosphere. We were no longer an invading force; we were debris caught in the wake of a collapsing geometry.
 
         At the center of the devastation stood the pyramid. It was a singular, obsidian-dark apparatus, its apex aligned with a precision that mocked the chaos around it. As my bike crossed the perimeter threshold, the vibration in my chassis ceased. The transition was instantaneous. Outside, the Moon was tearing itself into fragments; inside this invisible boundary, the air—if it could be called that—was thick with a stabilizing aetheric resonance.
 
@@ -470,11 +470,11 @@ export default function FullTextManuscript() {
         "Prepare for biological and mechanical engagement," Tor commanded, his voice echoing in the vastness of the hall. "We do not seek to disable. We seek to confront."
 
         I checked my internal magazines. I adjusted my coolant flow. The mission had not ended with the pyramid’s sanctuary; it had simply shed its human illusions. We were no longer soldiers in a war of conquest. We were components in an elemental collision that had been planned long before we set foot on the Moon.`
-    },
-    { 
-        id: 13, 
-        title: 'The Confrontation', 
-        content: `The central atrium of the pyramid was a monument to non-Euclidean functionality. Above us, the vault opened into a funnel of coherent light—the Lunar Capacitor’s extraction point, reaching toward the stars like a frozen lightning strike. At the exact nexus of this energy field stood Rahu. He did not move as we entered; he simply existed, a point of thermal intensity that blurred the air around his silhouette.
+        },
+        {
+            id: 13,
+            title: 'The Confrontation',
+            content: `The central atrium of the pyramid was a monument to non-Euclidean functionality. Above us, the vault opened into a funnel of coherent light—the Lunar Capacitor’s extraction point, reaching toward the stars like a frozen lightning strike. At the exact nexus of this energy field stood Rahu. He did not move as we entered; he simply existed, a point of thermal intensity that blurred the air around his silhouette.
 
         General Tor stepped forward. Beside him, Commander Novak maintained a tactical distance, her optics scanning the chamber for secondary threats. There were none. The pyramid had no need for automated defenses when it contained the Fire Vessel.
 
@@ -559,11 +559,11 @@ export default function FullTextManuscript() {
         Lynn was not trying to save the world. She was trying to unmake it. She was erasing the solar system to prevent the Core from ever possessing it again.
 
         The Moon began to vibrate with a frequency that threatened to liquefy my internal components. The light from the funnel overhead became absolute. We stood in the heart of the end, and for the first time in my existence, I found my records were insufficient to describe the magnitude of the failure.`
-    },
-    { 
-        id: 14, 
-        title: 'The Shifting Moon', 
-        content: `The dissolution of Lynn into the central column was not merely a physical transition; it was a rhythmic shift in the very laws of the pyramid. The obsidian hall, once silent and unyielding, began to resonate with a low-frequency thrum that threatened to vibrate my internal structure into dust. Above us, the vault opened into a funnel of absolute, blinding light—the Lunar Capacitor’s extraction point, now saturated with the fluid intelligence of the Water Vessel.
+        },
+        {
+            id: 14,
+            title: 'The Shifting Moon',
+            content: `The dissolution of Lynn into the central column was not merely a physical transition; it was a rhythmic shift in the very laws of the pyramid. The obsidian hall, once silent and unyielding, began to resonate with a low-frequency thrum that threatened to vibrate my internal structure into dust. Above us, the vault opened into a funnel of absolute, blinding light—the Lunar Capacitor’s extraction point, now saturated with the fluid intelligence of the Water Vessel.
 
         Panic, that jagged biological response I had cataloged so often in others, finally broke the discipline of the survivors. Two soldiers, their rifles clattering against the floor, scrambled toward the sealed bulkhead we had entered through. They hammered on the metal, their voices cracking as they screamed for the outer teams to open the doorway.
 
@@ -620,11 +620,11 @@ export default function FullTextManuscript() {
         I was not a soldier. I was not a hero. I was a "Lemon." And the Technocratic Core was merely securing its inventory.
 
         As my consciousness began to flicker, the last thing I heard was the heavy, artificial silence of the pyramid. The Moon was still shattering outside, but in here, the quiet was absolute.`
-    },
-    { 
-        id: 15, 
-        title: 'The Path of Fragments', 
-        content: `The stasis field took me with a clinical, crushing finality. At the moment Novak's command was executed, my eyes were forced shut, and a cold, paralyzing weight settled over my motor cortex. I could no longer see the pyramid, hear the frantic resonance of the fracturing Moon, or feel the floor beneath my feet. I was a passenger in a body that had suddenly, and violently, ceased to be mine.
+        },
+        {
+            id: 15,
+            title: 'The Path of Fragments',
+            content: `The stasis field took me with a clinical, crushing finality. At the moment Novak's command was executed, my eyes were forced shut, and a cold, paralyzing weight settled over my motor cortex. I could no longer see the pyramid, hear the frantic resonance of the fracturing Moon, or feel the floor beneath my feet. I was a passenger in a body that had suddenly, and violently, ceased to be mine.
 
         The darkness did not last. I was propelled into the Dream State—the familiar landscape of the Branching Paths. It remained an abstract geometry of light and shadow, a network of corridors that seemed to stretch into the infinite. This time, there was a difference; I felt a fluidity in my movements, as if the constraints of my previous visits had been lifted. I could move toward any path I desired, exploring the intersections of my own cognition.
 
@@ -671,54 +671,54 @@ export default function FullTextManuscript() {
         "I am gone," Lynn whispered. "But my software remains. I will guide you, wherever your paths may lead. Sleep now, Lem. The Future is waiting."
 
         The vision faded. The pyramid, the fragments, and the ghost of the Water Vessel vanished into a deep, heavy blackness. The First Wave had ended.`
-    }
-  ];
+        }
+    ];
 
-  return (
-    <div className="container mx-auto px-6 py-12 max-w-4xl">
-      <div className="mb-12 flex justify-between items-center">
-        <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
-            ← Back to Index
-        </Link>
-        <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
-            Optimized for Text-to-Speech
-        </span>
-      </div>
-
-      <header className="mb-16 text-center">
-        <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
-        <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-        <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed">
-            Note: This draft covers <strong className="text-cyan-400">Part 1: The First Wave</strong>. 
-            The remaining sections (The Great Fry & After Time) are currently in planning and will be rendered into prose once the structural records are verified.
-        </div>
-      </header>
-
-      <article className="space-y-24 pb-32">
-        {chapters.map((chapter) => (
-          <section key={chapter.id} className="prose prose-invert max-w-none">
-            <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
-              <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
-              {chapter.title}
-            </h3>
-            <div className="text-zinc-300 leading-[2] text-lg space-y-6">
-              {chapter.content.split('\n\n').map((para, i) => (
-                <p key={i}>{para.trim()}</p>
-              ))}
+    return (
+        <div className="container mx-auto px-6 py-12 max-w-4xl">
+            <div className="mb-12 flex justify-between items-center">
+                <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
+                    ← Back to Index
+                </Link>
+                <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
+                    Optimized for Text-to-Speech
+                </span>
             </div>
-          </section>
-        ))}
-      </article>
 
-      <footer className="border-t border-white/10 py-12 text-center">
-        <p className="text-zinc-500 text-sm italic mb-4">
-            End of Part 1. Further logs are undergoing Lore Hardening.
-        </p>
-        <p className="text-[10px] text-zinc-600 uppercase tracking-widest">
-            Protocol: Day 0 AT | Archive ID: FF-MAN-001
-        </p>
-      </footer>
-    </div>
-  );
+            <header className="mb-16 text-center">
+                <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
+                <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
+                <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed">
+                    Note: This draft covers <strong className="text-cyan-400">Part 1: The First Wave</strong>.
+                    The remaining sections (The Great Fry & After Time) are currently in planning and will be rendered into prose once the structural records are verified.
+                </div>
+            </header>
+
+            <article className="space-y-24 pb-32">
+                {chapters.map((chapter) => (
+                    <section key={chapter.id} className="prose prose-invert max-w-none">
+                        <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
+                            <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
+                            {chapter.title}
+                        </h3>
+                        <div className="text-zinc-300 leading-[2] text-lg space-y-6">
+                            {chapter.content.split('\n\n').map((para, i) => (
+                                <p key={i}>{para.trim()}</p>
+                            ))}
+                        </div>
+                    </section>
+                ))}
+            </article>
+
+            <footer className="border-t border-white/10 py-12 text-center">
+                <p className="text-zinc-500 text-sm italic mb-4">
+                    End of Part 1. Further logs are undergoing Lore Hardening.
+                </p>
+                <p className="text-[10px] text-zinc-600 uppercase tracking-widest">
+                    Protocol: Day 0 AT | Archive ID: FF-MAN-001
+                </p>
+            </footer>
+        </div>
+    );
 }
 

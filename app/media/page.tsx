@@ -43,8 +43,8 @@ export default function MediaPage() {
                                 Featuring song by Porcupine Tree • 1995
                             </p>
                             <p className="text-gray-400 mb-8 leading-relaxed">
-                                This teaser serves as the atmospheric threshold for the <strong>Forgotten Future</strong> narrative. 
-                                It depicts the final moments of the Pre-Time era, the shattering of the Moon, and the 
+                                This teaser serves as the atmospheric threshold for the <strong>Forgotten Future</strong> narrative.
+                                It depicts the final moments of the Pre-Time era, the shattering of the Moon, and the
                                 descent of the stadium-sized Monoliths.
                                 <br /><br />
                                 <span className="text-zinc-500 italic text-xs">Note: The full animated sequence is currently in production. The records below represent the finalized visual atmosphere and auditory foundation.</span>
@@ -98,42 +98,42 @@ export default function MediaPage() {
 
             {/* Full Page Image Viewer */}
             {selectedImageIndex !== null && (
-                <div 
+                <div
                     className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
                     onClick={closeImage}
                 >
-                    <button 
+                    <button
                         className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors z-[110]"
                         onClick={closeImage}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
 
-                    <button 
+                    <button
                         className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
                         onClick={prevImage}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
 
-                    <button 
+                    <button
                         className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
                         onClick={nextImage}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
 
                     <div className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
                         <div className="relative w-full h-[70vh] flex items-center justify-center">
-                            <img 
-                                src={images[selectedImageIndex].src} 
-                                alt={images[selectedImageIndex].title} 
+                            <img
+                                src={images[selectedImageIndex].src}
+                                alt={images[selectedImageIndex].title}
                                 className="max-w-full max-h-full object-contain shadow-2xl shadow-cyan-500/10"
                             />
                         </div>
