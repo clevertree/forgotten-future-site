@@ -7,11 +7,11 @@ export default function MediaPage() {
 
     const images = [
         { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
-        { src: '/media/teaser/hero_windows_sigh.png', title: 'Windows Sigh', meta: 'Structural Meltdown' },
-        { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
-        { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Disintegration', meta: 'Day 0 Post-Reset' },
-        { src: '/media/teaser/hero_lightning_scars.png', title: 'Lightning Scars', meta: 'Electrical Resonance' },
         { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
+        { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Disintegration', meta: 'Day 0 Post-Reset' },
+        { src: '/media/teaser/hero_windows_sigh.png', title: 'Windows Sigh', meta: 'Structural Meltdown' },
+        { src: '/media/teaser/hero_lightning_scars.png', title: 'Lightning Scars', meta: 'Electrical Resonance' },
+        { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
