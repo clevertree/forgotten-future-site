@@ -82,16 +82,17 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* The Vessels */}
+            {/* The Elements */}
             <section className="w-full bg-zinc-900/50 py-24">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl text-center mb-16 underline decoration-cyan-500 underline-offset-8">THE FIVE VESSELS</h2>
-                    <div className="grid md:grid-cols-4 gap-8">
+                    <h2 className="text-4xl text-center mb-16 underline decoration-cyan-500 underline-offset-8">THE FIVE ELEMENTS</h2>
+                    <div className="grid md:grid-cols-5 gap-8">
                         {[
                             { name: 'LEM', element: 'Wood', desc: 'Hidden in suburban anonymity until the Cataclysm revealed his nature.' },
                             { name: 'RAHU', element: 'Fire', desc: 'The exiled broadcast of the Moon, twisted into the Archivists\' propaganda.' },
                             { name: 'LYNN', element: 'Water', desc: 'Her software legacy remains as a spectral guide in the Aether-Drive.' },
-                            { name: 'TOR', element: 'Earth', desc: 'A general whose obedience shattered with the Moon, now a wanderer seeking purpose.' }
+                            { name: 'TOR', element: 'Earth', desc: 'A general whose obedience shattered with the Moon, now a wanderer seeking purpose.' },
+                            { name: 'METAL', element: 'Order', desc: 'Shared-consciousness enforcers led by Tor and Rahu. Physically powerful, but devoid of individual spirits.' }
                         ].map((vessel) => (
                             <div key={vessel.name} className="glass-panel text-center">
                                 <h3 className="text-xl mb-2">{vessel.name}</h3>
