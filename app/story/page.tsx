@@ -3,9 +3,9 @@ import React from 'react';
 export default function StoryPage() {
     return (
         <div className="container mx-auto px-6 py-12 max-w-4xl">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
-                <h1 className="text-5xl text-glow uppercase tracking-tighter">THE LORE</h1>
-                <div className="flex items-center gap-2 bg-red-900/20 border border-red-500/30 px-3 py-1 rounded">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <h1 className="text-3xl md:text-5xl text-glow uppercase tracking-tighter">THE LORE</h1>
+                <div className="flex items-center gap-2 bg-red-900/20 border border-red-500/30 px-3 py-1.5 rounded self-start md:self-auto">
                     <span className="text-red-500 text-[10px] font-bold uppercase tracking-widest leading-none">Spoiler Warning</span>
                     <span className="text-zinc-500 text-[10px] uppercase tracking-tighter leading-none">Content includes major plot details</span>
                 </div>

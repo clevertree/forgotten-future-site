@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center">
             {/* Hero Section */}
-            <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+            <section className="relative w-full h-[70vh] md:h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     {images.map((src, i) => (
                         <img
@@ -36,19 +36,19 @@ export default function Home() {
                     ))}
                     <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>
                 </div>
-                <div className="z-10 max-w-2xl p-6 md:p-10 rounded-2xl bg-black/40 backdrop-blur-[4px] border border-white/5">
-                    <h1 className="text-3xl md:text-4xl font-black mb-4 tracking-tighter text-glow">
+                <div className="z-10 w-full max-w-2xl p-6 md:p-10 rounded-2xl bg-black/40 backdrop-blur-[4px] border border-white/5">
+                    <h1 className="text-3xl md:text-5xl font-black mb-4 tracking-tighter text-glow">
                         STARS DIE
                     </h1>
-                    <p className="text-base md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto">
+                    <p className="text-sm md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto leading-relaxed">
                         A thousand years of human history, erased in a single lunar discharge.
                         A new Dark Age has begun.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6">
-                        <Link href="/manuscript" className="px-8 py-4 bg-cyan-500 text-black font-bold uppercase tracking-widest hover:bg-cyan-400 transition-all">
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+                        <Link href="/manuscript" className="px-8 py-3 md:py-4 bg-cyan-500 text-black font-bold uppercase tracking-widest hover:bg-cyan-400 transition-all text-sm md:text-base">
                             Read Manuscript
                         </Link>
-                        <Link href="/story" className="px-8 py-4 border border-white/20 hover:bg-white/10 font-bold uppercase tracking-widest transition-all">
+                        <Link href="/story" className="px-8 py-3 md:py-4 border border-white/20 hover:bg-white/10 font-bold uppercase tracking-widest transition-all text-sm md:text-base">
                             Explore Lore
                         </Link>
                     </div>
@@ -84,8 +84,8 @@ export default function Home() {
             {/* The Elements */}
             <section className="w-full bg-zinc-900/50 py-24">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl text-center mb-16 underline decoration-cyan-500 underline-offset-8">THE FIVE ELEMENTS</h2>
-                    <div className="grid md:grid-cols-5 gap-8">
+                    <h2 className="text-3xl md:text-4xl text-center mb-16 underline decoration-cyan-500 underline-offset-8">THE FIVE ELEMENTS</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                         {[
                             { name: 'LEM', element: 'Wood', desc: 'Hidden in suburban anonymity until the Cataclysm revealed his nature.' },
                             { name: 'RAHU', element: 'Fire', desc: 'The exiled broadcast of the Moon, twisted into the Archivists\' propaganda.' },
@@ -96,7 +96,7 @@ export default function Home() {
                             <div key={vessel.name} className="glass-panel text-center">
                                 <h3 className="text-xl mb-2">{vessel.name}</h3>
                                 <span className="text-xs text-cyan-500 uppercase tracking-[0.2em] mb-4 block">{vessel.element}</span>
-                                <p className="text-sm text-gray-400">{vessel.desc}</p>
+                                <p className="text-sm text-gray-400 leading-relaxed">{vessel.desc}</p>
                             </div>
                         ))}
                     </div>

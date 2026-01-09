@@ -16,17 +16,17 @@ export default function ManuscriptPage() {
 
     return (
         <div className="container mx-auto px-6 py-12">
-            <div className="flex flex-col md:flex-row gap-12">
+            <div className="flex flex-col lg:flex-row gap-12">
                 {/* Audiobook Sidebar */}
-                <aside className="md:w-1/3 no-print">
+                <aside className="lg:w-1/3 no-print order-2 lg:order-1">
                     <div className="glass-panel sticky top-32">
-                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500">Full Audiobook</h2>
+                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
                             <div className="flex flex-col items-center justify-center space-y-4">
                                 <div className="text-xs text-zinc-500 uppercase tracking-widest">Available Now</div>
                                 <div className="text-2xl font-bold text-glow text-cyan-400">Chapter 1</div>
                                 <div className="text-[10px] text-zinc-600 italic text-center">
-                                    "An Ordinary Distance" <br/>
+                                    "An Ordinary Distance" <br />
                                     (Narrated by Fable)
                                 </div>
                                 <audio controls className="w-full h-8 accent-cyan-500 mt-2">
@@ -67,8 +67,8 @@ export default function ManuscriptPage() {
                 </aside>
 
                 {/* Chapters List */}
-                <div className="md:w-2/3">
-                    <h1 className="text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Part 1 - Awakening</h1>
+                <div className="lg:w-2/3 order-1 lg:order-2">
+                    <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Part 1 - Awakening</h1>
                     <p className="text-gray-400 mb-12 italic border-l-2 border-cyan-500 pl-4">
                         This manuscript represents Lem's objective, perfect-recall memories. Unlike the redacted historical
                         records of the Archivists, these pages are the unvarnished causality of the First Wave.

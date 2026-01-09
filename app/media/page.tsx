@@ -33,17 +33,19 @@ export default function MediaPage() {
 
     return (
         <div className="container mx-auto px-6 py-12">
-            <h1 className="text-5xl mb-12 text-glow uppercase tracking-tighter">RECORDS OF THE REVELATION</h1>
+            <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">RECORDS OF THE REVELATION</h1>
 
             {/* Featured Teaser Section */}
             <section className="mb-24">
-                <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">Animated Teaser</h2>
-                <div className="glass-panel">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                <h2 className="text-xl md:text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">Animated Teaser</h2>
+                <div className="glass-panel p-6 md:p-10">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <div className="flex items-center gap-3 mb-2">
-                                <h3 className="text-3xl font-black text-glow uppercase">Stars Die Teaser</h3>
-                                <span className="text-[10px] bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-2 py-0.5 rounded uppercase tracking-[0.2em] animate-pulse">Coming Soon</span>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-2">
+                                <h3 className="text-2xl md:text-3xl font-black text-glow uppercase">Stars Die Teaser</h3>
+                                <div className="flex">
+                                    <span className="text-[10px] bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-2 py-0.5 rounded uppercase tracking-[0.2em] animate-pulse">Coming Soon</span>
+                                </div>
                             </div>
                             <p className="text-cyan-500 text-sm mb-6 uppercase tracking-widest font-bold">
                                 Featuring song by Porcupine Tree • 1995
@@ -82,10 +84,10 @@ export default function MediaPage() {
             {/* Visual Archive Section */}
             <section className="mb-24">
                 <div className="flex items-center justify-between mb-8 border-b border-cyan-500/30 pb-2">
-                    <h2 className="text-2xl uppercase tracking-widest">Visual Schematics</h2>
+                    <h2 className="text-xl md:text-2xl uppercase tracking-widest">Visual Schematics</h2>
                     <span className="text-[9px] text-zinc-500 uppercase tracking-widest italic opacity-50">May contain visual spoilers</span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {images.map((item, i) => (
                         <div key={i} className="glass-panel group cursor-pointer overflow-hidden" onClick={() => openImage(i)}>
                             <div className="aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">

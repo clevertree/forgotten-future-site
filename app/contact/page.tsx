@@ -3,21 +3,21 @@ import React from 'react';
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-6 py-12 max-w-2xl text-center">
-            <h1 className="text-5xl mb-8 text-glow">ESTABLISH UPLINK</h1>
-            <p className="text-gray-400 mb-16 italic">
+            <h1 className="text-3xl md:text-5xl mb-8 text-glow uppercase tracking-tighter">ESTABLISH UPLINK</h1>
+            <p className="text-sm md:text-base text-gray-400 mb-16 italic px-4 leading-relaxed">
                 "Communication is the first step toward reincarnation."
                 — Fragmented Archivist Log
             </p>
 
-            <div className="glass-panel text-left py-12 px-12">
+            <div className="glass-panel text-left py-8 md:py-12 px-6 md:px-12">
                 <div className="space-y-8">
                     <div>
                         <h3 className="text-xs uppercase tracking-[0.3em] text-cyan-500 mb-2">Primary Frequency</h3>
-                        <a href="mailto:ari@asu.edu" className="text-2xl font-bold tracking-tight hover:text-cyan-400 transition-colors">ari@asu.edu</a>
+                        <a href="mailto:ari@asu.edu" className="text-xl md:text-2xl font-bold tracking-tight hover:text-cyan-400 transition-colors break-words">ari@asu.edu</a>
                     </div>
                     <div>
                         <h3 className="text-xs uppercase tracking-[0.3em] text-cyan-500 mb-2">Digital Archive</h3>
-                        <a href="https://github.com/clevertree" className="text-2xl font-bold tracking-tight hover:text-cyan-400 transition-colors">github.com/clevertree</a>
+                        <a href="https://github.com/clevertree" className="text-xl md:text-2xl font-bold tracking-tight hover:text-cyan-400 transition-colors break-words">github.com/clevertree</a>
                     </div>
                     <div>
                         <h3 className="text-xs uppercase tracking-[0.3em] text-cyan-500 mb-2">Operational Status</h3>

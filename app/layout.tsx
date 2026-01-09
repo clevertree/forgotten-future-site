@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
+import Navigation from './components/Navigation';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
@@ -22,28 +23,7 @@ export default function RootLayout({
         <html lang="en">
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 no-print">
-                    <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                        <Link href="/" className="flex items-center gap-4 group">
-                            <div className="relative w-16 h-16 md:w-20 md:h-20">
-                                <Image 
-                                    src="/icon.png" 
-                                    alt="Forgotten Future Icon" 
-                                    fill
-                                    className="object-contain group-hover:scale-110 transition-transform duration-300"
-                                />
-                            </div>
-                            <span className="text-3xl font-bold tracking-tighter text-cyan-400 text-glow">
-                                FORGOTTEN FUTURE
-                            </span>
-                        </Link>
-                        <div className="flex gap-8 uppercase text-sm tracking-widest font-medium">
-                            <Link href="/story" className="hover:text-cyan-400 transition-colors">Story</Link>
-                            <Link href="/manuscript" className="hover:text-cyan-400 transition-colors">Manuscript</Link>
-                            <Link href="/media" className="hover:text-cyan-400 transition-colors">Media</Link>
-                            <Link href="/faq" className="hover:text-cyan-400 transition-colors">FAQ</Link>
-                            <Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
-                        </div>
-                    </nav>
+                    <Navigation />
                 </header>
 
                 <main className="pt-24 min-h-screen">

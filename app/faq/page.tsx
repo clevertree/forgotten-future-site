@@ -29,11 +29,11 @@ export default function FAQPage() {
 
     return (
         <div className="container mx-auto px-6 py-12 max-w-4xl">
-            <h1 className="text-5xl mb-12 text-glow">DECRYPTED INTEL (FAQ)</h1>
+            <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">DECRYPTED INTEL (FAQ)</h1>
 
             <section className="mb-20">
-                <h2 className="text-2xl text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2">PROJECT ARCHITECTURE</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <h2 className="text-xl md:text-2xl text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">PROJECT ARCHITECTURE</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {projectFaqs.map((faq, i) => (
                         <div key={i} className="glass-panel p-6">
                             <h3 className="text-lg text-cyan-400 mb-2 uppercase tracking-tighter italic">Q: {faq.q}</h3>
