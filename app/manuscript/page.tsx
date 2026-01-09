@@ -34,18 +34,18 @@ export default function ManuscriptPage() {
                                 Read as Full Text
                             </Link>
                             <div className="pt-4 border-t border-white/5">
-                                <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3 font-bold">Try these for listening:</p>
-                                <ul className="text-[10px] text-zinc-600 space-y-2">
+                                <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3 font-bold">Recommended Text-to-Speech:</p>
+                                <ul className="text-[10px] text-zinc-600 space-y-3">
                                     <li className="flex flex-col">
-                                        <span className="text-zinc-400">• Read Aloud</span>
+                                        <a href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgjacajbc" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-cyan-400 underline decoration-zinc-800 underline-offset-2 transition-colors">• Read Aloud</a>
                                         <span>Chrome / Edge extension</span>
                                     </li>
                                     <li className="flex flex-col">
-                                        <span className="text-zinc-400">• NaturalReader</span>
+                                        <a href="https://www.naturalreaders.com/online/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-cyan-400 underline decoration-zinc-800 underline-offset-2 transition-colors">• NaturalReader</a>
                                         <span>Browser extension / App</span>
                                     </li>
                                     <li className="flex flex-col">
-                                        <span className="text-zinc-400">• Speechify</span>
+                                        <a href="https://speechify.com/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-cyan-400 underline decoration-zinc-800 underline-offset-2 transition-colors">• Speechify</a>
                                         <span>Focused reading tool</span>
                                     </li>
                                     <li className="flex flex-col mt-2 pt-2 border-t border-white/5 uppercase tracking-tighter">

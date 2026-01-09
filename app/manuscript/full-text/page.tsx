@@ -690,7 +690,7 @@ export default function FullTextManuscript() {
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed">
                     Note: This draft covers <strong className="text-cyan-400">Part 1: The First Wave</strong>.
-                    The remaining sections (The Great Fry & After Time) are currently in planning and will be rendered into prose once the structural records are verified.
+                    The remaining sections occurring in the After Time are currently in planning and will be rendered into prose once the structural records are verified.
                 </div>
             </header>
 
