@@ -7,19 +7,19 @@ export default function Home() {
             {/* Hero Section */}
             <section className="relative w-full h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img 
-                      src="/media/teaser/hero_background_spheres.png" 
-                      alt="Atmospheric Background" 
-                      className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+                    <img
+                        src="/media/teaser/hero_background_spheres.png"
+                        alt="Atmospheric Background"
+                        className="w-full h-full object-cover mix-blend-overlay"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/40 to-black"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>
                 </div>
-                <div className="z-10 max-w-4xl">
+                <div className="z-10 max-w-4xl p-8 md:p-12 rounded-3xl bg-black/30 backdrop-blur-[2px] border border-white/5">
                     <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-glow">
-                        THE STARS DIE
+                        STARS DIE
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 mb-12 tracking-wide max-w-2xl mx-auto">
-                        A hundred thousand years of human history, erased in a single lunar discharge.
+                        A thousand years of human history, erased in a single lunar discharge.
                         A new Dark Age has begun.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
@@ -50,10 +50,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="relative aspect-square bg-gray-900 rounded-lg overflow-hidden border border-white/10">
-                    <img 
-                      src="/media/teaser/hero_background_spheres.png" 
-                      alt="The Great Fry" 
-                      className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
+                    <img
+                        src="/media/teaser/hero_background_spheres.png"
+                        alt="The Great Fry"
+                        className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                 </div>
