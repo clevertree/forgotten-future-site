@@ -6,6 +6,10 @@ import '../styles/globals.css';
 export const metadata: Metadata = {
     title: 'Forgotten Future | AI-Driven Sci-Fi Epic',
     description: 'Explore the cosmic aftermath of the Great Fry. An AI-driven sci-fi novel and animated experience.',
+    icons: {
+        icon: '/favicon.ico',
+        apple: '/apple-icon.png',
+    },
 }
 
 export default function RootLayout({
