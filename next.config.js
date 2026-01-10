@@ -22,6 +22,10 @@ const nextConfig = {
     reactStrictMode: true,
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
+    },
+    // Configure Turbopack for Next.js 16.1.1+
+    turbopack: {
+        rules: {},
     }
 }
 
