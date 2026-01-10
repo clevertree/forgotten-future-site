@@ -59,10 +59,30 @@ export default function ManuscriptPage() {
     };
 
     const sections = [
-        { id: 'awakening', title: 'Part 1: Awakening', range: [1, 8] },
-        { id: 'desolation', title: 'Part 2: Desolation', range: [9, 15] },
-        { id: 'the-hive', title: 'Part 3: The Hive', range: [16, 25] },
-        { id: 'the-forest', title: 'Part 4: The Forest', range: [26, 34] },
+        {
+            id: 'awakening',
+            title: 'Part 1: Awakening',
+            range: [1, 8],
+            summary: "Lem's transition from a quiet suburban life to an activated Vessel as the mechanical First Wave descends upon Earth."
+        },
+        {
+            id: 'desolation',
+            title: 'Part 2: Desolation',
+            range: [9, 15],
+            summary: "The desperate struggle on the lunar surface and the confrontation within the pyramid that triggers the Great Fry."
+        },
+        {
+            id: 'the-hive',
+            title: 'Part 3: The Hive',
+            range: [16, 25],
+            summary: "Lem's consciousness wakes in a new era, serving the Archivists' utopian vision until the cost of their 'paradise' is revealed."
+        },
+        {
+            id: 'the-forest',
+            title: 'Part 4: The Forest',
+            range: [26, 34],
+            summary: "A journey into the frozen north where analog echoes and forbidden memories challenge the digital order."
+        },
     ];
 
     const scrollToSection = (id: string) => {
@@ -146,10 +166,6 @@ export default function ManuscriptPage() {
                 {/* Chapters List */}
                 <div className="lg:w-2/3 order-1 lg:order-2">
                     <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
-                    <p className="text-gray-400 mb-8 italic border-l-2 border-cyan-500 pl-4">
-                        This manuscript represents Lem's objective, perfect-recall memories. Unlike the redacted historical
-                        records of the Archivists, these pages are the unvarnished causality of the First Wave.
-                    </p>
 
                     {/* Section Tabs */}
                     <div className="flex flex-wrap gap-2 mb-8 sticky top-20 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
@@ -167,11 +183,14 @@ export default function ManuscriptPage() {
                     <div ref={scrollContainerRef} className="space-y-12 h-[calc(100vh-300px)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar relative">
                         {sections.map((section) => (
                             <div key={section.id} id={section.id} className="pt-8 first:pt-0">
-                                <h2 className="text-xl mb-6 text-cyan-400 uppercase tracking-widest flex items-center gap-4">
+                                <h2 className="text-xl mb-2 text-cyan-400 uppercase tracking-widest flex items-center gap-4">
                                     <span className="h-px bg-cyan-900 flex-grow"></span>
                                     {section.title}
                                     <span className="h-px bg-cyan-900 flex-grow"></span>
                                 </h2>
+                                <p className="text-xs text-zinc-500 italic mb-8 text-center max-w-xl mx-auto">
+                                    {section.summary}
+                                </p>
                                 <div className="space-y-6">
                                     {chapters
                                         .filter((chapter) => chapter.id >= section.range[0] && chapter.id <= section.range[1])
@@ -222,7 +241,6 @@ export default function ManuscriptPage() {
                                 </div>
                             </div>
                         ))}
-
                         <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg mb-12">
                             <p className="text-zinc-600 text-sm italic">
                                 Further chapters are currently undergoing Lore Hardening.
