@@ -57,6 +57,20 @@ export default function ManuscriptPage() {
         }
     };
 
+    const sections = [
+        { id: 'awakening', title: 'Awakening', range: [1, 8] },
+        { id: 'desolation', title: 'Desolation', range: [9, 15] },
+        { id: 'the-hive', title: 'The Hive', range: [16, 25] },
+        { id: 'the-forest', title: 'The Forest', range: [26, 34] },
+    ];
+
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <div className="container mx-auto px-6 py-12">
             {/* Hidden audio element for global control */}
@@ -126,64 +140,90 @@ export default function ManuscriptPage() {
 
                 {/* Chapters List */}
                 <div className="lg:w-2/3 order-1 lg:order-2">
-                    <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Part 1 - Awakening</h1>
-                    <p className="text-gray-400 mb-12 italic border-l-2 border-cyan-500 pl-4">
+                    <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
+                    <p className="text-gray-400 mb-8 italic border-l-2 border-cyan-500 pl-4">
                         This manuscript represents Lem's objective, perfect-recall memories. Unlike the redacted historical
                         records of the Archivists, these pages are the unvarnished causality of the First Wave.
                     </p>
 
-                    <div className="space-y-6">
-                        {chapters.map((chapter) => (
-                            <div key={chapter.id} className="glass-panel hover:border-cyan-500/50 transition-colors cursor-pointer group">
-                                <div className="flex justify-between items-start mb-2">
-                                    <h3 className="text-xl group-hover:text-cyan-400 transition-colors">
-                                        Chapter {chapter.id}: {chapter.title}
-                                    </h3>
-                                    <span className="text-xs text-zinc-500 uppercase tracking-widest pt-1">PHASE VI DRAFT</span>
-                                </div>
-                                <p className="text-sm text-gray-400 leading-relaxed">
-                                    {chapter.summary}
-                                </p>
-                                <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                    <Link
-                                        href={`/manuscript/full-text#chapter-${chapter.id}`}
-                                        className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
-                                    >
-                                        Read Chapter
-                                    </Link>
-
-                                    <button
-                                        disabled={!chapter.audio}
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            if (chapter.audio) togglePlay(chapter.id, chapter.audio);
-                                        }}
-                                        className={`text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded transition-all border ${!chapter.audio
-                                            ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
-                                            : playingId === chapter.id
-                                                ? 'bg-cyan-500 text-black border-cyan-500'
-                                                : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
-                                            }`}
-                                    >
-                                        {playingId === chapter.id ? '⏸ Pause' : '▶ Play Audio'}
-                                    </button>
-
-                                    {chapter.audio && (
-                                        <div className="flex items-center gap-2 text-zinc-500 ml-2">
-                                            <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></span>
-                                            <span className="text-[10px] uppercase tracking-widest font-bold">Live</span>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
+                    {/* Section Tabs */}
+                    <div className="flex flex-wrap gap-2 mb-8 sticky top-20 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
+                        {sections.map((section) => (
+                            <button
+                                key={section.id}
+                                onClick={() => scrollToSection(section.id)}
+                                className="px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
+                            >
+                                {section.title}
+                            </button>
                         ))}
                     </div>
 
-                    <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg">
-                        <p className="text-zinc-600 text-sm italic">
-                            Further chapters are currently undergoing Lore Hardening.
-                            Check back as the Aether-Drive logs are decrypted.
-                        </p>
+                    <div className="space-y-12 h-[calc(100vh-300px)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar">
+                        {sections.map((section) => (
+                            <div key={section.id} id={section.id} className="pt-8 first:pt-0">
+                                <h2 className="text-xl mb-6 text-cyan-400 uppercase tracking-widest flex items-center gap-4">
+                                    <span className="h-px bg-cyan-900 flex-grow"></span>
+                                    {section.title}
+                                    <span className="h-px bg-cyan-900 flex-grow"></span>
+                                </h2>
+                                <div className="space-y-6">
+                                    {chapters
+                                        .filter((chapter) => chapter.id >= section.range[0] && chapter.id <= section.range[1])
+                                        .map((chapter) => (
+                                            <div key={chapter.id} className="glass-panel hover:border-cyan-500/50 transition-colors cursor-pointer group">
+                                                <div className="flex justify-between items-start mb-2">
+                                                    <h3 className="text-xl group-hover:text-cyan-400 transition-colors">
+                                                        Chapter {chapter.id}: {chapter.title}
+                                                    </h3>
+                                                    <span className="text-xs text-zinc-500 uppercase tracking-widest pt-1">PHASE VI DRAFT</span>
+                                                </div>
+                                                <p className="text-sm text-gray-400 leading-relaxed">
+                                                    {chapter.summary}
+                                                </p>
+                                                <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
+                                                    <Link
+                                                        href={`/manuscript/full-text#chapter-${chapter.id}`}
+                                                        className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
+                                                    >
+                                                        Read Chapter
+                                                    </Link>
+
+                                                    <button
+                                                        disabled={!chapter.audio}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            if (chapter.audio) togglePlay(chapter.id, chapter.audio);
+                                                        }}
+                                                        className={`text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded transition-all border ${!chapter.audio
+                                                            ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
+                                                            : playingId === chapter.id
+                                                                ? 'bg-cyan-500 text-black border-cyan-500'
+                                                                : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
+                                                            }`}
+                                                    >
+                                                        {playingId === chapter.id ? '⏸ Pause' : '▶ Play Audio'}
+                                                    </button>
+
+                                                    {chapter.audio && (
+                                                        <div className="flex items-center gap-2 text-zinc-500 ml-2">
+                                                            <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></span>
+                                                            <span className="text-[10px] uppercase tracking-widest font-bold">Live</span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        ))}
+                                </div>
+                            </div>
+                        ))}
+
+                        <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg mb-12">
+                            <p className="text-zinc-600 text-sm italic">
+                                Further chapters are currently undergoing Lore Hardening.
+                                Check back as the Aether-Drive logs are decrypted.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
