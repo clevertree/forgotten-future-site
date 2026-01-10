@@ -67,8 +67,8 @@ export default function ManuscriptPage() {
                                     <button
                                         onClick={() => togglePlay(1, '/audio/manuscript/chapter_01.mp3')}
                                         className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${playingId === 1
-                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                            : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                             }`}
                                     >
                                         {playingId === 1 ? '⏸ Playing' : '▶ Play Audio'}
@@ -129,7 +129,7 @@ export default function ManuscriptPage() {
                                     {chapter.summary}
                                 </p>
                                 <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                    <Link 
+                                    <Link
                                         href={`/manuscript/full-text#chapter-${chapter.id}`}
                                         className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
                                     >
@@ -143,10 +143,10 @@ export default function ManuscriptPage() {
                                             if (chapter.audio) togglePlay(chapter.id, chapter.audio);
                                         }}
                                         className={`text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded transition-all border ${!chapter.audio
-                                                ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
-                                                : playingId === chapter.id
-                                                    ? 'bg-cyan-500 text-black border-cyan-500'
-                                                    : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
+                                            ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
+                                            : playingId === chapter.id
+                                                ? 'bg-cyan-500 text-black border-cyan-500'
+                                                : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
                                             }`}
                                     >
                                         {playingId === chapter.id ? '⏸ Pause' : '▶ Play Audio'}

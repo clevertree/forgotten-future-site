@@ -55,7 +55,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={inter.className}>
+        <html lang="en" className={`${inter.className} scroll-smooth`}>
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <header className="fixed top-0 w-full z-50 no-print">
                     <div className="absolute inset-0 bg-black/95 backdrop-blur-md border-b border-white/10 -z-10" />
