@@ -59,10 +59,10 @@ export default function ManuscriptPage() {
     };
 
     const sections = [
-        { id: 'awakening', title: 'Awakening', range: [1, 8] },
-        { id: 'desolation', title: 'Desolation', range: [9, 15] },
-        { id: 'the-hive', title: 'The Hive', range: [16, 25] },
-        { id: 'the-forest', title: 'The Forest', range: [26, 34] },
+        { id: 'awakening', title: 'Part 1: Awakening', range: [1, 8] },
+        { id: 'desolation', title: 'Part 2: Desolation', range: [9, 15] },
+        { id: 'the-hive', title: 'Part 3: The Hive', range: [16, 25] },
+        { id: 'the-forest', title: 'Part 4: The Forest', range: [26, 34] },
     ];
 
     const scrollToSection = (id: string) => {
