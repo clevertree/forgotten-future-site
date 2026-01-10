@@ -62,7 +62,8 @@ export default function RootLayout({
 
                 <footer className="bg-black border-t border-white/10 py-12 mt-24 no-print">
                     <div className="container mx-auto px-6 text-center text-gray-500 text-sm">
-                        <p>&copy; 2026 FORGOTTEN FUTURE. AN AI-DRIVEN NARRATIVE EXPERIMENT.</p>
+                        <p>FORGOTTEN FUTURE: AN AI-DRIVEN NARRATIVE EXPERIMENT</p>
+                        <p>&copy;2026 CLEVERTREE</p>
                         <div className="mt-4 flex justify-center gap-6">
                             <a href="https://github.com/clevertree" className="hover:text-cyan-400 transition-colors">GITHUB</a>
                             <a href="mailto:ari@asu.edu" className="hover:text-cyan-400 transition-colors">CONTACT</a>
