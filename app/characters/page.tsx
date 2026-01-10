@@ -10,6 +10,13 @@ export default function CharactersPage() {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Lem */}
                     <div className="glass-panel p-6 border-l-4 border-l-green-600">
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
+                            <img 
+                                src="/media/characters/lem/hero.png" 
+                                alt="Lem - Wood Vessel" 
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
+                        </div>
                         <h3 className="text-2xl font-bold mb-1">Lem</h3>
                         <p className="text-sm text-green-500 uppercase tracking-widest mb-4 font-semibold">Wood Vessel</p>
                         <div className="space-y-4 text-gray-300">
