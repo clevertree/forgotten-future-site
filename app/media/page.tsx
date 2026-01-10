@@ -56,8 +56,8 @@ export default function MediaPage() {
                     <button
                         onClick={() => setIsFeedbackMode(!isFeedbackMode)}
                         className={`flex items-center gap-2 px-6 py-2 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
-                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                            ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                            : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
                             }`}
                     >
                         <MessageSquare size={12} />
@@ -214,9 +214,9 @@ export default function MediaPage() {
             )}
 
             {submittedPrUrl && (
-                <SuccessPopup 
-                    prUrl={submittedPrUrl} 
-                    onClose={() => setSubmittedPrUrl(null)} 
+                <SuccessPopup
+                    prUrl={submittedPrUrl}
+                    onClose={() => setSubmittedPrUrl(null)}
                 />
             )}
         </div>

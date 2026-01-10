@@ -8,76 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fd8052-f6d1-43fd-be94-4a5ee37b3b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/page.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/bk/bk-moon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/bk/bk-moon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/bk/bk-moon.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/button/btn_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/icon/logo_192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/theme/minimal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/editor/song-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/editor/song-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/instruments/oscillator/simple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/loader/song-loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/songs/demo-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/songs/demo-minimal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/songs/demo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/audio/songs/demo.song" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/game.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/moon1.platform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/textures/moon.heighttexture.normalmap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/textures/moon.heighttexture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/textures/moon.normalmap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/textures/moon.normalmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/platforms/moon/textures/moon2.normalmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/font/assets/monospace.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/font/assets/monospace.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/generator/render.generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/prototype/platform.prototype.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/prototype/sprite.prototype.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/prototype/stage.prototype.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/color.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/editor/assets/heightmap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/editor/assets/heightmap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/editor/heightmap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/editor/heightmap.shader.editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/editor/tilemap.shader.editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/gridmap2d.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/heightmap.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/heightmap.shader.js.old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/polygon.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/sprite.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/texture.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/shader/tilemap.shader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/stats/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/render/viewport/simple.viewport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/character/lem/lem-default.128.sprite-sheet.old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/character/lem/lem-default.128.sprite-sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/character/lem/lem-default.256.sprite-sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/character/lem/lem.sprite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/vehicle/RAV/RAV.sprite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/sprites/vehicle/RAV/RAV.spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game/stages/stage1/stage1.stage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/contribute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/editor/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/frames/donate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/frames/subscribe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/media.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pages/story.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/server/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feedback/CommentAnchor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feedback/CommentAnchor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Feedback/SuccessPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Feedback/SuccessPopup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/manuscript/full-text/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/manuscript/full-text/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/media/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/media/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +49,10 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="106" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.82031906">
@@ -345,6 +284,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
@@ -356,16 +299,16 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1855" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectId" id="2amoO62j2eW8czaLrWTWe8xTODT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -522,11 +465,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ari.asulin/dev/p/forgotten-future-site/public",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "js.debugger.nextJs.config.created.client": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ari/dev/ff-story",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -535,10 +486,18 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Users/ari.asulin/dev/p/forgotten-future-site/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1768917628837" />
+    <option name="spentUsd" value="0.00334375" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="9" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -556,6 +515,9 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
     <configuration name="demo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forgotten-future-site/game/audio/songs/demo.html">
       <method v="2" />
     </configuration>
@@ -579,6 +541,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.Next.js: debug client-side" />
       <item itemvalue="JavaScript Debug.demo.html" />
       <item itemvalue="JavaScript Debug.index.html (2)" />
       <item itemvalue="JavaScript Debug.index.html (3)" />
@@ -594,6 +557,14 @@
         <item itemvalue="JavaScript Debug.demo.html" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -661,6 +632,7 @@
       <workItem from="1529190963884" duration="11184000" />
       <workItem from="1529249140786" duration="12034000" />
       <workItem from="1704933080294" duration="3308000" />
+      <workItem from="1768072622193" duration="722000" />
     </task>
     <servers />
   </component>

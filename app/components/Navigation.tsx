@@ -9,6 +9,7 @@ export default function Navigation() {
 
     const navLinks = [
         { href: '/story', label: 'Story' },
+        { href: '/characters', label: 'Characters' },
         { href: '/manuscript', label: 'Manuscript' },
         { href: '/media', label: 'Media' },
         { href: '/faq', label: 'FAQ' },

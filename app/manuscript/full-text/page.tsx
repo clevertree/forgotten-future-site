@@ -1461,8 +1461,8 @@ There was no scream. No final thought. Just a sudden, violent expansion as my ph
                     <button
                         onClick={() => setIsFeedbackMode(!isFeedbackMode)}
                         className={`flex items-center gap-2 px-4 py-1.5 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
-                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                            ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                            : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
                             }`}
                     >
                         <MessageSquare size={12} />
@@ -1522,9 +1522,9 @@ There was no scream. No final thought. Just a sudden, violent expansion as my ph
             )}
 
             {submittedPrUrl && (
-                <SuccessPopup 
-                    prUrl={submittedPrUrl} 
-                    onClose={() => setSubmittedPrUrl(null)} 
+                <SuccessPopup
+                    prUrl={submittedPrUrl}
+                    onClose={() => setSubmittedPrUrl(null)}
                 />
             )}
 
