@@ -8,5 +8,13 @@ export default defineConfig({
     },
     specPattern: ['app/**/*.cy.ts', 'app/**/*.cy.tsx'],
     supportFile: 'cypress/support/component.ts',
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
   },
 });
