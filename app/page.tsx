@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
     const images = [
@@ -26,13 +27,20 @@ export default function Home() {
             <section className="relative w-full h-[70vh] md:h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     {images.map((src, i) => (
-                        <img
+                        <div
                             key={src}
-                            src={src}
-                            alt="Atmospheric Background"
-                            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[3000ms] mix-blend-overlay ${i === currentIndex ? 'opacity-100' : 'opacity-0'
+                            className={`absolute inset-0 transition-opacity duration-[3000ms] mix-blend-overlay ${i === currentIndex ? 'opacity-100' : 'opacity-0'
                                 }`}
-                        />
+                        >
+                            <Image
+                                src={src}
+                                alt="Atmospheric Background"
+                                fill
+                                priority={i === 0}
+                                className="object-cover"
+                                sizes="100vw"
+                            />
+                        </div>
                     ))}
                     <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>
                 </div>

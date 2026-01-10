@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -69,10 +70,11 @@ export default function MediaPage() {
                             </div>
                         </div>
                         <div className="relative aspect-video bg-black rounded-lg overflow-hidden border border-white/10 group">
-                            <img
+                            <Image
                                 src="/media/teaser/ff-title.png"
                                 alt="Forgotten Future Logo"
-                                className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-700"
+                                fill
+                                className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
                             />
                             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                                 <span className="bg-cyan-500/20 text-cyan-400 text-[10px] uppercase tracking-[0.4em] px-4 py-2 border border-cyan-500/30 backdrop-blur-sm">
@@ -93,11 +95,13 @@ export default function MediaPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {images.map((item, i) => (
                         <div key={i} className="glass-panel group cursor-pointer overflow-hidden" onClick={() => openImage(i)}>
-                            <div className="aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
-                                <img
+                            <div className="relative aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
+                                <Image
                                     src={item.src}
                                     alt={item.title}
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                                    fill
+                                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
                             </div>
                             <h3 className="text-sm uppercase tracking-widest mb-1 text-cyan-400 group-hover:text-glow transition-all">{item.title}</h3>
@@ -142,10 +146,13 @@ export default function MediaPage() {
 
                     <div className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
                         <div className="relative w-full h-[70vh] flex items-center justify-center">
-                            <img
+                            <Image
                                 src={images[selectedImageIndex].src}
                                 alt={images[selectedImageIndex].title}
-                                className="max-w-full max-h-full object-contain shadow-2xl shadow-cyan-500/10"
+                                fill
+                                className="object-contain shadow-2xl shadow-cyan-500/10"
+                                priority
+                                sizes="100vw"
                             />
                         </div>
                         <div className="mt-8 text-center">
