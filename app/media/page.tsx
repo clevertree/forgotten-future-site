@@ -2,9 +2,16 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { MessageSquare, CheckCircle2 } from 'lucide-react';
+import { CommentAnchor } from '../components/Feedback/CommentAnchor';
+import { CommentPopup } from '../components/Feedback/CommentPopup';
+import { SuccessPopup } from '../components/Feedback/SuccessPopup';
 
 export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+    const [isFeedbackMode, setIsFeedbackMode] = useState(true);
+    const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
+    const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
     const images = [
         { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
@@ -36,8 +43,28 @@ export default function MediaPage() {
     };
 
     return (
-        <div className="container mx-auto px-6 py-12">
-            <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">RECORDS OF THE REVELATION</h1>
+        <div className="container mx-auto px-6 lg:px-16 py-12">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-cyan-500/30 pb-8">
+                <h1 className="text-3xl md:text-5xl text-glow uppercase tracking-tighter transition-all">RECORDS OF THE REVELATION</h1>
+
+                <div className="flex items-center gap-4 no-print">
+                    {submittedPrUrl && (
+                        <div className="flex items-center gap-2 text-green-400 text-[10px] uppercase font-bold animate-pulse">
+                            <CheckCircle2 size={12} /> PR Created
+                        </div>
+                    )}
+                    <button
+                        onClick={() => setIsFeedbackMode(!isFeedbackMode)}
+                        className={`flex items-center gap-2 px-6 py-2 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
+                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                            }`}
+                    >
+                        <MessageSquare size={12} />
+                        {isFeedbackMode ? 'Selection Mode: ON' : 'Feedback Mode'}
+                    </button>
+                </div>
+            </div>
 
             {/* Featured Teaser Section */}
             <section className="mb-24">
@@ -93,21 +120,32 @@ export default function MediaPage() {
                     <span className="text-[9px] text-zinc-500 uppercase tracking-widest italic opacity-50">May contain visual spoilers</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {images.map((item, i) => (
-                        <div key={i} className="glass-panel group cursor-pointer overflow-hidden" onClick={() => openImage(i)}>
-                            <div className="relative aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
-                                <Image
-                                    src={item.src}
-                                    alt={item.title}
-                                    fill
-                                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
-                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                />
-                            </div>
-                            <h3 className="text-sm uppercase tracking-widest mb-1 text-cyan-400 group-hover:text-glow transition-all">{item.title}</h3>
-                            <p className="text-[10px] text-zinc-500 uppercase tracking-widest">{item.meta}</p>
-                        </div>
-                    ))}
+                    {images.map((item, i) => {
+                        const imageId = item.title.toLowerCase().replace(/[^a-z0-9]/g, '-');
+                        return (
+                            <CommentAnchor
+                                key={i}
+                                path="media"
+                                anchorId={imageId}
+                                isActive={isFeedbackMode}
+                                onOpenComment={(path, anchorId) => setActiveComment({ path, anchorId })}
+                            >
+                                <div className="glass-panel group cursor-pointer overflow-hidden" onClick={() => !isFeedbackMode && openImage(i)}>
+                                    <div className="relative aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
+                                        <Image
+                                            src={item.src}
+                                            alt={item.title}
+                                            fill
+                                            className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        />
+                                    </div>
+                                    <h3 className="text-sm uppercase tracking-widest mb-1 text-cyan-400 group-hover:text-glow transition-all">{item.title}</h3>
+                                    <p className="text-[10px] text-zinc-500 uppercase tracking-widest">{item.meta}</p>
+                                </div>
+                            </CommentAnchor>
+                        );
+                    })}
                 </div>
             </section>
 
@@ -162,6 +200,24 @@ export default function MediaPage() {
                         </div>
                     </div>
                 </div>
+            )}
+
+            {activeComment && (
+                <CommentPopup
+                    path={activeComment.path}
+                    anchorId={activeComment.anchorId}
+                    onClose={() => setActiveComment(null)}
+                    onSuccess={(url) => {
+                        setSubmittedPrUrl(url);
+                    }}
+                />
+            )}
+
+            {submittedPrUrl && (
+                <SuccessPopup 
+                    prUrl={submittedPrUrl} 
+                    onClose={() => setSubmittedPrUrl(null)} 
+                />
             )}
         </div>
     );

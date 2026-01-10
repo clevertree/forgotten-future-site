@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://forgotten-future.com/sitemap.xml',
+        sitemap: 'https://ffga.me/sitemap.xml',
     }
 }

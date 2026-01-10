@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://forgotten-future.com';
+    const baseUrl = 'https://ffga.me';
 
     return [
         {

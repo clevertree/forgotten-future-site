@@ -2,11 +2,13 @@
 
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function ManuscriptPage() {
     const [playingId, setPlayingId] = useState<number | null>(null);
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+    const router = useRouter();
 
     const chapters = [
         { id: 1, title: 'Invasion', summary: "Lem's suburban life shatters as machines appear on the horizon.", audio: '/audio/manuscript/chapter_01.mp3' },
@@ -195,7 +197,11 @@ export default function ManuscriptPage() {
                                     {chapters
                                         .filter((chapter) => chapter.id >= section.range[0] && chapter.id <= section.range[1])
                                         .map((chapter) => (
-                                            <div key={chapter.id} className="glass-panel hover:border-cyan-500/50 transition-colors cursor-pointer group">
+                                            <div
+                                                key={chapter.id}
+                                                className="glass-panel hover:border-cyan-500/50 transition-colors cursor-pointer group"
+                                                onClick={() => router.push(`/manuscript/full-text#chapter-${chapter.id}`)}
+                                            >
                                                 <div className="flex justify-between items-start mb-2">
                                                     <h3 className="text-xl group-hover:text-cyan-400 transition-colors">
                                                         Chapter {chapter.id}: {chapter.title}
@@ -206,12 +212,11 @@ export default function ManuscriptPage() {
                                                     {chapter.summary}
                                                 </p>
                                                 <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                                    <Link
-                                                        href={`/manuscript/full-text#chapter-${chapter.id}`}
+                                                    <span
                                                         className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
                                                     >
                                                         Read Chapter
-                                                    </Link>
+                                                    </span>
 
                                                     <button
                                                         disabled={!chapter.audio}
