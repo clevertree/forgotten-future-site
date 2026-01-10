@@ -9,9 +9,7 @@
     "lint": "next lint",
     "test": "cypress run --component",
     "test:watch": "cypress open --component",
-    "test:headless": "cypress run --component --headless",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "test:headless": "cypress run --component --headless"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
@@ -32,16 +30,6 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.0",
-    "@storybook/addon-essentials": "8.6.15",
-    "@storybook/addon-interactions": "8.6.15",
-    "@storybook/addon-links": "8.6.15",
-    "@storybook/addon-onboarding": "8.6.15",
-    "@storybook/blocks": "8.6.15",
-    "@storybook/nextjs": "8.6.15",
-    "@storybook/test": "8.6.15",
-    "@storybook/testing-library": "^0.2.1",
-    "@testing-library/cypress": "^10.0.1",
-    "@testing-library/react": "^14.1.2",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -49,9 +37,7 @@
     "cypress": "^13.6.6",
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "eslint-plugin-storybook": "^0.6.14",
     "postcss": "latest",
-    "storybook": "8.6.15",
     "tailwindcss": "latest",
     "typescript": "latest"
   }

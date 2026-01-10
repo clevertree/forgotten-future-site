@@ -42,6 +42,5 @@
     "**/*.stories.ts",
     "**/*.stories.tsx",
     "cypress/**/*",
-    ".storybook/**/*"
   ]
 }
