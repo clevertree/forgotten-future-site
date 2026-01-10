@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start -p 8082",
     "lint": "next lint",
-    "test": "cypress component",
-    "test:watch": "cypress component --watch",
-    "test:headless": "cypress component --headless",
+    "test": "cypress run --component",
+    "test:watch": "cypress open --component",
+    "test:headless": "cypress run --component --headless",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
