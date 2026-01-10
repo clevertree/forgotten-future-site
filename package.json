@@ -1,6 +1,6 @@
 {
   "name": "forgotten-future-site",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -32,11 +32,11 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.0",
-    "@storybook/addon-essentials": "^8.6.14",
-    "@storybook/addon-interactions": "^7.4.5",
-    "@storybook/addon-links": "^7.4.5",
+    "@storybook/addon-essentials": "^10.1.11",
+    "@storybook/addon-interactions": "^10.1.11",
+    "@storybook/addon-links": "^10.1.11",
     "@storybook/addon-onboarding": "^10.1.11",
-    "@storybook/blocks": "^8.6.14",
+    "@storybook/blocks": "^10.1.11",
     "@storybook/react": "^10.1.11",
     "@storybook/react-webpack5": "^10.1.11",
     "@storybook/testing-library": "^0.2.1",
