@@ -6,6 +6,7 @@ import Link from 'next/link';
 export default function ManuscriptPage() {
     const [playingId, setPlayingId] = useState<number | null>(null);
     const audioRef = useRef<HTMLAudioElement | null>(null);
+    const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
     const chapters = [
         { id: 1, title: 'Invasion', summary: "Lem's suburban life shatters as machines appear on the horizon.", audio: '/audio/manuscript/chapter_01.mp3' },
@@ -66,8 +67,12 @@ export default function ManuscriptPage() {
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const container = scrollContainerRef.current;
+        if (element && container) {
+            container.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -159,7 +164,7 @@ export default function ManuscriptPage() {
                         ))}
                     </div>
 
-                    <div className="space-y-12 h-[calc(100vh-300px)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar">
+                    <div ref={scrollContainerRef} className="space-y-12 h-[calc(100vh-300px)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar relative">
                         {sections.map((section) => (
                             <div key={section.id} id={section.id} className="pt-8 first:pt-0">
                                 <h2 className="text-xl mb-6 text-cyan-400 uppercase tracking-widest flex items-center gap-4">
