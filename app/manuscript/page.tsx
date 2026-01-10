@@ -8,24 +8,40 @@ export default function ManuscriptPage() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     const chapters = [
-        {
-            id: 1,
-            title: 'An Ordinary Distance',
-            summary: "Lem's suburban life shatters as machines appear on the horizon.",
-            audio: '/audio/manuscript/chapter_01.mp3'
-        },
-        {
-            id: 2,
-            title: 'Lynn',
-            summary: 'Lynn arrives and forces Lem into activation.',
-            audio: '/audio/manuscript/chapter_02.mp3' // Placeholder if it exists or we plan to generate it
-        },
-        { id: 3, title: 'The Doorway', summary: 'Lem discovers he is not human; Lynn installs remote compulsion.' },
+        { id: 1, title: 'Invasion', summary: "Lem's suburban life shatters as machines appear on the horizon.", audio: '/audio/manuscript/chapter_01.mp3' },
+        { id: 2, title: 'Lynn', summary: 'Lynn arrives and forces Lem into activation.' },
+        { id: 3, title: 'Doorway', summary: 'Lem discovers he is not human; Lynn installs remote compulsion.' },
         { id: 4, title: 'Drafted', summary: 'Lem is embedded with soldiers for a desperate Moon mission.' },
         { id: 5, title: 'The Briefing He Never Had', summary: 'Soldiers discuss psychological warfare and hidden truths.' },
         { id: 6, title: 'The Near Moon', summary: 'Visual confirmation that the Moon is not what humanity was taught.' },
-        { id: 7, title: 'Zenith', summary: 'Ship reaches lunar altitude; Lynn makes a ruthless decision.' },
-        { id: 8, title: 'The Shattered Approach', summary: 'The Moon begins to fragment; The Caucasian Eagle is struck.' },
+        { id: 7, title: 'Zenith', summary: 'Ship reaches lunar altitude; one soldier breaks psychologically; Lynn makes a ruthless decision.' },
+        { id: 8, title: 'The Shattered Approach', summary: "Tor's broadcast; Moon begins to fragment; The Caucasian Eagle is struck and falls toward surface." },
+        { id: 9, title: 'Waking in the Dream and the Rescue', summary: 'Lem survives impact and Aether-Drive fugue; rescued by repair vehicle; Novak activates Lem\'s mission; isolated on lunar surface.' },
+        { id: 10, title: 'Alone on the Moon', summary: 'Lem joins strike team; plasma cannon engagement; multiple casualties; Rahu emerges as active threat.' },
+        { id: 11, title: 'Rahu', summary: "Lem recognizes Rahu as a Vessel; Tor sacrifices the Hermes to suppress Rahu's advance; Novak assumes command; the mission continues." },
+        { id: 12, title: 'The Pyramid', summary: 'Strike force reaches pyramid at base\'s center; Tor emerges alive; Rahu revealed to be alive inside; soldiers prepare for battle.' },
+        { id: 13, title: 'The Confrontation', summary: 'Soldiers engage Rahu; Lynn reveals share history and ancient argument; Lynn merges with Lem into Wood/Water entity; Rahu defeated; Lynn dissolves into Lunar Capacitor to initiate system reset.' },
+        { id: 14, title: 'The Shifting Moon', summary: "Rahu disrupts the system reset causing the 'Great Fry'; Lynn remains missing; Novak places both Rahu and Lem into stasis." },
+        { id: 15, title: 'The Path of Fragments', summary: "Lem's stasis dream; Lynn's software visitation; revelation of the Cosmic Life Cycle and the warning of the Bright Path snare." },
+        { id: 16, title: 'The Return', summary: 'Mission 1 has already begun; Lem\'s consciousness migrates to a Gorgon body at Cradle Zero; Rahu arrives.' },
+        { id: 17, title: 'The Spirit Port', summary: "Rahu probes the 'Staring Gorgon's' memories; Lem is identified as 'Mara.'" },
+        { id: 18, title: 'Disintegration', summary: "Rahu panics and is remote-detonated; Core's remote operation and limited visibility highlighted." },
+        { id: 19, title: 'The New Lab', summary: 'Lem\'s spirit is captured and analyzed by Dr. Vane and Novak; Core is mystified by his survival.' },
+        { id: 20, title: 'The Awakening', summary: 'Reconnected with AI Lynn, Lem resists reformatting while hiding his true memory.' },
+        { id: 21, title: 'The Aggressive Expansion Briefing', summary: 'Lem is put onto Mission 2 immediately; Core ignores the significance of his power; briefing on utopian cities.' },
+        { id: 22, title: 'Deployment to the Desert', summary: "Deployment to the equatorial dead zone; introduction to the 'wild' Monoliths; the dangerous loyalty test." },
+        { id: 23, title: 'The Beacon Strike', summary: 'The mission turns violent; Lem experiences his first reincarnation; Metal Vessels begin to see him as Rahu\'s replacement.' },
+        { id: 24, title: 'The Acclaim of Success', summary: "Perimeter cleared; Lem is awarded as the 'New Hero'; Metal Vessels recognize his spiritual life and independence." },
+        { id: 25, title: 'The Rise of the Utopian Hive', summary: 'Utopian Hive takes shape; Lem realizes the paradise is a prison; he reaches the height of his esteem with the Corps.' },
+        { id: 26, title: 'The Northern Shield Briefing', summary: 'Lem is sent to the north; Rahu is redeployed but contact is forbidden; Lem meets Arlo.' },
+        { id: 27, title: 'Deployment to the North', summary: "Rapid deployment; villagers' distrust of tech; Arlo's desire to join the Corps vs. village rigidity." },
+        { id: 28, title: 'The Village Encounter', summary: 'Tripods refuse to attack the village; a soldier shoots unprovoked; the moral dilemma of engagement.' },
+        { id: 29, title: 'The Tripod Anomaly', summary: 'Core orders a hunt for the Tripods; violent forest engagement; Arlo refuses conscription; beacon removal demanded.' },
+        { id: 30, title: 'The White Forest Briefing', summary: 'Mission 4 infiltration; search for inhabitants; Cassia gives Lem tactical control.' },
+        { id: 31, title: 'The Electronic Snake', summary: 'Lem is consumed by an electronic snake; the anomaly of high-detail reincarnation memory.' },
+        { id: 32, title: 'The Grinding Path', summary: "Multiple deployments; the 'grinding' nature of the mission; discovery of the sunlit clearing." },
+        { id: 33, title: 'Myrr', summary: "Contact with Myrr; revelation of the 'King of the Gorgons'; analog vs digital sanctuary." },
+        { id: 34, title: 'The Analog Interface', summary: 'Lem agrees to the analog read; Myrr encounters the Cataclysm data; the psychic crash and Lem\'s shattering.' },
     ];
 
     const togglePlay = (id: number, url: string) => {
@@ -60,7 +76,7 @@ export default function ManuscriptPage() {
                                 <div className="text-xs text-zinc-500 uppercase tracking-widest">Available Now</div>
                                 <div className="text-2xl font-bold text-glow text-cyan-400">Chapter 1</div>
                                 <div className="text-[10px] text-zinc-600 italic text-center">
-                                    "An Ordinary Distance" <br />
+                                    "Invasion" <br />
                                     (Narrated by Fable)
                                 </div>
                                 <div className="w-full pt-4">
