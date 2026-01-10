@@ -1,16 +1,10 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import React from "react";
 import { Inter } from 'next/font/google';
 import Navigation from './components/Navigation';
 import '../styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
-
-export const viewport: Viewport = {
-    themeColor: '#000000',
-    width: 'device-width',
-    initialScale: 1,
-}
 
 export const metadata: Metadata = {
     title: {
