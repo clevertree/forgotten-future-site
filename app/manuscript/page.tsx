@@ -129,9 +129,12 @@ export default function ManuscriptPage() {
                                     {chapter.summary}
                                 </p>
                                 <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                    <button className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all">
+                                    <Link 
+                                        href={`/manuscript/full-text#chapter-${chapter.id}`}
+                                        className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
+                                    >
                                         Read Chapter
-                                    </button>
+                                    </Link>
 
                                     <button
                                         disabled={!chapter.audio}

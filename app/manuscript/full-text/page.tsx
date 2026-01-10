@@ -706,7 +706,7 @@ The vision faded. The pyramid, the fragments, and the ghost of the Water Vessel 
 
             <article className="space-y-24 pb-32">
                 {chapters.map((chapter) => (
-                    <section key={chapter.id} className="prose prose-invert max-w-none">
+                    <section key={chapter.id} id={`chapter-${chapter.id}`} className="prose prose-invert max-w-none scroll-mt-24">
                         <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
                             {chapter.title}
