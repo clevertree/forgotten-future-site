@@ -12,7 +12,7 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-green-600">
                         <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/lem/hero.png"
+                                src="/media/characters/lem/lem.png"
                                 alt="Lem - Wood Vessel"
                                 className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
@@ -31,8 +31,12 @@ export default function CharactersPage() {
 
                     {/* Lynn */}
                     <div className="glass-panel p-6 border-l-4 border-l-blue-600">
-                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-blue-500/10 flex items-center justify-center">
-                            <span className="text-blue-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/lynn/lynn.png"
+                                alt="Lynn - Water Vessel"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Mara</h3>
                         <p className="text-sm text-blue-500 uppercase tracking-widest mb-4 font-semibold">Water Vessel</p>
@@ -48,8 +52,12 @@ export default function CharactersPage() {
 
                     {/* Rahu */}
                     <div className="glass-panel p-6 border-l-4 border-l-red-600">
-                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-red-500/10 flex items-center justify-center">
-                            <span className="text-red-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/rahu/rahu.png"
+                                alt="Rahu - Fire Vessel"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Rahu</h3>
                         <p className="text-sm text-red-500 uppercase tracking-widest mb-4 font-semibold">Fire Vessel</p>
@@ -65,8 +73,12 @@ export default function CharactersPage() {
 
                     {/* Tor */}
                     <div className="glass-panel p-6 border-l-4 border-l-amber-700">
-                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-amber-500/10 flex items-center justify-center">
-                            <span className="text-amber-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/tor/tor.png"
+                                alt="Tor - Earth Vessel"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Tor</h3>
                         <p className="text-sm text-amber-600 uppercase tracking-widest mb-4 font-semibold">Earth Vessel</p>
@@ -87,8 +99,12 @@ export default function CharactersPage() {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Arlo */}
                     <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
-                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-zinc-500/10 flex items-center justify-center">
-                            <span className="text-zinc-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/arlo/arlo.png"
+                                alt="Arlo - The Tech-Welder"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Arlo</h3>
                         <p className="text-xs text-zinc-400 uppercase tracking-widest mb-4 font-semibold">The Tech-Welder</p>
@@ -102,8 +118,12 @@ export default function CharactersPage() {
 
                     {/* Cassia Vane */}
                     <div className="glass-panel p-6 border-l-4 border-l-cyan-300">
-                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-cyan-500/10 flex items-center justify-center">
-                            <span className="text-cyan-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/cassia_vane/cassia_vane.png"
+                                alt="Cassia Vane - The Archivist Harmonizer"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Cassia Vane</h3>
                         <p className="text-xs text-cyan-300 uppercase tracking-widest mb-4 font-semibold">The Archivist Harmonizer</p>
@@ -122,8 +142,12 @@ export default function CharactersPage() {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Anton Drexler */}
                     <div className="glass-panel p-6 border-l-4 border-l-red-900">
-                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-red-900/10 flex items-center justify-center">
-                            <span className="text-red-900/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/anton_drexler/anton_drexler.png"
+                                alt="Overseer Anton Drexler"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Overseer Anton Drexler</h3>
                         <p className="text-xs text-red-700 uppercase tracking-widest mb-4 font-semibold">Director of Strategic Sanction</p>
@@ -137,8 +161,12 @@ export default function CharactersPage() {
 
                     {/* Commander Novak */}
                     <div className="glass-panel p-6 border-l-4 border-l-slate-400">
-                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-slate-500/10 flex items-center justify-center">
-                            <span className="text-slate-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/iris_novak/iris_novak.png"
+                                alt="Commander Iris Novak"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Commander Iris Novak</h3>
                         <p className="text-xs text-slate-400 uppercase tracking-widest mb-4 font-semibold">Chief Science Officer</p>
@@ -155,22 +183,20 @@ export default function CharactersPage() {
             <section className="mb-20">
                 <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Third Path</h2>
                 <div className="glass-panel p-8 border-l-4 border-l-orange-500 overflow-hidden relative">
-                    <div className="absolute top-4 right-4 bg-black/40 px-3 py-1 rounded border border-orange-500/20 text-[10px] text-orange-400 font-mono uppercase tracking-tighter">
-                        Image Pending
-                    </div>
                     <div className="flex flex-col md:flex-row gap-8 items-start">
-                        <div className="flex-1">
+                        <div className="md:w-2/3">
                             <h3 className="text-2xl font-bold mb-1">Myrr</h3>
                             <p className="text-sm text-orange-500 uppercase tracking-widest mb-4 font-semibold">Leader of the Analog Sanctuary</p>
                             <p className="text-gray-300 leading-relaxed">
                                 A weathered Pre-Fry technician who led a group into the White Forest to escape the "soul-trap" of digital technology. Myrr's look is one of high-tech antiquity—layered in copper shunts and vacuum tubes, favoring the tangible truth of the analog waveform over the encryption of the Archivists.
                             </p>
                         </div>
-                        <div className="md:w-1/3 bg-black/40 p-4 rounded border border-orange-500/20 text-xs text-orange-400 font-mono">
-                            // ANALOG_DIAGNOSTIC_LOG
-                            <br />- WAVEFORM: PURE
-                            <br />- DIGITAL_SIGNATURE: ERROR (NONE)
-                            <br />- STATUS: PROTECTED BY FOREST
+                        <div className="md:w-1/3 relative h-48 overflow-hidden rounded bg-black/40">
+                            <img
+                                src="/media/characters/myrr/myrr.png"
+                                alt="Myrr - Leader of the Analog Sanctuary"
+                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                            />
                         </div>
                     </div>
                 </div>
