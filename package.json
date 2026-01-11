@@ -1,6 +1,6 @@
 {
   "name": "forgotten-future-site",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -31,6 +31,8 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.0",
+    "@testing-library/cypress": "^10.1.0",
+    "@testing-library/dom": "^10.4.1",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

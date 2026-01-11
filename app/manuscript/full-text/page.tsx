@@ -94,29 +94,29 @@ export default function FullTextManuscript() {
 
                 <article className="lg:w-3/4 space-y-24 pb-32 order-1 lg:order-2">
                     {chapters.map((chapter) => (
-                    <section key={chapter.id} id={`chapter-${chapter.id}`} className="prose prose-invert max-w-none scroll-mt-32">
-                        <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
-                            <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
-                            {chapter.title}
-                        </h3>
-                        <div className="text-zinc-300 leading-[2] text-lg space-y-6">
-                            {chapter.content.split('\n\n').map((para, i) => {
-                                const paraId = `ch${chapter.id}-p${i + 1}`;
-                                return (
-                                    <CommentAnchor
-                                        key={paraId}
-                                        path="manuscript"
-                                        anchorId={paraId}
-                                        isActive={isFeedbackMode}
-                                        onOpenComment={(path, anchorId) => setActiveComment({ path, anchorId })}
-                                    >
-                                        <p>{para.trim()}</p>
-                                    </CommentAnchor>
-                                );
-                            })}
-                        </div>
-                    </section>
-                ))}
+                        <section key={chapter.id} id={`chapter-${chapter.id}`} className="prose prose-invert max-w-none scroll-mt-32">
+                            <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
+                                <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
+                                {chapter.title}
+                            </h3>
+                            <div className="text-zinc-300 leading-[2] text-lg space-y-6">
+                                {chapter.content.split('\n\n').map((para, i) => {
+                                    const paraId = `ch${chapter.id}-p${i + 1}`;
+                                    return (
+                                        <CommentAnchor
+                                            key={paraId}
+                                            path="manuscript"
+                                            anchorId={paraId}
+                                            isActive={isFeedbackMode}
+                                            onOpenComment={(path, anchorId) => setActiveComment({ path, anchorId })}
+                                        >
+                                            <p>{para.trim()}</p>
+                                        </CommentAnchor>
+                                    );
+                                })}
+                            </div>
+                        </section>
+                    ))}
                 </article>
             </div>
 

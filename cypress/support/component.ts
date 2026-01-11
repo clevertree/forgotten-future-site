@@ -1,6 +1,10 @@
+import './commands'
+import { mount } from 'cypress/react18'
 import '@testing-library/cypress/add-commands';
 
 // Mock the API responses for comments
+Cypress.Commands.add('mount', mount)
+
 Cypress.Commands.add('mockCommentApi', () => {
   cy.intercept('POST', '/api/comments/submit', {
     statusCode: 200,

@@ -20,9 +20,12 @@ describe('CommentAnchor Component', () => {
   });
 
   it('should show comment button on hover', () => {
-    cy.get('button[title="Add comment"]').should('not.be.visible');
-    cy.contains('Hover me to add feedback').parent().trigger('mouseenter');
-    cy.get('button[title="Add comment"]').should('be.visible');
+    // Initial state: Hidden (opacity-0)
+    cy.get('button[title="Add comment"]').parent().should('have.class', 'opacity-0');
+    
+    // Hover: Visible (opacity-100)
+    cy.contains('Hover me to add feedback').parents('.group').trigger('mouseover');
+    cy.get('button[title="Add comment"]').parent().should('have.class', 'group-hover:opacity-100');
   });
 
   it('should call onOpenComment when button clicked', () => {
