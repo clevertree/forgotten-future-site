@@ -13,8 +13,16 @@ export default function FullTextManuscript() {
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
+    const sections = [
+        { title: 'I: Shattered Approach', range: [1, 15] },
+        { title: 'II: Thousand-Year Fallacy', range: [16, 29] },
+        { title: 'III: White Forest', range: [30, 40] },
+        { title: 'IV: Analog Dawn', range: [41, 58] },
+        { title: 'V: Great Stalemate', range: [59, 64] },
+    ];
+
     return (
-        <div className="container mx-auto px-6 lg:px-20 py-12 max-w-5xl">
+        <div className="container mx-auto px-6 lg:px-12 py-12">
             <div className="mb-12 flex justify-between items-center no-print">
                 <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
                     ← Back to Manuscript Page
@@ -42,17 +50,50 @@ export default function FullTextManuscript() {
                 </div>
             </div>
 
-            <header className="mb-16 text-center">
+            <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-                <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed">
+                <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
                     All 64 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
             </header>
 
-            <article className="space-y-24 pb-32">
-                {chapters.map((chapter) => (
+            <div className="flex flex-col lg:flex-row gap-12 relative">
+                {/* Navigation Sidebar */}
+                <aside className="lg:w-1/4 no-print order-2 lg:order-1">
+                    <div className="glass-panel sticky top-32 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
+                        <h2 className="text-sm font-bold text-cyan-500 uppercase tracking-[0.2em] mb-6 border-b border-white/10 pb-2">
+                            Navigation
+                        </h2>
+                        <div className="space-y-8">
+                            {sections.map((section) => (
+                                <div key={section.title}>
+                                    <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
+                                        {section.title}
+                                    </h3>
+                                    <ul className="space-y-2 border-l border-white/5 pl-4">
+                                        {chapters
+                                            .filter(c => c.id >= section.range[0] && c.id <= section.range[1])
+                                            .map(chapter => (
+                                                <li key={chapter.id}>
+                                                    <a
+                                                        href={`#chapter-${chapter.id}`}
+                                                        className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter"
+                                                    >
+                                                        {chapter.id}. {chapter.title}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </aside>
+
+                <article className="lg:w-3/4 space-y-24 pb-32 order-1 lg:order-2">
+                    {chapters.map((chapter) => (
                     <section key={chapter.id} id={`chapter-${chapter.id}`} className="prose prose-invert max-w-none scroll-mt-32">
                         <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter {chapter.id}</span>
