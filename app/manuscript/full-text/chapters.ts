@@ -90,7 +90,7 @@ My memory of Chapter 2 ends at exactly 4:41:03 PM. The darkness that followed wa
     title: `Doorway`,
     content: `The interval between the moment she hit me and the moment I opened my eyes again was like a missing reel of film. There was no transition, only a sudden, jarring shift in location. I wasn't on the living room carpet anymore. I was standing in a space that felt like a quiet, empty version of my own house, stripped of the furniture and the clutter, bathed in a low, artificial light that didn't seem to have a source. 
 
-Lynn was standing a few feet away. She didn’t look like a goddess or some glowing phantom. She looked exactly like she had a minute ago—tired, dusty, and wearing that heavy cloak. But the air around her felt different, vibrating with a low-frequency hum that made my teeth ache.
+Lynn was standing a few feet away. She didn’t look like some powerful spirit or a glowing phantom. She looked exactly like she had a minute ago—tired, dusty, and wearing that heavy cloak. But the air around her felt different, vibrating with a low-frequency hum that made my teeth ache.
 
 "Lem," she said, her voice soft but clear. "Take a breath. I know it feels like the world is breaking."
 
@@ -696,7 +696,7 @@ I was standing in that same suburban living room again. The sunlight was streami
 
 I wasn't alone.
 
-Lynn was there, sitting on the sofa. She didn't look like a soldier or a goddess now. She just looked like a girl, her face soft and tired. But her voice... it was everywhere. It was in the air, in the walls, in my very bones.
+Lynn was there, sitting on the sofa. She didn't look like a soldier now. She just looked like a girl, her face soft and tired. But her voice... it was everywhere. It was in the air, in the walls, in my very bones.
 
 "The mission failed, Lem," she said. Her voice didn't sound like a radio anymore. It sounded like a memory. "I wanted to end it. I wanted to silence the world so the machines couldn't scream anymore and the Core couldn't rot. But I only caught a piece of it. We gave the world a 'Great Fry.' We broke their toys, but we left the people to find new ways to suffer."
 
