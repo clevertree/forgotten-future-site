@@ -118,6 +118,41 @@ export default function CharactersPage() {
             </section>
 
             <section className="mb-20">
+                <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Archivist High Command</h2>
+                <div className="grid md:grid-cols-2 gap-12">
+                    {/* Anton Drexler */}
+                    <div className="glass-panel p-6 border-l-4 border-l-red-900">
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-red-900/10 flex items-center justify-center">
+                            <span className="text-red-900/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
+                        <h3 className="text-xl font-bold mb-1">Overseer Anton Drexler</h3>
+                        <p className="text-xs text-red-700 uppercase tracking-widest mb-4 font-semibold">Director of Strategic Sanction</p>
+                        <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
+                        <div className="space-y-4 text-gray-300">
+                            <p>
+                                A relic of the Before Time, Drexler is the ultimate "Watcher." Holding the master authorization keys that can remote-control any Synodic machine, he evaluates Vessels from a purely militaristic perspective. He is the cold ghost in the machine, intervening only when a mission reaches "Logical Failure."
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Commander Novak */}
+                    <div className="glass-panel p-6 border-l-4 border-l-slate-400">
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-slate-500/10 flex items-center justify-center">
+                            <span className="text-slate-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
+                        <h3 className="text-xl font-bold mb-1">Commander Iris Novak</h3>
+                        <p className="text-xs text-slate-400 uppercase tracking-widest mb-4 font-semibold">Chief Science Officer</p>
+                        <p className="text-gray-300 italic mb-4">"The cost of the aftermath is a debt we all must pay."</p>
+                        <div className="space-y-4 text-gray-300">
+                            <p>
+                                A career military scientist and high-level Core operative. Novak serves as the pragmatic bridge between the Vessels and the Core's leadership. Trapped by her own sense of responsibility, she remains at the heart of the system she helped create, managing the "Year 15 AT" missions with clinical precision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mb-20">
                 <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Third Path</h2>
                 <div className="glass-panel p-8 border-l-4 border-l-orange-500 overflow-hidden relative">
                     <div className="absolute top-4 right-4 bg-black/40 px-3 py-1 rounded border border-orange-500/20 text-[10px] text-orange-400 font-mono uppercase tracking-tighter">
