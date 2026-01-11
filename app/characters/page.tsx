@@ -31,6 +31,9 @@ export default function CharactersPage() {
 
                     {/* Lynn */}
                     <div className="glass-panel p-6 border-l-4 border-l-blue-600">
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-blue-500/10 flex items-center justify-center">
+                            <span className="text-blue-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
                         <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Mara</h3>
                         <p className="text-sm text-blue-500 uppercase tracking-widest mb-4 font-semibold">Water Vessel</p>
                         <div className="space-y-4 text-gray-300">
@@ -45,6 +48,9 @@ export default function CharactersPage() {
 
                     {/* Rahu */}
                     <div className="glass-panel p-6 border-l-4 border-l-red-600">
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-red-500/10 flex items-center justify-center">
+                            <span className="text-red-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
                         <h3 className="text-2xl font-bold mb-1">Rahu</h3>
                         <p className="text-sm text-red-500 uppercase tracking-widest mb-4 font-semibold">Fire Vessel</p>
                         <div className="space-y-4 text-gray-300">
@@ -59,6 +65,9 @@ export default function CharactersPage() {
 
                     {/* Tor */}
                     <div className="glass-panel p-6 border-l-4 border-l-amber-700">
+                        <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 border border-amber-500/10 flex items-center justify-center">
+                            <span className="text-amber-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
                         <h3 className="text-2xl font-bold mb-1">Tor</h3>
                         <p className="text-sm text-amber-600 uppercase tracking-widest mb-4 font-semibold">Earth Vessel</p>
                         <div className="space-y-4 text-gray-300">
@@ -78,6 +87,9 @@ export default function CharactersPage() {
                 <div className="grid md:grid-cols-2 gap-12">
                     {/* Arlo */}
                     <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-zinc-500/10 flex items-center justify-center">
+                            <span className="text-zinc-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
                         <h3 className="text-xl font-bold mb-1">Arlo</h3>
                         <p className="text-xs text-zinc-400 uppercase tracking-widest mb-4 font-semibold">The Tech-Welder</p>
                         <p className="text-gray-300 italic mb-4">"Someone's gotta fix what the gods broke."</p>
@@ -90,6 +102,9 @@ export default function CharactersPage() {
 
                     {/* Cassia Vane */}
                     <div className="glass-panel p-6 border-l-4 border-l-cyan-300">
+                        <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 border border-cyan-500/10 flex items-center justify-center">
+                            <span className="text-cyan-500/40 text-xs font-mono uppercase tracking-widest">Visual Data Coming Soon</span>
+                        </div>
                         <h3 className="text-xl font-bold mb-1">Cassia Vane</h3>
                         <p className="text-xs text-cyan-300 uppercase tracking-widest mb-4 font-semibold">The Archivist Harmonizer</p>
                         <p className="text-gray-300 italic mb-4">"The spirit is just a design curiosity."</p>
@@ -104,7 +119,10 @@ export default function CharactersPage() {
 
             <section className="mb-20">
                 <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Third Path</h2>
-                <div className="glass-panel p-8 border-l-4 border-l-orange-500">
+                <div className="glass-panel p-8 border-l-4 border-l-orange-500 overflow-hidden relative">
+                    <div className="absolute top-4 right-4 bg-black/40 px-3 py-1 rounded border border-orange-500/20 text-[10px] text-orange-400 font-mono uppercase tracking-tighter">
+                        Image Pending
+                    </div>
                     <div className="flex flex-col md:flex-row gap-8 items-start">
                         <div className="flex-1">
                             <h3 className="text-2xl font-bold mb-1">Myrr</h3>
