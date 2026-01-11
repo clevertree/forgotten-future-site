@@ -130,7 +130,7 @@ export default function CharactersPage() {
                         <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
                         <div className="space-y-4 text-gray-300">
                             <p>
-                                A relic of the Before Time, Drexler is the ultimate "Watcher." Holding the master authorization keys that can remote-control any Synodic machine, he evaluates Vessels from a purely militaristic perspective. He is the cold ghost in the machine, intervening only when a mission reaches "Logical Failure."
+                                A relic of the Before Time, Drexler is the ultimate "Watcher." Holding the master authorization keys that can remote-control nearly any Synodic machine, he evaluates Vessels from a purely militaristic perspective. He is the cold ghost in the machine, intervening only when a mission reaches "Logical Failure."
                             </p>
                         </div>
                     </div>

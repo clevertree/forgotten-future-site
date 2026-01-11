@@ -132,6 +132,57 @@ export default function StoryPage() {
                     </li>
                 </ul>
             </section>
+
+            <section className="mb-16">
+                <h2 className="text-2xl mb-6 border-b border-red-500/30 pb-2 uppercase tracking-tighter">Outstanding Questions</h2>
+                <div className="space-y-12">
+                    <div>
+                        <h3 className="text-green-500/80 text-xs font-bold uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+                            Resolved Lore Threads
+                        </h3>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-zinc-900/50 p-4 rounded border border-white/5">
+                                <h4 className="text-xs font-bold text-zinc-300 uppercase mb-2">Drexler's Migration</h4>
+                                <p className="text-xs text-gray-400 leading-relaxed">Core leadership moved from the Lunar Pyramid (Cradle Prime) to the desert base (Cradle Zero) following Mission 2.</p>
+                            </div>
+                            <div className="bg-zinc-900/50 p-4 rounded border border-white/5">
+                                <h4 className="text-xs font-bold text-zinc-300 uppercase mb-2">Rahu Reset</h4>
+                                <p className="text-xs text-gray-400 leading-relaxed">Rahu underwent a "slow-burn" reset to sanitize memories of the 202X Truth before Northern Shield deployment.</p>
+                            </div>
+                            <div className="bg-zinc-900/50 p-4 rounded border border-white/5">
+                                <h4 className="text-xs font-bold text-zinc-300 uppercase mb-2">The Water Vessel</h4>
+                                <p className="text-xs text-gray-400 leading-relaxed">Arlo is confirmed as the reincarnation of the Water Vessel spirit (Maya), though he rejects the title and name.</p>
+                            </div>
+                            <div className="bg-zinc-900/50 p-4 rounded border border-white/5">
+                                <h4 className="text-xs font-bold text-zinc-300 uppercase mb-2">Monolith Propaganda</h4>
+                                <p className="text-xs text-gray-400 leading-relaxed">The Core uses the "King of the Gorgons" as a bogeyman to justify their "democratic" control over Synodic tech.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 className="text-yellow-500/80 text-xs font-bold uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse" />
+                            Active Contradictions & Unresolved Questions
+                        </h3>
+                        <div className="grid gap-4">
+                            <div className="group border-l border-yellow-500/20 hover:border-yellow-500/50 transition-colors pl-6 py-2">
+                                <h4 className="text-sm font-bold text-zinc-200 mb-1">Plan B Execution</h4>
+                                <p className="text-sm text-gray-400">Will the Core initiate a coordinated military strike or a "natural" disaster for their scorched earth objective?</p>
+                            </div>
+                            <div className="group border-l border-yellow-500/20 hover:border-yellow-500/50 transition-colors pl-6 py-2">
+                                <h4 className="text-sm font-bold text-zinc-200 mb-1">The Shared Identity</h4>
+                                <p className="text-sm text-gray-400">The resolution between AI Lynn in Lem's drive and the reincarnated spirit in Arlo remains an open spiritual anomaly.</p>
+                            </div>
+                            <div className="group border-l border-yellow-500/20 hover:border-yellow-500/50 transition-colors pl-6 py-2">
+                                <h4 className="text-sm font-bold text-zinc-200 mb-1">Wood-Water Clustering</h4>
+                                <p className="text-sm text-gray-400">The mechanism by which Wood and Water tech clusters form in the North without active cooperation is yet to be documented.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

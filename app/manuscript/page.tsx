@@ -45,6 +45,36 @@ export default function ManuscriptPage() {
         { id: 32, title: 'The Grinding Path', summary: "Multiple deployments; the 'grinding' nature of the mission; discovery of the sunlit clearing." },
         { id: 33, title: 'Myrr', summary: "Contact with Myrr; revelation of the 'King of the Gorgons'; analog vs digital sanctuary." },
         { id: 34, title: 'The Analog Interface', summary: 'Lem agrees to the analog read; Myrr encounters the Cataclysm data; the psychic crash and Lem\'s shattering.' },
+        { id: 35, title: 'The Final Word', summary: 'Confrontation with Anton Drexler; the "Fatalist Fallacy" revealed; Lem forced into electrostatic stasis.' },
+        { id: 36, title: 'The Stasis Slumber', summary: "Years pass in stasis; Lem's recursive vision of the White Forest massacre." },
+        { id: 37, title: 'The Blooming Forest', summary: 'Lem returns to the White Forest ruins in his dream; transition to reality in the clearing.' },
+        { id: 38, title: 'Analog Lem', summary: 'Lem manifests as Analog Lem; the forest assault continues; ambush at the crashed carrier.' },
+        { id: 39, title: 'The Parting in the Ash', summary: 'Conversation with Myrr; the revelation of the "Key"; reabsorption of the cargo vehicle.' },
+        { id: 40, title: 'The Exile', summary: 'Lem observes Rahu and the arsenal; final departure into the wilderness.' },
+        { id: 41, title: 'The Wilderness Years', summary: 'Solitude and aetheric evolution; the realization of the "Maya Match" software clue.' },
+        { id: 42, title: 'The Arsenal Blueprint', summary: 'Return to the White Forest ruins; the stolen database revelation; manifestation of the Analog Hovercraft.' },
+        { id: 43, title: 'The Return to the North', summary: 'Flight across the Hive Cities; discovery that the Mission 3 villages remain untouched.' },
+        { id: 44, title: 'The Whistle in the Woods', summary: 'Reunion with Myrr; Lem manifests a new Human Interface Device; shared mission to find the Water Vessel.' },
+        { id: 45, title: 'The Village Leader', summary: 'Lem reunites with Arlo; disclosure of the Tripod attacks and the Beacon resistance.' },
+        { id: 46, title: 'The Witch Maya', summary: 'Lem identifies Arlo as the Water Vessel\'s spirit; Arlo rejects the "Maya" identity.' },
+        { id: 47, title: 'The Shore of Shadows', summary: 'The hike out of the village; Arlo maintains his skepticism while seeking to save his village.' },
+        { id: 48, title: 'The Interface Vision', summary: 'Arlo uses the HID to witness the raw record of the Moon Cataclysm; the Fallacy is shattered.' },
+        { id: 49, title: 'The Great Refusal', summary: 'Arlo rejects the mission and his identification as a Vessel spirit; the Crew\'s disillusionment.' },
+        { id: 50, title: 'Plan B', summary: 'Arlo returns to the village; the Crew resolves to launch a direct assault on the Core\'s desert base.' },
+        { id: 51, title: 'The Arsenal of the Ash', summary: 'Lem develops hybrid wood-core tech; Mission 5 deployment; the Node strategy.' },
+        { id: 52, title: 'The Battle of Trees', summary: 'The automated assault on the city node; the mystery of the absent defense.' },
+        { id: 53, title: 'The Blackout', summary: 'The Node trap is sprung; city-wide blackout; the "Architect\'s" propaganda statement.' },
+        { id: 54, title: 'The Desert Perimeter', summary: 'The Crew\'s refusal to quit; massive mobilization of the Tree Army.' },
+        { id: 55, title: 'The Falling Suns', summary: 'Moon pods launch a counter-attack; the arrival of the Sky-Monoliths; symmetric warfare.' },
+        { id: 56, title: 'The Final Arc', summary: 'The infiltration fleet\'s dash for Cradle Zero; the gamble against the Core\'s infrastructure.' },
+        { id: 57, title: 'The Invisible Front', summary: 'The infiltration battle at Cradle Zero; the Tree Army is dismantled by a phantom enemy.' },
+        { id: 58, title: 'The Identification of the Fire', summary: 'Rahu is identified as the invisible foe; the terrifying reality of his mastery.' },
+        { id: 59, title: 'The Great Stalemate', summary: 'Disillusionment and the passage of time; the Crew\'s isolation in the wilderness.' },
+        { id: 60, title: 'The Core Debate', summary: 'Internal debates within the Core leadership regarding the "Maya" problem.' },
+        { id: 61, title: 'The Failing Cities', summary: 'The rise of pro-villager sentiment in the Hive Cities; failure of the Core\'s utopia.' },
+        { id: 62, title: 'The Peaceful Emissary', summary: 'The Core\'s diplomatic gambit; a respectful emissary arrives with an ultimatum.' },
+        { id: 63, title: 'Cassia\'s Warning', summary: 'Cassia Vane\'s secret plea to Arlo; the revelation of "Plan B."' },
+        { id: 64, title: 'The Stoic Refusal', summary: 'Arlo\'s reasoned rejection of the Core\'s offer; acceptance of the inevitable cost.' },
     ];
 
     const togglePlay = (id: number, url: string) => {
@@ -62,28 +92,34 @@ export default function ManuscriptPage() {
 
     const sections = [
         {
-            id: 'awakening',
-            title: 'Part 1: Awakening',
-            range: [1, 8],
-            summary: "Lem's transition from a quiet suburban life to an activated Vessel as the mechanical First Wave descends upon Earth."
+            id: 'shattered-approach',
+            title: 'Part I: The Shattered Approach',
+            range: [1, 15],
+            summary: "The end of the Before Time and the desperate struggle on the Moon that leads to the Great Fry."
         },
         {
-            id: 'desolation',
-            title: 'Part 2: Desolation',
-            range: [9, 15],
-            summary: "The desperate struggle on the lunar surface and the confrontation within the pyramid that triggers the Great Fry."
+            id: 'thousand-year-fallacy',
+            title: 'Part II: The Thousand-Year Fallacy',
+            range: [16, 29],
+            summary: "Lem wakes in Year 15 AT, serving a 'utopian' Core while discovering the propaganda of the Archivists."
         },
         {
-            id: 'the-hive',
-            title: 'Part 3: The Hive',
-            range: [16, 25],
-            summary: "Lem's consciousness wakes in a new era, serving the Archivists' utopian vision until the cost of their 'paradise' is revealed."
+            id: 'white-forest',
+            title: 'Part III: The White Forest',
+            range: [30, 40],
+            summary: "A journey into the frozen north, the revelation of the King of the Gorgons, and Lem's transition to Analog."
         },
         {
-            id: 'the-forest',
-            title: 'Part 4: The Forest',
-            range: [26, 34],
-            summary: "A journey into the frozen north where analog echoes and forbidden memories challenge the digital order."
+            id: 'analog-dawn',
+            title: 'Part IV: The Analog Dawn',
+            range: [41, 58],
+            summary: "The mobilization of the Tree Army, the search for the Water Vessel, and the confrontation with Rahu."
+        },
+        {
+            id: 'great-stalemate',
+            title: 'Part V: The Great Stalemate',
+            range: [59, 64],
+            summary: "The silent years of resistance and the final diplomatic ultimatum that precedes the final storm."
         },
     ];
 
@@ -248,8 +284,8 @@ export default function ManuscriptPage() {
                         ))}
                         <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg mb-12">
                             <p className="text-zinc-600 text-sm italic">
-                                Further chapters are currently undergoing Lore Hardening.
-                                Check back as the Aether-Drive logs are decrypted.
+                                The First Edition of Lem's Memories is complete.
+                                Further aetheric logs may be uncompiled in future iterations.
                             </p>
                         </div>
                     </div>
