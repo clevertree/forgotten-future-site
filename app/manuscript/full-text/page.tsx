@@ -117,7 +117,8 @@ export default function FullTextManuscript() {
                         </div>
                     </section>
                 ))}
-            </article>
+                </article>
+            </div>
 
             {activeComment && (
                 <CommentPopup

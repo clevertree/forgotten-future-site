@@ -9,7 +9,8 @@
     "lint": "next lint",
     "test": "cypress run --component",
     "test:watch": "cypress open --component",
-    "test:headless": "cypress run --component --headless"
+    "test:headless": "cypress run --component --headless",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
@@ -37,6 +38,7 @@
     "cypress": "^13.6.6",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "husky": "^9.1.7",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
