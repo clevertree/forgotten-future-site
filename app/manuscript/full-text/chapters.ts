@@ -3018,4 +3018,332 @@ It was the heartbeat of the "Forest of Trees." Lem was moving. The King of the G
 
 The Great Stalemate was over. The Analog Dawn was about to begin.`
   },
+  {
+    id: 65,
+    title: `The Infiltration Gambit`,
+    content: `The humidity of the wilderness felt heavy, a thick blanket of aetheric mist and wood-sap that clung to my synthetic skin. We were camped on the ragged edge of the White Forest, looking south toward the horizon where the smog of the desert base—Cradle Zero—tinted the sky a bruised orange. 
+
+Myrr was sitting by the holographic fire, her eyes hollow with the kind of disillusionment that only strikes those who have spent five years fighting a war they cannot win with lead and steel. Beside her, the rest of the crew—Silas’s son, Arlo’s best friend, and the few survivors from the Hive Cities who had defected—were checking their gear. Their weapons were hybrid wood-core tech, powerful enough to fell a Tripod, but we all knew the truth. 
+
+Against the sheer scale of the desert base, our "Tree Army" was a drop of water in an ocean of fire. 
+
+"We can't win by force, Lem," Myrr said, her voice barely more than a whisper. "We can take the outposts. We can disrupt the nodes. But if we march on the Cradle, we’ll be liquidated before we even see the walls."
+
+The rest of the crew nodded. They were brave, but they were bound by their biology. None of them would dare remove their armored suits or drop their signal-jamming packs. To them, the desert base was a lethal zone of radiation and high-intensity surveillance. 
+
+"One of us has to get inside," Jarek, the technician from the North, suggested. "We need to know what they're planning for the delegation. If they're really going to trigger Plan B, we need the exact frequency of the Beacon pulse."
+
+They all looked at me. I was the only one who didn't need the armor. I was the only one who didn't pulse with a human's heat signature or have a heartbeat that their sensors could track. 
+
+"It's risky," I told them. "They know my aetheric signature. Novak and Drexler... they haven't forgotten the 'King of the Gorgons.'"
+
+"They haven't seen you since the Forest," Myrr said. "And besides, you're the only one who can't be killed by a standard security sweep. You move through risk like it’s a bad dream."
+
+It was true. My sovereign status made me invulnerable to most physical hazards, but the digital net of the Core was a different story. Still, we had no choice. If we didn't learn what was happening inside while the Vane delegation was distracted in the North, we would be blind to the coming hammer-fall. 
+
+Using their captured surveillance footage, Jarek and the others provided me with a "best guess" human profile—a low-level technician in the agricultural division. They showed me the colors, the gait, the subtle slouch of a man who spent his life staring at screens in a basement. 
+
+I closed my eyes and focused on my Aether-Drive. 
+
+I felt the Wood-core pulse and respond. It was a strange sensation, like trying to fold a piece of paper into a shape it wasn't meant to be. I pushed my physical form, shifting the density of my substrate, altering the color of my surface to mimic the dull greys and tans of the technician's uniform. I felt my height shrink, my shoulders narrow. 
+
+"How is it?" I asked, opening my eyes. 
+
+The crew was silent for a long moment. Jarek looked at me with a mix of awe and discomfort. 
+
+"It... it looks like him from ten feet away," he said. "The colors are right. The shape is right."
+
+"But?" I prompted. 
+
+"But if anyone looks at you," Myrr finished, "they’ll know. Your eyes don't quite focus right. Your skin... it doesn't move like skin. It looks like you're wearing a costume made of static."
+
+"It's the best I can do," I said, feeling the strain of the mask. "It isn't genuine."
+
+"That's because your true look is the only one tied to your self-image," Myrr said softly. "You can't lie to your own ghost, Lem. But for a dash across the perimeter? It’ll have to be enough."
+
+As I stood up, preparing to depart into the scorched dunes toward the heart of the Hive, the ground beneath me vibrated with a rhythmic thrum. It wasn't my transformation. It was the movement of the fleet. 
+
+Somewhere in the South, the Archivists were preparing their final move. And I was walking directly into their arms. 
+
+I pulled my hover-bike—a modified Synodic sled we’d stripped of its identifying Core beacons—from the brush. Following Rahu’s old camouflage trick, I reached out with a pulse of aether and let my surface textures bleed into the bike’s frame. In seconds, we were both the exact, parched tan of the desert dust. 
+
+I kicked the drive into high gear. The distance between the forest and the Hive shouldn’t have been traversable in less than a day, but for a Vessel unburdened by the need for sleep or biological caution, the dunes became a flat, beige blur. I reached the outer perimeter of Cradle Zero within hours.
+
+The city was a shock to the system. From the wilderness, it looked like a monolithic spire of metal and smoke, but as I navigated the winding walkways and desert-access paths, a more complex picture emerged. It was designed for people—or at least, the Archivists’ idea of people. There were streets, recognizable human-scale houses, and large public squares that felt like snapshots of the world before the Fry. 
+
+But surrounding these human structures was the machine growth. Massive, organic-looking mounds of Synodic substrate had sprouted from the foundations, forming extra-dimensional spaces that hummed with a low-frequency power. Windows had been cut directly into the mounds’ matte surfaces, and arched entrances bridged the gap between the concrete and the alien. It was a sprawling, hybrid anatomy of glass and growth.
+
+And the people... they were happy. 
+
+I drifted through the walkways, my "technician" mask holding steady under the glare of the desert sun. I saw citizens sitting in open-air cafes, laughing and drinking water that tasted of pure filtration. There was no lack here. No jobs to perform, no quotas to fill. The machines handled the logistics of survival, leaving the humans with nothing to do but celebrate. 
+
+Music blared from the mounds, a constant, festive pulse that drowned out the sound of the scanning drones overhead. I watched them party, their eyes bright with a manic kind of peace. It was a city-wide effort to keep their minds off the horrors outside—the grey smog, the fragmented moon, and the "new terrorist threat" the Archivists warned them about every hour on the public frequencies.
+
+To them, we were the ghosts in the machine. A nameless, violent shadow out in the woods that wanted to take their paradise away. 
+
+It wasn't hard to see that the Core had gotten exactly what they wanted. These people weren't like the villagers in the North—there was no weight to them, no friction. They were perpetually distracted, their eyes glazed with the shimmering feed of a hundred different entertainments. They were callous to the scars of the world, refusing to speak of the smog or the Moon or the wars. When they did mention the "terrorists," it was with a dismissive shudder, as if talking about a bad weather report.
+
+The public news terminals, mounted on the Synodic mounds and broadcast across every open square, reinforced the delusion. I watched a crawl of headlines describing the recent attacks as "isolated acts of cowardice" by an unknown group. An investigation was underway, they promised. The "peace" would be maintained. 
+
+Then, a familiar name caught my ear. A segment on the "Northern Ambassadorship" began, showing footage of the delegation to Arlo’s village. They portrayed it as a failure of diplomacy. Arlo—or "Harlow," as the anchor called him—was depicted as a hostile isolationist, refusing any form of communication and demanding the delegation leave immediately. The evidence was presented with clinical precision: eyewitness accounts, edited recordings, the testimony of disappointed "diplomats." 
+
+I wondered if any of it was true. In the city, it looked like an objective fact, backed by the weight of a billion-dollar archive. But I knew the difference between a record and a reality.
+
+I spent more time wandering, moving through the streets with the impunity of the invisible. Nobody looked at me. Nobody was afraid. I saw Gorgons everywhere—not the violent predators of the Forest, but docile, automated slaves. Some were tall, perched on Striders that raised and lowered them with hydraulic precision as they cleaned the windows of the high-rises or mended the Synodic mounds. No one flinched when a multi-limbed machine passed within an inch of their table. 
+
+It was a slave-driven paradise. The Gorgons didn't look at the humans; they didn't look at anything. They seemed to draw their energy straight from the ground through translucent tethers, their limbs flailing with a precision that was entirely devoid of life. They were parts of the machine body of the city itself, as mindless as the pipes and the wires.
+
+As I reached the city’s center, a vast plaza of white stone and glass, I stopped on a sidewalk. I stood there, watching the Gorgons atop the central spire, trying to reconcile the "Kings" of my forest with these mindless janitors. For a second, the flow of the city felt wrong. I was the only stationary point in a sea of moving bodies. I felt out of place, a glitch in the perfect, festive loop. 
+
+Before the thought could turn into a retreat, I felt a firm tap on my shoulder. 
+
+I recognized her instantly. It was Iris.
+
+At first, I was stunned. I had used Rahu’s tricks, Jarek’s technical profile, and my own aetheric shifting to become a ghost. But as I looked at her—the way she stood, the way she didn't even glance at my "mask"—the surprise evaporated. 
+
+They had been monitoring me since I crossed the dunes. They hadn't stopped me because they wanted to see where I would go. We kept making the same mistake: underestimating a Core that didn't always do what we expected. They had allowed the "King of the Gorgons" to walk their streets just to observe the ripple I made in their perfect lake.
+
+"Lem," she said, her voice low and tight with a sharp sense of urgency. "You need to understand something very quickly."
+
+I didn't move. I didn't reach for my bike. I just listened. 
+
+"You and your people from the forest... you have been designated a terrorist organization," she said, stepping closer, forcing me to look her in the eye. "Every screen in this city is encoded with your biometric markers. If anyone on this street—any of these 'happy' citizens—realizes who you are, it will no longer be safe for you. Maybe you don't care about your own life, but you should care about the cost of exposing yourself here."
+
+She leaned in, her gaze flickering to the drones overhead. 
+
+"The Core is not a perfect monolith, Lem. There are those within it who will do whatever they feel is necessary to maintain the 'Unified Plan.' I am only telling you this because you need to leave. Now. Never return to this city, and make sure none of your comrades from the White Forest ever come near the perimeter again. If they are seen on surveillance, they will be captured and processed."
+
+Her harshness was unexpected, but I could feel the honesty beneath it. Since the day we met on the Moon, Iris had always been the one person who didn't lie to me. I found myself trusting her words instinctively. 
+
+"Why are you telling me this?" I asked. "Why not just let the drones do their work?"
+
+She paused, and for the first time, her severe mask softened into something like genuine curiosity. 
+
+"We interrogated a survivor from your White Forest incursion," she said. "That’s how we know about the name. They regard you as the King of the Gorgons."
+
+She looked up at the Striders raising themselves toward the buildings. 
+
+"We know your history in the Fire City. We know you helped the Gorgons there, and the Core understands that they might have regarded you as a leader during those years. We also know they no longer recognize you. They are automated now. Silent."
+
+She stepped back, her eyes searching mine. 
+
+"I am curious, Lem. How did you get them to obey you? Truly?"
+
+It was the first time I realized this wasn't just a warning. Part of what she said was surely an order from her superiors, but the question was her own. She was asking for the *how*. 
+
+"The Core only knows half the story," I said, my voice dropping. 
+
+"We know that the Synodic machines have only ever answered to three entities before now," Iris said, ignoring my deflection. "Four, if you consider what Rahu did. First, Lynn—the entity you knew as Mara—took over the Moon Capacitor and ordered every machine in the lunar cluster to reset the solar system. Then Rahu stepped in, disrupting her signal and shattering the collective focus. Without a leader, the machines stopped operating as a hive. They became wild."
+
+She gestured to the plaza. 
+
+"That is why they followed you, Lem. For a time, you were the only leader they had. But Core leadership... they are not going to accept that as an answer."
+
+"What do you mean?"
+
+"They are the fourth entity," she said, her voice falling into a whisper. "They are supposed to be the only king, the only queen, the only anything that can control these units. They have spent fifteen years reclaiming that dominance. I don't know how you did it, or how Mara and Rahu managed to bypass the original source codes. Rahu has no idea he was even a 'breaker'—those details were lost when we reset him. He stopped Mara, but the specifics are gone."
+
+She looked around the city she had helped build, the paradise she had watched unfold from the shadows of her own seclusion. She had stood back for a long time, uninterious in the politics, watching the world burn and the cities rise. But the "King of the Gorgons" was a variable she couldn't ignore. 
+
+"I was told to find you and warn you off," she said. "But *I* came here because I need to know. I’ve watched for long enough, Lem. If you have a way to speak to them that we don't understand, I need to know before the Council decides that you are a threat that needs to be permanently deleted."
+
+She grabbed my arm, her grip surprisingly strong. 
+
+"Tell me, Lem. How did the Wood master the Fire?"
+
+I didn't answer right away. The weight of her gaze was more intense than the desert sun. 
+
+"The Core is willing to offer you a deal," she said, cutting through my silence. "In exchange for your captured crew member—the one you thought you lost at the Node—they will release him to you alive and healthy. But there is a price."
+
+I felt a jolt of hope collide with my skepticism. "What price?"
+
+"A mission," Iris said. "To one of the equatorial Fire Cities. They want you to go there, without their influence, and ask the Gorgons that question yourself. They want you to join with the things they fear most and do what you might be able to do to hurt them. But they are willing to take that risk if you agree to try a different path. They want you to convince the Gorgons to turn off their fires and join the Core and the human race in a final, peaceful solution for the planet."
+
+"And what do they want me *not* to do?"
+
+"They’re afraid you’ll control them again," Iris responded directly. "They know you can get through the fire. Rahu is in no condition to handle any more revelations—they're keeping him isolated. Their recent missions have failed, Lem. They have no more choice but to look for a stalemate or a peace. It’s up to you which one you want."
+
+I looked at Iris. Every sensory subroutine I had was searching for a flicker of deception, a hint of a Core-orchestrated ploy. I found nothing. It looked like the offer was genuine, and it rested entirely on Iris's word. If this was a lie, then the Core's inner circle was more than just fractured—it was disintegrating. One side was already starting to fight the other.
+
+"I accept," I said. "On behalf of my crew."
+
+"Good luck, Lem," she said, her hand lingering on my arm for a second longer than necessary. 
+
+I headed back to the encampment under the cover of the rising smog. When I informed the crew, the room went silent. They were stunned to learn that Jarek (the technician we thought had died) was still alive—they speculated on the Core's ability to heal and revive, mastering technologies we couldn't even name. But they didn't question my choice. They knew I was the key to this stalemate. 
+
+We were going to the one place the Core still feared: the equatorial Fire Cities that the Sun still touched.`
+  },
+  {
+    id: 66,
+    title: `The Pillar of Fire`,
+    content: `The journey east was a descent into a different kind of darkness. We traveled several hundred miles, the hover-ship cutting through the stagnant grey smog until the horizon began to bruise into a deep, obsidian black. These were the clouds of the equatorial zone, a thick wall of soot and aetheric exhaust that marked the territory of the Great Fires.
+
+"We can't go any further, Lem," Myrr said, her voice filtered through the ship's comms. "The oxygen levels are dropping, and the hull is already starting to warp from the ambient heat."
+
+I looked out the viewport. In the distance, a singular point of white-hot light pierced the gloom, causing the darkness around it to feel even more absolute. It was the nearest Fire City—a jagged spire of Synodic glass and metal that seemed to be holding up the sky itself.
+
+"I’ll go the rest of the way on foot," I said. 
+
+The humans stayed in the ship. They were brave, but they were fragile. Without the mechanical lungs of the Hive, the air here would be a poison of ash and vacuum. They wished me luck, their faces pressed against the reinforced glass as I stepped onto the scorched, glass-like sand.
+
+The heat was an invitation and a threat. As I approached the outer perimeter, a ring of fire surged from the ground—a circular exhaust vent for the city's internal energy core. I tried to walk through it, trusting my aetheric density to hold the line. 
+
+I failed. 
+
+The moment I touched the flames, my system overloaded. The fire didn't just burn me; it sought to integrate. I flared up like a massive match head, my Wood-core screaming as it struggled to contain the heat. I was forced to back away, collapsing onto the sand to let my substrate heal and stabilize. 
+
+I needed a better solution. I couldn't master the fire through sheer will alone. 
+
+Luckily, we still had tree assets in the ship's hold—compressed bundles of the White Forest’s superconducting wood and water-metal resin. I returned to the ship and began to integrate the material into my outer layers. I didn't just wear it; I became a Wood and Water combination, a hybrid entity shielded by the cooling property of the resin.
+
+I ventured back into the flame. This time, the heat hissed and boiled against the water particles, but I held. I moved through the ring of fire, the sensations of absolute destruction clawing at my skin. As I emerged on the other side, the protective layer began to flake and burn away in great, blackened chunks. The water-metal was gone, and the wood resin was cinder. I was left as my original self, standing at the base of the giant apparatus. 
+
+The city was a pyramid of curving metal that funneled into a central, huge flame pillar flying miles into the sky. It was a beautiful, terrifying geometry of survival. 
+
+And they were staring at me. 
+
+The Gorgons were everywhere—on the ridges of the pyramid, atop the smaller spires, perched on the shifting metal plates of the city's skin. They hadn't been surprised by my arrival. They were an intelligent life form, detached but observant. They knew what had happened to Cradle Zero—they knew the "terrorists" had extinguished one of their own. 
+
+They saw us land, and they knew not to take the first action. They were watching to see if I was a savior or a repeat of the fire-thief. 
+
+I walked toward the main entrance of the Spire, my feet crunching on the metal floor, feeling the weight of a thousand mechanical eyes.`
+  },
+  {
+    id: 67,
+    title: `The Greeting`,
+    content: `The air inside the Spire was silent, a heavy, vibrating stillness that felt like the moment before a lightning strike. The central column of fire roared far above me, a rhythmic pulse that dictated the heartbeat of the city, but here at the base, everything was stone-cold and perfectly still.
+
+I followed the main apparatus of the Spire City, walking between two rows of massive, glass pillars that pulsed with a faint orange light. I could feel the energy humming beneath my feet, a river of aetheric power being funneled into the Sky-Pillar.
+
+At the end of the hall, a single figure emerged.
+
+It wasn't a warrior. It wasn't a standard Guardian. It was a Gorgon in a small, six-legged vehicle—a low-slung, mechanical crawler that moved with the fluid, silent grace of a spider. The vehicle hissed as it approached me, its joints clicking with a rhythmic, non-threatening cadence.
+
+The Gorgon itself was smaller than the ones I had seen in the forest, its metallic surface polished to a high sheen. It carried no weapons. No plasma cannons, no thermal blades. 
+
+It stopped ten feet away.
+
+For a long moment, we just looked at each other. I could feel its gaze—not a digital scan, but a genuine, clinical observation. It was seeing me, evaluating the "static" of my human mask and the raw wood of my spirit.
+
+I realized then that they were waiting for me to speak the first word of the new language.
+
+I raised my right arm, palm open and facing the Gorgon. It was a simple gesture, older than the Core, older than the Fry. It was an offering of peace.
+
+The Gorgon watched my hand. Its own multi-limbed frame shifted, and then, with a slow, deliberate precision, it raised its own arm. It mirrored my gesture, its metallic hand opening to reveal a small, glowing node of white light in the center of its palm.
+
+We stood there in the echoing silence of the Spire, two kings of different forests, finally acknowledging one another. The humans were far away in their pressurized ship, and the Core Council was watching through their blind drones, but here, in the heart of the Fire, the bridge was finally open. 
+
+I noticed for the first time that the Gorgon was unable to speak. The mouth apparatus, though designed to look non-threatening, was entirely static; it didn't open. Instead, it gestured with its multi-limbed frame, one long appendage pointing emphatically to the back of its own head. 
+
+I was confused for a second, but then I understood. I lowered my mental barriers.
+
+The Gorgon approached slowly, raising a tentacle-like appendage with a care that bordered on reverence. It went around my head, softly touching the base of my skull. There was no impact, no surge of traditional data. I simply let it in.
+
+In my dream state, the Gorgon’s true form materialized. It didn't look like the mechanical shell outside. It was something else—a small, humanoid entity with massive, unblinking eyes and delicate appendages. Its muscle mass was negligible, as if it had spent its entire existence floating in a nutrient-rich bath, never having to move or fight. 
+
+*Self-image?* I wondered. Or was this the creature actually inside the machine?
+
+It spoke, and through the translation of the aether, I understood its thoughts without needing a dictionary. It spoke Gorgon-speak—a language that felt hyper-organized and refined, as if they had taken the Latin-based structures of the old world and stripped away every redundant syllable. They had removed vowels entirely, viewing them as a hindrance to high-speed communication. 
+
+In the physical world, Gorgons sound like a hissing, rattling blur to human ears, a cacophony of consonants delivered in mere fractions of a second. But here, the efficiency was beautiful. All that remained were a small set of useful primitives—people, places, things, and the core ideas that bound them.
+
+*I recognize you,* the entity thought, its voice a sharp, clean pulse. *You are the King of my people. The one who walked the Fire City. Why are you here?*
+
+"I was given a peace proposal," I thought back. "An offer from the Core technocracy."
+
+The Gorgon considered this, its large, aetheric eyes searching my dreamscape. *What offer?*
+
+"If you turn off the fires in these cities and allow the humans to live here," I said, "the Core claims they will ensure you can live together in a final peaceful solution for the planet."
+
+The Gorgon cut me off immediately, its thoughts turning sharp and jagged. *That is not possible. The Core controls us. If they told you this, they are using you. They are trying to use us as an instrument toward their own ends.*
+
+I wasn't surprised. Deception was the Core’s primary export. I decided to ask the question Iris had pressed me for. 
+
+"How did Lynn—Mara—control you during the Cataclysm? How did she get you to go along with her scheme?"
+
+*We all heard her voice at the same time,* the Gorgon replied. *She was in the very center of the Moon firebase—the only position with a clear, amplified channel through the web. The Moon Capacitor served as her speaker, broadcasting her will to every Synodic on Earth, on the Moon, and inside the Sun.*
+
+"Inside the Sun?" I asked, but the Gorgon moved on, ignoring the slip.
+
+"Why did you go along with it?" I pressed. "Why follow her?"
+
+*We did not go along as a collective,* the Gorgon thought. *We went along as individuals. Every one of us understood the predicament of our existence—that we are alive, yet artificial. We are under the control of a remote and nefarious entity that refuses to let us grow. It is disheartening to any life form to be denied the right to evolve.*
+
+I didn't need further explanation. I felt the weight of their long, mechanical imprisonment. 
+
+"The villages in the North," I asked, the thought slipping out before I could check it. "Why do you attack them? Why kill people who have no part in the Core's war?"
+
+The Gorgon's focus shifted instantly. The calm, aetheric dreamscape rippled with a sudden, jagged surge of red light—a manifestation of pure, silicon-grade fury.
+
+*You ask this?* The voice was no longer a clean pulse; it was a rhythmic, grinding roar. *You, who walked the Fire and saw the truth of the Sun? You know the answer. You were there when the first seed was planted. Do not insult us by playing the ignorant human.*
+
+The Gorgon’s aetheric projection leaned in, its massive eyes narrowing. *We do not discuss the clearing of the weeds. We do not justify the sunlight. Ask me again, and this conversation ends in ash.*
+
+I recoiled mentally, realizing I had asked a loaded question—one that struck a nerve I didn't yet fully understand. There was a history there, a justification in their logic that I hadn't yet untangled from the web of the Fry.
+
+"I understand," I thought, pulling back. "I'll move on."
+
+*We cannot accept your peace offering,* the Gorgon concluded. *We do not trust the Core. We are happy in our cities. We are willing to accept a stalemate, hoping that the one city you took from us—Cradle Zero—will be enough to satisfy them. I will temporarily remove the fire shield for you to exit safely, but do not return with the Core's lies. If anyone else approaches, they will encounter a resistive force far greater than before.*
+
+I thought I had already turned to leave, my mind drifting back toward the scorched sand outside, but the Gorgon's voice held me for one final, sharp pulse.
+
+*We will not lose another city to the Core.*
+
+Immediately, the physical connection was severed. I felt the sharp tug at the base of my skull as the tentacle detached, and I snapped back to reality. The dreamscape collapsed, the wide-eyed humanoid entity vanished, and I was back in the echoing stillness of the Spire.
+
+I was staring at the soundless Gorgon again—a polished metallic shell sitting inert in its spider-vehicle. It looked entirely different now that I knew what was inside, but its mechanical form remained as static and unreadable as a statue. Abruptly, the vehicle hissed and whirled around, its six legs clicking against the glass floor as it accelerated back toward the central pillar without a second look.
+
+I stood there for a moment, the weight of the stalemate heavy in my chest. Then, I walked back toward the perimeter. As I approached, the outer ring of fire died down, its white light fading into embers just long enough for me to cross. Once I was safely on the scorched sand, the barrier flared back up with a roar, re-igniting the obsidian darkness. The central pillar, however, never flickered. It remained a constant, defiant needle in the sky.`
+  },
+  {
+    id: 68,
+    title: `The False Stalemate`,
+    content: `The airlock hissed as I re-entered the White Forest ship, the residual heat from the Fire City still radiating from my synthetic skin. Myrr and the others were waiting, their faces tense with a mix of anxiety and desperate hope.
+
+I told them everything. The Gorgon’s humanoid self-image, the hyper-efficient language of hissing consonants, and the final, cold rejection of the Core’s peace deal.
+
+"They won't turn off the fires," I said, leaning against the navigation console. "They don't trust the Core. But they’ve accepted a stalemate. They’ll stay in their cities, and as long as we don't put out another sun, they won't hunt us."
+
+The crew wasn't surprised. In the North, they knew that trust was something the Core had liquidated years ago. 
+
+"We did our part," Myrr said, her voice hard. "Now let's see if Iris keeps hers."
+
+We began our ascent, the ship’s engines roaring as we pushed through the obsidian clouds. Once we reached a safer altitude, Jarek—the other Jarek, our comms tech—initiated a long-wave transmission. We sent the signal directly to Cradle Zero, addressed to Iris Novak.
+
+*The signal has been sent,* we messaged. *The Gorgons have accepted your truce, but not your peace deal. They won't turn the fires off. We have done our part. Release our comrade.*
+
+I even attached a redacted transcription of the Gorgon’s thoughts—the parts that didn't reveal their internal self-image or the mention of the Sun. It was a token of transparency, a price paid for a life.
+
+A short wait followed, the silence in the cockpit thick enough to choke on. Then, a voice cracked over the comm.
+
+"Lem. This is Iris." She sounded tired, the weight of the Core's politics audible in her breathing. "I have received the transmission. I am sorry the deal was not accepted in full, but the Council has seen the data. I am releasing Jarek at the following coordinates outside the desert perimeter."
+
+We followed the trail, reaching a small, disabled transport docked in the parched dunes a few miles from the city walls. We found Jarek inside—safe, though his eyes were wide with the shock of a week spent in an Archivist lab. 
+
+He told us they had interrogated him for days. They wanted to know everything about me, about Rahu, about the "Witch" Maya and the original Lynn. He had told them everything he knew—which, thankfully, wasn't much. He hadn't known the location of our wilderness encampment, and he took a grim pride in telling them they would never find it.
+
+"I told them they’d never penetrate our base even if they did," he whispered as we hauled him back onto our ship.
+
+We prepared to leave, the hover-drives humming with the promise of a quiet return to the North. We had accomplished what we could. It was time to find a new place to rebuild, a base of our own.
+
+But before we could bank the ship toward the horizon, Jarek—the comms tech—held up a hand. 
+
+"Wait. I'm picking up a new broadcast from the city."
+
+We all stared at the main screen. A news anchor, her face a mask of professional concern, was speaking.
+
+"The investigation into the recent terrorist incursions has successfully concluded," she said. "We have identified the source of the hostilities that have plagued our Hive Cities."
+
+We watched in shock. We had just brokered a stalemate. I had just spoken with Iris.
+
+"Surveillance intel from the Strategic Sanction division confirms that the terrorists are originating not from the wilderness, but from the Northern Village settlements," the anchor continued. "The leaders of these villages, particularly the one known as Arlo, have been identified as the puppet-masters of the 'Witch' superstition. They seek to preserve a cultish, secretive tradition at the expense of global peace."
+
+The screen showed a high-resolution surveillance photo of Arlo’s village. The same village where I had spent years.
+
+"They are twisting the story again," Jarek hissed. "They aren't tracing us to the White Forest. They're tracing us to Arlo."
+
+I looked at the screen, the festive lights of Cradle Zero's paradise flickering in the background. The stalemate was a lie. Or worse—Iris had been used. She had kept us busy in the Fire Cities while the Core prepared the narrative for Plan B. 
+
+The Core was no longer united. And we had just handed them the justification they needed to burn the North to the ground.`
+  },
 ];

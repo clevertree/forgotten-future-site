@@ -22,7 +22,7 @@ describe('CommentAnchor Component', () => {
   it('should show comment button on hover', () => {
     // Initial state: Hidden (opacity-0)
     cy.get('button[title="Add comment"]').parent().should('have.class', 'opacity-0');
-    
+
     // Hover: Visible (opacity-100)
     cy.contains('Hover me to add feedback').parents('.group').trigger('mouseover');
     cy.get('button[title="Add comment"]').parent().should('have.class', 'group-hover:opacity-100');

@@ -75,6 +75,10 @@ export default function ManuscriptPage() {
         { id: 62, title: 'The Peaceful Emissary', summary: 'The Core\'s diplomatic gambit; a respectful emissary arrives with an ultimatum.' },
         { id: 63, title: 'Cassia\'s Warning', summary: 'Cassia Vane\'s secret plea to Arlo; the revelation of "Plan B."' },
         { id: 64, title: 'The Stoic Refusal', summary: 'Arlo\'s reasoned rejection of the Core\'s offer; acceptance of the inevitable cost.' },
+        { id: 65, title: 'The Infiltration Gambit', summary: 'Lem infiltrates the desert base Cradle Zero, meets Iris Novak, and accepts a mission to the Fire Cities to find a stalemate.' },
+        { id: 66, title: 'The Pillar of Fire', summary: 'Lem journeys to an equatorial Fire City, using a wood-water hybrid shield to survive the intense solar heat barrier.' },
+        { id: 67, title: 'The Greeting', summary: 'Lem achieves the first peaceful contact with a Gorgon and discovers the truth behind the attacks on the Northern villages.' },
+        { id: 68, title: 'The False Stalemate', summary: 'A companion is released as part of the deal, but the Core immediately breaks the truce with a propaganda strike against Arlo.' },
     ];
 
     const togglePlay = (id: number, url: string) => {
@@ -118,7 +122,7 @@ export default function ManuscriptPage() {
         {
             id: 'great-stalemate',
             title: 'Part V: The Great Stalemate',
-            range: [59, 64],
+            range: [59, 68],
             summary: "The silent years of resistance and the final diplomatic ultimatum that precedes the final storm."
         },
     ];
