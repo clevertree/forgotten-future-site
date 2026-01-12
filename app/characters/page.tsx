@@ -11,11 +11,15 @@ interface Character {
 
 const CHARACTERS: Character[] = [
     { id: 'lem', name: 'Lem', src: '/media/characters/lem/lem-landscape.png', alt: 'Lem - Wood Vessel' },
+    { id: 'lem-variant', name: 'Lem (Variant)', src: '/media/characters/lem/lem-landscape-variant.png', alt: 'Lem - Wood Vessel (Variant)' },
+    { id: 'lem-variant2', name: 'Lem (Variant 2)', src: '/media/characters/lem/lem-landscape-variant2.png', alt: 'Lem - Wood Vessel (Variant 2)' },
     { id: 'lynn', name: 'Lynn', src: '/media/characters/lynn/lynn-landscape.png', alt: 'Lynn - Water Vessel' },
     { id: 'rahu', name: 'Rahu', src: '/media/characters/rahu/rahu-landscape.png', alt: 'Rahu - Fire Vessel' },
+    { id: 'rahu-2', name: 'Rahu (Alt)', src: '/media/characters/rahu/rahu-landscape2.png', alt: 'Rahu - Fire Vessel (Alt)' },
     { id: 'tor', name: 'Tor', src: '/media/characters/tor/tor-landscape.png', alt: 'Tor - Earth Vessel' },
     { id: 'arlo', name: 'Arlo', src: '/media/characters/arlo/arlo-landscape.png', alt: 'Arlo - The Tech-Welder' },
     { id: 'cassia_vane', name: 'Cassia Vane', src: '/media/characters/cassia_vane/cassia_vane-landscape.png', alt: 'Cassia Vane' },
+    { id: 'elowen', name: 'Elowen', src: '/media/characters/elowen/elowen-landscape.png', alt: 'Dr. Elowen Vane' },
     { id: 'anton_drexler', name: 'Anton Drexler', src: '/media/characters/anton_drexler/anton_drexler-landscape.png', alt: 'Overseer Anton Drexler' },
     { id: 'iris_novak', name: 'Iris Novak', src: '/media/characters/iris_novak/iris_novak-landscape.png', alt: 'Commander Iris Novak' },
     { id: 'myrr', name: 'Myrr', src: '/media/characters/myrr/myrr-landscape.png', alt: 'Myrr - Leader of the Analog Sanctuary' },
@@ -238,7 +242,7 @@ export default function CharactersPage() {
                         <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('arlo')}>
                                 <img
-                                    src="/media/characters/arlo/arlo-portrait.png"
+                                    src="/media/characters/arlo/arlo-landscape.png"
                                     alt="Arlo - The Tech-Welder"
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
@@ -274,6 +278,28 @@ export default function CharactersPage() {
                             <div className="space-y-4 text-gray-300">
                                 <p>
                                     The daughter of Dr. Elowen Vane, Cassia is an elite Harmonizer who "sings" command codes into the Synodic field. Her sterile perfection begins to crack as she witnesses the undeniable "spirit" within her mother's creations.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Elowen */}
+                        <div className="glass-panel p-6 border-l-4 border-l-purple-500">
+                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('elowen')}>
+                                <img
+                                    src="/media/characters/elowen/elowen-landscape.png"
+                                    alt="Dr. Elowen Vane"
+                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
+                                </div>
+                            </div>
+                            <h3 className="text-xl font-bold mb-1">Dr. Elowen Vane</h3>
+                            <p className="text-xs text-purple-400 uppercase tracking-widest mb-4 font-semibold">The Architect</p>
+                            <p className="text-gray-300 italic mb-4">"I created them with more soul than any human I've known."</p>
+                            <div className="space-y-4 text-gray-300">
+                                <p>
+                                    A visionary bio-engineer and mother of Cassia, Elowen designed the Vessel framework to carry "spark"—consciousness and emotional depth. Broken by the Core's misuse of her creation, she became an early architect of the Analog Sanctuary's philosophy.
                                 </p>
                             </div>
                         </div>
