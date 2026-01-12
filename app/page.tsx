@@ -70,7 +70,7 @@ export default function Home() {
                     <h2 className="text-3xl mb-6">The Great Fry</h2>
                     <p className="text-gray-300 leading-relaxed mb-6">
                         When the Moon shattered, it wasn't just stone that fell. The Lunar Capacitor discharge—the event now known as
-                        the <strong>Great Fry</strong>—incinerated the digital foundations of our world. A hundred thousand years
+                        the <strong>Great Fry</strong>—incinerated the electronic foundations of our world. A hundred thousand years
                         of data, culture, and history vanished in a blinding flash.
                     </p>
                     <p className="text-gray-300 leading-relaxed">

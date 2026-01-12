@@ -26,7 +26,7 @@ export default function StoryPage() {
                         <h3 className="text-cyan-400 text-lg mb-2 underline">Day 0: The Great Fry</h3>
                         <p className="text-gray-300 leading-relaxed">
                             The Lunar Capacitor discharge. Initiated by Lynn and sabotaged by Rahu, the reset failed to achieve its
-                            biological purpose, instead short-circuiting every digital system in the solar system. The Moon's surface
+                            biological purpose, instead short-circuiting every electronic system in the solar system. The Moon's surface
                             sheered off, falling to Earth as the debris field that would define the next decade.
                         </p>
                     </div>
@@ -48,7 +48,7 @@ export default function StoryPage() {
                         <h3 className="text-cyan-400 text-lg mb-2">Wood (Lem)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             The Vessel of Growth and Memory. Hidden in suburban anonymity, Lem's nature was only revealed during the
-                            Cataclysm. He carries the software legacy of the Water element.
+                            Cataclysm. He carries the aetheric legacy of the Water element.
                         </p>
                     </div>
                     <div>
@@ -62,7 +62,7 @@ export default function StoryPage() {
                         <h3 className="text-blue-400 text-lg mb-2">Water (Lynn)</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             The Vessel of Flow and Preservation. Lynn dissolved into the Lunar Capacitor to initiate the reset.
-                            She survives as an AI guided by Lem's Aether-Drive.
+                            She survives as a spirit guided by Lem's Aether-Drive.
                         </p>
                     </div>
                     <div>
@@ -88,7 +88,7 @@ export default function StoryPage() {
                         <h3 className="mb-4">Aetheric Drive</h3>
                         <p className="text-sm text-gray-400">
                             The resonance engine that allows Vessels to communicate with the Schema of the solar system. For Lem,
-                            this includes the spectral presence of AI Lynn.
+                            this includes the spectral presence of the Spirit of Lynn.
                         </p>
                     </div>
                     <div className="glass-panel">

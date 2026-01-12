@@ -2,12 +2,12 @@
 
 const path = require("path");
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-console.log('Building with basePath:', basePath);
+const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+const basePath = isStatic ? (process.env.NEXT_PUBLIC_BASE_PATH || '/forgotten-future-site') : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: process.env.NEXT_PUBLIC_IS_STATIC === 'true' ? 'export' : undefined,
+    output: isStatic ? 'export' : undefined,
     basePath: basePath || undefined,
     assetPrefix: basePath || undefined,
     // Configure pageExtensions

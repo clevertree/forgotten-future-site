@@ -19,7 +19,7 @@ export default function FullTextManuscript() {
         { title: 'II: Thousand-Year Fallacy', range: [16, 29] },
         { title: 'III: White Forest', range: [30, 40] },
         { title: 'IV: Analog Dawn', range: [41, 58] },
-        { title: 'V: Great Stalemate', range: [59, 64] },
+        { title: 'V: Great Stalemate', range: [59, 68] },
     ];
 
     return (
@@ -58,14 +58,14 @@ export default function FullTextManuscript() {
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
-                    All 64 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
+                    All 68 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
             </header>
 
             <div className="flex flex-col lg:flex-row gap-12 relative">
                 {/* Navigation Sidebar */}
                 <aside className="lg:w-1/4 no-print order-2 lg:order-1">
-                    <div className="glass-panel sticky top-32 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
+                    <div className="glass-panel sticky top-36 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
                         <h2 className="text-sm font-bold text-cyan-500 uppercase tracking-[0.2em] mb-6 border-b border-white/10 pb-2">
                             Navigation
                         </h2>
