@@ -51,7 +51,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={`${inter.className} scroll-smooth`}>
+        <html lang="en" className={`${inter.className} scroll-smooth`} data-scroll-behavior="smooth">
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <Providers>
                     <header className="fixed top-0 w-full z-50 no-print">

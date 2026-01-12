@@ -26,6 +26,7 @@ export default function Navigation() {
                         alt="Forgotten Future Icon"
                         fill
                         className="object-contain group-hover:scale-110 transition-transform duration-300"
+                        sizes="(max-width: 768px) 48px, 80px"
                     />
                 </div>
                 <span className="text-xl md:text-3xl font-bold tracking-tighter text-cyan-400 text-glow">
