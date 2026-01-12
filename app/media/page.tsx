@@ -7,6 +7,7 @@ import { CommentAnchor } from '../components/Feedback/CommentAnchor';
 import { CommentPopup } from '../components/Feedback/CommentPopup';
 import { SuccessPopup } from '../components/Feedback/SuccessPopup';
 import { ImageModal } from '../components/ImageModal';
+import { prefixPath } from '../../lib/utils';
 
 export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -15,21 +16,21 @@ export default function MediaPage() {
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
     const images = [
-        { src: '/media/teaser/hero_redacted_prophecy.png', title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
-        { src: '/media/teaser/hero_synodic_walkers.png', title: 'First Wave', meta: 'The Fallacy Broadcast' },
-        { src: '/media/teaser/hero_disintegrating_moon.png', title: 'The Great Fry', meta: 'Day 0 Post-Reset' },
-        { src: '/media/teaser/hero_windows_sigh.png', title: 'Windows Sigh', meta: 'Structural Meltdown' },
-        { src: '/media/teaser/hero_great_fry.png', title: 'Self-replicating machine', meta: 'Synodic Shard Accumulation' },
-        { src: '/media/teaser/hero_lightning_scars.png', title: 'Lightning Scars', meta: 'Electrical Resonance' },
-        { src: '/media/teaser/hero_melting_building.png', title: 'Resonance Meltdown', meta: 'Resonance Meltdown' },
-        { src: '/media/teaser/hero_pillar_of_fire.png', title: 'Cradle Zero', meta: 'Decade of Revelation' },
-        { src: '/media/teaser/hero_incubating_cube.png', title: 'Reincarnation', meta: 'Vessel Synthesis' },
-        { src: '/media/teaser/hero_witch_humanoids.png', title: 'The Vanguard', meta: 'Metal Vessel Activation' },
-        { src: '/media/teaser/hero_lem_moon.png', title: 'Isolation', meta: 'Lunar Surface Fragment' },
-        { src: '/media/teaser/hero_front_bg.png', title: 'The Desert Base', meta: 'Post-Fry Adaptation' },
-        { src: '/media/teaser/hero_2_mechanical_white_forest_2.png', title: 'Mechanical Forest', meta: 'Synodic Flora Evolution' },
-        { src: '/media/teaser/hero_3_desert_base_3.png', title: 'The Core Technocracy', meta: 'Cradle Zero Outpost' },
-        { src: '/media/teaser/ff-title.png', title: 'Logo Concept', meta: 'Official Wuxing Alignment' },
+        { src: prefixPath('/media/teaser/hero_redacted_prophecy.png'), title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
+        { src: prefixPath('/media/teaser/hero_synodic_walkers.png'), title: 'First Wave', meta: 'The Fallacy Broadcast' },
+        { src: prefixPath('/media/teaser/hero_disintegrating_moon.png'), title: 'The Great Fry', meta: 'Day 0 Post-Reset' },
+        { src: prefixPath('/media/teaser/hero_windows_sigh.png'), title: 'Windows Sigh', meta: 'Structural Meltdown' },
+        { src: prefixPath('/media/teaser/hero_great_fry.png'), title: 'Self-replicating machine', meta: 'Synodic Shard Accumulation' },
+        { src: prefixPath('/media/teaser/hero_lightning_scars.png'), title: 'Lightning Scars', meta: 'Electrical Resonance' },
+        { src: prefixPath('/media/teaser/hero_melting_building.png'), title: 'Resonance Meltdown', meta: 'Resonance Meltdown' },
+        { src: prefixPath('/media/teaser/hero_pillar_of_fire.png'), title: 'Cradle Zero', meta: 'Decade of Revelation' },
+        { src: prefixPath('/media/teaser/hero_incubating_cube.png'), title: 'Reincarnation', meta: 'Vessel Synthesis' },
+        { src: prefixPath('/media/teaser/hero_witch_humanoids.png'), title: 'The Vanguard', meta: 'Metal Vessel Activation' },
+        { src: prefixPath('/media/teaser/hero_lem_moon.png'), title: 'Isolation', meta: 'Lunar Surface Fragment' },
+        { src: prefixPath('/media/teaser/hero_front_bg.png'), title: 'The Desert Base', meta: 'Post-Fry Adaptation' },
+        { src: prefixPath('/media/teaser/hero_2_mechanical_white_forest_2.png'), title: 'Mechanical Forest', meta: 'Synodic Flora Evolution' },
+        { src: prefixPath('/media/teaser/hero_3_desert_base_3.png'), title: 'The Core Technocracy', meta: 'Cradle Zero Outpost' },
+        { src: prefixPath('/media/teaser/ff-title.png'), title: 'Logo Concept', meta: 'Official Wuxing Alignment' },
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
@@ -84,7 +85,7 @@ export default function MediaPage() {
                             <div className="bg-zinc-900/80 p-6 rounded-lg border border-white/5">
                                 <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">Teaser Audio Stream</p>
                                 <audio controls className="w-full h-8 accent-cyan-500">
-                                    <source src="/media/teaser/stars_die.mp3" type="audio/mpeg" />
+                                    <source src={prefixPath('/media/teaser/stars_die.mp3')} type="audio/mpeg" />
                                     Your browser does not support the audio element.
                                 </audio>
                             </div>
@@ -94,7 +95,7 @@ export default function MediaPage() {
                             onClick={() => openImage(images.length - 1)}
                         >
                             <Image
-                                src="/media/teaser/ff-title.png"
+                                src={prefixPath('/media/teaser/ff-title.png')}
                                 alt="Forgotten Future Logo"
                                 fill
                                 className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"

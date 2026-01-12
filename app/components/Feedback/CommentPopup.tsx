@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useSession, signIn } from 'next-auth/react';
+import Image from 'next/image';
 import { X, Github, Send, Loader2 } from 'lucide-react';
 
 interface CommentPopupProps {
@@ -128,7 +129,14 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
 
                     {session && (
                         <div className="flex items-center gap-3 p-3 bg-cyan-500/5 border border-cyan-500/20 rounded-lg">
-                            <img src={session.user?.image || ''} alt="Avatar" className="w-8 h-8 rounded-full border border-cyan-500/30" />
+                            <div className="relative w-8 h-8 rounded-full border border-cyan-500/30 overflow-hidden">
+                                <Image 
+                                    src={session.user?.image || ''} 
+                                    alt="Avatar" 
+                                    fill
+                                    className="object-cover" 
+                                />
+                            </div>
                             <div>
                                 <p className="text-sm font-medium text-white">{session.user?.name}</p>
                                 <p className="text-xs text-gray-500">Verified Contributor</p>

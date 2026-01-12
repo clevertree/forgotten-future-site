@@ -5,6 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navigation from './components/Navigation';
 import { Providers } from './components/Providers';
 import '../styles/globals.css';
+import { prefixPath } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
         siteName: 'Forgotten Future',
         images: [
             {
-                url: '/og-image.png',
+                url: prefixPath('/og-image.png'),
                 width: 1200,
                 height: 630,
             },
@@ -37,11 +38,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Forgotten Future | AI-Driven Sci-Fi Epic',
         description: 'Explore the cosmic aftermath of the Great Fry.',
-        images: ['/og-image.png'],
+        images: [prefixPath('/og-image.png')],
     },
     icons: {
-        icon: '/favicon.ico',
-        apple: '/apple-icon.png',
+        icon: prefixPath('/favicon.ico'),
+        apple: prefixPath('/apple-icon.png'),
     },
 }
 

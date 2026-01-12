@@ -3,14 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { prefixPath } from '@/lib/utils';
 
 export default function Home() {
     const images = [
-        '/media/teaser/hero_front_bg.png',
-        '/media/teaser/hero_lem_moon.png',
-        '/media/teaser/hero_incubating_cube.png',
-        '/media/teaser/hero_witch_humanoids.png',
-        '/media/teaser/hero_melting_building.png'
+        prefixPath('/media/teaser/hero_front_bg.png'),
+        prefixPath('/media/teaser/hero_lem_moon.png'),
+        prefixPath('/media/teaser/hero_incubating_cube.png'),
+        prefixPath('/media/teaser/hero_witch_humanoids.png'),
+        prefixPath('/media/teaser/hero_melting_building.png')
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -80,9 +81,10 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="relative aspect-square bg-gray-900 rounded-lg overflow-hidden border border-white/10">
-                    <img
-                        src="/media/teaser/hero_great_fry.png"
+                    <Image
+                        src={prefixPath('/media/teaser/hero_great_fry.png')}
                         alt="The Great Fry"
+                        fill
                         className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>

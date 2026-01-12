@@ -1,7 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { ImageModal } from '../components/ImageModal';
+import { prefixPath } from '@/lib/utils';
 
 interface Character {
     id: string;
@@ -11,20 +13,20 @@ interface Character {
 }
 
 const CHARACTERS: Character[] = [
-    { id: 'lem', name: 'Lem', src: '/media/characters/lem/lem-landscape.png', alt: 'Lem - Wood Vessel' },
-    { id: 'lem-variant', name: 'Lem (Variant)', src: '/media/characters/lem/lem-landscape-variant.png', alt: 'Lem - Wood Vessel (Variant)' },
-    { id: 'lem-variant2', name: 'Lem (Variant 2)', src: '/media/characters/lem/lem-landscape-variant2.png', alt: 'Lem - Wood Vessel (Variant 2)' },
-    { id: 'lynn', name: 'Lynn', src: '/media/characters/lynn/lynn-landscape.png', alt: 'Lynn - Water Vessel' },
-    { id: 'rahu', name: 'Rahu', src: '/media/characters/rahu/rahu-landscape.png', alt: 'Rahu - Fire Vessel' },
-    { id: 'rahu-2', name: 'Rahu (Alt)', src: '/media/characters/rahu/rahu-landscape2.png', alt: 'Rahu - Fire Vessel (Alt)' },
-    { id: 'tor', name: 'Tor', src: '/media/characters/tor/tor-landscape.png', alt: 'Tor - Earth Vessel' },
-    { id: 'arlo', name: 'Arlo', src: '/media/characters/arlo/arlo-landscape.png', alt: 'Arlo - The Tech-Welder' },
-    { id: 'cassia_vane', name: 'Cassia Vane', src: '/media/characters/cassia_vane/cassia_vane-landscape.png', alt: 'Cassia Vane' },
-    { id: 'elowen', name: 'Elowen', src: '/media/characters/elowen/elowen-landscape.png', alt: 'Dr. Elowen Vane' },
-    { id: 'anton_drexler', name: 'Anton Drexler', src: '/media/characters/anton_drexler/anton_drexler-landscape.png', alt: 'Overseer Anton Drexler' },
-    { id: 'iris_novak', name: 'Iris Novak', src: '/media/characters/iris_novak/iris_novak-landscape.png', alt: 'Commander Iris Novak' },
-    { id: 'myrr', name: 'Myrr', src: '/media/characters/myrr/myrr-landscape.png', alt: 'Myrr - Leader of the Analog Sanctuary' },
-    { id: 'gorgons', name: 'Gorgons', src: '/media/entities/gorgons/gorgons-landscape.png', alt: 'Gorgons - The Builders' },
+    { id: 'lem', name: 'Lem', src: prefixPath('/media/characters/lem/lem-landscape.png'), alt: 'Lem - Wood Vessel' },
+    { id: 'lem-variant', name: 'Lem (Variant)', src: prefixPath('/media/characters/lem/lem-landscape-variant.png'), alt: 'Lem - Wood Vessel (Variant)' },
+    { id: 'lem-variant2', name: 'Lem (Variant 2)', src: prefixPath('/media/characters/lem/lem-landscape-variant2.png'), alt: 'Lem - Wood Vessel (Variant 2)' },
+    { id: 'lynn', name: 'Lynn', src: prefixPath('/media/characters/lynn/lynn-landscape.png'), alt: 'Lynn - Water Vessel' },
+    { id: 'rahu', name: 'Rahu', src: prefixPath('/media/characters/rahu/rahu-landscape.png'), alt: 'Rahu - Fire Vessel' },
+    { id: 'rahu-2', name: 'Rahu (Alt)', src: prefixPath('/media/characters/rahu/rahu-landscape2.png'), alt: 'Rahu - Fire Vessel (Alt)' },
+    { id: 'tor', name: 'Tor', src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' },
+    { id: 'arlo', name: 'Arlo', src: prefixPath('/media/characters/arlo/arlo-landscape.png'), alt: 'Arlo - The Tech-Welder' },
+    { id: 'cassia_vane', name: 'Cassia Vane', src: prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png'), alt: 'Cassia Vane' },
+    { id: 'elowen', name: 'Elowen', src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' },
+    { id: 'anton_drexler', name: 'Anton Drexler', src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' },
+    { id: 'iris_novak', name: 'Iris Novak', src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
+    { id: 'myrr', name: 'Myrr', src: prefixPath('/media/characters/myrr/myrr-landscape.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
+    { id: 'gorgons', name: 'Gorgons', src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
 ];
 
 export default function CharactersPage() {
@@ -86,9 +88,10 @@ export default function CharactersPage() {
                         {/* Lem */}
                         <div className="glass-panel p-6 border-l-4 border-l-green-600">
                             <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('lem')}>
-                                <img
-                                    src="/media/characters/lem/lem-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/lem/lem-landscape.png')}
                                     alt="Lem - Wood Vessel"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -110,9 +113,10 @@ export default function CharactersPage() {
                         {/* Lynn */}
                         <div className="glass-panel p-6 border-l-4 border-l-blue-600">
                             <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('lynn')}>
-                                <img
-                                    src="/media/characters/lynn/lynn-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/lynn/lynn-landscape.png')}
                                     alt="Lynn - Water Vessel"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -134,9 +138,10 @@ export default function CharactersPage() {
                         {/* Rahu */}
                         <div className="glass-panel p-6 border-l-4 border-l-red-600">
                             <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('rahu')}>
-                                <img
-                                    src="/media/characters/rahu/rahu-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/rahu/rahu-landscape.png')}
                                     alt="Rahu - Fire Vessel"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -158,9 +163,10 @@ export default function CharactersPage() {
                         {/* Tor */}
                         <div className="glass-panel p-6 border-l-4 border-l-amber-700">
                             <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('tor')}>
-                                <img
-                                    src="/media/characters/tor/tor-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/tor/tor-landscape.png')}
                                     alt="Tor - Earth Vessel"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -187,9 +193,10 @@ export default function CharactersPage() {
                         {/* Arlo */}
                         <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('arlo')}>
-                                <img
-                                    src="/media/characters/arlo/arlo-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/arlo/arlo-landscape.png')}
                                     alt="Arlo - The Tech-Welder"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -209,9 +216,10 @@ export default function CharactersPage() {
                         {/* Cassia Vane */}
                         <div className="glass-panel p-6 border-l-4 border-l-cyan-300">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('cassia_vane')}>
-                                <img
-                                    src="/media/characters/cassia_vane/cassia_vane-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png')}
                                     alt="Cassia Vane - The Archivist Harmonizer"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -231,9 +239,10 @@ export default function CharactersPage() {
                         {/* Elowen */}
                         <div className="glass-panel p-6 border-l-4 border-l-purple-500">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('elowen')}>
-                                <img
-                                    src="/media/characters/elowen/elowen-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/elowen/elowen-landscape.png')}
                                     alt="Dr. Elowen Vane"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -258,9 +267,10 @@ export default function CharactersPage() {
                         {/* Anton Drexler */}
                         <div className="glass-panel p-6 border-l-4 border-l-red-900">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('anton_drexler')}>
-                                <img
-                                    src="/media/characters/anton_drexler/anton_drexler-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png')}
                                     alt="Overseer Anton Drexler"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -280,9 +290,10 @@ export default function CharactersPage() {
                         {/* Commander Novak */}
                         <div className="glass-panel p-6 border-l-4 border-l-slate-400">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('iris_novak')}>
-                                <img
-                                    src="/media/characters/iris_novak/iris_novak-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/iris_novak/iris_novak-landscape.png')}
                                     alt="Commander Iris Novak"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -313,9 +324,10 @@ export default function CharactersPage() {
                                 </p>
                             </div>
                             <div className="md:w-1/3 relative h-48 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('myrr')}>
-                                <img
-                                    src="/media/characters/myrr/myrr-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/characters/myrr/myrr-landscape.png')}
                                     alt="Myrr - Leader of the Analog Sanctuary"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -331,9 +343,10 @@ export default function CharactersPage() {
                     <div className="glass-panel p-8 border-l-4 border-l-violet-500 overflow-hidden relative">
                         <div className="flex flex-col md:flex-row gap-8 items-start">
                             <div className="md:w-1/3 relative h-64 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('gorgons')}>
-                                <img
-                                    src="/media/entities/gorgons/gorgons-landscape.png"
+                                <Image
+                                    src={prefixPath('/media/entities/gorgons/gorgons-landscape.png')}
                                     alt="Gorgons - The Builders"
+                                    fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">

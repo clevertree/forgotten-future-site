@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export interface ModalImage {
     src: string;
@@ -49,11 +50,15 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
                 </button>
 
                 {/* Image */}
-                <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="max-w-full max-h-[85vh] object-contain shadow-2xl shadow-cyan-500/10"
-                />
+                <div className="relative w-full h-[85vh]">
+                    <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        className="object-contain shadow-2xl shadow-cyan-500/10"
+                        sizes="(max-width: 1200px) 100vw, 1200px"
+                    />
+                </div>
 
                 {/* Right navigation */}
                 <button

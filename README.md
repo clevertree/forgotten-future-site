@@ -16,6 +16,26 @@ Welcome to the Forgotten Future Development Team, this document will get you sta
 
 4. Once you have the source repository cloned on your PC, you're all set! You can now make changes to the source files, add new source files, and *push* the changes back to Github for everyone else to see.
 
+### Deployment
+
+The site is configured to work on both Vercel (live site with comments) and GitHub Pages (static site).
+
+#### Environment Variables
+
+- `NEXT_PUBLIC_IS_STATIC`: Set to `true` for a static export (e.g., GitHub Pages). This disables API routes, authentication, and commenting features.
+- `NEXT_PUBLIC_BASE_PATH`: Set this if the site is hosted on a subpath (automatically handled by the GitHub Actions workflow).
+
+#### Dual-Mode Logic
+
+The application uses `NEXT_PUBLIC_IS_STATIC` to conditionally render features. Features like the feedback/commenting system are only active when this flag is `false` (default).
+
+#### GitHub Pages (Static Export)
+
+The site is automatically deployed to GitHub Pages via GitHub Actions.
+- Build output is in the `out/` directory.
+- API routes are excluded from the static build.
+- Metadata routes (`robots.txt`, `sitemap.xml`) are forced to static.
+
 ### Folders
 
 * render - Shaders and other render functions

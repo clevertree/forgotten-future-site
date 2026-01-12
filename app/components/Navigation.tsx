@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { prefixPath } from '@/lib/utils';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Navigation() {
             <Link href="/" className="flex items-center gap-3 md:gap-4 group z-50">
                 <div className="relative w-12 h-12 md:w-20 md:h-20">
                     <Image
-                        src="/icon.png"
+                        src={prefixPath('/icon.png')}
                         alt="Forgotten Future Icon"
                         fill
                         className="object-contain group-hover:scale-110 transition-transform duration-300"
