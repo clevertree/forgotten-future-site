@@ -12,9 +12,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-green-600">
                         <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/lem/lem.png"
+                                src="/media/characters/lem/lem-landscape.png"
                                 alt="Lem - Wood Vessel"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Lem</h3>
@@ -33,9 +33,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-blue-600">
                         <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/lynn/lynn.png"
+                                src="/media/characters/lynn/lynn-landscape.png"
                                 alt="Lynn - Water Vessel"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Mara</h3>
@@ -54,9 +54,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-red-600">
                         <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/rahu/rahu.png"
+                                src="/media/characters/rahu/rahu-landscape.png"
                                 alt="Rahu - Fire Vessel"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Rahu</h3>
@@ -75,9 +75,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-amber-700">
                         <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/tor/tor.png"
+                                src="/media/characters/tor/tor-landscape.png"
                                 alt="Tor - Earth Vessel"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-1">Tor</h3>
@@ -101,9 +101,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/arlo/arlo.png"
+                                src="/media/characters/arlo/arlo-portrait.png"
                                 alt="Arlo - The Tech-Welder"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Arlo</h3>
@@ -120,9 +120,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-cyan-300">
                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/cassia_vane/cassia_vane.png"
+                                src="/media/characters/cassia_vane/cassia_vane-landscape.png"
                                 alt="Cassia Vane - The Archivist Harmonizer"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Cassia Vane</h3>
@@ -144,9 +144,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-red-900">
                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/anton_drexler/anton_drexler.png"
+                                src="/media/characters/anton_drexler/anton_drexler-landscape.png"
                                 alt="Overseer Anton Drexler"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Overseer Anton Drexler</h3>
@@ -163,9 +163,9 @@ export default function CharactersPage() {
                     <div className="glass-panel p-6 border-l-4 border-l-slate-400">
                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/iris_novak/iris_novak.png"
+                                src="/media/characters/iris_novak/iris_novak-portrait.png"
                                 alt="Commander Iris Novak"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                         <h3 className="text-xl font-bold mb-1">Commander Iris Novak</h3>
@@ -193,9 +193,9 @@ export default function CharactersPage() {
                         </div>
                         <div className="md:w-1/3 relative h-48 overflow-hidden rounded bg-black/40">
                             <img
-                                src="/media/characters/myrr/myrr.png"
+                                src="/media/characters/myrr/myrr-landscape.png"
                                 alt="Myrr - Leader of the Analog Sanctuary"
-                                className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                                className="object-cover object-top w-full h-full opacity-80 hover:opacity-100 transition-opacity"
                             />
                         </div>
                     </div>
