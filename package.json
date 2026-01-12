@@ -42,7 +42,7 @@
     "autoprefixer": "latest",
     "cypress": "^13.6.6",
     "eslint": "latest",
-    "eslint-config-next": "^16.1.1",
+    "eslint-config-next": "15.1.4",
     "husky": "^9.1.7",
     "postcss": "latest",
     "tailwindcss": "latest",

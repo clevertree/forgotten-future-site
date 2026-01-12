@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { MessageSquarePlus } from 'lucide-react';
-import { useSession } from 'next-auth/react';
 
 interface CommentAnchorProps {
     children: React.ReactNode;
@@ -19,7 +18,8 @@ export const CommentAnchor: React.FC<CommentAnchorProps> = ({
     onOpenComment,
     isActive
 }) => {
-    if (!isActive) return <>{children}</>;
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+    if (!isActive || isStatic) return <>{children}</>;
 
     return (
         <div className="relative group">
