@@ -81,12 +81,18 @@ export default function CharactersPage() {
     const handleNext = () => {
         if (currentIndex < CHARACTERS.length - 1) {
             setSelectedCharacterId(CHARACTERS[currentIndex + 1].id);
+        } else {
+            // Loop back to first character
+            setSelectedCharacterId(CHARACTERS[0].id);
         }
     };
 
     const handlePrev = () => {
         if (currentIndex > 0) {
             setSelectedCharacterId(CHARACTERS[currentIndex - 1].id);
+        } else {
+            // Loop to last character
+            setSelectedCharacterId(CHARACTERS[CHARACTERS.length - 1].id);
         }
     };
 
