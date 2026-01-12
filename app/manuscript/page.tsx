@@ -239,8 +239,7 @@ export default function ManuscriptPage() {
                                         .map((chapter) => (
                                             <div
                                                 key={chapter.id}
-                                                className="glass-panel hover:border-cyan-500/50 transition-colors cursor-pointer group"
-                                                onClick={() => router.push(`/manuscript/full-text#chapter-${chapter.id}`)}
+                                                className="glass-panel hover:border-cyan-500/50 transition-colors group"
                                             >
                                                 <div className="flex justify-between items-start mb-2">
                                                     <h3 className="text-xl group-hover:text-cyan-400 transition-colors">
@@ -252,11 +251,12 @@ export default function ManuscriptPage() {
                                                     {chapter.summary}
                                                 </p>
                                                 <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                                    <span
+                                                    <Link
+                                                        href={`/manuscript/full-text#chapter-${chapter.id}`}
                                                         className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
                                                     >
                                                         Read Chapter
-                                                    </span>
+                                                    </Link>
 
                                                     <button
                                                         disabled={!chapter.audio}
