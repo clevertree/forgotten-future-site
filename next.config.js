@@ -34,4 +34,11 @@ const nextConfig = {
 }
 
 // Merge MDX config with Next.js config
-module.exports = withMDX(nextConfig)
+try {
+    module.exports = withMDX(nextConfig)
+} catch (error) {
+    if (!(error instanceof Error)) {
+        throw new Error(String(error))
+    }
+    throw error
+}
