@@ -19,6 +19,7 @@ const CHARACTERS: Character[] = [
     { id: 'anton_drexler', name: 'Anton Drexler', src: '/media/characters/anton_drexler/anton_drexler-landscape.png', alt: 'Overseer Anton Drexler' },
     { id: 'iris_novak', name: 'Iris Novak', src: '/media/characters/iris_novak/iris_novak-landscape.png', alt: 'Commander Iris Novak' },
     { id: 'myrr', name: 'Myrr', src: '/media/characters/myrr/myrr-landscape.png', alt: 'Myrr - Leader of the Analog Sanctuary' },
+    { id: 'gorgons', name: 'Gorgons', src: '/media/entities/gorgons/gorgons-landscape.png', alt: 'Gorgons - The Builders' },
 ];
 
 function ImageModal({ character, onClose, onNext, onPrev }: { character: Character; onClose: () => void; onNext: () => void; onPrev: () => void }) {
@@ -351,14 +352,14 @@ export default function CharactersPage() {
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Creatures & Mechanical Entities</h2>
                     <div className="glass-panel p-8 border-l-4 border-l-violet-500 overflow-hidden relative">
                         <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="md:w-1/3 relative h-64 overflow-hidden rounded bg-black/40 cursor-pointer group">
+                            <div className="md:w-1/3 relative h-64 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('gorgons')}>
                                 <img
                                     src="/media/entities/gorgons/gorgons-landscape.png"
                                     alt="Gorgons - The Builders"
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Learn more</span>
+                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
                                 </div>
                             </div>
                             <div className="md:w-2/3">
