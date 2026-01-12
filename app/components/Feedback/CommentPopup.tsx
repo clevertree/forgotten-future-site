@@ -25,7 +25,8 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
-    const allowAnonymous = process.env.NEXT_PUBLIC_ALLOW_ANONYMOUS_COMMENTS !== 'false';
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+    const allowAnonymous = process.env.NEXT_PUBLIC_ALLOW_ANONYMOUS_COMMENTS !== 'false' && !isStatic;
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();

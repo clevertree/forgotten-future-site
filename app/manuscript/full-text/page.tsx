@@ -9,7 +9,8 @@ import { SuccessPopup } from '../../components/Feedback/SuccessPopup';
 import { chapters } from './chapters';
 
 export default function FullTextManuscript() {
-    const [isFeedbackMode, setIsFeedbackMode] = useState(true);
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+    const [isFeedbackMode, setIsFeedbackMode] = useState(!isStatic);
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
@@ -34,16 +35,18 @@ export default function FullTextManuscript() {
                             <CheckCircle2 size={12} /> PR Created
                         </div>
                     )}
-                    <button
-                        onClick={() => setIsFeedbackMode(!isFeedbackMode)}
-                        className={`flex items-center gap-2 px-4 py-1.5 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
-                            ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                            : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
-                            }`}
-                    >
-                        <MessageSquare size={12} />
-                        {isFeedbackMode ? 'Feedback Mode: ON' : 'Feedback Mode: OFF'}
-                    </button>
+                    {!isStatic && (
+                        <button
+                            onClick={() => setIsFeedbackMode(!isFeedbackMode)}
+                            className={`flex items-center gap-2 px-4 py-1.5 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
+                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                                }`}
+                        >
+                            <MessageSquare size={12} />
+                            {isFeedbackMode ? 'Feedback Mode: ON' : 'Feedback Mode: OFF'}
+                        </button>
+                    )}
                     <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
                         Optimized for Text-to-Speech
                     </span>

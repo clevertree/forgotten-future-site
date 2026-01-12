@@ -15,6 +15,8 @@ export default function MediaPage() {
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+
     const images = [
         { src: prefixPath('/media/teaser/hero_redacted_prophecy.png'), title: 'Redacted Prophecy', meta: 'Initial Contact Record' },
         { src: prefixPath('/media/teaser/hero_synodic_walkers.png'), title: 'First Wave', meta: 'The Fallacy Broadcast' },
@@ -47,16 +49,18 @@ export default function MediaPage() {
                             <CheckCircle2 size={12} /> PR Created
                         </div>
                     )}
-                    <button
-                        onClick={() => setIsFeedbackMode(!isFeedbackMode)}
-                        className={`flex items-center gap-2 px-6 py-2 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
-                            ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                            : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
-                            }`}
-                    >
-                        <MessageSquare size={12} />
-                        {isFeedbackMode ? 'Selection Mode: ON' : 'Feedback Mode'}
-                    </button>
+                    {!isStatic && (
+                        <button
+                            onClick={() => setIsFeedbackMode(!isFeedbackMode)}
+                            className={`flex items-center gap-2 px-6 py-2 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
+                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                                }`}
+                        >
+                            <MessageSquare size={12} />
+                            {isFeedbackMode ? 'Selection Mode: ON' : 'Feedback Mode'}
+                        </button>
+                    )}
                 </div>
             </div>
 
