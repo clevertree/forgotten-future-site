@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import React from "react";
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navigation from './components/Navigation';
 import { Providers } from './components/Providers';
@@ -79,6 +80,7 @@ export default function RootLayout({
                         </div>
                     </footer>
                     <ScrollNavigation />
+                    <Analytics />
                     <SpeedInsights />
                 </Providers>
             </body>

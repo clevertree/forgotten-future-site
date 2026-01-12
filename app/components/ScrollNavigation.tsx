@@ -8,7 +8,7 @@ export default function ScrollNavigation() {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
     const [currentChapter, setCurrentChapter] = useState<number | null>(null);
-    const [maxChapter, setMaxChapter] = useState(72);
+    const [maxChapter, setMaxChapter] = useState(74);
     const isFullText = pathname?.includes('/manuscript/full-text');
 
     // Lock logic to prevent "echoing" during manual scrolls
