@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { ImageModal } from '../components/ImageModal';
 
 interface Character {
     id: string;
@@ -25,53 +26,6 @@ const CHARACTERS: Character[] = [
     { id: 'myrr', name: 'Myrr', src: '/media/characters/myrr/myrr-landscape.png', alt: 'Myrr - Leader of the Analog Sanctuary' },
     { id: 'gorgons', name: 'Gorgons', src: '/media/entities/gorgons/gorgons-landscape.png', alt: 'Gorgons - The Builders' },
 ];
-
-function ImageModal({ character, onClose, onNext, onPrev }: { character: Character; onClose: () => void; onNext: () => void; onPrev: () => void }) {
-    return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90" onClick={onClose}>
-            <div className="relative w-full h-full flex items-center justify-center p-4" onClick={(e) => e.stopPropagation()}>
-                {/* Close button */}
-                <button
-                    onClick={onClose}
-                    className="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors text-2xl z-10"
-                    aria-label="Close"
-                >
-                    ✕
-                </button>
-
-                {/* Left navigation */}
-                <button
-                    onClick={onPrev}
-                    className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors text-4xl z-10 hover:scale-125 transition-transform"
-                    aria-label="Previous character"
-                >
-                    ‹
-                </button>
-
-                {/* Image */}
-                <img
-                    src={character.src}
-                    alt={character.alt}
-                    className="max-w-full max-h-[90vh] object-contain"
-                />
-
-                {/* Right navigation */}
-                <button
-                    onClick={onNext}
-                    className="absolute right-6 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors text-4xl z-10 hover:scale-125 transition-transform"
-                    aria-label="Next character"
-                >
-                    ›
-                </button>
-
-                {/* Character name at bottom */}
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
-                    <p className="text-gray-300 text-lg font-semibold">{character.name}</p>
-                </div>
-            </div>
-        </div>
-    );
-}
 
 export default function CharactersPage() {
     const [selectedCharacterId, setSelectedCharacterId] = useState<string | null>(null);
@@ -100,18 +54,6 @@ export default function CharactersPage() {
         }
     };
 
-    const handleKeyDown = (e: KeyboardEvent) => {
-        if (!selectedCharacter) return;
-        if (e.key === 'ArrowRight') handleNext();
-        if (e.key === 'ArrowLeft') handlePrev();
-        if (e.key === 'Escape') setSelectedCharacterId(null);
-    };
-
-    React.useEffect(() => {
-        window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [selectedCharacterId]);
-
     const handleImageClick = (id: string) => {
         setSelectedCharacterId(id);
     };
@@ -124,7 +66,11 @@ export default function CharactersPage() {
         <>
             {selectedCharacter && (
                 <ImageModal
-                    character={selectedCharacter}
+                    image={{
+                        src: selectedCharacter.src,
+                        alt: selectedCharacter.alt,
+                        title: selectedCharacter.name
+                    }}
                     onClose={handleClose}
                     onNext={handleNext}
                     onPrev={handlePrev}

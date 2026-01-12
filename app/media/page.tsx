@@ -6,10 +6,11 @@ import { MessageSquare, CheckCircle2 } from 'lucide-react';
 import { CommentAnchor } from '../components/Feedback/CommentAnchor';
 import { CommentPopup } from '../components/Feedback/CommentPopup';
 import { SuccessPopup } from '../components/Feedback/SuccessPopup';
+import { ImageModal } from '../components/ImageModal';
 
 export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
-    const [isFeedbackMode, setIsFeedbackMode] = useState(true);
+    const [isFeedbackMode, setIsFeedbackMode] = useState(false);
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
@@ -33,14 +34,6 @@ export default function MediaPage() {
 
     const openImage = (index: number) => setSelectedImageIndex(index);
     const closeImage = () => setSelectedImageIndex(null);
-    const prevImage = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        setSelectedImageIndex((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null));
-    };
-    const nextImage = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        setSelectedImageIndex((prev) => (prev !== null ? (prev + 1) % images.length : null));
-    };
 
     return (
         <div className="container mx-auto px-6 lg:px-16 py-12">
@@ -96,7 +89,10 @@ export default function MediaPage() {
                                 </audio>
                             </div>
                         </div>
-                        <div className="relative aspect-video bg-black rounded-lg overflow-hidden border border-white/10 group">
+                        <div
+                            className="relative aspect-video bg-black rounded-lg overflow-hidden border border-white/10 group cursor-pointer"
+                            onClick={() => openImage(images.length - 1)}
+                        >
                             <Image
                                 src="/media/teaser/ff-title.png"
                                 alt="Forgotten Future Logo"
@@ -104,7 +100,7 @@ export default function MediaPage() {
                                 className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
                             />
                             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <span className="bg-cyan-500/20 text-cyan-400 text-[10px] uppercase tracking-[0.4em] px-4 py-2 border border-cyan-500/30 backdrop-blur-sm">
+                                <span className="bg-cyan-500/20 text-cyan-400 text-[10px] uppercase tracking-[0.4em] px-4 py-2 border border-cyan-500/30 backdrop-blur-sm group-hover:bg-cyan-500/40 transition-colors">
                                     Visual Preview
                                 </span>
                             </div>
@@ -151,55 +147,17 @@ export default function MediaPage() {
 
             {/* Full Page Image Viewer */}
             {selectedImageIndex !== null && (
-                <div
-                    className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
-                    onClick={closeImage}
-                >
-                    <button
-                        className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors z-[110]"
-                        onClick={closeImage}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <button
-                        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
-                        onClick={prevImage}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-
-                    <button
-                        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 bg-white/5 hover:bg-white/10 border border-white/10 p-4 rounded-full text-white transition-all z-[110]"
-                        onClick={nextImage}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-
-                    <div className="relative max-w-6xl w-full h-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
-                        <div className="relative w-full h-[70vh] flex items-center justify-center">
-                            <Image
-                                src={images[selectedImageIndex].src}
-                                alt={images[selectedImageIndex].title}
-                                fill
-                                className="object-contain shadow-2xl shadow-cyan-500/10"
-                                priority
-                                sizes="100vw"
-                            />
-                        </div>
-                        <div className="mt-8 text-center">
-                            <h3 className="text-2xl font-bold text-cyan-400 uppercase tracking-widest mb-2">{images[selectedImageIndex].title}</h3>
-                            <p className="text-zinc-500 uppercase tracking-[0.2em] text-xs">{images[selectedImageIndex].meta}</p>
-                            <p className="mt-4 text-zinc-600 text-[10px] uppercase tracking-widest">{selectedImageIndex + 1} / {images.length}</p>
-                        </div>
-                    </div>
-                </div>
+                <ImageModal
+                    image={{
+                        src: images[selectedImageIndex].src,
+                        alt: images[selectedImageIndex].title,
+                        title: images[selectedImageIndex].title,
+                        meta: images[selectedImageIndex].meta
+                    }}
+                    onClose={closeImage}
+                    onNext={() => setSelectedImageIndex((prev) => (prev !== null ? (prev + 1) % images.length : null))}
+                    onPrev={() => setSelectedImageIndex((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null))}
+                />
             )}
 
             {activeComment && (
