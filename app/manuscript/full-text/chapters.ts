@@ -3574,8 +3574,6 @@ Arlo snapped out of his sermon for a single second. He looked at Cassia, his eye
 
 He let go of her hand and turned back to his audience. He began the next verse of the sermon, his voice rising to meet the sound of the approaching wind. 
 
-Below his feet, the ground began to vibrate again. Another launch from the Moon. Another pillar of light preparing to fall. 
-
-I looked at my hands—the silver, glowing matter of my new form—and I realized I was just another tool in a story that didn't have a hero.`
+Below his feet, the ground began to vibrate again. Another launch from the Moon. Another pillar of light preparing to fall.`
   },
 ];

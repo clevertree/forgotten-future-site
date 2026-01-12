@@ -79,6 +79,10 @@ export default function ManuscriptPage() {
         { id: 66, title: 'The Pillar of Fire', summary: 'Lem journeys to an equatorial Fire City, using a wood-water hybrid shield to survive the intense solar heat barrier.' },
         { id: 67, title: 'The Greeting', summary: 'Lem achieves the first peaceful contact with a Gorgon and discovers the truth behind the attacks on the Northern villages.' },
         { id: 68, title: 'The False Stalemate', summary: 'A companion is released as part of the deal, but the Core immediately breaks the truce with a propaganda strike against Arlo.' },
+        { id: 69, title: 'The Gathering of Strands', summary: 'Lem and Ku plan the White Forest defense; Arlo delivers a sermon on the power of oral tradition and the independent strands of legend.' },
+        { id: 70, title: 'The Narrative Trap', summary: 'The Core labels the White Forest crew as terrorists; Cassia Vane becomes disillusioned with the Archivist leadership.' },
+        { id: 71, title: 'The Siege of Pods', summary: 'A massive orbital invasion begins; Lem transforms into a pure Spirit-matter form to defeat Rahu and place him in stasis.' },
+        { id: 72, title: 'The Final Lesson', summary: 'An orbital strike destroys a village; Arlo refuses to evacuate, insisting that his people learn the lesson of the Core\'s betrayal even at the cost of their lives.' },
     ];
 
     const togglePlay = (id: number, url: string) => {
@@ -124,6 +128,12 @@ export default function ManuscriptPage() {
             title: 'Part V: The Great Stalemate',
             range: [59, 68],
             summary: "The silent years of resistance and the final diplomatic ultimatum that precedes the final storm."
+        },
+        {
+            id: 'northern-siege',
+            title: 'Part VI: The Northern Siege',
+            range: [69, 72],
+            summary: "The physical and ideological assault on the North, and the transformation of the Spirit."
         },
     ];
 

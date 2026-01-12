@@ -20,6 +20,7 @@ export default function FullTextManuscript() {
         { title: 'III: White Forest', range: [30, 40] },
         { title: 'IV: Analog Dawn', range: [41, 58] },
         { title: 'V: Great Stalemate', range: [59, 68] },
+        { title: 'VI: The Northern Siege', range: [69, 72] },
     ];
 
     return (
@@ -58,7 +59,7 @@ export default function FullTextManuscript() {
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
-                    All 68 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
+                    All 72 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
             </header>
 
@@ -95,7 +96,7 @@ export default function FullTextManuscript() {
                     </div>
                 </aside>
 
-                <article className="lg:w-3/4 space-y-24 pb-32 order-1 lg:order-2">
+                <article className="lg:w-3/4 space-y-24 pb-[80vh] order-1 lg:order-2">
                     {chapters.map((chapter) => (
                         <section key={chapter.id} id={`chapter-${chapter.id}`} className="prose prose-invert max-w-none scroll-mt-32">
                             <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">

@@ -8,7 +8,7 @@ export default function ScrollNavigation() {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
     const [currentChapter, setCurrentChapter] = useState<number | null>(null);
-    const [maxChapter, setMaxChapter] = useState(64);
+    const [maxChapter, setMaxChapter] = useState(72);
     const isFullText = pathname?.includes('/manuscript/full-text');
 
     // Lock logic to prevent "echoing" during manual scrolls
@@ -104,14 +104,10 @@ export default function ScrollNavigation() {
             // 3. Optimistically update UI
             setCurrentChapter(chapterId);
 
-            // 4. Perform the scroll
-            const headerOffset = 128;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
+            // 4. Perform the scroll using scrollIntoView to respect scroll-margin-top
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
 
             // 5. Set a safety timeout to unlock if the scroll event doesn't trigger predictably
