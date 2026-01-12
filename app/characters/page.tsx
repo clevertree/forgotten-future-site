@@ -17,7 +17,7 @@ const CHARACTERS: Character[] = [
     { id: 'arlo', name: 'Arlo', src: '/media/characters/arlo/arlo-portrait.png', alt: 'Arlo - The Tech-Welder' },
     { id: 'cassia_vane', name: 'Cassia Vane', src: '/media/characters/cassia_vane/cassia_vane-landscape.png', alt: 'Cassia Vane' },
     { id: 'anton_drexler', name: 'Anton Drexler', src: '/media/characters/anton_drexler/anton_drexler-landscape.png', alt: 'Overseer Anton Drexler' },
-    { id: 'iris_novak', name: 'Iris Novak', src: '/media/characters/iris_novak/iris_novak-portrait.png', alt: 'Commander Iris Novak' },
+    { id: 'iris_novak', name: 'Iris Novak', src: '/media/characters/iris_novak/iris_novak-landscape.png', alt: 'Commander Iris Novak' },
     { id: 'myrr', name: 'Myrr', src: '/media/characters/myrr/myrr-landscape.png', alt: 'Myrr - Leader of the Analog Sanctuary' },
 ];
 
@@ -302,7 +302,7 @@ export default function CharactersPage() {
                         <div className="glass-panel p-6 border-l-4 border-l-slate-400">
                             <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('iris_novak')}>
                                 <img
-                                    src="/media/characters/iris_novak/iris_novak-portrait.png"
+                                    src="/media/characters/iris_novak/iris_novak-landscape.png"
                                     alt="Commander Iris Novak"
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
                                 />
