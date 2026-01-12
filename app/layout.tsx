@@ -9,24 +9,28 @@ import { prefixPath } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
+const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isStatic ? 'https://clevertree.github.io' : 'https://ffga.me');
+
 export const metadata: Metadata = {
     title: {
         default: 'Forgotten Future | AI-Driven Sci-Fi Epic',
         template: '%s | Forgotten Future'
     },
     description: 'Explore the cosmic aftermath of the Great Fry. An AI-driven sci-fi novel and animated experience.',
-    metadataBase: new URL('https://ffga.me'),
+    metadataBase: new URL(siteUrl),
     alternates: {
-        canonical: '/',
+        canonical: basePath || '/',
     },
     openGraph: {
         title: 'Forgotten Future | AI-Driven Sci-Fi Epic',
         description: 'Explore the cosmic aftermath of the Great Fry.',
-        url: 'https://ffga.me',
+        url: siteUrl + (basePath || '/'),
         siteName: 'Forgotten Future',
         images: [
             {
-                url: prefixPath('/og-image.png'),
+                url: '/og-image.png',
                 width: 1200,
                 height: 630,
             },
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Forgotten Future | AI-Driven Sci-Fi Epic',
         description: 'Explore the cosmic aftermath of the Great Fry.',
-        images: [prefixPath('/og-image.png')],
+        images: ['/og-image.png'],
     },
     icons: {
         icon: prefixPath('/favicon.ico'),

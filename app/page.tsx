@@ -50,7 +50,7 @@ export default function Home() {
                         STARS DIE
                     </h1>
                     <p className="text-sm md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto leading-relaxed">
-                        A thousand years of human history, erased in a single lunar discharge.
+                        A thousand years of human history, erased in a single Cataclysm.
                         A new Dark Age has begun.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">

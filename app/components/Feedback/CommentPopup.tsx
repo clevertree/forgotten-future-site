@@ -131,11 +131,11 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
                     {session && (
                         <div className="flex items-center gap-3 p-3 bg-cyan-500/5 border border-cyan-500/20 rounded-lg">
                             <div className="relative w-8 h-8 rounded-full border border-cyan-500/30 overflow-hidden">
-                                <Image 
-                                    src={session.user?.image || ''} 
-                                    alt="Avatar" 
+                                <Image
+                                    src={session.user?.image || ''}
+                                    alt="Avatar"
                                     fill
-                                    className="object-cover" 
+                                    className="object-cover"
                                 />
                             </div>
                             <div>
