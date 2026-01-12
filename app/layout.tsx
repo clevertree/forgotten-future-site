@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import React from "react";
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navigation from './components/Navigation';
 import { Providers } from './components/Providers';
 import '../styles/globals.css';
@@ -72,6 +73,7 @@ export default function RootLayout({
                             </div>
                         </div>
                     </footer>
+                    <SpeedInsights />
                 </Providers>
             </body>
         </html>
