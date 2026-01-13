@@ -1,4 +1,10 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'FAQ',
+    description: 'Frequently asked questions about the Forgotten Future project, AI-driven storytelling, and how to contribute.',
+};
 
 export default function FAQPage() {
     const projectFaqs = [

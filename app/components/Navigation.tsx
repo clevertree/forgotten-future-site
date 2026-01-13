@@ -14,6 +14,7 @@ export default function Navigation() {
         { href: '/locations', label: 'Locations' },
         { href: '/manuscript', label: 'Manuscript' },
         { href: '/media', label: 'Media' },
+        { href: '/game', label: 'Game' },
         { href: '/faq', label: 'FAQ' },
         { href: '/contact', label: 'Contact' },
     ];
@@ -21,7 +22,7 @@ export default function Navigation() {
     return (
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 md:gap-4 group z-50">
+            <Link href="/" className="flex items-center gap-3 md:gap-4 group z-[60]">
                 <div className="relative w-12 h-12 md:w-20 md:h-20">
                     <Image
                         src={prefixPath('/icon.png')}
@@ -47,7 +48,7 @@ export default function Navigation() {
 
             {/* Mobile Hamburger Button */}
             <button
-                className="lg:hidden z-50 p-2 text-cyan-400 focus:outline-none"
+                className="lg:hidden z-[60] p-2 text-cyan-400 focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle Menu"
             >
@@ -59,8 +60,8 @@ export default function Navigation() {
             </button>
 
             {/* Mobile Nav Overlay */}
-            <div className={`fixed inset-0 bg-black/98 backdrop-blur-2xl z-40 transition-transform duration-500 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <div className="flex flex-col items-center justify-center h-full space-y-8 uppercase text-xl tracking-[0.3em] font-light">
+            <div className={`fixed inset-0 bg-black/98 backdrop-blur-2xl z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20">
                     {navLinks.map(link => (
                         <Link
                             key={link.href}

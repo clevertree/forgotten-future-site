@@ -1,4 +1,10 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Lore & Timeline',
+    description: 'Explore the comprehensive timeline and lore of Forgotten Future. From the Great Fry to the emergence of the Five Vessels.',
+};
 
 export default function StoryPage() {
     return (

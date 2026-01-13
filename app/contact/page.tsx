@@ -1,4 +1,10 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Contact',
+    description: 'Establish an uplink with the Forgotten Future team. Reach out for collaborations, inquiries, or feedback.',
+};
 
 export default function ContactPage() {
     return (

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         default: 'Forgotten Future | AI-Driven Sci-Fi Epic',
         template: '%s | Forgotten Future'
     },
-    description: 'Explore the cosmic aftermath of the Great Fry. An AI-driven sci-fi novel and animated experience.',
+    description: 'Explore Forgotten Future, an AI-driven sci-fi narrative experiment. Experience a world shaped by the Great Fry through its novel, imagery, and upcoming game engine.',
     metadataBase: new URL(siteUrl),
     alternates: {
         canonical: prefixPath('/'),
@@ -60,7 +60,7 @@ export default function RootLayout({
         <html lang="en" className={`${inter.className} scroll-smooth`} data-scroll-behavior="smooth">
             <body className="bg-black text-white selection:bg-cyan-500/30">
                 <Providers>
-                    <header className="fixed top-0 w-full z-50 no-print">
+                    <header className="fixed top-0 w-full z-[1000] no-print">
                         <div className="absolute inset-0 bg-black/95 backdrop-blur-md border-b border-white/10 -z-10" />
                         <Navigation />
                     </header>
