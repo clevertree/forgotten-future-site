@@ -79,17 +79,17 @@ export default function Home() {
                                     <span className="text-cyan-500/50">d42abbe</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
-                                <div className="flex gap-2 opacity-60">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">e88a195</span>
                                     <span className="truncate">Add Chapter 79 and update manuscript, synopsis, and planning docs</span>
                                 </div>
-                                <div className="flex gap-2 opacity-40">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">648e3e4</span>
                                     <span className="truncate">Sync manuscript chapters and update settings structure</span>
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/clevertree/ff-story" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
+                        <a href="https://github.com/clevertree/ff-story/commits/main/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
                             GitHub Source <span className="text-lg">→</span>
                         </a>
                     </div>
@@ -106,17 +106,17 @@ export default function Home() {
                                     <span className="text-cyan-500/50">1c42552</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
-                                <div className="flex gap-2 opacity-60">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">5b67a57</span>
                                     <span className="truncate">Update Copilot instructions and bump version</span>
                                 </div>
-                                <div className="flex gap-2 opacity-40">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">9cb7d4c</span>
                                     <span className="truncate">Add hero image concepts for Great Stalemate arc, bump v0.4.0</span>
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/clevertree/ff-teaser" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
+                        <a href="https://github.com/clevertree/ff-teaser/commits/main/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
                             GitHub Source <span className="text-lg">→</span>
                         </a>
                     </div>
@@ -133,17 +133,17 @@ export default function Home() {
                                     <span className="text-cyan-500/50">cc1426b</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
-                                <div className="flex gap-2 opacity-60">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">390ead6</span>
                                     <span className="truncate">Update manuscript page and full-text with Chapter 79</span>
                                 </div>
-                                <div className="flex gap-2 opacity-40">
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">fa59739</span>
                                     <span className="truncate">Show all 78 chapters in manuscript and full-text pages</span>
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/clevertree/forgotten-future-site" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
+                        <a href="https://github.com/clevertree/forgotten-future-site/commits/master/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
                             GitHub Source <span className="text-lg">→</span>
                         </a>
                     </div>
@@ -171,7 +171,7 @@ export default function Home() {
                         src={prefixPath('/media/teaser/hero_great_fry.png')}
                         alt="The Great Fry"
                         fill
-                        className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-1000"
+                        className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                 </div>

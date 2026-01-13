@@ -1,4 +1,5 @@
-ef88238 Add development status box to front page
+1da4551 Fix GitHub branch link and adjust opacity in status box
+660759d Add development status box to front page
 a42708b Add COMMIT_HISTORY.md and update Copilot instructions
 390ead6 Update manuscript page and full-text with Chapter 79
 fa59739 Show all 78 chapters in manuscript and full-text pages
