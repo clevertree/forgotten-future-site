@@ -20,7 +20,8 @@ export default function FullTextManuscript() {
         { title: 'III: White Forest', range: [30, 40] },
         { title: 'IV: Analog Dawn', range: [41, 58] },
         { title: 'V: Great Stalemate', range: [59, 68] },
-        { title: 'VI: The Final Descent', range: [69, 78] },
+        { title: 'VI: Northern Siege', range: [69, 72] },
+        { title: 'VII: Aetheric Resolution', range: [73, 78] },
     ];
 
     return (

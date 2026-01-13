@@ -141,6 +141,12 @@ export default function ManuscriptPage() {
             range: [69, 72],
             summary: "The physical and ideological assault on the North, and the transformation of the Spirit."
         },
+        {
+            id: 'aetheric-resolution',
+            title: 'Part VII: The Aetheric Resolution',
+            range: [73, 78],
+            summary: "The final collapse of the Archivist control and the transition into a collective aetheric state."
+        },
     ];
 
     const scrollToSection = (id: string) => {
