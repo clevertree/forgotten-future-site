@@ -89,6 +89,7 @@ export default function ManuscriptPage() {
         { id: 76, title: 'The Hooting Call', summary: 'The Hive Cities fail as every Synodic entity on the planet changes trajectory simultaneously.' },
         { id: 77, title: 'The Ancient Shield', summary: 'The control beacons fall as the Monoliths turn against their Archivist masters.' },
         { id: 78, title: 'The Liquid Ghost', summary: 'The Monoliths dissolve into liquid silver, merging into a collective aetheric entity.' },
+        { id: 79, title: 'The Fall of the General', summary: 'Maya strikes down General Tor; Rahu is destroyed in a thermal explosion; the hollow silence of Cradle Zero.' },
     ];
 
     const togglePlay = (id: number, url: string) => {
