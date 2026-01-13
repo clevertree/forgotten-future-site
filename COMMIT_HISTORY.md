@@ -1,0 +1,286 @@
+cc1426b Add COMMIT_HISTORY.md and update Copilot instructions
+390ead6 Update manuscript page and full-text with Chapter 79
+fa59739 Show all 78 chapters in manuscript and full-text pages
+263b5b4 Update game page with artist credits and include game assets
+01e9b84 Update SEO metadata for all pages and adjust game page tense
+d71aaee Fix padding on locations page
+78cdf30 Add locations page, sync chapters 73-78, and fix scroll bug
+9b0ab8d Sync chapters 73-74 and update maxChapter and Analytics
+f7c5cf0 Sync final Ch 72
+70ac70f Sync Ch 72 updates
+2e6c9fe Fix Chapter 72 scroll issue and update sections/notes
+a0eedc6 Update manuscript to chapter 72
+ecf1deb feat: link manuscript chapters to full text sections
+02d971b fix: restore font and correct metadata domain/og:image path
+56e12c0 chore: disable feedback mode and anonymous comments when in static mode
+357690a chore: configure static export for GitHub Pages, add dual-mode logic, remove MDX, and fix image paths
+9ee50fe Remove unused MDX support and dependencies
+c63fc87 Fix TypeError in next.config.js and update MDX dependencies
+6bd9152 Add env flag for static vs live site and disable commenting in static mode
+5600bf5 Add GitHub Actions workflow for Next.js deployment
+1887257 fix: resolve Next.js warnings for image sizes and smooth scrolling
+e743c6b Merge pull request #1 from clevertree/vercel/vercel-speed-insights-to-nextj-rftz2b
+122e937 Add Vercel Speed Insights to Next.js
+bbd7540 feat: unified ImageModal component for characters and media pages
+73a5473 Sync all landscape character images from ff-story, add variants to carousel, add Elowen to page
+db37edb Update Lem character image with regenerated version
+c602976 Make slideshows loop continuously - cycle from last slide to first and vice versa
+bf5e4cc Make Gorgon image clickable and add to character slideshow navigation
+15ccdbd Add Creatures section featuring Gorgons to character page
+783f4c4 Update Arlo and Anton landscape character images
+6bca543 Update Iris Novak character to use landscape image instead of portrait
+7acf3fd Update Rahu character image with new rahu-landscape.png
+3c541d8 Add interactive image gallery with full-screen popup and left/right navigation
+3f3428a Update character images to renamed files and align portraits to top of container
+f60d64f Add character images to website and update character page with renamed images
+b01bb3c Update manuscript UI and data (Chapters 65-68), bump v0.9.0
+5d9cb25 chore: implement husky pre-commit hook with build and component tests (v0.8.0)
+e229f30 Finalize husky pre-commit build and terminology sync
+e55d284 Configure husky pre-commit build and fix page syntax error
+c5b2366 Sync manuscript terminology corrections (v0.7.1)
+fb6788d Add full manuscript prose (64 chapters) and reader sidebar navigation (v0.7.0)
+d0f92e4 Update manuscript pages with 64 chapters and synchronized lore parts
+c45a881 Add Overseer Anton Drexler and Commander Novak to characters page. Version bump to 0.4.0
+3760fb0 feat: add 'Coming Soon' placeholders for missing character visuals
+84df6e5 chore: remove Storybook and Testing Library
+61de255 fix: resolve storybook v10 peer conflict and add characters page
+af2fd91 Fix Storybook dependency mismatch and bump version to 0.3.1
+142def0 Add Characters page and update navigation
+1cc024e docs: add comprehensive testing setup summary
+2871d11 chore: fix cypress configuration and storybook setup for component testing
+b548185 docs: add testing guide and fix cypress test commands
+ba04c5e feat: add storybook stories and cypress component tests for all components with mocked API usage
+8de0d67 chore: resolve all npm security vulnerabilities (47 -> 0) and fix Next.js 16.1.1 Turbopack configuration
+3937a24 v0.3.0: Implement community feedback system with GitHub PR integration
+710d1ae feat: display section synopses on manuscript page and bump version to 0.1.60
+48b8fab Add Part numbers to manuscript section tabs
+1680d3d Fix manuscript tab scrolling to target only the scroll container
+01ba65b Organize manuscript into sections with scroll tabs and custom scrollbar UI
+081a18d Update manuscript page with 34 chapters and regenerated Ch 1 audio
+e6f080b Bump version for alignment
+b9e903a docs: update copyright and organization to Clevertree and bump version to 0.1.52
+3922e94 fix: remove unsupported Viewport export in Next.js 13.5 and bump version to 0.1.51
+0e18012 style: add scroll-smooth and increase scroll-margin-top for anchors
+d134219 fix: connect read chapter buttons to manuscript full text sections
+5ff0f15 perf: optimization (next/font/google, next/image) and SEO (robots.txt, sitemap.ts, expanded metadata)
+593d9cf fix: move backdrop-blur out of header to prevent trapping mobile menu and increase opacity
+0244476 fix: make mobile menu background more opaque and add backdrop blur
+da62a83 Sync story content and update version for After Time transition
+41cb8af Finalizing media page updates and visual archive alignment
+d941cfe Add new images to media page (Logo, Core Technocracy, Mechanical Forest) and update teaser preview
+02e16d0 Update favicon to square transparent version and bump version to v0.1.40
+dfa6435 Replace site icons with transparent versions and bump version to v0.1.39
+6b46cc8 Integrate manuscript audio playback, update mobile navigation contrast, and sync narration assets
+497a6fc feat: implement full mobile-responsive layout and navigation
+51b71fc style: upscale site header logo and text for better impact
+a8866c5 feat: add branding icon to site header
+85e8367 feat: implement new site branding icons and metadata
+285a3c8 feat: integrate chapter 1 audio player into manuscript page
+a2319fd feat: update manuscript sync script and version
+65ac792 feat: make contact email clickable, bump version to 0.2.28
+e67de28 feat: add print css layout to hide navigation, bump version to 0.2.27
+82c2fc9 feat: add urls for recommended TTS extensions, bump version to 0.2.26
+42606ee feat: rename Vessels to Elements and add Metal element, bump version to 0.2.25
+f06ba93 feat: restore Great Fry image with synodic shards, bump version to 0.2.24
+82d2e9a feat: expand front page slideshow with 3 new atmospheric images, bump version to 0.2.23
+fd75925 style: move hero text down to emphasize background art, bump version to 0.2.22
+c51e18e feat: implement fading slideshow on home page, reduce hero text size, bump version to 0.2.21
+3058b9d feat: switch front page background to cradle zero scorch, bump version to 0.2.20
+c26d021 style: add shade and backdrop blur to hero text, bump version to 0.2.19
+375a233 fix: copy hero_background_spheres from teaser repo, bump version to 0.2.18
+8631d03 feat: use background spheres image for front page, bump version to 0.2.17
+10e105b feat: update contact email to ari@asu.edu, bump version to 0.2.16
+4688582 feat: add spoiler warnings to story and media pages, bump version to 0.2.15
+39f77c7 feat: split FAQ into Project and Storyline sections, bump version to 0.2.14
+42f1000 feat: update full manuscript with prose for chapters 1-15, bump version to 0.2.13
+7947716 content: mark teaser as coming soon, bump version to 0.2.12
+b562dd3 style: reorder media cards, bump version to 0.2.11
+c4725c1 content: replace great beast with windows sigh, bump version to 0.2.10
+f8c2fa5 content: replace scorched earth with lightning scars, bump version to 0.2.9
+f862cb1 content: replace lunar eruption with disintegrating moon, bump version to 0.2.8
+170f73d feat: add image lightbox to media page, bump version to 0.2.7
+d7f7e85 feat: replace Lunar Decay with Lunar Eruption on media page v0.2.6
+864a942 feat: replace Eruption card with Redacted Prophecy on media page v0.2.5
+0bed8d5 docs: casual tone for manuscript and expanded extension recs v0.2.4
+e98d120 feat: update media page with actual teaser content and proper attribution v0.2.3
+a1ad727 feat: add full-text view and listening recommendations v0.2.2
+a68bf9b chore: update copilot instructions with versioning protocol v0.2.1
+c32573a feat: complete site overhaul to nextjs and lore refresh v0.2.0
+2d2275b add analytics
+b1f598d Update index.html
+cf9e5fd static content
+f420bc7 upgrade to nextjs
+f9b695a fixes
+cf607cc playback config
+a612fdb playback config
+0eeb721 fix
+e0b13b7 menu commands
+02221e7 fix
+b42b34a save to memory
+699b909 menu!
+35e686a menu
+7500726 progress???\
+2412d27 progress?
+ecf5345 associated element
+ca4af8e progress
+d624a48 playback refactor
+562a25d editor lives
+b995efc keyboard commands
+2aa841a song editor
+5d8a6d3 css fix
+4983730 game dir fix
+439494a game dir fix
+3b5ae3d keyboard events
+91856b3 editor
+896f4c7 merge subrepo into main
+adb6e76 interface
+557235c song editor
+339d2e4 song editor
+f889045 song editor
+88c9aeb song editor
+e965a38 song loader
+306d13d editor
+6d06809 rfactor
+c21dfb9 refactor
+dd545f9 refactor
+52bb57e editor start
+aa2853d page refactor
+67bc99f routes
+1789ac1 simple server
+1556688 readded git
+00dbb46 removed php
+09528ac move readme and php pgp
+9de1281 story update
+b40aa8d tweak
+4515431 yup
+3f046bb updates
+dfd084a scintilla
+19c949c render fix
+998b086 oops
+d19342a rav
+8aa6958 rav
+bd6f524 random sine terrain
+42f047d fixes
+e01454b fixes
+b512930 sprite shader refactor
+c7f2936 binary search optimization boom
+9d5a5d3 refactor map
+1c288cf update
+b3333ad update
+98ae52e fix
+53994f3 story
+cd106eb story
+8d63af0 water machines
+07516dd tables
+0fdc400 story
+d14b960 story
+cbbb93f content
+47d999b content
+b0c0ced css fixes
+29fd98b css cleanup
+71fed16 css fixes
+73abb7d fixes
+6bbb0ef story
+404abc6 content
+3202907 content
+cf33a23 tui
+7405b40 phpstorm
+40ce53d faq
+9f56785 fixes
+73c2b25 fixes
+c43317b css fixes
+9058434 content
+e112ca5 Update index.html
+c96f201 Update index.html
+2bebaa3 favicon fix
+0318e31 content fix
+3bbf7f9 css fixes
+816a854 css fixes
+83b5887 css fixes
+391fa28 css fixes
+7070fa7 css fixes
+dc141b7 css fixes
+0cc4706 css fixes
+28540a1 button
+9653038 button
+d534298 css fixes
+f2ee3b8 content
+5f64359 content
+4e069cf mobile refactor
+9e36b35 Merge branch 'master' of ssh://github.com/clevertree/forgotten-future-site
+e45f2c9 mobile refactor
+df83347 pointer fix
+18edd6c contribute
+2dcaa32 faq
+4249b53 faq
+ab74095 version
+f2471db version
+6c03c8b subscribe
+ffdae71 subscribe
+180238f social media buttons
+97da396 fixes
+6d7983a iframes
+854e149 fixes
+a408ae3 fixes
+b015d80 fixes
+1903559 fixes
+e684191 fixes
+ece5083 fixes
+6850142 fixes
+4b706e3 fixes
+3699480 fixes
+3ddc222 refactor site
+6fdc149 refactor site
+1592084 refactor links
+858f5f1 refactor
+10ec761 token ip host agent
+ffbb0b4 token ip host agent
+f637582 faq email
+89b1507 fixes
+a06c0f0 flicker fix
+a1d143d repo
+31fe47f js version
+fa9836e media
+063d659 api messenger
+9899d2e stylesheet version
+669e6b3 css fixes
+36dd15a css fixes
+f0feb9f media
+6bf139a media
+203ccef media
+1d5ffd2 media
+e9778ea media
+851cbb5 delete old stuff
+4f47d21 concept repo
+7408f3e fixes
+ca3dbf6 fixes
+f7db79e fixes
+26f0529 fixes
+1432e2f content
+018b70c fixes
+bb7ca28 fixes
+401e8fc fixes
+11ff448 fixes
+5a7921f fixes
+4617cfe fixes
+b9f8b23 fixes
+94beed6 messenger
+7c182f1 register service
+d42cf46 register service
+9c4efd7 fixes
+c1f21cb fixes
+23554d5 fixes
+be81edb refactor
+eeee2df working
+2388e2e working
+4bceab5 test files
+3e9bff8 rename
+eac5485 rename
+bb3c4fb repo fixes
+7d35056 ffsite refactor
+33af085 refactor repos
+83d6224 game files
+53b3c29 test fixes
+d2f8223 submodule
+a4dc5f3 dependencies
+b17632c initial commit
