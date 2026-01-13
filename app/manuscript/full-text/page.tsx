@@ -14,14 +14,13 @@ export default function FullTextManuscript() {
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
-    const sections = [
-        { title: 'I: Shattered Approach', range: [1, 15] },
-        { title: 'II: Thousand-Year Fallacy', range: [16, 29] },
-        { title: 'III: White Forest', range: [30, 40] },
-        { title: 'IV: Analog Dawn', range: [41, 58] },
-        { title: 'V: Great Stalemate', range: [59, 68] },
-        { title: 'VI: Northern Siege', range: [69, 72] },
-        { title: 'VII: Aetheric Resolution', range: [73, 79] },
+        const sections = [
+        { title: 'I: Shattered Approach', range: [1, 20] },
+        { title: 'II: Thousand-Year Fallacy', range: [21, 26] },
+        { title: 'III: White Forest', range: [27, 35] },
+        { title: 'IV: Analog Dawn', range: [36, 45] },
+        { title: 'V: Great Stalemate', range: [46, 58] },
+        { title: 'VI: Aetheric Resolution', range: [59, 71] },
     ];
 
     return (

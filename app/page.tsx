@@ -56,10 +56,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.4</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.1</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">fd2ab3e</span>
+                                    <span className="truncate">v0.10.0: Major structural overhaul - consolidated 89 chapters into 71, optimized pacing, and updated all documentation</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">4ff8c56</span>
                                     <span className="truncate">Add independent pre-commit hook</span>
@@ -67,10 +71,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">5450e87</span>
                                     <span className="truncate">Test pre-commit hook</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">a4cc73d</span>
-                                    <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +110,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.9</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.1</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">28ed11a</span>
+                                    <span className="truncate">v0.9.9: Silenced redundant dashboard update warnings</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">5b9ae04</span>
                                     <span className="truncate">v0.9.8: Finalize independent pre-commit hooks and dashboard automation</span>
@@ -121,10 +125,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">0759215</span>
                                     <span className="truncate">Test dashboard update hook</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">3c557de</span>
-                                    <span className="truncate">v0.9.5: Final dashboard hash sync</span>
                                 </div>
                             </div>
                         </div>
