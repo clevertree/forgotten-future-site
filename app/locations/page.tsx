@@ -165,6 +165,46 @@ export default function LocationsPage() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="grid md:grid-cols-2 gap-8 mt-12">
+                        <div className="glass-panel p-6 border-l-4 border-l-amber-600">
+                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('northern-villages')}>
+                                <Image
+                                    src={prefixPath('/media/settings/after-time/northern_villages.png')}
+                                    alt="Northern Villages"
+                                    fill
+                                    className="object-cover object-center w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
+                                </div>
+                            </div>
+                            <h3 className="text-xl font-bold mb-1">Northern Villages</h3>
+                            <p className="text-xs text-amber-500 uppercase tracking-widest mb-4 font-semibold">Human Resistance</p>
+                            <p className="text-gray-300 text-sm">
+                                Far from the direct heat of the Fire Cities, independent human settlements survive in the shadows, repurposing Synodic tech to endure the smog.
+                            </p>
+                        </div>
+
+                        <div className="glass-panel p-6 border-l-4 border-l-zinc-700">
+                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('dead-zone')}>
+                                <Image
+                                    src={prefixPath('/media/settings/after-time/dead_zone.png')}
+                                    alt="Equatorial Dead Zone"
+                                    fill
+                                    className="object-cover object-center w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
+                                </div>
+                            </div>
+                            <h3 className="text-xl font-bold mb-1">Equatorial Dead Zone</h3>
+                            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4 font-semibold">Scorched Territory</p>
+                            <p className="text-gray-300 text-sm">
+                                The vitrified remains of the planet's mid-section, scorched by the initial descent and maintained by the extreme thermal output of Cradle Zero.
+                            </p>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="mb-20">
@@ -201,45 +241,6 @@ export default function LocationsPage() {
                     </div>
                 </section>
 
-                <section className="mb-20 grid md:grid-cols-2 gap-8">
-                    <div className="glass-panel p-6 border-l-4 border-l-amber-600">
-                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('northern-villages')}>
-                                <Image
-                                    src={prefixPath('/media/settings/after-time/northern_villages.png')}
-                                    alt="Northern Villages"
-                                    fill
-                                    className="object-cover object-center w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Northern Villages</h3>
-                            <p className="text-xs text-amber-500 uppercase tracking-widest mb-4 font-semibold">Human Resistance</p>
-                            <p className="text-gray-300 text-sm">
-                                Far from the direct heat of the Fire Cities, independent human settlements survive in the shadows, repurposing Synodic tech to endure the smog.
-                            </p>
-                    </div>
-
-                    <div className="glass-panel p-6 border-l-4 border-l-zinc-700">
-                         <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('dead-zone')}>
-                                <Image
-                                    src={prefixPath('/media/settings/after-time/dead_zone.png')}
-                                    alt="Equatorial Dead Zone"
-                                    fill
-                                    className="object-cover object-center w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Equatorial Dead Zone</h3>
-                            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4 font-semibold">Scorched Territory</p>
-                            <p className="text-gray-300 text-sm">
-                                The vitrified remains of the planet's mid-section, scorched by the initial descent and maintained by the extreme thermal output of Cradle Zero.
-                            </p>
-                    </div>
-                </section>
             </div>
         </>
     );
