@@ -1,3 +1,4 @@
+3bc4b43 v0.10.0: Sync manuscript data (71 chapters), update site ranges, and bump version
 28ed11a v0.9.9: Silenced redundant dashboard update warnings
 5b9ae04 v0.9.8: Finalize independent pre-commit hooks and dashboard automation
 0759215 Test dashboard update hook
