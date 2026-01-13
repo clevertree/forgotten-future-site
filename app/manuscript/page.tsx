@@ -145,7 +145,7 @@ export default function ManuscriptPage() {
         {
             id: 'aetheric-resolution',
             title: 'Part VII: The Aetheric Resolution',
-            range: [73, 78],
+            range: [73, 79],
             summary: "The final collapse of the Archivist control and the transition into a collective aetheric state."
         },
     ];

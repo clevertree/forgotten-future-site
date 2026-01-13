@@ -76,16 +76,16 @@ export default function Home() {
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">a4cc73d</span>
+                                    <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">d42abbe</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">e88a195</span>
                                     <span className="truncate">Add Chapter 79 and update manuscript, synopsis, and planning docs</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">648e3e4</span>
-                                    <span className="truncate">Sync manuscript chapters and update settings structure</span>
                                 </div>
                             </div>
                         </div>
@@ -98,10 +98,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.4.2</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.2</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">c9e4b01</span>
+                                    <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">1c42552</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
@@ -109,10 +113,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">5b67a57</span>
                                     <span className="truncate">Update Copilot instructions and bump version</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">9cb7d4c</span>
-                                    <span className="truncate">Add hero image concepts for Great Stalemate arc, bump v0.4.0</span>
                                 </div>
                             </div>
                         </div>
@@ -125,21 +125,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.1</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.4</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">...</span>
+                                    <span className="truncate">v0.9.4: Fix Chapter 79 synchronization and development status</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">f0bf24a</span>
+                                    <span className="truncate">Sync manuscript chapters and update settings structure</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">cc1426b</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">390ead6</span>
-                                    <span className="truncate">Update manuscript page and full-text with Chapter 79</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">fa59739</span>
-                                    <span className="truncate">Show all 78 chapters in manuscript and full-text pages</span>
                                 </div>
                             </div>
                         </div>
