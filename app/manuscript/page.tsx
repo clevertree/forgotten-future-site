@@ -83,6 +83,12 @@ export default function ManuscriptPage() {
         { id: 70, title: 'The Narrative Trap', summary: 'The Core labels the White Forest crew as terrorists; Cassia Vane becomes disillusioned with the Archivist leadership.' },
         { id: 71, title: 'The Siege of Pods', summary: 'A massive orbital invasion begins; Lem transforms into a pure Spirit-matter form to defeat Rahu and place him in stasis.' },
         { id: 72, title: 'The Final Lesson', summary: 'An orbital strike destroys a village; Arlo refuses to evacuate, insisting that his people learn the lesson of the Core\'s betrayal even at the cost of their lives.' },
+        { id: 73, title: 'The Aetheric Wake', summary: 'Lem, Arlo, and Cassia transition into an aetheric state following a massive plasma strike.' },
+        { id: 74, title: 'The Witch\'s Mirror', summary: 'Lem materializes in an incubation unit within the desert base, captured by the Archivists.' },
+        { id: 75, title: 'The Resonance of the Fall', summary: 'Anton Drexler is gone; Maya reveals the fragility of the Archivist leadership as the lab begins to fail.' },
+        { id: 76, title: 'The Hooting Call', summary: 'The Hive Cities fail as every Synodic entity on the planet changes trajectory simultaneously.' },
+        { id: 77, title: 'The Ancient Shield', summary: 'The control beacons fall as the Monoliths turn against their Archivist masters.' },
+        { id: 78, title: 'The Liquid Ghost', summary: 'The Monoliths dissolve into liquid silver, merging into a collective aetheric entity.' },
     ];
 
     const togglePlay = (id: number, url: string) => {

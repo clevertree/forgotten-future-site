@@ -20,7 +20,7 @@ export default function FullTextManuscript() {
         { title: 'III: White Forest', range: [30, 40] },
         { title: 'IV: Analog Dawn', range: [41, 58] },
         { title: 'V: Great Stalemate', range: [59, 68] },
-        { title: 'VI: The Northern Siege', range: [69, 72] },
+        { title: 'VI: The Final Descent', range: [69, 78] },
     ];
 
     return (
@@ -59,7 +59,7 @@ export default function FullTextManuscript() {
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
-                    All 72 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
+                    All 78 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
             </header>
 

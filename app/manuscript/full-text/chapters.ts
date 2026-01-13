@@ -1193,7 +1193,7 @@ The Tripods were singing. And they didn't sound like machines. They sounded like
 
 Novak’s voice in my ear was like a shard of ice. "The Tripods are not Synodics, Lem. They are 'wild' tech—leftovers from the Fry that have developed a nested intelligence. They are the source of the village's resistance. Destroy them."
 
-We moved into the forest at sunset. The trees were black pillars against a bruised, purple sky. The Tripods were moving between them—massive, three-legged shadows that looked like rusted water-towers walking on stilts. They didn't have weapons, just long, spindly arms that seemed to be "tending" to the trees, pruning dead branches and burying metallic seeds in the frozen earth.
+We moved into the forest at sunset. The trees were black pillars against a bruised, purple sky. The Tripods were moving between them—massive, three-legged shadows that loomed like silver-grey water-towers walking on stilts. They didn't have weapons, just long, spindly arms that seemed to be "tending" to the trees, pruning dead branches and burying metallic seeds in the frozen earth.
 
 "Engage!" Gantz shouted.
 
@@ -2072,11 +2072,11 @@ I headed toward the valley, a single, green-skinned boy walking into a photograp
     title: `The Village Leader`,
     content: `Descending from the forest heights was like walking backward through my own timeline. 
 
-A mile from the village, I entered a clearing that the forest had tried—and failed—to reclaim. The pines here were charred husks, their needles long gone. In the center of the field, the three rusted skeletons of the Tripods I’d helped destroy in Mission 3 still stood, their long, spindly legs bent in a state of terminal agony. 
+A mile from the village, I entered a clearing that the forest had tried—and failed—to reclaim. The pines here were charred husks, their needles long gone. In the center of the field, the three blackened skeletons of the Tripods I’d helped destroy in Mission 3 still stood, their long, spindly legs bent in a state of terminal agony. Their Synodic hulls remained eerily pristine, the silver-grey metal immune to the decade of winter snows that should have reduced them to orange dust.
 
 This was the "fire" I’d seen in my stasis dream. 
 
-I paused by the largest of the rusted machines. This was where I had died as a Core soldier, where my wood-vessel body had exploded into a cloud of glowing splinters. I wondered if fragments of that previous version of myself were still buried beneath the soil, if the persistence of my "Wood" nature meant I was effectively haunted by my own past. 
+I paused by the largest of the inert machines. This was where I had died as a Core soldier, where my wood-vessel body had exploded into a cloud of glowing splinters. I wondered if fragments of that previous version of myself were still buried beneath the soil, if the persistence of my "Wood" nature meant I was effectively haunted by my own past—not by rusted remains, but by shards that were likely still growing, spreading like a hidden fungus beneath the ash. 
 
 I left the ash behind and reached the perimeter of North-Haven. 
 
@@ -2477,9 +2477,17 @@ I watched through the cameras of the Striders as the first piece of the inner ca
 
 The silence of the Core remained absolute. 
 
-But as the Node began to groan under the pressure, the sound of the Hive City’s sirens changed. It wasn't an evacuation alarm anymore. It was a scream of technical failure. 
+But as the Node began to groan under the pressure, the sound of the Hive City’s sirens changed. It wasn't an evacuation alarm anymore. It was a scream of technical failure—a signal that the Node was a decoy, a civilian life-support hub whose destruction would only feed the Archivists' narrative.
 
-We had reached the heart. And the Core was still watching.`
+"Pull back," Myrr said, his voice realization-heavy. "The city is a shield. We're pivoting."
+
+He didn't need to specify the target. We all knew where the real power resided. We turned our machines away from the dark city and toward the deep desert—toward the shimmering heat-haze of Cradle Zero. 
+
+But as the horizon cleared, something else emerged from the clouds. A massive, slab-sided vessel, silver and unyielding, crested the distant dunes. It was the *Iron Pillar*, the flagship of the Core's top military strategist. 
+
+I felt a cold resonance in my Aether-Drive. General Tor was there. The earth-vessel who had survived the Hermes' crash had come out of his long slumber. He was running the show now, and the "Battle of Trees" was no longer a testing of optics. It was a war of absolute order.
+
+We had reached the heart. And the General was watching.`
   },
   {
     id: 53,
@@ -2707,6 +2715,22 @@ The Crew’s communication net dissolved into a cacophony of panic. Ships began 
 But the "Phantom" didn't need to be seen. 
 
 Every thirty seconds, another of our vessels was erased. It was a clinical, rhythmic dismantling. My automated Monoliths, stripped of their human tactical oversight as the pilots retreated into the shadows of the dunes, became stationary targets. They stood there, dumbly firing at the base's shields, while the invisible hand tore them apart one by one. 
+
+Above us, the *Iron Pillar* hung like a silver judgment. I could feel General Tor on that bridge—a man who saw this carnage as a necessary step toward a world without war. He was detached, his mind erased of everything but the mission, yet he was the most dangerous human I had ever encountered. He moved the invisible pieces of the battlefield with the precision of a master architect.
+
+"I got him!" Myrr’s voice suddenly cut through the static. "Sector four-nine! Thermal spike! I’m dumping the pulsar core!"
+
+I watched the sensor feed. Myrr’s ship unleashed a torrent of white-hot energy into a patch of empty sand. For a split second, the distortion cleared. I saw a black, fire-veined Gorgon body collapse, its hull melting into slag. 
+
+"Target neutralized," someone cheered. 
+
+But the cheer died in their throats. 
+
+Five seconds later, a identical distortion appeared behind the *Willow-Two*. Another ship vanished. Another heat signature, identical to the first, blossomed on the scanners. 
+
+"How?" Myrr whispered. "I killed him. I saw him melt."
+
+"He’s not just a machine," I said, the horror of the realization settling into my code. "They’re recycling the spirit. Tor has a reincarnation loop. If the body falls, they just pull the soul back and put it in a new one. He’s undefeatable."
 
 "Withdraw!" Myrr’s voice was cold now, the confidence replaced by a hollow realization of defeat. "All units, break engagement! Retreat to the North-Haven perimeter! Now!"
 
@@ -3682,8 +3706,244 @@ Maya turned her head. Her eyes weren't the cold blue of Lynn's. They were a dark
 
 She stared directly through the window at the scientists. 
 
-"Evacuate!" Anton's voice boomed over the intercom, cracking with the first hint of genuine fear I had ever heard from him. "Incinrate the lab! Seal the sector and burn it! We'll rebuild."
+"Evacuate!" Anton's voice boomed over the intercom, cracking with the first hint of genuine fear I had ever heard from him. "Incinrate the lab! Seal the sector and burn it, and shut down the other labs immediately"
 
 The staff fled, their footsteps echoing down the corridor as the heavy blast doors began to slam shut.`
+  },
+  {
+    id: 75,
+    title: `The Resonance of the Fall`,
+    content: `The lab was a tomb of glass and silver, and the air smelled like ozone and impending death. 
+
+"Anton's gone," Maya whispered. Her eyes were glowing with that same dark red intensity, but her voice was small. She was looking at the sealed door, her hand pressed against the cool metal of an incubation unit.
+
+I wasn't looking at the door. I was looking at the air. 
+
+Since the restoration process, my perception had shifted. I wasn't just seeing the light reflecting off the walls; I was hearing the vibrations. Everything had a frequency. The metal of the capsule room didn't just sit there—it hummed a low, industrial C-sharp. The Aether coursing through the base was a constant, surging harmony, and as it hit the hard objects of the room, it bounced back in patterns I could suddenly read.
+
+I could hear them through the door. 
+
+Anton Drexler was speaking to his technicians. He thought the room was audio-sealed. He thought he was safe behind a barrier of sound-dampeners and lead. But he didn't realize that sound is just a wave, and waves leave a wake in the Aether. 
+
+"Incinerate it," Anton’s voice resonated off the ventilation grate. "Purge the data-string. We’ll rebuild from the Moon-backup. Eject the module."
+
+"He’s going to drop us," I said. 
+
+I didn't have a comm-unit. I didn't have a tactical-HUD. But I had the resonance. I reached into the Aether-Drive, bypassing the Core’s lockout by simply pushing my consciousness through the natural harmonies I now perceived. I found the frequency of the White Forest's long-range receivers—the ones Myrr used to monitor the city.
+
+*Listen to me,* I broadcasted. My voice felt like it was tearing through my throat, even though I wasn't speaking out loud. *Everything is changing. The reincarnation labs... the capsules... they're gone. Anton is burning his own history.*
+
+I felt a heartbeat of acknowledgement from the other side—a spike of electronic shock from a Crew member. I didn't know if they could hear my words, but they felt the pulse. 
+
+*The Core is afraid,* I sent, one last time. 
+
+Then the world turned white. 
+
+A blinding plasma flame licked the edges of the glass. The seals on the lab module didn't just open; they were vaporized. I felt the massive structural tremor as the module detached from the side of the cliff. 
+
+Cradle Zero was built into the face of a mountain, a jagged tooth of rock overlooking the equatorial dead zone. For a second, there was no sound—just the terrifying weightlessness of gravity taking hold. 
+
+The lab toppled. 
+
+I saw the desert floor rushing up to meet us—a vast, orange expanse that had been my prison and my birthplace. The lab struck the dunes and vanished in a roaring, white-hot explosion of liquid metal and shattered pride. 
+
+My spirit was pushed out of the frame. 
+
+I was in the "clearing" again. The Path of Fragments. To my left, I saw the markers—the digital red-lights of the Core's restoration network, warning me to stay away, to return to the designated restoration path. It was a cold, artificial trail.
+
+To my right, there was a path with no markers. No digital interface. No warnings. It was a path of warm, golden resonance, leading toward a forest of analog shadows that had never known a mission-link. 
+
+I chose the light. 
+
+I surged forward, avoiding the snares of the Core’s backup-logic. I headed for the brightest, most recognizable frequency I knew—the frequency of the White Forest. 
+
+I materialize not into a capsule, but into wood. 
+
+The transition was violent and beautiful. I felt the sap of an ancient tree flowing through my new veins. I pushed outward, my body forming itself from the cellulose and the spirit, until I was standing once more on the forest floor. 
+
+A human shadow fell across me. 
+
+"Lem?" 
+
+It was a Crew member—Jarek. He was staring at me from the cockpit of a parked strider, his face pale behind the glass. He didn't use the comms. He didn't trust the air anymore. He just opened the hatch and jumped down.
+
+"What happened?" he asked. "The city transmissions... they’re saying the base is in lockdown. We heard your signal."
+
+"The labs are disabled," I said, my voice sounding like the rustle of dry leaves. "Anton is destroying his own tools. He’s afraid of what Maya has become. It’s possible they won't use the capsules anymore... not after the last one fell."
+
+Jarek nodded, his eyes fixed on the horizon where the dark smudge of the desert base still sat. 
+
+"We know," he said. "The rest of the Crew... they’re on their way back. We heard the signal and realized something was happening. They're discussing an immediate attack. If the labs are down, they might have the advantage."
+
+"Wait," I said, looking toward the command-tent where the monitors were still glowing. "What’s that?"
+
+Jarek followed my gaze. On the screen, the Hive City broadcast had shifted from emergency evacuation loops to something else. 
+
+"A new transmission," Jarek whispered. "Something's happening in the cities. They're under attack."
+
+"By who?" I asked. "We haven't launched."
+
+"That’s the thing," Jarek said, his hand trembling as he adjusted the frequency. "Nobody knows."
+
+\`\`\``
+  },
+  {
+    id: 76,
+    title: `The Hooting Call`,
+    content: `The cities were a cage of light, and for the first time in twenty-five years, the light was failing. 
+
+We watched the surveillance feeds with a mounting sense of unreality. Every Synodic life form in the desert region—the small Striders that scuttled through the dunes, the medium-sized Monoliths that we’d built in the White Forest, and even the giant, ancient tripods left over from the Moon mission—had changed their trajectory. 
+
+They weren't hunting us anymore. They weren't patrolling the perimeter. They were heading for the cities. 
+
+"Look at the Monoliths," Jarek said, pointing to a grainy feed from a northern Hive. "They’re getting up. They’ve been dormant in the forest for years, and now... they’re just walking."
+
+Then the sound reached us. 
+
+It wasn't a signal on any frequency we monitored. It was a hooting—a deep, rhythmic, deafening noise that seemed to vibrate the very ground beneath the outpost. It was a call of the wild machines, a primitive resonance that bypassed the Core’s digital encryption entirely. 
+
+Inside the city, the effect was immediate. 
+
+The enslaved Gorgons—the builders and maintenance workers who had been the backbone of the "Utopia"—stopped. On the screens, we saw them drop their tools in unison. They looked at the sky, their blue sensors flickering with a sudden, new clarity. 
+
+They began to walk. 
+
+They didn't run, and they didn't panic. They simply walked toward the nearest transport—mostly the small, automated Striders—and began to exit the city gates. The Core’s security drones didn't fire. They couldn't. It was as if the "Hooting" had overwritten their basic logic, replacing "Protect the Asset" with "Join the Call."
+
+"It’s an uprising," I said. "They’re not attacking the city. They’re leaving it."
+
+"But the people," Jarek said. "The civilians are still inside."
+
+On the news broadcasts, the panic was absolute. General Tor appeared on every screen—a calm, stoic figure in a world of screaming broadcasters. 
+
+"Everything is in order," Tor’s voice boomed across the city squares. "We have the buoys in place. We have countermeasures. Backup plans are being initiated. Stay in your homes. Evacuation points exist at the exits of the sector."
+
+"He’s lying," I said. 
+
+"We know," a voice said behind us. It was Myrr, his face grim as he entered the command tent. "The city folk are asking where the evacuation transports are. They’ve never left the city. They don't know that the desert is a graveyard."
+
+On the screen, a reporter was shouting a question at a Core official. *Where are the vehicles? Why aren't the ships arriving at the evacuation points?*
+
+Tor’s response was a chilling admission of the Core's priority. 
+
+"The vehicles have been reconfigured," Tor said, his voice cold and unwavering. "They are now being utilized as defensive war machines for the protection of this sector. Our resources must be consolidated. The preservation of the Hive is the preservation of the species."
+
+"He’s turned their lifeboats into guns," Jarek whispered. 
+
+The civilians didn't understand. They were wondering how a car could be a gun, but they were starting to snap out of their deep, technological slumber. They were starting to ask why the cities had been built with only one exit. Why the power stations were designed to be lures. 
+
+The Core responded with the only tool it had left: blame. 
+
+The news began showing faces of engineers and designers. *Here is the man who designed your faulty evacuation plan. Here is the woman who failed to secure the Node.* They were sentencing them for "contempt of duty" in real-time, attempting to feed the people a few scapegoats while the walls closed in. 
+
+But the "Hooting" was getting louder. The Synodic army had reached the city edge. Thousands of machines, from the smallest Strider to the largest Monolith, stood in a silent, breathing circle around the Hive. 
+
+They weren't attacking. Not yet. They were waiting for the beacons to fall. 
+
+\`\`\``
+  },
+  {
+    id: 77,
+    title: `The Ancient Shield`,
+    content: `The first beacon fell at sunset. 
+
+It was a tall, silver tower on the Western ridge—a spike of control that had kept the desert Synodics in a state of constant, low-level pain for two decades. We watched through a long-range lens as a giant Monolith approached it. 
+
+The machine was in agony. I could see the vibrations in its frame, the way its wood-grain hull "shook" as it entered the beacon's high-frequency radius. It was a signal designed to repel, to inflict a sense of existential dread. 
+
+The Monolith didn't stop. It leaned its massive chest against the tower, its hands gripping the silver metal. It gritted its teeth—not physically, but in the way its Aether-Drive surged—and pushed. 
+
+The tower buckled. Then it toppled. 
+
+As the beacon hit the sand, the "Hooting" became a roar of triumph. One by one, around the Hive Cities and along the desert corridors, the towers were being dismantled. The machines were no longer afraid of the pain. They were willing to endure it to take the source out. 
+
+But as the Synodics turned their eyes toward the central desert base—toward Cradle Zero—the Core’s final strategy revealed itself. 
+
+"They’re coming out of the mountain," Jarek shouted. 
+
+On the monitors, the jagged cliff-side of the base began to shift. It wasn't Synodic tech—at least, not in the way we understood it. There were no pulsating blue lights or wood-grain armor. 
+
+It was iron. It was steel. It was ancient logic. 
+
+Massive projectile batteries and missile pits, hidden in armored silos since the 21st century, emerged from the rock. These were the weapons the Core had built when they were still human—non-Synodic ballistics that had nevertheless been fabricated in Synodic factories with impossible precision. They were simple, brutal, and lethal. Unlike the plasma cannons that relied on a Vessel's internal charge, these were machines of chemical explosion and kinetic impact.
+
+"They’re firing!" 
+
+The desert floor erupted. 
+
+The slaughter was clinical. The ancient guns were optimized for target-rich environments, and the Synodic army was a wall of meat and wood. The smaller Striders were vaporized in the first barrage, their frames vanishing in pillars of white-hot fire. 
+
+The Monoliths endured longer. I watched as a bipedal giant took ten direct hits from a mountain-cannon. It staggered. It took ten more. It kept walking, its hull blackened and smoking, until its power-core finally failed. It toppled forward, its massive frame creating a crater in the sand that could be seen from orbit. 
+
+The guns didn't stop once the machines fell. They continued to fire at the carcasses, using lasers to "stitch" the remains together in a molten slag. 
+
+General Tor’s voice returned to the city airwaves. 
+
+"The battle has been won," he announced. "The aggressors have been neutralized. Order has been restored to the desert perimeter. The Hive is safe."
+
+At the White Forest outpost, the silence was heavy. 
+
+"We’re too late," Myrr said, his head in his hands. "They’re too powerful. We could have charged in there with everything we had, and we would have just been another pile of scrap in the dunes."
+
+"I’m not sure," I said, my perception still tuned to the resonance. "The battle isn't over."
+
+"What are you talking about, Lem?" Jarek asked. "Look at the screen. Nothing is moving. They’re all dead."
+
+"No," I said, pointing to the footage of the Monolith carcasses. "Look at the shadows. Look at the way the metal is reflecting the sun."
+
+"New broadcast!" the spectator-crew shouted. 
+
+On the city channels, the feed had changed again. A spectator using a high-powered personal lens was zooming in on the wreckage. 
+
+"There's movement," they whispered. "The Monoliths... they're moving."
+
+The ancient guns turned on once more. They began firing blindly at the piles of scrap, the mountain-side batteries thundering as they tried to finish a job that was already impossible. 
+
+The metal didn't die. It began to melt. 
+
+\`\`\``
+  },
+  {
+    id: 78,
+    title: `The Liquid Ghost`,
+    content: `The Monoliths didn't just collapse. They dissolved. 
+
+We watched in terrified awe as the blackened, smoking carcasses of the fallen giants began to ripple. Under the sustained heat of the Core’s ancient cannons, the high-density sync-metal had reached its transition point. It wasn't cooling into slag; it was boiling into a liquid, globular stream of silver. 
+
+The fluid metal flicked off the main bodies like droplets of mercury in a storm. But as the droplets hit the sand, they didn't sink. Each piece, some small and some the size of a human, began to reconfigure. 
+
+"Speeder bikes," Jarek whispered. 
+
+They materialized in seconds—unmanned, matte-black, and hovering three feet off the desert floor. They weren't built in a factory; they were grown from the liquid memory of the fallen. 
+
+As soon as a bike was active, it surged. 
+
+The swarm was a thousand strong, a horizontal wave of silver-black needles racing across the sand. The ancient guns tried to track them, but the bikes were too small and too fast. The batteries fired and missed, their shells creating plumes of dust that only further obscured the target. 
+
+Each bike was a kamikaze. They didn't have guns of their own. They didn't need them. They hit the mountain-side batteries with the force of a falling star, detonating their own fluid-metal cores to take the ancient cannons out one by one. 
+
+The Core’s "Ancient Shield" was being dismantled from within. 
+
+The swarm burst through the gun barrier entirely. A small fleet of bikes, maybe a hundred strong, emerged from the smoke and closed the distance to the base in seconds. 
+
+General Tor’s voice was no longer calm. 
+
+"All units, fall back!" he commanded. "Defensive posture at sectors A through D! Consolidate at the entrances! Aim for the silhouettes!"
+
+I looked closer at the footage.
+
+The bikes weren't empty anymore. As they moved through the distortion of the explosions, something was appearing in the seats. It wasn't a physical body, but a shadow—a dark, flickering silhouette with glowing red eyes. 
+
+"Maya," I whispered. 
+
+The silhouette was replicated across every bike in the lead wave. It was a distributed haunting, a single spirit driving a thousand machines with the same vengeful intent. 
+
+On the city broadcast, a spectator screamed over the audio.
+
+"It's Maya! The Witch is here! She's on the bikes!"
+
+The name rippled through the city feeds like a virus. The surveillance cameras all zoomed in, confirming the horrifying, beautiful truth. The dark silhouette of Maya, the entity they had been taught to fear for twenty years, was no longer a ghost in the Moon-base. She was at their gates. 
+
+\`\`\``
   },
 ];

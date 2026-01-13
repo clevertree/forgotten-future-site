@@ -8,7 +8,7 @@ export default function ScrollNavigation() {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
     const [currentChapter, setCurrentChapter] = useState<number | null>(null);
-    const [maxChapter, setMaxChapter] = useState(74);
+    const [maxChapter, setMaxChapter] = useState(78);
     const isFullText = pathname?.includes('/manuscript/full-text');
 
     // Lock logic to prevent "echoing" during manual scrolls
@@ -80,7 +80,7 @@ export default function ScrollNavigation() {
                 }
             }
             chapterElements.forEach((chapter) => observer.observe(chapter));
-        }, 500);
+        }, 1000);
 
         return () => {
             clearTimeout(timeoutId);

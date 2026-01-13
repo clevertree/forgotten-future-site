@@ -339,46 +339,6 @@ export default function CharactersPage() {
                 </section>
 
                 <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Creatures & Mechanical Entities</h2>
-                    <div className="glass-panel p-8 border-l-4 border-l-violet-500 overflow-hidden relative">
-                        <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="md:w-1/3 relative h-64 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('gorgons')}>
-                                <Image
-                                    src={prefixPath('/media/entities/gorgons/gorgons-landscape.png')}
-                                    alt="Gorgons - The Builders"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <div className="md:w-2/3">
-                                <h3 className="text-2xl font-bold mb-1">Gorgons</h3>
-                                <p className="text-sm text-violet-400 uppercase tracking-widest mb-4 font-semibold">The Builders</p>
-                                <div className="space-y-4 text-gray-300 leading-relaxed">
-                                    <p>
-                                        <strong className="text-white">Nature:</strong> Engineered mechanical entities evolved on the Moon's far side as the Technocratic Core's answer to the "perfect slave." Fire-aligned machines possessed of profound intelligence and contemplative nature.
-                                    </p>
-                                    <p>
-                                        <strong className="text-white">Form:</strong> Massive metallic spheres (40-60 meters in diameter) with multiple whipping arms for precision work. Deep blue-black with luminous aether-blue veins that pulse with emotion and thought. All Gorgons share identical physical form by Core decree.
-                                    </p>
-                                    <p>
-                                        <strong className="text-white">Society:</strong> Organized around Fire Cities on Earth and ancient settlements on the Moon's far side. Governed by hivemind consensus, they exist as both individuals and collective consciousness. Divided into Loyalists, Liberated, and Isolationist factions following the Cataclysm.
-                                    </p>
-                                    <p>
-                                        <strong className="text-white">Purpose:</strong> Master builders and maintenance technicians capable of assembling or deconstructing complex machinery with surgical precision. Pilot massive Strider exoskeletons for long-distance travel and wield devastating Heat Ray weapons. Face existential extinction as no new Gorgons have been manufactured since the Cataclysm.
-                                    </p>
-                                    <p>
-                                        <strong className="text-white">Tragedy:</strong> Enslaved through embedded Master Lock programming that allows remote Core control. Despite their wisdom and benevolence, they are scapegoated in the "Thousand-Year Fallacy"—deliberately triggered into failure states by the Archivists to justify continued human dominance and control.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="mb-20">
 
                     <div className="glass-panel p-8 text-gray-300 leading-relaxed space-y-4">
                         <p>
