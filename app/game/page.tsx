@@ -24,7 +24,7 @@ export default function GamePage() {
         {
             path: '/media/game/songs/MMX2_Bubble_Crab_-_Sea.mp3',
             title: 'Deep Sea Exploration',
-            description: 'Song concept for deep sea level which might appear only in the game and just mentioned in the book.'
+            description: 'Song concept inspired by the BubbleCrab level in the game Mega Man X2 which might appear in a location only featured in the game and just mentioned in the book'
         },
         {
             path: '/media/game/songs/Traveling_in_Rain_Original_2005.mp3',
@@ -149,7 +149,7 @@ export default function GamePage() {
                                 <span className="text-cyan-400">Beyond 2.5D</span>
                             </h3>
                             <p className="text-gray-300 leading-relaxed mb-6">
-                                <strong>Forgotten Future</strong> hopes to redefine the platforming experience through a "3D-capable 2D" framework. 
+                                <strong>Forgotten Future</strong> hopes to redefine the platforming experience through a "3D-capable 2D" framework.
                                 While motion is primarily locked to a two-dimensional axis (horizontal and vertical), the world
                                 and characters exist in a fully realized 3D space, allowing for radical shifts in perspective.
                             </p>
@@ -205,7 +205,15 @@ export default function GamePage() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                                 <div className="flex-1">
                                     <h3 className="text-lg font-bold uppercase tracking-wider text-cyan-400 mb-1">{song.title}</h3>
-                                    <p className="text-sm text-gray-500 italic mb-4 md:mb-0">{song.description}</p>
+                                    <p className="text-sm text-gray-500 italic mb-2 md:mb-1">{song.description}</p>
+                                    <a
+                                        href="https://soundcloud.com/ari-asulin"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[10px] text-cyan-500/60 uppercase tracking-widest hover:text-cyan-400 transition-colors flex items-center gap-1"
+                                    >
+                                        Artist: Protricity
+                                    </a>
                                 </div>
                                 <div className="w-full md:w-96">
                                     <audio controls className="w-full h-8 accent-cyan-500">
