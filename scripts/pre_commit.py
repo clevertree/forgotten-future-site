@@ -84,10 +84,12 @@ def update_dashboard():
                                 </div>'''
         commit_html += '\n                            </div>\n                        '
         
-        repo_block_regex = rf'(<h3[^>]*>Repository: {repo_name}</h3>.*?<div className="space-y-3 mb-6">)(.*?)(</div>)'
-        content = re.sub(repo_block_regex, rf'\1{commit_html}\3', content, flags=re.DOTALL)
-        
-        return content
+        # Match the entire space-y-3 mb-6 block by looking for the next GitHub Source link
+        # This is more robust as it captures the entire div structure
+        repo_block_regex = rf'(Repository: {repo_name}.*?<div className="space-y-3 mb-6">)(.*?)(</div>\s+<a href)'
+        new_content = re.sub(repo_block_regex, rf'\1{commit_html}\3', content, flags=re.DOTALL)
+        # We don'\''t print warnings here as it'\''s common for content to be same
+        return new_content
 
     content = update_repo_section(content, "Story", story_v, story_commits)
     content = update_repo_section(content, "Teaser", teaser_v, teaser_commits)

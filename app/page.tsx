@@ -110,10 +110,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.8</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.9</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">5b9ae04</span>
+                                    <span className="truncate">v0.9.8: Finalize independent pre-commit hooks and dashboard automation</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">0759215</span>
                                     <span className="truncate">Test dashboard update hook</span>
@@ -121,10 +125,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">3c557de</span>
                                     <span className="truncate">v0.9.5: Final dashboard hash sync</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">a282134</span>
-                                    <span className="truncate">v0.9.4: Fix Chapter 79 synchronization and development status</span>
                                 </div>
                             </div>
                         </div>
