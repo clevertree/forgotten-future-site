@@ -1,3 +1,4 @@
+a282134 v0.9.4: Fix Chapter 79 synchronization and development status
 f0bf24a Fix GitHub branch link and adjust opacity in status box
 660759d Add development status box to front page
 a42708b Add COMMIT_HISTORY.md and update Copilot instructions

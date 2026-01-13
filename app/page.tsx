@@ -125,21 +125,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.4</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.5</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">...</span>
+                                    <span className="truncate">v0.9.5: Final dashboard hash sync</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">a282134</span>
                                     <span className="truncate">v0.9.4: Fix Chapter 79 synchronization and development status</span>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">f0bf24a</span>
                                     <span className="truncate">Sync manuscript chapters and update settings structure</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">cc1426b</span>
-                                    <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
                             </div>
                         </div>
