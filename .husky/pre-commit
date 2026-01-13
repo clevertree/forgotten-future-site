@@ -1,1 +1,2 @@
+/home/ari/dev/ff/forgotten-future-site/scripts/pre_commit.py
 npm run build && npm test

@@ -1,52 +1,37 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { prefixPath } from '@/lib/utils';
+
+const prefixPath = (path: string) => {
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    return `${prefix}${path}`;
+};
 
 export default function Home() {
-    const images = [
-        prefixPath('/media/teaser/hero_front_bg.png'),
-        prefixPath('/media/teaser/hero_lem_moon.png'),
-        prefixPath('/media/teaser/hero_incubating_cube.png'),
-        prefixPath('/media/teaser/hero_witch_humanoids.png'),
-        prefixPath('/media/teaser/hero_melting_building.png')
-    ];
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % images.length);
-        }, 6000); // 6 second fade interval
-        return () => clearInterval(interval);
-    }, [images.length]);
-
     return (
-        <div className="flex flex-col items-center">
+        <main className="min-h-screen bg-black text-white selection:bg-cyan-500/30">
             {/* Hero Section */}
-            <section className="relative w-full h-[70vh] md:h-[80vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+            <section className="relative h-screen flex items-center justify-center overflow-hidden border-b border-white/10">
                 <div className="absolute inset-0 z-0">
-                    {images.map((src, i) => (
-                        <div
-                            key={src}
-                            className={`absolute inset-0 transition-opacity duration-[3000ms] mix-blend-overlay ${i === currentIndex ? 'opacity-100' : 'opacity-0'
-                                }`}
-                        >
-                            <Image
-                                src={src}
-                                alt="Atmospheric Background"
-                                fill
-                                priority={i === 0}
-                                className="object-cover"
-                                sizes="100vw"
-                            />
-                        </div>
-                    ))}
-                    <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/10 via-black/60 to-black"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10" />
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover opacity-60"
+                        style={{ filter: 'grayscale(100%) contrast(120%)' }}
+                    >
+                        <source src={prefixPath('/media/bg_glitch.mp4')} type="video/mp4" />
+                    </video>
                 </div>
-                <div className="z-10 w-full max-w-2xl p-6 md:p-10 rounded-2xl bg-black/40 backdrop-blur-[4px] border border-white/5">
-                    <h1 className="text-3xl md:text-5xl font-black mb-4 tracking-tighter text-glow">
+
+                <div className="container mx-auto px-6 relative z-10 text-center">
+                    <div className="inline-block mb-4 px-3 py-1 border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase animate-pulse">
+                        Signal Detected // Era: post-Fry
+                    </div>
+                    <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter italic">
+                        FORGOTTEN<br />
+                        <span className="text-cyan-500">FUTURE</span><br />
                         STARS DIE
                     </h1>
                     <p className="text-sm md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto leading-relaxed">
@@ -71,21 +56,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.2</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.4</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">4ff8c56</span>
+                                    <span className="truncate">Add independent pre-commit hook</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">5450e87</span>
+                                    <span className="truncate">Test pre-commit hook</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">a4cc73d</span>
                                     <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">d42abbe</span>
-                                    <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">e88a195</span>
-                                    <span className="truncate">Add Chapter 79 and update manuscript, synopsis, and planning docs</span>
                                 </div>
                             </div>
                         </div>
@@ -98,21 +83,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.2</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.3</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">3720f29</span>
+                                    <span className="truncate">Add independent pre-commit hook</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">c9e4b01</span>
                                     <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
                                 </div>
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">1c42552</span>
+                                    <span className="text-cyan-500/50">eecfd66</span>
                                     <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">5b67a57</span>
-                                    <span className="truncate">Update Copilot instructions and bump version</span>
                                 </div>
                             </div>
                         </div>
@@ -125,21 +110,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.5</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.8</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">...</span>
+                                    <span className="text-cyan-500/50">0759215</span>
+                                    <span className="truncate">Test dashboard update hook</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">3c557de</span>
                                     <span className="truncate">v0.9.5: Final dashboard hash sync</span>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">a282134</span>
                                     <span className="truncate">v0.9.4: Fix Chapter 79 synchronization and development status</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">f0bf24a</span>
-                                    <span className="truncate">Sync manuscript chapters and update settings structure</span>
                                 </div>
                             </div>
                         </div>
@@ -198,18 +183,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {/* Call to Action */}
-            <section className="container mx-auto px-6 py-24 text-center">
-                <h2 className="text-3xl mb-8">Witness the Revelation</h2>
-                <p className="max-w-xl mx-auto text-gray-400 mb-12">
-                    Forgotten Future is an AI-driven sci-fi novel and cross-media project.
-                    Join us as we document the transition from the After Time to the final reincarnation.
-                </p>
-                <Link href="/media" className="text-cyan-400 hover:text-cyan-300 font-bold uppercase tracking-widest transition-colors">
-                    View Teaser & Media →
-                </Link>
-            </section>
-        </div>
+        </main>
     );
 }
