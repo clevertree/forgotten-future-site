@@ -22,8 +22,8 @@ export default function Navigation() {
     return (
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 md:gap-4 group z-[60]">
-                <div className="relative w-12 h-12 md:w-20 md:h-20">
+            <Link href="/" className="flex items-center group z-[60]">
+                <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0">
                     <Image
                         src={prefixPath('/icon.png')}
                         alt="Forgotten Future Icon"
@@ -32,9 +32,15 @@ export default function Navigation() {
                         sizes="(max-width: 768px) 48px, 80px"
                     />
                 </div>
-                <span className="text-xl md:text-3xl font-bold tracking-tighter text-cyan-400 text-glow">
-                    FORGOTTEN FUTURE
-                </span>
+                <div className="relative h-8 md:h-12 w-36 md:w-56">
+                    <Image
+                        src={prefixPath('/media/logo/ff-text.png')}
+                        alt="Forgotten Future"
+                        fill
+                        className="object-contain"
+                        priority
+                    />
+                </div>
             </Link>
 
             {/* Desktop Nav */}

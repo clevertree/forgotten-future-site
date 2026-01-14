@@ -14,7 +14,7 @@ export default function FullTextManuscript() {
     const [activeComment, setActiveComment] = useState<{ path: string; anchorId: string } | null>(null);
     const [submittedPrUrl, setSubmittedPrUrl] = useState<string | null>(null);
 
-        const sections = [
+    const sections = [
         { title: 'I: Shattered Approach', range: [1, 20] },
         { title: 'II: Thousand-Year Fallacy', range: [21, 26] },
         { title: 'III: White Forest', range: [27, 35] },
