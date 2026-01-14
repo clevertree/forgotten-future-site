@@ -56,7 +56,7 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.3</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.4</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
@@ -83,10 +83,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.4</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.6</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">bc5785a</span>
+                                    <span className="truncate">chore: sync metadata with 32-chapter structure</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">3720f29</span>
                                     <span className="truncate">Add independent pre-commit hook</span>
@@ -94,10 +98,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">c9e4b01</span>
                                     <span className="truncate">v0.9.2: Sync chapter counts and metadata</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">eecfd66</span>
-                                    <span className="truncate">Add COMMIT_HISTORY.md and update Copilot instructions</span>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +110,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.5</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.7</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">1fdfc0b</span>
+                                    <span className="truncate">feat: sync 32-chapter manuscript and update frontend indexing</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">d9526cc</span>
                                     <span className="truncate">feat: sync 32-chapter manuscript and update frontend indexing</span>
@@ -121,10 +125,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">11e2d9f</span>
                                     <span className="truncate">v0.10.2: Sync website with 71 consolidated chapters and updated summaries</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">3bc4b43</span>
-                                    <span className="truncate">v0.10.0: Sync manuscript data (71 chapters), update site ranges, and bump version</span>
                                 </div>
                             </div>
                         </div>

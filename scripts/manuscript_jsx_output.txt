@@ -1,40 +1,4 @@
-'use client';
-
-import React from 'react';
-import Link from 'next/link';
-
-export default function FullTextManuscript() {
-    return (
-        <div className="container mx-auto px-6 lg:px-12 py-12">
-            <div className="mb-12 flex justify-between items-center no-print">
-                <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
-                    ← Back to Manuscript Page
-                </Link>
-
-                <div className="flex items-center gap-4">
-                    <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
-                        Optimized for Text-to-Speech
-                    </span>
-                </div>
-            </div>
-
-            <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
-                <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
-                <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-                <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
-                    Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
-                    All 32 chapters of the Aether-Drive logs have been decrypted and rendered into prose.
-                </div>
-            </header>
-
-            <div className="flex flex-col lg:flex-row gap-12 relative">
-                {/* Navigation Sidebar */}
-                <aside className="lg:w-1/4 no-print order-2 lg:order-1">
-                    <div className="glass-panel sticky top-36 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
-                        <h2 className="text-sm font-bold text-cyan-500 uppercase tracking-[0.2em] mb-6 border-b border-white/10 pb-2">
-                            Navigation
-                        </h2>
-                        <div className="space-y-8">
+SIDEBAR_START
                             <div>
                                 <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
                                     I: Lunar Mission
@@ -223,11 +187,8 @@ export default function FullTextManuscript() {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </aside>
-
-                <article className="lg:w-3/4 space-y-24 pb-[80vh] order-1 lg:order-2">
+SIDEBAR_END
+ARTICLE_START
                     <section id="chapter-1" className="prose prose-invert max-w-none scroll-mt-32">
                         <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter 1</span>
@@ -260,7 +221,7 @@ export default function FullTextManuscript() {
                             <p>Launch was thin and precise. The ship left the air as if releasing a held breath; the city shrank in slow, hard steps through the viewport. In that widening I saw the monoliths converge on the city's grid—lines of machines angling toward the central plants—and I noticed men who had been uncertain straighten, their doubt giving way to a hard, mechanical resolve.</p>
                             <p>Conversations scraped by me—the disjointed talk of men trained to brace for deceit. They referred to their psychological briefing as if it were a weapon: "narrative warfare," they called it. There were two dangers, one said: falsehood dressed as revelation; the other, a truth released at a strategic moment to destabilize trust. The phrase clung to the metal in the air.</p>
                             <p>They argued about a particular piece of intelligence the briefing had hinted at, a framing of what waited at the lunar site that made their voices go flat and small. I listened because listening was what I was chosen for. I catalogued their fear the way a carpenter catalogs knots in timber—factually, without commentary.</p>
-                            <p>I walked the ship and watched faces practice their confidence. The armor of certainty did not fit any better close up; it cut into the flesh like ill-fitting clothing. My passivity capability folded into function: not a soldier, not a spectator, but someone whose silence could hold other people's truths until needed.</p>
+                            <p>I walked the ship and watched faces practice their confidence. The armor of certainty did not fit any better close up; it cut into the flesh like ill-fitting clothing. My passivity folded into function: not a soldier, not a spectator, but someone whose silence could hold other people's truths until needed.</p>
                         </div>
                     </section>
                     <section id="chapter-3" className="prose prose-invert max-w-none scroll-mt-32">
@@ -351,7 +312,7 @@ export default function FullTextManuscript() {
                             <p>The junction opened like a set of doors I did not remember having entered. I took the path that pressed toward the place I had been torn from—the fires of Cradle Zero. Time folded and I woke inside a shell of metal and purpose.</p>
                             <p>A chorus of harmonics named me for safety. The city was a furnace arranged in architecture; heat moved as traffic. My movements were those of a builder: precise, calibrated, unromantic. The local safety locks registered my signature but did not interdict me; my trace passed through a detector that logged an anomaly and then returned to its routine. I carried a remainder that did not fit—an odd stillness that made other machines glance and move away.</p>
                             <p>Rahu came with a pressure that made the air lighter and the instruments complain. He pressed a transponder toward the city and then toward me. He probed the banks of my memory and found there the raw, unredacted patterns of the Cataclysm. For a moment his routine stumbled; he identified in me a name and a threat: "Mara."</p>
-                            <p>I hold my silence like a tool. The city continued to make itself of heat and labor.</p>
+                            <p>I held my silence like a tool. The city continued to make itself of heat and labor.</p>
                         </div>
                     </section>
                     <section id="chapter-10" className="prose prose-invert max-w-none scroll-mt-32">
@@ -627,18 +588,4 @@ export default function FullTextManuscript() {
                             <p>I sent the final record and then I had nothing left to say. End of Transmission.</p>
                         </div>
                     </section>
-                </article>
-            </div>
-
-            <footer className="border-t border-white/10 py-12 text-center">
-                <p className="text-zinc-500 text-sm italic mb-4">
-                    End of First Edition Manuscript. The Aether-Drive reaches its limit of recall.
-                </p>
-                <p className="text-[10px] text-zinc-600 uppercase tracking-widest">
-                    Protocol: Full Sync | Archive ID: FF-MAN-MAX
-                </p>
-            </footer>
-        </div>
-    );
-}
-
+ARTICLE_END

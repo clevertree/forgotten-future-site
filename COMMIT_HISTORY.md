@@ -1,3 +1,5 @@
+1fdfc0b feat: sync 32-chapter manuscript and update frontend indexing
+d9526cc feat: sync 32-chapter manuscript and update frontend indexing
 11e2d9f v0.10.2: Sync website with 71 consolidated chapters and updated summaries
 3bc4b43 v0.10.0: Sync manuscript data (71 chapters), update site ranges, and bump version
 28ed11a v0.9.9: Silenced redundant dashboard update warnings

@@ -215,29 +215,6 @@ export default function ManuscriptPage() {
                                                     >
                                                         Read Chapter
                                                     </Link>
-
-                                                    <button
-                                                        disabled={!chapter.audio}
-                                                        onClick={(e) => {
-                                                            e.stopPropagation();
-                                                            if (chapter.audio) togglePlay(chapter.id, chapter.audio);
-                                                        }}
-                                                        className={`text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded transition-all border ${!chapter.audio
-                                                            ? 'border-zinc-800 text-zinc-700 cursor-not-allowed opacity-50'
-                                                            : playingId === chapter.id
-                                                                ? 'bg-cyan-500 text-black border-cyan-500'
-                                                                : 'border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10'
-                                                            }`}
-                                                    >
-                                                        {playingId === chapter.id ? '⏸ Pause' : '▶ Play Audio'}
-                                                    </button>
-
-                                                    {chapter.audio && (
-                                                        <div className="flex items-center gap-2 text-zinc-500 ml-2">
-                                                            <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></span>
-                                                            <span className="text-[10px] uppercase tracking-widest font-bold">Live</span>
-                                                        </div>
-                                                    )}
                                                 </div>
                                             </div>
                                         ))}
