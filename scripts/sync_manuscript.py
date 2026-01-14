@@ -96,3 +96,27 @@ with open(page_path, "w", encoding="utf-8") as f:
     f.write(page_content)
 
 print("Updated app/manuscript/page.tsx with 32 chapters")
+
+# 4. Update app/manuscript/full-text/page.tsx
+full_text_path = os.path.join(site_root, "app/manuscript/full-text/page.tsx")
+with open(full_text_path, "r", encoding="utf-8") as f:
+    ft_content = f.read()
+
+# Inline chapters instead of importing
+ft_content = ft_content.replace("import { chapters } from './chapters';", f"const chapters = [\n{chapters_js}\n    ];")
+
+# Update sections
+new_ft_sections = """        { title: 'I: Lunar Mission', range: [1, 7] },
+        { title: 'II: Long Watch', range: [8, 15] },
+        { title: 'III: Northern Rebellion', range: [16, 25] },
+        { title: 'IV: Final Resolution', range: [26, 32] },"""
+
+ft_content = re.sub(r"const sections = \[.*?\];", f"const sections = [\n{new_ft_sections}\n    ];", ft_content, flags=re.DOTALL)
+
+# Update the "All 79 chapters" text
+ft_content = ft_content.replace("All 79 chapters", "All 32 chapters")
+
+with open(full_text_path, "w", encoding="utf-8") as f:
+    f.write(ft_content)
+
+print("Updated app/manuscript/full-text/page.tsx")
