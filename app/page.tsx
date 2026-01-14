@@ -9,13 +9,25 @@ const prefixPath = (path: string) => {
 
 export default function Home() {
     const heroImages = [
-        prefixPath('/media/teaser/hero_front_bg.png'),
-        prefixPath('/media/teaser/hero_lem_moon.png'),
+        prefixPath('/media/teaser/ff-title.png'),
+        prefixPath('/media/teaser/hero_1_future_war_&_pillar_of_fire_1.png'),
+        prefixPath('/media/teaser/hero_2_mechanical_white_forest_2.png'),
+        prefixPath('/media/teaser/hero_3_desert_base_4.png'),
+        prefixPath('/media/teaser/hero_background_spheres.png'),
         prefixPath('/media/teaser/hero_disintegrating_moon.png'),
-        prefixPath('/media/teaser/hero_synodic_walkers.png'),
+        prefixPath('/media/teaser/hero_front_bg.png'),
+        prefixPath('/media/teaser/hero_great_beast.png'),
         prefixPath('/media/teaser/hero_great_fry.png'),
-        prefixPath('/media/teaser/hero_moon_eruption.png'),
+        prefixPath('/media/teaser/hero_incubating_cube.png'),
+        prefixPath('/media/teaser/hero_lem_moon.png'),
+        prefixPath('/media/teaser/hero_lightning_scars.png'),
+        prefixPath('/media/teaser/hero_melting_building.png'),
+        prefixPath('/media/teaser/hero_moon_eruption_v2.png'),
+        prefixPath('/media/teaser/hero_pillar_of_fire.png'),
+        prefixPath('/media/teaser/hero_redacted_prophecy.png'),
+        prefixPath('/media/teaser/hero_synodic_walkers.png'),
         prefixPath('/media/teaser/hero_windows_sigh.png'),
+        prefixPath('/media/teaser/hero_witch_humanoids.png'),
     ];
 
     return (
@@ -107,21 +119,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.12</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.15</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">fa2d5d4</span>
+                                    <span className="truncate">feat: expand hero slideshow with full set of atmospheric images</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">4cb4697</span>
+                                    <span className="truncate">feat: restore hero section background slideshow with atmospheric images</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">c10be7f</span>
                                     <span className="truncate">feat: update sync scripts to clean individual chapters for the site</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">c2ca968</span>
-                                    <span className="truncate">feat: sync manuscript with lore corrections (human pilots vs Gorgon inhabitants)</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">976f797</span>
-                                    <span className="truncate">Sync manuscript: Chapters 5, 6, 7 narrative corrections and Chapter 32 Gorgon liberation.</span>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,5 @@
+fa2d5d4 feat: expand hero slideshow with full set of atmospheric images
+4cb4697 feat: restore hero section background slideshow with atmospheric images
 c10be7f feat: update sync scripts to clean individual chapters for the site
 c2ca968 feat: sync manuscript with lore corrections (human pilots vs Gorgon inhabitants)
 976f797 Sync manuscript: Chapters 5, 6, 7 narrative corrections and Chapter 32 Gorgon liberation.
