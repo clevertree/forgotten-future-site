@@ -1,3 +1,4 @@
+c10be7f feat: update sync scripts to clean individual chapters for the site
 c2ca968 feat: sync manuscript with lore corrections (human pilots vs Gorgon inhabitants)
 976f797 Sync manuscript: Chapters 5, 6, 7 narrative corrections and Chapter 32 Gorgon liberation.
 c1d4cff feat: sync updated Chapter 32 manuscript and summary to website

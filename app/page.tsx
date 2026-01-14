@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroSlideshow from './components/HeroSlideshow';
 
 const prefixPath = (path: string) => {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -7,23 +8,21 @@ const prefixPath = (path: string) => {
 };
 
 export default function Home() {
+    const heroImages = [
+        prefixPath('/media/teaser/hero_front_bg.png'),
+        prefixPath('/media/teaser/hero_lem_moon.png'),
+        prefixPath('/media/teaser/hero_disintegrating_moon.png'),
+        prefixPath('/media/teaser/hero_synodic_walkers.png'),
+        prefixPath('/media/teaser/hero_great_fry.png'),
+        prefixPath('/media/teaser/hero_moon_eruption.png'),
+        prefixPath('/media/teaser/hero_windows_sigh.png'),
+    ];
+
     return (
         <main className="min-h-screen bg-black text-white selection:bg-cyan-500/30">
             {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden border-b border-white/10">
-                <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10" />
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover opacity-60"
-                        style={{ filter: 'grayscale(100%) contrast(120%)' }}
-                    >
-                        <source src={prefixPath('/media/bg_glitch.mp4')} type="video/mp4" />
-                    </video>
-                </div>
+                <HeroSlideshow images={heroImages} videoSrc={prefixPath('/media/bg_glitch.mp4')} />
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <div className="inline-block mb-4 px-3 py-1 border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 text-xs font-bold tracking-[0.3em] uppercase animate-pulse">
@@ -108,10 +107,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.11</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.12</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">c10be7f</span>
+                                    <span className="truncate">feat: update sync scripts to clean individual chapters for the site</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">c2ca968</span>
                                     <span className="truncate">feat: sync manuscript with lore corrections (human pilots vs Gorgon inhabitants)</span>
@@ -119,10 +122,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">976f797</span>
                                     <span className="truncate">Sync manuscript: Chapters 5, 6, 7 narrative corrections and Chapter 32 Gorgon liberation.</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">c1d4cff</span>
-                                    <span className="truncate">feat: sync updated Chapter 32 manuscript and summary to website</span>
                                 </div>
                             </div>
                         </div>
