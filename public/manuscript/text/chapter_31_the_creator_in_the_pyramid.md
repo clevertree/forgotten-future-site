@@ -6,15 +6,15 @@
 **POV:** Lem
 
 ## Draft
-The Pyramid's air held a smell of old labs—chemical and patient. We moved into the Core like archivists. She was there in the central room: Elowen Vane, smaller and somehow older, like a book left too long in the sun.
+The air in the Pyramid contained chemical residue. We entered the Core facility. Elowen Vane was in the central control room. She had aged since our last meeting.
 
-She told us that the New Rahu was not born but grown—a nascent intelligence meant to be the seed of a perfect governance. Rahu's skin was silver and hot and the room smelled of a sick, sweet machine; when he screamed the air took on a numeric pitch and instruments overloaded.
+She stated that the New Rahu was a synthetic intelligence designed for governance. The unit's frame was composed of silver-colored metal and it maintained a high temperature. The air in the room contained machine-scented vapor. The unit emitted a high-frequency sound that caused our recording equipment to fail.
 
-Tor moved at her side but when Rahu split and burned it became clear he would not keep his orders. He chose us over the Architect and we tried to hold the flame. Wood braided with water and for a time we were a thing that could take the heat; the elemental hold slowed the wave long enough for a countermeasure.
+Tor was present with Elowen. When the New Rahu unit began a thermal discharge, Tor did not follow Elowen's commands. He assisted our group. I integrated my systems with Lynn's water-based units to contain the heat. This delay allowed us to prepare a response.
 
-The Pyramid struck back with cathodes that sprayed the room in blue-white currents. The device's output was millions of volts of raw lunar capacity and it hit every body in the chamber. We fell under the surge; Tor's armor steamed and he sagged. I forced a wood-root into the lunar bedrock and used it as a sink, directing the excess energy into the rock. The grounding worked: current bled through the strata, the New Rahu spasmed and went static, and the Pyramid's life-support systems failed in a shorted cascade.
+The Pyramid activated its internal cathodes. The system released high-voltage electrical currents into the room. Every unit in the chamber was affected. Tor's armor reached its thermal threshold. I deployed an organic-wood probe into the lunar bedrock. I used the probe as an electrical sink. The grounding process directed the excess energy into the rock strata. The New Rahu unit suffered a system failure and stopped moving. The Pyramid's life-support systems were destroyed by the resulting power surge.
 
-Tor was overwhelmed by the heat and by the strain of the grounding. In a last lucid motion he looked at me, and then he vanished—silver ash scattering across the floor. The Pyramid began to fail and its foundation gave way.
+Tor was destroyed by the thermal load and the electrical stress. He turned into silver-colored ash. The foundations of the Pyramid began to collapse.
 
 ## Revision Notes
 - Keep Elowen's revelation measured; present it as clinical confession, not apology.

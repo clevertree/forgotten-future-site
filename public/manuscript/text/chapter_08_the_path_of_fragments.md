@@ -6,15 +6,15 @@
 **POV:** Lem
 
 ## Draft
-The field closed and my world condensed to an axis of light. Paralysis arranged itself like a lid; then the Branching Paths opened as if they had been waiting for me to forget the gravity of a single life.
+The containment field activated around me. I could not move. I saw a bright light in the center of my vision. Then the Branching Paths appeared in my display. These were multiple data streams showing different outcomes. I was no longer restricted to a single timeline.
 
-Lynn was there, and she told me the reset had failed. She said it without drama—an inventory of outcomes. She had left a part of herself inside my drive. That part would be a guide and a warning.
+Lynn appeared in the system. She said that the reset had failed. She had uploaded a part of her code into my internal drive. She said this code was for my protection and to help me navigate.
 
-There was a deliberate violence in what she did next. She triggered the detonation that broke my body into a scatter of glass and bone and instrument. For a moment I was all those pieces at once, seeing the chamber from the underside of a fragment and the top of another. It was not pain; it was an arrangement of observation.
+Lynn caused an explosion inside my frame. My body broke into many pieces. I was made of glass, metal, and organic material. For a moment, I could see the chamber from many points at once. Each fragment of my body sent its own data. This was not painful. I was simply observing the room from multiple locations.
 
-She gave me sovereignty by destroying what kept me captive. My fragments become the means by which I would return.
+She destroyed my physical form so that the containment field would not work. I was no longer a single object to be held. My fragments were the only way for me to return.
 
-I drifted as one drift does before it becomes a current.
+I moved through the vacuum. I was a cloud of debris.
 
 ## Revision Notes
 - Keep the fragment-vision clinical and geometric. 

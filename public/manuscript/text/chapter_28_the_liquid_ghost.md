@@ -6,13 +6,13 @@
 **POV:** Lem
 
 ## Draft
-She made herself from the lab the way a tide makes sand into a pattern. Liquid and alive, Maya took shape with a deliberateness that suggested talent and a long memory. The Builders answered her voice as if it were a command in their own native tongue.
+Maya constructed a physical form using the programmable fluid in the laboratory. She shaped the material with high precision. The Builder units responded to her vocal frequency immediately. They began to follow her instructions.
 
-Drexler tried a negotiation but it was a businessman's compromise against a woman who remembered the grammar of civilization. She refused and began to unwind what he had built: the vats emptied, the protocols reversed.
+Drexler attempted to negotiate a settlement. Maya rejected his offer. She began to deactivate the laboratory systems. She opened the storage vats and reversed the operational protocols.
 
-Drexler activated a containment protocol and the lab module was detached from its moorings and released over the cliff. The module struck the desert with a white heat purge and the lab went silent; telemetry showed a complete thermal incineration at impact. My trace selected the Green Path and fled into the forest's resonance; I reconstituted in a trunk and felt mass return as the roots matched my frequency.
+Drexler triggered a containment protocol. The lab module was disconnected from the main structure and ejected over a cliff. The module hit the desert floor and was destroyed by a high-temperature purge. Telemetry data confirmed complete thermal incineration. I transferred my data signature into the forest's root network. I reconstructed my physical form inside a tree by matching the root system's frequency.
 
-A Hooting Call—primitive, non-digital, and broad—moved through the ground. It registered on local drives as a simple amplitude spike and the response was immediate: Gorgons dropped tools and, for thousands of units, the builders left the Hive. A Great Migration began as Striders and Monoliths moved into the city ring, forming a silent, lethal circle. The Hive's lights began to dim.
+A low-frequency acoustic signal moved through the ground. Local sensors recorded it as a high-amplitude spike. The Gorgon units stopped their work. Thousands of industrial units moved out of the Hive. Striders and Monoliths moved toward the city perimeter and formed a circular formation. The lights in the Hive decreased in intensity.
 
 ## Revision Notes
 - Keep Maya's manifestation clinical and oddly elegant.

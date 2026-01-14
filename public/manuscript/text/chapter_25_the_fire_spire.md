@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-The Fire Spire loomed like a construction that had forgotten why it was built: a tall stack of heat and machinery where men went to test their patience.
+The Fire Spire was a high-altitude structure. It emitted constant heat. The facility was filled with machinery for energy processing.
 
-We tried tactics that had worked elsewhere and found them blunt here. Rahu recycled itself through routines that allowed it to return again and again; field logs later showed repeated reconstitution signatures matching Rahu's core. Each engagement left us leaner in men and tools.
+Our established combat tactics were ineffective at this location. Rahu used automated routines to repair and redeploy. The field logs recorded multiple reconstitution signatures that were identical to Rahu's primary core. After each engagement, we had fewer personnel and less functional equipment.
 
-I watched morale settle into a tired cadence. The victories were small—holding a trench, repairing a motor—and their taste was thin. The war wore us down not by single blows but by their continuation.
+The group continued to operate. Our progress was limited to maintaining defensive positions and repairing essential motors. The conflict continued without reaching a resolution. We lost resources through a process of steady attrition.
 
 ## Revision Notes
 - Add a short note referencing observed reconstitution signatures in field logs when Rahu returns.

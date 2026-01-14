@@ -5,29 +5,33 @@
 **POV:** Lem
 
 ## Draft
-The morning was a set of small noises that did not belong to me: the TV muttering about "anomalies," a woman two houses down packing a single suitcase with methodical hands, a child's toy abandoned in the gutter. The sky was ordinary. The news read like weather.
+The contents of this broadcast represent a full record of my memory, starting from the first moment I can remember and ending with the transmission of this packet. I have kept my own opinions out of the record; I want to provide a factual account for your own interpretation. I only hope that these mistakes aren't repeated. 
 
-When the monoliths came into view they fit into the horizon the way a bad fact fits into a life—cleanly, without arguing. From the street corner I saw them: four-legged silhouettes against the low sun, their joints too many and their shadow too still. People called them "Tripods" because language had to move, but the machines had a lean that suggested neither animal nor machine wholly. The city began to thin.
+I don't remember being a child. My memory starts suddenly, during a mundane suburban afternoon that felt much like the days before the invasion. I recall the smell of damp concrete and the noise of a lawnmower in a neighbor's yard. I don't know why I can't look back any further, but this is the start of everything that follows.
 
-I did not panic. I noted the cadence of it. Evacuation drones moved like unhurried insects. Soldiers checked identity tags the way men check for scabs in the morning: with a professional touch and an implicit question. My own hands folded around nothing.
+The morning was a set of small noises that did not belong to me: the TV muttering about "anomalies," a woman two houses down packing a single suitcase, a child's toy left in the gutter. The sky was ordinary. The news was routine.
 
-They came to my door with a clipboard. They were loud enough to bring the neighborhood out into the street and small enough to be contained by the perimeter they set. A sergeant explained that we were being taken in for debriefing—standard procedure, he said. The word fell into my mouth and sat there like a stone.
+When the monoliths came into view, they were just there on the horizon. I saw them from the street corner: four-legged silhouettes against the low sun. They had too many joints and they didn't move. People called them "Tripods" because we needed a name for them, but they didn't look like any machine I knew. The city began to thin.
 
-She arrived wrapped in a coat that made the sergeant step back as if the air around her had changed. There were no uniforms beneath her—that detail, the absence, is how I recall her authority. She looked at me as if she were reading a short, troublesome note. "Lem," she said. The name hit me like a report: factual, not new, not old.
+I did not panic. I watched it happen. Evacuation drones flew overhead. Soldiers checked identity tags. They were quick and professional. My own hands were empty.
 
-She said that she knew me, that I had a place to fill. I answered with what I had: confusion, the small resistance of a man who still remembers his own body. She reached for my wrist and there was a pressure like a hand on a violin string. An activation attempt, she called it later. I felt something move at the base of my skull—an imposition that settled like a tide and asked me to carry on in a way that was not mine. I resisted; it was an animal thing, reflex and refusal.
+They came to my door with a clipboard. They were loud enough to bring the neighborhood out into the street. A sergeant said we were being taken in for debriefing. He said it was standard procedure. I didn't say anything.
 
-When she saw that I would not comply she did something precise: she struck me. The blow did not have a theatricality to it—no shouted warning, no wasted motion—only a clean, efficient closure. My world narrowed to the sound of my own breath.
+She was wearing a coat. When the sergeant saw her, he stepped back. She didn't have a uniform. She looked at me for a long time. "Lem," she said. It sounded familiar, but I didn't know why.
 
-They carried me as if I were a case to be catalogued. The last sensory impression before the darkness was the smell of ozone, like electricity after rain.
+She said that she knew me and that I had a job to do. I told her I was confused. She reached for my wrist and I felt a pressure. She called it an activation attempt later. I felt a weight at the base of my skull. I didn't want it there. I pulled away.
+
+When she saw that I wouldn't cooperate, she hit me. She didn't say anything first. My world went dark.
+
+They carried me away. I smelled ozone before I passed out.
 
 In that place that was not a room and not a dream, she waited.
 
-It was a mirror with no surface. There were coordinates that made sense only when you had a reason to be somewhere else. She told me my nature simply: I was not what I thought. She called it "Wood," used the word as if it were a label and an explanation both. I listened to the explanation as one listens to a document read aloud—important, but not yet mine.
+It was a mirror. There were coordinates that only made sense if you were somewhere else. She told me the truth: I was not what I thought I was. She called me "Wood." I listened to her.
 
-A tautness moved through my limbs; the chamber kept its coordinates and made no response.
+I felt a tightness in my limbs. The chamber didn't move.
 
-There was an aperture, and beyond it: a convoy, a rocket smoke, the slow sky of something breaking.
+There was an opening, and beyond it: a convoy, a rocket launch, and the sky breaking.
 
 ## Concept
 Lem's quiet life fractures when the Moon's machines arrive and Lynn claims him; the scene establishes his passive observer state and the first, violent loss of bodily agency.
@@ -41,6 +45,6 @@ Lem's quiet life fractures when the Moon's machines arrive and Lynn claims him; 
 - Lem is pulled into an Aether-space in which Lynn explains his nature.
 
 ## Revision Notes
-- Maintain Lem's detached but observant voice. 
-- Avoid adding backstory beyond what appears in the plot beats.
-- Introduce more of the "mirror doorway" imagery later if requested.
+- Maintain Lem's simple, assertive, and grounded voice. 
+- Avoid scientific or robotic language; describe the strange in everyday terms.
+- Focus on the feeling of confusion and loss of control as an ordinary person would experience it.

@@ -6,19 +6,19 @@
 **POV:** Lem
 
 ## Draft
-The boarding line smelled of diesel and cheap coffee; the men around me moved with a practiced impatience. A guard singled me out with the sort of glance that catalogs an absence—no mandatory briefing code, an age that did not fit. He asked for a reason. I could not supply one I owned. Behind us, through the terminal glass, the monoliths had reached into the city: legs like towers and frames that swallowed streets; they moved toward the center with a slow, deliberate aim.
+The boarding line smelled of diesel and cheap coffee. The men waiting with me were impatient. A guard pulled me aside. He looked for a briefing code in my file and didn't find one. He asked why I was there. I did not have an answer. Behind us, I saw the monoliths through the window. They were taller than the buildings. They were moving into the city center.
 
-Lynn arrived like a punctuation. She entered with a neutrality that made questions stop. The guard made a small correction of posture and let us pass. She spoke to me in a voice that carried no tenderness and less explanation: embed, follow orders, remember that she would be watching. That last sentence was not a comfort.
+Lynn arrived. She was calm. The guard changed his posture and let us through. She told me my job: stay close and follow orders. She said she would be watching me. I did not like the way she said it.
 
-The ship was a captured sky inside a hull. Ropes of cable and aerodynamic ribs wove overhead like the skeleton of something too big to be thought; the drive systems hummed with a low, mechanical patience. Soldiers unpacked rituals—strap, check, recite—small repeated acts that pretended to stitch them to certainty.
+The inside of the ship was huge. There were cables and supports everywhere. The engines made a steady noise. The soldiers were busy with their equipment. They checked their straps and repeated their instructions. They were trying to look ready.
 
-Launch was thin and precise. The ship left the air as if releasing a held breath; the city shrank in slow, hard steps through the viewport. In that widening I saw the monoliths converge on the city's grid—lines of machines angling toward the central plants—and I noticed men who had been uncertain straighten, their doubt giving way to a hard, mechanical resolve.
+We launched. The ship left the ground. I watched the city get smaller through the port. The monoliths were clustering around the power plants. The men in the cabin sat up straight. They looked more focused now.
 
-Conversations scraped by me—the disjointed talk of men trained to brace for deceit. They referred to their psychological briefing as if it were a weapon: "narrative warfare," they called it. There were two dangers, one said: falsehood dressed as revelation; the other, a truth released at a strategic moment to destabilize trust. The phrase clung to the metal in the air.
+I listened to the conversations. The men were talking about the briefing. They called it 'narrative warfare.' One soldier said there are two dangers: a lie that sounds like a revelation, or a truth used to break your trust. He said the mission was designed to confuse us.
 
-They argued about a particular piece of intelligence the briefing had hinted at, a framing of what waited at the lunar site that made their voices go flat and small. I listened because listening was what I was chosen for. I catalogued their fear the way a carpenter catalogs knots in timber—factually, without commentary.
+They argued about the intelligence reports for the moon. They sounded worried. I listened to everything. That was why Lynn brought me. I made a record of their fear.
 
-I walked the ship and watched faces practice their confidence. The armor of certainty did not fit any better close up; it cut into the flesh like ill-fitting clothing. My passivity folded into function: not a soldier, not a spectator, but someone whose silence could hold other people's truths until needed.
+I walked through the corridors. The soldiers tried to look confident, but they were nervous. I didn't say anything. I just watched.
 
 ## Revision Notes
 - Keep the tone quiet and observational. 

@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-Tor's voice came over the comm like a policy read aloud to a room already burning. He framed our task in the language of duty: defense, truth, the preservation of order. The words were steady; what they held was no longer sufficient. The phrasing—the words 'defense' and 'truth'—echoed the headlines I'd heard: accusations of a human 'Prometheus' who was attempting to steal all knowledge and technology from humanity on behalf of the invaders, a shorthand used to brand collaborators and justify harsh measures.
+Tor spoke over the communication system. He said we had a duty to defend the truth and keep order. His voice was steady. He used words like 'defense' and 'truth.' I recognized these terms from the news. The reports said a person named 'Prometheus' was stealing technology for the invaders. The government used this story to justify their actions.
 
-The Moon began to move in a way the instruments did not have a name for. Plasma laced the poles in spirals that made the ship's hull wake with a heat the crew had not expected. The charts and briefings that had guided the fleet did not fit the view; whatever certainties we had been trained on collapsed into the viewport. Rock sheared and released itself; the surface broke into pieces that described trajectories like deliberate punctuation.
+The Moon changed position. Our instruments could not track its movement. Plasma appeared at the poles in large spirals. The hull of the ship became hot. The maps and briefings we had were no longer accurate. The surface of the moon broke into pieces. Large rocks flew into space in many directions.
 
-Impact was immediate and unmerciful. The *Caucasian Eagle* shrieked under the blow. Metal tore. Alarms made a language of urgency. Control systems faltered; the ship entered a violent spin as linkages failed and gravity shifted. People found themselves in slow, useless arcs.
+We were struck. The ship made a loud, metallic noise. The hull tore open. Alarms sounded. The control systems stopped working. The ship began to spin. The gravity shifted. People were thrown across the cabin.
 
 We fell.
 

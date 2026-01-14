@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-We made for Cradle Zero in a movement that felt like a net being tightened. The plan was fast and desperate; the fleet should have been enough.
+We advanced toward Cradle Zero. We moved in a coordinated formation. We used all available air assets.
 
-Rahu's intervention was not cinematic. It was a reassignment of force—small cuts that left the fleet no better than driftwood. Machines failed in patterns that suggested a mind auditing our moves; batteries that had been reliable dropped out in the same sequence, command relays went silent in repeated places, and we lost cohesion.
+Rahu intercepted the fleet. He did not engage in direct combat initially. He redirected local energy fields to disable our systems. Several ships lost power. The technical logs showed that our batteries failed in a pre-programmed sequence. Command relays stop functioning in specific sectors. Our formation broke apart.
 
-The mission unraveled not because of one failure but because the whole was being questioned in every line of attack. We retreated with fewer machines, more empty racks, and missing names taped to panels—evidence of the attrition.
+The mission failure was the result of multiple system errors across the entire fleet. We withdrew from the area. We had fewer functional machines. I recorded the names of the missing personnel on the cockpit panels.
 
 ## Revision Notes
 - Emphasize the procedural nature of Rahu's dismantling—the precision of attrition.

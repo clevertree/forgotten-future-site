@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-Time thins when there are no orders. I measured days by the way snow crusted and thawed on the same branch. Rahu's influence burned in distant patterns—fires visible at the horizon that belonged to someone else's war. I logged the smoke lines and recorded coordinates; the notebook would become a map if anyone ever requested it.
+I had no orders. I recorded the local weather patterns. I watched the snow accumulate and melt on a single branch. I observed fire patterns on the horizon. I recorded the coordinates of the smoke lines in my log.
 
-I learned to be small there. I watched the spread of the Fire Cities in notes rather than outrage, seeing how smoke drew lines on the map like a new coastline. My work became observation and preservation: a list of broken machines, a record of which villages still kept their doors shut.
+I remained in the area and avoided detection. I monitored the expansion of the Fire Cities. I noted the locations of new smoke columns. My records included a list of non-functional machinery and a log of which villages remained occupied.
 
-I kept steady. I measured days by the way snow crusted and thawed on the same branch. The world could change; I could not un-know what I had seen.
+I stayed in one location. I continued my observations. I kept the data I had gathered.
 
 ## Revision Notes
 - Maintain quiet endurance rather than dramatic exile rhetoric.

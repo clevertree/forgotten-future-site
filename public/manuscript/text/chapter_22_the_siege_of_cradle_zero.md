@@ -6,13 +6,13 @@
 **POV:** Lem
 
 ## Draft
-We assembled machines like people prepare for winter—anticipatory and precise. Wood frames clasped metal plates; hybrid forms that could move like living things and take a hit like the old engines.
+We built new machinery. We used wood frames to support metal plating. These units were flexible and could withstand direct impacts.
 
-We deployed an Aetheric Buoy to create a local disruption net; nearby hostile units convulsed and slowed as their actions grew erratic. The Monoliths answered with shards and thorns and the sand smelled of burned circuits.
+We activated an Aetheric Buoy. The resulting disruption net caused hostile units to malfunction. Their movements became irregular. The Monoliths fired metal projectiles. The air smelled of ozone and burned components.
 
-The attacks began with a cadence of ruin. The enemy response was older and hotter than we expected. Cradle Zero's defenses held in places, failed in others. The campaign reduced large sections of land to a map of holes.
+The offensive continued. The enemy used high-energy weapons. Some defense sections near Cradle Zero remained functional, while others were destroyed. The ground in the area was covered with craters.
 
-Strategy became workaday: rotate machines, mend what breaks, move the wounded out. It was no glorified siege; it was maintenance under fire.
+We established a routine for the conflict. We rotated the machines and repaired the damage. We transported injured personnel to the rear. We focused on maintaining the equipment while under attack.
 
 ## Revision Notes
 - Keep focus on logistic labor rather than heroism.

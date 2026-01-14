@@ -6,15 +6,15 @@
 **POV:** Lem
 
 ## Draft
-The flame was a presence that took space. Rahu moved like a pressure against the ground and the air above it shimmered with heat that made instruments cough. We were small things caught in its periphery; the pilots' confidence dissolved into ragged orders.
+The fire was large and occupied the space in front of us. Rahu moved across the ground. The air was hot. My instruments recorded multiple errors. We were standing near the edge of the heat. The pilots were giving disorganized orders on the radio.
 
-Most of the bike fleet managed to evade the initial strikes; they peeled into canyons and between ridges, attempting to move the engagement into terrain that would disrupt the plasma's paths. Ground forces were routed and unable to press; movement stuttered beneath repeated discharges. From a high cliff ahead a bright spark leapt and then divided into coherent balls of plasma that climbed and arced across the valley as if aimed to strike the fleet from above, where cover would be ineffective. Pilots radioed distress and the formation lost its shape.
+The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The pilots sent distress signals. The formation broke apart.
 
-Before the arcs closed, the *Hermes* burst through the debris field and swept a corridor clear. The plasma balls reacted to the ship's passage: some missed and struck the nearest ground, sending successive lightning discharges through gullies until the energy dissipated; others re-angled and arced toward the *Hermes*'s electromagnetic wake. The *Hermes* opened with blunt, conventional batteries and the encounter became a raw collision. Rahu's core flared in response; the *Hermes* took a crippling hit. Both Rahu and the *Hermes* were destroyed in the encounter; heat and smoke consumed the scene and the field fell quiet.
+The ship *Hermes* flew through the debris field and cleared a corridor. The plasma spheres reacted to the ship. Some hit the ground and caused electrical discharges in the gullies. Others hit the *Hermes*. The *Hermes* fired its batteries. There was a collision. Rahu's core and the *Hermes* were both destroyed. I saw heat and smoke. Then the area was quiet.
 
-Novak moved to the rail, looked at the men, and said plainly: "Tor cleared the corridor—he saved the ground forces and the mission." She then assumed command and tightened the mission's circumference. There was no time to mourn. The ground unmade itself under our route and we rode over surfaces that slid like loose paper.
+Novak looked at the soldiers. She said that Tor had cleared the path and saved the mission. She took command. We moved forward. The ground under our route was unstable. It shifted as we drove over it.
 
-The pyramid offered an uneasy shelter; its inner air steadied. A sealed door tore from its hinges with a force that came from outside the logic of structure. Tor stepped through; his suit was scorched and parts of the plating were fused. His crew gathered and asked how he had survived and whether the threat was finally ended. He did not answer with explanation—he checked his gear and spoke toward the breach: "Rahu waits in the chamber." He made no further claim and turned to prepare for what came next.
+We entered the pyramid. The air was stable inside. A sealed door was torn from its hinges. Tor walked through the opening. His suit was burned and the metal plates were melted together. His crew asked if he was alive and if the threat was gone. He did not answer. He checked his equipment and looked at the breach. He said: 'Rahu waits in the chamber.' Then he prepared for the next movement.
 
 ## Revision Notes
 - Keep the action compressed and immediate.

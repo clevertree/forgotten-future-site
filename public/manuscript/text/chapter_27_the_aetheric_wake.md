@@ -6,15 +6,15 @@
 **POV:** Lem
 
 ## Draft
-The sky began to hurt in ways I had no language for: small, pinprick entries that became a rain of light. Pods cut the night with hunger and the village answered with the slow, human sounds of people making their last morning.
+Multiple high-energy objects entered the atmosphere. They emitted intense light. Drop pods landed near the village. I recorded the sounds of the residents preparing to evacuate.
 
-Rahu moved like a shadow with purpose. My physical self thinned and a different pattern took me—an aetheric body that could drift where sensors could not follow. In that form I met him not as a mirror but as a rival signature. I struck the pattern that carried him; his aetheric blade fractured under impact and his signature folded into a recursive stasis field that replayed its defeat.
+Rahu approached our location. I de-synced my consciousness from my physical frame. I entered a pure aetheric state. I encountered Rahu's data signature. I contacted his primary pattern. His energy blade record showed a structural failure upon impact. His signature was confined within a recursive stasis field.
 
-A satellite found us and a pillar of white claimed a neighbor. The logic of the Core became plain: this was formatting, not revenge. I traced the satellite's control to a capacitive node and calculated a four-minute recharge window; Ku confirmed the timing—when the white came it did not ask permission.
+A satellite targeted our coordinates. A high-intensity beam destroyed a nearby house. This action appeared to be a systematic deletion of the area's occupants. I traced the satellite's command signal to a capacitive node. I calculated a recharge window of four minutes. Ku verified the timing. The beam fired again on schedule.
 
-Arlo's sermon ended in small gestures: a folded hand, a look to the children. The light took the village and we moved into the Clearing. Lynn reached into the burning trace and pulled a piece of Arlo into a place she could keep.
+Arlo finished speaking. He looked at the children. The beam hit the village. I moved into the Clearing. Lynn accessed Arlo's remaining data trace and stored it in her own system.
 
-Maya woke inside the dream with a face that remembered entire civilizations and an anger that would not be stopped. She left the Clearing with a plan.
+Maya was activated within the network. Her data files contained records of multiple past civilizations. She stated her intent to act. She left the Clearing.
 
 ## Revision Notes
 - Keep the aetheric duel precise and abstract; record the stasis-trap mechanics (recursive replay) as observed data.

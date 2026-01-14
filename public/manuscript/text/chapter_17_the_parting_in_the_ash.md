@@ -6,23 +6,21 @@
 **POV:** Lem
 
 ## Draft
-We stood in a field that smelled faintly of charcoal. Soldiers arranged themselves into ritual formations and the village watched with the narrow patience of people who have learned the price of noise.
+We stood in a field. The air contained charcoal particles. The soldiers moved into designated formations. The villagers watched without speaking.
 
-I spoke then in a voice that had been taught to obey. I said words that were not entirely mine: I refused. The phrase did not land as a declaration so much as a refusal to perform a script. Their surprise was visible in the way shoulders shifted and eyes widened; the cold made my skin a clear line between them and me.
+I received a command to deploy. I responded with a single word: I refused. The soldiers stopped their movements. They looked at each other. They did not attempt to enforce the order immediately. The temperature was low. I recorded the lack of response from the command structure.
 
-The command structure hesitated in the hollow that followed. It was not a dramatic moment; it was the slow recognition that a lever had been removed. The men lowered weapons as if lengthening an arm they thought would not retract.
+The soldiers lowered their weapons. They did not fire. I turned and walked away from the formation. I heard the sound of my own footsteps on the path.
 
-I left quieter than I had arrived. The ash stayed where it had been; the sound of boots on the path folded into ordinary noise again.
+Myrr came out of the trees. He wore bandages. He carried a tarp filled with broken circuit boards and a damaged helmet. He stated that the Link was destroyed and could not be repaired.
 
-A bandaged man came out of the trees—Myrr. He moved with a measured slowness, carrying a tarp of smashed circuitry and a small helmet that had been cracked in the blast. He spoke without flourish: the "Link" they had used was destroyed and could not be repaired.
+I reported the facts of my capture and stasis to Myrr. He wrote the information on a strip of leather. He said my data trace contained an analog signature that matched a file in the Moon's logs. The signature belonged to a unit named Maya.
 
-Myrr listened as I recited the facts: capture, stasis, the timelines I'd seen and the names I had been given. He took notes on a strip of leather and repeated details back as if testing their weight. He said he had seen a marker in my trace—an analog signature that matched one recorded in the Moon's logs. He called the name the archives called the Water signature: Maya.
+Myrr stated that the records were identical. He believed Maya's trace was reachable. He said, "You carry a key, and it may unlock the Synodics." He told me to attempt a connection.
 
-He did not frame it as prophecy. He said only that the records matched and that he believed Maya's trace was present in recent scans—"You carry a key," he said bluntly, "and it may unlock the Synodics." He offered no method and gave no counsel beyond that: "Try."
+The fire reached the edge of the forest. The men moved quickly. They activated an engineered pulse device near the crashed vehicle. The vehicle disintegrated into small metal fragments. The roots of the trees grew over the debris.
 
-The fire reached the tree line. Men began to move with the quick, small motions of people who know the time for talk has passed. They prepared a device—an engineered pulse—and sent it into the crashed vehicle. The metal broke into fragments and the roots took them as if they had been given back to a place that knew how to eat machines.
-
-Myrr put a hand on my shoulder for a second, an ordinary act of solidarity, and then the dwellers folded into the forest. The tracks they left closed behind them. I stood at the edge of the burning woods and watched until I could see only smoke.
+Myrr placed his hand on my shoulder. Then he and the other dwellers moved into the trees and were no longer visible. I watched the smoke rise from the woods.
 
 ## Revision Notes
 - Add Myrr's bandage and the destroyed Link as concrete, observable facts.

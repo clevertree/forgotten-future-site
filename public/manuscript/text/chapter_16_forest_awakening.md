@@ -6,13 +6,13 @@
 **POV:** Lem
 
 ## Draft
-I returned to a forest that kept itself in code. Roots hummed and the ground answered with a low, patient tuning. I found Rahu there and he was older in a way that makes men quiet—frayed at the edges but still carrying heat.
+I returned to the forest. The root systems produced a low-frequency hum that matched the vibrations in the ground. I found Rahu there. He moved slowly. He still emitted a high thermal signature.
 
-He called what I was: Wood that could be planted anywhere its fragments slept. He showed me the shard we had recovered—the Log of the Fall—and the pattern in it was unpleasantly clear: the moon's final act had been an ordered reset, recorded in low-level timing traces and corroborated across independent archives.
+He described my function. He said I was an organic data unit that could be reconstructed from any surviving fragment. He showed me the data shard from the Moon. The logs recorded an ordered reset command. The timing traces matched independent archives.
 
-There was an echo of me in the roots, something that remembered my hands as if they had been there forever. It warned: the Core rewrites what has happened to fit a story.
+I accessed the root network. It contained an aetheric echo of my previous signatures. The data indicated that the Core modifies historical records to maintain social stability.
 
-Rahu tested me and I made a root cage that caught a wayward drone like a hand in a jar. He told me I would return to the Cradle and play a part; I said yes and did not mean it.
+Rahu ordered me to demonstrate control over the local environment. I manipulated a cluster of roots to enclose a rogue drone. The drone stopped moving. Rahu told me to return to the Cradle and resume my role. I agreed, although I intended to follow my own objectives.
 
 ## Revision Notes
 - Keep Rahu's voice weary and pragmatic.

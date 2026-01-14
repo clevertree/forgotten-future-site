@@ -6,15 +6,15 @@
 **POV:** Lem
 
 ## Draft
-Halls of the chamber were scored with light. Rahu stood like a wound that refused to close; when Tor struck, the fire simply rearranged itself. The weapons failed as if they had been written in sand.
+The halls of the chamber were covered in light. Rahu stood in the center. He was made of fire. When Tor attacked him, the fire did not stop. It moved and returned to its original shape. The weapons did not cause any visible damage.
 
-Lynn stepped out of the soldier who had worn her, and the room shifted to her measure. She argued with a voice that treated doctrine as a secondary fact. Novak's stasis charge opened and failed—Rahu reignited inside its own net.
+Lynn appeared in her true form and left the body she was using. The energy in the room shifted. She spoke in her own voice. Novak fired a stasis charge. The charge hit Rahu, but he burned through the field and reignited.
 
-In a motion that was less theatrical than inevitable, Lynn and I joined. Wood braided with water and for a thin time the fire became a thing to be held. Then she left in a direction I could not follow; she moved into the Capacitor and became the means to an end.
+Lynn and I moved toward each other. We integrated our power. I am the Wood vessel and she is the Water vessel. For a short time, we were able to stop the fire from moving. We held it in position. Then Lynn left me. She moved into the Capacitor. She did not come back.
 
-Rahu chose the column and the result was a light like an answer and a punishment at once. The sky took an extra sun. On Earth the lights went off.
+Rahu entered the power column. A very bright light appeared. It looked like a second sun. On the Earth below, the electrical grid failed. The city lights went out.
 
-When the world snapped, Novak did not hesitate. She put us in a field to be kept and catalogued; the mission had moved from rescue to property.
+Everything went dark. Novak did not hesitate. She placed us in a containment field. She said we were being kept for study. She called us property. The mission was no longer a rescue.
 
 ## Revision Notes
 - Keep the merger concise and sensory: avoid spiritualizing beyond Lem's immediate perceptions.

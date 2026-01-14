@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-The propaganda teams shifted their tone and our side shifted with it. They printed manifestos that spoke of renewal and duty; the people read and filed them like unwanted post.
+The propaganda departments changed their messaging. They distributed documents about duty and reconstruction. The citizens placed these documents in storage.
 
-In pockets known as the Patch of Five, refusal hardened into a practice. Men met and agreed on small rules: silence on certain days, no beacons in the yard, gifts of food left at an agreed point. On designated 'quiet' days they switched off visible lights and covered metal surfaces with wet cloths to reduce beacon readings. The movement was not loud; it was a series of small closures.
+In the region called the Patch of Five, people developed specific protocols for refusal. They agreed to maintain silence on scheduled days. They removed beacons from their properties. They left food supplies at designated locations for others to collect. On these days, they deactivated all external lights. They covered metal surfaces with wet cloths to dampen signal reflections. These actions were performed consistently by many households.
 
-The Core's narrative frayed where the human work of refusal met its machinery. It did not topple regimes; it changed the day-to-day calculus of compliance.
+The Core's monitoring systems recorded gaps in the data from these sectors. The resistance did not destroy the government structures. It changed the frequency and type of interactions between the citizens and the network.
 
 ## Revision Notes
 - Portray resistance as mundane, persistent acts rather than rallies.

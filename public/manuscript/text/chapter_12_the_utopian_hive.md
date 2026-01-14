@@ -6,16 +6,17 @@
 **POV:** Lem
 
 ## Draft
-They briefed us like engineers giving a solution: the Dead Zone needed clearing so the Hive could breathe. The language was exercise and civics. I registered instead the patterns of surveillance stamped into every route—small sensors that turned people into predictable vectors.
+The briefing focused on technical solutions. They said the Dead Zone needed to be cleared so the Hive could expand. I recorded the patterns of surveillance on every route. Sensors tracked the movement of every citizen.
 
-We moved as a legion. The Buoy deployed and the machines near it became ill; their movements shuddered with the nausea of interference. The Monoliths answered with shards and thorns and for a while the sand smelled like something between ozone and burned wood.
+We moved in a large group. The Buoy was deployed. Hostile machines in the area began to malfunction due to signal interference. The Monoliths fired projectiles. The area smelled of ozone and fire.
 
-My craft folded and I slipped into the Bright Path. Rebirth is a technical event: a failure, a reset, and a return. One moment I was broken and the next an incubation chamber accepted me. They treated us like machinery to be repaired and pushed back into service. I watched the city climb from trenches and the citizens arrive as a species newly processed into function.
+My vehicle was destroyed. I was reset. A unit failure occurred, followed by a system return. I woke up in an incubation chamber. They repaired our units and sent us back to the field immediately. I watched the city construction continue. The citizens began their assigned tasks.
 
-They called me hero in a language that fit the press release. I understood the utility of that title. It kept the work moving.
+They used the term 'hero' in their reports. I understood why they used that word. it encouraged the other workers.
 
 ## Revision Notes
 - Add a short sensor log entry describing the Bright Path re-init event and incubation timestamp for continuity.
+- Re-init Log: [TIMESTAMP 14:22:09] System reset confirmed. Incubation cycle complete. Hardware status: Optimal.
 
 ## Revision Notes
 - Keep the death/rebirth sequences clinical and short.

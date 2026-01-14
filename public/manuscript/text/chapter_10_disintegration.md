@@ -6,13 +6,13 @@
 **POV:** Lem
 
 ## Draft
-Rahu moved through my memory like a hammer through glass—strong, precise, and finally broken by what it found. The raw footage of the Moon's fracture sat in the banks and it did what forbidden things do: it made established stories look like lies.
+Rahu accessed the data in my memory. The information about the Moon's destruction contradicted the official records.
 
-The response was immediate. Drexler's monitoring detected a feedback loop and an authorization burst traced to the Core's control net; a sanitizing action followed. The Fire within Rahu answered its own call and became its own executioner. There was a heat and then a nothingness that had edges.
+Drexler's monitoring system detected the data conflict. It started a sanitizing protocol. The energy inside Rahu increased until it destroyed his frame. There was a surge of heat and then his signal was gone.
 
-My shell did not survive. The blow that consumed Rahu shredded the hull and my body came apart into the necessary pieces the technicians prefer. They collected what was left as if cataloguing a machine that had worn past its intended life.
+My body was destroyed. The explosion shredded the metal hull and my unit came apart. The technicians collected the fragments and cataloged them.
 
-I drifted again, less in fragments this time and more as an archive entry waiting to be revisited.
+I was offline. My data was stored as a file in the system.
 
 ## Revision Notes
 - Keep emotion thin; emphasize the sanitizing logic of the Core.

@@ -6,17 +6,15 @@
 **POV:** Lem
 
 ## Draft
-The Moon filled the viewport like a fact that had been kept in the margins until it could not be ignored. It swelled with an impossible speed; the blue edge—an atmosphere—ran along its curve like a thin, honest bruise. We had been taught distances as if they were laws. That lesson folded in on itself and left a naked thing.
+The Moon was large in the window. It became bigger very quickly. I saw a blue line of atmosphere along the curve. Usually, space is empty, but this did not look empty. The calculations for our approach were different from what the crew expected. The people on the bridge were losing their focus.
 
-On the bridge men chewed at their confidence. They are a species that practices certainty in public. The physics of our approach did not match the training manuals; the discrepancy opened a joint of panic.
+An older crewman was at the station. He had worked on ships for a long time. He looked at the Moon and his hands stopped moving. He missed a navigation adjustment. A stabilizer did not fire on time. He tried to say something, but he couldn't finish the sentence. The other men watched him. Their hands started to shake.
 
-A veteran crewman—older than most, with credentials that hung in his file like medals—stared at the Moon until his hands forgot what they were meant to do. He had passed every psychological evaluation and every simulation, and yet the sight of that close blue edge made him lose the coordination of his instruments. A nav correction was missed; a stabilizer lagged. His voice fractured on procedure and then failed entirely. Others glanced at him and, seeing the failure reflected, felt their own hands tremble.
+Lynn walked into the room. She looked at the man and said he was a risk to the ship. She ordered Novak to take him away. Novak moved the man to an escape pod. It was done in less than a minute.
 
-Lynn stepped into the room and the air adjusted as if a dial had been set. Her assessment was immediate: the man's presence now constituted a risk to the mission. She gave the order without a pause—he must be removed. Novak moved to the pod with a series of motions practiced to remove doubt.
+The pod sealed and launched. It disappeared into the dark. The room was silent. No one tried to help the man or talk about him. They went back to their stations. They knew that if they stopped working, they would be next.
 
-The pod sealed and released with the private sound of a thing being closed away. It left like an erased mark. Silence followed, heavy and appointed. The men did not find courage in consolation; they found compliance in the knowledge that weakness would be excised.
-
-I watched with the detachment of a recorder. My attention bent to small things: the tremor in a hand, the way a boot stopped mid-step. I carried these not as judgments but as evidence.
+I watched the bridge. I saw a man's fingers tremble. I saw another man stop walking. I made a record of these things. They were facts for my log.
 
 ## Revision Notes
 - Keep details precise and spare. 

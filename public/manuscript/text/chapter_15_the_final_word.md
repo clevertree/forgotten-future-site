@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-I watched the clearing from the Branching Paths while men carried Myrr away. The place seemed smaller from the outside; the sound of footsteps compressed into tidy data. The bright reason to return was Cassia, but the path brought me to another hand.
+I watched the clearing through the Branching Paths data stream while the soldiers took Myrr away. I recorded the sounds of their movements. I wanted to find Cassia, but I was intercepted.
 
-Anton Drexler spoke like a man assigning meaning. He treated truth as a policy problem. He said that 'the taint of the past' had to be removed to make room for a future. His logic was simple and cold: sometimes you erase the past to ensure the future.
+Anton Drexler spoke to me. He said that facts were only useful if they supported the current mission. He said that the records of the past had to be deleted to make room for the future. He believed that erasing history was necessary for progress.
 
-He ordered me to take a message back to Myrr, phrased the way one sends a condolence letter not meant to comfort. Then he sealed me with an electrostatic stasis field and forced me into a prolonged sleep. The field's telemetry showed a high-energy lock and a timestamp that would later be cited in Core logs.
+He gave me a message for Myrr. Then he activated an electrostatic stasis field around my unit. I was placed in long-term stasis. The system log recorded a high-energy lock and the exact time of the event.
 
 ## Revision Notes
 - Keep the exchange clinical and succinct.

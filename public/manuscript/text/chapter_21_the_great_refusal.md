@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-They called it the Shore of Shadows but it was only a ridge facing a cold sea. Arlo refused the title of Vessel in a small act: he burned his identifier plate and kept the ashes in a box.
+The ridge faced a cold sea. Some people called it the Shore of Shadows. Arlo burned his identifier plate. He placed the remains in a box. He said he was not a Vessel.
 
-His refusal was not spectacle. It was a private decision that spread like a rumor. Copies of the ashes circulated; by the next day small acts of refusal—removing a beacon, skipping a mandatory briefing—were reported in the village. People asking to be told what to do discovered that refusing was an answer too.
+This action was repeated by others. They did not make public announcements. Many villagers began to remove their tracking beacons and ceased to attend mandatory briefings. The village records show that several people stopped following their assigned schedules.
 
-I found their refusal contagious in the way it made plans change. Refusal becomes a strategy when compliance has been the cost of survival for too long.
+These actions required us to change our logistics. The protocols were no longer effective because the villagers did not comply with the established rules. Refusal became a common method for the residents of the ridge.
 
 ## Revision Notes
 - Treat the refusal as a tactical, human act rather than a manifesto.

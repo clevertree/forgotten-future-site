@@ -6,13 +6,13 @@
 **POV:** Lem
 
 ## Draft
-The world had gone oddly quiet. Machines moved in loops because their center had been cut—procedures continued without audience. We launched on craft grown like seeds and the ascent felt less like a roar and more like an unpeeling.
+The city operations were disrupted. Machinery continued to execute pre-programmed loops without human supervision. We launched using organic-based craft. The ascent was silent and efficient.
 
-The debris field was a delicate lattice of broken things. Lightning jumped between fragments and every crossing made the hull hum with complaint. We passed a wreckage that was older than the rest—the husk of the original Rahu vehicle, a frozen archive of metal and scorched plating. The Pyramid sat like a bone in the center—its surfaces rippled with the blue memory of the Fry.
+We navigated the lunar debris field. It was composed of numerous metal and glass fragments. Electrical discharges occurred between the objects. The collisions caused vibrations throughout our hull. We passed a large, damaged vehicle. It was identified as the original Rahu unit. The Pyramid structure was located at the center of the field. Its surface showed blue light patterns consistent with previous energy discharges.
 
-The gauntlet threw white suns at us and our shields replied by shifting phase and letting the heat become water and then dust. We did not match fire with fire; we let water and root do the work. I understood, in a small, formal way, that the design in my frame was a corrected blueprint—an answer to what had failed before.
+The defensive system fired high-intensity energy beams. Our shields shifted phase to dissipate the heat. We used water-based and organic-based systems to stabilize the environment. I verified that my internal schematics were designed to withstand these specific energy types.
 
-The entrance opened and the archive waited. The Director—perhaps a living thing, perhaps a copy—watched the threshold as if it had patience.
+The entrance to the structure opened. The Director unit was located at the threshold. It remained in a fixed position.
 
 ## Revision Notes
 - Maintain clinical descriptions of navigation and energy phenomena.

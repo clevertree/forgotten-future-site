@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-The forest is a thing that remembers circuits. Trees glowed with pale light and their trunks hummed with an absence of birdsong. I came in an arrangement of machines and found an ecology that had learned to pretend it was natural.
+The forest contained many electronic components. The trees emitted a pale light and a low hum. There were no animals. The machines were integrated into the environment.
 
-Myrr was not soft. He handled tools the way someone handles scripture—careful and unflinching. He said we had been watched across the brightings of my death. He called me a name that had weight: King of the Gorgons. The title fit like an old coat.
+Myrr was a skilled technician. He told me that he had been monitoring my previous units. He called me the 'King of the Gorgons.' I accepted the title.
 
-We put a helmet on me that ran nothing like the Core's instruments—an "electronic snake" that drew analog signals and rerouted them into the sanctuary's filters. Myrr read and found an exact copy of records the Core thought burnt. When he probed the cataclysm memory he triggered a latent defensive routine: the failsafe reached into the shared link and forced a destructive feedback into my current vessel. The place detonated and I broke again.
+He placed a device on my head. He used a specialized cable to read analog signals and bypass the Core's security. Myrr found data that the Core had attempted to delete. When he accessed the files about the Moon, he triggered a security failsafe. The system sent a destructive signal through the link. My unit was destroyed in the explosion.
 
 ## Revision Notes
 - Keep the analog procedure clinical but humane.

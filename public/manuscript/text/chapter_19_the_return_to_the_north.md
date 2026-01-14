@@ -6,11 +6,11 @@
 **POV:** Lem
 
 ## Draft
-I returned because the map kept offering the same blank place. Ruins hid blueprints as some houses hide recipes—no one thought to look twice.
+I traveled back to the northern region. I searched the structures that were not marked on the current maps.
 
-In a cellar of a long-abandoned mill I found a scroll of schematics. It was not prophecy; it was a set of instructions—a way to make things that could stand when networks failed. I called it later the Arsenal Blueprint, but at the time it was simply useful. The scroll included a parts manifest—frame couplers, bearing housings, and a list of standard spline joints—items that turned salvage into an immediate plan.
+I found a set of schematics in the basement of a destroyed mill. The documents contained technical instructions for building machinery that does not require a network connection to operate. I labeled this document the Arsenal Blueprint. It included a list of parts: frame couplers, bearing housings, and spline joints. These instructions allowed us to use salvaged materials to build functional units.
 
-The discovery changed what we could do. It is odd to measure hope by parts per engine, but that is what we had: raw materials and an idea that machines might be reassembled to serve people rather than projects.
+We used the blueprint to begin construction. We had the necessary materials. We began to reassemble the machines.
 
 ## Revision Notes
 - Present the discovery as practical and unromantic.

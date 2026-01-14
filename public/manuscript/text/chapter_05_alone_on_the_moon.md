@@ -6,17 +6,17 @@
 **POV:** Lem
 
 ## Draft
-The crash hollowed things out of me. Metal rang; air was a ghost I could not reach. I remember the noise as an ordered thing—alarms, the grinding complaint of failing hydraulics, a hand that was not mine reaching for a strap and finding only void.
+The crash caused multiple injuries. The ship's interior was loud with alarms and the sound of failing hydraulics. I struggled to breathe. I saw a crew member reach for a safety strap and fail to find it.
 
-The machine that took me from the wreck moved with the indifferent speed of a necessary tool. Novak was efficient and unembellished; she spoke as if reading an inventory. Lynn's voice—remote and severed—had given a final command: your drive is active. You are mission-ready. The words landed and did not sit well with the hollow that followed impact.
+A machine removed me from the wreckage. Novak was there. She spoke in short, factual sentences. A message arrived from Lynn. She said my internal drive was functioning and I was ready for the mission. I could still feel the vibration of the impact in my frame.
 
-When the survivors left I sat inside a small hover and chose by a process that felt like a settling of weight. I could have been abandoned equipment. Instead I took the craft and joined the strike teams.
+The other survivors left the area. I sat in a small hover vehicle. I did not follow the others. I took the vehicle and joined the strike teams moving forward.
 
-The lunar architecture was not a ruin but an arrangement—lines and angles placed with purpose. Gorgons moved like wounded animals. The pilots, called Striders, were not aggressors; they were frightened. One fell and the sound of its breaking carried a human cadence; pilots' hands tightened on their controls and a thin silence followed.
+The lunar structures were built with precise lines and angles. Gorgons moved across the surface. The pilots in the Strider units were afraid. I heard it in their voices. One unit was destroyed. The radio went quiet.
 
-Plasma erupted from hidden outposts along the approach and registered on all heat sensors as intense, localized discharges. The energy was drawn electromagnetically toward the nearest metal bikes; forward units were struck and destroyed in bright, concentrated impacts. The fleet scattered, pilots diverting toward the steep mountains in an attempt to channel the plasma away from the fleet. The discharge did not confine itself to open lines: it curved around walls and funneled into gullies, and the formation dissolved into a disorderly retreat.
+Plasma beams came from outposts. My heat sensors recorded intense discharges. The energy was pulled toward the metal frames of our vehicles. The forward units were destroyed. The fleet moved toward the mountains to avoid the beams. The plasma moved along the canyon walls and followed us. The formation broke apart.
 
-A single bike peeled off and rode low toward a line of cliff defenses where a bright source flared. The pilot's brief telemetry packet read: "Confirmed:Rahu." The transmission ended as the plume closed around the machine.
+One pilot moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' The transmission stopped. The light hit his machine.
 
 ## Revision Notes
 - Maintain sensory sparsity; avoid abstract or emotional speculation.
