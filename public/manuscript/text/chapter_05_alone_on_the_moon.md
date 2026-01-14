@@ -16,11 +16,11 @@ Novak spoke in short, factual sentences once she finally noticed I was functiona
 
 The other survivors left the area. I sat in a small hover vehicle. I did not follow the others. I took the vehicle and joined the strike teams moving forward.
 
-The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. The Gorgons piloting them were afraid. I heard it in their voices over the open frequencies. One Strider was destroyed. The radio went quiet.
+The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. The Gorgons within them were afraid. I heard it in their voices over the open frequencies. One Strider was destroyed. The radio went quiet.
 
 Plasma beams came from outposts. My heat sensors recorded intense discharges. The energy was pulled toward the metal frames of our vehicles. The forward units were destroyed. The fleet moved toward the mountains to avoid the beams. The plasma moved along the canyon walls and followed us. The formation broke apart.
 
-One pilot moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' Right after that, I saw him toggle his communication switch to the off position. He didn't say anything as the light hit his machine. He didn't yell. He just disappeared into the flash. I don't know why he turned it off, but I noted the silence.
+A human pilot in the bike fleet peeled off and moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' Right after that, I saw him toggle his communication switch to the off position. He didn't say anything as the light hit his machine. He didn't yell. He just disappeared into the flash. I don't know why he turned it off, but I noted the silence.
 
 ## Revision Notes
 - Maintain sensory sparsity; avoid abstract or emotional speculation.

@@ -8,7 +8,7 @@
 ## Draft
 The fire was large and occupied the space in front of us. Rahu moved across the ground. The air was hot. My instruments recorded multiple errors. We were standing near the edge of the heat. The pilots were giving disorganized orders on the radio.
 
-The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The Gorgon pilots sent distress signals. The formation broke apart.
+The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The human pilots sent distress signals as they watched the Gorgons in their Striders being torn apart. The formation broke apart.
 
 The ship *Hermes* flew through the debris field and cleared a corridor. The plasma spheres reacted to the ship. Some hit the ground and caused electrical discharges in the gullies. Others hit the *Hermes*. The *Hermes* fired its batteries. There was a collision. Rahu's core and the *Hermes* were both destroyed. I saw heat and smoke. Then the area was quiet.
 

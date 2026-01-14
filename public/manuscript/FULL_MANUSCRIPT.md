@@ -158,11 +158,11 @@ Novak spoke in short, factual sentences once she finally noticed I was functiona
 
 The other survivors left the area. I sat in a small hover vehicle. I did not follow the others. I took the vehicle and joined the strike teams moving forward.
 
-The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. The Gorgons piloting them were afraid. I heard it in their voices over the open frequencies. One Strider was destroyed. The radio went quiet.
+The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. The Gorgons within them were afraid. I heard it in their voices over the open frequencies. One Strider was destroyed. The radio went quiet.
 
 Plasma beams came from outposts. My heat sensors recorded intense discharges. The energy was pulled toward the metal frames of our vehicles. The forward units were destroyed. The fleet moved toward the mountains to avoid the beams. The plasma moved along the canyon walls and followed us. The formation broke apart.
 
-One pilot moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' Right after that, I saw him toggle his communication switch to the off position. He didn't say anything as the light hit his machine. He didn't yell. He just disappeared into the flash. I don't know why he turned it off, but I noted the silence.
+A human pilot in the bike fleet peeled off and moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' Right after that, I saw him toggle his communication switch to the off position. He didn't say anything as the light hit his machine. He didn't yell. He just disappeared into the flash. I don't know why he turned it off, but I noted the silence.
 
 ## Revision Notes
 - Maintain sensory sparsity; avoid abstract or emotional speculation.
@@ -184,7 +184,7 @@ One pilot moved toward a cliff where a light was flashing. He sent a telemetry r
 ## Draft
 The fire was large and occupied the space in front of us. Rahu moved across the ground. The air was hot. My instruments recorded multiple errors. We were standing near the edge of the heat. The pilots were giving disorganized orders on the radio.
 
-The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The Gorgon pilots sent distress signals. The formation broke apart.
+The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The human pilots sent distress signals as they watched the Gorgons in their Striders being torn apart. The formation broke apart.
 
 The ship *Hermes* flew through the debris field and cleared a corridor. The plasma spheres reacted to the ship. Some hit the ground and caused electrical discharges in the gullies. Others hit the *Hermes*. The *Hermes* fired its batteries. There was a collision. Rahu's core and the *Hermes* were both destroyed. I saw heat and smoke. Then the area was quiet.
 
