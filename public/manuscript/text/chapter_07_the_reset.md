@@ -1,11 +1,5 @@
 # Chapter 7: The Reset
 
-**Title:** The Reset
-**Date:** 2026-01-14
-**Version:** v0.1-draft
-**POV:** Lem
-
-## Draft
 Inside the pyramid, the air was still. Iris Novak looked around the grand hall, her face tight with worry. She was trying to remember the mission orders without Tor there to lead. She knew the plan involved 'healing the temple' from both the inside and the outside before we could even think about confronting Rahu. But she was hesitating. She wasn't sure if she had the right authorization tapes to give those kinds of orders. Part of her thought Rahu was already dead, and without the General around, she felt like she needed to rethink everything. 
 
 She stood there, stuck in her own thoughts, and for a moment, we were all just waiting. Then the sound started. A heavy, rhythmic banging on the massive sealed door behind us. It was so loud it shook the floor and cut right through her hesitation. Every one of us, including me, jumped at the noise.
@@ -41,8 +35,3 @@ The reset began.
 The world started to shake and the light became blinding. Novak didn't try to shield us. She just looked at her displays. "According to the statistics," she said, her voice steady even as the world ended, "the pyramid is currently the safest place on the moon or the Earth."
 
 Then the second sun was born.
-
-## Revision Notes
-- Keep the merger concise and sensory: avoid spiritualizing beyond Lem's immediate perceptions.
-- Focus on the procedural ruthlessness of Novak's decision rather than melodrama.
-- Emphasize the physical, visible effects of the Great Fry as immediate sensory facts for Lem.

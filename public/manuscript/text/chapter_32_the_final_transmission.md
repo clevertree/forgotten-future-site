@@ -1,11 +1,5 @@
 # Chapter 32: The Final Transmission
 
-**Title:** The Final Transmission
-**Date:** 2026-01-14
-**Version:** v0.1-draft
-**POV:** Lem
-
-## Draft
 I climbed the stairs until the stone felt different. I touched the wall and accessed the records. I could hear the people who built the world.
 
 Rahu was there, waiting at the threshold of the primary capacitor. He was silver and hot, his frame vibrating with the intent to fire the Reset command. I did not move to strike him; I simply stood across the path. On the comms, Anton Drexler yelled, demanding to know why Rahu hesitated. Rahu warned him—he said that destroying me this close to the power source would cause a blast that would take everything with it.
@@ -23,8 +17,3 @@ This was my one chance. I sent the record. I sent everything I’d seen and ever
 This is the ending of my record. I have kept my own opinions out of the record so you can judge the facts for yourselves. I only hope that by holding this record, you won't repeat the mistakes that were made in this one. 
 
 End of Transmission.
-
-## Revision Notes
-- The story ends with the transmission; no aftermath is recorded.
-- Lem briefly repeats his purpose: factual record, no personal bias, hope for the future.
-- Use simple, grounded language for the final sign-off.

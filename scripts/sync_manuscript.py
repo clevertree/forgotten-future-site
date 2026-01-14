@@ -23,11 +23,24 @@ os.makedirs(dest_chapters_dir, exist_ok=True)
 chapters_src_dir = os.path.join(repo_root, "manuscript/text")
 chapter_files = sorted([f for f in os.listdir(chapters_src_dir) if f.startswith("chapter_") and f.endswith(".md")])
 
+def extract_draft_section(content):
+    # Keep the Chapter title (level 1 header)
+    title_match = re.search(r"^# .*", content, re.MULTILINE)
+    title = title_match.group(0) if title_match else ""
+    
+    # Extract text after ## Draft but before the next ## section
+    draft_match = re.search(r"## Draft\s*\n(.*?)(?=\n## |$)", content, re.DOTALL)
+    if draft_match:
+        return f"{title}\n\n{draft_match.group(1).strip()}"
+    return content # Fallback if no Draft section found
+
 for filename in chapter_files:
     with open(os.path.join(chapters_src_dir, filename), "r", encoding="utf-8") as f:
         content = f.read()
+    # Clean up the content for the site
+    clean_content = extract_draft_section(content)
     with open(os.path.join(dest_chapters_dir, filename), "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write(clean_content)
 
 print("Synchronized files to site/public/manuscript")
 

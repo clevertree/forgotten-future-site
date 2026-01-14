@@ -1,10 +1,5 @@
 # Chapter 1: The Arrival of Lynn
 
-**Date:** 2026-01-14
-**Version:** v0.1-draft
-**POV:** Lem
-
-## Draft
 The contents of this broadcast represent a full record of my memory, starting from the first moment I can remember and ending with the transmission of this packet. I have kept my own opinions out of the record; I want to provide a factual account for your own interpretation. I only hope that these mistakes aren't repeated. 
 
 I don't remember being a child. My memory starts suddenly, during a mundane suburban afternoon that felt much like the days before the invasion. I recall the smell of damp concrete and the noise of a lawnmower in a neighbor's yard. I don't know why I can't look back any further, but this is the start of everything that follows.
@@ -32,19 +27,3 @@ It was a mirror. There were coordinates that only made sense if you were somewhe
 I felt a tightness in my limbs. The chamber didn't move.
 
 There was an opening, and beyond it: a convoy, a rocket launch, and the sky breaking.
-
-## Concept
-Lem's quiet life fractures when the Moon's machines arrive and Lynn claims him; the scene establishes his passive observer state and the first, violent loss of bodily agency.
-
-## Outline
-- News reports are a background hum; the Moon's anomalies feel distant.
-- Monoliths become visible on the horizon; evacuations begin.
-- Military arrives at Lem's house; he watches, detached.
-- Lynn appears, exercises authority, and claims prior ties to Lem.
-- She attempts to activate his Aether-Drive; Lem resists and is struck unconscious.
-- Lem is pulled into an Aether-space in which Lynn explains his nature.
-
-## Revision Notes
-- Maintain Lem's simple, assertive, and grounded voice. 
-- Avoid scientific or robotic language; describe the strange in everyday terms.
-- Focus on the feeling of confusion and loss of control as an ordinary person would experience it.

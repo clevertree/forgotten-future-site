@@ -30,8 +30,6 @@ export default function Home() {
                         Signal Detected // Era: post-Fry
                     </div>
                     <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter italic">
-                        FORGOTTEN<br />
-                        <span className="text-cyan-500">FUTURE</span><br />
                         STARS DIE
                     </h1>
                     <p className="text-sm md:text-lg text-gray-400 mb-8 tracking-wide max-w-xl mx-auto leading-relaxed">
@@ -56,10 +54,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.8</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.9</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">9206a0d</span>
+                                    <span className="truncate">feat: clean up manuscript generation to only include prose (no notes)</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">bbc1681</span>
                                     <span className="truncate">docs: distinguish between human pilots and Gorgon strider inhabitants</span>
@@ -67,10 +69,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">46edc75</span>
                                     <span className="truncate">Narrative correction: Chapters 5, 6, 7. Updated Iris Novak rescue, pilot silence, and the Battle of the Pyramid mechanics.</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">0b4c654</span>
-                                    <span className="truncate">feat: clarify Lem's aetherical connection and Gorgon liberation in Ch 32</span>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +108,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.10</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.11</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">c2ca968</span>
+                                    <span className="truncate">feat: sync manuscript with lore corrections (human pilots vs Gorgon inhabitants)</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">976f797</span>
                                     <span className="truncate">Sync manuscript: Chapters 5, 6, 7 narrative corrections and Chapter 32 Gorgon liberation.</span>
@@ -121,10 +123,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">c1d4cff</span>
                                     <span className="truncate">feat: sync updated Chapter 32 manuscript and summary to website</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">33e73c1</span>
-                                    <span className="truncate">Frontend: transition to static 32-chapter full-text reader and fix audio build error</span>
                                 </div>
                             </div>
                         </div>

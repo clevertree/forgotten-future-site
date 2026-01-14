@@ -1,11 +1,5 @@
 # Chapter 2: The Two Dangers
 
-**Title:** The Two Dangers
-**Date:** 2026-01-14
-**Version:** v0.1-draft
-**POV:** Lem
-
-## Draft
 The boarding line smelled of diesel and cheap coffee. The men waiting with me were impatient. A guard pulled me aside. He looked for a briefing code in my file and didn't find one. He asked why I was there. I did not have an answer. Behind us, I saw the monoliths through the window. They were taller than the buildings. They were moving into the city center.
 
 Lynn arrived. She was calm. The guard changed his posture and let us through. She told me my job: stay close and follow orders. She said she would be watching me. I did not like the way she said it.
@@ -19,8 +13,3 @@ I listened to the conversations. The men were talking about the briefing. They c
 They argued about the intelligence reports for the moon. They sounded worried. I listened to everything. That was why Lynn brought me. I made a record of their fear.
 
 I walked through the corridors. The soldiers tried to look confident, but they were nervous. I didn't say anything. I just watched.
-
-## Revision Notes
-- Keep the tone quiet and observational. 
-- Emphasize the details that reveal institutional fracture rather than elaborate backstory.
-- Maintain Lem's evolving vocabulary—start human, add clinical terms only as he learns them.
