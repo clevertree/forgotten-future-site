@@ -1,3 +1,4 @@
+c1d4cff feat: sync updated Chapter 32 manuscript and summary to website
 33e73c1 Frontend: transition to static 32-chapter full-text reader and fix audio build error
 1fdfc0b feat: sync 32-chapter manuscript and update frontend indexing
 d9526cc feat: sync 32-chapter manuscript and update frontend indexing
