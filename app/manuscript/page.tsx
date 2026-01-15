@@ -72,7 +72,7 @@ export default function ManuscriptPage() {
                 {/* Audiobook Sidebar */}
                 <aside className="lg:w-1/3 no-print order-2 lg:order-1">
                     <div className="glass-panel sticky top-32">
-                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook</h2>
+                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook (Coming soon)</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
                             <div className="flex flex-col items-center justify-center space-y-4">
                                 <div className="text-xs text-zinc-500 uppercase tracking-widest">Available Now</div>
@@ -203,51 +203,51 @@ export default function ManuscriptPage() {
                             ))
                         )}
                         {!isLoading && parts.length > 0 && (
-                            <>
-                                <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg mb-12">
-                                    <p className="text-zinc-600 text-sm italic">
-                                        The First Edition of Lem's Memories is complete.
-                                        Further aetheric logs may be uncompiled in future iterations.
-                                    </p>
-                                </div>
-
-                                <section id="outstanding-questions" className="mt-20 border-t border-zinc-900 pt-16 scroll-mt-24">
-                                    <h2 className="text-2xl font-light tracking-[0.2em] mb-12 text-zinc-100 flex items-center">
-                                        <span className="w-8 h-px bg-cyan-900 mr-4"></span>
-                                        OUTSTANDING NARRATIVE QUESTIONS
-                                    </h2>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        <div className="glass-panel p-6 border-zinc-900/50">
-                                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Gorgon Autonomy</h3>
-                                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                                Following Lem's final transmission of the Core authorization keys, how will the newly liberated Gorgons establish their own social order? Will they integrate with human survivors or form an independent mechanical civilization?
-                                            </p>
-                                        </div>
-                                        <div className="glass-panel p-6 border-zinc-900/50">
-                                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Lunar Debris Stabilization</h3>
-                                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                                With the Capacitor Pyramid's reset blocked and the "Great Update" applied, will the lunar debris field remain in a stable orbit, or will the changes in aetheric density lead to a slow orbital decay?
-                                            </p>
-                                        </div>
-                                        <div className="glass-panel p-6 border-zinc-900/50">
-                                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Archivist Remnants</h3>
-                                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                                Where did the surviving Archivist personnel from Cradle Zero retreat after the fall of the base? Are there other hidden "Cradle" facilities capable of sustaining their leadership?
-                                            </p>
-                                        </div>
-                                        <div className="glass-panel p-6 border-zinc-900/50">
-                                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Path of Fragments</h3>
-                                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                                What new ecosystems will emerge from the merged Wood and Water aetheric signatures across the planetary debris field? How will the "Grown" technology continue to evolve without Lem's direct influence?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </section>
-                            </>
+                            <div className="mt-16 p-8 border border-dashed border-white/10 text-center rounded-lg mb-12">
+                                <p className="text-zinc-600 text-sm italic">
+                                    The First Edition of Lem's Memories is complete.
+                                    Further aetheric logs may be uncompiled in future iterations.
+                                </p>
+                            </div>
                         )}
                     </div>
                 </div>
             </div>
+
+            {!isLoading && parts.length > 0 && (
+                <section id="outstanding-questions" className="mt-20 border-t border-zinc-900 pt-16 scroll-mt-24">
+                    <h2 className="text-2xl font-light tracking-[0.2em] mb-12 text-zinc-100 flex items-center">
+                        <span className="w-8 h-px bg-cyan-900 mr-4"></span>
+                        OUTSTANDING NARRATIVE QUESTIONS
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="glass-panel p-6 border-zinc-900/50">
+                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Gorgon Autonomy</h3>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                Following Lem's final transmission of the Core authorization keys, how will the newly liberated Gorgons establish their own social order? Will they integrate with human survivors or form an independent mechanical civilization?
+                            </p>
+                        </div>
+                        <div className="glass-panel p-6 border-zinc-900/50">
+                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Lunar Debris Stabilization</h3>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                With the Capacitor Pyramid's reset blocked and the "Great Update" applied, will the lunar debris field remain in a stable orbit, or will the changes in aetheric density lead to a slow orbital decay?
+                            </p>
+                        </div>
+                        <div className="glass-panel p-6 border-zinc-900/50">
+                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Archivist Remnants</h3>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                Where did the surviving Archivist personnel from Cradle Zero retreat after the fall of the base? Are there other hidden "Cradle" facilities capable of sustaining their leadership?
+                            </p>
+                        </div>
+                        <div className="glass-panel p-6 border-zinc-900/50">
+                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Path of Fragments</h3>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                What new ecosystems will emerge from the merged Wood and Water aetheric signatures across the planetary debris field? How will the "Grown" technology continue to evolve without Lem's direct influence?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            )}
         </div>
     );
 }

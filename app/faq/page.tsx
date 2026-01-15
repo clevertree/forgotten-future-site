@@ -22,6 +22,29 @@ export default function FAQPage() {
         }
     ];
 
+    const ethicsRules = [
+        {
+            title: "Human Sovereignty",
+            text: "AI is a tool, not a replacement for the human spark. The core emotional truth, thematic depth, and creative direction must originate from a sentient mind."
+        },
+        {
+            title: "The Do's: Automation",
+            text: "We use AI to organize chapter plans, maintain style guidelines, audit for lore contradictions, and automate menial tasks like formatting and metadata generation."
+        },
+        {
+            title: "The Don'ts: The Sacred Core",
+            text: "AI is NOT used to generate the actual story plot, primary concepts, or the specific character activities between plot points. These must come from the author."
+        },
+        {
+            title: "The Golden Rule of QA",
+            text: "Every single line of the final text is quality-assured by a human. No section is considered 'Final' until a person has verified its emotional weight and technical accuracy."
+        },
+        {
+            title: "Fair Share Protocol",
+            text: "If AI accidentally rips off someone's idea, and they can prove it, we will either change the story significantly or negotiate a royalty share. It's only fair!"
+        }
+    ];
+
     const storyFaqs = [
         {
             q: "What is 'Synodic' technology?",
@@ -69,11 +92,30 @@ export default function FAQPage() {
         }
     ];
 
+    const sections = [
+        { id: "project", title: "Project Architecture" },
+        { id: "ethics", title: "AI Ethics & Commandments" },
+        { id: "story", title: "Storyline Declassified" }
+    ];
+
     return (
         <div className="container mx-auto px-6 py-12 max-w-4xl">
             <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">DECRYPTED INTEL (FAQ)</h1>
 
-            <section className="mb-20">
+            {/* Navigation Index */}
+            <div className="flex flex-wrap gap-2 mb-12 sticky top-20 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
+                {sections.map((section) => (
+                    <a
+                        key={section.id}
+                        href={`#${section.id}`}
+                        className="px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
+                    >
+                        {section.title}
+                    </a>
+                ))}
+            </div>
+
+            <section id="project" className="mb-20 scroll-mt-32">
                 <h2 className="text-xl md:text-2xl text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">PROJECT ARCHITECTURE</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {projectFaqs.map((faq, i) => (
@@ -85,9 +127,21 @@ export default function FAQPage() {
                 </div>
             </section>
 
-            <section className="mb-20">
+            <section id="ethics" className="mb-20 scroll-mt-32">
+                <h2 className="text-xl md:text-2xl text-purple-500 mb-8 border-b border-purple-500/30 pb-2 uppercase tracking-widest">AI ETHICS & COMMANDMENTS</h2>
+                <div className="space-y-6">
+                    {ethicsRules.map((rule, i) => (
+                        <div key={i} className="glass-panel p-6 border-l-2 border-l-purple-900/50">
+                            <h3 className="text-lg text-purple-400 mb-2 uppercase tracking-tighter italic font-semibold">{rule.title}</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm">{rule.text}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section id="story" className="mb-20 scroll-mt-32">
                 <div className="flex items-center gap-4 mb-8">
-                    <h2 className="text-2xl text-red-500 border-b border-red-500/30 pb-2">STORYLINE DECLASSIFIED</h2>
+                    <h2 className="text-2xl text-red-500 border-b border-red-500/30 pb-2 uppercase tracking-widest">STORYLINE DECLASSIFIED</h2>
                     <span className="bg-red-900/40 text-red-400 text-[10px] px-2 py-1 rounded border border-red-500/50 uppercase tracking-widest font-bold">
                         Spoiler Warning
                     </span>
@@ -96,7 +150,7 @@ export default function FAQPage() {
                     {storyFaqs.map((faq, i) => (
                         <div key={i} className="glass-panel p-6 border-l-2 border-l-red-900/50">
                             <h3 className="text-lg text-red-400 mb-4 uppercase tracking-tighter italic font-semibold">Q: {faq.q}</h3>
-                            <p className="text-gray-300 leading-relaxed pl-4 border-l border-white/5">A: {faq.a}</p>
+                            <p className="text-gray-300 leading-relaxed pl-4 border-l border-white/5 text-sm">A: {faq.a}</p>
                         </div>
                     ))}
                 </div>

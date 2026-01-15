@@ -1,3 +1,4 @@
+588b83d feat: restructure FAQ and manuscript with latest lore and outstanding questions
 12c5bd0 fix: resolve one-off bug in ScrollNavigation for final chapter
 c13cb8c Sync manuscript changes from ff-story
 d929513 sync(manuscript): update FULL_MANUSCRIPT to match ff-story manuscript (seals deployed by ground teams)
