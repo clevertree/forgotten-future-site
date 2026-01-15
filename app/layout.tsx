@@ -69,7 +69,7 @@ export default function RootLayout({
                         {children}
                     </main>
 
-                    <footer className="bg-black border-t border-white/10 py-12 mt-24 no-print">
+                    <footer className="bg-black border-t border-white/10 py-12 no-print">
                         <div className="container mx-auto px-6 text-center text-gray-500 text-sm">
                             <p>FORGOTTEN FUTURE: AN AI-DRIVEN NARRATIVE EXPERIMENT</p>
                             <p>&copy;2026 CLEVERTREE</p>

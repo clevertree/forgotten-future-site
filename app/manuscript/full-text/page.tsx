@@ -35,7 +35,7 @@ export default function FullTextManuscript() {
                             Navigation
                         </h2>
                         <div className="space-y-8">
-                            SIDEBAR_START
+                            {/* SIDEBAR_START */}
                             <div>
                                 <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
                                     I: Lunar Mission
@@ -199,7 +199,7 @@ export default function FullTextManuscript() {
                                     </li>
                                     <li>
                                         <a href="#chapter-28" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            28. Maya (Programmable-Fluid Unit)
+                                            28. Maya
                                         </a>
                                     </li>
                                     <li>
@@ -224,13 +224,13 @@ export default function FullTextManuscript() {
                                     </li>
                                 </ul>
                             </div>
-                            SIDEBAR_END
+                            {/* SIDEBAR_END */}
                         </div>
                     </div>
                 </aside>
 
                 <article className="lg:w-3/4 space-y-24 pb-[80vh] order-1 lg:order-2">
-                    ARTICLE_START
+                    {/* ARTICLE_START */}
                     <section id="chapter-1" className="prose prose-invert max-w-none scroll-mt-32">
                         <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter 1</span>
@@ -587,7 +587,7 @@ export default function FullTextManuscript() {
                     <section id="chapter-28" className="prose prose-invert max-w-none scroll-mt-32">
                         <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">Chapter 28</span>
-                            Maya (Programmable-Fluid Unit)
+                            Maya
                         </h3>
                         <div className="text-zinc-300 leading-[2] text-lg space-y-6">
                             <p>Maya constructed a physical form using the programmable fluid in the laboratory. She shaped the material with high precision. The Builder units responded to her vocal frequency immediately. They began to follow her instructions.</p>
@@ -650,7 +650,7 @@ export default function FullTextManuscript() {
                             <p>End of Transmission.</p>
                         </div>
                     </section>
-                    ARTICLE_END
+                    {/* ARTICLE_END */}
                 </article>
             </div>
 

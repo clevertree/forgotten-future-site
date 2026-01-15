@@ -41,6 +41,6 @@
     "**/*.cy.tsx",
     "**/*.stories.ts",
     "**/*.stories.tsx",
-    "cypress/**/*"
+    "cypress/**/*",
   ]
 }

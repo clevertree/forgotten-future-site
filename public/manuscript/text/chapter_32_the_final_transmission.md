@@ -1,7 +1,5 @@
 # Chapter 32: The Final Transmission
 
-I climbed the stairs until the stone felt different. I touched the wall and accessed the records. I could hear the people who built the world.
-
 Rahu was there, waiting at the threshold of the primary capacitor. He was silver and hot, his frame vibrating with the intent to fire the Reset command. I did not move to strike him; I simply stood across the path. On the comms, Anton Drexler yelled, demanding to know why Rahu hesitated. Rahu warned him—he said that destroying me this close to the power source would cause a blast that would take everything with it.
 
 Drexler did not care for theory. He triggered a remote command, and I saw Rahu’s frame stiffen as someone else took control. The strike that followed wasn't a weapon—it was a massive jolt of power from the Moon itself. It hit me hard.

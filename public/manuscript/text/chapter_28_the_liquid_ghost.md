@@ -1,6 +1,6 @@
-# Chapter 28: Maya (Programmable-Fluid Unit)
+# Chapter 28: Maya
 
-Maya constructed a physical form using the programmable fluid in the laboratory. She shaped the material with high precision. The Builder units responded to her vocal frequency immediately. They began to follow her instructions.
+Maya materialized as a Water Vessel, her form shaped by Synodic technology that harnesses the element of Water. The Builder units responded to her administrative frequency immediately. They recognized her as a primary aetheric presence and began to follow her instructions.
 
 Drexler attempted to negotiate a settlement. Maya rejected his offer. She began to deactivate the laboratory systems. She opened the storage vats and reversed the operational protocols.
 
