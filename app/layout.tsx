@@ -49,6 +49,9 @@ export const metadata: Metadata = {
         icon: prefixPath('/favicon.ico'),
         apple: prefixPath('/apple-icon.png'),
     },
+    verification: {
+        google: '2irNVIKRa2TD5OfwD1OZpiqvdL9s4i5O-vNlrjYhDRk',
+    },
 }
 
 export default function RootLayout({
