@@ -1,3 +1,4 @@
+2a4eaee SEO improvements: expanded sitemap and added keywords
 9966b5f Update Google site verification code
 6e05b27 Add Google site verification meta tag
 cb29ce1 fix: adjust sticky navigation offset to prevent overlap with main header

@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next'
+import { headers } from 'next/headers'
 
-export const dynamic = 'force-static'
-
-export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://forgottenfuturebook.com';
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+    const headersList = await headers();
+    const host = headersList.get('host');
+    const protocol = host?.includes('localhost') ? 'http' : 'https';
+    const baseUrl = host ? `${protocol}://${host}` : 'https://forgottenfuturebook.com';
 
     return [
         {

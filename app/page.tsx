@@ -119,10 +119,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.28</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.29</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">2a4eaee</span>
+                                    <span className="truncate">SEO improvements: expanded sitemap and added keywords</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">9966b5f</span>
                                     <span className="truncate">Update Google site verification code</span>
@@ -130,10 +134,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">6e05b27</span>
                                     <span className="truncate">Add Google site verification meta tag</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">cb29ce1</span>
-                                    <span className="truncate">fix: adjust sticky navigation offset to prevent overlap with main header</span>
                                 </div>
                             </div>
                         </div>
