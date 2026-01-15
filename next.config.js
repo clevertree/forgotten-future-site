@@ -2,6 +2,15 @@
 
 const path = require("path");
 
+const withPWA = require("@ducanh2912/next-pwa").default({
+    dest: "public",
+    disable: process.env.NODE_ENV === "development",
+    publicExcludes: [
+        "!media/**/*",
+        "!audio/**/*",
+    ],
+});
+
 const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
 const basePath = isStatic ? (process.env.NEXT_PUBLIC_BASE_PATH || '/forgotten-future-site') : '';
 
@@ -27,4 +36,4 @@ const nextConfig = {
     }
 }
 
-module.exports = nextConfig
+module.exports = withPWA(nextConfig)

@@ -50,9 +50,21 @@ export const metadata: Metadata = {
         icon: prefixPath('/favicon.ico'),
         apple: prefixPath('/apple-icon.png'),
     },
+    manifest: prefixPath('/manifest.json'),
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: 'default',
+        title: 'Forgotten Future',
+    },
     verification: {
         google: 'rOrNY_JK5-Qkp_3uGxCsZrV-AcroECbk2ffaXX3DJfg',
     },
+}
+
+export const viewport = {
+    themeColor: '#000000',
+    width: 'device-width',
+    initialScale: 1,
 }
 
 export default function RootLayout({

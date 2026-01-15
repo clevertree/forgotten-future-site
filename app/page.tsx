@@ -119,21 +119,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.30</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.2</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">092bb3e</span>
+                                    <span className="truncate">fix stickies</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">59f9a4c</span>
+                                    <span className="truncate">Fix static export: revert dynamic sitemap/robots and use env vars instead</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">131210c</span>
                                     <span className="truncate">Make sitemap and robots dynamic based on host header</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">2a4eaee</span>
-                                    <span className="truncate">SEO improvements: expanded sitemap and added keywords</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">9966b5f</span>
-                                    <span className="truncate">Update Google site verification code</span>
                                 </div>
                             </div>
                         </div>
