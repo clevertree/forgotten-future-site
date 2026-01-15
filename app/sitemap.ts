@@ -1,11 +1,10 @@
 import { MetadataRoute } from 'next'
-import { headers } from 'next/headers'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const headersList = await headers();
-    const host = headersList.get('host');
-    const protocol = host?.includes('localhost') ? 'http' : 'https';
-    const baseUrl = host ? `${protocol}://${host}` : 'https://forgottenfuturebook.com';
+export const dynamic = 'force-static'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || (isStatic ? 'https://clevertree.github.io' : 'https://forgottenfuturebook.com');
 
     return [
         {
