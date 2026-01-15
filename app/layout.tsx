@@ -12,7 +12,7 @@ import ScrollNavigation from './components/ScrollNavigation';
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isStatic ? 'https://clevertree.github.io' : 'https://ffga.me');
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isStatic ? 'https://clevertree.github.io' : 'https://forgottenfuturebook.com');
 
 export const metadata: Metadata = {
     title: {
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
         template: '%s | Forgotten Future'
     },
     description: 'Explore Forgotten Future, an AI-driven sci-fi narrative experiment. Experience a world shaped by the Great Fry through its novel, imagery, and upcoming game engine.',
+    keywords: ['AI', 'Sci-Fi', 'Narrative', 'Storytelling', 'Open Source', 'Novel', 'Great Fry', 'Cyberpunk', 'Post-apocalyptic', 'Interactive Fiction'],
     metadataBase: new URL(siteUrl),
     alternates: {
         canonical: prefixPath('/'),
