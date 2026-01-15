@@ -103,7 +103,7 @@ export default function FAQPage() {
             <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">DECRYPTED INTEL (FAQ)</h1>
 
             {/* Navigation Index */}
-            <div className="flex flex-wrap gap-2 mb-12 sticky top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
+            <div className="flex flex-wrap gap-2 mb-12 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
                 {sections.map((section) => (
                     <a
                         key={section.id}

@@ -133,12 +133,12 @@ export default function ManuscriptPage() {
                     <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
 
                     {/* Section Tabs */}
-                    <div className="flex flex-wrap gap-2 mb-8 sticky top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
+                    <div className="flex flex-wrap gap-2 mb-8 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
                         {parts.map((section) => (
                             <button
                                 key={section.id}
                                 onClick={() => scrollToSection(section.id)}
-                                className="px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
+                                className="px-4 py-1 md:py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
                             >
                                 {section.title}
                             </button>
