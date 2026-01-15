@@ -72,10 +72,10 @@ export default function ManuscriptPage() {
                 {/* Audiobook Sidebar */}
                 <aside className="lg:w-1/3 no-print order-2 lg:order-1">
                     <div className="glass-panel sticky top-32">
-                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook (Coming soon)</h2>
+                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
                             <div className="flex flex-col items-center justify-center space-y-4">
-                                <div className="text-xs text-zinc-500 uppercase tracking-widest">Available Now</div>
+                                <div className="text-xs text-zinc-500 uppercase tracking-widest">(Coming soon)</div>
                                 <div className="text-2xl font-bold text-glow text-cyan-400">
                                     {chapters.length > 0 ? `Chapter ${chapters[0].id}` : 'Chapter 1'}
                                 </div>
@@ -133,7 +133,7 @@ export default function ManuscriptPage() {
                     <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
 
                     {/* Section Tabs */}
-                    <div className="flex flex-wrap gap-2 mb-8 sticky top-20 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
+                    <div className="flex flex-wrap gap-2 mb-8 sticky top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
                         {parts.map((section) => (
                             <button
                                 key={section.id}

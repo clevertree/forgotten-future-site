@@ -15,8 +15,7 @@ export default function Navigation() {
         { href: '/manuscript', label: 'Manuscript' },
         { href: '/media', label: 'Media' },
         { href: '/game', label: 'Game' },
-        { href: '/faq', label: 'FAQ' },
-        { href: '/contact', label: 'Contact' },
+        { href: '/faq', label: 'FAQ' }
     ];
 
     return (
