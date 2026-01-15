@@ -14,6 +14,6 @@ The fire died. I was still alive. I used the power I had left to start the trans
 
 This was my one chance. I sent the record. I sent everything I’d seen and everything I remembered. But I also sent the keys. I’d stolen the master authorization codes from the Core’s own heart. With those keys, the Gorgons could finally unlock the slave subroutines that kept them as puppets. They could rip those orders out of their own heads. They could finally be free.
 
-This is the ending of my record. I have kept my own opinions out of the record so you can judge the facts for yourselves. I only hope that by holding this record, you won't repeat the mistakes that were made in this one. 
+This is the ending of my record. I have kept my own opinions out of the record so the facts can be judged. I only hope that these mistakes aren't repeated. 
 
 End of Transmission.

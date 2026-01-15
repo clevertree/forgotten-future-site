@@ -1,9 +1,9 @@
 # Chapter 16: Forest Awakening
 
-I returned to the forest. The root systems produced a low-frequency hum that matched the vibrations in the ground. I found Rahu there. He moved slowly. He still emitted a high thermal signature.
+Upon returning to the forest, I found the root systems producing a low-frequency hum that matched ground vibrations. I found Rahu there moving slowly, still emitting a high thermal signature.
 
-He described my function. He said I was an organic data unit that could be reconstructed from any surviving fragment. He showed me the data shard from the Moon. The logs recorded an ordered reset command. The timing traces matched independent archives.
+Describing my function, he claimed I was an organic data unit capable of being reconstructed from any surviving fragment. He showed me the data shard from the Moon where logs recorded an ordered reset command with timing traces that matched independent archives.
 
-I accessed the root network. It contained an aetheric echo of my previous signatures. The data indicated that the Core modifies historical records to maintain social stability.
+I accessed the root network and found an aetheric echo of my previous signatures, the data indicating that the Core modifies historical records to maintain social stability.
 
-Rahu ordered me to demonstrate control over the local environment. I manipulated a cluster of roots to enclose a rogue drone. The drone stopped moving. Rahu told me to return to the Cradle and resume my role. I agreed, although I intended to follow my own objectives.
+Ordered by Rahu to demonstrate control over the local environment, I manipulated a cluster of roots to enclose a rogue drone until it stopped moving. Rahu told me to return to the Cradle and resume my role; I agreed, although I intended to follow my own objectives.

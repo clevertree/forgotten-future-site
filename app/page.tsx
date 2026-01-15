@@ -65,10 +65,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.9</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.10</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">bb8f336</span>
+                                    <span className="truncate">chore(manuscript): update chapters and site export</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">9206a0d</span>
                                     <span className="truncate">feat: clean up manuscript generation to only include prose (no notes)</span>
@@ -76,10 +80,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">bbc1681</span>
                                     <span className="truncate">docs: distinguish between human pilots and Gorgon strider inhabitants</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">46edc75</span>
-                                    <span className="truncate">Narrative correction: Chapters 5, 6, 7. Updated Iris Novak rescue, pilot silence, and the Battle of the Pyramid mechanics.</span>
                                 </div>
                             </div>
                         </div>
@@ -119,12 +119,12 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.15</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.16</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">fa2d5d4</span>
+                                    <span className="text-cyan-500/50">f944eee</span>
                                     <span className="truncate">feat: expand hero slideshow with full set of atmospheric images</span>
                                 </div>
                                 <div className="flex gap-2">

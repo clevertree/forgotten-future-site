@@ -90,13 +90,13 @@ A machine removed me from the wreckage. Iris Novak was there, looking over a han
 
 It turned out Iris and her team were among those who had escaped. I hadn't seen them leave. I had been caught up in the noise and the shaking, not knowing which way to run or whose orders to follow. In the chaos, I had simply been left behind.
 
-Novak spoke in short, factual sentences once she finally noticed I was functional. A message arrived from Lynn. She said my internal drive was functioning and I was ready for the mission. I could still feel the vibration of the impact in my frame.
+Novak spoke in short, factual sentences once she finally noticed me. A message arrived from Lynn. She said my internal drive was functioning and I was ready for the mission. I could still feel the vibration of the impact in my frame.
 
 The other survivors left the area. I sat in a small hover vehicle. I did not follow the others. I took the vehicle and joined the strike teams moving forward.
 
-The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. The Gorgons within them were afraid. I heard it in their voices over the open frequencies. One Strider was destroyed. The radio went quiet.
+The lunar structures were built with precise lines and angles. Large machines, the Striders, moved across the surface. I heard fear in the human voices on the open frequencies, and observed the Striders moving with a frantic, purposive motion. One Strider was destroyed. The radio went quiet.
 
-Plasma beams came from outposts. My heat sensors recorded intense discharges. The energy was pulled toward the metal frames of our vehicles. The forward units were destroyed. The fleet moved toward the mountains to avoid the beams. The plasma moved along the canyon walls and followed us. The formation broke apart.
+Plasma balls lifted from outposts as slow, swelling spheres of ionized energy while my heat sensors recorded intense discharges. The fleet did not treat them as immediate threats until several spheres suddenly accelerated and arced toward the metal frames of our vehicles. The forward units were destroyed as the fleet tried to draw the fire toward the mountains, but the plasma ran along the canyon walls and kept pace until the formation broke apart.
 
 A human pilot in the bike fleet peeled off and moved toward a cliff where a light was flashing. He sent a telemetry report. It said: 'Confirmed: Rahu.' Right after that, I saw him toggle his communication switch to the off position. He didn't say anything as the light hit his machine. He didn't yell. He just disappeared into the flash. I don't know why he turned it off, but I noted the silence.
 
@@ -104,13 +104,13 @@ A human pilot in the bike fleet peeled off and moved toward a cliff where a ligh
 
 # Chapter 6: The Sacrifice
 
-The fire was large and occupied the space in front of us. Rahu moved across the ground. The air was hot. My instruments recorded multiple errors. We were standing near the edge of the heat. The pilots were giving disorganized orders on the radio.
+Rahu stood on the peak of a tall mountain overlooking the plain, wreathed in a large fire. From his advantageous position, he operated a massive plasma array that fired down at us, sending an unlimited barrage of plasma balls against any unit that dared enter the plain leading to the moon base. The air was hot, causing my instruments to record multiple errors while we stood near the edge of the heat. On the radio, pilots gave disorganized orders.
 
-The bike fleet moved into the canyons. They were trying to avoid the plasma. The ground forces could not advance. Large sparks appeared on the cliffs. They were spheres of plasma. They moved across the valley and targeted the fleet from above. The human pilots sent distress signals as they watched the Gorgons in their Striders being torn apart. The formation broke apart.
+Trying to avoid the plasma, the bike fleet moved into the canyons while ground forces remained trapped on the open plain. We were completely exposed, with no cover against the mysterious spheres arcing down from the mountain peak. As the plasma targeted us from above, the situation became a kill zone where any strike meant total destruction. It was a moment of absolute desperation.
 
-The ship *Hermes* flew through the debris field and cleared a corridor. The plasma spheres reacted to the ship. Some hit the ground and caused electrical discharges in the gullies. Others hit the *Hermes*. The *Hermes* fired its batteries. There was a collision. Rahu's core and the *Hermes* were both destroyed. I saw heat and smoke. Then the area was quiet.
+The ship *Hermes* flew through the debris field and cleared a corridor, drawing the reaction of the plasma spheres. Some hit the ground to cause electrical discharges in the gullies while others struck the *Hermes* as it fired its batteries. In the resulting collision, Rahu's core and the *Hermes* were both destroyed, leaving only heat, smoke, and a sudden quiet.
 
-Iris Novak's voice came over the general comms. I couldn't see her, but her voice was steady. She told everyone to calm down. She said that Tor had simplified the battlefield by clearing the path. She explained that the sacrifice had been necessary to save the mission. She took command then, ordering us all forward. We moved toward the objective. The ground under our route was unstable. It shifted as we drove over it.
+Though I couldn't see her, Iris Novak's steady voice came over the general comms, telling everyone to calm down. She claimed Tor had simplified the battlefield by clearing the path and explained that the sacrifice was necessary to save the mission. Taking command, she ordered us all forward toward the objective, though the ground under our route was unstable and shifted as we drove over it.
 
 We entered the pyramid. The air was stable inside. The noise of the battle outside died away, leaving us in a heavy silence. Novak looked at the massive, sealed doors ahead of us. We were inside, but the mission was far from over.
 

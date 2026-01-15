@@ -1,7 +1,7 @@
 # Chapter 14: The White Forest
 
-The forest contained many electronic components. The trees emitted a pale light and a low hum. There were no animals. The machines were integrated into the environment.
+Interspersed with electronic components, the forest featured trees that emitted a pale light and a low hum. There were no animals, as the machines were fully integrated into the environment.
 
-Myrr was a skilled technician. He told me that he had been monitoring my previous units. He called me the 'King of the Gorgons.' I accepted the title.
+A skilled technician named Myrr told me he had been monitoring my previous units. When he called me the 'King of the Gorgons,' I accepted the title.
 
-He placed a device on my head. He used a specialized cable to read analog signals and bypass the Core's security. Myrr found data that the Core had attempted to delete. When he accessed the files about the Moon, he triggered a security failsafe. The system sent a destructive signal through the link. My unit was destroyed in the explosion.
+He placed a device on my head and used a specialized cable to read analog signals, bypassing the Core's security. After Myrr found data the Core had attempted to delete, his access to files about the Moon triggered a security failsafe. The system sent a destructive signal through the link and destroyed my unit in the subsequent explosion.

@@ -1,15 +1,13 @@
 # Chapter 2: The Two Dangers
 
-The boarding line smelled of diesel and cheap coffee. The men waiting with me were impatient. A guard pulled me aside. He looked for a briefing code in my file and didn't find one. He asked why I was there. I did not have an answer. Behind us, I saw the monoliths through the window. They were taller than the buildings. They were moving into the city center.
+The ship smelled of recycled air and cold metal, and I was already inside, my feet following a path I hadn't chosen. A military marshal blocked my way, looking first at my civilian clothes and then at his tablet to ask for my briefing code. He wanted to know why a teenager was on a high-security launch, but I didn't answer him because my mouth wouldn't move.
 
-Lynn arrived. She was calm. The guard changed his posture and let us through. She told me my job: stay close and follow orders. She said she would be watching me. I did not like the way she said it.
+Lynn's voice filled my head with clear, direct instructions as she spoke to the marshal, causing him to step aside immediately. Then she spoke to me, telling me to find a place among the soldiers, to stay quiet, and to watch everything. She said she was monitoring my feed, and although I felt her presence recede, the weight at the base of my brain stayed.
 
-The inside of the ship was huge. There were cables and supports everywhere. The engines made a steady noise. The soldiers were busy with their equipment. They checked their straps and repeated their instructions. They were trying to look ready.
+The interior of the spacecraft was massive, with support beams and heavy cables stretching into the shadows of the ceiling. The engines began to hum with a low vibration that I could feel in my teeth as hundreds of soldiers checked their gear, their faces tight while they repeated mission protocols.
 
-We launched. The ship left the ground. I watched the city get smaller through the port. The monoliths were clustering around the power plants. The men in the cabin sat up straight. They looked more focused now.
+We launched, and the floor pressed against my boots as the anti-gravity drive engaged. I watched the city through a small viewport as it got smaller, falling away into the haze. On the horizon, I could see the monoliths, which looked like tiny, loping insects now, even though I knew they were tearing into the city's power grid.
 
-I listened to the conversations. The men were talking about the briefing. They called it 'narrative warfare.' One soldier said there are two dangers: a lie that sounds like a revelation, or a truth used to break your trust. He said the mission was designed to confuse us.
+I sat in a corner and listened to the soldiers as they talked about the "narrative warfare" briefing I had missed. One man, a sergeant with a scarred lip, told the others that there were two dangers they had to watch for: the first was a lie designed to look like a secret truth, while the second was a real truth, revealed at the exact moment it would confuse the command structure and give the enemy an advantage.
 
-They argued about the intelligence reports for the moon. They sounded worried. I listened to everything. That was why Lynn brought me. I made a record of their fear.
-
-I walked through the corridors. The soldiers tried to look confident, but they were nervous. I didn't say anything. I just watched.
+They argued about the reports from the moon base, sounding terrified even as they tried to hide it with aggression. Recording their fear was my job, so I walked through the corridors as a silent witness in a body that wasn't entirely mine. Regardless of what I felt, my limbs kept moving to keep me invisible among the chaos.
