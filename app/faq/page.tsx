@@ -24,6 +24,42 @@ export default function FAQPage() {
 
     const storyFaqs = [
         {
+            q: "What is 'Synodic' technology?",
+            a: "Synodic entities are not built; they are grown using Wuxing Causality (the Chinese 5-element theory). This aetheric nanotechnology allows machines to evolve independently and replicate biological growth patterns."
+        },
+        {
+            q: "Are the Gorgons hostile?",
+            a: "Contrary to Hive City propaganda, Gorgons (or 'Builders') are naturally benign industrial workers. They only become aggressive when their thermal energy sources are threatened or their construction paths are obstructed."
+        },
+        {
+            q: "What makes Lem's return unique?",
+            a: "While other Vessels require Core-managed 'Cradles' to reincarnate, Lem possesses 'Sovereign Reincarnation.' He can take root in any compatible material and reconstitute his presence almost instantly without an embryo cycle."
+        },
+        {
+            q: "What is a 'White Forest'?",
+            a: "These are vast mechanical ecosystems that act as natural signal-voids. Within a White Forest, all Core remote-control frequencies and surveillance links are severed, providing a literal sanctuary for survivors."
+        },
+        {
+            q: "What are the three competing calendars?",
+            a: "Humanity is divided by three distinct timelines: 'After Time' (AT) used by survivors starting from the Cataclysm (Year 0); the 'New Chronology' used by the Core which uses historical revisionism to claim over 1,000 years have passed; and the 'True Timeline' preserved in the Lunar Pyramid, which confirms the Cataclysm occurred only ~15 years ago."
+        },
+        {
+            q: "Where is Anton Drexler based?",
+            a: "Core leadership, including Anton Drexler, moved from the Lunar Pyramid (Cradle Prime) to the desert base (Cradle Zero) following Lem's second mission."
+        },
+        {
+            q: "Did Rahu's memory survive?",
+            a: "Rahu underwent a 'slow-burn' reset by the Core to sanitize his memories of the 202X Truth before he was redeployed for the Northern Shield campaign."
+        },
+        {
+            q: "Is Arlo the Water Vessel?",
+            a: "Arlo is the reincarnation of the original Water Vessel spirit (Maya), though he explicitly rejects this name and identity, choosing to remain a village leader."
+        },
+        {
+            q: "What is the 'King of the Gorgons'?",
+            a: "It is a propaganda title created by the Core to frame Lem as a bogeyman, justifying the Archivists' 'democratic' control over Synodic technology."
+        },
+        {
             q: "Are the Monoliths really Tripods?",
             a: "No. This is a common public misconception in the After Time. Monoliths are four-pointed industrial units (2 arms, 2 legs). True 'Striders' built by the Gorgons are smaller and closer to the classical tripod design."
         },

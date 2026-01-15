@@ -108,7 +108,7 @@ export default function ScrollNavigation() {
 
     const scrollToChapter = (chapterId: number) => {
         const element = document.getElementById(`chapter-${chapterId}`);
-        
+
         if (element) {
             // 1. Cancel any pending unlock timeouts
             if (lockTimeoutRef.current) clearTimeout(lockTimeoutRef.current);
