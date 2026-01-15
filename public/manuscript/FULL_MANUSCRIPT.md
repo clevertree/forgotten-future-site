@@ -112,7 +112,7 @@ The ship *Hermes* flew through the debris field and cleared a corridor, drawing 
 
 Though I couldn't see her, Iris Novak's steady voice came over the general comms, telling everyone to calm down. She claimed Tor had simplified the battlefield by clearing the path and explained that the sacrifice was necessary to save the mission. Taking command, she ordered us all forward toward the objective, though the ground under our route was unstable and shifted as we drove over it.
 
-We entered the pyramid. The air was stable inside. The noise of the battle outside died away, leaving us in a heavy silence. Novak looked at the massive, sealed doors ahead of us. We were inside, but the mission was far from over.
+We entered the pyramid. The air was stable inside. The noise of the battle outside died away, leaving us in a heavy silence. Ground teams moved ahead, sliding seal plates into the jambs and locking the massive doors behind them — the seals were being deployed, not found. Novak looked at the closed doors ahead of us. We were inside, but the mission was far from over.
 
 ---
 

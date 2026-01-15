@@ -1,3 +1,5 @@
+7236d3e Chapter updates: Chapter 32 corrections (records origin, authorization codes), Chapter 27 elaboration (Lynn recovery process), Chapter 28 clarification (Water Vessel distinction)
+53de6c8 chore(manuscript): update chapters and site export
 f944eee feat: expand hero slideshow with full set of atmospheric images
 4cb4697 feat: restore hero section background slideshow with atmospheric images
 c10be7f feat: update sync scripts to clean individual chapters for the site

@@ -70,16 +70,16 @@ export default function Home() {
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">1c730d4</span>
+                                    <span className="truncate">Chapter updates: Chapter 32 corrections (records origin, authorization codes), Chapter 27 elaboration (Lynn recovery process), Chapter 28 clarification (Water Vessel distinction)</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">2c3f5bc</span>
+                                    <span className="truncate">added images</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">bb8f336</span>
                                     <span className="truncate">chore(manuscript): update chapters and site export</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">9206a0d</span>
-                                    <span className="truncate">feat: clean up manuscript generation to only include prose (no notes)</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">bbc1681</span>
-                                    <span className="truncate">docs: distinguish between human pilots and Gorgon strider inhabitants</span>
                                 </div>
                             </div>
                         </div>
@@ -119,21 +119,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.16</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.17</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">7236d3e</span>
+                                    <span className="truncate">Chapter updates: Chapter 32 corrections (records origin, authorization codes), Chapter 27 elaboration (Lynn recovery process), Chapter 28 clarification (Water Vessel distinction)</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">53de6c8</span>
+                                    <span className="truncate">chore(manuscript): update chapters and site export</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">f944eee</span>
                                     <span className="truncate">feat: expand hero slideshow with full set of atmospheric images</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">4cb4697</span>
-                                    <span className="truncate">feat: restore hero section background slideshow with atmospheric images</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">c10be7f</span>
-                                    <span className="truncate">feat: update sync scripts to clean individual chapters for the site</span>
                                 </div>
                             </div>
                         </div>
