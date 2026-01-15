@@ -1,3 +1,4 @@
+6e05b27 Add Google site verification meta tag
 cb29ce1 fix: adjust sticky navigation offset to prevent overlap with main header
 6fd89fc feat: finalize AI Ethics and move outstanding questions
 588b83d feat: restructure FAQ and manuscript with latest lore and outstanding questions

@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         apple: prefixPath('/apple-icon.png'),
     },
     verification: {
-        google: '2irNVIKRa2TD5OfwD1OZpiqvdL9s4i5O-vNlrjYhDRk',
+        google: 'rOrNY_JK5-Qkp_3uGxCsZrV-AcroECbk2ffaXX3DJfg',
     },
 }
 
