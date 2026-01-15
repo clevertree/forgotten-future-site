@@ -28,5 +28,5 @@ This project is the modern Next.js interface for the **Forgotten Future** narrat
 ## Technical Stack
 - **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS
-- **Content:** MDX and static TSX pages
+- **Content:** Dynamic Markdown fetched from GitHub (`ff-story`) via `lib/manuscript.ts`.
 - **Deployment:** Vercel (recommended)

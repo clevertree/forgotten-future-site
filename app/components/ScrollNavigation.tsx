@@ -15,12 +15,25 @@ export default function ScrollNavigation() {
     const isLockedRef = useRef(false);
     const lockTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+    const currentChapterRef = useRef(currentChapter);
     useEffect(() => {
-        const toggleVisibility = () => {
+        currentChapterRef.current = currentChapter;
+    }, [currentChapter]);
+
+    useEffect(() => {
+        const handleScroll = () => {
             if (window.scrollY > 0) {
                 setIsVisible(true);
             } else {
                 setIsVisible(false);
+            }
+
+            // Bottom of page detection for final chapter
+            const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+            if (isAtBottom && isFullText && maxChapter > 0 && !isLockedRef.current) {
+                if (currentChapterRef.current !== maxChapter) {
+                    setCurrentChapter(maxChapter);
+                }
             }
 
             // If user manually scrolls/interacts while locked, eventually unlock
@@ -32,12 +45,11 @@ export default function ScrollNavigation() {
             }
         };
 
-        window.addEventListener('scroll', toggleVisibility, { passive: true });
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-            if (lockTimeoutRef.current) clearTimeout(lockTimeoutRef.current);
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isFullText, maxChapter]);
 
     useEffect(() => {
         if (!isFullText) {
@@ -55,7 +67,9 @@ export default function ScrollNavigation() {
                     if (id?.startsWith('chapter-')) {
                         const num = parseInt(id.replace('chapter-', ''));
                         if (!isNaN(num)) {
-                            setCurrentChapter(num);
+                            if (currentChapterRef.current !== num) {
+                                setCurrentChapter(num);
+                            }
                         }
                     }
                 }
@@ -94,6 +108,7 @@ export default function ScrollNavigation() {
 
     const scrollToChapter = (chapterId: number) => {
         const element = document.getElementById(`chapter-${chapterId}`);
+        
         if (element) {
             // 1. Cancel any pending unlock timeouts
             if (lockTimeoutRef.current) clearTimeout(lockTimeoutRef.current);
@@ -101,19 +116,32 @@ export default function ScrollNavigation() {
             // 2. Lock the observer to prevent "echoing" during the transition
             isLockedRef.current = true;
 
-            // 3. Optimistically update UI
+            // 3. Update state immediately
             setCurrentChapter(chapterId);
 
-            // 4. Perform the scroll using scrollIntoView to respect scroll-margin-top
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            // 4. Update URL hash (syncs TOC sidebar)
+            if (window.history.pushState) {
+                window.history.pushState(null, '', `#chapter-${chapterId}`);
+            }
 
-            // 5. Set a safety timeout to unlock if the scroll event doesn't trigger predictably
-            lockTimeoutRef.current = setTimeout(() => {
-                isLockedRef.current = false;
-            }, 1000);
+            // 5. Perform the scroll after a tiny delay to ensure state update doesn't clobber it
+            setTimeout(() => {
+                const rect = element.getBoundingClientRect();
+                const absoluteTop = rect.top + window.pageYOffset;
+                const style = window.getComputedStyle(element);
+                const marginTop = parseInt(style.scrollMarginTop) || 0;
+                const targetY = absoluteTop - marginTop;
+
+                window.scrollTo({
+                    top: targetY,
+                    behavior: 'smooth'
+                });
+
+                // 6. Safety timeout to release lock
+                lockTimeoutRef.current = setTimeout(() => {
+                    isLockedRef.current = false;
+                }, 1500);
+            }, 10);
         }
     };
 

@@ -65,21 +65,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.11</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.16</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">83559a1</span>
-                                    <span className="truncate">Update Chapter 3 with Iris/soldier context and sync manuscript</span>
+                                    <span className="text-cyan-500/50">46be8eb</span>
+                                    <span className="truncate">fix: resolve one-off bug in ScrollNavigation for final chapter</span>
                                 </div>
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">1c730d4</span>
-                                    <span className="truncate">Chapter updates: Chapter 32 corrections (records origin, authorization codes), Chapter 27 elaboration (Lynn recovery process), Chapter 28 clarification (Water Vessel distinction)</span>
+                                    <span className="text-cyan-500/50">6a05f95</span>
+                                    <span className="truncate">add synopsis to each chapter</span>
                                 </div>
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">2c3f5bc</span>
-                                    <span className="truncate">added images</span>
+                                    <span className="text-cyan-500/50">5637544</span>
+                                    <span className="truncate">update summary to each part</span>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.7</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.8</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
@@ -119,10 +119,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.18</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.19</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">c13cb8c</span>
+                                    <span className="truncate">Sync manuscript changes from ff-story</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">d929513</span>
                                     <span className="truncate">sync(manuscript): update FULL_MANUSCRIPT to match ff-story manuscript (seals deployed by ground teams)</span>
@@ -130,10 +134,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">7236d3e</span>
                                     <span className="truncate">Chapter updates: Chapter 32 corrections (records origin, authorization codes), Chapter 27 elaboration (Lynn recovery process), Chapter 28 clarification (Water Vessel distinction)</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">53de6c8</span>
-                                    <span className="truncate">chore(manuscript): update chapters and site export</span>
                                 </div>
                             </div>
                         </div>
