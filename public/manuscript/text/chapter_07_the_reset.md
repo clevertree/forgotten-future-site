@@ -1,6 +1,6 @@
 # Chapter 7: The Reset
 
-Inside the pyramid the air was still as Iris Novak looked around the grand hall, her face tight with worry while she tried to remember the mission orders without Tor to lead. Knowing the plan involved 'healing the temple' from both the inside and the outside before confronting Rahu, she hesitated, unsure if she had the right authorization tapes to give such orders. Part of her thought Rahu was already dead, and without the General, she felt the need to rethink everything. 
+Inside the pyramid the air was still as Iris Novak looked around the grand hall. She remained stationary, checking her mission logs without Tor to lead. The plan involved 'healing the temple' from both the inside and the outside before confronting Rahu. She delayed her movements, searching for authorization tapes. Her scans of the area showed no sign of Rahu.
 
 She stood stuck in her own thoughts for a moment while we all waited, until a heavy, rhythmic banging started on the massive sealed door behind us. The sound was so loud it shook the floor and cut through her hesitation, making everyone jump.
 
@@ -10,28 +10,26 @@ The halls of the chamber were covered in light. Rahu stood in the center, his fr
 
 Tor moved with a speed that didn't seem human, his body becoming heavy and solid as if made of earth itself. He struck at Rahu, but his strength was not enough against the piercing heat of Rahu’s fire which cut through his defense. Following a clash that shook the stone, Tor was thrown back, his earth-like shell cracked and glowing from the fire he could not match.
 
-Rahu began to walk toward us, his footsteps melting the floor. The soldiers were panicking, their weapons useless, but Iris Novak stood her ground. She looked resolute, almost calm. I didn't understand why until I looked at the soldier standing right next to her.
+Rahu began to walk toward us. The floor melted beneath his feet. Several soldiers dropped their weapons and moved toward the secondary exits. Iris Novak did not move; she watched the column of light. A soldier standing next to her stepped forward and removed her helmet. it was Lynn. Rahu stopped. His posture shifted; he stepped back from the console. 
 
-The soldier stepped forward and removed her helmet. It was Lynn. She didn't look like she had been in a battle; she looked like she was finally where she belonged. Rahu stopped. He looked shocked, even afraid. 
-
-They began to talk, continuing a debate that had lasted long before we arrived on the moon. Disagreeing about the Core, Rahu insisted there was a way to defeat it without her plan, but Lynn argued there was no other way. Only Rahu seemed to know what she was really planning.
+They began to talk. They discussed the Core and the requirement for a reset. I did not know then that they were continuing a debate that had lasted for decades; I only recorded the specific frequencies of their voices. Rahu identifying a flaw in Lynn's plan.
 
 Lynn looked at me. "Face in the hole," she said. 
 
-Before I could ask what she meant, she merged with me in a feeling like being rewritten. My skin tightened and my limbs grew until thick, wooden branches sprouted from our combined form, making us look like a tree that had learned to walk.
+A pressure registered at the base of my skull. It was the same sensation as the merger I later identified as Witch Maya resonance. My skin tightened. My limbs grew. Thick, wooden branches sprouted from my frame.
 
-Rahu struck before we could finish, his fire-blade slicing through the center of our combined body and cutting us into two distinct pieces. We did not die, however, as the pieces flowed back together in an instant, allowing us to strike back while Rahu was still recovering. 
+Rahu struck before the transition was complete. His fire-blade cut the combined body into two distinct pieces. We did not cease to function. The pieces flowed back together. We struck back while Rahu was recovering. 
 
-We hit him with a force that felt like a tidal wave hitting a bonfire. Even though he tried to slice through us again, our combined strength of wood and water was too much. We hit him hard enough to knock the fire right out of his frame. 
+The contact was total. Our combined mass smothered his flare; I recorded the sound of his metal frame buckling under the pressure of our limbs. His fire went out.
 
-We recombined one last time and struck again, knocking Rahu to the stone floor. His fire went out completely. He was just a scorched metal frame now, shaking as he tried to get up.
+We hit him again. Rahu fell to the stone floor. He was a scorched metal frame. He shook as he tried to raise his arms.
 
-Iris Novak didn't hesitate. She didn't shoot to kill; she moved by instinct, following her orders. She used a device to zap Rahu, putting him into a paralysis he couldn't fight. 
+Iris Novak did not hesitate. She used a handheld device to deliver an electrical jolt to Rahu's core. He became immobile. 
 
-Then Lynn separated from me, leaving me hollow and exhausted as she walked directly into the center of the pyramid toward the energy column. Stepping into the light, she did not burn but disintegrated into a swirling energy vortex. 
+Then Lynn separated from me. I recorded a sense of vacancy. I watched her walk into the center of the pyramid toward the energy column. She entered the light. Her form disintegrated into a swirling vortex. 
 
 The reset began.
 
-The world started to shake and the light became blinding. Novak didn't try to shield us. She just looked at her displays. "According to the statistics," she said, her voice steady even as the world ended, "the pyramid is currently the safest place on the moon or the Earth."
+The world vibrated. The light became too intense for my optical sensors. Novak did not shield her eyes. She watched her tablet. "According to the statistics," she said, her voice steady, "the pyramid is currently the safest place on the moon or the Earth."
 
 Then the second sun was born.

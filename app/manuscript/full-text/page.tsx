@@ -1,9 +1,18 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function FullTextManuscript() {
+    const [chapters, setChapters] = useState<any[]>([]);
+
+    useEffect(() => {
+        fetch('/manuscript/chapters.json')
+            .then((r) => r.ok ? r.json() : [])
+            .then((data) => { if (Array.isArray(data)) setChapters(data); })
+            .catch(() => { });
+    }, []);
+
     return (
         <div className="container mx-auto px-6 lg:px-12 py-12">
             <div className="mb-12 flex justify-between items-center no-print">
@@ -35,194 +44,38 @@ export default function FullTextManuscript() {
                             Navigation
                         </h2>
                         <div className="space-y-8">
-                            {/* SIDEBAR_START */}
+                            {/* SIDEBAR_START (dynamic) */}
+                            {/* fetch chapters.json and render the same sections as before */}
+                            {/* We'll group chapters into the same four ranges used on the Manuscript page */}
+                            {/** client-side chapter state **/}
                             <div>
-                                <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
-                                    I: Lunar Mission
-                                </h3>
-                                <ul className="space-y-2 border-l border-white/5 pl-4">
-                                    <li>
-                                        <a href="#chapter-1" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            1. The Arrival of Lynn
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-2" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            2. The Two Dangers
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-3" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            3. Zenith
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-4" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            4. The Fall
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-5" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            5. Alone on the Moon
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-6" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            6. The Sacrifice
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-7" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            7. The Reset
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
-                                    II: Long Watch
-                                </h3>
-                                <ul className="space-y-2 border-l border-white/5 pl-4">
-                                    <li>
-                                        <a href="#chapter-8" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            8. The Path of Fragments
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-9" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            9. Return to Cradle Zero
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-10" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            10. Disintegration
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-11" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            11. The Awakening
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-12" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            12. The Utopian Hive
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-13" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            13. The Northern Trial
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-14" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            14. The White Forest
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-15" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            15. The Final Word
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
-                                    III: Northern Rebellion
-                                </h3>
-                                <ul className="space-y-2 border-l border-white/5 pl-4">
-                                    <li>
-                                        <a href="#chapter-16" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            16. Forest Awakening
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-17" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            17. The Parting in the Ash
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-18" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            18. The Long Exile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-19" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            19. The Return to the North
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-20" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            20. The Water Resonance
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-21" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            21. The Great Refusal
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-22" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            22. The Siege of Cradle Zero
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-23" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            23. The Invisible Front
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-24" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            24. The Stoic Refusal
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-25" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            25. The Fire Spire
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
-                                    IV: Final Resolution
-                                </h3>
-                                <ul className="space-y-2 border-l border-white/5 pl-4">
-                                    <li>
-                                        <a href="#chapter-26" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            26. The Gathering of Strands
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-27" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            27. The Aetheric Wake
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-28" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            28. Maya
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-29" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            29. The Fall of the General
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-30" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            30. The Lunar Assault
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-31" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            31. The Creator in the Pyramid
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#chapter-32" className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
-                                            32. The Final Transmission
-                                        </a>
-                                    </li>
-                                </ul>
+                                {/* simple placeholder while chapters load */}
+                                <div className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3">Navigation</div>
+                                <div className="space-y-6">
+                                    {([
+                                        { id: 'lunar-mission', title: 'I: Lunar Mission', range: [1, 7] },
+                                        { id: 'the-long-watch', title: 'II: Long Watch', range: [8, 15] },
+                                        { id: 'the-northern-rebellion', title: 'III: Northern Rebellion', range: [16, 25] },
+                                        { id: 'the-final-transmission', title: 'IV: Final Resolution', range: [26, 32] },
+                                    ]).map((section) => (
+                                        <div key={section.id}>
+                                            <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
+                                                {section.title}
+                                            </h3>
+                                            <ul className="space-y-2 border-l border-white/5 pl-4">
+                                                {(chapters || [])
+                                                    .filter((c: any) => c.id >= section.range[0] && c.id <= section.range[1])
+                                                    .map((c: any) => (
+                                                        <li key={c.id}>
+                                                            <a href={`#chapter-${c.id}`} className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
+                                                                {c.id}. {c.title}
+                                                            </a>
+                                                        </li>
+                                                    ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                             {/* SIDEBAR_END */}
                         </div>
@@ -238,10 +91,10 @@ export default function FullTextManuscript() {
                         </h3>
                         <div className="text-zinc-300 leading-[2] text-lg space-y-6">
                             <p>The contents of this broadcast represent a full record of my memory, starting from the first moment I can remember and ending with the transmission of this packet. I have kept my own opinions out of the record; I want to provide a factual account for your own interpretation. I only hope that these mistakes aren't repeated.</p>
-                            <p>I don't remember being a child. My memory starts suddenly, during a mundane suburban afternoon that felt much like the days before the invasion. I recall the smell of damp concrete and the noise of a lawnmower in a neighbor's yard. I don't know why I can't look back any further, but this is the start of everything that follows.</p>
-                            <p>The morning was a set of small noises that did not belong to me: the TV muttering about "anomalies," a woman two houses down packing a single suitcase, a child's toy left in the gutter. The sky was ordinary. The news was routine.</p>
+                            <p>I recall a childhood defined by repeatable routines: scheduled meals, school rolls, and the structure of institutional care. I was an orphan; my days were governed by timetables rather than family memory. Those steady facts are where I look when I try to find a before.</p>
+                            <p>The morning was a sequence of ordinary household sounds and news bulletins. The leaks about Base Alpha had already begun to change the shape of the day: radios left on, curtains drawn, neighbors adjusting their timing. The sky was ordinary; the news had ceased to be neutral.</p>
                             <p>When the monoliths came into view, they were just there on the horizon. I saw them from the street corner: four-legged silhouettes against the low sun. They had too many joints and they didn't move. People called them "Tripods" because we needed a name for them, but they didn't look like any machine I knew. The city began to thin.</p>
-                            <p>I did not panic. I watched it happen. Evacuation drones flew overhead. Soldiers checked identity tags. They were quick and professional. My own hands were empty.</p>
+                            <p>I did not panic. I observed. The leak had shifted my attention toward small anomalies—radios left on, curtains drawn, people pausing as if awaiting instruction. Evacuation drones flew overhead and soldiers checked identity tags with quick, professional movements. My hands were empty.</p>
                             <p>They came to my door with a clipboard. They were loud enough to bring the neighborhood out into the street. A sergeant said we were being taken in for debriefing. He said it was standard procedure. I didn't say anything.</p>
                             <p>She was wearing a coat. When the sergeant saw her, he stepped back. She didn't have a uniform. She looked at me for a long time. "Lem," she said. It sounded familiar, but I didn't know why.</p>
                             <p>She said that she knew me and that I had a job to do. I told her I was confused. She reached for my wrist and I felt a pressure. She called it an activation attempt later. I felt a weight at the base of my skull. I didn't want it there. I pulled away.</p>

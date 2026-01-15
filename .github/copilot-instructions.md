@@ -1,4 +1,4 @@
-# Copilot Instructions for Forgotten Future Site (Clevertree)
+# Copilot Instructions — (site) — see `/COPILOT_INSTRUCTIONS_UNIFIED.md` for canonical guidance
 
 This project is the modern Next.js interface for the **Forgotten Future** narrative, serving as the central hub for lore, media, and the interactive manuscript.
 

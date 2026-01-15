@@ -10,7 +10,7 @@ Myrr came out of the trees wearing bandages and carrying a tarp filled with brok
 
 I reported the facts of my capture and stasis to Myrr, who wrote the information on a strip of leather. He said my data trace contained an analog signature belonging to a unit named Maya that matched a file in the Moon's logs.
 
-Myrr stated that the records were identical. He believed Maya's trace was reachable. He said, "You carry a key, and it may unlock the Synodics." He told me to attempt a connection.
+Myrr stated that the records were identical. He concluded that Maya's trace was reachable. He said, "You carry a key, and it may unlock the Synodics." He told me to attempt a connection.
 
 As the fire reached the edge of the forest, the men moved quickly to activate an engineered pulse device near the crashed vehicle. The vehicle disintegrated into small metal fragments, allowing the roots of the trees to grow over the debris.
 

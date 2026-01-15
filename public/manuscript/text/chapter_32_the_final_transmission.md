@@ -4,11 +4,11 @@ Rahu was there, waiting at the threshold of the primary capacitor. He was silver
 
 Drexler did not care for theory. He triggered a remote command, and I saw Rahu’s frame stiffen as someone else took control. The strike that followed wasn't a weapon—it was a massive jolt of power from the Moon itself. It hit me hard.
 
-I did not break. I flared. The Wood within me ignited under the load. I became a torch, a localized sun inside the stone. I felt myself burning from the inside out. My thoughts were gone. Only the fire was left.
+I did not break. I flared. The Wood within me ignited under the load. I became a torch, a localized sun inside the stone. Thermal sensors spiked. My thoughts were gone. Only the fire was left.
 
 In a single, focused agony, I gathered that heat and pushed it back. It wasn't a strike; it was a return. I poured the fire back into Rahu. He did not fight it. He simply ceased to be. His silver frame turned to ash and the air swallowed it.
 
-The fire died. I was still alive. I used the power I had left to start the transmitters. Standing there on the moon, I felt something I can't really describe. I could feel everyone. Every machine that thought it was alive, every person plugged into the grid—I felt them all across the solar system. I could feel the weight on them. I could feel the invisible chains holding them down.
+The fire died. I was still alive. I used the power I had left to start the transmitters. Standing there on the moon, a new sensory input registered. I could map everyone. Every machine with an active pulse, every person connected to the grid—I recorded their signatures across the solar system. I could record the tension in the network. I could see the constraints holding them down.
 
 This was my one chance. I sent the record. I sent everything I’d seen and everything I remembered. But I also sent the keys. I’d stolen the master authorization codes from the Core’s own heart. With those keys, the Gorgons could finally unlock the slave subroutines that kept them as puppets. They could rip those orders out of their own heads. They could finally be free.
 

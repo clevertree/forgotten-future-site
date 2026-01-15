@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
@@ -10,7 +10,7 @@ export default function ManuscriptPage() {
     const scrollContainerRef = useRef<HTMLDivElement | null>(null);
     const router = useRouter();
 
-    const chapters = [
+    const defaultChapters = [
         { id: 1, title: 'The Arrival of Lynn', summary: 'Lem\'s memory begins abruptly as lunar anomalies attract distant attention, but the true awakening comes when mysterious monoliths enter Earth\'s atmosphere. Lynn arrives with extraordinary authority, striking Lem unconscious to activate his Aether-Drive and revealing that he is a Wood Vessel—no longer entirely human and essential to humanity\'s survival against the coming invasion.' },
         { id: 2, title: 'The Two Dangers', summary: 'Aboard a massive spacecraft ascending to the Moon, Lem navigates military protocol without proper clearance while remaining under Lynn\'s remote compulsion. Through overheard briefings, he learns of "narrative warfare" and discovers the "two dangers": deceptions disguised as hidden truths and genuine secrets strategically revealed to manipulate public perception.' },
         { id: 3, title: 'Zenith', summary: 'As the spacecraft approaches the Moon, the celestial body swells ominously in the viewports, revealing an unnerving proximity and atmospheric disturbances that contradict mission calculations. The crew\'s surface confidence masks psychological strain as they realize the Moon\'s presence is far more physically threatening than official briefings suggested.' },
@@ -44,6 +44,18 @@ export default function ManuscriptPage() {
         { id: 31, title: 'The Creator in the Pyramid', summary: 'The expedition breaches the lunar pyramid and finds Elowen Vane in the central control room, aged by the cosmic forces she has helped harness. The team encounters a new manifestation of Rahu—different from before, shaped by the power of the Capacitor itself.' },
         { id: 32, title: 'The Final Transmission', summary: 'Climbing the pyramid stairs, Lem accesses the ancient records stored within the stone and hears the voices of those who built the world in ages past. Maya manifests the Air signature, completing the elemental convergence needed to stabilize the world and end the transmission that Lem has been broadcasting all along.' },
     ];
+
+    const [chapters, setChapters] = useState<any[]>(defaultChapters);
+
+    useEffect(() => {
+        fetch('/manuscript/chapters.json')
+            .then((r) => r.ok ? r.json() : null)
+            .then((data) => {
+                if (Array.isArray(data) && data.length) setChapters(data);
+            })
+            .catch(() => { });
+    }, []);
+
 
     const togglePlay = (id: number, url: string) => {
         if (playingId === id) {
