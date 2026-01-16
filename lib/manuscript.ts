@@ -13,16 +13,22 @@ export interface Chapter {
     summary: string; // The text under ## Synopsis
 }
 
-const MANUSCRIPT_URL = 'https://raw.githubusercontent.com/clevertree/ff-story/refs/heads/main/manuscript/FULL_MANUSCRIPT.md';
+export type ManuscriptVersion = '13plus' | 'youngadult';
+
+const MANUSCRIPT_URLS: Record<ManuscriptVersion, string> = {
+    '13plus': 'https://raw.githubusercontent.com/clevertree/ff-story/refs/heads/main/manuscript/MANUSCRIPT_13_PLUS.md',
+    'youngadult': 'https://raw.githubusercontent.com/clevertree/ff-story/refs/heads/main/manuscript/MANUSCRIPT_YOUNG_ADULT.md'
+};
 
 /**
  * Fetches the full manuscript from GitHub and parses it into Parts and Chapters.
  */
-export async function fetchManuscript(): Promise<{ parts: Part[], chapters: Chapter[] }> {
+export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[] }> {
     try {
-        const response = await fetch(MANUSCRIPT_URL);
+        const url = MANUSCRIPT_URLS[version];
+        const response = await fetch(url);
         if (!response.ok) {
-            console.error('Manuscript fetch failed:', response.statusText);
+            console.error(`Manuscript fetch failed for ${version}:`, response.statusText);
             return { parts: [], chapters: [] };
         }
         const text = await response.text();

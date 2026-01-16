@@ -1,11 +1,15 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, Suspense } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { fetchManuscript, Chapter, Part } from '../../lib/manuscript';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { fetchManuscript, Chapter, Part, ManuscriptVersion } from '../../lib/manuscript';
+import { VersionSwitch } from '../components/VersionSwitch';
 
-export default function ManuscriptPage() {
+function ManuscriptContent() {
+    const searchParams = useSearchParams();
+    const editionParam = searchParams.get('edition');
+
     const [playingId, setPlayingId] = useState<number | null>(null);
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -14,9 +18,11 @@ export default function ManuscriptPage() {
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === 'youngadult' ? 'youngadult' : '13plus');
 
     useEffect(() => {
-        fetchManuscript().then(data => {
+        setIsLoading(true);
+        fetchManuscript(version).then(data => {
             if (data.chapters.length > 0) {
                 setChapters(data.chapters);
                 setParts(data.parts);
@@ -31,7 +37,7 @@ export default function ManuscriptPage() {
                 }, 100);
             }
         });
-    }, []);
+    }, [version]);
 
 
 

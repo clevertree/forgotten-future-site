@@ -1,17 +1,24 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
-import { fetchManuscript, Chapter, Part } from '../../../lib/manuscript';
+import { fetchManuscript, Chapter, Part, ManuscriptVersion } from '../../../lib/manuscript';
+import VersionSwitch from '../../components/VersionSwitch';
 
-export default function FullTextManuscript() {
+function FullTextContent() {
+    const searchParams = useSearchParams();
+    const editionParam = searchParams.get('edition');
+
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === 'youngadult' ? 'youngadult' : '13plus');
 
     useEffect(() => {
-        fetchManuscript().then(data => {
+        setIsLoading(true);
+        fetchManuscript(version).then(data => {
             if (data.chapters.length > 0) {
                 setChapters(data.chapters);
                 setParts(data.parts);
@@ -29,17 +36,18 @@ export default function FullTextManuscript() {
                 }, 100);
             }
         });
-    }, []);
+    }, [version]);
 
     return (
         <div className="container mx-auto px-6 lg:px-12 py-12">
             <div className="mb-12 flex justify-between items-center no-print">
-                <Link href="/manuscript" className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
+                <Link href={`/manuscript${version === 'youngadult' ? '?edition=youngadult' : ''}`} className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
                     ← Back to Manuscript Page
                 </Link>
 
                 <div className="flex items-center gap-4">
-                    <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
+                    <VersionSwitch version={version} onVersionChange={setVersion} />
+                    <span className="hidden md:block text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
                         Optimized for Text-to-Speech
                     </span>
                 </div>
@@ -49,7 +57,7 @@ export default function FullTextManuscript() {
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
-                    Note: This draft covers the <strong className="text-cyan-400">Complete First Edition</strong>.
+                    Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
             </header>
@@ -170,6 +178,18 @@ export default function FullTextManuscript() {
                 </p>
             </footer>
         </div>
+    );
+}
+
+export default function FullTextManuscript() {
+    return (
+        <Suspense fallback={
+            <div className="container mx-auto px-6 py-24 text-center text-zinc-500 uppercase tracking-widest text-xs">
+                Syncing with Archive...
+            </div>
+        }>
+            <FullTextContent />
+        </Suspense>
     );
 }
 
