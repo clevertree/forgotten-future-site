@@ -7,7 +7,8 @@ const basePath = isStatic ? (process.env.NEXT_PUBLIC_BASE_PATH || '/forgotten-fu
 
 const withPWA = require("@ducanh2912/next-pwa").default({
     dest: "public",
-    disable: process.env.NODE_ENV === "development",
+    // Disable PWA in development AND when building a static export
+    disable: process.env.NODE_ENV === "development" || isStatic,
     register: true,
     skipWaiting: true,
     cacheOnFrontEndNav: true,

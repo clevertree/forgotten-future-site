@@ -1,3 +1,4 @@
+5e485de footer: link CLEVERTREE to https://clevertree.net/
 b2cd592 feat: save last read chapter and redirect PWA launch
 a34536e Cleanup: Remove accidental screenshot commits
 efd8c20 Align site with 5-part manuscript structure and update versioning UI

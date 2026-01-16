@@ -121,10 +121,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.5</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.6</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">5e485de</span>
+                                    <span className="truncate">footer: link CLEVERTREE to https://clevertree.net/</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">b2cd592</span>
                                     <span className="truncate">feat: save last read chapter and redirect PWA launch</span>
@@ -132,10 +136,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">a34536e</span>
                                     <span className="truncate">Cleanup: Remove accidental screenshot commits</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">efd8c20</span>
-                                    <span className="truncate">Align site with 5-part manuscript structure and update versioning UI</span>
                                 </div>
                             </div>
                         </div>
