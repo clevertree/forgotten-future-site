@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-black text-white selection:bg-cyan-500/30">
             {/* Hero Section */}
-            <section className="relative h-screen flex items-center justify-center overflow-hidden border-b border-white/10">
+            <section className="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-white/10">
                 <HeroSlideshow images={heroImages} videoSrc={prefixPath('/media/bg_glitch.mp4')} />
 
                 <div className="container mx-auto px-6 relative z-10 text-center">

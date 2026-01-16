@@ -138,11 +138,6 @@ function FullTextContent() {
                                 <div key={pIdx} className="space-y-24">
                                     <header className="border-y border-white/5 py-12 mb-16 text-center">
                                         <h2 className="text-4xl font-black tracking-widest text-white uppercase mb-4">{part.title}</h2>
-                                        {part.summary && (
-                                            <p className="text-cyan-400 italic text-sm max-w-2xl mx-auto tracking-wide">
-                                                {part.summary}
-                                            </p>
-                                        )}
                                     </header>
 
                                     {part.chapters.map((chapter) => (
