@@ -2,19 +2,31 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import { fetchManuscript, Chapter, Part, ManuscriptVersion } from '../../../lib/manuscript';
-import VersionSwitch from '../../components/VersionSwitch';
+import { VersionSwitch } from '../../components/VersionSwitch';
 
 function FullTextContent() {
+    const router = useRouter();
     const searchParams = useSearchParams();
     const editionParam = searchParams.get('edition');
 
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
     const [isLoading, setIsLoading] = useState(true);
-    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === 'youngadult' ? 'youngadult' : '13plus');
+    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
+
+    const handleVersionChange = (newVersion: ManuscriptVersion) => {
+        setVersion(newVersion);
+        const params = new URLSearchParams(window.location.search);
+        if (newVersion === 'youngadult') {
+            params.set('edition', 'youngadult');
+        } else {
+            params.delete('edition');
+        }
+        router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
+    };
 
     useEffect(() => {
         setIsLoading(true);
@@ -41,12 +53,11 @@ function FullTextContent() {
     return (
         <div className="container mx-auto px-6 lg:px-12 py-12">
             <div className="mb-12 flex justify-between items-center no-print">
-                <Link href={`/manuscript${version === 'youngadult' ? '?edition=youngadult' : ''}`} className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
+                <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
                     ← Back to Manuscript Page
                 </Link>
 
                 <div className="flex items-center gap-4">
-                    <VersionSwitch version={version} onVersionChange={setVersion} />
                     <span className="hidden md:block text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
                         Optimized for Text-to-Speech
                     </span>
@@ -56,6 +67,14 @@ function FullTextContent() {
             <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
+                
+                <div className="mt-6 flex flex-col lg:flex-row items-center gap-4">
+                    <div className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">
+                        Edition:
+                    </div>
+                    <VersionSwitch version={version} onVersionChange={handleVersionChange} />
+                </div>
+
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.

@@ -4,7 +4,6 @@ import React, { useState, useRef, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { fetchManuscript, Chapter, Part, ManuscriptVersion } from '../../lib/manuscript';
-import { VersionSwitch } from '../components/VersionSwitch';
 
 function ManuscriptContent() {
     const searchParams = useSearchParams();
@@ -18,7 +17,7 @@ function ManuscriptContent() {
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
     const [isLoading, setIsLoading] = useState(true);
-    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === 'youngadult' ? 'youngadult' : '13plus');
+    const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
 
     useEffect(() => {
         setIsLoading(true);
@@ -106,7 +105,7 @@ function ManuscriptContent() {
                             Audio is generated iteratively. Each chapter is narrated as the draft stabilizes to ensure narrative accuracy.
                         </p>
                         <div className="space-y-4">
-                            <Link href="/manuscript/full-text" className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
+                            <Link href={`/manuscript/full-text?edition=${version}`} className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
                                 Read as Full Text
                             </Link>
                             <div className="pt-4 border-t border-white/5">
@@ -136,7 +135,7 @@ function ManuscriptContent() {
 
                 {/* Chapters List */}
                 <div className="lg:w-2/3 order-1 lg:order-2">
-                    <h1 className="text-3xl md:text-4xl mb-8 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
+                    <h1 className="text-3xl md:text-4xl mb-6 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
 
                     {/* Section Tabs */}
                     <div className="flex flex-wrap gap-2 mb-8 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
@@ -196,7 +195,7 @@ function ManuscriptContent() {
                                                     </p>
                                                     <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
                                                         <Link
-                                                            href={`/manuscript/full-text#chapter-${chapter.id}`}
+                                                            href={`/manuscript/full-text?edition=${version}#chapter-${chapter.id}`}
                                                             className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
                                                         >
                                                             Read Chapter
@@ -255,5 +254,17 @@ function ManuscriptContent() {
                 </section>
             )}
         </div>
+    );
+}
+
+export default function ManuscriptPage() {
+    return (
+        <Suspense fallback={
+            <div className="container mx-auto px-6 py-24 text-center text-zinc-500 uppercase tracking-widest text-xs">
+                Accessing Aether-Drive...
+            </div>
+        }>
+            <ManuscriptContent />
+        </Suspense>
     );
 }

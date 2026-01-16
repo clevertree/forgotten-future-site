@@ -18,7 +18,7 @@ describe('Manuscript Helper (lib/manuscript.ts)', () => {
       expect(firstChapter).to.have.property('summary').and.not.be.empty;
 
       // Check for common narrative markers
-      expect(firstChapter.title).to.include('Arrival of Lynn');
+      expect(firstChapter.title).to.include('Alien Moon Base');
       expect(firstChapter.content).to.include('Lem');
     });
   });

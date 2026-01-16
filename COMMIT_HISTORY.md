@@ -1,3 +1,5 @@
+ef82da0 feat: integrate dual-track manuscript support and add VersionSwitch component
+8805621 feat: add PWA functionality for offline access
 092bb3e fix stickies
 59f9a4c Fix static export: revert dynamic sitemap/robots and use env vars instead
 131210c Make sitemap and robots dynamic based on host header

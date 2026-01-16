@@ -1,49 +1,34 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React from 'react';
+import { ManuscriptVersion } from '../../lib/manuscript';
 
-type StoryVersion = 'YOUNG_ADULT' | '13_PLUS';
+interface VersionSwitchProps {
+    version: ManuscriptVersion;
+    onVersionChange: (v: ManuscriptVersion) => void;
+}
 
-export default function VersionSwitch() {
-    const [version, setVersion] = useState<StoryVersion>('YOUNG_ADULT');
-
-    useEffect(() => {
-        const stored = localStorage.getItem('ff_story_version') as StoryVersion;
-        if (stored === '13_PLUS' || stored === 'YOUNG_ADULT') {
-            setVersion(stored);
-        }
-    }, []);
-
-    const toggleVersion = (v: StoryVersion) => {
-        setVersion(v);
-        localStorage.setItem('ff_story_version', v);
-        window.dispatchEvent(new Event('storage'));
-        // We also trigger a custom event for easier listening
-        window.dispatchEvent(new CustomEvent('versionChange', { detail: v }));
-    };
-
+export const VersionSwitch: React.FC<VersionSwitchProps> = ({ version, onVersionChange }) => {
     return (
-        <div className="flex gap-2 p-1 bg-zinc-900 border border-white/10 rounded-lg">
+        <div className="flex items-center gap-2 bg-black/40 p-1 rounded-lg border border-white/10 no-print">
             <button
-                onClick={() => toggleVersion('YOUNG_ADULT')}
-                className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${
-                    version === 'YOUNG_ADULT'
-                        ? 'bg-cyan-500 text-black'
-                        : 'text-zinc-500 hover:text-white'
-                }`}
+                onClick={() => onVersionChange('13plus')}
+                className={`px-3 py-1.5 rounded text-[10px] font-bold uppercase tracking-widest transition-all ${version === '13plus'
+                        ? 'bg-cyan-500 text-black shadow-[0_0_10px_rgba(6,182,212,0.5)]'
+                        : 'text-zinc-500 hover:text-zinc-300'
+                    }`}
             >
-                YA Version
+                13+
             </button>
             <button
-                onClick={() => toggleVersion('13_PLUS')}
-                className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest transition-all rounded ${
-                    version === '13_PLUS'
-                        ? 'bg-cyan-500 text-black'
-                        : 'text-zinc-500 hover:text-white'
-                }`}
+                onClick={() => onVersionChange('youngadult')}
+                className={`px-3 py-1.5 rounded text-[10px] font-bold uppercase tracking-widest transition-all ${version === 'youngadult'
+                        ? 'bg-purple-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.5)]'
+                        : 'text-zinc-500 hover:text-zinc-300'
+                    }`}
             >
-                13+ Version
+                Young Adult
             </button>
         </div>
     );
-}
+};

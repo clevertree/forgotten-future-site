@@ -16,8 +16,8 @@ export interface Chapter {
 export type ManuscriptVersion = '13plus' | 'youngadult';
 
 const MANUSCRIPT_URLS: Record<ManuscriptVersion, string> = {
-    '13plus': 'https://raw.githubusercontent.com/clevertree/ff-story/refs/heads/main/manuscript/MANUSCRIPT_13_PLUS.md',
-    'youngadult': 'https://raw.githubusercontent.com/clevertree/ff-story/refs/heads/main/manuscript/MANUSCRIPT_YOUNG_ADULT.md'
+    '13plus': 'https://raw.githubusercontent.com/clevertree/ff-story/main/manuscript/MANUSCRIPT_13_PLUS.md',
+    'youngadult': 'https://raw.githubusercontent.com/clevertree/ff-story/main/manuscript/MANUSCRIPT_YOUNG_ADULT.md'
 };
 
 /**
@@ -38,7 +38,15 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
 
         const parts: Part[] = [];
         const chaptersList: Chapter[] = [];
+
+        // Ensure at least one part exists if there are chapters but no part labels
         let currentPart: Part | null = null;
+        const defaultPart: Part = {
+            id: 'unassigned',
+            title: 'Manuscript',
+            summary: 'The recorded logs of the Aether-Drive.',
+            chapters: []
+        };
 
         for (const segment of segments) {
             // Check for Part headers (e.g., # PART I: THE LUNAR MISSION)
@@ -68,13 +76,28 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
             const id = parseInt(headerMatch[1]);
             const title = headerMatch[2].trim();
 
-            // Extract content from "## Draft" section
+            // Extract content: Try ## Draft first, then fallback to everything after the header
+            let content = '';
             const draftMatch = segment.match(/## Draft\n([\s\S]*?)(?=\n##|$)/);
-            const content = draftMatch ? draftMatch[1].trim() : '';
+            if (draftMatch) {
+                content = draftMatch[1].trim();
+            } else {
+                // Find where the chapter header ends and take everything after it
+                const headerEndIndex = segment.indexOf(headerMatch[0]) + headerMatch[0].length;
+                content = segment.substring(headerEndIndex).trim();
+            }
 
-            // Extract summary from "## Synopsis" section
+            // Extract summary: Try ## Synopsis first, then fallback to the first paragraph of content
+            let summary = '';
             const synopsisMatch = segment.match(/## Synopsis\n([\s\S]*?)(?=\n##|$)/);
-            const summary = synopsisMatch ? synopsisMatch[1].trim() : '';
+            if (synopsisMatch) {
+                summary = synopsisMatch[1].trim();
+            } else {
+                // Remove any markdown headers if they exist in the fallback content for summary
+                const cleanContent = content.replace(/^##.*$/gm, '').trim();
+                const firstPara = cleanContent.split('\n\n')[0];
+                summary = firstPara.length > 200 ? firstPara.substring(0, 200) + '...' : firstPara;
+            }
 
             const chapter: Chapter = { id, title, content, summary };
 
@@ -83,8 +106,15 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
                 chaptersList.push(chapter);
                 if (currentPart) {
                     currentPart.chapters.push(chapter);
+                } else {
+                    defaultPart.chapters.push(chapter);
                 }
             }
+        }
+
+        // If no parts were found but we have chapters, use the default part
+        if (parts.length === 0 && defaultPart.chapters.length > 0) {
+            parts.push(defaultPart);
         }
 
         return {

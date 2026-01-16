@@ -65,21 +65,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.20</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.46</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">f900790</span>
-                                    <span className="truncate">docs: add AI Ethics document and update strategies</span>
+                                    <span className="text-cyan-500/50">f1a5e05</span>
+                                    <span className="truncate">Update INDEX.md with 5 parts and regenerate manuscripts</span>
                                 </div>
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">7edeb1d</span>
-                                    <span className="truncate">docs: finalize outstanding questions and clean up resolved threads</span>
+                                    <span className="text-cyan-500/50">1c30104</span>
+                                    <span className="truncate">feat: unify YA and 13+ drafts into chapter files and generate aggregated manuscripts</span>
                                 </div>
                                 <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">502a408</span>
-                                    <span className="truncate">Update mission terminology: Lem refers to his five missions ordinally, with only the last being by choice</span>
+                                    <span className="text-cyan-500/50">efd613d</span>
+                                    <span className="truncate">v0.10.42: Update assembly script to exclusive prose (Draft) extraction</span>
                                 </div>
                             </div>
                         </div>
@@ -92,10 +92,14 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.8</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.9</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">19f4a69</span>
+                                    <span className="truncate">chore: update version and commit history</span>
+                                </div>
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">99672b0</span>
                                     <span className="truncate">chore: sync metadata with 32-chapter structure</span>
@@ -103,10 +107,6 @@ export default function Home() {
                                 <div className="flex gap-2">
                                     <span className="text-cyan-500/50">bc5785a</span>
                                     <span className="truncate">chore: sync metadata with 32-chapter structure</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">3720f29</span>
-                                    <span className="truncate">Add independent pre-commit hook</span>
                                 </div>
                             </div>
                         </div>
@@ -119,21 +119,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.2</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.3</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">ef82da0</span>
+                                    <span className="truncate">feat: integrate dual-track manuscript support and add VersionSwitch component</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">8805621</span>
+                                    <span className="truncate">feat: add PWA functionality for offline access</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">092bb3e</span>
                                     <span className="truncate">fix stickies</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">59f9a4c</span>
-                                    <span className="truncate">Fix static export: revert dynamic sitemap/robots and use env vars instead</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">131210c</span>
-                                    <span className="truncate">Make sitemap and robots dynamic based on host header</span>
                                 </div>
                             </div>
                         </div>
