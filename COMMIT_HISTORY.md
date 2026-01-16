@@ -1,3 +1,5 @@
+a34536e Cleanup: Remove accidental screenshot commits
+efd8c20 Align site with 5-part manuscript structure and update versioning UI
 ef82da0 feat: integrate dual-track manuscript support and add VersionSwitch component
 8805621 feat: add PWA functionality for offline access
 092bb3e fix stickies

@@ -2,17 +2,23 @@
 
 const path = require("path");
 
+const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+const basePath = isStatic ? (process.env.NEXT_PUBLIC_BASE_PATH || '/forgotten-future-site') : '';
+
 const withPWA = require("@ducanh2912/next-pwa").default({
     dest: "public",
     disable: process.env.NODE_ENV === "development",
+    register: true,
+    skipWaiting: true,
+    cacheOnFrontEndNav: true,
     publicExcludes: [
-        "!media/**/*",
-        "!audio/**/*",
+        "media/**/*",
+        "audio/**/*",
     ],
+    workboxOptions: {
+        disableDevLogs: true,
+    },
 });
-
-const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
-const basePath = isStatic ? (process.env.NEXT_PUBLIC_BASE_PATH || '/forgotten-future-site') : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -30,10 +36,6 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    // Configure Turbopack for Next.js 16.1.1+
-    turbopack: {
-        rules: {},
-    }
 }
 
 module.exports = withPWA(nextConfig)

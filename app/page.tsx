@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import HeroSlideshow from './components/HeroSlideshow';
+import PwaRedirect from './components/PwaRedirect';
 
 const prefixPath = (path: string) => {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -32,6 +33,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen bg-black text-white selection:bg-cyan-500/30">
+            <PwaRedirect />
             {/* Hero Section */}
             <section className="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-white/10">
                 <HeroSlideshow images={heroImages} videoSrc={prefixPath('/media/bg_glitch.mp4')} />
@@ -119,21 +121,21 @@ export default function Home() {
                     <div className="glass-panel group hover:border-cyan-500/30 transition-all">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.3</span>
+                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.4</span>
                         </div>
                         <div className="space-y-3 mb-6">
                             <div className="text-[10px] text-zinc-500 font-mono leading-tight">
                                 <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">a34536e</span>
+                                    <span className="truncate">Cleanup: Remove accidental screenshot commits</span>
+                                </div>
+                                <div className="flex gap-2">
+                                    <span className="text-cyan-500/50">efd8c20</span>
+                                    <span className="truncate">Align site with 5-part manuscript structure and update versioning UI</span>
+                                </div>
+                                <div className="flex gap-2">
                                     <span className="text-cyan-500/50">ef82da0</span>
                                     <span className="truncate">feat: integrate dual-track manuscript support and add VersionSwitch component</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">8805621</span>
-                                    <span className="truncate">feat: add PWA functionality for offline access</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">092bb3e</span>
-                                    <span className="truncate">fix stickies</span>
                                 </div>
                             </div>
                         </div>

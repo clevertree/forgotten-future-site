@@ -50,6 +50,31 @@ function FullTextContent() {
         });
     }, [version]);
 
+    // Track scroll position to save last read chapter
+    useEffect(() => {
+        if (isLoading || chapters.length === 0) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        if (id.startsWith('chapter-')) {
+                            localStorage.setItem('ff-last-read-chapter', id);
+                            localStorage.setItem('ff-last-read-edition', version);
+                        }
+                    }
+                });
+            },
+            { threshold: 0.1, rootMargin: '-10% 0px -80% 0px' }
+        );
+
+        const chapterElements = document.querySelectorAll('section[id^="chapter-"]');
+        chapterElements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, [isLoading, chapters, version]);
+
     return (
         <div className="container mx-auto px-6 lg:px-12 py-12">
             <div className="mb-12 flex justify-between items-center no-print">
@@ -67,7 +92,7 @@ function FullTextContent() {
             <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-                
+
                 <div className="mt-6 flex flex-col lg:flex-row items-center gap-4">
                     <div className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">
                         Edition:
