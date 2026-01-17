@@ -116,7 +116,6 @@ export default function RepoStatus({ name, apiUrl, repoUrl, initialData }: RepoS
                     hour12: false 
                   })}
                 </span>
-                <span className="text-cyan-500/50 hidden md:inline shrink-0">{commit.sha}</span>
                 <span className="text-zinc-300 break-words">{commit.message}</span>
               </div>
             </div>
