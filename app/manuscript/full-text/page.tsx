@@ -101,13 +101,23 @@ function FullTextContent() {
             };
 
             utterance.onerror = (event) => {
-                console.error("SpeechSynthesis error:", event);
+                console.error("SpeechSynthesis error details:", {
+                    error: event.error,
+                    message: (event as any).message,
+                    event: event
+                });
+
                 if (event.error !== 'interrupted' && event.error !== 'canceled') {
                     setSpeakingId(null);
+                    
+                    const errorType = event.error || (event as any).message || "Unknown Code";
+
                     if (event.error === 'not-allowed') {
-                        alert("Playback blocked. Please ensure your device is not in 'Silent Mode'.");
+                        alert("Playback blocked: Please ensure your device is not in 'Silent Mode' and that you have interacted with the page recently.");
+                    } else if (event.error === 'network') {
+                        alert("Speech failed: This voice requires an internet connection which was lost.");
                     } else {
-                        alert(`Speech playback failed: ${event.error}.`);
+                        alert(`Speech playback failed (${errorType}). Note: Some mobile browsers require the screen to stay on.`);
                     }
                 }
             };
@@ -124,7 +134,10 @@ function FullTextContent() {
         };
 
         try {
-            speakNextChunk();
+            // Small delay to ensure cancel() has finished clearing the queue
+            setTimeout(() => {
+                speakNextChunk();
+            }, 100);
         } catch (err) {
             console.error("Speech initiation failed:", err);
             alert("Failed to initialize speech engines.");
