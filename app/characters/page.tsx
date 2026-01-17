@@ -105,7 +105,7 @@ export default function CharactersPage() {
                                     <strong className="text-white">202X:</strong> Appears as a hyper-observant suburban adolescent, unaware of his artificial nature until the Cataclysm forces his activation.
                                 </p>
                                 <p>
-                                    <strong className="text-white">After Time:</strong> Evolves through multiple reincarnations, eventually inhabiting a <span className="text-green-400">Gorgon body</span>—a massive metallic head with numerous whipping arms and a green-glowing central sensor.
+                                    <strong className="text-white">After Time:</strong> Evolves through multiple restorations, eventually inhabiting a <span className="text-green-400">Gorgon body</span>—a massive metallic head with numerous whipping arms and a green-glowing central sensor.
                                 </p>
                             </div>
                         </div>
@@ -345,7 +345,7 @@ export default function CharactersPage() {
                             The appearance of the Four Vessels is characterized by a violent transition from human-adjacent deception to raw elemental and mechanical manifestation. In the Before Time, they were designed to blend into human society or inspire divine awe, appearing as exceptionally tall, athletic, or serene individuals with subtle elemental glows.
                         </p>
                         <p>
-                            However, the Moon Cataclysm and the subsequent Year 15 AT transition stripped away these carefully maintained masks. Lem evolved into a "Sovereign Reincarnator," while Lynn's form shattered into the spectral "Witch" entity. Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
+                            However, the Moon Cataclysm and the subsequent Year 15 AT transition stripped away these carefully maintained masks. Lem evolved into a "Sovereign Restorer," while Lynn's form shattered into the spectral "Witch" entity. Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
                         </p>
                         <p>
                             This contrast defines the After Time interface: the "dirt" of independent survivors like Arlo, the "analog waves" of Myrr's sanctuary, and the "sterile sky" of Cassia Vane's Archivist Order.

@@ -1,3 +1,10 @@
+3ecee3c style: remove commit SHA from repo status history display
+8bbd5e0 style: allow commit messages to wrap in repo status
+4d4d2ef style: move commit date before message on same line
+82dfb95 style: hide commit SHA on mobile screens for repo status
+349873a feat: add timestamps to git history on front page
+f463908 feat: manuscript mobile layout, scroll behavior, and narrative documentation
+7c57840 feat: automated git history updates and manuscript URL environment variable
 ef76acf chore(ci): merge ci/fix/pages-pwa — allow configure-pages continue-on-error + disable PWA for static exports
 e7de24e ci: allow setup-pages to continue-on-error + disable PWA for static exports
 5e485de footer: link CLEVERTREE to https://clevertree.net/

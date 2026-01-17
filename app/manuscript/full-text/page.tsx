@@ -30,24 +30,33 @@ function FullTextContent() {
 
     useEffect(() => {
         setIsLoading(true);
-        fetchManuscript(version).then(data => {
-            if (data.chapters.length > 0) {
-                setChapters(data.chapters);
-                setParts(data.parts);
-            }
-            setIsLoading(false);
+        const loadManuscript = () => {
+            fetchManuscript(version).then(data => {
+                if (data.chapters.length > 0) {
+                    setChapters(data.chapters);
+                    setParts(data.parts);
+                }
+                setIsLoading(false);
 
-            // Handle hash-based scrolling after data loads
-            if (window.location.hash) {
-                setTimeout(() => {
-                    const id = window.location.hash.replace('#', '');
-                    const element = document.getElementById(id);
-                    if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }, 100);
-            }
-        });
+                // Handle hash-based scrolling after data loads
+                if (window.location.hash) {
+                    setTimeout(() => {
+                        const id = window.location.hash.replace('#', '');
+                        const element = document.getElementById(id);
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 100);
+                }
+            });
+        };
+
+        loadManuscript();
+
+        // Polling: attempt to refresh once per 60 seconds
+        const intervalId = setInterval(loadManuscript, 60000);
+
+        return () => clearInterval(intervalId);
     }, [version]);
 
     // Track scroll position to save last read chapter

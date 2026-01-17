@@ -26,7 +26,8 @@ const MANUSCRIPT_URLS: Record<ManuscriptVersion, string> = {
  */
 export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[] }> {
     try {
-        const url = MANUSCRIPT_URLS[version];
+        const baseUrl = MANUSCRIPT_URLS[version];
+        const url = `${baseUrl}?t=${Date.now()}`;
         const response = await fetch(url);
         if (!response.ok) {
             console.error(`Manuscript fetch failed for ${version}:`, response.statusText);

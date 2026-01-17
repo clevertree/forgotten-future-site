@@ -56,7 +56,7 @@ export default function FAQPage() {
         },
         {
             q: "What makes Lem's return unique?",
-            a: "While other Vessels require Core-managed 'Cradles' to reincarnate, Lem possesses 'Sovereign Reincarnation.' He can take root in any compatible material and reconstitute his presence almost instantly without an embryo cycle."
+            a: "While other Vessels require Core-managed 'Cradles' to be restored, Lem possesses 'Sovereign Restoration.' He can take root in any compatible material and reconstitute his presence almost instantly without an embryo cycle."
         },
         {
             q: "What is a 'White Forest'?",
@@ -76,7 +76,7 @@ export default function FAQPage() {
         },
         {
             q: "Is Arlo the Water Vessel?",
-            a: "Arlo is the reincarnation of the original Water Vessel spirit (Maya), though he explicitly rejects this name and identity, choosing to remain a village leader."
+            a: "Arlo is the restoration of the original Water Vessel spirit (Maya), though he explicitly rejects this name and identity, choosing to remain a village leader."
         },
         {
             q: "What is the 'King of the Gorgons'?",

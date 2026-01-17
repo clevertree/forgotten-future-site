@@ -21,21 +21,30 @@ function ManuscriptContent() {
 
     useEffect(() => {
         setIsLoading(true);
-        fetchManuscript(version).then(data => {
-            if (data.chapters.length > 0) {
-                setChapters(data.chapters);
-                setParts(data.parts);
-            }
-            setIsLoading(false);
+        const loadManuscript = () => {
+            fetchManuscript(version).then(data => {
+                if (data.chapters.length > 0) {
+                    setChapters(data.chapters);
+                    setParts(data.parts);
+                }
+                setIsLoading(false);
 
-            // Handle hash-based scrolling after data loads
-            if (window.location.hash) {
-                setTimeout(() => {
-                    const id = window.location.hash.replace('#', '');
-                    scrollToSection(id);
-                }, 100);
-            }
-        });
+                // Handle hash-based scrolling after data loads
+                if (window.location.hash) {
+                    setTimeout(() => {
+                        const id = window.location.hash.replace('#', '');
+                        scrollToSection(id);
+                    }, 100);
+                }
+            });
+        };
+
+        loadManuscript();
+
+        // Polling: attempt to refresh once per 60 seconds
+        const intervalId = setInterval(loadManuscript, 60000);
+
+        return () => clearInterval(intervalId);
     }, [version]);
 
 
@@ -241,7 +250,7 @@ function ManuscriptContent() {
                                 <div>
                                     <h4 className="text-white text-xs font-bold uppercase mb-1">Young Adult Edition</h4>
                                     <p className="text-zinc-500 text-xs leading-relaxed">
-                                        Focuses on Lem's immediate, grounded perspective. It uses visceral, laymen's terms to explore mature themes of systemic control, identity, and the weight of reincarnation.
+                                        Focuses on Lem's immediate, grounded perspective. It uses visceral, laymen's terms to explore mature themes of systemic control, identity, and the weight of restoration.
                                     </p>
                                 </div>
                                 <div>
