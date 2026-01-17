@@ -24,7 +24,7 @@ const MANUSCRIPT_URLS: Record<ManuscriptVersion, string> = {
 /**
  * Fetches the full manuscript from GitHub and parses it into Parts and Chapters.
  */
-export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[] }> {
+export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string }> {
     try {
         const baseUrl = MANUSCRIPT_URLS[version];
         const url = `${baseUrl}?t=${Date.now()}`;
@@ -34,6 +34,10 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
             return { parts: [], chapters: [] };
         }
         const text = await response.text();
+
+        // Extract Draft Version if present
+        const versionMatch = text.match(/> Draft Version: ([\d.]+)/);
+        const draftVersion = versionMatch ? versionMatch[1] : undefined;
 
         // Split by horizontal rule separator used in the file
         const segments = text.split(/\n---\n/);
@@ -121,7 +125,8 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
 
         return {
             parts,
-            chapters: chaptersList.sort((a, b) => a.id - b.id)
+            chapters: chaptersList.sort((a, b) => a.id - b.id),
+            draftVersion
         };
     } catch (error) {
         console.error('Error fetching manuscript:', error);

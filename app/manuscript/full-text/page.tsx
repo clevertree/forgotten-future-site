@@ -14,6 +14,7 @@ function FullTextContent() {
 
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
+    const [draftVersion, setDraftVersion] = useState<string | undefined>();
     const [isLoading, setIsLoading] = useState(true);
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
     const [notification, setNotification] = useState<string | null>(null);
@@ -50,6 +51,7 @@ function FullTextContent() {
                     }
                     setChapters(data.chapters);
                     setParts(data.parts);
+                    setDraftVersion(data.draftVersion);
                     prevChaptersRef.current = data.chapters;
                 }
                 setIsLoading(false);
@@ -116,7 +118,14 @@ function FullTextContent() {
                 </div>
             )}
             
-            <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
+            <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
+                {draftVersion && (
+                    <div className="absolute top-0 right-0 no-print">
+                        <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/5 bg-white/5 px-3 py-1 rounded">
+                            Draft: v{draftVersion}
+                        </span>
+                    </div>
+                )}
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
               <span className="hidden md:block text-[10px] text-zinc-500 uppercase">

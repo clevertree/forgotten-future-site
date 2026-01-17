@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.12",
+    "version": "v0.13.13",
     "commits": [
+      {
+        "sha": "d195414",
+        "message": "chore: regenerate manuscripts with bumped version",
+        "date": "2026-01-17T16:31:42.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/d195414"
+      },
+      {
+        "sha": "79a6be9",
+        "message": "feat: include draft version in manuscript header",
+        "date": "2026-01-17T16:31:38.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/79a6be9"
+      },
       {
         "sha": "50895a0",
         "message": "chore: update manuscripts from chapter drafts",
         "date": "2026-01-17T16:26:18.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/50895a0"
-      },
-      {
-        "sha": "f1501e9",
-        "message": "chore: update manuscript telemetry",
-        "date": "2026-01-17T16:19:38.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/f1501e9"
-      },
-      {
-        "sha": "88a2817",
-        "message": "docs: update synopsis to match new Pyramid breach mechanics",
-        "date": "2026-01-17T15:51:33.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/88a2817"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -54,22 +54,22 @@
     "version": "v0.11.8",
     "commits": [
       {
+        "sha": "0795d76",
+        "message": "feat: add change detection and notify user on manuscript refresh",
+        "date": "2026-01-17T16:28:23.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/0795d76"
+      },
+      {
+        "sha": "899c29d",
+        "message": "chore: update git history",
+        "date": "2026-01-17T16:26:22.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/899c29d"
+      },
+      {
         "sha": "67bb2db",
         "message": "feat: implement 60-second polling for manuscript with cache-busting",
         "date": "2026-01-17T16:19:35.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/67bb2db"
-      },
-      {
-        "sha": "3ecee3c",
-        "message": "style: remove commit SHA from repo status history display",
-        "date": "2026-01-17T13:48:36.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/3ecee3c"
-      },
-      {
-        "sha": "8bbd5e0",
-        "message": "style: allow commit messages to wrap in repo status",
-        "date": "2026-01-17T13:48:21.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/8bbd5e0"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

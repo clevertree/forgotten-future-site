@@ -16,6 +16,7 @@ function ManuscriptContent() {
 
     const [chapters, setChapters] = useState<Chapter[]>([]);
     const [parts, setParts] = useState<Part[]>([]);
+    const [draftVersion, setDraftVersion] = useState<string | undefined>();
     const [isLoading, setIsLoading] = useState(true);
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
     const [notification, setNotification] = useState<string | null>(null);
@@ -41,6 +42,7 @@ function ManuscriptContent() {
                     }
                     setChapters(data.chapters);
                     setParts(data.parts);
+                    setDraftVersion(data.draftVersion);
                     prevChaptersRef.current = data.chapters;
                 }
                 setIsLoading(false);
@@ -174,7 +176,10 @@ function ManuscriptContent() {
 
                 {/* Chapters List */}
                 <div className="lg:w-2/3 order-2 lg:order-2">
-                    <h1 className="text-3xl md:text-4xl mb-6 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
+                    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+                        <h1 className="text-3xl md:text-4xl text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
+                        {draftVersion && <div className="text-[10px] text-zinc-500 uppercase tracking-widest bg-white/5 px-3 py-1 rounded border border-white/5">Draft: v{draftVersion}</div>}
+                    </div>
 
                     {/* Section Tabs */}
                     <div className="flex flex-wrap gap-2 mb-8 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
