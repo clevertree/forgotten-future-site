@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeroSlideshow from './components/HeroSlideshow';
 import PwaRedirect from './components/PwaRedirect';
+import RepoStatus from './components/RepoStatus';
+import gitHistory from '@/lib/git-history.json';
 
 const prefixPath = (path: string) => {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -63,86 +65,24 @@ export default function Home() {
             {/* Development Status */}
             <section className="w-full max-w-7xl mx-auto px-6 -mt-8 relative z-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Story Status */}
-                    <div className="glass-panel group hover:border-cyan-500/30 transition-all">
-                        <div className="flex justify-between items-center mb-4">
-                            <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Story</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.10.46</span>
-                        </div>
-                        <div className="space-y-3 mb-6">
-                            <div className="text-[10px] text-zinc-500 font-mono leading-tight">
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">f1a5e05</span>
-                                    <span className="truncate">Update INDEX.md with 5 parts and regenerate manuscripts</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">1c30104</span>
-                                    <span className="truncate">feat: unify YA and 13+ drafts into chapter files and generate aggregated manuscripts</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">efd613d</span>
-                                    <span className="truncate">v0.10.42: Update assembly script to exclusive prose (Draft) extraction</span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/clevertree/ff-story/commits/main/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
-                            GitHub Source <span className="text-lg">→</span>
-                        </a>
-                    </div>
-
-                    {/* Teaser Status */}
-                    <div className="glass-panel group hover:border-cyan-500/30 transition-all">
-                        <div className="flex justify-between items-center mb-4">
-                            <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Teaser</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.9.9</span>
-                        </div>
-                        <div className="space-y-3 mb-6">
-                            <div className="text-[10px] text-zinc-500 font-mono leading-tight">
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">19f4a69</span>
-                                    <span className="truncate">chore: update version and commit history</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">99672b0</span>
-                                    <span className="truncate">chore: sync metadata with 32-chapter structure</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">bc5785a</span>
-                                    <span className="truncate">chore: sync metadata with 32-chapter structure</span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/clevertree/ff-teaser/commits/main/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
-                            GitHub Source <span className="text-lg">→</span>
-                        </a>
-                    </div>
-
-                    {/* Website Status */}
-                    <div className="glass-panel group hover:border-cyan-500/30 transition-all">
-                        <div className="flex justify-between items-center mb-4">
-                            <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: Site</h3>
-                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v0.11.6</span>
-                        </div>
-                        <div className="space-y-3 mb-6">
-                            <div className="text-[10px] text-zinc-500 font-mono leading-tight">
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">5e485de</span>
-                                    <span className="truncate">footer: link CLEVERTREE to https://clevertree.net/</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">b2cd592</span>
-                                    <span className="truncate">feat: save last read chapter and redirect PWA launch</span>
-                                </div>
-                                <div className="flex gap-2">
-                                    <span className="text-cyan-500/50">a34536e</span>
-                                    <span className="truncate">Cleanup: Remove accidental screenshot commits</span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://github.com/clevertree/forgotten-future-site/commits/master/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
-                            GitHub Source <span className="text-lg">→</span>
-                        </a>
-                    </div>
+                    <RepoStatus 
+                        name="Story" 
+                        apiUrl={process.env.NEXT_PUBLIC_REPO_STORY || ''} 
+                        repoUrl="https://github.com/clevertree/ff-story/commits/main/"
+                        initialData={(gitHistory as any)['ff-story']}
+                    />
+                    <RepoStatus 
+                        name="Teaser" 
+                        apiUrl={process.env.NEXT_PUBLIC_REPO_TEASER || ''} 
+                        repoUrl="https://github.com/clevertree/ff-teaser/commits/main/"
+                        initialData={(gitHistory as any)['ff-teaser']}
+                    />
+                    <RepoStatus 
+                        name="Site" 
+                        apiUrl={process.env.NEXT_PUBLIC_REPO_SITE || ''} 
+                        repoUrl="https://github.com/clevertree/forgotten-future-site/commits/master/"
+                        initialData={(gitHistory as any)['forgotten-future-site']}
+                    />
                 </div>
             </section>
 

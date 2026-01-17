@@ -1,3 +1,5 @@
+ef76acf chore(ci): merge ci/fix/pages-pwa — allow configure-pages continue-on-error + disable PWA for static exports
+e7de24e ci: allow setup-pages to continue-on-error + disable PWA for static exports
 5e485de footer: link CLEVERTREE to https://clevertree.net/
 b2cd592 feat: save last read chapter and redirect PWA launch
 a34536e Cleanup: Remove accidental screenshot commits

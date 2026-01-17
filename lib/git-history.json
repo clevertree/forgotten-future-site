@@ -1,0 +1,68 @@
+{
+  "ff-story": {
+    "name": "Story",
+    "version": "v0.13.6",
+    "commits": [
+      {
+        "sha": "9f80fee",
+        "message": "Remove redundant and outdated scripts",
+        "url": "https://github.com/clevertree/ff-story/commit/9f80fee"
+      },
+      {
+        "sha": "63a6a14",
+        "message": "Automate commit history and metadata updates via git pre-commit hook",
+        "url": "https://github.com/clevertree/ff-story/commit/63a6a14"
+      },
+      {
+        "sha": "fcd0a70",
+        "message": "Regenerate full manuscripts and sync thematic/terminological divergence",
+        "url": "https://github.com/clevertree/ff-story/commit/fcd0a70"
+      }
+    ],
+    "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
+  },
+  "ff-teaser": {
+    "name": "Teaser",
+    "version": "v0.9.7",
+    "commits": [
+      {
+        "sha": "99672b0",
+        "message": "chore: sync metadata with 32-chapter structure",
+        "url": "https://github.com/clevertree/ff-teaser/commit/99672b0"
+      },
+      {
+        "sha": "bc5785a",
+        "message": "chore: sync metadata with 32-chapter structure",
+        "url": "https://github.com/clevertree/ff-teaser/commit/bc5785a"
+      },
+      {
+        "sha": "3720f29",
+        "message": "Add independent pre-commit hook",
+        "url": "https://github.com/clevertree/ff-teaser/commit/3720f29"
+      }
+    ],
+    "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
+  },
+  "forgotten-future-site": {
+    "name": "Site",
+    "version": "v0.11.7",
+    "commits": [
+      {
+        "sha": "ef76acf",
+        "message": "chore(ci): merge ci/fix/pages-pwa — allow configure-pages continue-on-error + disable PWA for static exports",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/ef76acf"
+      },
+      {
+        "sha": "e7de24e",
+        "message": "ci: allow setup-pages to continue-on-error + disable PWA for static exports",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/e7de24e"
+      },
+      {
+        "sha": "5e485de",
+        "message": "footer: link CLEVERTREE to https://clevertree.net/",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/5e485de"
+      }
+    ],
+    "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
+  }
+}

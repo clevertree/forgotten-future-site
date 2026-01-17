@@ -1,9 +1,10 @@
 {
   "name": "forgotten-future-site",
-  "version": "0.11.6",
+  "version": "0.11.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/fetch-git-history.mjs",
     "build": "next build",
     "start": "next start -p 8082",
     "lint": "next lint",

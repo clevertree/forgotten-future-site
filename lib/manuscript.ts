@@ -17,8 +17,9 @@ export type ManuscriptVersion = '13plus' | 'youngadult';
 
 const MANUSCRIPT_URLS: Record<ManuscriptVersion, string> = {
     '13plus': 'https://raw.githubusercontent.com/clevertree/ff-story/main/manuscript/MANUSCRIPT_13_PLUS.md',
-    'youngadult': 'https://raw.githubusercontent.com/clevertree/ff-story/main/manuscript/MANUSCRIPT_YOUNG_ADULT.md'
+    'youngadult': process.env.NEXT_PUBLIC_MANUSCRIPT_URL || 'https://raw.githubusercontent.com/clevertree/ff-story/main/manuscript/MANUSCRIPT_YOUNG_ADULT.md'
 };
+
 
 /**
  * Fetches the full manuscript from GitHub and parses it into Parts and Chapters.

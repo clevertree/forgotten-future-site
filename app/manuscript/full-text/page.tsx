@@ -93,13 +93,6 @@ function FullTextContent() {
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
 
-                <div className="mt-6 flex flex-col lg:flex-row items-center gap-4">
-                    <div className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">
-                        Edition:
-                    </div>
-                    <VersionSwitch version={version} onVersionChange={handleVersionChange} />
-                </div>
-
                 <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.

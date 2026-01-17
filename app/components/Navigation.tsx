@@ -19,7 +19,7 @@ export default function Navigation() {
     ];
 
     return (
-        <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative">
+        <nav className="container mx-auto px-6 py-4 flex justify-around items-center relative">
             {/* Logo */}
             <Link href="/" className="flex items-center group z-[60]">
                 <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0">
