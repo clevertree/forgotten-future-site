@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
@@ -16,6 +16,9 @@ function FullTextContent() {
     const [parts, setParts] = useState<Part[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
+    const [notification, setNotification] = useState<string | null>(null);
+
+    const prevChaptersRef = useRef<Chapter[]>([]);
 
     const handleVersionChange = (newVersion: ManuscriptVersion) => {
         setVersion(newVersion);
@@ -30,16 +33,29 @@ function FullTextContent() {
 
     useEffect(() => {
         setIsLoading(true);
-        const loadManuscript = () => {
+        const loadManuscript = (isRefresh = false) => {
             fetchManuscript(version).then(data => {
                 if (data.chapters.length > 0) {
+                    if (isRefresh && prevChaptersRef.current.length > 0) {
+                        const changedChapters = data.chapters.filter((ch, index) => {
+                            const prev = prevChaptersRef.current[index];
+                            return !prev || prev.content !== ch.content || prev.title !== ch.title;
+                        });
+
+                        if (changedChapters.length > 0) {
+                            const titles = changedChapters.map(ch => `Ch ${ch.id}`).join(', ');
+                            setNotification(`Updated: ${titles}`);
+                            setTimeout(() => setNotification(null), 10000);
+                        }
+                    }
                     setChapters(data.chapters);
                     setParts(data.parts);
+                    prevChaptersRef.current = data.chapters;
                 }
                 setIsLoading(false);
 
                 // Handle hash-based scrolling after data loads
-                if (window.location.hash) {
+                if (!isRefresh && window.location.hash) {
                     setTimeout(() => {
                         const id = window.location.hash.replace('#', '');
                         const element = document.getElementById(id);
@@ -54,7 +70,7 @@ function FullTextContent() {
         loadManuscript();
 
         // Polling: attempt to refresh once per 60 seconds
-        const intervalId = setInterval(loadManuscript, 60000);
+        const intervalId = setInterval(() => loadManuscript(true), 60000);
 
         return () => clearInterval(intervalId);
     }, [version]);
@@ -85,8 +101,22 @@ function FullTextContent() {
     }, [isLoading, chapters, version]);
 
     return (
-        <div className="container mx-auto px-6 lg:px-12 py-12">
-               <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
+        <div className="container mx-auto px-6 lg:px-12 py-12 relative">
+            {/* Content Refresh Notification */}
+            {notification && (
+                <div className="fixed bottom-8 right-8 z-50 animate-in fade-in slide-in-from-bottom-4 duration-300">
+                    <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] font-bold text-xs uppercase tracking-widest flex items-center gap-3">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                        </span>
+                        {notification}
+                        <button onClick={() => setNotification(null)} className="hover:opacity-60 transition-opacity">✕</button>
+                    </div>
+                </div>
+            )}
+            
+            <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
               <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
