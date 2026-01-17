@@ -34,6 +34,13 @@ function FullTextContent() {
     };
 
     const toggleSpeech = (id: number, text: string) => {
+        if (typeof window === 'undefined') return;
+
+        if (!window.speechSynthesis) {
+            alert("Your browser does not support Text-to-Speech playback. Please try a modern browser like Chrome or Safari.");
+            return;
+        }
+
         if (speakingId === id) {
             window.speechSynthesis.cancel();
             setSpeakingId(null);
@@ -48,13 +55,44 @@ function FullTextContent() {
             .replace(/>\s+/g, '')          // remove blockquotes
             .replace(/\n+/g, ' ');         // collapse newlines
 
-        const utterance = new SpeechSynthesisUtterance(plainText);
-        utterance.onend = () => setSpeakingId(null);
-        utterance.onerror = () => setSpeakingId(null);
-        utterance.rate = 1.0;
-        
-        window.speechSynthesis.speak(utterance);
-        setSpeakingId(id);
+        try {
+            const utterance = new SpeechSynthesisUtterance(plainText);
+            
+            utterance.onstart = () => {
+                setSpeakingId(id);
+            };
+
+            utterance.onend = () => {
+                setSpeakingId(null);
+            };
+
+            utterance.onerror = (event) => {
+                console.error("SpeechSynthesis error:", event);
+                setSpeakingId(null);
+                
+                if (event.error === 'not-allowed') {
+                    alert("Playback blocked. Please ensure your device is not in 'Silent Mode' and that you have interacted with the page first.");
+                } else if (event.error === 'language-unavailable') {
+                    alert("The required voice language is not available on your device.");
+                } else {
+                    alert(`Speech playback failed: ${event.error}. Please try refreshing the page.`);
+                }
+            };
+
+            utterance.rate = 1.0;
+            utterance.pitch = 1.0;
+            utterance.volume = 1.0;
+
+            if (window.speechSynthesis.paused) {
+                window.speechSynthesis.resume();
+            }
+            
+            window.speechSynthesis.speak(utterance);
+        } catch (err) {
+            console.error("Speech initiation block failed:", err);
+            alert("Failed to initialize speech engines.");
+            setSpeakingId(null);
+        }
     };
 
     useEffect(() => {
