@@ -96,7 +96,7 @@ export default function Home() {
                         of data, culture, and history vanished in a blinding flash.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                        In the aftermath, the <strong>Archivists</strong> emerged from the shadows of the Technocratic Core,
+                        In the aftermath, the ruling Council of the Technocratic Core rebranded themselves as the <strong>Archivists</strong>,
                         offering a new world of "no want and no pain." But their utopia is built on a lie: the
                         <strong>Thousand-Year Fallacy</strong>, a rewritten history designed to keep humanity in a state of
                         contented amnesia.

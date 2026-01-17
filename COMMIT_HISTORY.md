@@ -1,3 +1,7 @@
+977df52 fix: improve TTS error diagnostics to catch 'undefined' errors
+ba3b21a fix: implement TTS chunking to support long manuscript narration
+069fdbe fix: add error handling and alerts for mobile TTS playback failures
+90683f4 feat: replace legacy mp3 placeholders with Web Speech API TTS buttons on manuscript page
 3b123c0 feat: implement Web Speech API TTS for manuscript and full-text pages
 46b9310 feat: display draft version on manuscript pages
 0795d76 feat: add change detection and notify user on manuscript refresh

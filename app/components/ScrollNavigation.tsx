@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { ChevronUp, ChevronLeft, ChevronRight, ArrowUp, Plus, Minus } from 'lucide-react';
+import { ChevronUp, ChevronLeft, ChevronRight, ArrowUp, Plus, Minus, Play, Square } from 'lucide-react';
 
 export default function ScrollNavigation() {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
     const [currentChapter, setCurrentChapter] = useState<number | null>(null);
     const [maxChapter, setMaxChapter] = useState(78);
+    const [speakingId, setSpeakingId] = useState<number | null>(null);
     const isFullText = pathname?.includes('/manuscript/full-text');
 
     // Lock logic to prevent "echoing" during manual scrolls
@@ -117,6 +118,21 @@ export default function ScrollNavigation() {
         };
     }, [isFullText, pathname]);
 
+    useEffect(() => {
+        const handleStatus = (e: Event) => {
+            const ce = e as CustomEvent;
+            setSpeakingId(ce.detail?.speakingId);
+        };
+        window.addEventListener('ff-tts-status', handleStatus);
+        return () => window.removeEventListener('ff-tts-status', handleStatus);
+    }, []);
+
+    const toggleTTS = () => {
+        window.dispatchEvent(new CustomEvent('ff-request-tts', {
+            detail: { chapterId: currentChapter || 1 }
+        }));
+    };
+
     const scrollToTop = () => {
         isLockedRef.current = true;
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -170,7 +186,8 @@ export default function ScrollNavigation() {
 
     return (
         <div
-            className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col items-center gap-3 transition-all duration-500 ease-in-out ${isVisible ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-10 pointer-events-none'
+            className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col items-center gap-3 transition-all duration-500 ease-in-out ${
+                (isVisible || isFullText) ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-10 pointer-events-none'
                 } max-md:left-1/2 max-md:-translate-x-1/2 max-md:right-auto max-md:flex-row max-md:bottom-8`}
         >
             {isFullText && currentChapter !== null && (
@@ -197,6 +214,18 @@ export default function ScrollNavigation() {
                         disabled={currentChapter >= maxChapter}
                     >
                         <Plus size={18} />
+                    </button>
+
+                    <div className="w-px h-4 bg-white/10 mx-1" />
+
+                    <button
+                        onClick={toggleTTS}
+                        className={`p-2 rounded-full transition-colors active:scale-90 ${
+                            speakingId !== null ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'hover:bg-cyan-500/20 text-cyan-400'
+                        }`}
+                        title={speakingId !== null ? "Stop Listening" : "Listen to Chapter"}
+                    >
+                        {speakingId !== null ? <Square size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" />}
                     </button>
                 </div>
             )}

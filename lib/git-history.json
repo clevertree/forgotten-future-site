@@ -4,6 +4,12 @@
     "version": "v0.13.16",
     "commits": [
       {
+        "sha": "29de47a",
+        "message": "docs: distinguish Archivists from Core and define Elowen Vane as the singular Archivist entity",
+        "date": "2026-01-17T17:24:32.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/29de47a"
+      },
+      {
         "sha": "14d8161",
         "message": "narrative: update Lem backstory to deep cover and reluctant unification",
         "date": "2026-01-17T16:53:46.000Z",
@@ -14,12 +20,6 @@
         "message": "chore: regenerate manuscripts with bumped version",
         "date": "2026-01-17T16:31:42.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/d195414"
-      },
-      {
-        "sha": "79a6be9",
-        "message": "feat: include draft version in manuscript header",
-        "date": "2026-01-17T16:31:38.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/79a6be9"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.10",
+    "version": "v0.11.12",
     "commits": [
       {
-        "sha": "3b123c0",
-        "message": "feat: implement Web Speech API TTS for manuscript and full-text pages",
-        "date": "2026-01-17T16:53:52.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/3b123c0"
+        "sha": "977df52",
+        "message": "fix: improve TTS error diagnostics to catch 'undefined' errors",
+        "date": "2026-01-17T17:14:32.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/977df52"
       },
       {
-        "sha": "46b9310",
-        "message": "feat: display draft version on manuscript pages",
-        "date": "2026-01-17T16:31:47.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/46b9310"
+        "sha": "ba3b21a",
+        "message": "fix: implement TTS chunking to support long manuscript narration",
+        "date": "2026-01-17T17:13:42.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/ba3b21a"
       },
       {
-        "sha": "0795d76",
-        "message": "feat: add change detection and notify user on manuscript refresh",
-        "date": "2026-01-17T16:28:23.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/0795d76"
+        "sha": "069fdbe",
+        "message": "fix: add error handling and alerts for mobile TTS playback failures",
+        "date": "2026-01-17T17:12:30.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/069fdbe"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

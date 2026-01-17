@@ -20,12 +20,7 @@ function ManuscriptContent() {
     const [notification, setNotification] = useState<string | null>(null);
     const [speakingId, setSpeakingId] = useState<number | null>(null);
 
-    const fullManuscriptId = 9999;
-    const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
-
-    const prevChaptersRef = useRef<Chapter[]>([]);
-
-    const toggleSpeech = (id: number, text: string) => {
+    const toggleSpeech = React.useCallback((id: number, text: string) => {
         if (typeof window === 'undefined') return;
 
         if (!window.speechSynthesis) {
@@ -132,55 +127,36 @@ function ManuscriptContent() {
                 speakNextChunk();
             }, 100);
         } catch (err) {
-            console.error("Speech initiation block failed:", err);
-            alert("Failed to initialize speech.");
+            console.error("Speech initiation failed:", err);
+            alert("Failed to initialize speech engines.");
             setSpeakingId(null);
         }
-    };
+    }, [speakingId]);
 
     useEffect(() => {
-        setIsLoading(true);
-        const loadManuscript = (isRefresh = false) => {
-            fetchManuscript(version).then(data => {
-                if (data.chapters.length > 0) {
-                    if (isRefresh && prevChaptersRef.current.length > 0) {
-                        const changedChapters = data.chapters.filter((ch, index) => {
-                            const prev = prevChaptersRef.current[index];
-                            return !prev || prev.content !== ch.content || prev.title !== ch.title;
-                        });
-
-                        if (changedChapters.length > 0) {
-                            const titles = changedChapters.map(ch => `Ch ${ch.id}`).join(', ');
-                            setNotification(`Refreshed: ${titles}`);
-                            setTimeout(() => setNotification(null), 10000);
-                        }
-                    }
-                    setChapters(data.chapters);
-                    setParts(data.parts);
-                    setDraftVersion(data.draftVersion);
-                    prevChaptersRef.current = data.chapters;
-                }
-                setIsLoading(false);
-
-                // Handle hash-based scrolling after data loads
-                if (!isRefresh && window.location.hash) {
-                    setTimeout(() => {
-                        const id = window.location.hash.replace('#', '');
-                        scrollToSection(id);
-                    }, 100);
-                }
-            });
+        const handleRequest = (e: Event) => {
+            const ce = e as CustomEvent;
+            const targetId = ce.detail?.chapterId;
+            if (speakingId) {
+                window.speechSynthesis.cancel();
+                setSpeakingId(null);
+            } else if (targetId) {
+                const ch = chapters.find(c => c.id === targetId);
+                if (ch) toggleSpeech(ch.id, ch.content);
+            }
         };
+        window.addEventListener('ff-request-tts', handleRequest);
+        return () => window.removeEventListener('ff-request-tts', handleRequest);
+    }, [speakingId, chapters, toggleSpeech]);
 
-        loadManuscript();
+    useEffect(() => {
+        window.dispatchEvent(new CustomEvent('ff-tts-status', { detail: { speakingId } }));
+    }, [speakingId]);
 
-        // Polling: attempt to refresh once per 60 seconds
-        const intervalId = setInterval(() => loadManuscript(true), 60000);
+    const fullManuscriptId = 9999;
+    const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
 
-        return () => clearInterval(intervalId);
-    }, [version]);
-
-
+    const prevChaptersRef = useRef<Chapter[]>([]);
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -197,7 +173,7 @@ function ManuscriptContent() {
         <div className="container mx-auto px-6 py-12 relative">
             {/* Content Refresh Notification */}
             {notification && (
-                <div className="fixed bottom-8 right-8 z-50 animate-in fade-in slide-in-from-bottom-4 duration-300">
+                <div className="fixed top-28 right-8 z-50 animate-in fade-in slide-in-from-top-4 duration-300">
                     <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] font-bold text-xs uppercase tracking-widest flex items-center gap-3">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
@@ -209,32 +185,52 @@ function ManuscriptContent() {
                 </div>
             )}
 
-            {/* Floating Speech Control */}
-            {speakingId && (
-                <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 no-print animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <div className="bg-zinc-950/90 backdrop-blur-md border border-cyan-500/50 px-8 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.2)] flex items-center gap-6">
-                        <div className="flex items-center gap-3">
-                            <div className="relative flex h-3 w-3">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-                            </div>
-                            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em]">
-                                {speakingId === fullManuscriptId ? 'Reading Full Manuscript' : `Reading Chapter ${speakingId}`}
-                            </span>
-                        </div>
-                        <div className="h-4 w-px bg-white/10"></div>
-                        <button 
-                            onClick={() => {
-                                window.speechSynthesis.cancel();
-                                setSpeakingId(null);
-                            }}
-                            className="text-[10px] font-black text-white uppercase tracking-widest hover:text-cyan-400 transition-colors flex items-center gap-2"
+            <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
+                <div className="absolute inset-0 -z-10 opacity-30">
+                    <svg viewBox="0 0 600 600" className="animate-pulse-slow" aria-hidden="true">
+                        <defs>
+                            <pattern id="swirl-pattern" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <circle cx="50" cy="50" r="50" fill="url(#gradient1)" />
+                                <circle cx="150" cy="50" r="50" fill="url(#gradient2)" />
+                                <circle cx="250" cy="50" r="50" fill="url(#gradient1)" />
+                                <circle cx="350" cy="50" r="50" fill="url(#gradient2)" />
+                                <circle cx="450" cy="50" r="50" fill="url(#gradient1)" />
+                                <circle cx="550" cy="50" r="50" fill="url(#gradient2)" />
+                            </pattern>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={{ stopColor: 'rgb(6 182 212)', stopOpacity: 1 }} />
+                                <stop offset="100%" style={{ stopColor: 'rgb(2 126 151)', stopOpacity: 1 }} />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={{ stopColor: 'rgb(2 126 151)', stopOpacity: 1 }} />
+                                <stop offset="100%" style={{ stopColor: 'rgb(6 182 212)', stopOpacity: 1 }} />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="100%" height="100%" fill="url(#swirl-pattern)" />
+                    </svg>
+                </div>
+
+                <div className="flex flex-col items-center justify-center space-y-4">
+                    <div className="text-2xl font-bold text-glow text-cyan-400">
+                        Full Manuscript
+                    </div>
+                    <div className="text-[10px] text-zinc-600 italic text-center">
+                        Listen to the entire document using browser-native speech synthesis.
+                    </div>
+                    <div className="w-full pt-4">
+                        <button
+                            onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
+                            className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${
+                                speakingId === fullManuscriptId
+                                    ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                    : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                            }`}
                         >
-                            <span>■</span> Stop
+                            {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
                         </button>
                     </div>
                 </div>
-            )}
+            </header>
 
             <div className="flex flex-col lg:flex-row gap-12">
                 {/* Audiobook Sidebar */}
@@ -462,9 +458,9 @@ function ManuscriptContent() {
                             </p>
                         </div>
                         <div className="glass-panel p-6 border-zinc-900/50">
-                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Archivist Remnants</h3>
+                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Core Remnants</h3>
                             <p className="text-zinc-400 text-sm leading-relaxed">
-                                Where did the surviving Archivist personnel from Cradle Zero retreat after the fall of the base? Are there other hidden "Cradle" facilities capable of sustaining their leadership?
+                                Where did the surviving Core personnel (publicly known as Archivists) retreat after the fall of Cradle Zero? Are there other hidden "Cradle" facilities capable of sustaining their leadership, or is Elowen Vane truly the only "Archivist" left?
                             </p>
                         </div>
                         <div className="glass-panel p-6 border-zinc-900/50">

@@ -80,7 +80,11 @@ export default function FAQPage() {
         },
         {
             q: "What is the 'King of the Gorgons'?",
-            a: "It is a propaganda title created by the Core to frame Lem as a bogeyman, justifying the Archivists' 'democratic' control over Synodic technology."
+            a: "It is a propaganda title created by the Technocratic Core (branded publicly as 'The Archivists') to frame Lem as a bogeyman, justifying their 'democratic' control over Synodic technology."
+        },
+        {
+            q: "Who is the 'True Archivist'?",
+            a: "While the technocracy uses 'Archivists' as a collective title, the character Elowen Vane is the only True Archivist. Having stayed on the moon to preserve the 202X Truth, she remained neutral and eventually met with Lem to pass on the historical key."
         },
         {
             q: "Are the Monoliths really Tripods?",

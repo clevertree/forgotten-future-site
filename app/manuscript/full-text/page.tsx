@@ -22,18 +22,7 @@ function FullTextContent() {
 
     const prevChaptersRef = useRef<Chapter[]>([]);
 
-    const handleVersionChange = (newVersion: ManuscriptVersion) => {
-        setVersion(newVersion);
-        const params = new URLSearchParams(window.location.search);
-        if (newVersion === 'youngadult') {
-            params.set('edition', 'youngadult');
-        } else {
-            params.delete('edition');
-        }
-        router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
-    };
-
-    const toggleSpeech = (id: number, text: string) => {
+    const toggleSpeech = React.useCallback((id: number, text: string) => {
         if (typeof window === 'undefined') return;
 
         if (!window.speechSynthesis) {
@@ -143,6 +132,37 @@ function FullTextContent() {
             alert("Failed to initialize speech engines.");
             setSpeakingId(null);
         }
+    }, [speakingId]);
+
+    useEffect(() => {
+        const handleRequest = (e: Event) => {
+            const ce = e as CustomEvent;
+            const targetId = ce.detail?.chapterId;
+            if (speakingId) {
+                window.speechSynthesis.cancel();
+                setSpeakingId(null);
+            } else if (targetId) {
+                const ch = chapters.find(c => c.id === targetId);
+                if (ch) toggleSpeech(ch.id, ch.content);
+            }
+        };
+        window.addEventListener('ff-request-tts', handleRequest);
+        return () => window.removeEventListener('ff-request-tts', handleRequest);
+    }, [speakingId, chapters, toggleSpeech]);
+
+    useEffect(() => {
+        window.dispatchEvent(new CustomEvent('ff-tts-status', { detail: { speakingId } }));
+    }, [speakingId]);
+
+    const handleVersionChange = (newVersion: ManuscriptVersion) => {
+        setVersion(newVersion);
+        const params = new URLSearchParams(window.location.search);
+        if (newVersion === 'youngadult') {
+            params.set('edition', 'youngadult');
+        } else {
+            params.delete('edition');
+        }
+        router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
     };
 
     useEffect(() => {
@@ -219,7 +239,7 @@ function FullTextContent() {
         <div className="container mx-auto px-6 lg:px-12 py-12 relative">
             {/* Content Refresh Notification */}
             {notification && (
-                <div className="fixed bottom-8 right-8 z-50 animate-in fade-in slide-in-from-bottom-4 duration-300">
+                <div className="fixed top-28 right-8 z-50 animate-in fade-in slide-in-from-top-4 duration-300">
                     <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] font-bold text-xs uppercase tracking-widest flex items-center gap-3">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
@@ -227,33 +247,6 @@ function FullTextContent() {
                         </span>
                         {notification}
                         <button onClick={() => setNotification(null)} className="hover:opacity-60 transition-opacity">✕</button>
-                    </div>
-                </div>
-            )}
-
-            {/* Floating Speech Control */}
-            {speakingId && (
-                <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 no-print animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <div className="bg-zinc-950/90 backdrop-blur-md border border-cyan-500/50 px-8 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.2)] flex items-center gap-6">
-                        <div className="flex items-center gap-3">
-                            <div className="relative flex h-3 w-3">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-                            </div>
-                            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em]">
-                                {speakingId === 999 ? 'Reading Full Manuscript' : `Reading Chapter ${speakingId}`}
-                            </span>
-                        </div>
-                        <div className="h-4 w-px bg-white/10"></div>
-                        <button 
-                            onClick={() => {
-                                window.speechSynthesis.cancel();
-                                setSpeakingId(null);
-                            }}
-                            className="text-[10px] font-black text-white uppercase tracking-widest hover:text-cyan-400 transition-colors flex items-center gap-2"
-                        >
-                            <span>■</span> Stop
-                        </button>
                     </div>
                 </div>
             )}
