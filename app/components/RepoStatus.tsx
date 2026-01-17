@@ -107,10 +107,10 @@ export default function RepoStatus({ name, apiUrl, repoUrl, initialData }: RepoS
           {data.commits.map((commit) => (
             <div key={commit.sha} className="flex flex-col mb-2 last:mb-0">
               <div className="flex gap-2">
-                <span className="text-cyan-500/50">{commit.sha}</span>
+                <span className="text-cyan-500/50 hidden md:inline">{commit.sha}</span>
                 <span className="truncate text-zinc-300">{commit.message}</span>
               </div>
-              <div className="text-[9px] text-zinc-600 pl-9">
+              <div className="text-[9px] text-zinc-600 md:pl-9 pl-0">
                 {new Date(commit.date).toLocaleString('en-US', { 
                   month: 'short', 
                   day: 'numeric', 
