@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.11",
+    "version": "v0.13.12",
     "commits": [
+      {
+        "sha": "50895a0",
+        "message": "chore: update manuscripts from chapter drafts",
+        "date": "2026-01-17T16:26:18.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/50895a0"
+      },
+      {
+        "sha": "f1501e9",
+        "message": "chore: update manuscript telemetry",
+        "date": "2026-01-17T16:19:38.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/f1501e9"
+      },
       {
         "sha": "88a2817",
         "message": "docs: update synopsis to match new Pyramid breach mechanics",
         "date": "2026-01-17T15:51:33.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/88a2817"
-      },
-      {
-        "sha": "2b8d33d",
-        "message": "feat: major narrative overhaul (8 points) - Tripod mimicry shift, Prometheus reverse, Moon growth, Vessel autonomy, and Restoration theme",
-        "date": "2026-01-17T15:51:04.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/2b8d33d"
-      },
-      {
-        "sha": "787182c",
-        "message": "docs: add narrative divergence table between YA and 13+ versions",
-        "date": "2026-01-17T15:33:53.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/787182c"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -54,6 +54,12 @@
     "version": "v0.11.8",
     "commits": [
       {
+        "sha": "67bb2db",
+        "message": "feat: implement 60-second polling for manuscript with cache-busting",
+        "date": "2026-01-17T16:19:35.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/67bb2db"
+      },
+      {
         "sha": "3ecee3c",
         "message": "style: remove commit SHA from repo status history display",
         "date": "2026-01-17T13:48:36.000Z",
@@ -64,12 +70,6 @@
         "message": "style: allow commit messages to wrap in repo status",
         "date": "2026-01-17T13:48:21.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/8bbd5e0"
-      },
-      {
-        "sha": "4d4d2ef",
-        "message": "style: move commit date before message on same line",
-        "date": "2026-01-17T13:47:56.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/4d4d2ef"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
