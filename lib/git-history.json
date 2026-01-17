@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.15",
+    "version": "v0.13.16",
     "commits": [
+      {
+        "sha": "14d8161",
+        "message": "narrative: update Lem backstory to deep cover and reluctant unification",
+        "date": "2026-01-17T16:53:46.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/14d8161"
+      },
       {
         "sha": "d195414",
         "message": "chore: regenerate manuscripts with bumped version",
@@ -14,12 +20,6 @@
         "message": "feat: include draft version in manuscript header",
         "date": "2026-01-17T16:31:38.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/79a6be9"
-      },
-      {
-        "sha": "50895a0",
-        "message": "chore: update manuscripts from chapter drafts",
-        "date": "2026-01-17T16:26:18.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/50895a0"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.9",
+    "version": "v0.11.10",
     "commits": [
+      {
+        "sha": "3b123c0",
+        "message": "feat: implement Web Speech API TTS for manuscript and full-text pages",
+        "date": "2026-01-17T16:53:52.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/3b123c0"
+      },
       {
         "sha": "46b9310",
         "message": "feat: display draft version on manuscript pages",
@@ -64,12 +70,6 @@
         "message": "feat: add change detection and notify user on manuscript refresh",
         "date": "2026-01-17T16:28:23.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/0795d76"
-      },
-      {
-        "sha": "899c29d",
-        "message": "chore: update git history",
-        "date": "2026-01-17T16:26:22.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/899c29d"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

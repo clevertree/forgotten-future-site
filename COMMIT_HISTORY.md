@@ -1,3 +1,4 @@
+3b123c0 feat: implement Web Speech API TTS for manuscript and full-text pages
 46b9310 feat: display draft version on manuscript pages
 0795d76 feat: add change detection and notify user on manuscript refresh
 899c29d chore: update git history

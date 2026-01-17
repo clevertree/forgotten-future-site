@@ -9,8 +9,6 @@ function ManuscriptContent() {
     const searchParams = useSearchParams();
     const editionParam = searchParams.get('edition');
 
-    const [playingId, setPlayingId] = useState<number | null>(null);
-    const audioRef = useRef<HTMLAudioElement | null>(null);
     const scrollContainerRef = useRef<HTMLDivElement | null>(null);
     const router = useRouter();
 
@@ -21,6 +19,9 @@ function ManuscriptContent() {
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
     const [notification, setNotification] = useState<string | null>(null);
     const [speakingId, setSpeakingId] = useState<number | null>(null);
+
+    const fullManuscriptId = 9999;
+    const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
 
     const prevChaptersRef = useRef<Chapter[]>([]);
 
@@ -91,19 +92,6 @@ function ManuscriptContent() {
 
 
 
-    const togglePlay = (id: number, url: string) => {
-        if (playingId === id) {
-            audioRef.current?.pause();
-            setPlayingId(null);
-        } else {
-            setPlayingId(id);
-            if (audioRef.current) {
-                audioRef.current.src = url;
-                audioRef.current.play();
-            }
-        }
-    };
-
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         const container = scrollContainerRef.current;
@@ -117,13 +105,6 @@ function ManuscriptContent() {
 
     return (
         <div className="container mx-auto px-6 py-12 relative">
-            {/* Hidden audio element for global control */}
-            <audio
-                ref={audioRef}
-                onEnded={() => setPlayingId(null)}
-                className="hidden"
-            />
-
             {/* Content Refresh Notification */}
             {notification && (
                 <div className="fixed bottom-8 right-8 z-50 animate-in fade-in slide-in-from-bottom-4 duration-300">
@@ -169,32 +150,30 @@ function ManuscriptContent() {
                 {/* Audiobook Sidebar */}
                 <aside className="lg:w-1/3 no-print order-1 lg:order-1">
                     <div className="glass-panel sticky top-32">
-                        <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
                             <div className="flex flex-col items-center justify-center space-y-4">
-                                <div className="text-xs text-zinc-500 uppercase tracking-widest">(Coming soon)</div>
                                 <div className="text-2xl font-bold text-glow text-cyan-400">
-                                    {chapters.length > 0 ? `Chapter ${chapters[0].id}` : 'Chapter 1'}
+                                    Full Manuscript
                                 </div>
                                 <div className="text-[10px] text-zinc-600 italic text-center">
-                                    "{chapters.length > 0 ? chapters[0].title : 'Loading...'}" <br />
-                                    (Narrated by Fable)
+                                    Listen to the entire document using browser-native speech synthesis.
                                 </div>
                                 <div className="w-full pt-4">
                                     <button
-                                        onClick={() => togglePlay(chapters.length > 0 ? chapters[0].id : 1, '/audio/manuscript/chapter_01.mp3')}
-                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${(playingId === (chapters.length > 0 ? chapters[0].id : 1))
-                                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                            : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                            }`}
+                                        onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
+                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${
+                                            speakingId === fullManuscriptId
+                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                        }`}
                                     >
-                                        {(playingId === (chapters.length > 0 ? chapters[0].id : 1)) ? '⏸ Playing' : '▶ Play Audio'}
+                                        {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <p className="text-xs text-gray-500 leading-relaxed mb-6">
-                            Audio is generated iteratively. Each chapter is narrated as the draft stabilizes to ensure narrative accuracy.
+                        <p className="text-xs text-gray-500 leading-relaxed mb-6 italic">
+                            Tip: For the best experience, try different system voices in your browser settings.
                         </p>
                         <div className="space-y-4">
                             <Link href={`/manuscript/full-text?edition=${version}`} className="block text-center text-xs font-bold text-cyan-500 uppercase tracking-widest border border-cyan-500/30 py-3 rounded hover:bg-cyan-500/10 transition-all">
