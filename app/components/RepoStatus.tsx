@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 interface Commit {
   sha: string;
   message: string;
+  date: string;
   url: string;
 }
 
@@ -63,6 +64,7 @@ export default function RepoStatus({ name, apiUrl, repoUrl, initialData }: RepoS
           commits: commitsData.map((c: any) => ({
             sha: c.sha.substring(0, 7),
             message: c.commit.message.split('\n')[0],
+            date: c.commit.author.date,
             url: c.html_url
           })),
           repoUrl
@@ -103,9 +105,20 @@ export default function RepoStatus({ name, apiUrl, repoUrl, initialData }: RepoS
       <div className="space-y-3 mb-6">
         <div className="text-[10px] text-zinc-500 font-mono leading-tight">
           {data.commits.map((commit) => (
-            <div key={commit.sha} className="flex gap-2">
-              <span className="text-cyan-500/50">{commit.sha}</span>
-              <span className="truncate">{commit.message}</span>
+            <div key={commit.sha} className="flex flex-col mb-2 last:mb-0">
+              <div className="flex gap-2">
+                <span className="text-cyan-500/50">{commit.sha}</span>
+                <span className="truncate text-zinc-300">{commit.message}</span>
+              </div>
+              <div className="text-[9px] text-zinc-600 pl-9">
+                {new Date(commit.date).toLocaleString('en-US', { 
+                  month: 'short', 
+                  day: 'numeric', 
+                  hour: '2-digit', 
+                  minute: '2-digit',
+                  hour12: false 
+                })}
+              </div>
             </div>
           ))}
         </div>

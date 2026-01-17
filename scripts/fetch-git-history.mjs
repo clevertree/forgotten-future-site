@@ -26,12 +26,13 @@ function getGitHistory() {
 
     try {
       // Get commits
-      const gitLog = execSync('git log --oneline -n 3', { cwd: repoPath }).toString();
+      const gitLog = execSync('git log --pretty=format:"%h|%s|%at" -n 3', { cwd: repoPath }).toString();
       const commits = gitLog.trim().split('\n').map(line => {
-        const [sha, ...msgParts] = line.split(' ');
+        const [sha, message, timestamp] = line.split('|');
         return {
           sha,
-          message: msgParts.join(' '),
+          message,
+          date: new Date(parseInt(timestamp) * 1000).toISOString(),
           url: `${r.repoUrl}/commit/${sha}` 
         };
       });

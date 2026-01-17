@@ -1,44 +1,50 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.6",
+    "version": "v0.13.7",
     "commits": [
+      {
+        "sha": "f0bfc89",
+        "message": "docs: add AI-driven narrative methodology and update stylistic constraints",
+        "date": "2026-01-17T13:45:02.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/f0bfc89"
+      },
       {
         "sha": "9f80fee",
         "message": "Remove redundant and outdated scripts",
+        "date": "2026-01-17T13:10:25.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/9f80fee"
       },
       {
         "sha": "63a6a14",
         "message": "Automate commit history and metadata updates via git pre-commit hook",
+        "date": "2026-01-17T13:07:26.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/63a6a14"
-      },
-      {
-        "sha": "fcd0a70",
-        "message": "Regenerate full manuscripts and sync thematic/terminological divergence",
-        "url": "https://github.com/clevertree/ff-story/commit/fcd0a70"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.7",
+    "version": "v0.9.9",
     "commits": [
+      {
+        "sha": "45dc455",
+        "message": "chore: update teaser prompts",
+        "date": "2026-01-17T13:45:06.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
+      },
+      {
+        "sha": "19f4a69",
+        "message": "chore: update version and commit history",
+        "date": "2026-01-16T13:33:32.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/19f4a69"
+      },
       {
         "sha": "99672b0",
         "message": "chore: sync metadata with 32-chapter structure",
+        "date": "2026-01-14T17:38:10.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/99672b0"
-      },
-      {
-        "sha": "bc5785a",
-        "message": "chore: sync metadata with 32-chapter structure",
-        "url": "https://github.com/clevertree/ff-teaser/commit/bc5785a"
-      },
-      {
-        "sha": "3720f29",
-        "message": "Add independent pre-commit hook",
-        "url": "https://github.com/clevertree/ff-teaser/commit/3720f29"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
@@ -48,19 +54,22 @@
     "version": "v0.11.7",
     "commits": [
       {
+        "sha": "f463908",
+        "message": "feat: manuscript mobile layout, scroll behavior, and narrative documentation",
+        "date": "2026-01-17T13:45:13.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/f463908"
+      },
+      {
+        "sha": "7c57840",
+        "message": "feat: automated git history updates and manuscript URL environment variable",
+        "date": "2026-01-17T13:26:29.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/7c57840"
+      },
+      {
         "sha": "ef76acf",
         "message": "chore(ci): merge ci/fix/pages-pwa — allow configure-pages continue-on-error + disable PWA for static exports",
+        "date": "2026-01-16T15:54:37.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/ef76acf"
-      },
-      {
-        "sha": "e7de24e",
-        "message": "ci: allow setup-pages to continue-on-error + disable PWA for static exports",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/e7de24e"
-      },
-      {
-        "sha": "5e485de",
-        "message": "footer: link CLEVERTREE to https://clevertree.net/",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/5e485de"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
