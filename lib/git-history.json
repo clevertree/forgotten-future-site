@@ -1,7 +1,7 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.13",
+    "version": "v0.13.15",
     "commits": [
       {
         "sha": "d195414",
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.8",
+    "version": "v0.11.9",
     "commits": [
+      {
+        "sha": "46b9310",
+        "message": "feat: display draft version on manuscript pages",
+        "date": "2026-01-17T16:31:47.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/46b9310"
+      },
       {
         "sha": "0795d76",
         "message": "feat: add change detection and notify user on manuscript refresh",
@@ -64,12 +70,6 @@
         "message": "chore: update git history",
         "date": "2026-01-17T16:26:22.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/899c29d"
-      },
-      {
-        "sha": "67bb2db",
-        "message": "feat: implement 60-second polling for manuscript with cache-busting",
-        "date": "2026-01-17T16:19:35.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/67bb2db"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -18,6 +18,7 @@ function FullTextContent() {
     const [isLoading, setIsLoading] = useState(true);
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
     const [notification, setNotification] = useState<string | null>(null);
+    const [speakingId, setSpeakingId] = useState<number | null>(null);
 
     const prevChaptersRef = useRef<Chapter[]>([]);
 
@@ -30,6 +31,30 @@ function FullTextContent() {
             params.delete('edition');
         }
         router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
+    };
+
+    const toggleSpeech = (id: number, text: string) => {
+        if (speakingId === id) {
+            window.speechSynthesis.cancel();
+            setSpeakingId(null);
+            return;
+        }
+
+        window.speechSynthesis.cancel();
+        
+        // Simple markdown stripping for better TTS
+        const plainText = text
+            .replace(/[#*_~`\[\]()]/g, '') // remove symbols
+            .replace(/>\s+/g, '')          // remove blockquotes
+            .replace(/\n+/g, ' ');         // collapse newlines
+
+        const utterance = new SpeechSynthesisUtterance(plainText);
+        utterance.onend = () => setSpeakingId(null);
+        utterance.onerror = () => setSpeakingId(null);
+        utterance.rate = 1.0;
+        
+        window.speechSynthesis.speak(utterance);
+        setSpeakingId(id);
     };
 
     useEffect(() => {
@@ -117,6 +142,33 @@ function FullTextContent() {
                     </div>
                 </div>
             )}
+
+            {/* Floating Speech Control */}
+            {speakingId && (
+                <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 no-print animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div className="bg-zinc-950/90 backdrop-blur-md border border-cyan-500/50 px-8 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.2)] flex items-center gap-6">
+                        <div className="flex items-center gap-3">
+                            <div className="relative flex h-3 w-3">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+                            </div>
+                            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em]">
+                                {speakingId === 999 ? 'Reading Full Manuscript' : `Reading Chapter ${speakingId}`}
+                            </span>
+                        </div>
+                        <div className="h-4 w-px bg-white/10"></div>
+                        <button 
+                            onClick={() => {
+                                window.speechSynthesis.cancel();
+                                setSpeakingId(null);
+                            }}
+                            className="text-[10px] font-black text-white uppercase tracking-widest hover:text-cyan-400 transition-colors flex items-center gap-2"
+                        >
+                            <span>■</span> Stop
+                        </button>
+                    </div>
+                </div>
+            )}
             
             <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
                 {draftVersion && (
@@ -131,6 +183,33 @@ function FullTextContent() {
               <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
                         Optimized for Text-to-Speech
                     </span>
+                <div className="mt-6 flex flex-wrap gap-4 no-print">
+                    <button
+                        onClick={() => {
+                            const fullText = chapters.map(c => `Chapter ${c.id}: ${c.title}. ${c.content}`).join(' ');
+                            toggleSpeech(999, fullText);
+                        }}
+                        className={`flex items-center gap-3 px-6 py-2 rounded-full border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
+                            speakingId === 999 
+                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.5)]' 
+                            : 'bg-white/5 text-cyan-400 border-white/10 hover:bg-white/10'
+                        }`}
+                    >
+                        {speakingId === 999 ? (
+                            <>
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                </span>
+                                Stop Full Audio
+                            </>
+                        ) : (
+                            <>
+                                <span>▶</span> Listen to Full Manuscript (BETA)
+                            </>
+                        )}
+                    </button>
+                </div>
                 <div className="mt-4 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.
@@ -212,12 +291,36 @@ function FullTextContent() {
                                             id={`chapter-${chapter.id}`}
                                             className="prose prose-invert max-w-none scroll-mt-32"
                                         >
-                                            <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
-                                                <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
-                                                    Chapter {chapter.id}
-                                                </span>
-                                                {chapter.title}
-                                            </h3>
+                                            <div className="flex items-center justify-between mb-8 group">
+                                                <h3 className="text-3xl font-bold text-white flex items-center gap-4 m-0">
+                                                    <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
+                                                        Chapter {chapter.id}
+                                                    </span>
+                                                    {chapter.title}
+                                                </h3>
+                                                <button
+                                                    onClick={() => toggleSpeech(chapter.id, chapter.content)}
+                                                    className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${
+                                                        speakingId === chapter.id 
+                                                        ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
+                                                        : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                                    }`}
+                                                >
+                                                    {speakingId === chapter.id ? (
+                                                        <>
+                                                            <span className="relative flex h-2 w-2">
+                                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                                                                <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                                            </span>
+                                                            Stop Listening
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <span>▶</span> Listen
+                                                        </>
+                                                    )}
+                                                </button>
+                                            </div>
                                             <div className="text-zinc-300 leading-[2] text-lg space-y-6">
                                                 <ReactMarkdown>{chapter.content}</ReactMarkdown>
                                             </div>
@@ -232,12 +335,36 @@ function FullTextContent() {
                                     id={`chapter-${chapter.id}`}
                                     className="prose prose-invert max-w-none scroll-mt-32"
                                 >
-                                    <h3 className="text-3xl font-bold mb-8 text-white flex items-center gap-4">
-                                        <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
-                                            Chapter {chapter.id}
-                                        </span>
-                                        {chapter.title}
-                                    </h3>
+                                    <div className="flex items-center justify-between mb-8 group">
+                                        <h3 className="text-3xl font-bold text-white flex items-center gap-4 m-0">
+                                            <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
+                                                Chapter {chapter.id}
+                                            </span>
+                                            {chapter.title}
+                                        </h3>
+                                        <button
+                                            onClick={() => toggleSpeech(chapter.id, chapter.content)}
+                                            className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${
+                                                speakingId === chapter.id 
+                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
+                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                            }`}
+                                        >
+                                            {speakingId === chapter.id ? (
+                                                <>
+                                                    <span className="relative flex h-2 w-2">
+                                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                                    </span>
+                                                    Stop Listening
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <span>▶</span> Listen
+                                                </>
+                                            )}
+                                        </button>
+                                    </div>
                                     <div className="text-zinc-300 leading-[2] text-lg space-y-6">
                                         <ReactMarkdown>{chapter.content}</ReactMarkdown>
                                     </div>

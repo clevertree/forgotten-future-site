@@ -20,8 +20,32 @@ function ManuscriptContent() {
     const [isLoading, setIsLoading] = useState(true);
     const [version, setVersion] = useState<ManuscriptVersion>(editionParam === '13plus' ? '13plus' : 'youngadult');
     const [notification, setNotification] = useState<string | null>(null);
+    const [speakingId, setSpeakingId] = useState<number | null>(null);
 
     const prevChaptersRef = useRef<Chapter[]>([]);
+
+    const toggleSpeech = (id: number, text: string) => {
+        if (speakingId === id) {
+            window.speechSynthesis.cancel();
+            setSpeakingId(null);
+            return;
+        }
+
+        window.speechSynthesis.cancel();
+        
+        const plainText = text
+            .replace(/[#*_~`\[\]()]/g, '')
+            .replace(/>\s+/g, '')
+            .replace(/\n+/g, ' ');
+
+        const utterance = new SpeechSynthesisUtterance(plainText);
+        utterance.onend = () => setSpeakingId(null);
+        utterance.onerror = () => setSpeakingId(null);
+        utterance.rate = 1.0;
+        
+        window.speechSynthesis.speak(utterance);
+        setSpeakingId(id);
+    };
 
     useEffect(() => {
         setIsLoading(true);
@@ -110,6 +134,33 @@ function ManuscriptContent() {
                         </span>
                         {notification}
                         <button onClick={() => setNotification(null)} className="hover:opacity-60 transition-opacity">✕</button>
+                    </div>
+                </div>
+            )}
+
+            {/* Floating Speech Control */}
+            {speakingId && (
+                <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 no-print animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div className="bg-zinc-950/90 backdrop-blur-md border border-cyan-500/50 px-8 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.2)] flex items-center gap-6">
+                        <div className="flex items-center gap-3">
+                            <div className="relative flex h-3 w-3">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+                            </div>
+                            <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em]">
+                                Reading Chapter {speakingId}
+                            </span>
+                        </div>
+                        <div className="h-4 w-px bg-white/10"></div>
+                        <button 
+                            onClick={() => {
+                                window.speechSynthesis.cancel();
+                                setSpeakingId(null);
+                            }}
+                            className="text-[10px] font-black text-white uppercase tracking-widest hover:text-cyan-400 transition-colors flex items-center gap-2"
+                        >
+                            <span>■</span> Stop
+                        </button>
                     </div>
                 </div>
             )}
@@ -244,6 +295,28 @@ function ManuscriptContent() {
                                                         >
                                                             Read Chapter
                                                         </Link>
+                                                        <button
+                                                            onClick={() => toggleSpeech(chapter.id, chapter.content)}
+                                                            className={`flex items-center gap-2 px-4 py-1.5 rounded border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
+                                                                speakingId === chapter.id 
+                                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
+                                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                                            }`}
+                                                        >
+                                                            {speakingId === chapter.id ? (
+                                                                <>
+                                                                    <span className="relative flex h-1.5 w-1.5">
+                                                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
+                                                                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-black"></span>
+                                                                    </span>
+                                                                    Stop Listening
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    <span>▶</span> AI Voice (BETA)
+                                                                </>
+                                                            )}
+                                                        </button>
                                                     </div>
                                                 </div>
                                             ))}

@@ -1,3 +1,7 @@
+46b9310 feat: display draft version on manuscript pages
+0795d76 feat: add change detection and notify user on manuscript refresh
+899c29d chore: update git history
+67bb2db feat: implement 60-second polling for manuscript with cache-busting
 3ecee3c style: remove commit SHA from repo status history display
 8bbd5e0 style: allow commit messages to wrap in repo status
 4d4d2ef style: move commit date before message on same line
