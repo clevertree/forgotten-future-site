@@ -77,39 +77,39 @@ function FullTextContent() {
 
     return (
         <div className="container mx-auto px-6 lg:px-12 py-12">
-            <div className="mb-12 flex justify-between items-center no-print">
-                <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500 hover:text-cyan-400 font-bold uppercase tracking-widest text-xs flex items-center gap-2">
-                    ← Back to Manuscript Page
-                </Link>
-
-                <div className="flex items-center gap-4">
-                    <span className="hidden md:block text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/10 px-3 py-1 rounded">
-                        Optimized for Text-to-Speech
-                    </span>
-                </div>
-            </div>
-
-            <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
+               <header className="mb-16 text-center lg:text-left lg:pl-[25%]">
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-
-                <div className="mt-8 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
+              <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
+                        Optimized for Text-to-Speech
+                    </span>
+                <div className="mt-4 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
+                
             </header>
 
             <div className="flex flex-col lg:flex-row gap-12 relative">
                 {/* Navigation Sidebar */}
-                <aside className="lg:w-1/4 no-print order-2 lg:order-1">
+                <aside className="lg:w-1/4 no-print order-1 lg:order-1">
                     <div className="glass-panel sticky top-36 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
-                        <h2 className="text-sm font-bold text-cyan-500 uppercase tracking-[0.2em] mb-6 border-b border-white/10 pb-2">
-                            Navigation
-                        </h2>
+                        <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500/60 hover:text-cyan-400 font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mb-2 border-b border-white/5 transition-colors">
+                            ← Back to List
+                        </Link>
+
+                        <div className="flex justify-between items-center mb-6 border-b border-white/10 pb-2">
+                            <h2 className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em]">
+                                Navigation
+                            </h2>
+                            <div className="scale-75 origin-right mr-2">
+                                <VersionSwitch version={version} onVersionChange={handleVersionChange} />
+                            </div>
+                        </div>
+
                         <div className="space-y-8">
                             {/* SIDEBAR_START (dynamic) */}
                             <div>
-                                <div className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3">Navigation</div>
                                 <div className="space-y-6">
                                     {parts.map((section, idx) => (
                                         <div key={idx}>
@@ -134,7 +134,7 @@ function FullTextContent() {
                     </div>
                 </aside>
 
-                <article className="lg:w-3/4 space-y-24 pb-[100vh] order-1 lg:order-2">
+                <article className="lg:w-3/4 space-y-24 pb-[100vh] order-2 lg:order-2">
                     {/* ARTICLE_START */}
                     {isLoading ? (
                         <div className="flex flex-col items-center justify-center py-24 text-zinc-500 uppercase tracking-widest text-xs">

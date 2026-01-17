@@ -75,7 +75,7 @@ function ManuscriptContent() {
 
             <div className="flex flex-col lg:flex-row gap-12">
                 {/* Audiobook Sidebar */}
-                <aside className="lg:w-1/3 no-print order-2 lg:order-1">
+                <aside className="lg:w-1/3 no-print order-1 lg:order-1">
                     <div className="glass-panel sticky top-32">
                         <h2 className="text-xl mb-4 underline underline-offset-4 decoration-cyan-500 text-center lg:text-left">Full Audiobook</h2>
                         <div className="bg-black/50 p-6 rounded border border-white/5 mb-6">
@@ -134,7 +134,7 @@ function ManuscriptContent() {
                 </aside>
 
                 {/* Chapters List */}
-                <div className="lg:w-2/3 order-1 lg:order-2">
+                <div className="lg:w-2/3 order-2 lg:order-2">
                     <h1 className="text-3xl md:text-4xl mb-6 text-glow uppercase tracking-tighter">Manuscript: Lem's Memories</h1>
 
                     {/* Section Tabs */}
@@ -218,6 +218,43 @@ function ManuscriptContent() {
                     </div>
                 </div>
             </div>
+
+            {!isLoading && parts.length > 0 && (
+                <section className="mt-24 border-t border-zinc-900 pt-16 scroll-mt-24">
+                    <h2 className="text-2xl font-light tracking-[0.2em] mb-12 text-zinc-100 flex items-center uppercase">
+                        <span className="w-8 h-px bg-cyan-900 mr-4"></span>
+                        AI-Driven Narrative Methodology
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                        <div className="space-y-6">
+                            <h3 className="text-cyan-400 text-sm font-bold uppercase tracking-[0.2em]">The Composition Loop</h3>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                The manuscript is developed through a recursive multi-stage process. Each chapter begins as a high-fidelity narrative plan, which is then expanded into prose using specialized LLM agents adhering to strict stylistic constraints. 
+                            </p>
+                            <p className="text-zinc-400 text-sm leading-relaxed">
+                                Following initial composition, the text undergoes repeated <strong>QA drills</strong>. These cycles allow us to "drill down" into specific details—cross-referencing established lore, refining atmospheric density, and ensuring the technical resonance of the Aether-Drive logs remain consistent across all 78 chapters.
+                            </p>
+                        </div>
+                        <div className="space-y-6">
+                            <h3 className="text-cyan-400 text-sm font-bold uppercase tracking-[0.2em]">Two Stylistic Streams</h3>
+                            <div className="border-l border-white/10 pl-6 py-2 space-y-4">
+                                <div>
+                                    <h4 className="text-white text-xs font-bold uppercase mb-1">Young Adult Edition</h4>
+                                    <p className="text-zinc-500 text-xs leading-relaxed">
+                                        Focuses on Lem's immediate, grounded perspective. It uses visceral, laymen's terms to explore mature themes of systemic control, identity, and the weight of reincarnation.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 className="text-white text-xs font-bold uppercase mb-1">13+ Core Edition</h4>
+                                    <p className="text-zinc-500 text-xs leading-relaxed">
+                                        Adopts a cinematic heroic tone. It emphasizes the grand scale of the Great Fry and the tactical struggle against the Core, while limiting religious, controversial elements, and themes of cultural appropriation to keep the focus on the adventure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {!isLoading && parts.length > 0 && (
                 <section id="outstanding-questions" className="mt-20 border-t border-zinc-900 pt-16 scroll-mt-24">

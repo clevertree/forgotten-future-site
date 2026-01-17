@@ -82,7 +82,11 @@ export default function ScrollNavigation() {
         });
 
         // Use a small delay to ensure DOM is ready on route changes
-        const timeoutId = setTimeout(() => {
+        // And retry a few times in case content loads dynamically
+        let attempts = 0;
+        const maxAttempts = 5;
+
+        const findAndObserve = () => {
             const chapterElements = document.querySelectorAll('[id^="chapter-"]');
             if (chapterElements.length > 0) {
                 // Extract highest chapter ID safely
@@ -92,18 +96,37 @@ export default function ScrollNavigation() {
                 if (ids.length > 0) {
                     setMaxChapter(Math.max(...ids));
                 }
+                chapterElements.forEach((chapter) => observer.observe(chapter));
+                return true;
             }
-            chapterElements.forEach((chapter) => observer.observe(chapter));
-        }, 1000);
+            return false;
+        };
+
+        const tryFind = () => {
+            if (findAndObserve()) return;
+            if (attempts < maxAttempts) {
+                attempts++;
+                setTimeout(tryFind, 1000);
+            }
+        };
+
+        tryFind();
 
         return () => {
-            clearTimeout(timeoutId);
             observer.disconnect();
         };
     }, [isFullText, pathname]);
 
     const scrollToTop = () => {
+        isLockedRef.current = true;
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Remove hash from URL without reloading
+        if (window.history.pushState) {
+            const url = new URL(window.location.href);
+            url.hash = '';
+            window.history.pushState(null, '', url.toString());
+        }
     };
 
     const scrollToChapter = (chapterId: number) => {
@@ -127,7 +150,7 @@ export default function ScrollNavigation() {
             // 5. Perform the scroll after a tiny delay to ensure state update doesn't clobber it
             setTimeout(() => {
                 const rect = element.getBoundingClientRect();
-                const absoluteTop = rect.top + window.pageYOffset;
+                const absoluteTop = rect.top + window.scrollY;
                 const style = window.getComputedStyle(element);
                 const marginTop = parseInt(style.scrollMarginTop) || 0;
                 const targetY = absoluteTop - marginTop;
