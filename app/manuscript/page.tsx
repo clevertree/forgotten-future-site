@@ -46,29 +46,62 @@ function ManuscriptContent() {
             .replace(/>\s+/g, '')
             .replace(/\n+/g, ' ');
 
-        try {
-            const utterance = new SpeechSynthesisUtterance(plainText);
+        // Chunking for long text (browsers have limits per utterance)
+        const chunks: string[] = [];
+        const maxChunkLen = 3000;
+        
+        if (plainText.length > maxChunkLen) {
+            let currentPath = plainText;
+            while (currentPath.length > 0) {
+                if (currentPath.length <= maxChunkLen) {
+                    chunks.push(currentPath);
+                    break;
+                }
+                
+                // Try to find a good breaking point (sentence or space)
+                let breakIdx = currentPath.lastIndexOf('.', maxChunkLen);
+                if (breakIdx === -1 || breakIdx < maxChunkLen * 0.5) {
+                    breakIdx = currentPath.lastIndexOf(' ', maxChunkLen);
+                }
+                
+                if (breakIdx === -1) breakIdx = maxChunkLen;
+                
+                chunks.push(currentPath.substring(0, breakIdx + 1));
+                currentPath = currentPath.substring(breakIdx + 1).trim();
+            }
+        } else {
+            chunks.push(plainText);
+        }
+
+        let currentChunk = 0;
+
+        const speakNextChunk = () => {
+            if (currentChunk >= chunks.length) {
+                setSpeakingId(null);
+                return;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(chunks[currentChunk]);
             
             utterance.onstart = () => {
-                console.log("Speech started");
-                setSpeakingId(id);
+                if (currentChunk === 0) setSpeakingId(id);
             };
 
             utterance.onend = () => {
-                setSpeakingId(null);
+                currentChunk++;
+                speakNextChunk();
             };
 
             utterance.onerror = (event) => {
                 console.error("SpeechSynthesis error:", event);
-                setSpeakingId(null);
-                
-                // Specific mobile failure explanations
-                if (event.error === 'not-allowed') {
-                    alert("Playback blocked. Please ensure your device is not in 'Silent Mode' and that you have interacted with the page first.");
-                } else if (event.error === 'language-unavailable') {
-                    alert("The required voice language is not available on your device.");
-                } else {
-                    alert(`Speech playback failed: ${event.error}. Please try refreshing the page.`);
+                // Only alert on the first chunk or if it's not a 'cancelled' error
+                if (event.error !== 'interrupted' && event.error !== 'canceled') {
+                    setSpeakingId(null);
+                    if (event.error === 'not-allowed') {
+                        alert("Playback blocked. Please ensure your device is not in 'Silent Mode' and that you have interacted with the page first.");
+                    } else {
+                        alert(`Speech playback failed: ${event.error}.`);
+                    }
                 }
             };
 
@@ -76,16 +109,18 @@ function ManuscriptContent() {
             utterance.pitch = 1.0;
             utterance.volume = 1.0;
 
-            // iOS and some Android browsers require explicit resume() before speak() 
-            // if the window was previously in a suspended state
             if (window.speechSynthesis.paused) {
                 window.speechSynthesis.resume();
             }
             
             window.speechSynthesis.speak(utterance);
+        };
+
+        try {
+            speakNextChunk();
         } catch (err) {
             console.error("Speech initiation block failed:", err);
-            alert("Failed to initialize speech. This browser may have restricted auto-playback or missing speech engines.");
+            alert("Failed to initialize speech.");
             setSpeakingId(null);
         }
     };
@@ -171,7 +206,7 @@ function ManuscriptContent() {
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
                             </div>
                             <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-[0.2em]">
-                                Reading Chapter {speakingId}
+                                {speakingId === fullManuscriptId ? 'Reading Full Manuscript' : `Reading Chapter ${speakingId}`}
                             </span>
                         </div>
                         <div className="h-4 w-px bg-white/10"></div>

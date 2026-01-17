@@ -55,27 +55,60 @@ function FullTextContent() {
             .replace(/>\s+/g, '')          // remove blockquotes
             .replace(/\n+/g, ' ');         // collapse newlines
 
-        try {
-            const utterance = new SpeechSynthesisUtterance(plainText);
+        // Chunking for long text (browsers have limits per utterance)
+        const chunks: string[] = [];
+        const maxChunkLen = 3000;
+        
+        if (plainText.length > maxChunkLen) {
+            let currentPath = plainText;
+            while (currentPath.length > 0) {
+                if (currentPath.length <= maxChunkLen) {
+                    chunks.push(currentPath);
+                    break;
+                }
+                
+                let breakIdx = currentPath.lastIndexOf('.', maxChunkLen);
+                if (breakIdx === -1 || breakIdx < maxChunkLen * 0.5) {
+                    breakIdx = currentPath.lastIndexOf(' ', maxChunkLen);
+                }
+                
+                if (breakIdx === -1) breakIdx = maxChunkLen;
+                
+                chunks.push(currentPath.substring(0, breakIdx + 1));
+                currentPath = currentPath.substring(breakIdx + 1).trim();
+            }
+        } else {
+            chunks.push(plainText);
+        }
+
+        let currentChunk = 0;
+
+        const speakNextChunk = () => {
+            if (currentChunk >= chunks.length) {
+                setSpeakingId(null);
+                return;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(chunks[currentChunk]);
             
             utterance.onstart = () => {
-                setSpeakingId(id);
+                if (currentChunk === 0) setSpeakingId(id);
             };
 
             utterance.onend = () => {
-                setSpeakingId(null);
+                currentChunk++;
+                speakNextChunk();
             };
 
             utterance.onerror = (event) => {
                 console.error("SpeechSynthesis error:", event);
-                setSpeakingId(null);
-                
-                if (event.error === 'not-allowed') {
-                    alert("Playback blocked. Please ensure your device is not in 'Silent Mode' and that you have interacted with the page first.");
-                } else if (event.error === 'language-unavailable') {
-                    alert("The required voice language is not available on your device.");
-                } else {
-                    alert(`Speech playback failed: ${event.error}. Please try refreshing the page.`);
+                if (event.error !== 'interrupted' && event.error !== 'canceled') {
+                    setSpeakingId(null);
+                    if (event.error === 'not-allowed') {
+                        alert("Playback blocked. Please ensure your device is not in 'Silent Mode'.");
+                    } else {
+                        alert(`Speech playback failed: ${event.error}.`);
+                    }
                 }
             };
 
@@ -88,8 +121,12 @@ function FullTextContent() {
             }
             
             window.speechSynthesis.speak(utterance);
+        };
+
+        try {
+            speakNextChunk();
         } catch (err) {
-            console.error("Speech initiation block failed:", err);
+            console.error("Speech initiation failed:", err);
             alert("Failed to initialize speech engines.");
             setSpeakingId(null);
         }
