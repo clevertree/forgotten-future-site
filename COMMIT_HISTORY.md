@@ -1,3 +1,4 @@
+42162d1 Standardize chapter formats and finalize manuscript narrative
 a7d4caa fix: resolve Cypress component test failures
 d20e3f0 chore: disable image optimization for static export (NEXT_PUBLIC_IS_STATIC)
 8d25554 chore: sync COMMIT_HISTORY.md

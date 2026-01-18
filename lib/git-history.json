@@ -1,32 +1,32 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.19",
+    "version": "v0.13.21",
     "commits": [
+      {
+        "sha": "e0f6de8",
+        "message": "Standardize chapter formats and finalize manuscript narrative",
+        "date": "2026-01-18T17:26:48.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/e0f6de8"
+      },
+      {
+        "sha": "3e16079",
+        "message": "big cleanup",
+        "date": "2026-01-18T15:21:42.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/3e16079"
+      },
       {
         "sha": "e6ad4de",
         "message": "reorganize chapter files. add chapter prompts",
         "date": "2026-01-18T11:52:08.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/e6ad4de"
-      },
-      {
-        "sha": "9434393",
-        "message": "feat(story): sync all 13+ chapter drafts and update manuscript",
-        "date": "2026-01-17T19:02:49.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/9434393"
-      },
-      {
-        "sha": "bad70f4",
-        "message": "docs: sync recent chapter and world-building changes",
-        "date": "2026-01-17T18:51:46.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/bad70f4"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.9",
+    "version": "v0.9.10",
     "commits": [
       {
         "sha": "19f4a69",
@@ -51,13 +51,13 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.17",
+    "version": "v0.11.18",
     "commits": [
       {
-        "sha": "4cfbdbb",
+        "sha": "a7d4caa",
         "message": "fix: resolve Cypress component test failures",
         "date": "2026-01-18T12:27:41.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/4cfbdbb"
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/a7d4caa"
       },
       {
         "sha": "d20e3f0",
