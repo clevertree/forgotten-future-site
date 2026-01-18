@@ -1,3 +1,4 @@
+b2d2775 Update website parser for multiline synopses and sync latest manuscripts
 939ff0f Fix broken update feature: check remote immediately and every 60s
 9f1b188 Sync manuscripts and update dashboard with version 0.13.22
 b04df3a Update git history

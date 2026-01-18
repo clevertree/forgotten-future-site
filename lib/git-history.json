@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.23",
+    "version": "v0.13.24",
     "commits": [
       {
-        "sha": "a16ed65",
-        "message": "Generate FULL_MANUSCRIPT.md and update aggregate manuscript files",
-        "date": "2026-01-18T18:01:16.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/a16ed65"
+        "sha": "9026e76",
+        "message": "Update chapter synopses (03-10) with minimal beat-complete versions and shorten Part synopses",
+        "date": "2026-01-18T19:45:38.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/9026e76"
       },
       {
-        "sha": "ab3c338",
-        "message": "Update manuscripts and sync all 34 chapters with standardized formatting",
-        "date": "2026-01-18T17:38:23.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/ab3c338"
+        "sha": "90471e3",
+        "message": "more cleanup",
+        "date": "2026-01-18T19:22:33.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/90471e3"
       },
       {
-        "sha": "e0f6de8",
-        "message": "Standardize chapter formats and finalize manuscript narrative",
-        "date": "2026-01-18T17:26:48.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/e0f6de8"
+        "sha": "4ea26c6",
+        "message": "repair damage",
+        "date": "2026-01-18T18:41:37.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/4ea26c6"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.21",
+    "version": "v0.11.22",
     "commits": [
+      {
+        "sha": "939ff0f",
+        "message": "Fix broken update feature: check remote immediately and every 60s",
+        "date": "2026-01-18T18:01:21.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/939ff0f"
+      },
       {
         "sha": "9f1b188",
         "message": "Sync manuscripts and update dashboard with version 0.13.22",
@@ -64,12 +70,6 @@
         "message": "Update git history",
         "date": "2026-01-18T17:28:00.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/b04df3a"
-      },
-      {
-        "sha": "42162d1",
-        "message": "Standardize chapter formats and finalize manuscript narrative",
-        "date": "2026-01-18T17:26:50.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/42162d1"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
