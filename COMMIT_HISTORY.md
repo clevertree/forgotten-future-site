@@ -1,4 +1,4 @@
-4cfbdbb fix: resolve Cypress component test failures
+a7d4caa fix: resolve Cypress component test failures
 d20e3f0 chore: disable image optimization for static export (NEXT_PUBLIC_IS_STATIC)
 8d25554 chore: sync COMMIT_HISTORY.md
 e830cb9 feat: add custom image optimization API and loader using sharp
