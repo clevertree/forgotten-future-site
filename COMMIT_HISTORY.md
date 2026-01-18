@@ -1,3 +1,4 @@
+0631ae2 feat: integrate TTS playback into ScrollNavigation and remove clashing floating UI
 977df52 fix: improve TTS error diagnostics to catch 'undefined' errors
 ba3b21a fix: implement TTS chunking to support long manuscript narration
 069fdbe fix: add error handling and alerts for mobile TTS playback failures

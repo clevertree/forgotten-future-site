@@ -35,7 +35,8 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     images: {
-        unoptimized: true,
+        loader: 'custom',
+        loaderFile: './lib/imageLoader.ts',
     },
 }
 
