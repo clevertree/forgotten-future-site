@@ -34,10 +34,14 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
-    images: {
-        loader: 'custom',
-        loaderFile: './lib/imageLoader.ts',
-    },
+    images: process.env.NEXT_PUBLIC_IS_STATIC === 'true'
+        ? {
+            unoptimized: true,
+        }
+        : {
+            loader: 'custom',
+            loaderFile: './lib/imageLoader.ts',
+        },
 }
 
 module.exports = withPWA(nextConfig)

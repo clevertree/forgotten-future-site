@@ -1,3 +1,4 @@
+8d25554 chore: sync COMMIT_HISTORY.md
 e830cb9 feat: add custom image optimization API and loader using sharp
 0631ae2 feat: integrate TTS playback into ScrollNavigation and remove clashing floating UI
 977df52 fix: improve TTS error diagnostics to catch 'undefined' errors
