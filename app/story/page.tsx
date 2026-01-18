@@ -124,7 +124,7 @@ export default function StoryPage() {
                         </p>
                     </li>
                     <li>
-                        <strong className="text-cyan-400 block uppercase mb-1">Apex Hub</strong>
+                        <strong className="text-cyan-400 block uppercase mb-1">Cradle Prime</strong>
                         <p className="text-gray-400 text-sm">
                             The primary Archivist lunar base on the far side of the moon ruins. It is where the **Builders** were first evolved as a Core experiment.
                         </p>

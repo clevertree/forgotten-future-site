@@ -43,9 +43,10 @@ export async function parseManuscript(text: string): Promise<{ parts: Part[], ch
     };
 
     for (const segment of segments) {
-        const partMatch = segment.match(/# PART ([IVXLCDM]+): (.*)/i);
+        const partMatch = segment.match(/# PART ([IVXLCDM]+):? (.*)/i);
         if (partMatch) {
-            const summaryMatch = segment.match(/\*([^*]+)\*/);
+            // Match contents between italics markers if they exist, possibly multiline
+            const summaryMatch = segment.match(/\*([\s\S]*?)\*/);
             const partSummary = summaryMatch ? summaryMatch[1].trim() : '';
             const partTitle = `Part ${partMatch[1]}: ${partMatch[2].trim()}`;
             const partId = partMatch[2].toLowerCase().replace(/[^a-z0-9]+/g, '-');
@@ -60,14 +61,14 @@ export async function parseManuscript(text: string): Promise<{ parts: Part[], ch
             continue;
         }
 
-        const headerMatch = segment.match(/# Chapter (\d+): (.*)/);
+        const headerMatch = segment.match(/# Chapter (\d+):? (.*)/i);
         if (!headerMatch) continue;
 
         const id = parseInt(headerMatch[1]);
         const title = headerMatch[2].trim();
 
         let content = '';
-        const draftMatch = segment.match(/## Draft\n([\s\S]*?)(?=\n##|$)/);
+        const draftMatch = segment.match(/## Draft\s*\n([\s\S]*?)(?=\n##|$)/i);
         if (draftMatch) {
             content = draftMatch[1].trim();
         } else {
@@ -76,7 +77,7 @@ export async function parseManuscript(text: string): Promise<{ parts: Part[], ch
         }
 
         let summary = '';
-        const synopsisMatch = segment.match(/## Synopsis\n([\s\S]*?)(?=\n##|$)/);
+        const synopsisMatch = segment.match(/## Synopsis\s*\n([\s\S]*?)(?=\n##|$)/i);
         if (synopsisMatch) {
             summary = synopsisMatch[1].trim();
         } else {

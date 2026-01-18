@@ -56,7 +56,7 @@ export default function GamePage() {
                         <div className="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 text-center">
                             <Monitor className="text-cyan-400 mb-4" size={32} />
                             <h3 className="uppercase tracking-widest font-bold mb-2">PC & Console</h3>
-                            <p className="text-sm text-gray-500">High-fidelity environments and immersive simulation of the Great Fry's aftermath.</p>
+                            <p className="text-sm text-gray-500">High-fidelity environments and immersive record of the Great Fry's aftermath.</p>
                         </div>
                         <div className="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 text-center">
                             <Smartphone className="text-cyan-400 mb-4" size={32} />

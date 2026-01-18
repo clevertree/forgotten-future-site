@@ -1,3 +1,4 @@
+939ff0f Fix broken update feature: check remote immediately and every 60s
 9f1b188 Sync manuscripts and update dashboard with version 0.13.22
 b04df3a Update git history
 42162d1 Standardize chapter formats and finalize manuscript narrative
