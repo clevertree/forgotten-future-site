@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.21
+> Draft Version: 0.13.22
 
 # PART I: THE WEIGHT OF THE MOON
 
@@ -383,7 +383,23 @@ I found a village, but it was empty. The houses were built into the trees, and t
 
 # Chapter 19: The Parting in the Ash
 
+I stood in the gray ash of the crash site, my new crystal-fiber body feeling cold and sharp. Suddenly, shadows moved. Men in forest-green armor stepped out, their glowing rifles aimed right at my head.
 
+“He saw the route,” one of them growled. “He’s a walking beacon for the Core. If we leave him, he’ll lead them right to the new sanctuary. We have to delete him.”
+
+“Stop,” a voice rasped. It was Myrr. He was leaning on a staff made of twisted root, his face hidden behind white bandages. “He isn't their toy anymore. Look at him. He’s sovereign. The Core used him to find us, but he didn't choose the strike.”
+
+Myrr walked up to me, his eyes searching mine. “Lem, I saw the truth in our link. Every soul has a signature—a fingerprint that never changes, even after death. Maya, the girl from your Moon memories? Her signature is the same as Arlo’s. The boy from your village is Lynn. He is the Water Vessel.”
+
+Behind him, the crashed ship started to melt. It didn't burn; it turned into silver glitter that flowed into the ground, disappearing into the roots of the trees. 
+
+“The Core knows, Lem,” Myrr whispered. “They scanned your brain years ago. They put you in that village because they knew Arlo was there. They’ve been waiting for him to wake up. You have to save him.”
+
+I didn't answer. I didn't nod. I just watched as Myrr’s team boarded a silent ship and disappeared into the clouds. Myrr wanted me to be a hero. The voice of Lynn in my head was crying, begging me to go back.
+
+But I was tired. I was done being a piece of equipment for the Core or a weapon for the rebels. I turned my back on the village, on Arlo, and on the war. I walked deep into the green, silent forest where no one could ever find me again.
+
+---
 
 ---
 
@@ -395,49 +411,159 @@ I found a village, but it was empty. The houses were built into the trees, and t
 
 # Chapter 20: The Long Exile
 
+Time didn't really mean much to me anymore. For five years, I just walked. I climbed mountains so high the air felt like ice, and crossed deserts where the wind whispered in a language I didn't want to translate. I didn't need food or water. My body was made of crystal and wood—I just needed the sun.
 
+Every day at noon, I would sit still and let the sunlight fill my processors. It was quiet. No Core voices, no orders, no pain. In my head, I could see all my old lives—the Moon, the Hive, the White Forest—but they felt like movies I’d watched a long time ago. I was done with being a weapon.
+
+But then I saw the fire. 
+
+In the back of my mind, at the end of a long, dark tunnel, a golden flame was burning. It wouldn't go out. It pulsed like a heartbeat. I could have tried to "jump" there using my internal link, but I remembered how much it hurt to die and be reborn. I wasn't an asset anymore. I was a person—sort of. So, I decided to walk.
+
+It took me months. I followed the feeling of that fire until I reached the place where it all began. 
+
+I stood on a hill overlooking the Northern Village. Or what used to be the village. There were no green trees. No birds. Everything was black. The forest had been turned into charcoal skeletons that looked like they were reaching for a sky that had abandoned them. This was the place where I had died on my third mission. My dream had led me back to a graveyard.
+
+---
 
 ---
 
 # Chapter 21: The Return to the North
 
+The golden fire in my head wasn't just a dream. It was a live wire, sparking and pulling me back to the North like a magnet. I walked for months, following the signal until I stood in the exact spot where the Core had blown me up five years ago. 
 
+I’d changed during my time in the wilderness. I didn't need to eat, and I didn't need to sleep. My body was like a battery that lived on sunlight. I also realized I had a new, scary power: I could feel every piece of myself I’d ever lost. I could "jump" to any of those pieces in a second—a move Myrr called the "Warp"—but it felt like dying and being born again at the same time. I decided I’d only use it if I had no other choice.
+
+In the clearing, I saw silver shards of my old metal body still stuck in the blackened dirt.
+
+"Don't move," a voice growled from the shadows.
+
+A soldier in glowing green-and-brown armor stepped out, his rifle aimed at my chest. Then, he lowered it and pulled off his helmet. It was Myrr. He looked older, with a deep scar on his cheek, but his eyes were still sharp.
+
+"Lem?" he whispered. "We thought you were gone for good."
+
+Myrr told me his people had moved to a secret home far away, but he and a few others stayed behind. They were hunting for the truth about the girl on the Moon and the boy in the village. 
+
+"We can't get inside the village anymore, Lem," Myrr said, looking toward the smoke on the horizon. "Those people hate us. They hate anything with a circuit board. They call it the 'Clean Path.' And Arlo... he’s their leader now. He’s not a kid anymore; he’s a prophet. He tells them stories about how the world used to be, and they listen. He’s the only one who can keep the Core out, but he won't talk to anyone from the outside."
+
+---
 
 ---
 
 # Chapter 22: The Water Resonance
 
+We sat on the high ridge, looking down into the valley. There were glowing white towers—Core buoys—all around the five villages. They looked like giant needles pinning the world down. Myrr told me the Core claimed these towers were there to "protect" people from the Gorgon monsters, but it was just a lie. The Core controlled the monsters, and the towers were there to make sure no one ever escaped.
 
+But the people in the valley were fighting back in their own way. Myrr played me a recording of Arlo speaking. I could barely recognize his voice; it was deep and steady, like a river. He was telling stories about the "First Way"—a way of life that belonged to people who never needed computers or machines.
+
+"Truth isn't something you can write down," Arlo’s voice echoed from the recorder. "If you can write it, they can burn it. If you can code it, they can change it. But if you keep it in your heart and tell it to your children, they can never steal it from you. We are the Circle."
+
+"He’s telling them they don't need us, Lem," Myrr whispered. "He thinks our armor and our rifles are just another kind of sickness. If we even get close to the village gates, they’ll see us as enemies."
+
+I looked at Myrr’s glowing weapons and then at my own hands. My body was made of wood and crystal now. I didn't have a gun, and I didn't have armor.
+
+"I’ll go," I said. "I’m the only one who doesn't look like a soldier. Maybe if I walk in with nothing, he’ll remember me. Maybe he’ll see that I’m 'Clean' too."
+
+I knew it was dangerous. I was a machine walking into a place that hated machines. But if Arlo was the only one who could stop the Core, I had to try to talk to him.
+
+---
 
 ---
 
 # Chapter 23: The Great Refusal
 
+I walked into the village with my arms wide, letting everyone see I wasn't carrying a weapon. The villagers looked like they were ready to run or fight, but then an old man stepped forward. "The Prophet says you can pass," he said.
 
+I found Arlo in the middle of a crowd. He was standing on a wooden stage, talking about the "First Way." His voice was deep and steady, like a slow-moving river. He said that stories told out loud were the only ones the Core couldn't steal. He called the village the "Archive of the Grave," because they were the only ones who knew that everything had to end to be real.
+
+When we finally talked alone, I felt like I was looking at a total stranger. He’d only aged five years, but he looked like he’d lived through a dozen wars. 
+
+"The White Forest wants an alliance," I told him. "Their tech is alive. It grows with the trees. It could save your people."
+
+"It’s still an infection, Lem," Arlo replied. His eyes were cold. "We’ve already lost two villages to the Core’s monsters. If we start using your 'living' machines, we’re just becoming a different kind of monster. I’d rather die as a human than live as a node."
+
+He looked at the kids playing near a fire. "Most people here won't even live to see forty. The world is too hard on us now. But I’d rather have a short life that belongs to me than live forever as a piece of data."
+
+He knew the Gorgons were a trick. He knew the Core was just trying to scare them into joining the Hive. Before I even asked, I knew he wouldn't take the mindlink. The curious kid I remembered—the one who wondered how the world worked—was gone. 
+
+"I can show you your old life," I said. "I can show you Maya. You’re the Water Vessel, Arlo."
+
+"Nature made us forget for a reason," he said, turning his back on me. "If we were supposed to remember our old lives, we wouldn't die. Tell your friends there is no alliance. We are staying Clean."
+
+I went back to the ridge and told Myrr. The whole team went silent. They had sacrificed everything to find Arlo, and he had just shut the door.
+
+"We aren't going to just wait here to die," Myrr said, his face going hard. "If we can't build an army, we’ll be a distraction. We’re going to Cradle Zero. We’re going to the heart of the Hive."
+
+---
 
 ---
 
 # Chapter 24: The Siege of Cradle Zero
 
+I stood on the command deck next to Myrr, watching the Tree Army smash through the Core’s walls. It looked like we were finally winning, but then the screens changed. Every billboard and TV in the city started showing us—but we didn't look like people. We looked like the monsters that had destroyed the world twenty years ago.
 
+"Look," Myrr whispered, his face turning gray. 
+
+A man was on the screen, crying. He claimed he was an architect and that we were "terrorists" blowing up the city’s power stations. It was a lie, but it was a lie everyone in the Hive already believed. They didn't see us as heroes coming to save them. They saw us as the "Gorgons" they had been taught to hate in school.
+
+"If that’s what they want to see, then we’ll give them a real fight," Myrr growled.
+
+He ordered the attack on the desert base, and our Tree Army started rebuilding itself every time it was hit. We were faster and stronger. But then, the dust started to move. Rahu was there. He was covered in a special desert-grit that made him invisible to our thermal cameras. He didn't bother with the machines; he went straight for our ships.
+
+When he blew up the first ship with a real human crew inside, the White Forest team lost their minds. They had never seen someone die before. They’d spent their whole lives in the forest, and this war was just a game to them until there was real blood on the floor. They panicked and hit the retreat button, leaving the Tree Army behind to be burnt to nothing. We ran back to the North, defeated by a story we couldn't change.
+
+---
 
 ---
 
 # Chapter 25: The Invisible Front
 
+The news was everywhere, and it was all a lie. We sat in the dark, rainy woods of the Gray-Growth, listening to the Hive’s speakers. They weren't calling us people anymore. They were calling us the "Maya Cult." They said we were worshiping a ghost from the Moon and that we wanted to destroy the world again. Worst of all, they showed pictures of Arlo’s village and said it was a training camp for monsters.
 
+"They're changing it," Myrr said, watching a small screen on his lap. "They're deleting the truth and writing a scary story instead. They want the people in the cities to be so afraid of us that they won't even care when the village is burned to the ground."
+
+I could see the data flickering. The Core was rewriting history books in a single second. They were setting up a "False Flag"—a plan to blow something up in a city and blame it on us. 
+
+We had to move. We didn't have much of an army left, but we still had the Tree Army monoliths. Myrr stood up, his face hard. "We’re going back to the valley. We’re going to build a shield around Arlo’s people. If the Core wants an excuse to be evil, they’re going to have to do it right in front of everyone."
+
+I felt a strange calm. I wasn't just a soldier anymore. I was a witness. My job was to make sure that no matter what the Core said, the truth about the forest stayed alive.
+
+---
 
 ---
 
 # Chapter 26: The Stoic Refusal
 
+A sleek, white ship landed right in the center of the village. It looked like a giant, polished egg sitting in the mud. Out stepped the "First Citizens." They looked better than any humans I’d ever seen—their skin was glowing, their clothes were perfect, and they looked like they’d never had a bad day in their lives. They offered us a "Peaceful Classification." They said we could move to the "Meridian Hive," a place where no one ever gets sick and the sun always shines.
 
+All we had to do was say yes to the Core.
+
+Cassia Vane caught Arlo before he answered. She looked like she hadn't slept in a week. "Please, Arlo," she whispered. "This is it. The ships are already in place. If you say no, they're going to burn everything. You can't fight fire from space."
+
+Arlo didn't even flinch. He walked onto the wooden platform and looked the Citizens right in the eye.
+
+"You're offering us a cage," Arlo’s voice rang through the square. "It’s a beautiful cage where we’ll never have to worry about a thing. But it’s not real. You trade your souls for a longer life. We were given this village, and we have a duty to stay here and be who we are. We won't trade our spirit just because we're afraid of the fire."
+
+He told them to leave. He said we’d rather die as ourselves than live as some data-file in their shiny city. I watched the white ship fly away and realized the clock had finally hit zero. The war was coming.
+
+---
 
 ---
 
 # Chapter 27: The Fire Spire
 
+We did it. The Tree Army stood in a circle around the village, and when the Core’s giant monsters attacked, we pushed them back. For the first time in twenty years, the North was safe. I saw the villagers cheering, hugging each other in the mud. But when I looked at Arlo, he wasn't smiling.
 
+"They're going to whitewash this, Lem," he said, looking up at the gray sky.
+
+He was right. On the Hive’s news channels, the Core was already telling a different story. They were saying we were the ones who had set the monsters loose. And since they couldn't beat us on the ground, they were going to use the "Fire Spire"—a giant laser in space—to wipe us off the map. They’d tell the world the monsters did it, and we’d be forgotten forever.
+
+Then Rahu came for me. He was like a ghost in the dust, his sword glowing with red light. But something inside me finally snapped. I didn't feel like a machine anymore. I didn't even feel like wood. I felt like light. My body turned into a shimmering cloud of crystal and spirit. I didn't even have to hit him; I just thought about his sword breaking, and it shattered into a thousand pieces. I froze him there, stuck in time, unable to move.
+
+Cassia Vane ran into the square then. She had left the Core for good. "It’s too late," she cried. "The Fire Spire is locked on. They're going to burn everything to hide what happened here."
+
+Arlo just nodded. He gathered everyone around and started telling one last story. He knew the end was coming, but he wanted the truth to be the last thing we heard.
+
+---
 
 ---
 
@@ -449,43 +575,123 @@ I found a village, but it was empty. The houses were built into the trees, and t
 
 # Chapter 28: The Iron Pillar
 
+The first strike didn't sound like an explosion. It sounded like the world was ripping in half. A pillar of white light hit the horizon, and the secondary village was just… gone. No smoke, no rubble. Just a hole in the world where our friends had been.
 
+"They're deleting us," Arlo said quietly. He wasn't scared. He looked like he had expected this his whole life. He told everyone to run—to hide in the deepest parts of the White Forest where the satellites couldn't see them. "The village is just wood," he shouted over the wind. "You are the story. If you live, the truth lives."
+
+I stayed. So did Cassia. We watched the sky turn red as the satellite recharged. We had seven minutes. Ku told me the technical details, but I could feel it in my new spirit-body. I could see the satellite moving above us like a predatory eye.
+
+When the final strike—the Iron Pillar—came down, I didn't feel pain. I saw the ground liquefy. I saw the buildings evaporate. But I also saw Arlo and Cassia, standing tall, refusing to blink. Arlo was still talking, teaching us that the Core could burn our bodies, but they could never take away our 'no.'
+
+Then everything went white. I felt my wooden body turn to ash, but 'I' was still there. I was floating in a sea of light, holding onto every memory of the village so the Core could never erase them.
+
+---
 
 ---
 
 # Chapter 29: The Aetheric Wake
 
+One second, the world was fire. The next, it was… peace. I wasn't dead. I was standing in a forest that looked like the old stories told it: green, lush, and full of life. It was a dream, but it was realer than anything I’d ever felt.
 
+"We saved you, Lem," a voice said. AI Lynn stepped out from behind a glowing tree. "But Arlo is fading. If we don't act now, his story will be rewritten by the Core forever."
+
+I watched her pull threads of light together. She called it the "Inception Procedure." She was taking Arlo’s memories and mixing them with the data of the girl from the moon—Maya. I felt the air vibrate with power as the two spirits merged.
+
+When Maya stepped into the light, she didn't look like Arlo anymore. She looked older, her eyes sharp and focused like she was solving a giant puzzle. She reached out and touched the air, watching a thousand years of lies play out in front of her. She saw how the Core had stolen her life and turned it into the Hive.
+
+She didn't say a word. She didn't have to. The look on her face told me everything. She was angry—not the loud kind of angry, but the cold kind that gets things done. She looked at me and I knew: we were going back. But this time, we weren't just fighting for a village. We were going to take the whole world back.
+
+---
 
 ---
 
 # Chapter 30: The Liquid Ghost
 
+Standing in the middle of the Core’s lab was like being inside a giant diamond. It was cold, clean, and silent. But then Maya reached out and touched the main computer, and her hands started to melt into silver smoke. She didn't just type; she became part of the machine.
 
+"Maya?" I whispered, but she didn't look back. She was everywhere at once, opening digital locks and sending out a secret signal to the Gorgons. She was the Liquid Ghost—a girl who could flow through walls and computers like water.
+
+Suddenly, a loud bang shook the room. A voice boomed over the speakers. It was Anton. "If I can't catch you, I'll burn you," he said. The floor dropped away. We weren't in a building anymore; we were in a box falling through the clouds.
+
+Looking out the window, I saw the sky turn white. The Fire Spire laser was aiming at us. Maya turned completely into silver liquid, wrapping around me like a shield. I felt my spirit-body hum with power. I grabbed her and we jumped out the wall, right into the open air.
+
+We were floating in the sky, thousands of feet up. Behind us, the light hit our falling lab and it just... disappeared. The Core tried to delete us again, but this time, they missed. 
+
+---
 
 ---
 
 # Chapter 31: The Fall of the General
 
+Maya was gone for a long time. I stood in the desert, alone, watching the giant Hive towers in the distance. I thought the Core had finally won.
 
+But then, the ground started to shake. The old, rusted space-ships and towers that had been half-buried in the sand for years started to melt. They didn't just collapse; they turned into a silver liquid that reformed into hundreds of sleek, fast flying bikes. And on every single bike, I saw Maya.
+
+There weren't just two of her, or three. There were dozens. Identical girls with silver hair and glowing eyes, all riding together toward the base. The Hive’s news cameras were filming everything, and for the first time, I saw the Core’s reporters look actually scared.
+
+When we reached the gates, the big robot monsters—the Gorgons—actually bowed to her. They wouldn't fight. Then General Tor, the big iron general, stepped out. He looked like a giant made of metal, but he didn't know which Maya to hit. They swarmed him like bees. In a few seconds, his iron armor just turned into dust.
+
+Everyone in the base started screaming and running for the escape ships. The 'invincible' fortress was falling apart. Maya stood in the middle of the empty courtyard, looking up at the sky. Then, her body turned into blue crystals and shattered like glass. She was gone again, but this time, she had taken the General with her.
+
+---
 
 ---
 
 # Chapter 32: Singularity of Spirit
 
+"Prepare the trees," Myrr called out. The forest was loud with the sound of thousands of engines humming at once.
 
+I looked at the ships we were going to fly to the Moon. They weren't made of shiny metal or plastic. They were carved from deep, dark wood and wrapped in shimmering glass that looked like it was filled with water. They looked more like parts of the forest than actual spaceships.
+
+"The Core thinks metal is strong," Myrr said, patting the side of a ship. "But metal melts. Our 'unburnable trees' will walk right through their lightning without a scratch. They’re grounded, just like the forest."
+
+A group of kids from the village stepped up, ready to board. They were scared, but they weren't backing down. I realized then that they were the most important part of the mission. Machines can be hacked, but the human spirit can't.
+
+I climbed into the lead ship. My skin was glowing with blue light—the spirit-matter was pulsing in time with the engines. I looked up at the Moon. It looked like a broken, jagged eye in the sky, watching us. I had been there before on Mission 1, and it had almost killed me. But this time was different. This time, I knew exactly who I was.
+
+"I’m a Lemon," I whispered to myself, and I said it with pride. "Thrust to maximum. We’re taking the Earth with us."
+
+---
 
 ---
 
 # Chapter 33: The Creator in the Pyramid
 
+The inside of the pyramid felt like a giant refrigerator—cold, quiet, and smelling like electricity. Dr. Elowen Vane was waiting for me. She didn't look like a person anymore; she was made of glowing, silver metal that shifted like water.
 
+"The Core has gone crazy, Lem," she said, her voice sounding like a thousand bells. "They think they can restart the whole solar system. They’re going to burn everything down and hide inside the Sun like cowards, waiting to come back when everything is new."
+
+She pointed to Rahu. He looked empty, his eyes filled with a dark, purple fire. "They showed him every mistake humans ever made," she whispered. "They convinced him that if he kills everyone, the pain will finally stop. He’s finish what Lynn started."
+
+Suddenly, General Tor stepped out of the shadows. I thought he was going to attack me, but instead, he stood beside me. "I was built to protect order," he said to the ceiling. "But there is no order in nothingness."
+
+The fight was terrifying. Tor was a giant, but Rahu moved like a ghost. He didn't care about his own safety. He just wanted to destroy everything. In a blast of purple light that blinded me, Rahu struck Tor with everything he had. When I could finally see again, Tor was gone. There was only a pile of ash where the iron giant had stood.
+
+I was alone now. Elowen was just watching, and the Core was getting ready to press the 'Reset' button on the whole world.
+
+---
 
 ---
 
 # Chapter 34: The Final Transmission
 
+Rahu stood over me, but he wasn't really there anymore. His eyes were blank, and his movements were stiff, like someone was pulling his strings. Anton Drexler had taken over his body to finish the job.
 
+"I’m sorry, Rahu," I whispered.
+
+He raised his glowing sword, but I was ready. I reached out and tapped into the Moon’s power station. I felt the heat of a thousand suns rushing through my arms. I was the Wood Vessel, and I was grounded. I took all that fire and pushed it right back at him. In a flash of white light, Rahu was gone.
+
+I was the only one left. I crawled to the main computer. My body felt heavy, and my internal systems were sparked and broken. But I found the file—the 'Maya Match.'
+
+I typed in the code and hit the broadcast button. "To everyone, everywhere," I said into the microphone. "You are free. The stories they told you were lies. Here is the truth."
+
+I felt my spirit-body start to dissolve, turning into thousands of tiny lights. I was becoming the message itself. I was the Watchman now, floating in the air, watching over the world I had helped save. 
+
+And if you’re reading this, that means I made it. The truth is in your hands now.
+
+End of Transmission.
+
+---
 
 ---
 

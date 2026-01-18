@@ -125,8 +125,13 @@ export async function fetchRemoteManuscript(version: ManuscriptVersion = '13plus
     }
 }
 
-export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string }> {
+export async function fetchManuscript(version: ManuscriptVersion = '13plus', forceRemote: boolean = false): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string }> {
     try {
+        if (forceRemote) {
+            const remoteData = await fetchRemoteManuscript(version);
+            if (remoteData) return remoteData;
+        }
+
         let text = '';
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
         const localUrl = `${basePath}${LOCAL_MANUSCRIPT_PATHS[version]}`;
@@ -141,7 +146,7 @@ export async function fetchManuscript(version: ManuscriptVersion = '13plus'): Pr
             console.warn(`[Manuscript] Local load failed:`, e);
         }
 
-        if (!text) {
+        if (!text && !forceRemote) {
             const remoteData = await fetchRemoteManuscript(version);
             if (remoteData) return remoteData;
             return { parts: [], chapters: [] };

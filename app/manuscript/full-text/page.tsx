@@ -167,10 +167,10 @@ function FullTextContent() {
 
     useEffect(() => {
         setIsLoading(true);
-        const loadManuscript = (isRefresh = false) => {
-            fetchManuscript(version).then(data => {
+        const loadManuscript = (forceRemote = false) => {
+            fetchManuscript(version, forceRemote).then(data => {
                 if (data.chapters.length > 0) {
-                    if (isRefresh && prevChaptersRef.current.length > 0) {
+                    if (forceRemote && prevChaptersRef.current.length > 0) {
                         const changedChapters = data.chapters.filter((ch, index) => {
                             const prev = prevChaptersRef.current[index];
                             return !prev || prev.content !== ch.content || prev.title !== ch.title;
@@ -178,9 +178,12 @@ function FullTextContent() {
 
                         if (changedChapters.length > 0) {
                             const titles = changedChapters.map(ch => `Ch ${ch.id}`).join(', ');
-                            setNotification(`Updated: ${titles}`);
+                            setNotification(`Source Updated: ${titles}`);
+                            console.log(`[Manuscript] Remote update found for ${titles}`);
                             setTimeout(() => setNotification(null), 10000);
                         }
+                    } else if (forceRemote) {
+                        console.log(`[Manuscript] Remote sync complete (no changes)`);
                     }
                     setChapters(data.chapters);
                     setParts(data.parts);
@@ -189,8 +192,8 @@ function FullTextContent() {
                 }
                 setIsLoading(false);
 
-                // Handle hash-based scrolling after data loads
-                if (!isRefresh && window.location.hash) {
+                // Handle hash-based scrolling after data loads (only on first load)
+                if (!forceRemote && window.location.hash) {
                     setTimeout(() => {
                         const id = window.location.hash.replace('#', '');
                         const element = document.getElementById(id);
@@ -202,12 +205,19 @@ function FullTextContent() {
             });
         };
 
-        loadManuscript();
+        // 1. Load local version immediately for speed
+        loadManuscript(false);
 
-        // Polling: attempt to refresh once per 60 seconds
+        // 2. Check for remote updates immediately after
+        const remoteCheckTimeout = setTimeout(() => loadManuscript(true), 2000);
+
+        // 3. Polling: attempt to refresh from GitHub once per 60 seconds
         const intervalId = setInterval(() => loadManuscript(true), 60000);
 
-        return () => clearInterval(intervalId);
+        return () => {
+            clearTimeout(remoteCheckTimeout);
+            clearInterval(intervalId);
+        };
     }, [version]);
 
     // Track scroll position to save last read chapter

@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.21",
+    "version": "v0.13.22",
     "commits": [
+      {
+        "sha": "ab3c338",
+        "message": "Update manuscripts and sync all 34 chapters with standardized formatting",
+        "date": "2026-01-18T17:38:23.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/ab3c338"
+      },
       {
         "sha": "e0f6de8",
         "message": "Standardize chapter formats and finalize manuscript narrative",
@@ -14,20 +20,20 @@
         "message": "big cleanup",
         "date": "2026-01-18T15:21:42.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/3e16079"
-      },
-      {
-        "sha": "e6ad4de",
-        "message": "reorganize chapter files. add chapter prompts",
-        "date": "2026-01-18T11:52:08.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/e6ad4de"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.11",
+    "version": "v0.9.13",
     "commits": [
+      {
+        "sha": "1afcb96",
+        "message": "Bump version 0.9.12",
+        "date": "2026-01-18T17:38:33.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
+      },
       {
         "sha": "c07a34f",
         "message": "Bump version and update history",
@@ -39,20 +45,20 @@
         "message": "chore: update teaser prompts",
         "date": "2026-01-17T13:45:06.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
-      },
-      {
-        "sha": "19f4a69",
-        "message": "chore: update version and commit history",
-        "date": "2026-01-16T13:33:32.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/19f4a69"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.19",
+    "version": "v0.11.20",
     "commits": [
+      {
+        "sha": "b04df3a",
+        "message": "Update git history",
+        "date": "2026-01-18T17:28:00.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/b04df3a"
+      },
       {
         "sha": "42162d1",
         "message": "Standardize chapter formats and finalize manuscript narrative",
@@ -64,12 +70,6 @@
         "message": "fix: resolve Cypress component test failures",
         "date": "2026-01-18T12:27:41.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/a7d4caa"
-      },
-      {
-        "sha": "d20e3f0",
-        "message": "chore: disable image optimization for static export (NEXT_PUBLIC_IS_STATIC)",
-        "date": "2026-01-18T00:58:59.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/d20e3f0"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
