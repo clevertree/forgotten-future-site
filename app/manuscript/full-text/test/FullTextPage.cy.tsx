@@ -30,14 +30,14 @@ describe('FullTextManuscript Component', () => {
 
     // Check that Chapter 1 has its header and some prose
     cy.get('#chapter-1').within(() => {
-      cy.get('h3').should('contain', 'The Lunar Outpost');
+      cy.get('h3').should('contain', 'Outpost');
       cy.get('.prose').should('not.be.empty');
     });
 
     // Check navigation sidebar is populated
     cy.get('aside').within(() => {
       cy.get('ul').find('a').should('have.length.at.least', 20);
-      cy.contains('1. The Lunar Outpost').should('have.attr', 'href', '#chapter-1');
+      cy.contains('1. Outpost').should('have.attr', 'href', '#chapter-1');
     });
   });
 

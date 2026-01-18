@@ -1,33 +1,39 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.24",
+    "version": "v0.13.33",
     "commits": [
       {
-        "sha": "9026e76",
-        "message": "Update chapter synopses (03-10) with minimal beat-complete versions and shorten Part synopses",
-        "date": "2026-01-18T19:45:38.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/9026e76"
+        "sha": "64c43fd",
+        "message": "Sync story changes and update manuscripts",
+        "date": "2026-01-18T21:59:28.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/64c43fd"
       },
       {
-        "sha": "90471e3",
-        "message": "more cleanup",
-        "date": "2026-01-18T19:22:33.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/90471e3"
+        "sha": "4bee257",
+        "message": "Rename Part II to 'The Path of Fragments' and Part III to 'The Great Stalemate' and update 'The Great Update' to 'the Broadcast'",
+        "date": "2026-01-18T21:46:36.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/4bee257"
       },
       {
-        "sha": "4ea26c6",
-        "message": "repair damage",
-        "date": "2026-01-18T18:41:37.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/4ea26c6"
+        "sha": "630bf37",
+        "message": "Restore Ch 31 tactical beats, update Ch 32 alliance logic, and rename 'The Great Update' to 'the Broadcast' across all files",
+        "date": "2026-01-18T21:39:21.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/630bf37"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.13",
+    "version": "v0.9.14",
     "commits": [
+      {
+        "sha": "b01a09e",
+        "message": "Update teaser prompts and README",
+        "date": "2026-01-18T21:59:30.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/b01a09e"
+      },
       {
         "sha": "1afcb96",
         "message": "Bump version 0.9.12",
@@ -39,37 +45,31 @@
         "message": "Bump version and update history",
         "date": "2026-01-18T17:27:48.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/c07a34f"
-      },
-      {
-        "sha": "45dc455",
-        "message": "chore: update teaser prompts",
-        "date": "2026-01-17T13:45:06.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.22",
+    "version": "v0.11.24",
     "commits": [
+      {
+        "sha": "2f6e7ac",
+        "message": "Manually sync beat-complete synopses to bypass GitHub raw cache",
+        "date": "2026-01-18T19:47:56.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/2f6e7ac"
+      },
+      {
+        "sha": "b2d2775",
+        "message": "Update website parser for multiline synopses and sync latest manuscripts",
+        "date": "2026-01-18T19:45:48.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/b2d2775"
+      },
       {
         "sha": "939ff0f",
         "message": "Fix broken update feature: check remote immediately and every 60s",
         "date": "2026-01-18T18:01:21.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/939ff0f"
-      },
-      {
-        "sha": "9f1b188",
-        "message": "Sync manuscripts and update dashboard with version 0.13.22",
-        "date": "2026-01-18T17:38:37.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/9f1b188"
-      },
-      {
-        "sha": "b04df3a",
-        "message": "Update git history",
-        "date": "2026-01-18T17:28:00.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/b04df3a"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

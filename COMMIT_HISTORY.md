@@ -1,3 +1,4 @@
+2f6e7ac Manually sync beat-complete synopses to bypass GitHub raw cache
 b2d2775 Update website parser for multiline synopses and sync latest manuscripts
 939ff0f Fix broken update feature: check remote immediately and every 60s
 9f1b188 Sync manuscripts and update dashboard with version 0.13.22
