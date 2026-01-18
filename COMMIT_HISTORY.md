@@ -1,3 +1,4 @@
+e830cb9 feat: add custom image optimization API and loader using sharp
 0631ae2 feat: integrate TTS playback into ScrollNavigation and remove clashing floating UI
 977df52 fix: improve TTS error diagnostics to catch 'undefined' errors
 ba3b21a fix: implement TTS chunking to support long manuscript narration
