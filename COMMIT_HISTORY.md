@@ -1,3 +1,4 @@
+17fe0b9 Cleanup git history and remove failure screenshots
 f451b6a Final sync for site and test fixes
 2f6e7ac Manually sync beat-complete synopses to bypass GitHub raw cache
 b2d2775 Update website parser for multiline synopses and sync latest manuscripts

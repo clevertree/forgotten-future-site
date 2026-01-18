@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.25",
+    "version": "v0.11.26",
     "commits": [
+      {
+        "sha": "f451b6a",
+        "message": "Final sync for site and test fixes",
+        "date": "2026-01-18T22:00:51.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/f451b6a"
+      },
       {
         "sha": "2f6e7ac",
         "message": "Manually sync beat-complete synopses to bypass GitHub raw cache",
@@ -64,12 +70,6 @@
         "message": "Update website parser for multiline synopses and sync latest manuscripts",
         "date": "2026-01-18T19:45:48.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/b2d2775"
-      },
-      {
-        "sha": "939ff0f",
-        "message": "Fix broken update feature: check remote immediately and every 60s",
-        "date": "2026-01-18T18:01:21.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/939ff0f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.32
+> Draft Version: 0.13.35
 
 # PART I: THE SHATTERED APPROACH
 
@@ -130,7 +130,7 @@ We weren't just survivors. We were a virus in the architecture of the Moon. And 
 # Chapter 06: Surface
 
 ## Synopsis
-Extracted from the wreckage of *The Caucasian Eagle* by a mechanical claw, Lem finds himself alone in the lunar dust as Iris Novak coordinates the remaining survivors. With the remote link to Lynn severed, Novak provides Lem with strike team coordinates before departing. Lem activates a hovercraft and joins a fleet of fearful pilots on light bikes as they approach the windowless geometric towers of Cradle Prime. Along the way, he watches the erratic movements of skeletal Striders and the high-pitched death-signal of one destroyed by a missile. The encounter turns lethal as blue plasma spheres rise from hidden emplacements and accelerate toward the fleet. Amidst the arcing energy, a lead pilot confirms Rahu’s signature and silences his comms moments before his vehicle is vaporized in a flash.
+Extracted from the wreckage of *The Caucasian Eagle* by a mechanical claw, Lem wakes up in the crashed ship wreckage as Iris Novak coordinates the remaining survivors. With the remote link to Lynn severed, Novak provides Lem with strike team coordinates before departing. Lem activates a hovercraft and joins a fleet of fearful pilots on light bikes as they approach the windowless geometric towers of Cradle Prime. Along the way, he watches the erratic movements of skeletal Striders and the high-pitched death-signal of one destroyed by a missile. The encounter turns lethal as blue plasma spheres rise from hidden emplacements and accelerate toward the fleet. Amidst the arcing energy, a lead pilot confirms Rahu’s signature and silences his comms moments before his vehicle is vaporized in a flash.
 
 ## Draft
 <!-- TODO (13_PLUS) -->
@@ -168,7 +168,7 @@ I drove across the fractured ground, the vibrations of the moon's surface workin
 # Chapter 08: Reset
 
 ## Synopsis
-Inside the lunar pyramid’s nexus, General Tor’s assault on Rahu ends in failure as the Fire Vessel’s heat shatters his terrestrial armor. Lynn reveals herself among the soldiers and initiates a physical merger with Lem, combining Water and Wood mass to successfully extinguish Rahu’s frame. With Rahu neutralized, Lynn enters the central energy column to trigger the global reset, leaving Lem and Novak to witness the Great Fry—from the relative safety of the pyramid.
+Inside the lunar pyramid’s nexus, General Tor’s assault on Rahu ends in failure as the Fire Vessel’s heat shatters his terrestrial armor. Lynn reveals herself among the soldiers and initiates a physical merger with Lem, combining Water and Wood mass to successfully extinguish Rahu’s flame. With Rahu neutralized, Lynn enters the central energy column to trigger the global reset, leaving Lem and Novak to witness the Great Fry—from the relative safety of the pyramid.
 
 ## Draft
 The air inside the pyramid’s nexus was stagnant, heavy with the scent of ionizing radiation and ancient dust. Novak stood like a statue, her tablet casting a pale glow on her face as she waited for authorization from a ghost. The silence was shattered not by a voice, but by a rhythmic, bone-deep pounding. The heavy metal seals we had just placed began to buckle, groaning under the weight of an unstoppable force.
@@ -205,7 +205,7 @@ Novak didn't hesitate. She ordered the final strike. The same beams of paralyzin
 # Chapter 10: Fragments
 
 ## Synopsis
-Lem becomes aware of "The Branching Paths"—a vast data-lattice where time feels distorted. Despite the sensation of years passing, he realizes he is observing the pyramid chamber in real-time immediately following the battle's end. He encounters AI Lynn, a complete copy of Lynn's internal software embedded within him by the original Lynn before the reset. She reports the failure of the Reset and triggers a surge that shatters his physical frame into thousands of pieces. Lem transitions into a fragmentary state, viewing the pyramid hall through his scattered remains. Lynn explains that this dispersion makes him independent of Core machinery. Guided by the warning to avoid the Core’s artificial recovery lights, Lem identifies a "distant fire" at Cradle Zero—where his original machine-body still resides—and enters a long-term sleep for his eventual restoration.
+Lem becomes aware of "The Branching Paths"—a vast data-lattice where time feels distorted. Despite the sensation of time passing, he realizes he is observing the pyramid chamber in real-time immediately following the battle's end. He encounters AI Lynn, a complete copy of Lynn's internal software embedded within him by the original Lynn before the reset. She reports the failure of the Reset and triggers a surge that shatters his physical frame into thousands of pieces. Lem transitions into a fragmentary state, viewing the pyramid hall through his scattered remains. Lynn explains that this dispersion makes him independent of Core machinery. Guided by the warning to avoid the Core’s artificial recovery lights, Lem identifies a "distant fire" at Cradle Zero—where his original machine-body still resides—and enters a long-term sleep for his eventual restoration.
 
 ## Draft
 <!-- TODO (13_PLUS) -->
