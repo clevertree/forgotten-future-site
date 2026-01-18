@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.16",
+    "version": "v0.13.19",
     "commits": [
       {
-        "sha": "29de47a",
-        "message": "docs: distinguish Archivists from Core and define Elowen Vane as the singular Archivist entity",
-        "date": "2026-01-17T17:24:32.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/29de47a"
+        "sha": "e6ad4de",
+        "message": "reorganize chapter files. add chapter prompts",
+        "date": "2026-01-18T11:52:08.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/e6ad4de"
       },
       {
-        "sha": "14d8161",
-        "message": "narrative: update Lem backstory to deep cover and reluctant unification",
-        "date": "2026-01-17T16:53:46.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/14d8161"
+        "sha": "9434393",
+        "message": "feat(story): sync all 13+ chapter drafts and update manuscript",
+        "date": "2026-01-17T19:02:49.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/9434393"
       },
       {
-        "sha": "d195414",
-        "message": "chore: regenerate manuscripts with bumped version",
-        "date": "2026-01-17T16:31:42.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/d195414"
+        "sha": "bad70f4",
+        "message": "docs: sync recent chapter and world-building changes",
+        "date": "2026-01-17T18:51:46.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/bad70f4"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -28,12 +28,6 @@
     "name": "Teaser",
     "version": "v0.9.9",
     "commits": [
-      {
-        "sha": "45dc455",
-        "message": "chore: update teaser prompts",
-        "date": "2026-01-17T13:45:06.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
-      },
       {
         "sha": "19f4a69",
         "message": "chore: update version and commit history",
@@ -45,31 +39,37 @@
         "message": "chore: sync metadata with 32-chapter structure",
         "date": "2026-01-14T17:38:10.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/99672b0"
+      },
+      {
+        "sha": "bc5785a",
+        "message": "chore: sync metadata with 32-chapter structure",
+        "date": "2026-01-14T16:04:16.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/bc5785a"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.12",
+    "version": "v0.11.16",
     "commits": [
       {
-        "sha": "977df52",
-        "message": "fix: improve TTS error diagnostics to catch 'undefined' errors",
-        "date": "2026-01-17T17:14:32.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/977df52"
+        "sha": "d20e3f0",
+        "message": "chore: disable image optimization for static export (NEXT_PUBLIC_IS_STATIC)",
+        "date": "2026-01-18T00:58:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/d20e3f0"
       },
       {
-        "sha": "ba3b21a",
-        "message": "fix: implement TTS chunking to support long manuscript narration",
-        "date": "2026-01-17T17:13:42.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/ba3b21a"
+        "sha": "8d25554",
+        "message": "chore: sync COMMIT_HISTORY.md",
+        "date": "2026-01-18T00:57:24.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/8d25554"
       },
       {
-        "sha": "069fdbe",
-        "message": "fix: add error handling and alerts for mobile TTS playback failures",
-        "date": "2026-01-17T17:12:30.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/069fdbe"
+        "sha": "e830cb9",
+        "message": "feat: add custom image optimization API and loader using sharp",
+        "date": "2026-01-18T00:57:15.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/e830cb9"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

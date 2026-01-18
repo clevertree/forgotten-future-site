@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { fetchManuscript, Chapter, Part, ManuscriptVersion } from '../../lib/manuscript';
+import { fetchManuscript, fetchRemoteManuscript, Chapter, Part, ManuscriptVersion } from '../../lib/manuscript';
 
 function ManuscriptContent() {
     const searchParams = useSearchParams();
@@ -35,7 +35,7 @@ function ManuscriptContent() {
         }
 
         window.speechSynthesis.cancel();
-        
+
         const plainText = text
             .replace(/[#*_~`\[\]()]/g, '')
             .replace(/>\s+/g, '')
@@ -44,7 +44,7 @@ function ManuscriptContent() {
         // Chunking for long text (browsers have limits per utterance)
         const chunks: string[] = [];
         const maxChunkLen = 3000;
-        
+
         if (plainText.length > maxChunkLen) {
             let currentPath = plainText;
             while (currentPath.length > 0) {
@@ -52,15 +52,15 @@ function ManuscriptContent() {
                     chunks.push(currentPath);
                     break;
                 }
-                
+
                 // Try to find a good breaking point (sentence or space)
                 let breakIdx = currentPath.lastIndexOf('.', maxChunkLen);
                 if (breakIdx === -1 || breakIdx < maxChunkLen * 0.5) {
                     breakIdx = currentPath.lastIndexOf(' ', maxChunkLen);
                 }
-                
+
                 if (breakIdx === -1) breakIdx = maxChunkLen;
-                
+
                 chunks.push(currentPath.substring(0, breakIdx + 1));
                 currentPath = currentPath.substring(breakIdx + 1).trim();
             }
@@ -77,7 +77,7 @@ function ManuscriptContent() {
             }
 
             const utterance = new SpeechSynthesisUtterance(chunks[currentChunk]);
-            
+
             utterance.onstart = () => {
                 if (currentChunk === 0) setSpeakingId(id);
             };
@@ -97,7 +97,7 @@ function ManuscriptContent() {
                 // Only alert on critical errors (not when we manually stop/cancel)
                 if (event.error !== 'interrupted' && event.error !== 'canceled') {
                     setSpeakingId(null);
-                    
+
                     const errorType = event.error || (event as any).message || "Unknown Code";
 
                     if (event.error === 'not-allowed') {
@@ -117,7 +117,7 @@ function ManuscriptContent() {
             if (window.speechSynthesis.paused) {
                 window.speechSynthesis.resume();
             }
-            
+
             window.speechSynthesis.speak(utterance);
         };
 
@@ -158,6 +158,36 @@ function ManuscriptContent() {
 
     const prevChaptersRef = useRef<Chapter[]>([]);
 
+    useEffect(() => {
+        setIsLoading(true);
+        const loadInitial = async () => {
+            const data = await fetchManuscript(version);
+            setChapters(data.chapters);
+            setParts(data.parts);
+            setDraftVersion(data.draftVersion);
+            setIsLoading(false);
+            prevChaptersRef.current = data.chapters;
+
+            // Trigger background check for remote update
+            const remoteData = await fetchRemoteManuscript(version);
+            if (remoteData && remoteData.chapters.length > 0) {
+                // simple check for updates if draftVersion matches but content size differs 
+                // or if draftVersion differs
+                const isUpdated = remoteData.draftVersion !== data.draftVersion ||
+                    remoteData.chapters.length !== data.chapters.length;
+
+                if (isUpdated) {
+                    setChapters(remoteData.chapters);
+                    setParts(remoteData.parts);
+                    setDraftVersion(remoteData.draftVersion);
+                    setNotification("Aether-Drive updated to latest archive logs.");
+                    setTimeout(() => setNotification(null), 5000);
+                }
+            }
+        };
+        loadInitial();
+    }, [version]);
+
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         const container = scrollContainerRef.current;
@@ -186,30 +216,6 @@ function ManuscriptContent() {
             )}
 
             <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
-                <div className="absolute inset-0 -z-10 opacity-30">
-                    <svg viewBox="0 0 600 600" className="animate-pulse-slow" aria-hidden="true">
-                        <defs>
-                            <pattern id="swirl-pattern" patternUnits="userSpaceOnUse" width="100" height="100">
-                                <circle cx="50" cy="50" r="50" fill="url(#gradient1)" />
-                                <circle cx="150" cy="50" r="50" fill="url(#gradient2)" />
-                                <circle cx="250" cy="50" r="50" fill="url(#gradient1)" />
-                                <circle cx="350" cy="50" r="50" fill="url(#gradient2)" />
-                                <circle cx="450" cy="50" r="50" fill="url(#gradient1)" />
-                                <circle cx="550" cy="50" r="50" fill="url(#gradient2)" />
-                            </pattern>
-                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style={{ stopColor: 'rgb(6 182 212)', stopOpacity: 1 }} />
-                                <stop offset="100%" style={{ stopColor: 'rgb(2 126 151)', stopOpacity: 1 }} />
-                            </linearGradient>
-                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style={{ stopColor: 'rgb(2 126 151)', stopOpacity: 1 }} />
-                                <stop offset="100%" style={{ stopColor: 'rgb(6 182 212)', stopOpacity: 1 }} />
-                            </linearGradient>
-                        </defs>
-                        <rect x="0" y="0" width="100%" height="100%" fill="url(#swirl-pattern)" />
-                    </svg>
-                </div>
-
                 <div className="flex flex-col items-center justify-center space-y-4">
                     <div className="text-2xl font-bold text-glow text-cyan-400">
                         Full Manuscript
@@ -220,11 +226,10 @@ function ManuscriptContent() {
                     <div className="w-full pt-4">
                         <button
                             onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
-                            className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${
-                                speakingId === fullManuscriptId
+                            className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
                                     ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
                                     : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                            }`}
+                                }`}
                         >
                             {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
                         </button>
@@ -247,11 +252,10 @@ function ManuscriptContent() {
                                 <div className="w-full pt-4">
                                     <button
                                         onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
-                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${
-                                            speakingId === fullManuscriptId
+                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
                                                 ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
                                                 : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                        }`}
+                                            }`}
                                     >
                                         {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
                                     </button>
@@ -362,11 +366,10 @@ function ManuscriptContent() {
                                                         </Link>
                                                         <button
                                                             onClick={() => toggleSpeech(chapter.id, chapter.content)}
-                                                            className={`flex items-center gap-2 px-4 py-1.5 rounded border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
-                                                                speakingId === chapter.id 
-                                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
-                                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                                            }`}
+                                                            className={`flex items-center gap-2 px-4 py-1.5 rounded border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${speakingId === chapter.id
+                                                                    ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                                    : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                                                }`}
                                                         >
                                                             {speakingId === chapter.id ? (
                                                                 <>
@@ -411,7 +414,7 @@ function ManuscriptContent() {
                         <div className="space-y-6">
                             <h3 className="text-cyan-400 text-sm font-bold uppercase tracking-[0.2em]">The Composition Loop</h3>
                             <p className="text-zinc-400 text-sm leading-relaxed">
-                                The manuscript is developed through a recursive multi-stage process. Each chapter begins as a high-fidelity narrative plan, which is then expanded into prose using specialized LLM agents adhering to strict stylistic constraints. 
+                                The manuscript is developed through a recursive multi-stage process. Each chapter begins as a high-fidelity narrative plan, which is then expanded into prose using specialized LLM agents adhering to strict stylistic constraints.
                             </p>
                             <p className="text-zinc-400 text-sm leading-relaxed">
                                 Following initial composition, the text undergoes repeated <strong>QA drills</strong>. These cycles allow us to "drill down" into specific details—cross-referencing established lore, refining atmospheric density, and ensuring the technical resonance of the Aether-Drive logs remain consistent across all 78 chapters.

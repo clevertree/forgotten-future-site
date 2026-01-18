@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     // Determine the base URL for fetching images
     const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isStatic ? 'https://clevertree.github.io' : 'https://forgottenfuturebook.com');
-    
+
     // In development or when running as a server, we might want to use the current host
     const host = request.headers.get('host');
     const protocol = host?.includes('localhost') ? 'http' : 'https';
@@ -30,7 +30,8 @@ export async function GET(request: NextRequest) {
             const parsedUrl = new URL(url);
             const whitelistedDomains = [
                 'forgottenfuturebook.com',
-                'clevertree.github.io',
+                'clevertree.github.io', // allows https://clevertree.github.io/forgotten-future-site/
+                'ffga.me',              // added per request
                 'localhost',
                 '127.0.0.1',
                 'files.paradigmthreat.net', // Maybe they use images from there too?

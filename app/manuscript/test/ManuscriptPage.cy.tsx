@@ -1,6 +1,7 @@
 
 import ManuscriptPage from '../page';
 import { AppRouterContext } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+import { SearchParamsContext } from 'next/dist/shared/lib/hooks-client-context.shared-runtime';
 
 describe('ManuscriptPage Component', () => {
   const getMockRouter = () => ({
@@ -16,7 +17,9 @@ describe('ManuscriptPage Component', () => {
     // We mount the component which will now use fetchManuscript helper
     cy.mount(
       <AppRouterContext.Provider value={getMockRouter() as any}>
-        <ManuscriptPage />
+        <SearchParamsContext.Provider value={new URLSearchParams()}>
+          <ManuscriptPage />
+        </SearchParamsContext.Provider>
       </AppRouterContext.Provider>
     );
 
@@ -37,7 +40,9 @@ describe('ManuscriptPage Component', () => {
   it('should filter chapters by section', () => {
     cy.mount(
       <AppRouterContext.Provider value={getMockRouter() as any}>
-        <ManuscriptPage />
+        <SearchParamsContext.Provider value={new URLSearchParams()}>
+          <ManuscriptPage />
+        </SearchParamsContext.Provider>
       </AppRouterContext.Provider>
     );
 

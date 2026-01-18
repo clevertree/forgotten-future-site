@@ -37,7 +37,7 @@ function FullTextContent() {
         }
 
         window.speechSynthesis.cancel();
-        
+
         // Simple markdown stripping for better TTS
         const plainText = text
             .replace(/[#*_~`\[\]()]/g, '') // remove symbols
@@ -47,7 +47,7 @@ function FullTextContent() {
         // Chunking for long text (browsers have limits per utterance)
         const chunks: string[] = [];
         const maxChunkLen = 3000;
-        
+
         if (plainText.length > maxChunkLen) {
             let currentPath = plainText;
             while (currentPath.length > 0) {
@@ -55,14 +55,14 @@ function FullTextContent() {
                     chunks.push(currentPath);
                     break;
                 }
-                
+
                 let breakIdx = currentPath.lastIndexOf('.', maxChunkLen);
                 if (breakIdx === -1 || breakIdx < maxChunkLen * 0.5) {
                     breakIdx = currentPath.lastIndexOf(' ', maxChunkLen);
                 }
-                
+
                 if (breakIdx === -1) breakIdx = maxChunkLen;
-                
+
                 chunks.push(currentPath.substring(0, breakIdx + 1));
                 currentPath = currentPath.substring(breakIdx + 1).trim();
             }
@@ -79,7 +79,7 @@ function FullTextContent() {
             }
 
             const utterance = new SpeechSynthesisUtterance(chunks[currentChunk]);
-            
+
             utterance.onstart = () => {
                 if (currentChunk === 0) setSpeakingId(id);
             };
@@ -98,7 +98,7 @@ function FullTextContent() {
 
                 if (event.error !== 'interrupted' && event.error !== 'canceled') {
                     setSpeakingId(null);
-                    
+
                     const errorType = event.error || (event as any).message || "Unknown Code";
 
                     if (event.error === 'not-allowed') {
@@ -118,7 +118,7 @@ function FullTextContent() {
             if (window.speechSynthesis.paused) {
                 window.speechSynthesis.resume();
             }
-            
+
             window.speechSynthesis.speak(utterance);
         };
 
@@ -250,31 +250,29 @@ function FullTextContent() {
                     </div>
                 </div>
             )}
-            
+
             <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
-                {draftVersion && (
-                    <div className="absolute top-0 right-0 no-print">
-                        <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/5 bg-white/5 px-3 py-1 rounded">
-                            Draft: v{draftVersion}
-                        </span>
-                    </div>
-                )}
+
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
                 <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
-              <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
-                        Optimized for Text-to-Speech
+                {draftVersion && (
+                    <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/5 bg-white/5 px-3 py-1 rounded">
+                        Draft: v{draftVersion}
                     </span>
+                )}
+                <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
+                    Optimized for Text-to-Speech
+                </span>
                 <div className="mt-6 flex flex-wrap gap-4 no-print">
                     <button
                         onClick={() => {
                             const fullText = chapters.map(c => `Chapter ${c.id}: ${c.title}. ${c.content}`).join(' ');
                             toggleSpeech(999, fullText);
                         }}
-                        className={`flex items-center gap-3 px-6 py-2 rounded-full border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${
-                            speakingId === 999 
-                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.5)]' 
+                        className={`flex items-center gap-3 px-6 py-2 rounded-full border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${speakingId === 999
+                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.5)]'
                             : 'bg-white/5 text-cyan-400 border-white/10 hover:bg-white/10'
-                        }`}
+                            }`}
                     >
                         {speakingId === 999 ? (
                             <>
@@ -295,7 +293,7 @@ function FullTextContent() {
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     All chapters of the Aether-Drive logs have been decrypted and rendered into prose.
                 </div>
-                
+
             </header>
 
             <div className="flex flex-col lg:flex-row gap-12 relative">
@@ -381,11 +379,10 @@ function FullTextContent() {
                                                 </h3>
                                                 <button
                                                     onClick={() => toggleSpeech(chapter.id, chapter.content)}
-                                                    className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${
-                                                        speakingId === chapter.id 
-                                                        ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
+                                                    className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${speakingId === chapter.id
+                                                        ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
                                                         : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                                    }`}
+                                                        }`}
                                                 >
                                                     {speakingId === chapter.id ? (
                                                         <>
@@ -425,11 +422,10 @@ function FullTextContent() {
                                         </h3>
                                         <button
                                             onClick={() => toggleSpeech(chapter.id, chapter.content)}
-                                            className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${
-                                                speakingId === chapter.id 
-                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]' 
+                                            className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${speakingId === chapter.id
+                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
                                                 : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                            }`}
+                                                }`}
                                         >
                                             {speakingId === chapter.id ? (
                                                 <>

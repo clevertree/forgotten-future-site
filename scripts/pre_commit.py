@@ -43,10 +43,24 @@ def get_repo_info(path):
     
     return version, commits
 
+def fetch_manuscripts():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    fetch_script = os.path.join(script_dir, "fetch-manuscript.py")
+    if os.path.exists(fetch_script):
+        print("Fetching latest manuscripts...")
+        try:
+            subprocess.check_call([sys.executable, fetch_script])
+        except subprocess.CalledProcessError as e:
+            print(f"Error fetching manuscripts: {e}")
+
 def update_dashboard():
     # Use absolute paths or relative to this script
     script_dir = os.path.dirname(os.path.abspath(__file__))
     site_dir = os.path.dirname(script_dir)
+    
+    # 0. Fetch latest manuscripts before anything else
+    fetch_manuscripts()
+    
     base_dir = os.path.dirname(site_dir)
     
     story_dir = os.path.join(base_dir, "ff-story")
