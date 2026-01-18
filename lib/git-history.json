@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.33",
+    "version": "v0.13.35",
     "commits": [
+      {
+        "sha": "12a0284",
+        "message": "Final sync for story",
+        "date": "2026-01-18T22:00:50.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/12a0284"
+      },
       {
         "sha": "64c43fd",
         "message": "Sync story changes and update manuscripts",
@@ -14,12 +20,6 @@
         "message": "Rename Part II to 'The Path of Fragments' and Part III to 'The Great Stalemate' and update 'The Great Update' to 'the Broadcast'",
         "date": "2026-01-18T21:46:36.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/4bee257"
-      },
-      {
-        "sha": "630bf37",
-        "message": "Restore Ch 31 tactical beats, update Ch 32 alliance logic, and rename 'The Great Update' to 'the Broadcast' across all files",
-        "date": "2026-01-18T21:39:21.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/630bf37"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,7 +51,7 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.24",
+    "version": "v0.11.25",
     "commits": [
       {
         "sha": "2f6e7ac",

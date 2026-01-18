@@ -1,3 +1,4 @@
+f451b6a Final sync for site and test fixes
 2f6e7ac Manually sync beat-complete synopses to bypass GitHub raw cache
 b2d2775 Update website parser for multiline synopses and sync latest manuscripts
 939ff0f Fix broken update feature: check remote immediately and every 60s
