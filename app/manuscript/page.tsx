@@ -156,36 +156,63 @@ function ManuscriptContent() {
     const fullManuscriptId = 9999;
     const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
 
-    const prevChaptersRef = useRef<Chapter[]>([]);
-
     useEffect(() => {
         setIsLoading(true);
-        const loadInitial = async () => {
-            const data = await fetchManuscript(version);
-            setChapters(data.chapters);
-            setParts(data.parts);
-            setDraftVersion(data.draftVersion);
-            setIsLoading(false);
-            prevChaptersRef.current = data.chapters;
+        let mounted = true;
+        let lastVersion: string | undefined;
+        let lastCount = 0;
 
-            // Trigger background check for remote update
+        const syncWithRemote = async (showNotification: boolean) => {
             const remoteData = await fetchRemoteManuscript(version);
-            if (remoteData && remoteData.chapters.length > 0) {
-                // simple check for updates if draftVersion matches but content size differs 
-                // or if draftVersion differs
-                const isUpdated = remoteData.draftVersion !== data.draftVersion ||
-                    remoteData.chapters.length !== data.chapters.length;
+            if (!mounted || !remoteData || remoteData.chapters.length === 0) return;
 
-                if (isUpdated) {
-                    setChapters(remoteData.chapters);
-                    setParts(remoteData.parts);
-                    setDraftVersion(remoteData.draftVersion);
+            const isUpdated = remoteData.draftVersion !== lastVersion ||
+                remoteData.chapters.length !== lastCount;
+
+            if (isUpdated) {
+                setChapters(remoteData.chapters);
+                setParts(remoteData.parts);
+                setDraftVersion(remoteData.draftVersion);
+
+                lastVersion = remoteData.draftVersion;
+                lastCount = remoteData.chapters.length;
+
+                if (showNotification) {
                     setNotification("Aether-Drive updated to latest archive logs.");
                     setTimeout(() => setNotification(null), 5000);
                 }
             }
         };
+
+        const loadInitial = async () => {
+            const data = await fetchManuscript(version);
+            if (!mounted) return;
+
+            setChapters(data.chapters);
+            setParts(data.parts);
+            setDraftVersion(data.draftVersion);
+
+            lastVersion = data.draftVersion;
+            lastCount = data.chapters.length;
+
+            setIsLoading(false);
+
+            // Initial silent sync - page loads will have an update within the first fetch
+            // but we don't notify the user yet.
+            await syncWithRemote(false);
+        };
+
         loadInitial();
+
+        // Check for updates every 60 seconds, only notifying if version changes after initial load
+        const intervalId = setInterval(() => {
+            syncWithRemote(true);
+        }, 60000);
+
+        return () => {
+            mounted = false;
+            clearInterval(intervalId);
+        };
     }, [version]);
 
     const scrollToSection = (id: string) => {
@@ -227,8 +254,8 @@ function ManuscriptContent() {
                         <button
                             onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
                             className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
-                                    ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                    : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                 }`}
                         >
                             {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
@@ -253,8 +280,8 @@ function ManuscriptContent() {
                                     <button
                                         onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
                                         className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
-                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                            : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                             }`}
                                     >
                                         {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
@@ -367,8 +394,8 @@ function ManuscriptContent() {
                                                         <button
                                                             onClick={() => toggleSpeech(chapter.id, chapter.content)}
                                                             className={`flex items-center gap-2 px-4 py-1.5 rounded border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${speakingId === chapter.id
-                                                                    ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                                                    : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
+                                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                                                 }`}
                                                         >
                                                             {speakingId === chapter.id ? (
@@ -417,7 +444,7 @@ function ManuscriptContent() {
                                 The manuscript is developed through a recursive multi-stage process. Each chapter begins as a high-fidelity narrative plan, which is then expanded into prose using specialized LLM agents adhering to strict stylistic constraints.
                             </p>
                             <p className="text-zinc-400 text-sm leading-relaxed">
-                                Following initial composition, the text undergoes repeated <strong>QA drills</strong>. These cycles allow us to "drill down" into specific details—cross-referencing established lore, refining atmospheric density, and ensuring the technical resonance of the Aether-Drive logs remain consistent across all 78 chapters.
+                                Following initial composition, the text undergoes repeated <strong>QA drills</strong>. These cycles allow us to "drill down" into specific details—cross-referencing established lore, refining atmospheric density, and ensuring the technical resonance of the Aether-Drive logs remain consistent across all chapters.
                             </p>
                         </div>
                         <div className="space-y-6">
@@ -432,7 +459,7 @@ function ManuscriptContent() {
                                 <div>
                                     <h4 className="text-white text-xs font-bold uppercase mb-1">13+ Core Edition</h4>
                                     <p className="text-zinc-500 text-xs leading-relaxed">
-                                        Adopts a cinematic heroic tone. It emphasizes the grand scale of the Great Fry and the tactical struggle against the Core, while limiting religious, controversial elements, and themes of cultural appropriation to keep the focus on the adventure.
+                                        Adopts a grounded, direct tone that focuses on the transition between eras. It emphasizes the technical scale of the Great Fry and the tactical struggle against the Core, while ensuring the narrative remains accessible by avoiding dense metaphorical flourishes.
                                     </p>
                                 </div>
                             </div>

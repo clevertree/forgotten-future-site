@@ -270,9 +270,6 @@ function FullTextContent() {
                         Draft: v{draftVersion}
                     </span>
                 )}
-                <span className="hidden md:block text-[10px] text-zinc-500 uppercase">
-                    Optimized for Text-to-Speech
-                </span>
                 <div className="mt-6 flex flex-wrap gap-4 no-print">
                     <button
                         onClick={() => {
@@ -301,7 +298,7 @@ function FullTextContent() {
                 </div>
                 <div className="mt-4 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
-                    All chapters of the Aether-Drive logs have been decrypted and rendered into prose.
+                    Optimized for Text-to-Speech
                 </div>
 
             </header>
