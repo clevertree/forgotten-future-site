@@ -1,3 +1,4 @@
+8335d82 fix(manuscript): fix missing dependency warning in useEffect and update git history
 355cda7 Sync: Update manuscripts and version from story push
 f116b75 UI: Simplify auto-sync alert to show version and date only
 682f315 Sync manuscript updates: 36-chapter refactor and outreach center narrative
