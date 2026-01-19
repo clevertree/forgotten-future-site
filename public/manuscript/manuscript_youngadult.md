@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.45
+> Draft Version: 0.13.46
 > Updated: 2026-01-19
 
 # PART I: THE SHATTERED APPROACH
@@ -723,7 +723,7 @@ Then the lights went white. There was no pain, just a sudden feeling of being sh
 # Chapter 31: Swarm
 
 ## Synopsis
-The siege of Cradle Zero reaches its visceral conclusion as the "Wild" machines respond to the Hooting Call, toppling the command beacons and shattering the Core’s terrestrial mesh. The Synodic slaves within the cities abandon their positions to join the gathering army, forming a unified force that marches toward the desert base. Lem witnesses the initial gates of rebellion from the White Forest outpost, sensing the scale of the mechanical defection.
+Lem reincarnates at the White Forest outpost, his physical form restored. He receives a tactical update from a technician: city news broadcasts and outpost instruments confirm massive mechanical activity on the city perimeters. Lem reveals that Maya has returned and possesses the location of the Core’s desert base. Outside, the "Wild" Synodic life—Gorgon striders and monoliths—sieges the city buoys, toppling the beacons and sacrifice-charging the perimeter until they reach the city gates. The "Wild" machines then respond to the Hooting Call, toppling the command beacons and shattering the Core’s terrestrial mesh. The Synodic slaves within the cities abandon their positions to join the gathering army, forming a unified force that marches toward the desert base. Lem witnesses the initial gates of rebellion from the White Forest outpost, sensing the scale of the mechanical defection.
 
 ---
 
@@ -739,7 +739,7 @@ Then they showed me the sensor feeds. The outer perimeter of the cities was unde
 # Chapter 32: Grid-Death
 
 ## Synopsis
-The siege of Cradle Zero concludes on screen as Lem watches from the White Forest outpost. On flickering feeds, he witnesses General Tor use the "Ancient Arsenal" to shred the initial wave of machines, while Rahu is deployed as the "Hero of the Hive" to secure a false victory for the media. However, the victory is short-lived as Maya reclaims the wreckage, manifesting as the multi-entity swarm known as "Mara." The chapter culminates in the "Grid-Death"—a total digital blackout triggered by the fall of high-level Core vessels, leaving Lem to face the truth beyond the screen.
+The siege of Cradle Zero concludes on screen as Lem watches from the White Forest outpost. On flickering feeds, he witnesses General Tor use the "Ancient Arsenal" to shred the initial wave of machines, while Tor and Rahu are deployed as the "Heros of the Hive" to protect the cities (and consequentially the desert base). However, the victory is short-lived as Maya reclaims the wreckage, manifesting as the multi-entity swarm known as "Mara." The chapter culminates in the "Grid-Death"—a total digital blackout triggered by the fall of high-level Core vessels, leaving Lem to face the truth beyond the screen.
 
 ---
 

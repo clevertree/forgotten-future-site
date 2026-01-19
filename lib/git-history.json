@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.45",
+    "version": "v0.13.47",
     "commits": [
+      {
+        "sha": "f8539d7",
+        "message": "Sync: Manuscripts with latest chapter edits",
+        "date": "2026-01-19T16:05:30.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/f8539d7"
+      },
+      {
+        "sha": "027d8bf",
+        "message": "Narrative: Prepend beats 1-3 to Chapter 31 synopsis",
+        "date": "2026-01-19T15:54:36.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/027d8bf"
+      },
       {
         "sha": "f60bb6f",
         "message": "UI: Update manuscript header with date and simplify sync alert logic",
         "date": "2026-01-19T15:45:25.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/f60bb6f"
-      },
-      {
-        "sha": "48e7f53",
-        "message": "Refactor climax to 36 chapters: Split Ch 32 into Grid-Death and Physical Zero, update Ch 34 with Outreach Center narrative",
-        "date": "2026-01-19T15:37:59.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/48e7f53"
-      },
-      {
-        "sha": "89a4dfc",
-        "message": "Refactor: Remove Hooting Call from Ch 30 and rewrite synopsis to focus on data extraction",
-        "date": "2026-01-19T15:07:37.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/89a4dfc"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.33",
+    "version": "v0.11.36",
     "commits": [
+      {
+        "sha": "355cda7",
+        "message": "Sync: Update manuscripts and version from story push",
+        "date": "2026-01-19T15:54:40.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/355cda7"
+      },
       {
         "sha": "f116b75",
         "message": "UI: Simplify auto-sync alert to show version and date only",
@@ -64,12 +70,6 @@
         "message": "Sync manuscript updates: 36-chapter refactor and outreach center narrative",
         "date": "2026-01-19T15:38:04.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/682f315"
-      },
-      {
-        "sha": "1bda07f",
-        "message": "Sync: Update manuscripts from story repo refactor",
-        "date": "2026-01-19T15:00:02.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/1bda07f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

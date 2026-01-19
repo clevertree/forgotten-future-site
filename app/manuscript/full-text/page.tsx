@@ -208,7 +208,7 @@ function FullTextContent() {
             clearTimeout(remoteCheckTimeout);
             clearInterval(intervalId);
         };
-    }, [version]);
+    }, [version, draftVersion]);
 
     // Track scroll position to save last read chapter
     useEffect(() => {
