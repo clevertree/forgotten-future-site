@@ -25,9 +25,12 @@ const LOCAL_MANUSCRIPT_PATHS: Record<ManuscriptVersion, string> = {
     'youngadult': '/manuscript/manuscript_youngadult.md'
 };
 
-export async function parseManuscript(text: string): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string }> {
+export async function parseManuscript(text: string): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string, updatedDate?: string }> {
     const versionMatch = text.match(/> Draft Version: ([\d.]+)/);
     const draftVersion = versionMatch ? versionMatch[1] : undefined;
+
+    const dateMatch = text.match(/> Updated: ([\d-]+)/);
+    const updatedDate = dateMatch ? dateMatch[1] : undefined;
 
     const segments = text.split(/\n---\n/);
 
@@ -105,11 +108,12 @@ export async function parseManuscript(text: string): Promise<{ parts: Part[], ch
     return {
         parts,
         chapters: chaptersList.sort((a, b) => a.id - b.id),
-        draftVersion
+        draftVersion,
+        updatedDate
     };
 }
 
-export async function fetchRemoteManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string } | null> {
+export async function fetchRemoteManuscript(version: ManuscriptVersion = '13plus'): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string, updatedDate?: string } | null> {
     try {
         const baseUrl = MANUSCRIPT_URLS[version];
         const url = `${baseUrl}?t=${Date.now()}`;
@@ -126,7 +130,7 @@ export async function fetchRemoteManuscript(version: ManuscriptVersion = '13plus
     }
 }
 
-export async function fetchManuscript(version: ManuscriptVersion = '13plus', forceRemote: boolean = false): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string }> {
+export async function fetchManuscript(version: ManuscriptVersion = '13plus', forceRemote: boolean = false): Promise<{ parts: Part[], chapters: Chapter[], draftVersion?: string, updatedDate?: string }> {
     try {
         if (forceRemote) {
             const remoteData = await fetchRemoteManuscript(version);

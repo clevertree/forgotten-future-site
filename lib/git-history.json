@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.43",
+    "version": "v0.13.44",
     "commits": [
+      {
+        "sha": "8d8b404",
+        "message": "Refactor climax to 36 chapters: Split Ch 32 into Grid-Death and Physical Zero, update Ch 34 with Outreach Center narrative",
+        "date": "2026-01-19T15:37:59.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/8d8b404"
+      },
       {
         "sha": "89a4dfc",
         "message": "Refactor: Remove Hooting Call from Ch 30 and rewrite synopsis to focus on data extraction",
@@ -14,12 +20,6 @@
         "message": "Refactor: Update synopses for Ch 30-32 to match tactical beat changes and fix beat numbering",
         "date": "2026-01-19T15:06:18.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/d868e91"
-      },
-      {
-        "sha": "8286567",
-        "message": "Refactor: Split Chapter 31 into 31 & 32, shift subsequent chapters, and synchronize manuscripts and metadata",
-        "date": "2026-01-19T14:59:54.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/8286567"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,7 +51,7 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.30",
+    "version": "v0.11.31",
     "commits": [
       {
         "sha": "1bda07f",

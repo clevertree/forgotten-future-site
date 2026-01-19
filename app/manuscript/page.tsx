@@ -174,13 +174,14 @@ function ManuscriptContent() {
                 setParts(remoteData.parts);
                 setDraftVersion(remoteData.draftVersion);
 
-                lastVersion = remoteData.draftVersion;
-                lastCount = remoteData.chapters.length;
-
                 if (showNotification) {
-                    setNotification("Aether-Drive updated to latest archive logs.");
+                    const versionInfo = remoteData.updatedDate ? `v${remoteData.draftVersion} (${remoteData.updatedDate})` : `v${remoteData.draftVersion}`;
+                    setNotification(`Aether-Drive Updated: ${versionInfo}`);
                     setTimeout(() => setNotification(null), 5000);
                 }
+
+                lastVersion = remoteData.draftVersion;
+                lastCount = remoteData.chapters.length;
             }
         };
 

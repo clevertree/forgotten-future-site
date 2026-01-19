@@ -1,3 +1,4 @@
+682f315 Sync manuscript updates: 36-chapter refactor and outreach center narrative
 1bda07f Sync: Update manuscripts from story repo refactor
 4cd5ee6 Sync updated manuscripts and git history from ff-story update
 17fe0b9 Cleanup git history and remove failure screenshots

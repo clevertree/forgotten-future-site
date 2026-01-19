@@ -170,20 +170,10 @@ function FullTextContent() {
         const loadManuscript = (forceRemote = false) => {
             fetchManuscript(version, forceRemote).then(data => {
                 if (data.chapters.length > 0) {
-                    if (forceRemote && prevChaptersRef.current.length > 0) {
-                        const changedChapters = data.chapters.filter((ch, index) => {
-                            const prev = prevChaptersRef.current[index];
-                            return !prev || prev.content !== ch.content || prev.title !== ch.title;
-                        });
-
-                        if (changedChapters.length > 0) {
-                            const titles = changedChapters.map(ch => `Ch ${ch.id}`).join(', ');
-                            setNotification(`Source Updated: ${titles}`);
-                            console.log(`[Manuscript] Remote update found for ${titles}`);
-                            setTimeout(() => setNotification(null), 10000);
-                        }
-                    } else if (forceRemote) {
-                        console.log(`[Manuscript] Remote sync complete (no changes)`);
+                    if (forceRemote && data.draftVersion !== draftVersion && draftVersion !== undefined) {
+                        const versionInfo = data.updatedDate ? `v${data.draftVersion} (${data.updatedDate})` : `v${data.draftVersion}`;
+                        setNotification(`Archive Updated: ${versionInfo}`);
+                        setTimeout(() => setNotification(null), 10000);
                     }
                     setChapters(data.chapters);
                     setParts(data.parts);
