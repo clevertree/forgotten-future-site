@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.40",
+    "version": "v0.13.43",
     "commits": [
       {
-        "sha": "0bf1754",
-        "message": "Updated writing strategies to reflect grounded 13+ style requirements.",
-        "date": "2026-01-19T13:30:44.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/0bf1754"
+        "sha": "89a4dfc",
+        "message": "Refactor: Remove Hooting Call from Ch 30 and rewrite synopsis to focus on data extraction",
+        "date": "2026-01-19T15:07:37.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/89a4dfc"
       },
       {
-        "sha": "80d6e5e",
-        "message": "Toned down the epic style of Chapter 10 13+ draft and updated manuscripts.",
-        "date": "2026-01-19T13:25:01.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/80d6e5e"
+        "sha": "d868e91",
+        "message": "Refactor: Update synopses for Ch 30-32 to match tactical beat changes and fix beat numbering",
+        "date": "2026-01-19T15:06:18.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/d868e91"
       },
       {
-        "sha": "e0de23c",
-        "message": "Finalized Heroic 13+ drafts for Chapters 1-34, updated Chapter 10 HyperAware beats, and synced full manuscripts.",
-        "date": "2026-01-19T13:22:31.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/e0de23c"
+        "sha": "8286567",
+        "message": "Refactor: Split Chapter 31 into 31 & 32, shift subsequent chapters, and synchronize manuscripts and metadata",
+        "date": "2026-01-19T14:59:54.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/8286567"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.27",
+    "version": "v0.11.30",
     "commits": [
+      {
+        "sha": "1bda07f",
+        "message": "Sync: Update manuscripts from story repo refactor",
+        "date": "2026-01-19T15:00:02.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/1bda07f"
+      },
       {
         "sha": "4cd5ee6",
         "message": "Sync updated manuscripts and git history from ff-story update",
@@ -64,12 +70,6 @@
         "message": "Cleanup git history and remove failure screenshots",
         "date": "2026-01-18T22:01:47.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/17fe0b9"
-      },
-      {
-        "sha": "f451b6a",
-        "message": "Final sync for site and test fixes",
-        "date": "2026-01-18T22:00:51.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/f451b6a"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
