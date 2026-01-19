@@ -1,5 +1,6 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.44
+> Draft Version: 0.13.45
+> Updated: 2026-01-19
 
 # PART I: THE SHATTERED APPROACH
 
@@ -667,7 +668,7 @@ Then the fire hit. My body was turned to ash in a heartbeat, but I wasn't gone. 
 
 # PART IV: THE FINAL TRANSMISSION
 
-*Following the orbital strike, Arlo/AI Lynn combine into the "Which Maya.". The resistance launches the final assault on the Moon. Lem reaches the Lunar Pyramid to face the Core and provide "the Broadcast" to the world.*
+*Following the orbital strike, Arlo/AI Lynn combine into the "Which Maya." The resistance launches the final assault on the Moon. Lem reaches the Lunar Pyramid to face the Core and provide "the Broadcast" to the world.*
 
 ---
 

@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.44",
+    "version": "v0.13.45",
     "commits": [
       {
-        "sha": "8d8b404",
+        "sha": "f60bb6f",
+        "message": "UI: Update manuscript header with date and simplify sync alert logic",
+        "date": "2026-01-19T15:45:25.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/f60bb6f"
+      },
+      {
+        "sha": "48e7f53",
         "message": "Refactor climax to 36 chapters: Split Ch 32 into Grid-Death and Physical Zero, update Ch 34 with Outreach Center narrative",
         "date": "2026-01-19T15:37:59.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/8d8b404"
+        "url": "https://github.com/clevertree/ff-story/commit/48e7f53"
       },
       {
         "sha": "89a4dfc",
         "message": "Refactor: Remove Hooting Call from Ch 30 and rewrite synopsis to focus on data extraction",
         "date": "2026-01-19T15:07:37.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/89a4dfc"
-      },
-      {
-        "sha": "d868e91",
-        "message": "Refactor: Update synopses for Ch 30-32 to match tactical beat changes and fix beat numbering",
-        "date": "2026-01-19T15:06:18.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/d868e91"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.31",
+    "version": "v0.11.33",
     "commits": [
+      {
+        "sha": "f116b75",
+        "message": "UI: Simplify auto-sync alert to show version and date only",
+        "date": "2026-01-19T15:45:27.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/f116b75"
+      },
+      {
+        "sha": "682f315",
+        "message": "Sync manuscript updates: 36-chapter refactor and outreach center narrative",
+        "date": "2026-01-19T15:38:04.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/682f315"
+      },
       {
         "sha": "1bda07f",
         "message": "Sync: Update manuscripts from story repo refactor",
         "date": "2026-01-19T15:00:02.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/1bda07f"
-      },
-      {
-        "sha": "4cd5ee6",
-        "message": "Sync updated manuscripts and git history from ff-story update",
-        "date": "2026-01-18T22:32:45.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/4cd5ee6"
-      },
-      {
-        "sha": "17fe0b9",
-        "message": "Cleanup git history and remove failure screenshots",
-        "date": "2026-01-18T22:01:47.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/17fe0b9"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
