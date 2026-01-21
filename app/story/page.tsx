@@ -37,10 +37,21 @@ export default function StoryPage() {
                         </p>
                     </div>
                     <div>
-                        <h3 className="text-cyan-400 text-lg mb-2 underline">The After Time (Year 1 - 24 AT)</h3>
-                        <p className="text-gray-300 leading-relaxed">
-                            The era of the 'Thousand-Year Fallacy.' While the Core claimed a millennium of peace, only ~24 years had passed. Humanity survived in scattered settlements with ~30% survivorship, while the independent Gorgons reclaimed their ancestral domains.
-                        </p>
+                        <h3 className="text-cyan-400 text-lg mb-2 underline">The After Time (Year 1 - 26 AT)</h3>
+                        <div className="space-y-4 text-gray-300 leading-relaxed text-sm">
+                            <p>
+                                After the Great Fry, 25-35% of humanity survived the transition and the subsequent collapse of global supply chains. The Core established the <strong>Thousand-Year Fallacy</strong>, rewriting history to claim the Cataclysm occurred a millennium ago to demoralize any biological resistance.
+                            </p>
+                            <p>
+                                <strong>Part II: The Path of Fragments (Year 15 AT)</strong> - Lem is restored in Cradle Zero's secret laboratories and sent North. His encounters with analog survivors in the White Forest shatter his faith in the Archivists, leading him to discover the first definitive clues of the Fallacy.
+                            </p>
+                            <p>
+                                <strong>Part III: The Great Stalemate (Year 15 - 25 AT)</strong> - The Northern Resistance is formed by Lem and the spirit of Lynn. A decade-long narrative and tactical war ensues, culminating in the Core's refusal to recognize human sovereignty and the authorizing of the orbital Pillar strikes.
+                            </p>
+                            <p>
+                                <strong>Part IV: The Final Transmission (Year 26 AT)</strong> - The terminal phase of the conflict. The fall of Cradle Zero's military leadership and Lem's final expedition to the Lunar Pyramid to broadcast the universal keys of liberation.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

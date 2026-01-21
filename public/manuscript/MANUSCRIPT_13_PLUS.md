@@ -558,6 +558,12 @@ I chose to ignore the navigation prompts of my own mind, those persistent instru
 
 ---
 
+# PART III: THE GREAT STALEMATE
+
+*During years of solitary exile, Lem tracks the expansion of the "Fire Cities" and the influence of a recycled, infinite-looping Rahu. He aligns with Arlo and a northern village practicing total electronic silence. A massive attempt to siege Cradle Zero ends in tactical failure, leading to a decade-long stalemate and a narrative war to erode the "Thousand-Year Fallacy."*
+
+---
+
 # Chapter 27: Exile
 
 ## Synopsis

@@ -1,3 +1,5 @@
+dafcb56 chore: final sync for manuscripts and version bump
+4670503 chore: sync with story repo docs and manuscripts
 54c21f3 Update manuscripts and git history
 8335d82 fix(manuscript): fix missing dependency warning in useEffect and update git history
 355cda7 Sync: Update manuscripts and version from story push
