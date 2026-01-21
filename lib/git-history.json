@@ -1,58 +1,64 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.55",
+    "version": "v0.13.62",
     "commits": [
       {
-        "sha": "bb85131",
-        "message": "Update chapter narrative beats and structural synchronization",
-        "date": "2026-01-19T22:52:03.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/bb85131"
+        "sha": "6684007",
+        "message": "chore: sync manuscripts to chapter drafts and update outstanding questions",
+        "date": "2026-01-21T15:21:00.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/6684007"
       },
       {
-        "sha": "d196f98",
-        "message": "Refactor: Merge Chapters 21 and 22, renumber subsequent chapters, and update INDEX.md",
-        "date": "2026-01-19T21:37:24.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/d196f98"
+        "sha": "5f3cf15",
+        "message": "remove mara",
+        "date": "2026-01-21T14:39:20.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/5f3cf15"
       },
       {
-        "sha": "fb03dbd",
-        "message": "Refactor: Refine Lem narrative voice and update tactical beats for Chapters 01-09 and 31-35",
-        "date": "2026-01-19T20:48:51.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/fb03dbd"
+        "sha": "58d7c38",
+        "message": "remove dups",
+        "date": "2026-01-21T14:09:10.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/58d7c38"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.14",
+    "version": "v0.9.9",
     "commits": [
       {
-        "sha": "b01a09e",
-        "message": "Update teaser prompts and README",
-        "date": "2026-01-18T21:59:30.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/b01a09e"
+        "sha": "45dc455",
+        "message": "chore: update teaser prompts",
+        "date": "2026-01-17T13:45:06.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
       },
       {
-        "sha": "1afcb96",
-        "message": "Bump version 0.9.12",
-        "date": "2026-01-18T17:38:33.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
+        "sha": "19f4a69",
+        "message": "chore: update version and commit history",
+        "date": "2026-01-16T13:33:32.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/19f4a69"
       },
       {
-        "sha": "c07a34f",
-        "message": "Bump version and update history",
-        "date": "2026-01-18T17:27:48.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/c07a34f"
+        "sha": "99672b0",
+        "message": "chore: sync metadata with 32-chapter structure",
+        "date": "2026-01-14T17:38:10.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/99672b0"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.38",
+    "version": "v0.11.39",
     "commits": [
+      {
+        "sha": "54c21f3",
+        "message": "Update manuscripts and git history",
+        "date": "2026-01-19T22:52:14.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/54c21f3"
+      },
       {
         "sha": "8335d82",
         "message": "fix(manuscript): fix missing dependency warning in useEffect and update git history",
@@ -64,12 +70,6 @@
         "message": "Sync: Update manuscripts and version from story push",
         "date": "2026-01-19T15:54:40.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/355cda7"
-      },
-      {
-        "sha": "f116b75",
-        "message": "UI: Simplify auto-sync alert to show version and date only",
-        "date": "2026-01-19T15:45:27.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/f116b75"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
