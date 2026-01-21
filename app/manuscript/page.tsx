@@ -156,6 +156,24 @@ function ManuscriptContent() {
     const fullManuscriptId = 9999;
     const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
 
+    const lastActiveRef = useRef(Date.now());
+
+    useEffect(() => {
+        const handleActivity = () => {
+            lastActiveRef.current = Date.now();
+        };
+        window.addEventListener('mousemove', handleActivity);
+        window.addEventListener('keydown', handleActivity);
+        window.addEventListener('scroll', handleActivity);
+        window.addEventListener('click', handleActivity);
+        return () => {
+            window.removeEventListener('mousemove', handleActivity);
+            window.removeEventListener('keydown', handleActivity);
+            window.removeEventListener('scroll', handleActivity);
+            window.removeEventListener('click', handleActivity);
+        };
+    }, []);
+
     useEffect(() => {
         setIsLoading(true);
         let mounted = true;
@@ -163,6 +181,11 @@ function ManuscriptContent() {
         let lastCount = 0;
 
         const syncWithRemote = async (showNotification: boolean) => {
+            // Stop fetching if user is idle (> 60s) or tab is hidden
+            const isIdle = Date.now() - lastActiveRef.current > 60000;
+            const isHidden = document.visibilityState === 'hidden';
+            if (showNotification && (isIdle || isHidden)) return;
+
             const remoteData = await fetchRemoteManuscript(version);
             if (!mounted || !remoteData || remoteData.chapters.length === 0) return;
 

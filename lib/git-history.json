@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.62",
+    "version": "v0.13.64",
     "commits": [
+      {
+        "sha": "cefc9c7",
+        "message": "Add Part III: The Great Stalemate, restructure chapters 26-46, and update plans/synopsis",
+        "date": "2026-01-21T15:28:04.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/cefc9c7"
+      },
+      {
+        "sha": "d8dcdda",
+        "message": "docs: mark website sync as completed",
+        "date": "2026-01-21T15:21:58.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/d8dcdda"
+      },
       {
         "sha": "6684007",
         "message": "chore: sync manuscripts to chapter drafts and update outstanding questions",
         "date": "2026-01-21T15:21:00.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/6684007"
-      },
-      {
-        "sha": "5f3cf15",
-        "message": "remove mara",
-        "date": "2026-01-21T14:39:20.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/5f3cf15"
-      },
-      {
-        "sha": "58d7c38",
-        "message": "remove dups",
-        "date": "2026-01-21T14:09:10.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/58d7c38"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.39",
+    "version": "v0.11.40",
     "commits": [
+      {
+        "sha": "dafcb56",
+        "message": "chore: final sync for manuscripts and version bump",
+        "date": "2026-01-21T15:22:04.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/dafcb56"
+      },
+      {
+        "sha": "4670503",
+        "message": "chore: sync with story repo docs and manuscripts",
+        "date": "2026-01-21T15:21:43.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/4670503"
+      },
       {
         "sha": "54c21f3",
         "message": "Update manuscripts and git history",
         "date": "2026-01-19T22:52:14.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/54c21f3"
-      },
-      {
-        "sha": "8335d82",
-        "message": "fix(manuscript): fix missing dependency warning in useEffect and update git history",
-        "date": "2026-01-19T16:08:02.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/8335d82"
-      },
-      {
-        "sha": "355cda7",
-        "message": "Sync: Update manuscripts and version from story push",
-        "date": "2026-01-19T15:54:40.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/355cda7"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -165,9 +165,34 @@ function FullTextContent() {
         router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
     };
 
+    const lastActiveRef = useRef(Date.now());
+
+    useEffect(() => {
+        const handleActivity = () => {
+            lastActiveRef.current = Date.now();
+        };
+        window.addEventListener('mousemove', handleActivity);
+        window.addEventListener('keydown', handleActivity);
+        window.addEventListener('scroll', handleActivity);
+        window.addEventListener('click', handleActivity);
+        return () => {
+            window.removeEventListener('mousemove', handleActivity);
+            window.removeEventListener('keydown', handleActivity);
+            window.removeEventListener('scroll', handleActivity);
+            window.removeEventListener('click', handleActivity);
+        };
+    }, []);
+
     useEffect(() => {
         setIsLoading(true);
         const loadManuscript = (forceRemote = false) => {
+            // Stop remote fetching if user is idle (> 60s) or tab is hidden
+            if (forceRemote) {
+                const isIdle = Date.now() - lastActiveRef.current > 60000;
+                const isHidden = document.visibilityState === 'hidden';
+                if (isIdle || isHidden) return;
+            }
+
             fetchManuscript(version, forceRemote).then(data => {
                 if (data.chapters.length > 0) {
                     if (forceRemote && data.draftVersion !== draftVersion && draftVersion !== undefined) {
