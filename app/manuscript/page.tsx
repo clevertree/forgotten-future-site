@@ -146,7 +146,7 @@ function ManuscriptContent() {
                 setSpeakingId(null);
             } else if (targetId) {
                 const ch = chapters.find(c => c.id === targetId);
-                if (ch) toggleSpeech(ch.id, ch.content);
+                if (ch) toggleSpeech(ch.id, ch.summary || ch.content);
             }
         };
         window.addEventListener('ff-request-tts', handleRequest);
@@ -262,28 +262,6 @@ function ManuscriptContent() {
                 onClose={() => setNotification(null)} 
             />
 
-            <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
-                <div className="flex flex-col items-center justify-center space-y-4">
-                    <div className="text-2xl font-bold text-glow text-cyan-400">
-                        Full Manuscript
-                    </div>
-                    <div className="text-[10px] text-zinc-600 italic text-center">
-                        Listen to the entire document using browser-native speech synthesis.
-                    </div>
-                    <div className="w-full pt-4">
-                        <button
-                            onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
-                            className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
-                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                }`}
-                        >
-                            {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
-                        </button>
-                    </div>
-                </div>
-            </header>
-
             <div className="flex flex-col lg:flex-row gap-12">
                 {/* Audiobook Sidebar */}
                 <aside className="lg:w-1/3 no-print order-1 lg:order-1">
@@ -389,6 +367,7 @@ function ManuscriptContent() {
                                                     chapter={chapter}
                                                     isSpeaking={speakingId === chapter.id}
                                                     onToggleSpeech={toggleSpeech}
+                                                    readMoreHref={`/manuscript/full-text?edition=${version}#chapter-${chapter.id}`}
                                                 />
                                             ))}
                                     </div>
@@ -503,18 +482,8 @@ function ManuscriptContent() {
                         />
                         <FAQItem 
                             category="story"
-                            question="Can we produce a single canonical timeline?"
-                            answer="Yes. A canonical timeline sheet is being created in docs/timeline.md covering major events from Vessel creation to the post-story era."
-                        />
-                        <FAQItem 
-                            category="story"
                             question="What cultural and religious responses emerge once the truth is broadcast?"
                             answer="There are no specific cultural responses other than the Core and its citizens being shocked. Indigenous people always knew what year it was and their cultural continuity remains unchanged."
-                        />
-                        <FAQItem 
-                            category="story"
-                            question="Final stylistic QA on Chapter 19 (White Forest) and newly renumbered chapters?"
-                            answer="[IN PROGRESS] Awaiting final pass to ensure prose consistency across the transitioned Part IV sections."
                         />
                     </div>
                 </section>

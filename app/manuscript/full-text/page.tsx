@@ -323,7 +323,7 @@ function FullTextContent() {
                 <aside className="lg:w-1/4 no-print order-1 lg:order-1">
                     <div className="glass-panel sticky top-36 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
                         <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500/60 hover:text-cyan-400 font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mb-2 border-b border-white/5 transition-colors">
-                            ← Back to List
+                            ← Back to Chapter List
                         </Link>
 
                         <div className="flex justify-between items-center mb-6 border-b border-white/10 pb-2">

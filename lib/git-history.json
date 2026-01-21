@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.42",
+    "version": "v0.11.43",
     "commits": [
+      {
+        "sha": "2ac2529",
+        "message": "Refactor: Extract reusable components, optimize manuscript polling with idle detection, and add comprehensive Cypress component tests.",
+        "date": "2026-01-21T16:07:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/2ac2529"
+      },
       {
         "sha": "3ad8d94",
         "message": "Optimize manuscript polling: stop fetching when user is idle or tab is hidden",
@@ -64,12 +70,6 @@
         "message": "Update site lore, character bios, and manuscripts for Part III restructuring",
         "date": "2026-01-21T15:28:37.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/3bbdde3"
-      },
-      {
-        "sha": "dafcb56",
-        "message": "chore: final sync for manuscripts and version bump",
-        "date": "2026-01-21T15:22:04.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/dafcb56"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

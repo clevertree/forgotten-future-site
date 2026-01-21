@@ -1,12 +1,14 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 interface Chapter {
     id: number;
     title: string;
     timestamp?: string;
     content: string;
+    summary?: string;
 }
 
 interface ChapterCardProps {
@@ -14,13 +16,15 @@ interface ChapterCardProps {
     isSpeaking: boolean;
     onToggleSpeech: (id: number, text: string) => void;
     className?: string;
+    readMoreHref?: string;
 }
 
 export const ChapterCard: React.FC<ChapterCardProps> = ({ 
     chapter, 
     isSpeaking, 
     onToggleSpeech,
-    className = ''
+    className = '',
+    readMoreHref
 }) => {
     return (
         <div
@@ -40,7 +44,7 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({
                         )}
                     </div>
                     <button
-                        onClick={() => onToggleSpeech(chapter.id, chapter.content)}
+                        onClick={() => onToggleSpeech(chapter.id, chapter.summary || chapter.content)}
                         className={`px-4 py-1.5 rounded text-[10px] font-bold uppercase tracking-widest transition-all border ${isSpeaking
                             ? 'bg-cyan-500 text-black border-cyan-500'
                             : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
@@ -49,11 +53,22 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({
                         {isSpeaking ? '⏹ Stop' : '▶ Listen'}
                     </button>
                 </div>
-                <div className="prose prose-invert prose-sm max-w-none text-zinc-400 leading-relaxed">
-                    {chapter.content.split('\n').map((para, i) => (
+                <div className="prose prose-invert prose-sm max-w-none text-zinc-400 leading-relaxed italic">
+                    {(chapter.summary || chapter.content).split('\n').map((para, i) => (
                         para.trim() && <p key={i}>{para}</p>
                     ))}
                 </div>
+                {readMoreHref && (
+                    <div className="mt-6 pt-4 border-t border-white/5 flex justify-end">
+                        <Link 
+                            href={readMoreHref}
+                            className="text-xs font-bold text-cyan-500 uppercase tracking-[0.2em] hover:text-cyan-400 transition-colors flex items-center gap-2"
+                        >
+                            Read Full Chapter
+                            <span className="text-[10px]">»</span>
+                        </Link>
+                    </div>
+                )}
             </div>
         </div>
     );
