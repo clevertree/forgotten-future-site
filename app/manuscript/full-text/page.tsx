@@ -26,7 +26,7 @@ function FullTextContent() {
         if (typeof window === 'undefined') return;
 
         if (!window.speechSynthesis) {
-            alert("Your browser does not support Text-to-Speech playback. Please try a modern browser like Chrome or Safari.");
+            alert("Your browser does not support Text-to-Speech playback. Please try a modern browser like Chrome, Edge or Safari. (Tip: Use built-in Reading Mode for the best experience)");
             return;
         }
 

@@ -1,7 +1,7 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.64",
+    "version": "v0.13.65",
     "commits": [
       {
         "sha": "cefc9c7",
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.43",
+    "version": "v0.11.44",
     "commits": [
+      {
+        "sha": "06a6acb",
+        "message": "Docs: Sync resolved and outstanding narrative questions with canonical project notes.",
+        "date": "2026-01-21T16:30:11.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/06a6acb"
+      },
       {
         "sha": "2ac2529",
         "message": "Refactor: Extract reusable components, optimize manuscript polling with idle detection, and add comprehensive Cypress component tests.",
@@ -64,12 +70,6 @@
         "message": "Optimize manuscript polling: stop fetching when user is idle or tab is hidden",
         "date": "2026-01-21T15:57:33.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/3ad8d94"
-      },
-      {
-        "sha": "3bbdde3",
-        "message": "Update site lore, character bios, and manuscripts for Part III restructuring",
-        "date": "2026-01-21T15:28:37.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/3bbdde3"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

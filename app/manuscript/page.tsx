@@ -298,6 +298,10 @@ function ManuscriptContent() {
                                 <p className="text-[10px] text-zinc-500 uppercase tracking-widest mb-3 font-bold">Recommended Text-to-Speech:</p>
                                 <ul className="text-[10px] text-zinc-600 space-y-3">
                                     <li className="flex flex-col">
+                                        <span className="text-zinc-300">• Browser Reading Mode</span>
+                                        <span>Edge and Chrome (especially ChromeOS) have built-in Reading Mode with TTS.</span>
+                                    </li>
+                                    <li className="flex flex-col">
                                         <a href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgjacajbc" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-cyan-400 underline decoration-zinc-800 underline-offset-2 transition-colors">• Read Aloud</a>
                                         <span>Chrome / Edge extension</span>
                                     </li>
