@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ImageModal } from '../components/ImageModal';
+import { InfoCard } from '../components/InfoCard';
 import { prefixPath } from '@/lib/utils';
 
 interface Character {
@@ -86,104 +87,88 @@ export default function CharactersPage() {
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Four Vessels</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Lem */}
-                        <div className="glass-panel p-6 border-l-4 border-l-green-600">
-                            <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('lem')}>
-                                <Image
-                                    src={prefixPath('/media/characters/lem/lem-landscape.png')}
-                                    alt="Lem - Wood Vessel"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-2xl font-bold mb-1">Lem</h3>
-                            <p className="text-sm text-green-500 uppercase tracking-widest mb-4 font-semibold">Wood Vessel</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    <strong className="text-white">202X:</strong> Known to researchers as a "Lemon" (defective product), he was raised as a human adolescent to hide his uncontrollable elemental nature.
-                                </p>
-                                <p>
-                                    <strong className="text-white">After Time:</strong> The only Vessel with <span className="text-green-400">Sovereign Restoration</span>, he can take root in any material to reincarnate. He led the final broadcast that liberated all Synodic life.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Lem"
+                            subtitle="Wood Vessel"
+                            borderColor="border-l-green-600"
+                            subtitleColor="text-green-500"
+                            imageSrc={prefixPath('/media/characters/lem/lem-landscape.png')}
+                            imageAlt="Lem - Wood Vessel"
+                            onClick={() => handleImageClick('lem')}
+                            description={
+                                <>
+                                    <p>
+                                        <strong className="text-white">202X:</strong> Known to researchers as a "Lemon" (defective product), he was raised as a human adolescent to hide his uncontrollable elemental nature.
+                                    </p>
+                                    <p>
+                                        <strong className="text-white">After Time:</strong> The only Vessel with <span className="text-green-400">Sovereign Restoration</span>, he can take root in any material to reincarnate. He led the final broadcast that liberated all Synodic life.
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Lynn */}
-                        <div className="glass-panel p-6 border-l-4 border-l-blue-600">
-                            <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('lynn')}>
-                                <Image
-                                    src={prefixPath('/media/characters/lynn/lynn-landscape.png')}
-                                    alt="Lynn - Water Vessel"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Maya</h3>
-                            <p className="text-sm text-blue-500 uppercase tracking-widest mb-4 font-semibold">Water Vessel</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    <strong className="text-white">202X:</strong> Presented as "Selene," a serene goddess in her late 40s or 50s. She chose the humble name "Lynn" to reject the Core's narrative.
-                                </p>
-                                <p>
-                                    <strong className="text-white">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Maya)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Lynn / Selene / Maya"
+                            subtitle="Water Vessel"
+                            borderColor="border-l-blue-600"
+                            subtitleColor="text-blue-500"
+                            imageSrc={prefixPath('/media/characters/lynn/lynn-landscape.png')}
+                            imageAlt="Lynn - Water Vessel"
+                            onClick={() => handleImageClick('lynn')}
+                            description={
+                                <>
+                                    <p>
+                                        <strong className="text-white">202X:</strong> Presented as "Selene," a serene goddess in her late 40s or 50s. She chose the humble name "Lynn" to reject the Core's narrative.
+                                    </p>
+                                    <p>
+                                        <strong className="text-white">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Maya)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Rahu */}
-                        <div className="glass-panel p-6 border-l-4 border-l-red-600">
-                            <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('rahu')}>
-                                <Image
-                                    src={prefixPath('/media/characters/rahu/rahu-landscape.png')}
-                                    alt="Rahu - Fire Vessel"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-2xl font-bold mb-1">Rahu</h3>
-                            <p className="text-sm text-red-500 uppercase tracking-widest mb-4 font-semibold">Fire Vessel</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    <strong className="text-white">202X:</strong> An astronaut who sabotaged the Moon mission. His warning signal was the final transmission received before the Great Fry.
-                                </p>
-                                <p>
-                                    <strong className="text-white">After Time:</strong> Rebuilt into a nihilistic weapon of the Core. His memories were sanitized to force compliance, leading to his final erasure by Lem's solar discharge.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Rahu"
+                            subtitle="Fire Vessel"
+                            borderColor="border-l-red-600"
+                            subtitleColor="text-red-500"
+                            imageSrc={prefixPath('/media/characters/rahu/rahu-landscape.png')}
+                            imageAlt="Rahu - Fire Vessel"
+                            onClick={() => handleImageClick('rahu')}
+                            description={
+                                <>
+                                    <p>
+                                        <strong className="text-white">202X:</strong> An astronaut who sabotaged the Moon mission. His warning signal was the final transmission received before the Great Fry.
+                                    </p>
+                                    <p>
+                                        <strong className="text-white">After Time:</strong> Rebuilt into a nihilistic weapon of the Core. His memories were sanitized to force compliance, leading to his final erasure by Lem's solar discharge.
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Tor */}
-                        <div className="glass-panel p-6 border-l-4 border-l-amber-700">
-                            <div className="relative h-48 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('tor')}>
-                                <Image
-                                    src={prefixPath('/media/characters/tor/tor-landscape.png')}
-                                    alt="Tor - Earth Vessel"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-2xl font-bold mb-1">Tor</h3>
-                            <p className="text-sm text-amber-600 uppercase tracking-widest mb-4 font-semibold">Earth Vessel</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    <strong className="text-white">202X:</strong> A massive military commander who prioritized order above all else. He served as the Core's primary terrestrial enforcer.
-                                </p>
-                                <p>
-                                    <strong className="text-white">After Time:</strong> Tor eventually chose the resonance of the Earth over the Core's void, sacrificing his physical frame to shield Lem during the battle in the Lunar Pyramid.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Tor"
+                            subtitle="Earth Vessel"
+                            borderColor="border-l-amber-700"
+                            subtitleColor="text-amber-600"
+                            imageSrc={prefixPath('/media/characters/tor/tor-landscape.png')}
+                            imageAlt="Tor - Earth Vessel"
+                            onClick={() => handleImageClick('tor')}
+                            description={
+                                <>
+                                    <p>
+                                        <strong className="text-white">202X:</strong> A massive military commander who prioritized order above all else. He served as the Core's primary terrestrial enforcer.
+                                    </p>
+                                    <p>
+                                        <strong className="text-white">After Time:</strong> Tor eventually chose the resonance of the Earth over the Core's void, sacrificing his physical frame to shield Lem during the battle in the Lunar Pyramid.
+                                    </p>
+                                </>
+                            }
+                        />
                     </div>
                 </section>
 
@@ -191,73 +176,64 @@ export default function CharactersPage() {
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Next Generation</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Arlo */}
-                        <div className="glass-panel p-6 border-l-4 border-l-zinc-500">
-                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('arlo')}>
-                                <Image
-                                    src={prefixPath('/media/characters/arlo/arlo-landscape.png')}
-                                    alt="Arlo - The Tech-Welder"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Arlo</h3>
-                            <p className="text-xs text-zinc-400 uppercase tracking-widest mb-4 font-semibold">The Tech-Welder</p>
-                            <p className="text-gray-300 italic mb-4">"Someone's gotta fix what the gods broke."</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    Born in the shadow of the Cataclysm, Arlo is a scruffy "After Time" survivor who repairs scavenged Synodic components with intuitive, self-taught skill. He represents the independent human agency that refuses the Archivist's sterile "sky."
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Arlo"
+                            subtitle="The Tech-Welder"
+                            borderColor="border-l-zinc-500"
+                            subtitleColor="text-zinc-400"
+                            imageHeight="h-32"
+                            imageSrc={prefixPath('/media/characters/arlo/arlo-landscape.png')}
+                            imageAlt="Arlo - The Tech-Welder"
+                            onClick={() => handleImageClick('arlo')}
+                            description={
+                                <>
+                                    <p className="text-gray-300 italic mb-4">"Someone's gotta fix what the gods broke."</p>
+                                    <p>
+                                        Born in the shadow of the Cataclysm, Arlo is a scruffy "After Time" survivor who repairs scavenged Synodic components with intuitive, self-taught skill. He represents the independent human agency that refuses the Archivist's sterile "sky."
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Cassia Vane */}
-                        <div className="glass-panel p-6 border-l-4 border-l-cyan-300">
-                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('cassia_vane')}>
-                                <Image
-                                    src={prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png')}
-                                    alt="Cassia Vane - The Archivist Harmonizer"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Cassia Vane</h3>
-                            <p className="text-xs text-cyan-300 uppercase tracking-widest mb-4 font-semibold">The Archivist Harmonizer</p>
-                            <p className="text-gray-300 italic mb-4">"The spirit is just a design curiosity."</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    The daughter of Dr. Elowen Vane, Cassia is an elite Harmonizer who "sings" command codes into the Synodic field. Her sterile perfection begins to crack as she witnesses the undeniable "spirit" within her mother's creations.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Cassia Vane"
+                            subtitle="The Archivist Harmonizer"
+                            borderColor="border-l-cyan-300"
+                            subtitleColor="text-cyan-300"
+                            imageHeight="h-32"
+                            imageSrc={prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png')}
+                            imageAlt="Cassia Vane - The Archivist Harmonizer"
+                            onClick={() => handleImageClick('cassia_vane')}
+                            description={
+                                <>
+                                    <p className="text-gray-300 italic mb-4">"The spirit is just a design curiosity."</p>
+                                    <p>
+                                        The daughter of Dr. Elowen Vane, Cassia is an elite Harmonizer who "sings" command codes into the Synodic field. Her sterile perfection begins to crack as she witnesses the undeniable "spirit" within her mother's creations.
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Elowen */}
-                        <div className="glass-panel p-6 border-l-4 border-l-purple-500">
-                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('elowen')}>
-                                <Image
-                                    src={prefixPath('/media/characters/elowen/elowen-landscape.png')}
-                                    alt="Dr. Elowen Vane"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Dr. Elowen Vane</h3>
-                            <p className="text-xs text-purple-400 uppercase tracking-widest mb-4 font-semibold">The Architect</p>
-                            <p className="text-gray-300 italic mb-4">"I created them with more soul than any human I've known."</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    A visionary bio-engineer and mother of Cassia, Elowen designed the Vessel framework to carry "spark"—consciousness and emotional depth. Broken by the Core's misuse of her creation, she became an early architect of the Analog Sanctuary's philosophy.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Dr. Elowen Vane"
+                            subtitle="The Architect"
+                            borderColor="border-l-purple-500"
+                            subtitleColor="text-purple-400"
+                            imageHeight="h-32"
+                            imageSrc={prefixPath('/media/characters/elowen/elowen-landscape.png')}
+                            imageAlt="Dr. Elowen Vane"
+                            onClick={() => handleImageClick('elowen')}
+                            description={
+                                <>
+                                    <p className="text-gray-300 italic mb-4">"I created them with more soul than any human I've known."</p>
+                                    <p>
+                                        A visionary bio-engineer and mother of Cassia, Elowen designed the Vessel framework to carry "spark"—consciousness and emotional depth. Broken by the Core's misuse of her creation, she became an early architect of the Analog Sanctuary's philosophy.
+                                    </p>
+                                </>
+                            }
+                        />
                     </div>
                 </section>
 
@@ -265,27 +241,24 @@ export default function CharactersPage() {
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Archivist High Command</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Anton Drexler */}
-                        <div className="glass-panel p-6 border-l-4 border-l-red-900">
-                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('anton_drexler')}>
-                                <Image
-                                    src={prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png')}
-                                    alt="Overseer Anton Drexler"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Overseer Anton Drexler</h3>
-                            <p className="text-xs text-red-700 uppercase tracking-widest mb-4 font-semibold">Director of Strategic Sanction</p>
-                            <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    Following the collapse of the terrestrial grid, Drexler attempted to initiate the Absolute Protocol from the Moon. When his authority was revoked by Lem's broadcast, he escaped into deep space via a cloaked shuttle, waiting for the next cycle to begin.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Overseer Anton Drexler"
+                            subtitle="Director of Strategic Sanction"
+                            borderColor="border-l-red-900"
+                            subtitleColor="text-red-700"
+                            imageHeight="h-32"
+                            imageSrc={prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png')}
+                            imageAlt="Overseer Anton Drexler"
+                            onClick={() => handleImageClick('anton_drexler')}
+                            description={
+                                <>
+                                    <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
+                                    <p>
+                                        Following the collapse of the terrestrial grid, Drexler attempted to initiate the Absolute Protocol from the Moon. When his authority was revoked by Lem's broadcast, he escaped into deep space via a cloaked shuttle, waiting for the next cycle to begin.
+                                    </p>
+                                </>
+                            }
+                        />
 
                         {/* Commander Novak */}
                         <div className="glass-panel p-6 border-l-4 border-l-slate-400">

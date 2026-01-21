@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.40",
+    "version": "v0.11.41",
     "commits": [
+      {
+        "sha": "3bbdde3",
+        "message": "Update site lore, character bios, and manuscripts for Part III restructuring",
+        "date": "2026-01-21T15:28:37.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/3bbdde3"
+      },
       {
         "sha": "dafcb56",
         "message": "chore: final sync for manuscripts and version bump",
@@ -64,12 +70,6 @@
         "message": "chore: sync with story repo docs and manuscripts",
         "date": "2026-01-21T15:21:43.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/4670503"
-      },
-      {
-        "sha": "54c21f3",
-        "message": "Update manuscripts and git history",
-        "date": "2026-01-19T22:52:14.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/54c21f3"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

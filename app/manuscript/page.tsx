@@ -4,6 +4,9 @@ import React, { useState, useRef, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { fetchManuscript, fetchRemoteManuscript, Chapter, Part, ManuscriptVersion } from '../../lib/manuscript';
+import { StickyNav } from '../components/StickyNav';
+import { Notification } from '../components/Notification';
+import { ChapterCard } from '../components/ChapterCard';
 
 function ManuscriptContent() {
     const searchParams = useSearchParams();
@@ -253,18 +256,10 @@ function ManuscriptContent() {
     return (
         <div className="container mx-auto px-6 py-12 relative">
             {/* Content Refresh Notification */}
-            {notification && (
-                <div className="fixed top-28 right-8 z-50 animate-in fade-in slide-in-from-top-4 duration-300">
-                    <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] font-bold text-xs uppercase tracking-widest flex items-center gap-3">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
-                        </span>
-                        {notification}
-                        <button onClick={() => setNotification(null)} className="hover:opacity-60 transition-opacity">✕</button>
-                    </div>
-                </div>
-            )}
+            <Notification 
+                message={notification} 
+                onClose={() => setNotification(null)} 
+            />
 
             <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
                 <div className="flex flex-col items-center justify-center space-y-4">
@@ -353,17 +348,11 @@ function ManuscriptContent() {
                     </div>
 
                     {/* Section Tabs */}
-                    <div className="flex flex-wrap gap-2 mb-8 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
-                        {parts.map((section) => (
-                            <button
-                                key={section.id}
-                                onClick={() => scrollToSection(section.id)}
-                                className="px-4 py-1 md:py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
-                            >
-                                {section.title}
-                            </button>
-                        ))}
-                    </div>
+                    <StickyNav 
+                        sections={parts} 
+                        top="top-20 md:top-28" 
+                        onSectionClick={scrollToSection}
+                    />
 
                     <div ref={scrollContainerRef} className="space-y-12 h-[calc(100vh)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar relative">
                         {isLoading ? (
@@ -394,50 +383,12 @@ function ManuscriptContent() {
                                     <div className="space-y-6">
                                         {section.chapters
                                             .map((chapter) => (
-                                                <div
+                                                <ChapterCard
                                                     key={chapter.id}
-                                                    id={`chapter-${chapter.id}`}
-                                                    className="glass-panel hover:border-cyan-500/50 transition-colors group scroll-mt-24"
-                                                >
-                                                    <div className="flex justify-between items-start mb-2">
-                                                        <h3 className="text-xl group-hover:text-cyan-400 transition-colors">
-                                                            Chapter {chapter.id}: {chapter.title}
-                                                        </h3>
-                                                        <span className="text-xs text-zinc-500 uppercase tracking-widest pt-1">PHASE VI DRAFT</span>
-                                                    </div>
-                                                    <p className="text-sm text-gray-400 leading-relaxed">
-                                                        {chapter.summary}
-                                                    </p>
-                                                    <div className="mt-4 flex flex-wrap gap-4 no-print items-center">
-                                                        <Link
-                                                            href={`/manuscript/full-text?edition=${version}#chapter-${chapter.id}`}
-                                                            className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em] border border-cyan-900 px-4 py-1.5 rounded hover:bg-cyan-900/20 transition-all"
-                                                        >
-                                                            Read Chapter
-                                                        </Link>
-                                                        <button
-                                                            onClick={() => toggleSpeech(chapter.id, chapter.content)}
-                                                            className={`flex items-center gap-2 px-4 py-1.5 rounded border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${speakingId === chapter.id
-                                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                                                : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
-                                                                }`}
-                                                        >
-                                                            {speakingId === chapter.id ? (
-                                                                <>
-                                                                    <span className="relative flex h-1.5 w-1.5">
-                                                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                                                                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-black"></span>
-                                                                    </span>
-                                                                    Stop Listening
-                                                                </>
-                                                            ) : (
-                                                                <>
-                                                                    <span>▶</span> AI Voice (BETA)
-                                                                </>
-                                                            )}
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                                    chapter={chapter}
+                                                    isSpeaking={speakingId === chapter.id}
+                                                    onToggleSpeech={toggleSpeech}
+                                                />
                                             ))}
                                     </div>
                                 </div>

@@ -1,3 +1,4 @@
+3ad8d94 Optimize manuscript polling: stop fetching when user is idle or tab is hidden
 3bbdde3 Update site lore, character bios, and manuscripts for Part III restructuring
 dafcb56 chore: final sync for manuscripts and version bump
 4670503 chore: sync with story repo docs and manuscripts

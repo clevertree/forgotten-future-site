@@ -1,5 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import { FAQItem } from '../components/FAQItem';
+import { StickyNav } from '../components/StickyNav';
 
 export const metadata: Metadata = {
     title: 'FAQ',
@@ -119,26 +121,13 @@ export default function FAQPage() {
             <h1 className="text-3xl md:text-5xl mb-12 text-glow uppercase tracking-tighter">DECRYPTED INTEL (FAQ)</h1>
 
             {/* Navigation Index */}
-            <div className="flex flex-wrap gap-2 mb-12 sticky top-20 md:top-28 z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print">
-                {sections.map((section) => (
-                    <a
-                        key={section.id}
-                        href={`#${section.id}`}
-                        className="px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95"
-                    >
-                        {section.title}
-                    </a>
-                ))}
-            </div>
+            <StickyNav sections={sections} top="top-20 md:top-28" />
 
             <section id="project" className="mb-20 scroll-mt-32">
                 <h2 className="text-xl md:text-2xl text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">PROJECT ARCHITECTURE</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {projectFaqs.map((faq, i) => (
-                        <div key={i} className="glass-panel p-6">
-                            <h3 className="text-lg text-cyan-400 mb-2 uppercase tracking-tighter italic">Q: {faq.q}</h3>
-                            <p className="text-gray-400 text-sm leading-relaxed">A: {faq.a}</p>
-                        </div>
+                        <FAQItem key={i} question={faq.q} answer={faq.a} category="project" />
                     ))}
                 </div>
             </section>
@@ -147,10 +136,7 @@ export default function FAQPage() {
                 <h2 className="text-xl md:text-2xl text-purple-500 mb-8 border-b border-purple-500/30 pb-2 uppercase tracking-widest">AI ETHICS & COMMANDMENTS</h2>
                 <div className="space-y-6">
                     {ethicsRules.map((rule, i) => (
-                        <div key={i} className="glass-panel p-6 border-l-2 border-l-purple-900/50">
-                            <h3 className="text-lg text-purple-400 mb-2 uppercase tracking-tighter italic font-semibold">{rule.title}</h3>
-                            <p className="text-gray-400 leading-relaxed text-sm">{rule.text}</p>
-                        </div>
+                        <FAQItem key={i} question={rule.title} answer={rule.text} category="ethics" />
                     ))}
                 </div>
             </section>
@@ -164,10 +150,7 @@ export default function FAQPage() {
                 </div>
                 <div className="space-y-6">
                     {storyFaqs.map((faq, i) => (
-                        <div key={i} className="glass-panel p-6 border-l-2 border-l-red-900/50">
-                            <h3 className="text-lg text-red-400 mb-4 uppercase tracking-tighter italic font-semibold">Q: {faq.q}</h3>
-                            <p className="text-gray-300 leading-relaxed pl-4 border-l border-white/5 text-sm">A: {faq.a}</p>
-                        </div>
+                        <FAQItem key={i} question={faq.q} answer={faq.a} category="story" />
                     ))}
                 </div>
             </section>

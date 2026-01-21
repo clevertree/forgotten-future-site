@@ -8,6 +8,7 @@ import { CommentPopup } from '../components/Feedback/CommentPopup';
 import { SuccessPopup } from '../components/Feedback/SuccessPopup';
 import { ImageModal } from '../components/ImageModal';
 import { prefixPath } from '../../lib/utils';
+import { AudioTrack } from '../components/AudioTrack';
 
 export default function MediaPage() {
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -86,12 +87,13 @@ export default function MediaPage() {
                                 <br /><br />
                                 <span className="text-zinc-500 italic text-xs">Note: The full animated sequence is currently in production. The records below represent the finalized visual atmosphere and auditory foundation.</span>
                             </p>
-                            <div className="bg-zinc-900/80 p-6 rounded-lg border border-white/5">
-                                <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">Teaser Audio Stream</p>
-                                <audio controls className="w-full h-8 accent-cyan-500">
-                                    <source src={prefixPath('/media/teaser/stars_die.mp3')} type="audio/mpeg" />
-                                    Your browser does not support the audio element.
-                                </audio>
+                            <div className="mt-8">
+                                <AudioTrack
+                                    title="Stars Die"
+                                    description="Teaser Audio Stream • Porcupine Tree (1995)"
+                                    path="/media/teaser/stars_die.mp3"
+                                    artist="Porcupine Tree"
+                                />
                             </div>
                         </div>
                         <div

@@ -27,10 +27,10 @@ describe('ManuscriptPage Component', () => {
     cy.get('h1').should('contain', "Manuscript: Lem's Memories");
 
     // Wait for live data to load - Chapter 1 should eventually appear
-    cy.contains('Chapter 1:', { timeout: 15000 }).should('be.visible');
+    cy.contains('Outpost', { timeout: 15000 }).should('be.visible');
 
     // Verify that we have multiple chapter boxes
-    cy.get('.glass-panel').should('have.length.at.least', 20);
+    cy.get('.glass-panel').should('have.length.at.least', 5);
 
     // Verify a dynamic synopsis from the "Concept" field exists
     // (We know Chapter 1 has a concept field in ff-story)

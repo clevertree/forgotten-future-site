@@ -4,6 +4,7 @@ import HeroSlideshow from './components/HeroSlideshow';
 import PwaRedirect from './components/PwaRedirect';
 import RepoStatus from './components/RepoStatus';
 import gitHistory from '@/lib/git-history.json';
+import { VesselCard } from './components/VesselCard';
 
 const prefixPath = (path: string) => {
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -125,11 +126,12 @@ export default function Home() {
                             { name: 'TOR', element: 'Earth', desc: 'A general whose obedience shattered with the Moon, now a wanderer seeking purpose.' },
                             { name: 'METAL', element: 'Order', desc: 'Shared-consciousness enforcers led by Tor and Rahu. Physically powerful, but devoid of individual spirits.' }
                         ].map((vessel) => (
-                            <div key={vessel.name} className="glass-panel text-center">
-                                <h3 className="text-xl mb-2">{vessel.name}</h3>
-                                <span className="text-xs text-cyan-500 uppercase tracking-[0.2em] mb-4 block">{vessel.element}</span>
-                                <p className="text-sm text-gray-400 leading-relaxed">{vessel.desc}</p>
-                            </div>
+                            <VesselCard
+                                key={vessel.name}
+                                name={vessel.name}
+                                element={vessel.element}
+                                description={vessel.desc}
+                            />
                         ))}
                     </div>
                 </div>

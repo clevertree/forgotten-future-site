@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.63
+> Draft Version: 0.13.64
 > Updated: 2026-01-21
 
 # PART I: THE SHATTERED APPROACH
@@ -559,6 +559,12 @@ One of the other soldiers snorted. "If the Core knows, they’ve already taken h
 I didn't say anything. I didn't promise him a thing. Myrr’s team told him the window for evacuation was closing, and they boarded a silent, glass-like craft. They didn't invite me. They just vanished into the northern shadows.
 
 Myrr wanted me to be a hero again, but I looked at the deep, green forest and realized I was done. I didn't want to be a pawn for the Core, and I didn't want to be a soldier for the rebels. I ignored the navigation prompts in my mind and walked deeper into the untouched wilderness. I wanted to be somewhere where no one could find me, where the trees were thick enough to kill the signal forever.
+
+---
+
+# PART III: THE GREAT STALEMATE
+
+*During years of solitary exile, Lem tracks the expansion of the "Fire Cities" and the influence of a recycled, infinite-looping Rahu. He aligns with Arlo and a northern village practicing total electronic silence. A massive attempt to siege Cradle Zero ends in tactical failure, leading to a decade-long stalemate and a narrative war to erode the "Thousand-Year Fallacy."*
 
 ---
 

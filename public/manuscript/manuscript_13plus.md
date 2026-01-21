@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.63
+> Draft Version: 0.13.64
 > Updated: 2026-01-21
 
 # PART I: THE SHATTERED APPROACH
@@ -555,6 +555,12 @@ I gave him no promise. I stood in a noble silence as the leaders of the flight i
 The mystery of the "Thousand-Year Fallacy" and the ghost of the woman I once loved were within my reach. But a deeper, heavier rejection had taken hold of my spirit. I was weary of their wars, their hidden identities, and their endless cycles of sacrifice. I was done being a pawn on their board of steel and shadow.
 
 I chose to ignore the navigation prompts of my own mind, those persistent instructions that urged me to play the part of the savior one more time. Instead, I turned toward the untouched wilderness, seeking a factual, unbroken silence where the high-frequency canopy would shield my soul from their demands forever.
+
+---
+
+# PART III: THE GREAT STALEMATE
+
+*During years of solitary exile, Lem tracks the expansion of the "Fire Cities" and the influence of a recycled, infinite-looping Rahu. He aligns with Arlo and a northern village practicing total electronic silence. A massive attempt to siege Cradle Zero ends in tactical failure, leading to a decade-long stalemate and a narrative war to erode the "Thousand-Year Fallacy."*
 
 ---
 
