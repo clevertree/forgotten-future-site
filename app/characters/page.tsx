@@ -102,10 +102,10 @@ export default function CharactersPage() {
                             <p className="text-sm text-green-500 uppercase tracking-widest mb-4 font-semibold">Wood Vessel</p>
                             <div className="space-y-4 text-gray-300">
                                 <p>
-                                    <strong className="text-white">202X:</strong> Appears as a hyper-observant suburban adolescent, unaware of his artificial nature until the Cataclysm forces his activation.
+                                    <strong className="text-white">202X:</strong> Known to researchers as a "Lemon" (defective product), he was raised as a human adolescent to hide his uncontrollable elemental nature.
                                 </p>
                                 <p>
-                                    <strong className="text-white">After Time:</strong> Evolves through multiple restorations, eventually inhabiting a <span className="text-green-400">Gorgon body</span>—a massive metallic head with numerous whipping arms and a green-glowing central sensor.
+                                    <strong className="text-white">After Time:</strong> The only Vessel with <span className="text-green-400">Sovereign Restoration</span>, he can take root in any material to reincarnate. He led the final broadcast that liberated all Synodic life.
                                 </p>
                             </div>
                         </div>
@@ -123,14 +123,14 @@ export default function CharactersPage() {
                                     <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
                                 </div>
                             </div>
-                            <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Mara</h3>
+                            <h3 className="text-2xl font-bold mb-1">Lynn / Selene / Maya</h3>
                             <p className="text-sm text-blue-500 uppercase tracking-widest mb-4 font-semibold">Water Vessel</p>
                             <div className="space-y-4 text-gray-300">
                                 <p>
                                     <strong className="text-white">202X:</strong> Presented as "Selene," a serene goddess in her late 40s or 50s. She chose the humble name "Lynn" to reject the Core's narrative.
                                 </p>
                                 <p>
-                                    <strong className="text-white">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Mara)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
+                                    <strong className="text-white">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Maya)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
                                 </p>
                             </div>
                         </div>
@@ -152,10 +152,10 @@ export default function CharactersPage() {
                             <p className="text-sm text-red-500 uppercase tracking-widest mb-4 font-semibold">Fire Vessel</p>
                             <div className="space-y-4 text-gray-300">
                                 <p>
-                                    <strong className="text-white">1971/202X:</strong> An astronaut with an intense fire-aura, publicly framed as a human traitor who sold out humanity to side with "invaders."
+                                    <strong className="text-white">202X:</strong> An astronaut who sabotaged the Moon mission. His warning signal was the final transmission received before the Great Fry.
                                 </p>
                                 <p>
-                                    <strong className="text-white">After Time:</strong> Rebuilt by the Core with a clinical, ultra-efficient physical form, his once-wild fire-nature now constrained by Archivist hardware.
+                                    <strong className="text-white">After Time:</strong> Rebuilt into a nihilistic weapon of the Core. His memories were sanitized to force compliance, leading to his final erasure by Lem's solar discharge.
                                 </p>
                             </div>
                         </div>
@@ -177,10 +177,10 @@ export default function CharactersPage() {
                             <p className="text-sm text-amber-600 uppercase tracking-widest mb-4 font-semibold">Earth Vessel</p>
                             <div className="space-y-4 text-gray-300">
                                 <p>
-                                    <strong className="text-white">202X:</strong> Known as "General Tor," a massive, domineering commander who believed his victories were purely human achievements.
+                                    <strong className="text-white">202X:</strong> A massive military commander who prioritized order above all else. He served as the Core's primary terrestrial enforcer.
                                 </p>
                                 <p>
-                                    <strong className="text-white">After Time:</strong> Re-installed as an immovable human-android hybrid, he leads the Archivist vanguard with a firm belief in their "optimized order."
+                                    <strong className="text-white">After Time:</strong> Tor eventually chose the resonance of the Earth over the Core's void, sacrificing his physical frame to shield Lem during the battle in the Lunar Pyramid.
                                 </p>
                             </div>
                         </div>
@@ -282,7 +282,7 @@ export default function CharactersPage() {
                             <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
                             <div className="space-y-4 text-gray-300">
                                 <p>
-                                    A relic of the Before Time, Drexler is the ultimate "Watcher." Holding the master authorization keys that can remote-control nearly any Synodic machine, he evaluates Vessels from a purely militaristic perspective. He is the cold ghost in the machine, intervening only when a mission reaches "Logical Failure."
+                                    Following the collapse of the terrestrial grid, Drexler attempted to initiate the Absolute Protocol from the Moon. When his authority was revoked by Lem's broadcast, he escaped into deep space via a cloaked shuttle, waiting for the next cycle to begin.
                                 </p>
                             </div>
                         </div>

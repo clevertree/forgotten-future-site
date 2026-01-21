@@ -1,3 +1,4 @@
+54c21f3 Update manuscripts and git history
 8335d82 fix(manuscript): fix missing dependency warning in useEffect and update git history
 355cda7 Sync: Update manuscripts and version from story push
 f116b75 UI: Simplify auto-sync alert to show version and date only

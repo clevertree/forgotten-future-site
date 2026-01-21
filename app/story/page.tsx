@@ -37,11 +37,9 @@ export default function StoryPage() {
                         </p>
                     </div>
                     <div>
-                        <h3 className="text-cyan-400 text-lg mb-2 underline">The After Time (Year 1 - 15 AT)</h3>
+                        <h3 className="text-cyan-400 text-lg mb-2 underline">The After Time (Year 1 - 24 AT)</h3>
                         <p className="text-gray-300 leading-relaxed">
-                            The emergence of the Archivists and the Thousand-Year Fallacy. This is the era of our story. Lem wanders
-                            a world of mechanical ecology, governed by the stadium-sized Monoliths—grown industrial machines that
-                            humanity mistakenly remembers as "Tripods."
+                            The era of the 'Thousand-Year Fallacy.' While the Core claimed a millennium of peace, only ~24 years had passed. Humanity survived in scattered settlements with ~30% survivorship, while the independent Gorgons reclaimed their ancestral domains.
                         </p>
                     </div>
                 </div>

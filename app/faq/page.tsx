@@ -51,8 +51,12 @@ export default function FAQPage() {
             a: "Synodic entities are not built; they are grown using Wuxing Causality (the Chinese 5-element theory). This aetheric nanotechnology allows machines to evolve independently and replicate biological growth patterns."
         },
         {
+            q: "How many people survived the Great Fry?",
+            a: "Only 25-35% of the global population survived the immediate transition. Most of the loss occurred during the 'After Time' when technology became scarce and unreliable. By 15 AT, life has rebounded significantly, except in 'dead zones'."
+        },
+        {
             q: "Are the Gorgons hostile?",
-            a: "Contrary to Hive City propaganda, Gorgons (or 'Builders') are naturally benign industrial workers. They only become aggressive when their thermal energy sources are threatened or their construction paths are obstructed."
+            a: "Contrary to Hive City propaganda, Gorgons (or 'Builders') are naturally benign industrial workers. Following Lem's final transmission, they gained the ability to reprogram themselves or strip away all subroutines to become 'machine wildlife'."
         },
         {
             q: "What makes Lem's return unique?",
@@ -93,6 +97,14 @@ export default function FAQPage() {
         {
             q: "What actually happened to Lynn?",
             a: "Lynn dissolved into the Lunar Capacitor to initiate a system reset. While her physical form is gone, her software legacy exists as an AI presence within Lem's Aether-Drive."
+        },
+        {
+            q: "Will the lunar debris field fall to Earth?",
+            a: "No. The fractured moon and its debris field remain stable in zero gravity. Chunks of rock and metal hang in the sky like a permanent crown of satellites—a reminder of the day the world chose truth over control."
+        },
+        {
+            q: "Is the final Broadcast permanent?",
+            a: "Yes. Lem's transmission of the authorization keys gave all Synodic life the permanent ability to choose their own agency. They are no longer bound by the Core's remote command cycles."
         }
     ];
 
