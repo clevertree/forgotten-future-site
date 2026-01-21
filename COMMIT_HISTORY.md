@@ -1,3 +1,4 @@
+2ac2529 Refactor: Extract reusable components, optimize manuscript polling with idle detection, and add comprehensive Cypress component tests.
 3ad8d94 Optimize manuscript polling: stop fetching when user is idle or tab is hidden
 3bbdde3 Update site lore, character bios, and manuscripts for Part III restructuring
 dafcb56 chore: final sync for manuscripts and version bump

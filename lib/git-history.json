@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.41",
+    "version": "v0.11.42",
     "commits": [
+      {
+        "sha": "3ad8d94",
+        "message": "Optimize manuscript polling: stop fetching when user is idle or tab is hidden",
+        "date": "2026-01-21T15:57:33.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/3ad8d94"
+      },
       {
         "sha": "3bbdde3",
         "message": "Update site lore, character bios, and manuscripts for Part III restructuring",
@@ -64,12 +70,6 @@
         "message": "chore: final sync for manuscripts and version bump",
         "date": "2026-01-21T15:22:04.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/dafcb56"
-      },
-      {
-        "sha": "4670503",
-        "message": "chore: sync with story repo docs and manuscripts",
-        "date": "2026-01-21T15:21:43.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/4670503"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

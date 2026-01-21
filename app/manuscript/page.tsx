@@ -7,6 +7,7 @@ import { fetchManuscript, fetchRemoteManuscript, Chapter, Part, ManuscriptVersio
 import { StickyNav } from '../components/StickyNav';
 import { Notification } from '../components/Notification';
 import { ChapterCard } from '../components/ChapterCard';
+import { FAQItem } from '../components/FAQItem';
 
 function ManuscriptContent() {
     const searchParams = useSearchParams();
@@ -447,36 +448,77 @@ function ManuscriptContent() {
                 <section id="outstanding-questions" className="mt-20 border-t border-zinc-900 pt-16 scroll-mt-24">
                     <h2 className="text-2xl font-light tracking-[0.2em] mb-12 text-zinc-100 flex items-center">
                         <span className="w-8 h-px bg-cyan-900 mr-4"></span>
-                        OUTSTANDING NARRATIVE QUESTIONS
+                        RESOLVED & OUTSTANDING NARRATIVE QUESTIONS
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="glass-panel p-6 border-zinc-900/50">
-                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Gorgon Autonomy</h3>
-                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                Following Lem's final transmission of the Core authorization keys, how will the newly liberated Gorgons establish their own social order? Will they integrate with human survivors or form an independent mechanical civilization?
-                            </p>
-                        </div>
-                        <div className="glass-panel p-6 border-zinc-900/50">
-                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Lunar Debris Stabilization</h3>
-                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                With the Capacitor Pyramid's reset blocked and the "Great Update" applied, will the lunar debris field remain in a stable orbit, or will the changes in aetheric density lead to a slow orbital decay?
-                            </p>
-                        </div>
-                        <div className="glass-panel p-6 border-zinc-900/50">
-                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">Core Remnants</h3>
-                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                Where did the surviving Core personnel (publicly known as Archivists) retreat after the fall of Cradle Zero? Are there other hidden "Cradle" facilities capable of sustaining their leadership, or is Elowen Vane truly the only "Archivist" left?
-                            </p>
-                        </div>
-                        <div className="glass-panel p-6 border-zinc-900/50">
-                            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] mb-4">The Path of Fragments</h3>
-                            <p className="text-zinc-400 text-sm leading-relaxed">
-                                What new ecosystems will emerge from the merged Wood and Water aetheric signatures across the planetary debris field? How will the "Grown" technology continue to evolve without Lem's direct influence?
-                            </p>
-                        </div>
+                        <FAQItem 
+                            category="story"
+                            question="Following Lem's final transmission of the Core authorization keys, how will the newly liberated Gorgons establish their own social order?"
+                            answer="The Gorgons and Synodic life are provided with the ability to reprogram themselves and/or remove all programming subroutines entirely, becoming 'machine wildlife' without programming. Their transition to trust will be long."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Will the lunar debris field remain in a stable orbit, or lead to a slow orbital decay?"
+                            answer="The fractured moon remains stable after the story ends. Fragments float in zero gravity above the atmosphere like satellites (as in real life)."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Where did the surviving Core personnel retreat? Are there other hidden 'Cradle' facilities?"
+                            answer="Facilities beyond Zero and Alpha are strictly classified. Only a handful of Core leaders know their locations. Speculation exists that one or more bases exist inside the Earth's Sun."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="What new ecosystems will emerge and how will 'Grown' technology continue to evolve?"
+                            answer="A big clue is given in Part II: the 5-element technology strikes a balance with nature and together they live in harmony."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Are there other 'aetheric anchors' for reincarnation that Lem or others could exploit?"
+                            answer="Lem's body only grew through the original lab in the Desert base. Attempts to rebuild him caused the lab to overgrow, but his shards were too resilient. The Core deemed the Wood Vessel unreliable."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="What is the status of Maya after the battle at the Desert base?"
+                            answer="Maya is completely dead and unable to reincarnate via Synodic technology. Her signal, along with Rahu and Tor, briefly appeared on the Aether and then faded, implying natural reincarnation."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="What becomes of Anton Drexler after the final confrontation?"
+                            answer="Anton escapes to a safe location and survives the story's events."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="How does Rahu become the lunar presence?"
+                            answer="Rahu was sent to the moon as an unwitting spy and remote-detonated. Selenites evacuated. Later, NASA seeded the moon with Synodic tech, allowing Rahu to reincarnate there beyond Core control."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Do the authorization keys granted by Lem irrevocably confer autonomy to all Synodic entities, or are they contingent and revocable?"
+                            answer="Lem provided Gorgons and Synodic life with the ability to reprogram themselves and/or remove all programming subroutines entirely. They can choose to become machine wildlife without any programming."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="How much of the human (and analog) population survives the immediate reset and the Great Fry?"
+                            answer="25-35% of life on Earth survives. Most loss occurs during the 'After Time' when technology is scarce and unreliable. By 15 AT, life has rebounded significantly, except in 'dead zones' around the Fire Cities."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Can we produce a single canonical timeline?"
+                            answer="Yes. A canonical timeline sheet is being created in docs/timeline.md covering major events from Vessel creation to the post-story era."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="What cultural and religious responses emerge once the truth is broadcast?"
+                            answer="There are no specific cultural responses other than the Core and its citizens being shocked. Indigenous people always knew what year it was and their cultural continuity remains unchanged."
+                        />
+                        <FAQItem 
+                            category="story"
+                            question="Final stylistic QA on Chapter 19 (White Forest) and newly renumbered chapters?"
+                            answer="[IN PROGRESS] Awaiting final pass to ensure prose consistency across the transitioned Part IV sections."
+                        />
                     </div>
                 </section>
-            )}
+            ) }
         </div>
     );
 }
