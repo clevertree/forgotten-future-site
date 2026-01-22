@@ -9,72 +9,197 @@ import { prefixPath } from '@/lib/utils';
 interface Character {
     id: string;
     name: string;
-    src: string;
-    alt: string;
+    category: string;
+    images: { src: string; alt: string }[];
 }
 
 const CHARACTERS: Character[] = [
-    { id: 'lem', name: 'Lem', src: prefixPath('/media/characters/lem/lem-landscape.png'), alt: 'Lem - Wood Vessel' },
-    { id: 'lem-variant', name: 'Lem (Variant)', src: prefixPath('/media/characters/lem/lem-landscape-variant.png'), alt: 'Lem - Wood Vessel (Variant)' },
-    { id: 'lem-variant2', name: 'Lem (Variant 2)', src: prefixPath('/media/characters/lem/lem-landscape-variant2.png'), alt: 'Lem - Wood Vessel (Variant 2)' },
-    { id: 'lynn', name: 'Lynn', src: prefixPath('/media/characters/lynn/lynn-landscape.png'), alt: 'Lynn - Water Vessel' },
-    { id: 'rahu', name: 'Rahu', src: prefixPath('/media/characters/rahu/rahu-landscape.png'), alt: 'Rahu - Fire Vessel' },
-    { id: 'rahu-2', name: 'Rahu (Alt)', src: prefixPath('/media/characters/rahu/rahu-landscape2.png'), alt: 'Rahu - Fire Vessel (Alt)' },
-    { id: 'tor', name: 'Tor', src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' },
-    { id: 'arlo', name: 'Arlo', src: prefixPath('/media/characters/arlo/arlo-landscape.png'), alt: 'Arlo - The Tech-Welder' },
-    { id: 'cassia_vane', name: 'Cassia Vane', src: prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png'), alt: 'Cassia Vane' },
-    { id: 'elowen', name: 'Elowen', src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' },
-    { id: 'anton_drexler', name: 'Anton Drexler', src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' },
-    { id: 'iris_novak', name: 'Iris Novak', src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
-    { id: 'myrr', name: 'Myrr', src: prefixPath('/media/characters/myrr/myrr-landscape-blonde.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
-    { id: 'vector', name: 'Vector', src: prefixPath('/media/characters/vector/vector-purge.png'), alt: 'Vector - Metal Vessel Prime' },
-    { id: 'kiran', name: 'Kiran', src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' },
-    { id: 'gorgons', name: 'Gorgons', src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
+    { 
+        id: 'lem', 
+        name: 'Lem', 
+        category: 'Vessel', 
+        images: [
+            { src: prefixPath('/media/characters/lem/lem-landscape.png'), alt: 'Lem - Wood Vessel' },
+            { src: prefixPath('/media/characters/lem/lem-landscape-variant.png'), alt: 'Lem - Wood Vessel (Variant)' },
+            { src: prefixPath('/media/characters/lem/lem-landscape-variant2.png'), alt: 'Lem - Wood Vessel (Variant 2)' }
+        ] 
+    },
+    { 
+        id: 'lynn', 
+        name: 'Lynn', 
+        category: 'Vessel', 
+        images: [
+            { src: prefixPath('/media/characters/lynn/lynn-landscape.png'), alt: 'Lynn - Water Vessel' },
+            { src: prefixPath('/media/characters/lynn/lynn-landscape2.png'), alt: 'Lynn - Water Vessel (Alt)' },
+            { src: prefixPath('/media/characters/lynn/lynn-zenith.png'), alt: 'Lynn - Zenith Form' },
+            { src: prefixPath('/media/characters/lynn/lynn-fragments.png'), alt: 'Lynn - Fragments' },
+            { src: prefixPath('/media/characters/lynn/lynn-zero.png'), alt: 'Lynn - Cradle Zero' },
+            { src: prefixPath('/media/characters/lynn/lynn-nexus.png'), alt: 'Lynn - Nexus Connection' }
+        ] 
+    },
+    { 
+        id: 'rahu', 
+        name: 'Rahu', 
+        category: 'Vessel', 
+        images: [
+            { src: prefixPath('/media/characters/rahu/rahu-landscape.png'), alt: 'Rahu - Fire Vessel' },
+            { src: prefixPath('/media/characters/rahu/rahu-landscape2.png'), alt: 'Rahu - Fire Vessel (Alt)' },
+            { src: prefixPath('/media/characters/rahu/rahu-nexus.png'), alt: 'Rahu - Nexus Form' },
+            { src: prefixPath('/media/characters/rahu/rahu-duel.png'), alt: 'Rahu - The Duel' },
+            { src: prefixPath('/media/characters/rahu/rahu-sacrifice.png'), alt: 'Rahu - Sacrifice' }
+        ] 
+    },
+    { 
+        id: 'tor', 
+        name: 'Tor', 
+        category: 'Vessel', 
+        images: [
+            { src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' }
+        ] 
+    },
+    { 
+        id: 'arlo', 
+        name: 'Arlo', 
+        category: 'Survivor', 
+        images: [
+            { src: prefixPath('/media/characters/arlo/arlo-landscape.png'), alt: 'Arlo - The Tech-Welder' },
+            { src: prefixPath('/media/characters/arlo/arlo-portrait.png'), alt: 'Arlo - Portrait' },
+            { src: prefixPath('/media/characters/arlo/arlo-landscape2.png'), alt: 'Arlo - Scavenging' },
+            { src: prefixPath('/media/characters/arlo/arlo-pillar.png'), alt: 'Arlo at the Pillar' }
+        ] 
+    },
+    { 
+        id: 'cassia_vane', 
+        name: 'Cassia Vane', 
+        category: 'Archivist', 
+        images: [
+            { src: prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png'), alt: 'Cassia Vane' },
+            { src: prefixPath('/media/characters/cassia_vane/cassia_vane_landscape2.png'), alt: 'Cassia Vane - Analytical' },
+            { src: prefixPath('/media/characters/cassia_vane/cassia-awakened.png'), alt: 'Cassia - Awakened' },
+            { src: prefixPath('/media/characters/cassia_vane/cassia-emmisary.png'), alt: 'Cassia - Core Emissary' }
+        ] 
+    },
+    { 
+        id: 'elowen', 
+        name: 'Elowen', 
+        category: 'Architect', 
+        images: [
+            { src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' }
+        ] 
+    },
+    { 
+        id: 'anton_drexler', 
+        name: 'Anton Drexler', 
+        category: 'Archivist', 
+        images: [
+            { src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' }
+        ] 
+    },
+    { 
+        id: 'iris_novak', 
+        name: 'Iris Novak', 
+        category: 'Archivist', 
+        images: [
+            { src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
+            { src: prefixPath('/media/characters/iris_novak/iris_novak-portrait.png'), alt: 'Iris Novak - Portrait' },
+            { src: prefixPath('/media/characters/iris_novak/iris_novak-reset.png'), alt: 'Iris Novak - Tactical Reset' }
+        ] 
+    },
+    { 
+        id: 'myrr', 
+        name: 'Myrr', 
+        category: 'Survivor', 
+        images: [
+            { src: prefixPath('/media/characters/myrr/myrr-landscape-blonde.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
+            { src: prefixPath('/media/characters/myrr/myrr-landscape.png'), alt: 'Myrr - Analog Core' },
+            { src: prefixPath('/media/characters/myrr/myrr-portrait.png'), alt: 'Myrr - Portrait' }
+        ] 
+    },
+    { 
+        id: 'vector', 
+        name: 'Vector', 
+        category: 'Archivist', 
+        images: [
+            { src: prefixPath('/media/characters/vector/vector-purge.png'), alt: 'Vector - Metal Vessel Prime' },
+            { src: prefixPath('/media/characters/vector/vector-wide.png'), alt: 'Vector - Command oversight' },
+            { src: prefixPath('/media/characters/vector/vector-white-forest.png'), alt: 'Vector - White Forest Breach' }
+        ] 
+    },
+    { 
+        id: 'kiran', 
+        name: 'Kiran', 
+        category: 'Archivist', 
+        images: [
+            { src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' }
+        ] 
+    },
+    { 
+        id: 'gorgons', 
+        name: 'Gorgons', 
+        category: 'Entity', 
+        images: [
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
+        ] 
+    },
 ];
 
 export default function CharactersPage() {
-    const [selectedCharacterId, setSelectedCharacterId] = useState<string | null>(null);
+    const [selectedId, setSelectedId] = useState<string | null>(null);
+    const [imageIndex, setImageIndex] = useState(0);
 
-    const selectedCharacter = selectedCharacterId
-        ? CHARACTERS.find((c) => c.id === selectedCharacterId)
+    const selectedCharacter = selectedId
+        ? CHARACTERS.find((c) => c.id === selectedId)
         : null;
 
-    const currentIndex = selectedCharacterId ? CHARACTERS.findIndex((c) => c.id === selectedCharacterId) : -1;
-
     const handleNext = () => {
-        if (currentIndex < CHARACTERS.length - 1) {
-            setSelectedCharacterId(CHARACTERS[currentIndex + 1].id);
+        if (!selectedCharacter) return;
+        if (imageIndex < selectedCharacter.images.length - 1) {
+            setImageIndex(imageIndex + 1);
         } else {
-            // Loop back to first character
-            setSelectedCharacterId(CHARACTERS[0].id);
+            // Go to next character
+            const currentIndex = CHARACTERS.findIndex((c) => c.id === selectedId);
+            const nextIndex = (currentIndex + 1) % CHARACTERS.length;
+            setSelectedId(CHARACTERS[nextIndex].id);
+            setImageIndex(0);
         }
     };
 
     const handlePrev = () => {
-        if (currentIndex > 0) {
-            setSelectedCharacterId(CHARACTERS[currentIndex - 1].id);
+        if (!selectedCharacter) return;
+        if (imageIndex > 0) {
+            setImageIndex(imageIndex - 1);
         } else {
-            // Loop to last character
-            setSelectedCharacterId(CHARACTERS[CHARACTERS.length - 1].id);
+            // Go to previous character's last image
+            const currentIndex = CHARACTERS.findIndex((c) => c.id === selectedId);
+            const prevIndex = (currentIndex - 1 + CHARACTERS.length) % CHARACTERS.length;
+            const prevItem = CHARACTERS[prevIndex];
+            setSelectedId(prevItem.id);
+            setImageIndex(prevItem.images.length - 1);
         }
     };
 
-    const handleImageClick = (id: string) => {
-        setSelectedCharacterId(id);
+    const handleImageClick = (id: string, index = 0) => {
+        setSelectedId(id);
+        setImageIndex(index);
     };
 
     const handleClose = () => {
-        setSelectedCharacterId(null);
+        setSelectedId(null);
+        setImageIndex(0);
     };
+
+    const currentImage = selectedCharacter?.images[imageIndex];
 
     return (
         <>
-            {selectedCharacter && (
+            {selectedCharacter && currentImage && (
                 <ImageModal
                     image={{
-                        src: selectedCharacter.src,
-                        alt: selectedCharacter.alt,
-                        title: selectedCharacter.name
+                        src: currentImage.src,
+                        alt: currentImage.alt,
+                        title: `${selectedCharacter.name} ${selectedCharacter.images.length > 1 ? `(${imageIndex + 1}/${selectedCharacter.images.length})` : ''}`,
+                        meta: currentImage.alt
                     }}
                     onClose={handleClose}
                     onNext={handleNext}
@@ -94,8 +219,7 @@ export default function CharactersPage() {
                             subtitle="Wood Vessel"
                             borderColor="border-l-green-600"
                             subtitleColor="text-green-500"
-                            imageSrc={prefixPath('/media/characters/lem/lem-landscape.png')}
-                            imageAlt="Lem - Wood Vessel"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'lem')?.images}
                             onClick={() => handleImageClick('lem')}
                             description={
                                 <>
@@ -115,8 +239,7 @@ export default function CharactersPage() {
                             subtitle="Water Vessel"
                             borderColor="border-l-blue-600"
                             subtitleColor="text-blue-500"
-                            imageSrc={prefixPath('/media/characters/lynn/lynn-landscape.png')}
-                            imageAlt="Lynn - Water Vessel"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'lynn')?.images}
                             onClick={() => handleImageClick('lynn')}
                             description={
                                 <>
@@ -136,8 +259,7 @@ export default function CharactersPage() {
                             subtitle="Fire Vessel"
                             borderColor="border-l-red-600"
                             subtitleColor="text-red-500"
-                            imageSrc={prefixPath('/media/characters/rahu/rahu-landscape.png')}
-                            imageAlt="Rahu - Fire Vessel"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'rahu')?.images}
                             onClick={() => handleImageClick('rahu')}
                             description={
                                 <>
@@ -157,8 +279,7 @@ export default function CharactersPage() {
                             subtitle="Earth Vessel"
                             borderColor="border-l-amber-700"
                             subtitleColor="text-amber-600"
-                            imageSrc={prefixPath('/media/characters/tor/tor-landscape.png')}
-                            imageAlt="Tor - Earth Vessel"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'tor')?.images}
                             onClick={() => handleImageClick('tor')}
                             description={
                                 <>
@@ -184,8 +305,7 @@ export default function CharactersPage() {
                             borderColor="border-l-zinc-500"
                             subtitleColor="text-zinc-400"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/characters/arlo/arlo-landscape.png')}
-                            imageAlt="Arlo - The Tech-Welder"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'arlo')?.images}
                             onClick={() => handleImageClick('arlo')}
                             description={
                                 <>
@@ -204,8 +324,7 @@ export default function CharactersPage() {
                             borderColor="border-l-cyan-300"
                             subtitleColor="text-cyan-300"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png')}
-                            imageAlt="Cassia Vane - The Archivist Harmonizer"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'cassia_vane')?.images}
                             onClick={() => handleImageClick('cassia_vane')}
                             description={
                                 <>
@@ -224,8 +343,7 @@ export default function CharactersPage() {
                             borderColor="border-l-purple-500"
                             subtitleColor="text-purple-400"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/characters/elowen/elowen-landscape.png')}
-                            imageAlt="Dr. Elowen Vane"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'elowen')?.images}
                             onClick={() => handleImageClick('elowen')}
                             description={
                                 <>
@@ -249,8 +367,7 @@ export default function CharactersPage() {
                             borderColor="border-l-red-900"
                             subtitleColor="text-red-700"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png')}
-                            imageAlt="Overseer Anton Drexler"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'anton_drexler')?.images}
                             onClick={() => handleImageClick('anton_drexler')}
                             description={
                                 <>
@@ -263,38 +380,39 @@ export default function CharactersPage() {
                         />
 
                         {/* Commander Novak */}
-                        <div className="glass-panel p-6 border-l-4 border-l-slate-400">
-                            <div className="relative h-32 mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('iris_novak')}>
-                                <Image
-                                    src={prefixPath('/media/characters/iris_novak/iris_novak-landscape.png')}
-                                    alt="Commander Iris Novak"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold mb-1">Commander Iris Novak</h3>
-                            <p className="text-xs text-slate-400 uppercase tracking-widest mb-4 font-semibold">Chief Science Officer</p>
-                            <p className="text-gray-300 italic mb-4">"The cost of the aftermath is a debt we all must pay."</p>
-                            <div className="space-y-4 text-gray-300">
-                                <p>
-                                    A career military scientist and high-level Core operative. Novak serves as the pragmatic bridge between the Vessels and the Core's leadership. Trapped by her own sense of responsibility, she remains at the heart of the system she helped create, managing the "Year 15 AT" missions with clinical precision.
-                                </p>
-                            </div>
-                        </div>
+                        <InfoCard
+                            title="Commander Iris Novak"
+                            subtitle="Chief Science Officer"
+                            borderColor="border-l-slate-400"
+                            subtitleColor="text-slate-400"
+                            imageHeight="h-32"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'iris_novak')?.images}
+                            onClick={() => handleImageClick('iris_novak')}
+                            description={
+                                <>
+                                    <p className="text-gray-300 italic mb-4">"The cost of the aftermath is a debt we all must pay."</p>
+                                    <p>
+                                        A career military scientist and high-level Core operative. Novak serves as the pragmatic bridge between the Vessels and the Core's leadership. Trapped by her own sense of responsibility, she remains at the heart of the system she helped create, managing the "Year 15 AT" missions with clinical precision.
+                                    </p>
+                                </>
+                            }
+                        />
                     </div>
                 </section>
 
                 <section className="mb-20">
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Third Path</h2>
-                    <div className="glass-panel p-8 border-l-4 border-l-orange-500 overflow-hidden relative">
-                        <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="md:w-2/3">
-                                <h3 className="text-2xl font-bold mb-1">Myrr</h3>
-                                <p className="text-sm text-orange-500 uppercase tracking-widest mb-4 font-semibold">Leader of the Analog Sanctuary</p>
-                                <p className="text-gray-300 leading-relaxed mb-4">
+                    <InfoCard
+                        layout="horizontal"
+                        title="Myrr"
+                        subtitle="Leader of the Analog Sanctuary"
+                        borderColor="border-l-orange-500"
+                        subtitleColor="text-orange-500"
+                        slideshowImages={CHARACTERS.find(c => c.id === 'myrr')?.images}
+                        onClick={() => handleImageClick('myrr')}
+                        description={
+                            <>
+                                <p className="mb-4">
                                     A weathered Pre-Fry technician who led a group into the White Forest to escape the "soul-trap" of digital technology. Myrr's look is one of high-tech antiquity—layered in copper shunts and vacuum tubes, favoring the tangible truth of the analog waveform over the encryption of the Archivists.
                                 </p>
                                 <div className="p-3 bg-orange-500/10 border-l-2 border-orange-500">
@@ -302,20 +420,9 @@ export default function CharactersPage() {
                                         Note: Myrr and many Voidsmen exhibit shock-blonde hair, a side effect of prolonged exposure and biological absorption of the White Forest's intense analog energy resonance.
                                     </p>
                                 </div>
-                            </div>
-                            <div className="md:w-1/3 relative h-48 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('myrr')}>
-                                <Image
-                                    src={prefixPath('/media/characters/myrr/myrr-landscape-blonde.png')}
-                                    alt="Myrr - Leader of the Analog Sanctuary"
-                                    fill
-                                    className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            </>
+                        }
+                    />
                 </section>
 
                 <section className="mb-20">

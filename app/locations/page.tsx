@@ -9,67 +9,133 @@ import { InfoCard } from '../components/InfoCard';
 interface Location {
     id: string;
     name: string;
-    src: string;
-    alt: string;
     category: string;
+    images: { src: string; alt: string }[];
 }
 
 const LOCATIONS: Location[] = [
-    { id: 'moon', name: 'The Moon', category: 'Celestial', src: prefixPath('/media/settings/after-time/moon.png'), alt: 'The Shattered Cradle - Lunar Fragments' },
-    { id: 'fire-city', name: 'Fire City (Cradle Zero)', category: 'Industrial', src: prefixPath('/media/settings/after-time/fire_city.png'), alt: 'Fire City - The Energy Nests' },
-    { id: 'white-forest', name: 'The White Forest', category: 'Ecological', src: prefixPath('/media/settings/after-time/white_forest.png'), alt: 'The White Forest - Mechanical-Biological Hybrid' },
-    { id: 'northern-villages', name: 'Northern Villages', category: 'Settlement', src: prefixPath('/media/settings/after-time/northern_villages.png'), alt: 'Northern Villages - Human Resistance' },
-    { id: 'megacities', name: 'The Megacities', category: 'Urban', src: prefixPath('/media/settings/after-time/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
-    { id: 'dead-zone', name: 'The Equatorial Dead Zone', category: 'Wasteland', src: prefixPath('/media/settings/after-time/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' },
-    { id: 'gorgons', name: 'Gorgon Settlements', category: 'Entity Habitat', src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgon Builders' },
-    { id: 'map1', name: 'Global Projection', category: 'Geography', src: prefixPath('/media/geography/map1.png'), alt: 'Global Map of the After Time' },
-    { id: 'map2', name: 'The Ember Basin', category: 'Geography', src: prefixPath('/media/geography/map2.png'), alt: 'Detailed Map of the Ember Basin' },
-    { id: 'map3', name: 'The High Enclave', category: 'Geography', src: prefixPath('/media/geography/map3.png'), alt: 'Topographical Map of the High Enclave' },
-    { id: 'map4', name: 'Silver Bight Coastline', category: 'Geography', src: prefixPath('/media/geography/map4.png'), alt: 'The Silver Bight and White Forest' },
-    { id: 'map5', name: 'Core Infrastructure', category: 'Geography', src: prefixPath('/media/geography/map5.png'), alt: 'Network of Cable Trails and Beacons' },
+    { 
+        id: 'moon', 
+        name: 'The Moon', 
+        category: 'Celestial', 
+        images: [{ src: prefixPath('/media/settings/after-time/moon.png'), alt: 'The Shattered Cradle - Lunar Fragments' }]
+    },
+    { 
+        id: 'fire-city', 
+        name: 'Fire City (Cradle Zero)', 
+        category: 'Industrial', 
+        images: [
+            { src: prefixPath('/media/settings/after-time/fire_city.png'), alt: 'Fire City - The Energy Nests' },
+            { src: prefixPath('/media/settings/after-time/fire_city2.png'), alt: 'Fire City - Surface Vents' },
+            { src: prefixPath('/media/settings/after-time/cradle_zero_as_fire_city.png'), alt: 'Cradle Zero as a Fire City' }
+        ]
+    },
+    { 
+        id: 'white-forest', 
+        name: 'The White Forest', 
+        category: 'Ecological', 
+        images: [
+            { src: prefixPath('/media/settings/after-time/white_forest.png'), alt: 'The White Forest - Mechanical-Biological Hybrid' },
+            { src: prefixPath('/media/settings/after-time/white_forest2.png'), alt: 'White Forest - Internal Glow' }
+        ]
+    },
+    { 
+        id: 'northern-villages', 
+        name: 'Northern Villages', 
+        category: 'Settlement', 
+        images: [
+            { src: prefixPath('/media/settings/after-time/northern_villages_ait_aman.png'), alt: 'Northern Villages - Ait Aman' },
+            { src: prefixPath('/media/settings/after-time/northern_villages.png'), alt: 'Northern Villages - Human Resistance' },
+            { src: prefixPath('/media/settings/after-time/northern_villages2.png'), alt: 'Northern Villages - Winter Settlement' }
+        ]
+    },
+    { 
+        id: 'megacities', 
+        name: 'The Megacities', 
+        category: 'Urban', 
+        images: [
+            { src: prefixPath('/media/settings/after-time/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
+            { src: prefixPath('/media/settings/after-time/megacities2.png'), alt: 'Megacities - Aerial View' }
+        ]
+    },
+    { 
+        id: 'dead-zone', 
+        name: 'The Equatorial Dead Zone', 
+        category: 'Wasteland', 
+        images: [{ src: prefixPath('/media/settings/after-time/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' }]
+    },
+    { 
+        id: 'gorgons', 
+        name: 'Gorgon Settlements', 
+        category: 'Entity Habitat', 
+        images: [
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgon Builders' },
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
+        ]
+    },
+    { id: 'map1', name: 'Global Projection', category: 'Geography', images: [{ src: prefixPath('/media/geography/map1.png'), alt: 'Global Map of the After Time' }] },
+    { id: 'map2', name: 'The Ember Basin', category: 'Geography', images: [{ src: prefixPath('/media/geography/map2.png'), alt: 'Detailed Map of the Ember Basin' }] },
+    { id: 'map3', name: 'The High Enclave', category: 'Geography', images: [{ src: prefixPath('/media/geography/map3.png'), alt: 'Topographical Map of the High Enclave' }] },
+    { id: 'map4', name: 'Silver Bight Coastline', category: 'Geography', images: [{ src: prefixPath('/media/geography/map4.png'), alt: 'The Silver Bight and White Forest' }] },
+    { id: 'map5', name: 'Core Infrastructure', category: 'Geography', images: [{ src: prefixPath('/media/geography/map5.png'), alt: 'Network of Cable Trails and Beacons' }] },
 ];
 
 export default function LocationsPage() {
     const [selectedId, setSelectedId] = useState<string | null>(null);
+    const [imageIndex, setImageIndex] = useState(0);
 
     const selectedItem = selectedId
         ? LOCATIONS.find((l) => l.id === selectedId)
         : null;
 
-    const currentIndex = selectedId ? LOCATIONS.findIndex((l) => l.id === selectedId) : -1;
-
     const handleNext = () => {
-        if (currentIndex < LOCATIONS.length - 1) {
-            setSelectedId(LOCATIONS[currentIndex + 1].id);
+        if (!selectedItem) return;
+        if (imageIndex < selectedItem.images.length - 1) {
+            setImageIndex(imageIndex + 1);
         } else {
-            setSelectedId(LOCATIONS[0].id);
+            // Go to next location
+            const currentIndex = LOCATIONS.findIndex((l) => l.id === selectedId);
+            const nextIndex = (currentIndex + 1) % LOCATIONS.length;
+            setSelectedId(LOCATIONS[nextIndex].id);
+            setImageIndex(0);
         }
     };
 
     const handlePrev = () => {
-        if (currentIndex > 0) {
-            setSelectedId(LOCATIONS[currentIndex - 1].id);
+        if (!selectedItem) return;
+        if (imageIndex > 0) {
+            setImageIndex(imageIndex - 1);
         } else {
-            setSelectedId(LOCATIONS[LOCATIONS.length - 1].id);
+            // Go to previous location's last image
+            const currentIndex = LOCATIONS.findIndex((l) => l.id === selectedId);
+            const prevIndex = (currentIndex - 1 + LOCATIONS.length) % LOCATIONS.length;
+            const prevItem = LOCATIONS[prevIndex];
+            setSelectedId(prevItem.id);
+            setImageIndex(prevItem.images.length - 1);
         }
     };
 
-    const handleImageClick = (id: string) => {
+    const handleImageClick = (id: string, index = 0) => {
         setSelectedId(id);
+        setImageIndex(index);
     };
 
     const handleClose = () => {
         setSelectedId(null);
+        setImageIndex(0);
     };
+
+    const currentImage = selectedItem?.images[imageIndex];
 
     return (
         <>
-            {selectedItem && (
+            {selectedItem && currentImage && (
                 <ImageModal
                     image={{
-                        src: selectedItem.src,
-                        alt: selectedItem.alt,
-                        title: selectedItem.name
+                        src: currentImage.src,
+                        alt: currentImage.alt,
+                        title: `${selectedItem.name} ${selectedItem.images.length > 1 ? `(${imageIndex + 1}/${selectedItem.images.length})` : ''}`,
+                        meta: currentImage.alt
                     }}
                     onClose={handleClose}
                     onNext={handleNext}
@@ -89,8 +155,7 @@ export default function LocationsPage() {
                             subtitle="The Shattered Cradle"
                             borderColor="border-l-slate-400"
                             subtitleColor="text-slate-400"
-                            imageSrc={prefixPath('/media/settings/after-time/moon.png')}
-                            imageAlt="The Moon - The Shattered Cradle"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'moon')?.images}
                             onClick={() => handleImageClick('moon')}
                             description={
                                 <p>
@@ -105,8 +170,7 @@ export default function LocationsPage() {
                             subtitle="The Energy Nests"
                             borderColor="border-l-red-600"
                             subtitleColor="text-red-500"
-                            imageSrc={prefixPath('/media/settings/after-time/fire_city.png')}
-                            imageAlt="Fire City (Cradle Zero)"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'fire-city')?.images}
                             onClick={() => handleImageClick('fire-city')}
                             description={
                                 <p>
@@ -121,8 +185,7 @@ export default function LocationsPage() {
                             subtitle="Analog Sanctuary"
                             borderColor="border-l-green-600"
                             subtitleColor="text-green-500"
-                            imageSrc={prefixPath('/media/settings/after-time/white_forest.png')}
-                            imageAlt="The White Forest"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'white-forest')?.images}
                             onClick={() => handleImageClick('white-forest')}
                             description={
                                 <p>
@@ -137,8 +200,7 @@ export default function LocationsPage() {
                             subtitle="Archivist Control Hubs"
                             borderColor="border-l-blue-400"
                             subtitleColor="text-blue-400"
-                            imageSrc={prefixPath('/media/settings/after-time/megacities.png')}
-                            imageAlt="The Megacities"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'megacities')?.images}
                             onClick={() => handleImageClick('megacities')}
                             description={
                                 <p>
@@ -156,8 +218,7 @@ export default function LocationsPage() {
                             borderColor="border-l-amber-600"
                             subtitleColor="text-amber-500"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/settings/after-time/northern_villages.png')}
-                            imageAlt="Northern Villages"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'northern-villages')?.images}
                             onClick={() => handleImageClick('northern-villages')}
                             description={
                                 <p className="text-sm">
@@ -173,8 +234,7 @@ export default function LocationsPage() {
                             borderColor="border-l-zinc-700"
                             subtitleColor="text-zinc-500"
                             imageHeight="h-32"
-                            imageSrc={prefixPath('/media/settings/after-time/dead_zone.png')}
-                            imageAlt="Equatorial Dead Zone"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'dead-zone')?.images}
                             onClick={() => handleImageClick('dead-zone')}
                             description={
                                 <p className="text-sm">
@@ -193,8 +253,7 @@ export default function LocationsPage() {
                         subtitle="Mechanical Entities"
                         borderColor="border-l-violet-500"
                         subtitleColor="text-violet-400"
-                        imageSrc={prefixPath('/media/entities/gorgons/gorgons-landscape.png')}
-                        imageAlt="Gorgons - The Builders"
+                        slideshowImages={LOCATIONS.find(l => l.id === 'gorgons')?.images}
                         onClick={() => handleImageClick('gorgons')}
                         description={
                             <>
@@ -218,23 +277,24 @@ export default function LocationsPage() {
                         {['map1', 'map2', 'map3', 'map4', 'map5'].map((mapId) => {
                             const map = LOCATIONS.find(l => l.id === mapId);
                             if (!map) return null;
+                            const firstImage = map.images[0];
                             return (
                                 <div 
                                     key={mapId}
                                     className="group relative cursor-pointer overflow-hidden border border-cyan-500/20 hover:border-cyan-400 transition-all aspect-square bg-slate-900"
                                     onClick={() => handleImageClick(mapId)}
-                            >
-                                <Image
-                                    src={map.src}
-                                    alt={map.alt}
-                                    fill
-                                    className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
-                                />
-                                <div className="absolute inset-x-0 bottom-0 p-2 bg-black/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
-                                    <p className="text-[10px] uppercase tracking-tighter text-cyan-400 font-bold">{map.name}</p>
+                                >
+                                    <Image
+                                        src={firstImage.src}
+                                        alt={firstImage.alt}
+                                        fill
+                                        className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                                    />
+                                    <div className="absolute inset-x-0 bottom-0 p-2 bg-black/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                                        <p className="text-[10px] uppercase tracking-tighter text-cyan-400 font-bold">{map.name}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        );
+                            );
                         })}
                     </div>
                     <div className="mt-6 p-4 border border-l-4 border-cyan-500/20 border-l-cyan-500 bg-cyan-950/20">
