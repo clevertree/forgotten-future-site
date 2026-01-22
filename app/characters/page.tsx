@@ -26,7 +26,9 @@ const CHARACTERS: Character[] = [
     { id: 'elowen', name: 'Elowen', src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' },
     { id: 'anton_drexler', name: 'Anton Drexler', src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' },
     { id: 'iris_novak', name: 'Iris Novak', src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
-    { id: 'myrr', name: 'Myrr', src: prefixPath('/media/characters/myrr/myrr-landscape.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
+    { id: 'myrr', name: 'Myrr', src: prefixPath('/media/characters/myrr/myrr-landscape-blonde.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
+    { id: 'vector', name: 'Vector', src: prefixPath('/media/characters/vector/vector-purge.png'), alt: 'Vector - Metal Vessel Prime' },
+    { id: 'kiran', name: 'Kiran', src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' },
     { id: 'gorgons', name: 'Gorgons', src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
 ];
 
@@ -292,13 +294,18 @@ export default function CharactersPage() {
                             <div className="md:w-2/3">
                                 <h3 className="text-2xl font-bold mb-1">Myrr</h3>
                                 <p className="text-sm text-orange-500 uppercase tracking-widest mb-4 font-semibold">Leader of the Analog Sanctuary</p>
-                                <p className="text-gray-300 leading-relaxed">
+                                <p className="text-gray-300 leading-relaxed mb-4">
                                     A weathered Pre-Fry technician who led a group into the White Forest to escape the "soul-trap" of digital technology. Myrr's look is one of high-tech antiquity—layered in copper shunts and vacuum tubes, favoring the tangible truth of the analog waveform over the encryption of the Archivists.
                                 </p>
+                                <div className="p-3 bg-orange-500/10 border-l-2 border-orange-500">
+                                    <p className="text-xs text-orange-200 italic">
+                                        Note: Myrr and many Voidsmen exhibit shock-blonde hair, a side effect of prolonged exposure and biological absorption of the White Forest's intense analog energy resonance.
+                                    </p>
+                                </div>
                             </div>
                             <div className="md:w-1/3 relative h-48 overflow-hidden rounded bg-black/40 cursor-pointer group" onClick={() => handleImageClick('myrr')}>
                                 <Image
-                                    src={prefixPath('/media/characters/myrr/myrr-landscape.png')}
+                                    src={prefixPath('/media/characters/myrr/myrr-landscape-blonde.png')}
                                     alt="Myrr - Leader of the Analog Sanctuary"
                                     fill
                                     className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
@@ -323,6 +330,43 @@ export default function CharactersPage() {
                         <p>
                             This contrast defines the After Time interface: the "dirt" of independent survivors like Arlo, the "analog waves" of Myrr's sanctuary, and the "sterile sky" of Cassia Vane's Archivist Order.
                         </p>
+                    </div>
+                </section>
+
+                <section className="mb-20">
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Technocratic Order</h2>
+                    <div className="grid md:grid-cols-2 gap-12">
+                        {/* Vector */}
+                        <InfoCard
+                            title="Vector"
+                            subtitle="Metal Vessel Prime"
+                            borderColor="border-l-zinc-400"
+                            subtitleColor="text-zinc-400"
+                            imageSrc={prefixPath('/media/characters/vector/vector-purge.png')}
+                            imageAlt="Vector"
+                            onClick={() => handleImageClick('vector')}
+                            description={
+                                <p>
+                                    A high-tier Metal Vessel designed for tactical oversight. Unlike the more emotional Vessels, Vector operates with a cold, absolute adherence to the Core's optimization parameters. He is the shadow that ensures the "New Hero" never deviates from the script.
+                                </p>
+                            }
+                        />
+
+                        {/* Kiran */}
+                        <InfoCard
+                            title="Kiran"
+                            subtitle="Hive Engineer"
+                            borderColor="border-l-blue-400"
+                            subtitleColor="text-blue-300"
+                            imageSrc={prefixPath('/media/characters/kiran/kiran.png')}
+                            imageAlt="Kiran"
+                            onClick={() => handleImageClick('kiran')}
+                            description={
+                                <p>
+                                    A former resident of Ait-Aman who chose the path of the Core. Kiran represents the modern citizen—grateful for the sterile safety of the Megacities and convinced that the old world's "grit" was a disease to be cured by progress.
+                                </p>
+                            }
+                        />
                     </div>
                 </section>
             </div>

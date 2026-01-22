@@ -22,6 +22,11 @@ const LOCATIONS: Location[] = [
     { id: 'megacities', name: 'The Megacities', category: 'Urban', src: prefixPath('/media/settings/after-time/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
     { id: 'dead-zone', name: 'The Equatorial Dead Zone', category: 'Wasteland', src: prefixPath('/media/settings/after-time/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' },
     { id: 'gorgons', name: 'Gorgon Settlements', category: 'Entity Habitat', src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgon Builders' },
+    { id: 'map1', name: 'Global Projection', category: 'Geography', src: prefixPath('/media/geography/map1.png'), alt: 'Global Map of the After Time' },
+    { id: 'map2', name: 'The Ember Basin', category: 'Geography', src: prefixPath('/media/geography/map2.png'), alt: 'Detailed Map of the Ember Basin' },
+    { id: 'map3', name: 'The High Enclave', category: 'Geography', src: prefixPath('/media/geography/map3.png'), alt: 'Topographical Map of the High Enclave' },
+    { id: 'map4', name: 'Silver Bight Coastline', category: 'Geography', src: prefixPath('/media/geography/map4.png'), alt: 'The Silver Bight and White Forest' },
+    { id: 'map5', name: 'Core Infrastructure', category: 'Geography', src: prefixPath('/media/geography/map5.png'), alt: 'Network of Cable Trails and Beacons' },
 ];
 
 export default function LocationsPage() {
@@ -205,6 +210,38 @@ export default function LocationsPage() {
                             </>
                         }
                     />
+                </section>
+
+                <section className="mb-20">
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Geography & Strategic Maps</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        {['map1', 'map2', 'map3', 'map4', 'map5'].map((mapId) => {
+                            const map = LOCATIONS.find(l => l.id === mapId);
+                            if (!map) return null;
+                            return (
+                                <div 
+                                    key={mapId}
+                                    className="group relative cursor-pointer overflow-hidden border border-cyan-500/20 hover:border-cyan-400 transition-all aspect-square bg-slate-900"
+                                    onClick={() => handleImageClick(mapId)}
+                            >
+                                <Image
+                                    src={map.src}
+                                    alt={map.alt}
+                                    fill
+                                    className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 p-2 bg-black/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                                    <p className="text-[10px] uppercase tracking-tighter text-cyan-400 font-bold">{map.name}</p>
+                                </div>
+                            </div>
+                        );
+                        })}
+                    </div>
+                    <div className="mt-6 p-4 border border-l-4 border-cyan-500/20 border-l-cyan-500 bg-cyan-950/20">
+                        <p className="text-sm text-cyan-200/80 italic">
+                            Strategic cartography recovered from the Archivist network, detailing the three primary zones: the Ember Basin, the High Enclave, and the Silver Bight.
+                        </p>
+                    </div>
                 </section>
 
             </div>

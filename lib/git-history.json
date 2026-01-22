@@ -1,75 +1,75 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.65",
+    "version": "v0.13.76",
     "commits": [
       {
-        "sha": "cefc9c7",
-        "message": "Add Part III: The Great Stalemate, restructure chapters 26-46, and update plans/synopsis",
-        "date": "2026-01-21T15:28:04.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/cefc9c7"
+        "sha": "4063eb1",
+        "message": "Narrative: Clarify Vector's role in Chapter 14 purge",
+        "date": "2026-01-22T20:59:18.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/4063eb1"
       },
       {
-        "sha": "d8dcdda",
-        "message": "docs: mark website sync as completed",
-        "date": "2026-01-21T15:21:58.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/d8dcdda"
+        "sha": "afe28d2",
+        "message": "Refactor map prompt for elemental resonance and update world-building documents",
+        "date": "2026-01-22T20:02:06.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/afe28d2"
       },
       {
-        "sha": "6684007",
-        "message": "chore: sync manuscripts to chapter drafts and update outstanding questions",
-        "date": "2026-01-21T15:21:00.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/6684007"
+        "sha": "d874392",
+        "message": "renumbered to 53",
+        "date": "2026-01-22T17:15:41.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/d874392"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
   },
   "ff-teaser": {
     "name": "Teaser",
-    "version": "v0.9.9",
+    "version": "v0.9.14",
     "commits": [
       {
-        "sha": "45dc455",
-        "message": "chore: update teaser prompts",
-        "date": "2026-01-17T13:45:06.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/45dc455"
+        "sha": "41736dd",
+        "message": "Content: Update outro concepts and prompts.",
+        "date": "2026-01-21T16:54:49.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/41736dd"
       },
       {
-        "sha": "19f4a69",
-        "message": "chore: update version and commit history",
-        "date": "2026-01-16T13:33:32.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/19f4a69"
+        "sha": "b01a09e",
+        "message": "Update teaser prompts and README",
+        "date": "2026-01-18T21:59:30.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/b01a09e"
       },
       {
-        "sha": "99672b0",
-        "message": "chore: sync metadata with 32-chapter structure",
-        "date": "2026-01-14T17:38:10.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/99672b0"
+        "sha": "1afcb96",
+        "message": "Bump version 0.9.12",
+        "date": "2026-01-18T17:38:33.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.44",
+    "version": "v0.11.47",
     "commits": [
       {
-        "sha": "06a6acb",
-        "message": "Docs: Sync resolved and outstanding narrative questions with canonical project notes.",
-        "date": "2026-01-21T16:30:11.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/06a6acb"
+        "sha": "9bd8de7",
+        "message": "Update manuscript and dashboard for 52-chapter structure",
+        "date": "2026-01-22T14:20:49.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/9bd8de7"
       },
       {
-        "sha": "2ac2529",
-        "message": "Refactor: Extract reusable components, optimize manuscript polling with idle detection, and add comprehensive Cypress component tests.",
-        "date": "2026-01-21T16:07:59.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/2ac2529"
+        "sha": "ca04f2f",
+        "message": "docs: add browser reading mode recommendation for tts",
+        "date": "2026-01-21T21:10:38.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/ca04f2f"
       },
       {
-        "sha": "3ad8d94",
-        "message": "Optimize manuscript polling: stop fetching when user is idle or tab is hidden",
-        "date": "2026-01-21T15:57:33.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/3ad8d94"
+        "sha": "de08928",
+        "message": "Refactor: Manuscript page to show synopses with 'Read Full Chapter' links, update ChapterCard UI.",
+        "date": "2026-01-21T16:53:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/de08928"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -1,3 +1,4 @@
+9bd8de7 Update manuscript and dashboard for 52-chapter structure
 ca04f2f docs: add browser reading mode recommendation for tts
 de08928 Refactor: Manuscript page to show synopses with 'Read Full Chapter' links, update ChapterCard UI.
 06a6acb Docs: Sync resolved and outstanding narrative questions with canonical project notes.
