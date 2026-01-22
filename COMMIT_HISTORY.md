@@ -1,3 +1,4 @@
+ca04f2f docs: add browser reading mode recommendation for tts
 de08928 Refactor: Manuscript page to show synopses with 'Read Full Chapter' links, update ChapterCard UI.
 06a6acb Docs: Sync resolved and outstanding narrative questions with canonical project notes.
 2ac2529 Refactor: Extract reusable components, optimize manuscript polling with idle detection, and add comprehensive Cypress component tests.
