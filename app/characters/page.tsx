@@ -54,7 +54,10 @@ const CHARACTERS: Character[] = [
         name: 'Tor', 
         category: 'Vessel', 
         images: [
-            { src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' }
+            { src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' },
+            { src: prefixPath('/media/characters/tor/tor-ambush.png'), alt: 'Tor - Ambush' },
+            { src: prefixPath('/media/characters/tor/tor-descent.png'), alt: 'Tor - Descent' },
+            { src: prefixPath('/media/characters/tor/tor-nexus.png'), alt: 'Tor - Nexus' }
         ] 
     },
     { 

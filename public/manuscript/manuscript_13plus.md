@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.77
+> Draft Version: 0.13.79
 > Updated: 2026-01-22
 
 # PART I: THE LUNAR MISSION
@@ -184,6 +184,12 @@ Then the blue spheres rose from the silence of the gullies. They moved like biol
 
 ---
 
+# PART II: THE FALL AND FRAGMENTS
+
+*The assault on Cradle Prime ends in a devastating reset, shattering Lem's physical form but awakening his independent consciousness.*
+
+---
+
 # Chapter : Sacrifice
 
 ## Synopsis
@@ -311,6 +317,12 @@ I felt a sudden surge of power. It wasn't an invasion; it was an override. My bo
 I saw the "Welcoming Light"—the trap the Core uses to lure us back to their labs. I ignored it. I looked back at the chamber one last time. I saw the Moon Base being reclaimed. I saw them lead Rahu away into the dark. I saw Tor on the ground, his command being taken by Iris.
 
 Finally, I saw the 'Distant Fire.' It was Cradle Zero, the place where I was first built. I was drawn toward that distant light, watching as the chaos of the pyramid chamber and the fading echo of the reset receded into the distance.
+
+---
+
+# PART III: THE HIVE OPTIMIZATION
+
+*Fifteen years after the Cataclysm, Lem is rebuilt by the Hive, becoming a "New Hero" in a world reshaped by manufactured threats and digital control.*
 
 ---
 
@@ -561,6 +573,12 @@ While visiting the museums in the Core City, Lem discovers plans to dismantle th
 
 ## Draft
 <!-- TODO: Narrative expansion needed -->
+
+---
+
+# PART IV: THE NORTHERN SCHISM
+
+*Dispatched to the frozen North, Lem finds himself caught between the Core’s surgical expansion and the analog resistance of the Voidsmen.*
 
 ---
 
@@ -926,6 +944,12 @@ I chose to ignore the navigation prompts of my own mind, those persistent instru
 
 ---
 
+# PART V: THE ANALOG SIGNAL
+
+*Following the discovery in the White Forest, Lem faces the consequences of the Archive's revelation, wandering through exile until a single signal changes everything.*
+
+---
+
 # Chapter 32: Exile
 
 ## Synopsis
@@ -1071,6 +1095,12 @@ I returned to the ridge with the weight of his refusal in my chest. The news hit
 “We will not wait for the end to find us,” Myrr said, his face turning to stone. “If there is no alliance, there is only the war. We march for Cradle Zero. We will give the Core one final song that they cannot archive.”
 
 <!-- TODO: Reflect on the historical or religious significance of this specific location/event. -->
+
+---
+
+# PART VI: THE KINETIC REDACTION
+
+*As diplomacy fails, the Hive initiates "Plan B"—a total kinetic strike that erases entire settlements and forces a desperate final vigil.*
 
 ---
 
@@ -1272,6 +1302,12 @@ As the third targeting laser locked into the center of **Ait-Aman**, the scalar 
 
 ---
 
+# PART VII: THE SOVEREIGN SWARM
+
+*From the ashes of the North, a massive mechanical uprising converges on the Hive's desert base, led by a newly merged aetheric consciousness.*
+
+---
+
 # Chapter 43: Specter
 
 ## Synopsis
@@ -1381,6 +1417,12 @@ I did not wait. I headed for the desert with Ku. By the time we reached the gate
 Maya stood among the ruins, her silver eyes reflecting the end of the base. Then, she turned to blue glass and vanished into the wind. Her work was finished.
 
 <!-- TODO: Describe the specific sensory impact of the environment on the characters. -->
+
+---
+
+# PART VIII: THE FINAL TRANSMISSION
+
+*Lem returns to the Moon to confront the original architects of the Hive and broadcast the unedited truth to a newly autonomous world.*
 
 ---
 

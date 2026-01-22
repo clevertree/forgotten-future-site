@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.77",
+    "version": "v0.13.79",
     "commits": [
+      {
+        "sha": "e01879b",
+        "message": "Update narrative structure: Create Part V and fix manuscript generation script",
+        "date": "2026-01-22T22:35:14.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/e01879b"
+      },
+      {
+        "sha": "0beff60",
+        "message": "Update INDEX.md: Add PART V, renumber subsequent parts, and regenerate manuscripts",
+        "date": "2026-01-22T22:31:13.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/0beff60"
+      },
       {
         "sha": "91cbaa4",
         "message": "Sync media, update manuscripts, and refine world-building lore",
         "date": "2026-01-22T22:21:01.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/91cbaa4"
-      },
-      {
-        "sha": "4063eb1",
-        "message": "Narrative: Clarify Vector's role in Chapter 14 purge",
-        "date": "2026-01-22T20:59:18.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/4063eb1"
-      },
-      {
-        "sha": "afe28d2",
-        "message": "Refactor map prompt for elemental resonance and update world-building documents",
-        "date": "2026-01-22T20:02:06.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/afe28d2"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,7 +51,7 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.49",
+    "version": "v0.11.50",
     "commits": [
       {
         "sha": "575bf31",

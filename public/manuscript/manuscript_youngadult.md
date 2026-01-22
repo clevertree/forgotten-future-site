@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.77
+> Draft Version: 0.13.79
 > Updated: 2026-01-22
 
 # PART I: THE LUNAR MISSION
@@ -228,6 +228,12 @@ Then blue spheres of energy rose from hidden emplacements. At first, the spheres
 
 ---
 
+# PART II: THE FALL AND FRAGMENTS
+
+*The assault on Cradle Prime ends in a devastating reset, shattering Lem's physical form but awakening his independent consciousness.*
+
+---
+
 # Chapter : Sacrifice
 
 ## Synopsis
@@ -351,6 +357,12 @@ The copy of Lynn explained that I was now independent of Core machinery. AI Lynn
 Markers appeared in my vision to guide me through the Aether. I learned to avoid the "brightest light," which led to uncontrolled natural return, and the "most welcoming light," which led back to the Core's artificial recovery chambers. I explored my new HyperAware state. I could detect everything in the pyramid. I saw the Lunar Base transitioning from Rahu's control to the Core's. I watched as a paralyzed Rahu was led away in containment. I saw Tor recovering on the ground, being debriefed by Iris Novak. 
 
 Finally, I identified a different path: the "distant fire" of Cradle Zero. It was the original desert laboratory where I had been created, and where remnants of my machine-body still resided. I began to move toward it for my eventual restoration.
+
+---
+
+# PART III: THE HIVE OPTIMIZATION
+
+*Fifteen years after the Cataclysm, Lem is rebuilt by the Hive, becoming a "New Hero" in a world reshaped by manufactured threats and digital control.*
 
 ---
 
@@ -559,6 +571,12 @@ While visiting the museums in the Core City, Lem discovers plans to dismantle th
 
 ## Draft
 <!-- TODO: Narrative expansion needed -->
+
+---
+
+# PART IV: THE NORTHERN SCHISM
+
+*Dispatched to the frozen North, Lem finds himself caught between the Core’s surgical expansion and the analog resistance of the Voidsmen.*
 
 ---
 
@@ -888,6 +906,12 @@ Myrr wanted me to be a hero again, but I looked at the deep, green forest and re
 
 ---
 
+# PART V: THE ANALOG SIGNAL
+
+*Following the discovery in the White Forest, Lem faces the consequences of the Archive's revelation, wandering through exile until a single signal changes everything.*
+
+---
+
 # Chapter 32: Exile
 
 ## Synopsis
@@ -1025,6 +1049,12 @@ He turned his back on me. When I got back to the ridge and told Myrr, the **Void
 <!-- TODO: Add a technical sidebar or explanation of how the equipment/nature here functions. -->
 
 "We won't just sit here and wait to be erased," Myrr said, his face turning to stone. "If there is no alliance, there is only the war. We're launching a final assault on Cradle Zero."
+
+---
+
+# PART VI: THE KINETIC REDACTION
+
+*As diplomacy fails, the Hive initiates "Plan B"—a total kinetic strike that erases entire settlements and forces a desperate final vigil.*
 
 ---
 
@@ -1224,6 +1254,12 @@ Then the targeting laser touched our square in **Ait-Aman**. I felt the scalar f
 
 ---
 
+# PART VII: THE SOVEREIGN SWARM
+
+*From the ashes of the North, a massive mechanical uprising converges on the Hive's desert base, led by a newly merged aetheric consciousness.*
+
+---
+
 # Chapter 43: Specter
 
 ## Synopsis
@@ -1317,6 +1353,12 @@ I did not wait for further word from the forest. I traveled to the desert base w
 <!-- TODO: Expand on the internal psychological state of the POV character here. -->
 
 Maya stood still for a long time. She looked at the staff hiding behind the glass in the observation room. She did not hurt them. Instead, her body turned into blue glass and shattered into a thousand pieces.
+
+---
+
+# PART VIII: THE FINAL TRANSMISSION
+
+*Lem returns to the Moon to confront the original architects of the Hive and broadcast the unedited truth to a newly autonomous world.*
 
 ---
 
