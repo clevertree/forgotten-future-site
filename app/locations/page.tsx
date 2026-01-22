@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { ImageModal } from '../components/ImageModal';
 import { prefixPath } from '@/lib/utils';
@@ -88,7 +88,7 @@ export default function LocationsPage() {
         ? LOCATIONS.find((l) => l.id === selectedId)
         : null;
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         if (!selectedItem) return;
         if (imageIndex < selectedItem.images.length - 1) {
             setImageIndex(imageIndex + 1);
@@ -99,9 +99,9 @@ export default function LocationsPage() {
             setSelectedId(LOCATIONS[nextIndex].id);
             setImageIndex(0);
         }
-    };
+    }, [selectedItem, imageIndex, selectedId]);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         if (!selectedItem) return;
         if (imageIndex > 0) {
             setImageIndex(imageIndex - 1);
@@ -113,17 +113,17 @@ export default function LocationsPage() {
             setSelectedId(prevItem.id);
             setImageIndex(prevItem.images.length - 1);
         }
-    };
+    }, [selectedItem, imageIndex, selectedId]);
 
     const handleImageClick = (id: string, index = 0) => {
         setSelectedId(id);
         setImageIndex(index);
     };
 
-    const handleClose = () => {
+    const handleClose = useCallback(() => {
         setSelectedId(null);
         setImageIndex(0);
-    };
+    }, []);
 
     const currentImage = selectedItem?.images[imageIndex];
 

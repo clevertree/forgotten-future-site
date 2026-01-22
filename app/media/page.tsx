@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { MessageSquare, CheckCircle2 } from 'lucide-react';
 import { CommentAnchor } from '../components/Feedback/CommentAnchor';
@@ -37,7 +37,15 @@ export default function MediaPage() {
     ];
 
     const openImage = (index: number) => setSelectedImageIndex(index);
-    const closeImage = () => setSelectedImageIndex(null);
+    const closeImage = useCallback(() => setSelectedImageIndex(null), []);
+
+    const handleNext = useCallback(() => {
+        setSelectedImageIndex((prev) => (prev !== null ? (prev + 1) % images.length : null));
+    }, [images.length]);
+
+    const handlePrev = useCallback(() => {
+        setSelectedImageIndex((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null));
+    }, [images.length]);
 
     return (
         <div className="container mx-auto px-6 lg:px-16 py-12">
@@ -162,8 +170,8 @@ export default function MediaPage() {
                         meta: images[selectedImageIndex].meta
                     }}
                     onClose={closeImage}
-                    onNext={() => setSelectedImageIndex((prev) => (prev !== null ? (prev + 1) % images.length : null))}
-                    onPrev={() => setSelectedImageIndex((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null))}
+                    onNext={handleNext}
+                    onPrev={handlePrev}
                 />
             )}
 

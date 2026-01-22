@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.79",
+    "version": "v0.13.80",
     "commits": [
+      {
+        "sha": "67acb95",
+        "message": "Add Tor character images: ambush and nexus",
+        "date": "2026-01-22T22:39:34.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/67acb95"
+      },
       {
         "sha": "e01879b",
         "message": "Update narrative structure: Create Part V and fix manuscript generation script",
@@ -14,12 +20,6 @@
         "message": "Update INDEX.md: Add PART V, renumber subsequent parts, and regenerate manuscripts",
         "date": "2026-01-22T22:31:13.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/0beff60"
-      },
-      {
-        "sha": "91cbaa4",
-        "message": "Sync media, update manuscripts, and refine world-building lore",
-        "date": "2026-01-22T22:21:01.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/91cbaa4"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.50",
+    "version": "v0.11.53",
     "commits": [
+      {
+        "sha": "2dcd5c9",
+        "message": "Add Tor character images to character page",
+        "date": "2026-01-22T22:39:37.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/2dcd5c9"
+      },
+      {
+        "sha": "2c2a4d9",
+        "message": "Enhance character and location pages with image slideshows",
+        "date": "2026-01-22T22:35:16.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/2c2a4d9"
+      },
       {
         "sha": "575bf31",
         "message": "Sync media, update manuscripts, and refresh locations/characters UI",
         "date": "2026-01-22T22:21:22.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/575bf31"
-      },
-      {
-        "sha": "9bd8de7",
-        "message": "Update manuscript and dashboard for 52-chapter structure",
-        "date": "2026-01-22T14:20:49.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/9bd8de7"
-      },
-      {
-        "sha": "ca04f2f",
-        "message": "docs: add browser reading mode recommendation for tts",
-        "date": "2026-01-21T21:10:38.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/ca04f2f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

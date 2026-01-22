@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { ImageModal } from '../components/ImageModal';
 import { InfoCard } from '../components/InfoCard';
@@ -133,7 +133,22 @@ const CHARACTERS: Character[] = [
         name: 'Kiran', 
         category: 'Archivist', 
         images: [
-            { src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' }
+            { src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' },
+            { src: prefixPath('/media/characters/kiran/kiran-desktop.png'), alt: 'Kiran at the Hive Terminal' },
+            { src: prefixPath('/media/characters/kiran/kiran-forge.png'), alt: 'Kiran - Synodic Forge' },
+            { src: prefixPath('/media/characters/kiran/kiran-refusal1.png'), alt: 'Kiran - The Choice of Steel' },
+            { src: prefixPath('/media/characters/kiran/kiran-refusal2.png'), alt: 'Kiran - Architecture of the Hive' }
+        ] 
+    },
+    { 
+        id: 'ku', 
+        name: 'Ku', 
+        category: 'Survivor', 
+        images: [
+            { src: prefixPath('/media/characters/ku/ku-landscape.png'), alt: 'Ku - Tactical Field Commander' },
+            { src: prefixPath('/media/characters/ku/ku-portrait.png'), alt: 'Ku - Portrait' },
+            { src: prefixPath('/media/characters/ku/ku-pillar.png'), alt: 'Ku at the Iron Pillar' },
+            { src: prefixPath('/media/characters/ku/ku-outreach.png'), alt: 'Ku - Outreach' }
         ] 
     },
     { 
@@ -155,7 +170,7 @@ export default function CharactersPage() {
         ? CHARACTERS.find((c) => c.id === selectedId)
         : null;
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         if (!selectedCharacter) return;
         if (imageIndex < selectedCharacter.images.length - 1) {
             setImageIndex(imageIndex + 1);
@@ -166,9 +181,9 @@ export default function CharactersPage() {
             setSelectedId(CHARACTERS[nextIndex].id);
             setImageIndex(0);
         }
-    };
+    }, [selectedCharacter, imageIndex, selectedId]);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         if (!selectedCharacter) return;
         if (imageIndex > 0) {
             setImageIndex(imageIndex - 1);
@@ -180,17 +195,17 @@ export default function CharactersPage() {
             setSelectedId(prevItem.id);
             setImageIndex(prevItem.images.length - 1);
         }
-    };
+    }, [selectedCharacter, imageIndex, selectedId]);
 
     const handleImageClick = (id: string, index = 0) => {
         setSelectedId(id);
         setImageIndex(index);
     };
 
-    const handleClose = () => {
+    const handleClose = useCallback(() => {
         setSelectedId(null);
         setImageIndex(0);
-    };
+    }, []);
 
     const currentImage = selectedCharacter?.images[imageIndex];
 
@@ -214,12 +229,17 @@ export default function CharactersPage() {
                 <h1 className="text-3xl md:text-5xl text-glow uppercase tracking-tighter mb-12">Characters</h1>
 
                 <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Four Vessels</h2>
+                    <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-cyan-500/30 pb-2 mb-8 gap-4">
+                        <h2 className="text-2xl uppercase tracking-widest text-cyan-400">The Five Vessels</h2>
+                        <div className="bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded text-[10px] uppercase tracking-tighter text-cyan-200">
+                            Note: Elemental Vessels (Wood, Water, Fire, Earth) are unique; Metal Vessels are a generated class.
+                        </div>
+                    </div>
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Lem */}
                         <InfoCard
                             title="Lem"
-                            subtitle="Wood Vessel"
+                            subtitle="Wood Vessel (Unique)"
                             borderColor="border-l-green-600"
                             subtitleColor="text-green-500"
                             slideshowImages={CHARACTERS.find(c => c.id === 'lem')?.images}
@@ -239,7 +259,7 @@ export default function CharactersPage() {
                         {/* Lynn */}
                         <InfoCard
                             title="Lynn / Selene / Maya"
-                            subtitle="Water Vessel"
+                            subtitle="Water Vessel (Unique)"
                             borderColor="border-l-blue-600"
                             subtitleColor="text-blue-500"
                             slideshowImages={CHARACTERS.find(c => c.id === 'lynn')?.images}
@@ -259,7 +279,7 @@ export default function CharactersPage() {
                         {/* Rahu */}
                         <InfoCard
                             title="Rahu"
-                            subtitle="Fire Vessel"
+                            subtitle="Fire Vessel (Unique)"
                             borderColor="border-l-red-600"
                             subtitleColor="text-red-500"
                             slideshowImages={CHARACTERS.find(c => c.id === 'rahu')?.images}
@@ -279,7 +299,7 @@ export default function CharactersPage() {
                         {/* Tor */}
                         <InfoCard
                             title="Tor"
-                            subtitle="Earth Vessel"
+                            subtitle="Earth Vessel (Unique)"
                             borderColor="border-l-amber-700"
                             subtitleColor="text-amber-600"
                             slideshowImages={CHARACTERS.find(c => c.id === 'tor')?.images}
@@ -295,170 +315,90 @@ export default function CharactersPage() {
                                 </>
                             }
                         />
-                    </div>
-                </section>
 
-                <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Next Generation</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
-                        {/* Arlo */}
-                        <InfoCard
-                            title="Arlo"
-                            subtitle="The Tech-Welder"
-                            borderColor="border-l-zinc-500"
-                            subtitleColor="text-zinc-400"
-                            imageHeight="h-32"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'arlo')?.images}
-                            onClick={() => handleImageClick('arlo')}
-                            description={
-                                <>
-                                    <p className="text-gray-300 italic mb-4">"Someone's gotta fix what the gods broke."</p>
-                                    <p>
-                                        Born in the shadow of the Cataclysm, Arlo is a scruffy "After Time" survivor who repairs scavenged Synodic components with intuitive, self-taught skill. He represents the independent human agency that refuses the Archivist's sterile "sky."
-                                    </p>
-                                </>
-                            }
-                        />
-
-                        {/* Cassia Vane */}
-                        <InfoCard
-                            title="Cassia Vane"
-                            subtitle="The Archivist Harmonizer"
-                            borderColor="border-l-cyan-300"
-                            subtitleColor="text-cyan-300"
-                            imageHeight="h-32"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'cassia_vane')?.images}
-                            onClick={() => handleImageClick('cassia_vane')}
-                            description={
-                                <>
-                                    <p className="text-gray-300 italic mb-4">"The spirit is just a design curiosity."</p>
-                                    <p>
-                                        The daughter of Dr. Elowen Vane, Cassia is an elite Harmonizer who "sings" command codes into the Synodic field. Her sterile perfection begins to crack as she witnesses the undeniable "spirit" within her mother's creations.
-                                    </p>
-                                </>
-                            }
-                        />
-
-                        {/* Elowen */}
-                        <InfoCard
-                            title="Dr. Elowen Vane"
-                            subtitle="The Architect"
-                            borderColor="border-l-purple-500"
-                            subtitleColor="text-purple-400"
-                            imageHeight="h-32"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'elowen')?.images}
-                            onClick={() => handleImageClick('elowen')}
-                            description={
-                                <>
-                                    <p className="text-gray-300 italic mb-4">"I created them with more soul than any human I've known."</p>
-                                    <p>
-                                        A visionary bio-engineer and mother of Cassia, Elowen designed the Vessel framework to carry "spark"—consciousness and emotional depth. Broken by the Core's misuse of her creation, she became an early architect of the Analog Sanctuary's philosophy.
-                                    </p>
-                                </>
-                            }
-                        />
-                    </div>
-                </section>
-
-                <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Archivist High Command</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
-                        {/* Anton Drexler */}
-                        <InfoCard
-                            title="Overseer Anton Drexler"
-                            subtitle="Director of Strategic Sanction"
-                            borderColor="border-l-red-900"
-                            subtitleColor="text-red-700"
-                            imageHeight="h-32"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'anton_drexler')?.images}
-                            onClick={() => handleImageClick('anton_drexler')}
-                            description={
-                                <>
-                                    <p className="text-gray-300 italic mb-4">"I do not watch for spirit. I watch for compliance."</p>
-                                    <p>
-                                        Following the collapse of the terrestrial grid, Drexler attempted to initiate the Absolute Protocol from the Moon. When his authority was revoked by Lem's broadcast, he escaped into deep space via a cloaked shuttle, waiting for the next cycle to begin.
-                                    </p>
-                                </>
-                            }
-                        />
-
-                        {/* Commander Novak */}
-                        <InfoCard
-                            title="Commander Iris Novak"
-                            subtitle="Chief Science Officer"
-                            borderColor="border-l-slate-400"
-                            subtitleColor="text-slate-400"
-                            imageHeight="h-32"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'iris_novak')?.images}
-                            onClick={() => handleImageClick('iris_novak')}
-                            description={
-                                <>
-                                    <p className="text-gray-300 italic mb-4">"The cost of the aftermath is a debt we all must pay."</p>
-                                    <p>
-                                        A career military scientist and high-level Core operative. Novak serves as the pragmatic bridge between the Vessels and the Core's leadership. Trapped by her own sense of responsibility, she remains at the heart of the system she helped create, managing the "Year 15 AT" missions with clinical precision.
-                                    </p>
-                                </>
-                            }
-                        />
-                    </div>
-                </section>
-
-                <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Third Path</h2>
-                    <InfoCard
-                        layout="horizontal"
-                        title="Myrr"
-                        subtitle="Leader of the Analog Sanctuary"
-                        borderColor="border-l-orange-500"
-                        subtitleColor="text-orange-500"
-                        slideshowImages={CHARACTERS.find(c => c.id === 'myrr')?.images}
-                        onClick={() => handleImageClick('myrr')}
-                        description={
-                            <>
-                                <p className="mb-4">
-                                    A weathered Pre-Fry technician who led a group into the White Forest to escape the "soul-trap" of digital technology. Myrr's look is one of high-tech antiquity—layered in copper shunts and vacuum tubes, favoring the tangible truth of the analog waveform over the encryption of the Archivists.
-                                </p>
-                                <div className="p-3 bg-orange-500/10 border-l-2 border-orange-500">
-                                    <p className="text-xs text-orange-200 italic">
-                                        Note: Myrr and many Voidsmen exhibit shock-blonde hair, a side effect of prolonged exposure and biological absorption of the White Forest's intense analog energy resonance.
-                                    </p>
-                                </div>
-                            </>
-                        }
-                    />
-                </section>
-
-                <section className="mb-20">
-
-                    <div className="glass-panel p-8 text-gray-300 leading-relaxed space-y-4">
-                        <p>
-                            The appearance of the Four Vessels is characterized by a violent transition from human-adjacent deception to raw elemental and mechanical manifestation. In the Before Time, they were designed to blend into human society or inspire divine awe, appearing as exceptionally tall, athletic, or serene individuals with subtle elemental glows.
-                        </p>
-                        <p>
-                            However, the Moon Cataclysm and the subsequent Year 15 AT transition stripped away these carefully maintained masks. Lem evolved into a "Sovereign Restorer," while Lynn's form shattered into the spectral "Witch" entity. Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
-                        </p>
-                        <p>
-                            This contrast defines the After Time interface: the "dirt" of independent survivors like Arlo, the "analog waves" of Myrr's sanctuary, and the "sterile sky" of Cassia Vane's Archivist Order.
-                        </p>
-                    </div>
-                </section>
-
-                <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Technocratic Order</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
                         {/* Vector */}
                         <InfoCard
                             title="Vector"
                             subtitle="Metal Vessel Prime"
                             borderColor="border-l-zinc-400"
                             subtitleColor="text-zinc-400"
-                            imageSrc={prefixPath('/media/characters/vector/vector-purge.png')}
-                            imageAlt="Vector"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'vector')?.images}
                             onClick={() => handleImageClick('vector')}
                             description={
                                 <p>
-                                    A high-tier Metal Vessel designed for tactical oversight. Unlike the more emotional Vessels, Vector operates with a cold, absolute adherence to the Core's optimization parameters. He is the shadow that ensures the "New Hero" never deviates from the script.
+                                    A high-tier Metal Vessel designed for tactical oversight. Unlike the unique elemental Vessels, Vector represents a refined class of Synodic machines—the peak of the Core's generated army designed to ensure the "New Hero" never deviates from the script.
                                 </p>
+                            }
+                        />
+                    </div>
+                </section>
+
+                <section className="mb-20">
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Sanctuary & The Village</h2>
+                    <div className="grid md:grid-cols-2 gap-12">
+                        {/* Myrr */}
+                        <InfoCard
+                            title="Myrr"
+                            subtitle="Leader of the Analog Sanctuary"
+                            borderColor="border-l-orange-500"
+                            subtitleColor="text-orange-500"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'myrr')?.images}
+                            onClick={() => handleImageClick('myrr')}
+                            description={
+                                <>
+                                    <p className="mb-4">
+                                        A weathered Pre-Fry technician who led the Voidsmen into the White Forest. He favors the tangible truth of the analog waveform over the encryption of the Archivists.
+                                    </p>
+                                    <div className="p-3 bg-orange-500/10 border-l-2 border-orange-500">
+                                        <p className="text-[10px] text-orange-200 italic uppercase tracking-tighter">
+                                            Origin: The White Forest
+                                        </p>
+                                    </div>
+                                </>
+                            }
+                        />
+
+                        {/* Ku */}
+                        <InfoCard
+                            title="Ku"
+                            subtitle="Tactical Field Commander"
+                            borderColor="border-l-blue-400"
+                            subtitleColor="text-blue-400"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'ku')?.images}
+                            onClick={() => handleImageClick('ku')}
+                            description={
+                                <>
+                                    <p className="mb-4">
+                                        Born After Time in the White Forest, Ku is a pragmatic field commander who focuses on tactical reality rather than philosophical debate.
+                                    </p>
+                                    <div className="p-3 bg-blue-500/10 border-l-2 border-blue-400">
+                                        <p className="text-[10px] text-blue-200 italic uppercase tracking-tighter">
+                                            Origin: The White Forest
+                                        </p>
+                                    </div>
+                                </>
+                            }
+                        />
+
+                        {/* Arlo */}
+                        <InfoCard
+                            title="Arlo"
+                            subtitle="The Tech-Welder"
+                            borderColor="border-l-zinc-500"
+                            subtitleColor="text-zinc-400"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'arlo')?.images}
+                            onClick={() => handleImageClick('arlo')}
+                            description={
+                                <>
+                                    <p className="mb-4">
+                                        A scruffy survivor from Ait-Aman who repairs scavenged Synodic components with intuitive skill, representing human independence.
+                                    </p>
+                                    <div className="p-3 bg-zinc-500/10 border-l-2 border-zinc-400">
+                                        <p className="text-[10px] text-zinc-200 italic uppercase tracking-tighter">
+                                            Origin: The Village of Ait-Aman
+                                        </p>
+                                    </div>
+                                </>
                             }
                         />
 
@@ -468,12 +408,114 @@ export default function CharactersPage() {
                             subtitle="Hive Engineer"
                             borderColor="border-l-blue-400"
                             subtitleColor="text-blue-300"
-                            imageSrc={prefixPath('/media/characters/kiran/kiran.png')}
-                            imageAlt="Kiran"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'kiran')?.images}
                             onClick={() => handleImageClick('kiran')}
                             description={
+                                <>
+                                    <p className="mb-4">
+                                        A former resident of Ait-Aman who chose the path of the Core, believing the old world's "grit" was a disease to be cured by progress.
+                                    </p>
+                                    <div className="p-3 bg-blue-400/10 border-l-2 border-blue-300">
+                                        <p className="text-[10px] text-blue-200 italic uppercase tracking-tighter">
+                                            Origin: The Village of Ait-Aman
+                                        </p>
+                                    </div>
+                                </>
+                            }
+                        />
+                    </div>
+                </section>
+
+                <section className="mb-20">
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Vane Lineage & High Command</h2>
+                    <div className="grid md:grid-cols-2 gap-12">
+                         {/* Elowen */}
+                         <InfoCard
+                            title="Dr. Elowen Vane"
+                            subtitle="The Architect"
+                            borderColor="border-l-purple-500"
+                            subtitleColor="text-purple-400"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'elowen')?.images}
+                            onClick={() => handleImageClick('elowen')}
+                            description={
                                 <p>
-                                    A former resident of Ait-Aman who chose the path of the Core. Kiran represents the modern citizen—grateful for the sterile safety of the Megacities and convinced that the old world's "grit" was a disease to be cured by progress.
+                                    A visionary bio-engineer who designed the Vessel framework to carry "spark"—consciousness and emotional depth. She eventually broke with the Core to preserve the integrity of the record.
+                                </p>
+                            }
+                        />
+
+                        {/* Cassia Vane */}
+                        <InfoCard
+                            title="Cassia Vane"
+                            subtitle="The Archivist Harmonizer"
+                            borderColor="border-l-cyan-300"
+                            subtitleColor="text-cyan-300"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'cassia_vane')?.images}
+                            onClick={() => handleImageClick('cassia_vane')}
+                            description={
+                                <p>
+                                    The daughter of Elowen, Cassia is an elite Harmonizer who "sings" command codes into the Synodic field. Her sterile perfection begins to crack as she witnesses the spirit within her mother's creations.
+                                </p>
+                            }
+                        />
+
+                        {/* Anton Drexler */}
+                        <InfoCard
+                            title="Overseer Anton Drexler"
+                            subtitle="Director of Strategic Sanction"
+                            borderColor="border-l-red-900"
+                            subtitleColor="text-red-700"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'anton_drexler')?.images}
+                            onClick={() => handleImageClick('anton_drexler')}
+                            description={
+                                <p>
+                                    The primary architect of the Absolute Protocol. Drexler views the world as a data-set to be optimized, watching for compliance rather than spirit.
+                                </p>
+                            }
+                        />
+
+                        {/* Commander Novak */}
+                        <InfoCard
+                            title="Commander Iris Novak"
+                            subtitle="Chief Science Officer"
+                            borderColor="border-l-slate-400"
+                            subtitleColor="text-slate-400"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'iris_novak')?.images}
+                            onClick={() => handleImageClick('iris_novak')}
+                            description={
+                                <p>
+                                    A career military scientist and high-level Core operative. Novak serves as the pragmatic bridge between the Vessels and the Core's leadership, driven by a clinical sense of responsibility.
+                                </p>
+                            }
+                        />
+                    </div>
+                </section>
+
+                <section className="mb-20">
+                    <div className="glass-panel p-8 text-gray-300 leading-relaxed space-y-4">
+                        <p>
+                            The appearance of the Elemental Vessels is characterized by a violent transition from human-adjacent deception to raw manifestation. In the Before Time, they were designed to blend into human society or inspire divine awe, appearing as exceptionally tall, athletic, or serene individuals.
+                        </p>
+                        <p>
+                            The Moon Cataclysm and the transition to the After Time stripped away these carefully maintained masks. Lem evolved into a "Sovereign Restorer," while Lynn's form shattered into the spectral "Witch." Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
+                        </p>
+                    </div>
+                </section>
+
+                <section className="mb-20">
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Synodic Life</h2>
+                    <div className="grid md:grid-cols-2 gap-12">
+                        {/* Gorgons */}
+                        <InfoCard
+                            title="Gorgons"
+                            subtitle="The Builders"
+                            borderColor="border-l-orange-800"
+                            subtitleColor="text-orange-700"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'gorgons')?.images}
+                            onClick={() => handleImageClick('gorgons')}
+                            description={
+                                <p>
+                                    Highly intelligent, multi-armed Synodic builders. Once enslaved as Core labor to build the sterile megacities, they reclaimed their autonomy via the "Hooting Call" to rebuild the ancient Fire Cities in their own image.
                                 </p>
                             }
                         />

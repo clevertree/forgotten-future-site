@@ -20,21 +20,37 @@ interface ImageModalProps {
 export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) {
     React.useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'ArrowRight') onNext();
-            if (e.key === 'ArrowLeft') onPrev();
-            if (e.key === 'Escape') onClose();
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                onNext();
+            }
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                onPrev();
+            }
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                onClose();
+            }
         };
+
+        // Lock scroll
+        document.body.style.overflow = 'hidden';
         window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.body.style.overflow = 'unset';
+            window.removeEventListener('keydown', handleKeyDown);
+        };
     }, [onNext, onPrev, onClose]);
 
     return (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm" onClick={onClose}>
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95 backdrop-blur-md" onClick={onClose}>
             <div className="relative w-full h-full flex items-center justify-center p-4 md:p-12" onClick={(e) => e.stopPropagation()}>
                 {/* Close button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors text-2xl z-[110]"
+                    className="absolute top-6 right-6 text-gray-400 hover:text-white transition-all text-3xl z-[10000] p-4 hover:rotate-90"
                     aria-label="Close"
                 >
                     ✕
@@ -43,27 +59,28 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
                 {/* Left navigation */}
                 <button
                     onClick={(e) => { e.stopPropagation(); onPrev(); }}
-                    className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors text-4xl md:text-5xl z-[110] hover:scale-125 transition-transform"
+                    className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
                     aria-label="Previous"
                 >
                     ‹
                 </button>
 
                 {/* Image */}
-                <div className="relative w-full h-[85vh]">
+                <div className="relative w-full h-[80vh] md:h-[85vh] transition-all duration-300">
                     <Image
                         src={image.src}
                         alt={image.alt}
                         fill
-                        className="object-contain shadow-2xl shadow-cyan-500/10"
+                        className="object-contain shadow-2xl shadow-cyan-500/20"
                         sizes="(max-width: 1200px) 100vw, 1200px"
+                        priority
                     />
                 </div>
 
                 {/* Right navigation */}
                 <button
                     onClick={(e) => { e.stopPropagation(); onNext(); }}
-                    className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors text-4xl md:text-5xl z-[110] hover:scale-125 transition-transform"
+                    className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
                     aria-label="Next"
                 >
                     ›
