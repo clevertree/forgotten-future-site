@@ -20,6 +20,11 @@ function FullTextContent() {
     const [notification, setNotification] = useState<string | null>(null);
     const [speakingId, setSpeakingId] = useState<number | null>(null);
 
+    // Track state to avoid redundant updates and rapid reloads
+    const currentVersionRef = useRef<string | undefined>(undefined);
+    const lastActiveRef = useRef(Date.now());
+    const lastUpdateAttemptRef = useRef(0);
+
     const prevChaptersRef = useRef<Chapter[]>([]);
 
     const toggleSpeech = React.useCallback((id: number, text: string) => {
@@ -165,8 +170,6 @@ function FullTextContent() {
         router.replace(`${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`, { scroll: false });
     };
 
-    const lastActiveRef = useRef(Date.now());
-
     useEffect(() => {
         const handleActivity = () => {
             lastActiveRef.current = Date.now();
@@ -186,24 +189,39 @@ function FullTextContent() {
     useEffect(() => {
         setIsLoading(true);
         const loadManuscript = (forceRemote = false) => {
+            const now = Date.now();
+
             // Stop remote fetching if user is idle (> 60s) or tab is hidden
             if (forceRemote) {
-                const isIdle = Date.now() - lastActiveRef.current > 60000;
+                const isIdle = now - lastActiveRef.current > 60000;
                 const isHidden = document.visibilityState === 'hidden';
                 if (isIdle || isHidden) return;
+
+                // Harden update feature: Rate-limit attempts to once per 60s
+                if (now - lastUpdateAttemptRef.current < 60000) {
+                    console.log("[Manuscript] Skipping update check, too soon since last attempt.");
+                    return;
+                }
+                lastUpdateAttemptRef.current = now;
             }
 
             fetchManuscript(version, forceRemote).then(data => {
                 if (data.chapters.length > 0) {
-                    if (forceRemote && data.draftVersion !== draftVersion && draftVersion !== undefined) {
+                    const hasNewVersion = data.draftVersion !== currentVersionRef.current;
+
+                    if (forceRemote && hasNewVersion && currentVersionRef.current !== undefined) {
                         const versionInfo = data.updatedDate ? `v${data.draftVersion} (${data.updatedDate})` : `v${data.draftVersion}`;
                         setNotification(`Archive Updated: ${versionInfo}`);
                         setTimeout(() => setNotification(null), 10000);
                     }
-                    setChapters(data.chapters);
-                    setParts(data.parts);
-                    setDraftVersion(data.draftVersion);
-                    prevChaptersRef.current = data.chapters;
+
+                    if (hasNewVersion) {
+                        setChapters(data.chapters);
+                        setParts(data.parts);
+                        setDraftVersion(data.draftVersion);
+                        currentVersionRef.current = data.draftVersion;
+                        prevChaptersRef.current = data.chapters;
+                    }
                 }
                 setIsLoading(false);
 
@@ -233,7 +251,7 @@ function FullTextContent() {
             clearTimeout(remoteCheckTimeout);
             clearInterval(intervalId);
         };
-    }, [version, draftVersion]);
+    }, [version]);
 
     // Track scroll position to save last read chapter
     useEffect(() => {

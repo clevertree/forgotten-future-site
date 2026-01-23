@@ -64,7 +64,7 @@ export async function parseManuscript(text: string): Promise<{ parts: Part[], ch
             continue;
         }
 
-        const headerMatch = segment.match(/# Chapter (\d+):? (.*)/i);
+        const headerMatch = segment.match(/#+ Chapter (\d+):? (.*)/i);
         if (!headerMatch) continue;
 
         const id = parseInt(headerMatch[1]);

@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.82",
+    "version": "v0.13.85",
     "commits": [
       {
-        "sha": "ac9bba3",
-        "message": "Refactor chapter formats and update world-building for Core Archipelago, Iron Pillar, and 1000-Year Fallacy",
-        "date": "2026-01-23T13:30:55.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/ac9bba3"
+        "sha": "6b64bb3",
+        "message": "updated manuscript",
+        "date": "2026-01-23T18:13:10.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/6b64bb3"
       },
       {
-        "sha": "70f2bd9",
-        "message": "update story structure and manuscripts",
-        "date": "2026-01-22T23:10:34.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/70f2bd9"
+        "sha": "e97e45e",
+        "message": "bump version",
+        "date": "2026-01-23T18:03:06.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/e97e45e"
       },
       {
-        "sha": "67acb95",
-        "message": "Add Tor character images: ambush and nexus",
-        "date": "2026-01-22T22:39:34.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/67acb95"
+        "sha": "40f35e1",
+        "message": "docs: integrate Old Man Azar, Wuxan Long Count, and Alkebulan geography",
+        "date": "2026-01-23T16:17:27.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/40f35e1"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -28,6 +28,12 @@
     "name": "Teaser",
     "version": "v0.9.14",
     "commits": [
+      {
+        "sha": "41736dd",
+        "message": "Content: Update outro concepts and prompts.",
+        "date": "2026-01-21T16:54:49.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/41736dd"
+      },
       {
         "sha": "b01a09e",
         "message": "Update teaser prompts and README",
@@ -39,37 +45,31 @@
         "message": "Bump version 0.9.12",
         "date": "2026-01-18T17:38:33.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
-      },
-      {
-        "sha": "c07a34f",
-        "message": "Bump version and update history",
-        "date": "2026-01-18T17:27:48.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/c07a34f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.56",
+    "version": "v0.11.59",
     "commits": [
       {
-        "sha": "ca2afed",
-        "message": "perf: optimize image sizes and delivery across the site",
-        "date": "2026-01-23T00:45:52.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/ca2afed"
+        "sha": "b65edeb",
+        "message": "archipelago updates",
+        "date": "2026-01-23T17:13:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/b65edeb"
       },
       {
-        "sha": "52d11ba",
-        "message": "feat: character page reorganization, image slideshows, and UX polish",
-        "date": "2026-01-22T23:11:02.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/52d11ba"
+        "sha": "04012c0",
+        "message": "chore: sync manuscripts and update dashboard",
+        "date": "2026-01-23T16:17:33.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/04012c0"
       },
       {
-        "sha": "2dcd5c9",
-        "message": "Add Tor character images to character page",
-        "date": "2026-01-22T22:39:37.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/2dcd5c9"
+        "sha": "48efcf5",
+        "message": "Update manuscripts from ff-story hooks",
+        "date": "2026-01-23T13:31:02.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/48efcf5"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

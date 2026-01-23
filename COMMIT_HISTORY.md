@@ -1,3 +1,4 @@
+b65edeb archipelago updates
 04012c0 chore: sync manuscripts and update dashboard
 48efcf5 Update manuscripts from ff-story hooks
 ca2afed perf: optimize image sizes and delivery across the site
