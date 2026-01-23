@@ -289,6 +289,7 @@ export default function LocationsPage() {
                                         alt={firstImage.alt}
                                         fill
                                         className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 300px"
                                     />
                                     <div className="absolute inset-x-0 bottom-0 p-2 bg-black/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
                                         <p className="text-[10px] uppercase tracking-tighter text-cyan-400 font-bold">{map.name}</p>

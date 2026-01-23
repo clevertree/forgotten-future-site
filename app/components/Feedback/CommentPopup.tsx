@@ -136,6 +136,7 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
                                     alt="Avatar"
                                     fill
                                     className="object-cover"
+                                    sizes="32px"
                                 />
                             </div>
                             <div>

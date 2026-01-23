@@ -1,3 +1,4 @@
+52d11ba feat: character page reorganization, image slideshows, and UX polish
 2dcd5c9 Add Tor character images to character page
 2c2a4d9 Enhance character and location pages with image slideshows
 575bf31 Sync media, update manuscripts, and refresh locations/characters UI

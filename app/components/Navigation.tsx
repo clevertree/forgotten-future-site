@@ -38,6 +38,7 @@ export default function Navigation() {
                         fill
                         className="object-contain"
                         priority
+                        sizes="(max-width: 768px) 144px, 224px"
                     />
                 </div>
             </Link>

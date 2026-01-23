@@ -113,6 +113,7 @@ export default function MediaPage() {
                                 alt="Forgotten Future Logo"
                                 fill
                                 className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                             />
                             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                                 <span className="bg-cyan-500/20 text-cyan-400 text-[10px] uppercase tracking-[0.4em] px-4 py-2 border border-cyan-500/30 backdrop-blur-sm group-hover:bg-cyan-500/40 transition-colors">
@@ -148,7 +149,7 @@ export default function MediaPage() {
                                             alt={item.title}
                                             fill
                                             className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
-                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                                         />
                                     </div>
                                     <h3 className="text-sm uppercase tracking-widest mb-1 text-cyan-400 group-hover:text-glow transition-all">{item.title}</h3>

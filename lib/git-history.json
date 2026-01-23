@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.80",
+    "version": "v0.13.81",
     "commits": [
+      {
+        "sha": "70f2bd9",
+        "message": "update story structure and manuscripts",
+        "date": "2026-01-22T23:10:34.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/70f2bd9"
+      },
       {
         "sha": "67acb95",
         "message": "Add Tor character images: ambush and nexus",
@@ -14,12 +20,6 @@
         "message": "Update narrative structure: Create Part V and fix manuscript generation script",
         "date": "2026-01-22T22:35:14.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/e01879b"
-      },
-      {
-        "sha": "0beff60",
-        "message": "Update INDEX.md: Add PART V, renumber subsequent parts, and regenerate manuscripts",
-        "date": "2026-01-22T22:31:13.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/0beff60"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,7 +51,7 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.53",
+    "version": "v0.11.54",
     "commits": [
       {
         "sha": "2dcd5c9",

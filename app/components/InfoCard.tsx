@@ -55,6 +55,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
                                 alt={img.alt}
                                 fill
                                 className="object-cover object-top w-full h-full"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                             />
                         </div>
                     ))}
@@ -78,6 +79,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
                 alt={imageAlt || ''}
                 fill
                 className="object-cover object-top w-full h-full opacity-80 group-hover:opacity-100 transition-opacity"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
             />
         );
     };

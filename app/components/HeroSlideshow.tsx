@@ -36,6 +36,7 @@ export default function HeroSlideshow({ images, videoSrc }: HeroSlideshowProps) 
                         className="object-cover"
                         style={{ filter: 'grayscale(50%) contrast(120%)' }}
                         priority={i === 0}
+                        sizes="100vw"
                     />
                 </div>
             ))}
