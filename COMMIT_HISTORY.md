@@ -1,3 +1,4 @@
+04012c0 chore: sync manuscripts and update dashboard
 48efcf5 Update manuscripts from ff-story hooks
 ca2afed perf: optimize image sizes and delivery across the site
 52d11ba feat: character page reorganization, image slideshows, and UX polish

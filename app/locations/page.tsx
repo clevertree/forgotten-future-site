@@ -50,6 +50,12 @@ const LOCATIONS: Location[] = [
         ]
     },
     { 
+        id: 'archipelago', 
+        name: 'The Core Archipelago', 
+        category: 'Military', 
+        images: [{ src: prefixPath('/media/settings/after-time/archipelago-desktop.png'), alt: 'The Core Archipelago - Floating Island Bases' }]
+    },
+    { 
         id: 'megacities', 
         name: 'The Megacities', 
         category: 'Urban', 
@@ -194,6 +200,21 @@ export default function LocationsPage() {
                             }
                         />
 
+                        {/* The Core Archipelago */}
+                        <InfoCard
+                            title="The Core Archipelago"
+                            subtitle="The Sky Paradise"
+                            borderColor="border-l-indigo-500"
+                            subtitleColor="text-indigo-400"
+                            slideshowImages={LOCATIONS.find(l => l.id === 'archipelago')?.images}
+                            onClick={() => handleImageClick('archipelago')}
+                            description={
+                                <p>
+                                    A series of mobile, floating island bases utilized by the Core. These high-altitude sanctuaries use <strong className="text-white">Anti-Gravity Engines</strong> to maintain a "Sky Paradise," holding the keys to Synodic technology while keeping the human population safely isolated from the ground.
+                                </p>
+                            }
+                        />
+
                         {/* Megacities */}
                         <InfoCard
                             title="The Megacities"
@@ -217,7 +238,6 @@ export default function LocationsPage() {
                             subtitle="Human Resistance"
                             borderColor="border-l-amber-600"
                             subtitleColor="text-amber-500"
-                            imageHeight="h-32"
                             slideshowImages={LOCATIONS.find(l => l.id === 'northern-villages')?.images}
                             onClick={() => handleImageClick('northern-villages')}
                             description={
@@ -233,7 +253,6 @@ export default function LocationsPage() {
                             subtitle="Scorched Territory"
                             borderColor="border-l-zinc-700"
                             subtitleColor="text-zinc-500"
-                            imageHeight="h-32"
                             slideshowImages={LOCATIONS.find(l => l.id === 'dead-zone')?.images}
                             onClick={() => handleImageClick('dead-zone')}
                             description={

@@ -28,7 +28,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
     subtitleColor = 'text-cyan-400',
     onClick,
     layout = 'vertical',
-    imageHeight = 'h-48'
+    imageHeight = 'h-56'
 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
