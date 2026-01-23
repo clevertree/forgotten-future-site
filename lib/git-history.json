@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.81",
+    "version": "v0.13.82",
     "commits": [
+      {
+        "sha": "ac9bba3",
+        "message": "Refactor chapter formats and update world-building for Core Archipelago, Iron Pillar, and 1000-Year Fallacy",
+        "date": "2026-01-23T13:30:55.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/ac9bba3"
+      },
       {
         "sha": "70f2bd9",
         "message": "update story structure and manuscripts",
@@ -14,12 +20,6 @@
         "message": "Add Tor character images: ambush and nexus",
         "date": "2026-01-22T22:39:34.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/67acb95"
-      },
-      {
-        "sha": "e01879b",
-        "message": "Update narrative structure: Create Part V and fix manuscript generation script",
-        "date": "2026-01-22T22:35:14.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/e01879b"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -28,12 +28,6 @@
     "name": "Teaser",
     "version": "v0.9.14",
     "commits": [
-      {
-        "sha": "41736dd",
-        "message": "Content: Update outro concepts and prompts.",
-        "date": "2026-01-21T16:54:49.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/41736dd"
-      },
       {
         "sha": "b01a09e",
         "message": "Update teaser prompts and README",
@@ -45,31 +39,37 @@
         "message": "Bump version 0.9.12",
         "date": "2026-01-18T17:38:33.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
+      },
+      {
+        "sha": "c07a34f",
+        "message": "Bump version and update history",
+        "date": "2026-01-18T17:27:48.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/c07a34f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.54",
+    "version": "v0.11.56",
     "commits": [
+      {
+        "sha": "ca2afed",
+        "message": "perf: optimize image sizes and delivery across the site",
+        "date": "2026-01-23T00:45:52.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/ca2afed"
+      },
+      {
+        "sha": "52d11ba",
+        "message": "feat: character page reorganization, image slideshows, and UX polish",
+        "date": "2026-01-22T23:11:02.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/52d11ba"
+      },
       {
         "sha": "2dcd5c9",
         "message": "Add Tor character images to character page",
         "date": "2026-01-22T22:39:37.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/2dcd5c9"
-      },
-      {
-        "sha": "2c2a4d9",
-        "message": "Enhance character and location pages with image slideshows",
-        "date": "2026-01-22T22:35:16.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/2c2a4d9"
-      },
-      {
-        "sha": "575bf31",
-        "message": "Sync media, update manuscripts, and refresh locations/characters UI",
-        "date": "2026-01-22T22:21:22.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/575bf31"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
