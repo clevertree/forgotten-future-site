@@ -1,3 +1,4 @@
+2d6ba91 Sync manuscripts from ff-story
 b0ac505 Add 'Play Full Synopsis' button to manuscript page
 5fee72a Sync updated manuscripts and fix StickyNav mobile test
 fcadaa1 Fix ChapterCard and harden auto-update logic

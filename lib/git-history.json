@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.87",
+    "version": "v0.13.88",
     "commits": [
       {
-        "sha": "ec62cd8",
+        "sha": "7f92904",
+        "message": "Sync manuscripts: Reorganized Act I (Ch 03/04 & 08/09 splits), reindexed to 55 chapters, and integrated Allocation/Mind-Link sub-themes",
+        "date": "2026-01-24T14:24:34.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/7f92904"
+      },
+      {
+        "sha": "4aaa5a7",
         "message": "Remove 'THE' from Part titles and regenerate manuscripts",
         "date": "2026-01-24T11:37:19.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/ec62cd8"
+        "url": "https://github.com/clevertree/ff-story/commit/4aaa5a7"
       },
       {
         "sha": "6b64bb3",
         "message": "updated manuscript",
         "date": "2026-01-23T18:13:10.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/6b64bb3"
-      },
-      {
-        "sha": "e97e45e",
-        "message": "bump version",
-        "date": "2026-01-23T18:03:06.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/e97e45e"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -29,30 +29,36 @@
     "version": "v0.9.14",
     "commits": [
       {
-        "sha": "a18c94c",
-        "message": "Add Verse 1 video generation prompt based on latest story updates",
-        "date": "2026-01-23T20:37:19.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/a18c94c"
-      },
-      {
-        "sha": "41736dd",
-        "message": "Content: Update outro concepts and prompts.",
-        "date": "2026-01-21T16:54:49.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/41736dd"
-      },
-      {
         "sha": "b01a09e",
         "message": "Update teaser prompts and README",
         "date": "2026-01-18T21:59:30.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/b01a09e"
+      },
+      {
+        "sha": "1afcb96",
+        "message": "Bump version 0.9.12",
+        "date": "2026-01-18T17:38:33.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
+      },
+      {
+        "sha": "c07a34f",
+        "message": "Bump version and update history",
+        "date": "2026-01-18T17:27:48.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/c07a34f"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.63",
+    "version": "v0.11.64",
     "commits": [
+      {
+        "sha": "b0ac505",
+        "message": "Add 'Play Full Synopsis' button to manuscript page",
+        "date": "2026-01-24T11:45:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/b0ac505"
+      },
       {
         "sha": "5fee72a",
         "message": "Sync updated manuscripts and fix StickyNav mobile test",
@@ -64,12 +70,6 @@
         "message": "Fix ChapterCard and harden auto-update logic",
         "date": "2026-01-23T18:23:57.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/fcadaa1"
-      },
-      {
-        "sha": "b65edeb",
-        "message": "archipelago updates",
-        "date": "2026-01-23T17:13:59.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/b65edeb"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
