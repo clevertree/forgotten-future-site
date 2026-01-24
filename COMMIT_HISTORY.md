@@ -1,3 +1,4 @@
+5fee72a Sync updated manuscripts and fix StickyNav mobile test
 fcadaa1 Fix ChapterCard and harden auto-update logic
 b65edeb archipelago updates
 04012c0 chore: sync manuscripts and update dashboard

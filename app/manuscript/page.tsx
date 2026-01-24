@@ -158,7 +158,15 @@ function ManuscriptContent() {
     }, [speakingId]);
 
     const fullManuscriptId = 9999;
+    const fullSynopsisId = 9998;
+    
     const manuscriptText = chapters.map(c => `${c.title}. ${c.content}`).join(' ');
+    
+    const synopsisText = parts.map(p => {
+        const partInfo = `${p.title}. ${p.summary}`;
+        const chapterInfo = p.chapters.map(c => `Chapter ${c.id}: ${c.title}. ${c.summary}`).join('. ');
+        return `${partInfo}. ${chapterInfo}`;
+    }).join('. ');
 
     const lastActiveRef = useRef(Date.now());
 
@@ -274,7 +282,7 @@ function ManuscriptContent() {
                                 <div className="text-[10px] text-zinc-600 italic text-center">
                                     Listen to the entire document using browser-native speech synthesis.
                                 </div>
-                                <div className="w-full pt-4">
+                                <div className="w-full pt-4 space-y-2">
                                     <button
                                         onClick={() => toggleSpeech(fullManuscriptId, manuscriptText)}
                                         className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullManuscriptId
@@ -283,6 +291,15 @@ function ManuscriptContent() {
                                             }`}
                                     >
                                         {speakingId === fullManuscriptId ? '⏹ Stop Audio' : '▶ Play Full Text'}
+                                    </button>
+                                    <button
+                                        onClick={() => toggleSpeech(fullSynopsisId, synopsisText)}
+                                        className={`w-full py-2 rounded text-xs font-bold uppercase tracking-widest transition-all border ${speakingId === fullSynopsisId
+                                            ? 'bg-purple-500 text-black border-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.5)]'
+                                            : 'bg-transparent text-purple-500 border-purple-500/30 hover:bg-purple-500/10'
+                                            }`}
+                                    >
+                                        {speakingId === fullSynopsisId ? '⏹ Stop Audio' : '▶ Play Full Synopsis'}
                                     </button>
                                 </div>
                             </div>

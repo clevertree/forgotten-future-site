@@ -1,8 +1,8 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.84
-> Updated: 2026-01-23
+> Draft Version: 0.13.86
+> Updated: 2026-01-24
 
-# PART I: THE LUNAR MISSION
+# PART I: LUNAR MISSION
 
 *Determined to reclaim the Moon from a supposed alien threat, Lem and a global military force embark on a mission that hides a century of fabricated history.*
 
@@ -134,7 +134,7 @@ Then the blue spheres rose from the silence of the gullies. They moved like biol
 
 ---
 
-# PART II: THE FALL AND FRAGMENTS
+# PART II: FALL AND FRAGMENTS
 
 *The assault on Cradle Prime ends in a devastating reset, shattering Lem's physical form but awakening his independent consciousness.*
 
@@ -238,7 +238,7 @@ Finally, I saw the 'Distant Fire.' It was Cradle Zero, the place where I was fir
 
 ---
 
-# PART III: THE HIVE OPTIMIZATION
+# PART III: HIVE OPTIMIZATION
 
 *Fifteen years after the Cataclysm, Lem is rebuilt by the Hive, becoming a "New Hero" in a world reshaped by manufactured threats and digital control.*
 
@@ -425,7 +425,7 @@ While visiting the museums in the Core City, Lem discovers plans to dismantle th
 
 ---
 
-# PART IV: THE NORTHERN SCHISM
+# PART IV: NORTHERN SCHISM
 
 *Dispatched to the frozen North, Lem finds himself caught between the Core’s surgical expansion and the analog resistance of the Voidsmen.*
 
@@ -661,7 +661,7 @@ I chose to ignore the navigation prompts of my own mind, those persistent instru
 
 ---
 
-# PART V: THE ANALOG SIGNAL
+# PART V: ANALOG SIGNAL
 
 *Following the discovery in the White Forest, Lem faces the consequences of the Archive's revelation, wandering through exile until a single signal changes everything.*
 
@@ -791,7 +791,7 @@ I returned to the ridge with the weight of his refusal in my chest. The news hit
 
 ---
 
-# PART VI: THE KINETIC REDACTION
+# PART VI: KINETIC REDACTION
 
 *As diplomacy fails, the Hive initiates "Plan B"—a total kinetic strike that erases entire settlements and forces a desperate final vigil.*
 
@@ -945,7 +945,7 @@ As the third targeting laser locked into the center of **Ait-Aman**, the scalar 
 
 ---
 
-# PART VII: THE SOVEREIGN SWARM
+# PART VII: SOVEREIGN SWARM
 
 *From the ashes of the North, a massive mechanical uprising converges on the Hive's desert base, led by a newly merged aetheric consciousness.*
 
@@ -1031,7 +1031,7 @@ Maya stood among the ruins, her silver eyes reflecting the end of the base. Then
 
 ---
 
-# PART VIII: THE FINAL TRANSMISSION
+# PART VIII: FINAL TRANSMISSION
 
 *Lem returns to the Moon to confront the original architects of the Hive and broadcast the unedited truth to a newly autonomous world.*
 
