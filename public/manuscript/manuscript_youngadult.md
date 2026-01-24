@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (YOUNG ADULT)
-> Draft Version: 0.13.88
+> Draft Version: 0.13.89
 > Updated: 2026-01-24
 
 # PART I: LUNAR MISSION
@@ -477,7 +477,15 @@ Lem leads his squad into the heart of **Ait-Aman**, a place defined by its analo
 ### Draft
 We entered **Ait-Aman**, which was defined by analog silence. They used the lack of energy signatures as a shield. The village was a collection of rough stone and heavy timber, perched precariously on the side of a mountain ridge in the High Enclave. The air was thin and smelled of woodsmoke and old wool. I met a boy named Arlo. He looked at my mechanical frame with a hunger for technology. My crew offered him a way out—an internship at a high-level Core facility. He looked like he wanted to say yes, but he was holding back, looking at the elders in the shadows, who watched us with suspicious eyes through their intricate silver talismans.
 
-I asked Arlo what his people knew about Maya. He looked at me and said the elders talked about her all the time. They called her a central figure in the Moon Cataclysm—which they insisted happened only fifteen or twenty years ago. One of the Metal soldiers next to me let out a short, sharp laugh. Arlo didn't even flinch. I could tell he was used to being treated like he was crazy for believing his own family's history. I didn't want to start an argument about dates, so I just asked if there were any signs of the **Wuxan** or Maya worshippers around here. Arlo looked confused. He told me he didn't even know what a cult was. He said his people just followed the **Wuxan**—a kind of "story time" where they told tales of the old world. He sounded a bit sad when he mentioned it, complaining that if they just had a little bit of tech, they wouldn't have to worry about people forgetting the details. He hated that their entire history was limited to what a few people could remember.
+I asked Arlo what his people knew about Maya. He looked at me and said the elders talked about her all the time. They called her a central figure in the Moon Cataclysm—which they insisted happened only fifteen or twenty years ago. One of the Metal soldiers next to me let out a short, sharp laugh and pulled a small, faceted stone from his tactical pouch. It was a diamond, perfectly cut and catching the light of the central fire. He tossed it at Arlo's feet like it was a piece of gravel.
+
+"Keep it," the soldier sneered. "Consider it a signing bonus. We make them by the crate in the Hive."
+
+Arlo didn't even look down at the sparkling stone. He just reached into his own pocket and pulled out a small, flat piece of hand-hammered copper. It was rough, marked with the strikes of a heavy mallet, but it had a weight to it that the diamond lacked.
+
+"We don't want your glass," Arlo said, his voice flat. "The elders tell us about the Before Time. How men used to kill each other for these rocks. My people remember the rumors—how in 2015, your great machines learned to turn lead into gold. To us, your treasures are just a fake promise. We only trust what we can forge with our own sweat."
+
+I didn't want to start an argument about dates or alchemy, so I just asked if there were any signs of the **Wuxan** or Maya worshippers around here. Arlo looked confused. He told me he didn't even know what a cult was. He said his people just followed the **Wuxan**—a kind of "story time" where they told tales of the old world. He sounded a bit sad when he mentioned it, complaining that if they just had a little bit of tech, they wouldn't have to worry about people forgetting the details. He hated that their entire history was limited to what a few people could remember.
 
 ---
 

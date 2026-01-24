@@ -1,5 +1,5 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.88
+> Draft Version: 0.13.89
 > Updated: 2026-01-24
 
 # PART I: LUNAR MISSION
@@ -567,7 +567,13 @@ The village was a sanctuary of stillness, a refuge from the hum of the machine. 
 
 Arlo’s gaze didn't waver. "They say she was the heart of the fire," he replied. "The one who broke the Moon a dozen winters ago. They remember the sky falling as if it were yesterday."
 
-Behind me, a Metal Vessel emitted a burst of static that sounded suspiciously like a sneer. I saw the muscles in Arlo’s jaw tighten. He was familiar with the arrogance of the Hive, the way they looked down on the 'primitive' villagers for their rejection of the Thousand-Year history. I steered the conversation away from the fallacy and asked about signatures of **Wuxan** worship—ritual sites or secret gatherings dedicated to her name.
+Behind me, a Metal Vessel emitted a burst of static that sounded suspiciously like a sneer. He pulled a heavy gold bar from his kit, the polished surface reflecting the flickering orange light of the ritual fire. He held it out to Arlo, a silent bribe for cooperation.
+
+"Ancient history is for those without a future," the soldier said. "The Core offers you wealth beyond your village's comprehension. We have mastered the atom. We can create this out of lead if we wish. It has no value to us."
+
+Arlo looked at the gold, his expression hardening. He didn't reach for it. "We know the stories of the transmutation," he said, his voice ringing with a sudden authority. "We know that in 2015, your ancestors learned the secret of unearned wealth. To you, it is just a manufacturing byproduct. To us, it is a reminder of the greed that broke the world. Keep your lead-made gold, Hive-man. We will trade in the coins we strike from the mountains with our own hands."
+
+I saw the muscles in Arlo’s jaw tighten. He was familiar with the arrogance of the Hive, the way they looked down on the 'primitive' villagers for their rejection of the Thousand-Year history. I steered the conversation away from the fallacy and asked about signatures of **Wuxan** worship—ritual sites or secret gatherings dedicated to her name.
 
 The boy tilted his head, genuinely perplexed. "A cult? We have no such thing. My people have the stories of the **Wuxan**, yes. We sit in the long nights and piece together the fragments of who we were. But it is just memory, Lem. Unreliable, fading human memory." He looked down at his own hands, his voice tinged with a sudden bitterness. "If we had the tools you carry, the stories wouldn't change with every telling. We wouldn't be limited by the frailty of what a single mind can hold."
 
