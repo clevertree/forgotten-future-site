@@ -1,3 +1,4 @@
+fcadaa1 Fix ChapterCard and harden auto-update logic
 b65edeb archipelago updates
 04012c0 chore: sync manuscripts and update dashboard
 48efcf5 Update manuscripts from ff-story hooks

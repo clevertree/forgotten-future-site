@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.85",
+    "version": "v0.13.87",
     "commits": [
+      {
+        "sha": "ec62cd8",
+        "message": "Remove 'THE' from Part titles and regenerate manuscripts",
+        "date": "2026-01-24T11:37:19.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/ec62cd8"
+      },
       {
         "sha": "6b64bb3",
         "message": "updated manuscript",
@@ -14,12 +20,6 @@
         "message": "bump version",
         "date": "2026-01-23T18:03:06.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/e97e45e"
-      },
-      {
-        "sha": "40f35e1",
-        "message": "docs: integrate Old Man Azar, Wuxan Long Count, and Alkebulan geography",
-        "date": "2026-01-23T16:17:27.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/40f35e1"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -28,6 +28,12 @@
     "name": "Teaser",
     "version": "v0.9.14",
     "commits": [
+      {
+        "sha": "a18c94c",
+        "message": "Add Verse 1 video generation prompt based on latest story updates",
+        "date": "2026-01-23T20:37:19.000Z",
+        "url": "https://github.com/clevertree/ff-teaser/commit/a18c94c"
+      },
       {
         "sha": "41736dd",
         "message": "Content: Update outro concepts and prompts.",
@@ -39,20 +45,20 @@
         "message": "Update teaser prompts and README",
         "date": "2026-01-18T21:59:30.000Z",
         "url": "https://github.com/clevertree/ff-teaser/commit/b01a09e"
-      },
-      {
-        "sha": "1afcb96",
-        "message": "Bump version 0.9.12",
-        "date": "2026-01-18T17:38:33.000Z",
-        "url": "https://github.com/clevertree/ff-teaser/commit/1afcb96"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-teaser/commits/main/"
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.59",
+    "version": "v0.11.61",
     "commits": [
+      {
+        "sha": "fcadaa1",
+        "message": "Fix ChapterCard and harden auto-update logic",
+        "date": "2026-01-23T18:23:57.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/fcadaa1"
+      },
       {
         "sha": "b65edeb",
         "message": "archipelago updates",
@@ -64,12 +70,6 @@
         "message": "chore: sync manuscripts and update dashboard",
         "date": "2026-01-23T16:17:33.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/04012c0"
-      },
-      {
-        "sha": "48efcf5",
-        "message": "Update manuscripts from ff-story hooks",
-        "date": "2026-01-23T13:31:02.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/48efcf5"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

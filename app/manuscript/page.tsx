@@ -335,6 +335,7 @@ function ManuscriptContent() {
                         sections={parts} 
                         top="top-20 md:top-28" 
                         onSectionClick={scrollToSection}
+                        mobileLabel="Select Part..."
                     />
 
                     <div ref={scrollContainerRef} className="space-y-12 h-[calc(100vh)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar relative">

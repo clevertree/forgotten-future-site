@@ -38,6 +38,7 @@ describe('ManuscriptPage Component', () => {
   });
 
   it('should filter chapters by section', () => {
+    cy.viewport(1280, 720); // Ensure desktop view for button clicks
     cy.mount(
       <AppRouterContext.Provider value={getMockRouter() as any}>
         <SearchParamsContext.Provider value={new URLSearchParams()}>
@@ -46,8 +47,8 @@ describe('ManuscriptPage Component', () => {
       </AppRouterContext.Provider>
     );
 
-    // Click Part II:
-    cy.contains('Part II:').click();
+    // Click Part II using the button in the desktop nav
+    cy.get('button').contains('Part II:').click();
 
     // Verify it scroll/shows relevant content (basic check)
     cy.contains('Cradle Zero').should('be.visible');
