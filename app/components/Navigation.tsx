@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { prefixPath } from '@/lib/utils';
+import ThemeSwitch from './ThemeSwitch';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,33 +29,32 @@ export default function Navigation() {
                         alt="Forgotten Future Icon"
                         fill
                         className="object-contain group-hover:scale-110 transition-transform duration-300"
-                        sizes="(max-width: 768px) 48px, 80px"
                     />
                 </div>
-                <div className="relative h-8 md:h-12 w-36 md:w-56">
+                <div className="relative h-8 md:h-12 w-36 md:w-52">
                     <Image
                         src={prefixPath('/media/logo/ff-text.png')}
                         alt="Forgotten Future"
                         fill
                         className="object-contain"
                         priority
-                        sizes="(max-width: 768px) 144px, 224px"
                     />
                 </div>
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex gap-8 uppercase text-sm tracking-widest font-medium">
+            <div className="hidden lg:flex items-center gap-8 uppercase text-sm tracking-widest font-medium">
                 {navLinks.map(link => (
-                    <Link key={link.href} href={link.href} className="hover:text-cyan-400 transition-colors">
+                    <Link key={link.href} href={link.href} className="hover:text-accent transition-colors">
                         {link.label}
                     </Link>
                 ))}
+                <ThemeSwitch />
             </div>
 
             {/* Mobile Hamburger Button */}
             <button
-                className="lg:hidden z-[60] p-2 text-cyan-400 focus:outline-none"
+                className="lg:hidden z-[60] p-2 text-accent focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle Menu"
             >
@@ -66,18 +66,21 @@ export default function Navigation() {
             </button>
 
             {/* Mobile Nav Overlay */}
-            <div className={`fixed inset-0 bg-black/98 backdrop-blur-2xl z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20">
+            <div className={`fixed inset-0 bg-background z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20 text-primary">
                     {navLinks.map(link => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="hover:text-cyan-400 transition-colors"
+                            className="hover:text-accent transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             {link.label}
                         </Link>
                     ))}
+                    <div className="pt-8">
+                        <ThemeSwitch />
+                    </div>
                 </div>
             </div>
         </nav>

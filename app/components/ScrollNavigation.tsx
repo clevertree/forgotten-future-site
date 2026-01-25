@@ -186,12 +186,11 @@ export default function ScrollNavigation() {
 
     return (
         <div
-            className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col items-center gap-3 transition-all duration-500 ease-in-out ${
-                (isVisible || isFullText) ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-10 pointer-events-none'
+            className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] flex flex-col items-center gap-3 transition-all duration-500 ease-in-out ${(isVisible || isFullText) ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-10 pointer-events-none'
                 } max-md:left-1/2 max-md:-translate-x-1/2 max-md:right-auto max-md:flex-row max-md:bottom-8`}
         >
             {isFullText && currentChapter !== null && (
-                <div className="flex items-center gap-1 bg-black/90 backdrop-blur-xl border border-cyan-500/20 p-1 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all">
+                <div className="flex items-center gap-1 bg-[rgb(var(--background-start-rgb))]/90 backdrop-blur-xl border border-cyan-500/20 p-1 rounded-full shadow-lg shadow-accent/15 transition-all">
                     <button
                         onClick={() => scrollToChapter(Math.max(1, currentChapter - 1))}
                         className="p-2 hover:bg-cyan-500/20 text-cyan-400 rounded-full transition-colors active:scale-90 disabled:opacity-30"
@@ -220,9 +219,8 @@ export default function ScrollNavigation() {
 
                     <button
                         onClick={toggleTTS}
-                        className={`p-2 rounded-full transition-colors active:scale-90 ${
-                            speakingId !== null ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(6,182,212,0.4)]' : 'hover:bg-cyan-500/20 text-cyan-400'
-                        }`}
+                        className={`p-2 rounded-full transition-colors active:scale-90 ${speakingId !== null ? 'bg-cyan-500 text-black shadow-lg shadow-accent/40' : 'hover:bg-cyan-500/20 text-cyan-400'
+                            }`}
                         title={speakingId !== null ? "Stop Listening" : "Listen to Chapter"}
                     >
                         {speakingId !== null ? <Square size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" />}
@@ -232,7 +230,7 @@ export default function ScrollNavigation() {
 
             <button
                 onClick={scrollToTop}
-                className="p-3.5 bg-cyan-500 text-black rounded-full shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:bg-cyan-400 hover:scale-110 active:scale-90 transition-all"
+                className="btn-icon"
                 title="Return to Top"
             >
                 <ArrowUp size={24} strokeWidth={3} />

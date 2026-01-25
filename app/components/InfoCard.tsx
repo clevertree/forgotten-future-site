@@ -24,8 +24,8 @@ export const InfoCard: React.FC<InfoCardProps> = ({
     imageSrc,
     imageAlt,
     slideshowImages,
-    borderColor = 'border-l-cyan-500',
-    subtitleColor = 'text-cyan-400',
+    borderColor = 'border-l-accent',
+    subtitleColor = 'text-accent',
     onClick,
     layout = 'vertical',
     imageHeight = 'h-56'
@@ -62,9 +62,9 @@ export const InfoCard: React.FC<InfoCardProps> = ({
                     {slideshowImages.length > 1 && (
                         <div className="absolute bottom-2 right-2 flex gap-1 z-20">
                             {slideshowImages.map((_, i) => (
-                                <div 
-                                    key={i} 
-                                    className={`w-1 h-1 rounded-full ${i === currentIndex ? 'bg-cyan-400' : 'bg-white/20'}`} 
+                                <div
+                                    key={i}
+                                    className={`w-1 h-1 rounded-full ${i === currentIndex ? 'bg-cyan-400' : 'bg-white/20'}`}
                                 />
                             ))}
                         </div>
@@ -86,18 +86,18 @@ export const InfoCard: React.FC<InfoCardProps> = ({
 
     if (layout === 'horizontal') {
         return (
-            <div className={`glass-panel p-8 border-l-4 ${borderColor} overflow-hidden relative`}>
+            <div className={`glass-panel p-8 border-l-4 ${borderColor} overflow-hidden relative not-prose`}>
                 <div className="flex flex-col md:flex-row gap-8 items-start">
-                    <div className={`md:w-1/3 relative ${imageHeight} overflow-hidden rounded bg-black/40 cursor-pointer group`} onClick={onClick}>
+                    <div className={`md:w-1/3 relative ${imageHeight} overflow-hidden rounded bg-background/20 cursor-pointer group`} onClick={onClick}>
                         {renderImage()}
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center z-10">
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-background/20 transition-colors flex items-center justify-center z-10">
                             <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Explore</span>
                         </div>
                     </div>
                     <div className="md:w-2/3">
                         <h3 className="text-2xl font-bold mb-1">{title}</h3>
                         {subtitle && <p className={`text-sm ${subtitleColor} uppercase tracking-widest mb-4 font-semibold`}>{subtitle}</p>}
-                        <div className="space-y-4 text-gray-300 leading-relaxed">
+                        <div className="space-y-4 text-[rgb(var(--foreground-rgb))]/70 leading-relaxed">
                             {description}
                         </div>
                     </div>
@@ -107,16 +107,16 @@ export const InfoCard: React.FC<InfoCardProps> = ({
     }
 
     return (
-        <div className={`glass-panel p-6 border-l-4 ${borderColor}`}>
-            <div className={`relative ${imageHeight} mb-6 overflow-hidden rounded bg-black/40 cursor-pointer group`} onClick={onClick}>
+        <div className={`glass-panel p-6 border-l-4 ${borderColor} h-full not-prose`}>
+            <div className={`relative ${imageHeight} mb-6 overflow-hidden rounded bg-background/20 cursor-pointer group`} onClick={onClick}>
                 {renderImage()}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center z-10">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-background/20 transition-colors flex items-center justify-center z-10">
                     <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
                 </div>
             </div>
             <h3 className="text-2xl font-bold mb-1">{title}</h3>
             {subtitle && <p className={`text-sm ${subtitleColor} uppercase tracking-widest mb-4 font-semibold`}>{subtitle}</p>}
-            <div className="space-y-4 text-gray-300">
+            <div className="space-y-4 text-[rgb(var(--foreground-rgb))]/70">
                 {description}
             </div>
         </div>

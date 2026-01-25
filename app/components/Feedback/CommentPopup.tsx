@@ -63,18 +63,18 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
     };
 
     return (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-            <div className="w-full max-w-lg bg-gray-900 border border-white/10 rounded-xl shadow-2xl overflow-hidden">
-                <div className="flex items-center justify-between p-4 border-b border-white/10 bg-black/50">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
+            <div className="w-full max-w-lg bg-[#0a0a0a] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
+                <div className="flex items-center justify-between p-4 border-b border-white/10 bg-background/50">
                     <h3 className="text-lg font-bold text-cyan-400">Add Feedback</h3>
-                    <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors">
+                    <button onClick={onClose} className="text-muted hover:text-white transition-colors">
                         <X size={20} />
                     </button>
                 </div>
 
                 <form onSubmit={handleSubmit} className="p-6 space-y-4">
-                    <div className="text-xs text-gray-500 uppercase tracking-widest font-mono">
-                        Commenting on: <span className="text-gray-300">{path}#{anchorId}</span>
+                    <div className="text-xs text-muted uppercase tracking-widest font-mono">
+                        Commenting on: <span className="text-primary">{path}#{anchorId}</span>
                     </div>
 
                     {!session && (
@@ -94,34 +94,34 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
                                 <>
                                     <div className="relative my-4">
                                         <div className="absolute inset-0 flex items-center"><span className="w-full border-t border-white/5"></span></div>
-                                        <div className="relative flex justify-center text-xs uppercase"><span className="bg-gray-900 px-2 text-gray-500">Or stay anonymous</span></div>
+                                        <div className="relative flex justify-center text-xs uppercase"><span className="bg-[#0a0a0a] px-2 text-muted">Or stay anonymous</span></div>
                                     </div>
 
                                     <div className="grid grid-cols-2 gap-4">
                                         <div>
-                                            <label className="block text-xs text-gray-400 mb-1 uppercase">Name</label>
+                                            <label className="block text-xs text-secondary mb-1 uppercase">Name</label>
                                             <input
                                                 type="text"
                                                 required
                                                 value={name}
                                                 onChange={(e) => setName(e.target.value)}
-                                                className="w-full bg-black/50 border border-white/10 rounded p-2 text-sm focus:border-cyan-500 outline-none"
+                                                className="w-full bg-background/50 border border-white/10 rounded p-2 text-sm focus:border-cyan-500 outline-none"
                                             />
                                         </div>
                                         <div>
-                                            <label className="block text-xs text-gray-400 mb-1 uppercase">Email</label>
+                                            <label className="block text-xs text-secondary mb-1 uppercase">Email</label>
                                             <input
                                                 type="email"
                                                 required
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
-                                                className="w-full bg-black/50 border border-white/10 rounded p-2 text-sm focus:border-cyan-500 outline-none"
+                                                className="w-full bg-background/50 border border-white/10 rounded p-2 text-sm focus:border-cyan-500 outline-none"
                                             />
                                         </div>
                                     </div>
                                 </>
                             ) : (
-                                <p className="mt-4 text-xs text-center text-zinc-500 uppercase tracking-widest">
+                                <p className="mt-4 text-xs text-center text-muted uppercase tracking-widest">
                                     Anonymous comments are currently disabled.
                                 </p>
                             )}
@@ -141,19 +141,19 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
                             </div>
                             <div>
                                 <p className="text-sm font-medium text-white">{session.user?.name}</p>
-                                <p className="text-xs text-gray-500">Verified Contributor</p>
+                                <p className="text-xs text-muted">Verified Contributor</p>
                             </div>
                         </div>
                     )}
 
                     <div>
-                        <label className="block text-xs text-gray-400 mb-1 uppercase">Your Comment (Markdown enabled)</label>
+                        <label className="block text-xs text-secondary mb-1 uppercase">Your Comment (Markdown enabled)</label>
                         <textarea
                             required
                             rows={5}
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
-                            className="w-full bg-black/50 border border-white/10 rounded p-3 text-sm focus:border-cyan-500 outline-none resize-none font-mono"
+                            className="w-full bg-background/50 border border-white/10 rounded p-3 text-sm focus:border-cyan-500 outline-none resize-none font-mono"
                             placeholder="What can we improve? (Use @ to tag characters if relevant)"
                         />
                     </div>
@@ -164,7 +164,7 @@ export const CommentPopup: React.FC<CommentPopupProps> = ({
                         <button
                             type="button"
                             onClick={onClose}
-                            className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors"
+                            className="px-4 py-2 text-sm text-secondary hover:text-white transition-colors"
                         >
                             Cancel
                         </button>

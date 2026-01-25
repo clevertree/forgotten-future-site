@@ -283,10 +283,10 @@ function FullTextContent() {
             {/* Content Refresh Notification */}
             {notification && (
                 <div className="fixed top-28 right-8 z-50 animate-in fade-in slide-in-from-top-4 duration-300">
-                    <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] font-bold text-xs uppercase tracking-widest flex items-center gap-3">
+                    <div className="bg-cyan-500 text-black px-6 py-3 rounded-full shadow-xl shadow-accent/50 font-bold text-xs uppercase tracking-widest flex items-center gap-3">
                         <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-background opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-background"></span>
                         </span>
                         {notification}
                         <button onClick={() => setNotification(null)} className="hover:opacity-60 transition-opacity">✕</button>
@@ -297,9 +297,9 @@ function FullTextContent() {
             <header className="mb-16 text-center lg:text-left lg:pl-[25%] relative">
 
                 <h1 className="text-6xl font-black mb-4 tracking-tighter text-glow">FORGOTTEN FUTURE</h1>
-                <h2 className="text-xl text-cyan-400 uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
+                <h2 className="text-xl uppercase tracking-[0.3em]">The Full Manuscript Draft</h2>
                 {draftVersion && (
-                    <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] border border-white/5 bg-white/5 px-3 py-1 rounded">
+                    <span className="text-[10px] text-muted uppercase tracking-[0.2em] border border-primary/5 bg-primary/5 px-3 py-1 rounded">
                         Draft: v{draftVersion}
                     </span>
                 )}
@@ -310,15 +310,15 @@ function FullTextContent() {
                             toggleSpeech(999, fullText);
                         }}
                         className={`flex items-center gap-3 px-6 py-2 rounded-full border text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${speakingId === 999
-                            ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.5)]'
-                            : 'bg-white/5 text-cyan-400 border-white/10 hover:bg-white/10'
+                            ? 'bg-cyan-500 text-background border-cyan-500 shadow-xl shadow-accent/50'
+                            : 'bg-primary/5 text-cyan-400 border-primary/10 hover:bg-white/10'
                             }`}
                     >
                         {speakingId === 999 ? (
                             <>
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-background opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-background"></span>
                                 </span>
                                 Stop Full Audio
                             </>
@@ -329,7 +329,7 @@ function FullTextContent() {
                         )}
                     </button>
                 </div>
-                <div className="mt-4 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-zinc-400 uppercase tracking-widest leading-relaxed max-w-3xl">
+                <div className="mt-4 p-4 border border-cyan-500/20 bg-cyan-500/5 rounded text-xs text-secondary uppercase tracking-widest leading-relaxed max-w-3xl">
                     Note: This draft covers the <strong className="text-cyan-400 font-bold">{version === '13plus' ? '13+ Core Edition' : 'Young Adult Edition'}</strong>.
                     Optimized for Text-to-Speech
                 </div>
@@ -340,12 +340,12 @@ function FullTextContent() {
                 {/* Navigation Sidebar */}
                 <aside className="lg:w-1/4 no-print order-1 lg:order-1">
                     <div className="glass-panel sticky top-36 max-h-[70vh] overflow-y-auto custom-scrollbar p-6">
-                        <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500/60 hover:text-cyan-400 font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mb-2 border-b border-white/5 transition-colors">
+                        <Link href={`/manuscript${version === 'youngadult' ? '' : '?edition=13plus'}`} className="text-cyan-500/60 hover:text-cyan-400 font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mb-2 border-b border-primary/5 transition-colors">
                             ← Back to Chapter List
                         </Link>
 
-                        <div className="flex justify-between items-center mb-6 border-b border-white/10 pb-2">
-                            <h2 className="text-[10px] font-bold text-cyan-500 uppercase tracking-[0.2em]">
+                        <div className="flex justify-between items-center mb-6 border-b border-primary/10 pb-2">
+                            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em]">
                                 Navigation
                             </h2>
                             <div className="scale-75 origin-right mr-2">
@@ -359,13 +359,13 @@ function FullTextContent() {
                                 <div className="space-y-6">
                                     {parts.map((section, idx) => (
                                         <div key={idx}>
-                                            <h3 className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-3">
+                                            <h3 className="text-[10px] font-bold uppercase tracking-widest mb-3">
                                                 {section.title}
                                             </h3>
-                                            <ul className="space-y-2 border-l border-white/5 pl-4">
+                                            <ul className="space-y-2 border-l border-primary/5 pl-4">
                                                 {section.chapters.map((c) => (
                                                     <li key={c.id}>
-                                                        <a href={`#chapter-${c.id}`} className="text-[10px] text-zinc-400 hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
+                                                        <a href={`#chapter-${c.id}`} className="text-[10px] text-secondary hover:text-cyan-400 transition-colors block py-0.5 leading-tight uppercase tracking-tighter">
                                                             {c.id}. {c.title}
                                                         </a>
                                                     </li>
@@ -383,11 +383,11 @@ function FullTextContent() {
                 <article className="lg:w-3/4 space-y-24 pb-[100vh] order-2 lg:order-2">
                     {/* ARTICLE_START */}
                     {isLoading ? (
-                        <div className="flex flex-col items-center justify-center py-24 text-zinc-500 uppercase tracking-widest text-xs">
+                        <div className="flex flex-col items-center justify-center py-24 text-muted uppercase tracking-widest text-xs">
                             <div className="mb-4 animate-pulse">Decrypting Aether-Logs...</div>
                         </div>
                     ) : chapters.length === 0 ? (
-                        <div className="flex flex-col items-center justify-center py-24 text-zinc-500 uppercase tracking-widest text-xs">
+                        <div className="flex flex-col items-center justify-center py-24 text-muted uppercase tracking-widest text-xs">
                             <div className="mb-4 text-red-500/50">Link Severed: Records Inaccessible</div>
                             <button
                                 onClick={() => window.location.reload()}
@@ -400,8 +400,8 @@ function FullTextContent() {
                         parts.length > 0 ? (
                             parts.map((part, pIdx) => (
                                 <div key={pIdx} className="space-y-24">
-                                    <header className="border-y border-white/5 py-12 mb-16 text-center">
-                                        <h2 className="text-4xl font-black tracking-widest text-white uppercase mb-4">{part.title}</h2>
+                                    <header className="border-y border-primary/5 py-12 mb-16 text-center">
+                                        <h2 className="text-4xl font-black tracking-widest uppercase mb-4">{part.title}</h2>
                                     </header>
 
                                     {part.chapters.map((chapter) => (
@@ -410,8 +410,8 @@ function FullTextContent() {
                                             id={`chapter-${chapter.id}`}
                                             className="prose prose-invert max-w-none scroll-mt-32"
                                         >
-                                            <div className="flex items-center justify-between mb-8 group">
-                                                <h3 className="text-3xl font-bold text-white flex items-center gap-4 m-0">
+                                            <div className="flex items-center justify-between mb-8 group not-prose">
+                                                <h3 className="text-3xl font-bold flex items-center gap-4 m-0">
                                                     <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
                                                         Chapter {chapter.id}
                                                     </span>
@@ -420,15 +420,15 @@ function FullTextContent() {
                                                 <button
                                                     onClick={() => toggleSpeech(chapter.id, chapter.content)}
                                                     className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${speakingId === chapter.id
-                                                        ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                        ? 'bg-cyan-500 text-background border-cyan-500 shadow-lg shadow-accent/50'
                                                         : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                                         }`}
                                                 >
                                                     {speakingId === chapter.id ? (
                                                         <>
                                                             <span className="relative flex h-2 w-2">
-                                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                                                                <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-background opacity-75"></span>
+                                                                <span className="relative inline-flex rounded-full h-2 w-2 bg-background"></span>
                                                             </span>
                                                             Stop Listening
                                                         </>
@@ -439,7 +439,7 @@ function FullTextContent() {
                                                     )}
                                                 </button>
                                             </div>
-                                            <div className="text-zinc-300 leading-[2] text-lg space-y-6">
+                                            <div className="text-secondary leading-[2] text-lg space-y-6">
                                                 <ReactMarkdown>{chapter.content}</ReactMarkdown>
                                             </div>
                                         </section>
@@ -453,8 +453,8 @@ function FullTextContent() {
                                     id={`chapter-${chapter.id}`}
                                     className="prose prose-invert max-w-none scroll-mt-32"
                                 >
-                                    <div className="flex items-center justify-between mb-8 group">
-                                        <h3 className="text-3xl font-bold text-white flex items-center gap-4 m-0">
+                                    <div className="flex items-center justify-between mb-8 group not-prose">
+                                        <h3 className="text-3xl font-bold flex items-center gap-4 m-0">
                                             <span className="text-cyan-500 text-sm font-mono uppercase tracking-widest">
                                                 Chapter {chapter.id}
                                             </span>
@@ -463,15 +463,15 @@ function FullTextContent() {
                                         <button
                                             onClick={() => toggleSpeech(chapter.id, chapter.content)}
                                             className={`no-print flex items-center gap-2 px-4 py-2 rounded-full border text-[10px] font-bold uppercase tracking-widest transition-all ${speakingId === chapter.id
-                                                ? 'bg-cyan-500 text-black border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]'
+                                                ? 'bg-cyan-500 text-background border-cyan-500 shadow-lg shadow-accent/50'
                                                 : 'bg-transparent text-cyan-500 border-cyan-500/30 hover:bg-cyan-500/10'
                                                 }`}
                                         >
                                             {speakingId === chapter.id ? (
                                                 <>
                                                     <span className="relative flex h-2 w-2">
-                                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-                                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+                                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-background opacity-75"></span>
+                                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-background"></span>
                                                     </span>
                                                     Stop Listening
                                                 </>
@@ -482,7 +482,7 @@ function FullTextContent() {
                                             )}
                                         </button>
                                     </div>
-                                    <div className="text-zinc-300 leading-[2] text-lg space-y-6">
+                                    <div className="text-secondary leading-[2] text-lg space-y-6">
                                         <ReactMarkdown>{chapter.content}</ReactMarkdown>
                                     </div>
                                 </section>
@@ -493,11 +493,11 @@ function FullTextContent() {
                 </article>
             </div>
 
-            <footer className="border-t border-white/10 py-12 text-center">
-                <p className="text-zinc-500 text-sm italic mb-4">
+            <footer className="border-t border-primary/10 py-12 text-center">
+                <p className="text-muted text-sm italic mb-4">
                     End of First Edition Manuscript. The Aether-Drive reaches its limit of recall.
                 </p>
-                <p className="text-[10px] text-zinc-600 uppercase tracking-widest">
+                <p className="text-[10px] text-muted uppercase tracking-widest">
                     Protocol: Full Sync | Archive ID: FF-MAN-MAX
                 </p>
             </footer>
@@ -508,7 +508,7 @@ function FullTextContent() {
 export default function FullTextManuscript() {
     return (
         <Suspense fallback={
-            <div className="container mx-auto px-6 py-24 text-center text-zinc-500 uppercase tracking-widest text-xs">
+            <div className="container mx-auto px-6 py-24 text-center text-muted uppercase tracking-widest text-xs">
                 Syncing with Archive...
             </div>
         }>

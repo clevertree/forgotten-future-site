@@ -82,47 +82,47 @@ export default function RepoStatus({ name, apiUrl, repoUrl, initialData }: RepoS
   if (loading) {
     return (
       <div className="glass-panel animate-pulse h-48 flex items-center justify-center">
-        <span className="text-zinc-500 text-xs uppercase tracking-widest">Scanning {name}...</span>
+        <span className="text-muted text-xs uppercase tracking-widest">Scanning {name}...</span>
       </div>
     );
   }
 
   if (error || !data) {
     return (
-      <div className="glass-panel border-red-500/30">
-        <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4">Repository: {name}</h3>
-        <p className="text-red-400 text-[10px] font-mono">Signal Lost: {error || 'Unknown Error'}</p>
+      <div className="glass-panel border-element-fire/30">
+        <h3 className="text-xs font-bold uppercase tracking-widest mb-4">Repository: {name}</h3>
+        <p className="text-element-fire text-[10px] font-mono">Signal Lost: {error || 'Unknown Error'}</p>
       </div>
     );
   }
 
   return (
-    <div className="glass-panel group hover:border-cyan-500/30 transition-all">
+    <div className="glass-panel group hover:border-accent/30 transition-all">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: {data.name}</h3>
+        <h3 className="text-xs font-bold uppercase tracking-widest">Repository: {data.name}</h3>
         <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">{data.version}</span>
       </div>
       <div className="space-y-3 mb-6">
-        <div className="text-[10px] text-zinc-500 font-mono leading-tight">
+        <div className="text-[10px] text-muted font-mono leading-tight">
           {data.commits.map((commit) => (
             <div key={commit.sha} className="flex flex-col mb-2 last:mb-0">
               <div className="flex gap-2 items-baseline">
-                <span className="text-[9px] text-zinc-600 whitespace-nowrap">
-                  {new Date(commit.date).toLocaleString('en-US', { 
-                    month: 'short', 
-                    day: 'numeric', 
-                    hour: '2-digit', 
+                <span className="text-[9px] text-muted/60 whitespace-nowrap">
+                  {new Date(commit.date).toLocaleString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
                     minute: '2-digit',
-                    hour12: false 
+                    hour12: false
                   })}
                 </span>
-                <span className="text-zinc-300 break-words">{commit.message}</span>
+                <span className="text-secondary break-words">{commit.message}</span>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <a href={data.repoUrl} target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest hover:text-cyan-400 inline-flex items-center gap-2">
+      <a href={data.repoUrl} target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-accent uppercase tracking-widest hover:text-accent-bright inline-flex items-center gap-2">
         GitHub Source <span className="text-lg">→</span>
       </a>
     </div>

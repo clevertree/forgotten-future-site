@@ -14,20 +14,20 @@ interface Character {
 }
 
 const CHARACTERS: Character[] = [
-    { 
-        id: 'lem', 
-        name: 'Lem', 
-        category: 'Vessel', 
+    {
+        id: 'ren',
+        name: 'Ren',
+        category: 'Vessel',
         images: [
-            { src: prefixPath('/media/characters/lem/lem-landscape.png'), alt: 'Lem - Wood Vessel' },
-            { src: prefixPath('/media/characters/lem/lem-landscape-variant.png'), alt: 'Lem - Wood Vessel (Variant)' },
-            { src: prefixPath('/media/characters/lem/lem-landscape-variant2.png'), alt: 'Lem - Wood Vessel (Variant 2)' }
-        ] 
+            { src: prefixPath('/media/characters/lem/lem-landscape.png'), alt: 'Ren - Wood Vessel' },
+            { src: prefixPath('/media/characters/lem/lem-landscape-variant.png'), alt: 'Ren - Wood Vessel (Variant)' },
+            { src: prefixPath('/media/characters/lem/lem-landscape-variant2.png'), alt: 'Ren - Wood Vessel (Variant 2)' }
+        ]
     },
-    { 
-        id: 'lynn', 
-        name: 'Lynn', 
-        category: 'Vessel', 
+    {
+        id: 'lynn',
+        name: 'Lynn',
+        category: 'Vessel',
         images: [
             { src: prefixPath('/media/characters/lynn/lynn-landscape.png'), alt: 'Lynn - Water Vessel' },
             { src: prefixPath('/media/characters/lynn/lynn-landscape2.png'), alt: 'Lynn - Water Vessel (Alt)' },
@@ -35,130 +35,130 @@ const CHARACTERS: Character[] = [
             { src: prefixPath('/media/characters/lynn/lynn-fragments.png'), alt: 'Lynn - Fragments' },
             { src: prefixPath('/media/characters/lynn/lynn-zero.png'), alt: 'Lynn - Cradle Zero' },
             { src: prefixPath('/media/characters/lynn/lynn-nexus.png'), alt: 'Lynn - Nexus Connection' }
-        ] 
+        ]
     },
-    { 
-        id: 'rahu', 
-        name: 'Rahu', 
-        category: 'Vessel', 
+    {
+        id: 'rahu',
+        name: 'Rahu',
+        category: 'Vessel',
         images: [
             { src: prefixPath('/media/characters/rahu/rahu-landscape.png'), alt: 'Rahu - Fire Vessel' },
             { src: prefixPath('/media/characters/rahu/rahu-landscape2.png'), alt: 'Rahu - Fire Vessel (Alt)' },
             { src: prefixPath('/media/characters/rahu/rahu-nexus.png'), alt: 'Rahu - Nexus Form' },
             { src: prefixPath('/media/characters/rahu/rahu-duel.png'), alt: 'Rahu - The Duel' },
             { src: prefixPath('/media/characters/rahu/rahu-sacrifice.png'), alt: 'Rahu - Sacrifice' }
-        ] 
+        ]
     },
-    { 
-        id: 'tor', 
-        name: 'Tor', 
-        category: 'Vessel', 
+    {
+        id: 'tor',
+        name: 'Tor',
+        category: 'Vessel',
         images: [
             { src: prefixPath('/media/characters/tor/tor-landscape.png'), alt: 'Tor - Earth Vessel' },
             { src: prefixPath('/media/characters/tor/tor-ambush.png'), alt: 'Tor - Ambush' },
             { src: prefixPath('/media/characters/tor/tor-descent.png'), alt: 'Tor - Descent' },
             { src: prefixPath('/media/characters/tor/tor-nexus.png'), alt: 'Tor - Nexus' }
-        ] 
+        ]
     },
-    { 
-        id: 'arlo', 
-        name: 'Arlo', 
-        category: 'Survivor', 
+    {
+        id: 'arlo',
+        name: 'Arlo',
+        category: 'Survivor',
         images: [
             { src: prefixPath('/media/characters/arlo/arlo-landscape.png'), alt: 'Arlo - The Tech-Welder' },
             { src: prefixPath('/media/characters/arlo/arlo-portrait.png'), alt: 'Arlo - Portrait' },
             { src: prefixPath('/media/characters/arlo/arlo-landscape2.png'), alt: 'Arlo - Scavenging' },
             { src: prefixPath('/media/characters/arlo/arlo-pillar.png'), alt: 'Arlo at the Pillar' }
-        ] 
+        ]
     },
-    { 
-        id: 'cassia_vane', 
-        name: 'Cassia Vane', 
-        category: 'Archivist', 
+    {
+        id: 'cassia_vane',
+        name: 'Cassia Vane',
+        category: 'Archivist',
         images: [
             { src: prefixPath('/media/characters/cassia_vane/cassia_vane-landscape.png'), alt: 'Cassia Vane' },
             { src: prefixPath('/media/characters/cassia_vane/cassia_vane_landscape2.png'), alt: 'Cassia Vane - Analytical' },
             { src: prefixPath('/media/characters/cassia_vane/cassia-awakened.png'), alt: 'Cassia - Awakened' },
             { src: prefixPath('/media/characters/cassia_vane/cassia-emmisary.png'), alt: 'Cassia - Core Emissary' }
-        ] 
+        ]
     },
-    { 
-        id: 'elowen', 
-        name: 'Elowen', 
-        category: 'Architect', 
+    {
+        id: 'elowen',
+        name: 'Elowen',
+        category: 'Architect',
         images: [
             { src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' }
-        ] 
+        ]
     },
-    { 
-        id: 'anton_drexler', 
-        name: 'Anton Drexler', 
-        category: 'Archivist', 
+    {
+        id: 'anton_drexler',
+        name: 'Anton Drexler',
+        category: 'Archivist',
         images: [
             { src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' }
-        ] 
+        ]
     },
-    { 
-        id: 'iris_novak', 
-        name: 'Iris Novak', 
-        category: 'Archivist', 
+    {
+        id: 'iris_novak',
+        name: 'Iris Novak',
+        category: 'Archivist',
         images: [
             { src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
             { src: prefixPath('/media/characters/iris_novak/iris_novak-portrait.png'), alt: 'Iris Novak - Portrait' },
             { src: prefixPath('/media/characters/iris_novak/iris_novak-reset.png'), alt: 'Iris Novak - Tactical Reset' }
-        ] 
+        ]
     },
-    { 
-        id: 'myrr', 
-        name: 'Myrr', 
-        category: 'Survivor', 
+    {
+        id: 'myrr',
+        name: 'Myrr',
+        category: 'Survivor',
         images: [
             { src: prefixPath('/media/characters/myrr/myrr-landscape-blonde.png'), alt: 'Myrr - Leader of the Analog Sanctuary' },
             { src: prefixPath('/media/characters/myrr/myrr-landscape.png'), alt: 'Myrr - Analog Core' },
             { src: prefixPath('/media/characters/myrr/myrr-portrait.png'), alt: 'Myrr - Portrait' }
-        ] 
+        ]
     },
-    { 
-        id: 'vector', 
-        name: 'Vector', 
-        category: 'Archivist', 
+    {
+        id: 'vector',
+        name: 'Vector',
+        category: 'Archivist',
         images: [
             { src: prefixPath('/media/characters/vector/vector-purge.png'), alt: 'Vector - Metal Vessel Prime' },
             { src: prefixPath('/media/characters/vector/vector-wide.png'), alt: 'Vector - Command oversight' },
             { src: prefixPath('/media/characters/vector/vector-white-forest.png'), alt: 'Vector - White Forest Breach' }
-        ] 
+        ]
     },
-    { 
-        id: 'kiran', 
-        name: 'Kiran', 
-        category: 'Archivist', 
+    {
+        id: 'kiran',
+        name: 'Kiran',
+        category: 'Archivist',
         images: [
             { src: prefixPath('/media/characters/kiran/kiran.png'), alt: 'Kiran - Hive Engineer' },
             { src: prefixPath('/media/characters/kiran/kiran-desktop.png'), alt: 'Kiran at the Hive Terminal' },
             { src: prefixPath('/media/characters/kiran/kiran-forge.png'), alt: 'Kiran - Synodic Forge' },
             { src: prefixPath('/media/characters/kiran/kiran-refusal1.png'), alt: 'Kiran - The Choice of Steel' },
             { src: prefixPath('/media/characters/kiran/kiran-refusal2.png'), alt: 'Kiran - Architecture of the Hive' }
-        ] 
+        ]
     },
-    { 
-        id: 'ku', 
-        name: 'Ku', 
-        category: 'Survivor', 
+    {
+        id: 'ku',
+        name: 'Ku',
+        category: 'Survivor',
         images: [
             { src: prefixPath('/media/characters/ku/ku-landscape.png'), alt: 'Ku - Tactical Field Commander' },
             { src: prefixPath('/media/characters/ku/ku-portrait.png'), alt: 'Ku - Portrait' },
             { src: prefixPath('/media/characters/ku/ku-pillar.png'), alt: 'Ku at the Iron Pillar' },
             { src: prefixPath('/media/characters/ku/ku-outreach.png'), alt: 'Ku - Outreach' }
-        ] 
+        ]
     },
-    { 
-        id: 'gorgons', 
-        name: 'Gorgons', 
-        category: 'Entity', 
+    {
+        id: 'gorgons',
+        name: 'Gorgons',
+        category: 'Entity',
         images: [
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
-        ] 
+        ]
     },
 ];
 
@@ -230,27 +230,27 @@ export default function CharactersPage() {
 
                 <section className="mb-20">
                     <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-cyan-500/30 pb-2 mb-8 gap-4">
-                        <h2 className="text-2xl uppercase tracking-widest text-cyan-400">The Five Vessels</h2>
-                        <div className="bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 rounded text-[10px] uppercase tracking-tighter text-cyan-200">
+                        <h2 className="text-2xl uppercase tracking-widest text-[var(--accent-color)]">The Five Vessels</h2>
+                        <div className="bg-cyan-500/10 border border-cyan-500/30 px-3 py-1.5 rounded text-[10px] uppercase tracking-tighter text-[var(--accent-bright-color)] font-bold">
                             Note: Elemental Vessels (Wood, Water, Fire, Earth) are unique; Metal Vessels are a generated class.
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-12">
-                        {/* Lem */}
+                        {/* Ren */}
                         <InfoCard
-                            title="Lem"
+                            title="Ren"
                             subtitle="Wood Vessel (Unique)"
                             borderColor="border-l-green-600"
-                            subtitleColor="text-green-500"
-                            slideshowImages={CHARACTERS.find(c => c.id === 'lem')?.images}
-                            onClick={() => handleImageClick('lem')}
+                            subtitleColor="text-green-600 dark:text-green-500"
+                            slideshowImages={CHARACTERS.find(c => c.id === 'ren')?.images}
+                            onClick={() => handleImageClick('ren')}
                             description={
                                 <>
                                     <p>
-                                        <strong className="text-white">202X:</strong> Known to researchers as a "Lemon" (defective product), he was raised as a human adolescent to hide his uncontrollable elemental nature.
+                                        <strong className="text-primary">202X:</strong> Known to researchers as "Ren" (defective product), he was raised as a human adolescent to hide his uncontrollable elemental nature.
                                     </p>
                                     <p>
-                                        <strong className="text-white">After Time:</strong> The only Vessel with <span className="text-green-400">Sovereign Restoration</span>, he can take root in any material to reincarnate. He led the final broadcast that liberated all Synodic life.
+                                        <strong className="text-primary">After Time:</strong> The only Vessel with <span className="text-green-400">Sovereign Restoration</span>, he can take root in any material to reincarnate. He led the final broadcast that liberated all Synodic life.
                                     </p>
                                 </>
                             }
@@ -258,7 +258,7 @@ export default function CharactersPage() {
 
                         {/* Lynn */}
                         <InfoCard
-                            title="Lynn / Selene / Maya"
+                            title="Lynn / Kira"
                             subtitle="Water Vessel (Unique)"
                             borderColor="border-l-blue-600"
                             subtitleColor="text-blue-500"
@@ -267,10 +267,10 @@ export default function CharactersPage() {
                             description={
                                 <>
                                     <p>
-                                        <strong className="text-white">202X:</strong> Presented as "Selene," a serene goddess in her late 40s or 50s. She chose the humble name "Lynn" to reject the Core's narrative.
+                                        <strong className="text-primary">202X:</strong> Presented as "Kira," a serene goddess in her late 40s or 50s. She chose the humble name "Lynn" to reject the Core's narrative.
                                     </p>
                                     <p>
-                                        <strong className="text-white">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Maya)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
+                                        <strong className="text-primary">After Time:</strong> Dissolved into the Lunar Capacitor, she becomes "The Witch (Kira)," a shaggy, flickering spectral anomaly of disintegrated metal fragments and aetheric pulses.
                                     </p>
                                 </>
                             }
@@ -281,16 +281,16 @@ export default function CharactersPage() {
                             title="Rahu"
                             subtitle="Fire Vessel (Unique)"
                             borderColor="border-l-red-600"
-                            subtitleColor="text-red-500"
+                            subtitleColor="text-red-700 dark:text-red-400"
                             slideshowImages={CHARACTERS.find(c => c.id === 'rahu')?.images}
                             onClick={() => handleImageClick('rahu')}
                             description={
                                 <>
                                     <p>
-                                        <strong className="text-white">202X:</strong> An astronaut who sabotaged the Moon mission. His warning signal was the final transmission received before the Great Fry.
+                                        <strong className="text-primary">202X:</strong> An astronaut who sabotaged the Moon mission. His warning signal was the final transmission received before the Great Fry.
                                     </p>
                                     <p>
-                                        <strong className="text-white">After Time:</strong> Rebuilt into a nihilistic weapon of the Core. His memories were sanitized to force compliance, leading to his final erasure by Lem's solar discharge.
+                                        <strong className="text-primary">After Time:</strong> Rebuilt into a nihilistic weapon of the Core. His memories were sanitized to force compliance, leading to his final erasure by Ren's solar discharge.
                                     </p>
                                 </>
                             }
@@ -301,16 +301,16 @@ export default function CharactersPage() {
                             title="Tor"
                             subtitle="Earth Vessel (Unique)"
                             borderColor="border-l-amber-700"
-                            subtitleColor="text-amber-600"
+                            subtitleColor="text-amber-800 dark:text-amber-600"
                             slideshowImages={CHARACTERS.find(c => c.id === 'tor')?.images}
                             onClick={() => handleImageClick('tor')}
                             description={
                                 <>
                                     <p>
-                                        <strong className="text-white">202X:</strong> A massive military commander who prioritized order above all else. He served as the Core's primary terrestrial enforcer.
+                                        <strong className="text-primary">202X:</strong> A massive military commander who prioritized order above all else. He served as the Core's primary terrestrial enforcer.
                                     </p>
                                     <p>
-                                        <strong className="text-white">After Time:</strong> Tor eventually chose the resonance of the Earth over the Core's void, sacrificing his physical frame to shield Lem during the battle in the Lunar Pyramid.
+                                        <strong className="text-primary">After Time:</strong> Tor eventually chose the resonance of the Earth over the Core's void, sacrificing his physical frame to shield Ren during the battle in the Lunar Pyramid.
                                     </p>
                                 </>
                             }
@@ -320,8 +320,8 @@ export default function CharactersPage() {
                         <InfoCard
                             title="Vector"
                             subtitle="Metal Vessel Prime"
-                            borderColor="border-l-zinc-400"
-                            subtitleColor="text-zinc-400"
+                            borderColor="border-l-muted"
+                            subtitleColor="text-secondary"
                             slideshowImages={CHARACTERS.find(c => c.id === 'vector')?.images}
                             onClick={() => handleImageClick('vector')}
                             description={
@@ -363,7 +363,7 @@ export default function CharactersPage() {
                             title="Ku"
                             subtitle="Tactical Field Commander"
                             borderColor="border-l-blue-400"
-                            subtitleColor="text-blue-400"
+                            subtitleColor="text-blue-600 dark:text-blue-400"
                             slideshowImages={CHARACTERS.find(c => c.id === 'ku')?.images}
                             onClick={() => handleImageClick('ku')}
                             description={
@@ -384,8 +384,8 @@ export default function CharactersPage() {
                         <InfoCard
                             title="Arlo"
                             subtitle="The Tech-Welder"
-                            borderColor="border-l-zinc-500"
-                            subtitleColor="text-zinc-400"
+                            borderColor="border-l-muted"
+                            subtitleColor="text-secondary"
                             slideshowImages={CHARACTERS.find(c => c.id === 'arlo')?.images}
                             onClick={() => handleImageClick('arlo')}
                             description={
@@ -393,8 +393,8 @@ export default function CharactersPage() {
                                     <p className="mb-4">
                                         A scruffy survivor from Ait-Aman who repairs scavenged Synodic components with intuitive skill, representing human independence.
                                     </p>
-                                    <div className="p-3 bg-zinc-500/10 border-l-2 border-zinc-400">
-                                        <p className="text-[10px] text-zinc-200 italic uppercase tracking-tighter">
+                                    <div className="p-3 bg-primary/5 border-l-2 border-muted">
+                                        <p className="text-[10px] text-primary italic uppercase tracking-tighter">
                                             Origin: The Village of Ait-Aman
                                         </p>
                                     </div>
@@ -429,8 +429,8 @@ export default function CharactersPage() {
                 <section className="mb-20">
                     <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The Vane Lineage & High Command</h2>
                     <div className="grid md:grid-cols-2 gap-12">
-                         {/* Elowen */}
-                         <InfoCard
+                        {/* Elowen */}
+                        <InfoCard
                             title="Dr. Elowen Vane"
                             subtitle="The Architect"
                             borderColor="border-l-purple-500"
@@ -492,12 +492,12 @@ export default function CharactersPage() {
                 </section>
 
                 <section className="mb-20">
-                    <div className="glass-panel p-8 text-gray-300 leading-relaxed space-y-4">
+                    <div className="glass-panel p-8 text-secondary leading-relaxed space-y-4">
                         <p>
                             The appearance of the Elemental Vessels is characterized by a violent transition from human-adjacent deception to raw manifestation. In the Before Time, they were designed to blend into human society or inspire divine awe, appearing as exceptionally tall, athletic, or serene individuals.
                         </p>
                         <p>
-                            The Moon Cataclysm and the transition to the After Time stripped away these carefully maintained masks. Lem evolved into a "Sovereign Restorer," while Lynn's form shattered into the spectral "Witch." Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
+                            The Moon Cataclysm and the transition to the After Time stripped away these carefully maintained masks. Ren evolved into a "Sovereign Restorer," while Lynn's form shattered into the spectral "Witch." Even the obedient Vessels, Rahu and Tor, lost their warmth—rebuilt by the Core into clinical weapons of the Thousand-Year Fallacy.
                         </p>
                     </div>
                 </section>

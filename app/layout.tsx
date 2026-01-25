@@ -73,11 +73,11 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={`${inter.className} scroll-smooth`} data-scroll-behavior="smooth">
-            <body className="bg-black text-white selection:bg-cyan-500/30">
+        <html lang="en" className={`${inter.className} scroll-smooth`} data-scroll-behavior="smooth" suppressHydrationWarning>
+            <body className="bg-[rgb(var(--background-start-rgb))] text-[rgb(var(--foreground-rgb))] transition-colors duration-300 selection:bg-cyan-500/30">
                 <Providers>
                     <header className="fixed top-0 w-full z-[1000] no-print">
-                        <div className="absolute inset-0 bg-black/95 backdrop-blur-md border-b border-white/10 -z-10" />
+                        <div className="absolute inset-0 bg-background border-b border-primary/10 -z-10" />
                         <Navigation />
                     </header>
 
@@ -85,13 +85,13 @@ export default function RootLayout({
                         {children}
                     </main>
 
-                    <footer className="bg-black border-t border-white/10 py-12 no-print">
-                        <div className="container mx-auto px-6 text-center text-gray-500 text-sm">
+                    <footer className="border-t border-primary/10 py-12 no-print">
+                        <div className="container mx-auto px-6 text-center text-muted text-sm">
                             <p>FORGOTTEN FUTURE: AN AI-DRIVEN NARRATIVE EXPERIMENT</p>
-                            <p>&copy;2026 <a href="https://clevertree.net/" className="hover:text-cyan-400 transition-colors">CLEVERTREE</a></p>
+                            <p>&copy;2026 <a href="https://clevertree.net/" className="hover:text-accent transition-colors">CLEVERTREE</a></p>
                             <div className="mt-4 flex justify-center gap-6">
-                                <a href="https://github.com/clevertree" className="hover:text-cyan-400 transition-colors">GITHUB</a>
-                                <a href="mailto:ari@asu.edu" className="hover:text-cyan-400 transition-colors">CONTACT</a>
+                                <a href="https://github.com/clevertree" className="hover:text-accent transition-colors">GITHUB</a>
+                                <a href="mailto:ari@asu.edu" className="hover:text-accent transition-colors">CONTACT</a>
                             </div>
                         </div>
                     </footer>

@@ -45,12 +45,12 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
     }, [onNext, onPrev, onClose]);
 
     return (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/95 backdrop-blur-md" onClick={onClose}>
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-background/95 backdrop-blur-md" onClick={onClose}>
             <div className="relative w-full h-full flex items-center justify-center p-4 md:p-12" onClick={(e) => e.stopPropagation()}>
                 {/* Close button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-6 right-6 text-gray-400 hover:text-white transition-all text-3xl z-[10000] p-4 hover:rotate-90"
+                    className="absolute top-6 right-6 text-secondary hover:text-white transition-all text-3xl z-[10000] p-4 hover:rotate-90"
                     aria-label="Close"
                 >
                     ✕
@@ -59,7 +59,7 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
                 {/* Left navigation */}
                 <button
                     onClick={(e) => { e.stopPropagation(); onPrev(); }}
-                    className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
+                    className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 text-secondary hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
                     aria-label="Previous"
                 >
                     ‹
@@ -71,7 +71,7 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
                         src={image.src}
                         alt={image.alt}
                         fill
-                        className="object-contain shadow-2xl shadow-cyan-500/20"
+                        className="object-contain shadow-2xl shadow-accent/20"
                         sizes="(max-width: 1200px) 100vw, 1200px"
                         priority
                     />
@@ -80,7 +80,7 @@ export function ImageModal({ image, onClose, onNext, onPrev }: ImageModalProps) 
                 {/* Right navigation */}
                 <button
                     onClick={(e) => { e.stopPropagation(); onNext(); }}
-                    className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-gray-400 hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
+                    className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-secondary hover:text-cyan-400 transition-all text-5xl md:text-6xl z-[10000] hover:scale-125 px-4"
                     aria-label="Next"
                 >
                     ›

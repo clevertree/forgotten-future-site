@@ -9,15 +9,15 @@ interface FAQItemProps {
 }
 
 export const FAQItem: React.FC<FAQItemProps> = ({ question, answer, category = 'project' }) => {
-    let borderColor = 'border-l-cyan-900/50';
-    let questionColor = 'text-cyan-400';
+    let borderColor = 'border-l-accent/30';
+    let questionColor = 'text-accent';
 
     if (category === 'ethics') {
-        borderColor = 'border-l-purple-900/50';
-        questionColor = 'text-purple-400';
+        borderColor = 'border-l-element-ethics/30';
+        questionColor = 'text-element-ethics';
     } else if (category === 'story') {
-        borderColor = 'border-l-red-900/50';
-        questionColor = 'text-red-400';
+        borderColor = 'border-l-element-fire/30';
+        questionColor = 'text-element-fire';
     }
 
     return (
@@ -25,7 +25,7 @@ export const FAQItem: React.FC<FAQItemProps> = ({ question, answer, category = '
             <h3 className={`text-lg ${questionColor} mb-2 uppercase tracking-tighter italic font-semibold`}>
                 {category === 'story' ? `Q: ${question}` : question}
             </h3>
-            <div className={`text-gray-400 text-sm leading-relaxed ${category === 'story' ? 'pl-4 border-l border-white/5' : ''}`}>
+            <div className={`text-secondary text-sm leading-relaxed ${category === 'story' ? 'pl-4 border-l border-primary/10' : ''}`}>
                 {category === 'story' ? `A: ${answer}` : answer}
             </div>
         </div>

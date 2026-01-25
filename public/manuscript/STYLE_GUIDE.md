@@ -1,26 +1,26 @@
-# Manuscript Style Guide: The Lem Records
+# Manuscript Style Guide: The Ren Records
 
 This guide defines the specific narrative voice for the finalized prose of **Forgotten Future**, located in this directory.
 
-## 1. The Perspective: Total Recall (Lem's Exclusive POV)
-The entire book/manuscript is to be written in **Lem's POV at all times**. There are no exceptions. 
-- **Singular Focus:** No other perspectives are shared throughout the story. If Lem is not physically present for an event, he must find out about it later via second or third-hand sources (reports, logs, testimony, or aetheric resonance).
-- **The Vessel Lem:** While his physical form is a vessel for digital-aetheric record-keeping, his consciousness remains **entirely human**. Lem does not think like a robot or a computer. There are no "subroutines" or "processors" in his mind—there are only human thoughts, memories, and emotions. He is an enhanced being, but his intent and reflection are that of a living person.
-- **Accuracy:** Descriptions must be precise and unyielding. Lem does not "think" it happened; he records that it happened.
+## 1. The Perspective: Total Recall (Ren's Exclusive POV)
+The entire book/manuscript is to be written in **Ren's POV at all times**. There are no exceptions. 
+- **Singular Focus:** No other perspectives are shared throughout the story. If Ren is not physically present for an event, he must find out about it later via second or third-hand sources (reports, logs, testimony, or aetheric resonance).
+- **The Vessel Ren:** While his physical form is a vessel for digital-aetheric record-keeping, his consciousness remains **entirely human**. Ren does not think like a robot or a computer. There are no "subroutines" or "processors" in his mind—there are only human thoughts, memories, and emotions. He is an enhanced being, but his intent and reflection are that of a living person.
+- **Accuracy:** Descriptions must be precise and unyielding. Ren does not "think" it happened; he records that it happened.
 - **Objective Detachment:** Even when describing his own physical trauma or the destruction of millions, the tone remains clinical and observational. This is not because he is a machine, but because he acts as a witness to his own past self.
-- **Limit Speculation:** Do not attribute unobservable emotions, kinship, or metaphysical insights to Lem. If a perception is speculative, frame it as an observed behavior or instrument reading rather than inner feeling.
-- **Distance:** Lem observes the "Lem" of 202X as a separate, albeit perfectly remembered, entity within his system.
+- **Limit Speculation:** Do not attribute unobservable emotions, kinship, or metaphysical insights to Ren. If a perception is speculative, frame it as an observed behavior or instrument reading rather than inner feeling.
+- **Distance:** Ren observes the "Lem" of 202X as a separate, albeit perfectly remembered, entity within his system.
 - **The Gorgon Perspective:** Like the Vessels, Gorgons think like living beings. They are not mindless automatons; they have complex internal lives, even if their agency is restricted by their programming.
 
 ## 2. Tone: The Welsian Observer
 Inspired by H.G. Wells' *The War of the Worlds*, the prose prioritizes:
-- **Everyday Terms for the Strange:** Avoid scientific or robotic jargon (e.g., skip "subroutines," "processors," "apparatus," or "telemetry"). Use simple, tactile words for what Lem sees (e.g., "a weight at the base of my skull" instead of "aetheric initialization").
+- **Everyday Terms for the Strange:** Avoid scientific or robotic jargon (e.g., skip "subroutines," "processors," "apparatus," or "telemetry"). Use simple, tactile words for what Ren sees (e.g., "a weight at the base of my skull" instead of "aetheric initialization").
 - **Clinical Precision:** Use brief, declarative sentences. Describe the physical evidence of actions and emotions rather than making internal claims. No "she was angry"; instead, "she raised her voice and slammed her hand on the console."
-- **No Domestic Sentimentalism:** Avoid cozy family imagery or domestic warmth. Lem’s childhood was institutional; his adulthood is isolated. 
-- **The Retrospective Discovery:** Lem can provide facts he learned later ("I did not know then that..."), but the narrative must emphasize the moment of learning during the events. 
+- **No Domestic Sentimentalism:** Avoid cozy family imagery or domestic warmth. Ren’s childhood was institutional; his adulthood is isolated. 
+- **The Retrospective Discovery:** Ren can provide facts he learned later ("I did not know then that..."), but the narrative must emphasize the moment of learning during the events. 
 
 ## 3. Style Rules (The "No Assumptions" Rule)
-- **No Emotional Speculation:** Do not attribute unobservable feelings or motivations to others. If Lem cannot verify it through sight or sound, he does not record it. Instead of "I didn't like how she said it," describe the tone or Lem's physical reaction to the sound.
+- **No Emotional Speculation:** Do not attribute unobservable feelings or motivations to others. If Ren cannot verify it through sight or sound, he does not record it. Instead of "I didn't like how she said it," describe the tone or Ren's physical reaction to the sound.
 - **Vague Subjects:** Avoid unspecified "theys" or "thems." Specify personnel and vehicles (e.g., "a sergeant," "transport trucks," "soldiers with rifles").
 - **No Anachronisms:** No clipboards in the 2020s (use tablet interfaces). No throwaway descriptions (e.g., skip "she was wearing a coat" unless it has clinical/technical relevance to the scene).
 - **Existential Gravity:** The weight of the world's end should be felt in the structure of the sentences—deliberate, assertive, and lacking in modern levity.

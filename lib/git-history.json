@@ -1,25 +1,25 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.88",
+    "version": "v0.13.90",
     "commits": [
+      {
+        "sha": "0121fa2",
+        "message": "Sync narrative metadata and technical beats across chapters and manuscripts",
+        "date": "2026-01-24T21:26:56.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/0121fa2"
+      },
+      {
+        "sha": "42356bc",
+        "message": "World-building: Integrated mineral rejection (Gold/Diamonds) and LHC gold-from-lead rumor. Updated Chapter 24 with Arlo's currency beat.",
+        "date": "2026-01-24T14:33:37.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/42356bc"
+      },
       {
         "sha": "7f92904",
         "message": "Sync manuscripts: Reorganized Act I (Ch 03/04 & 08/09 splits), reindexed to 55 chapters, and integrated Allocation/Mind-Link sub-themes",
         "date": "2026-01-24T14:24:34.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/7f92904"
-      },
-      {
-        "sha": "4aaa5a7",
-        "message": "Remove 'THE' from Part titles and regenerate manuscripts",
-        "date": "2026-01-24T11:37:19.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/4aaa5a7"
-      },
-      {
-        "sha": "6b64bb3",
-        "message": "updated manuscript",
-        "date": "2026-01-23T18:13:10.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/6b64bb3"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.64",
+    "version": "v0.11.66",
     "commits": [
+      {
+        "sha": "f08fc50",
+        "message": "Sync manuscripts: Mineral rejection and LHC rumor updates",
+        "date": "2026-01-24T14:33:38.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/f08fc50"
+      },
+      {
+        "sha": "2d6ba91",
+        "message": "Sync manuscripts from ff-story",
+        "date": "2026-01-24T14:24:41.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/2d6ba91"
+      },
       {
         "sha": "b0ac505",
         "message": "Add 'Play Full Synopsis' button to manuscript page",
         "date": "2026-01-24T11:45:59.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/b0ac505"
-      },
-      {
-        "sha": "5fee72a",
-        "message": "Sync updated manuscripts and fix StickyNav mobile test",
-        "date": "2026-01-24T11:38:59.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/5fee72a"
-      },
-      {
-        "sha": "fcadaa1",
-        "message": "Fix ChapterCard and harden auto-update logic",
-        "date": "2026-01-23T18:23:57.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/fcadaa1"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

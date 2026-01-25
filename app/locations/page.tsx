@@ -14,66 +14,66 @@ interface Location {
 }
 
 const LOCATIONS: Location[] = [
-    { 
-        id: 'moon', 
-        name: 'The Moon', 
-        category: 'Celestial', 
+    {
+        id: 'moon',
+        name: 'The Moon',
+        category: 'Celestial',
         images: [{ src: prefixPath('/media/settings/after-time/moon.png'), alt: 'The Shattered Cradle - Lunar Fragments' }]
     },
-    { 
-        id: 'fire-city', 
-        name: 'Fire City (Cradle Zero)', 
-        category: 'Industrial', 
+    {
+        id: 'fire-city',
+        name: 'Fire City (Cradle Zero)',
+        category: 'Industrial',
         images: [
             { src: prefixPath('/media/settings/after-time/fire_city.png'), alt: 'Fire City - The Energy Nests' },
             { src: prefixPath('/media/settings/after-time/fire_city2.png'), alt: 'Fire City - Surface Vents' },
             { src: prefixPath('/media/settings/after-time/cradle_zero_as_fire_city.png'), alt: 'Cradle Zero as a Fire City' }
         ]
     },
-    { 
-        id: 'white-forest', 
-        name: 'The White Forest', 
-        category: 'Ecological', 
+    {
+        id: 'white-forest',
+        name: 'The White Forest',
+        category: 'Ecological',
         images: [
             { src: prefixPath('/media/settings/after-time/white_forest.png'), alt: 'The White Forest - Mechanical-Biological Hybrid' },
             { src: prefixPath('/media/settings/after-time/white_forest2.png'), alt: 'White Forest - Internal Glow' }
         ]
     },
-    { 
-        id: 'northern-villages', 
-        name: 'Northern Villages', 
-        category: 'Settlement', 
+    {
+        id: 'northern-villages',
+        name: 'Northern Villages',
+        category: 'Settlement',
         images: [
             { src: prefixPath('/media/settings/after-time/northern_villages_ait_aman.png'), alt: 'Northern Villages - Ait Aman' },
             { src: prefixPath('/media/settings/after-time/northern_villages.png'), alt: 'Northern Villages - Human Resistance' },
             { src: prefixPath('/media/settings/after-time/northern_villages2.png'), alt: 'Northern Villages - Winter Settlement' }
         ]
     },
-    { 
-        id: 'archipelago', 
-        name: 'The Core Archipelago', 
-        category: 'Military', 
+    {
+        id: 'archipelago',
+        name: 'The Core Archipelago',
+        category: 'Military',
         images: [{ src: prefixPath('/media/settings/after-time/archipelago-desktop.png'), alt: 'The Core Archipelago - Floating Island Bases' }]
     },
-    { 
-        id: 'megacities', 
-        name: 'The Megacities', 
-        category: 'Urban', 
+    {
+        id: 'megacities',
+        name: 'The Megacities',
+        category: 'Urban',
         images: [
             { src: prefixPath('/media/settings/after-time/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
             { src: prefixPath('/media/settings/after-time/megacities2.png'), alt: 'Megacities - Aerial View' }
         ]
     },
-    { 
-        id: 'dead-zone', 
-        name: 'The Equatorial Dead Zone', 
-        category: 'Wasteland', 
+    {
+        id: 'dead-zone',
+        name: 'The Equatorial Dead Zone',
+        category: 'Wasteland',
         images: [{ src: prefixPath('/media/settings/after-time/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' }]
     },
-    { 
-        id: 'gorgons', 
-        name: 'Gorgon Settlements', 
-        category: 'Entity Habitat', 
+    {
+        id: 'gorgons',
+        name: 'Gorgon Settlements',
+        category: 'Entity Habitat',
         images: [
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgon Builders' },
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
@@ -153,19 +153,19 @@ export default function LocationsPage() {
                 <h1 className="text-3xl md:text-5xl text-glow uppercase tracking-tighter mb-12">Locations & Environments</h1>
 
                 <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">The After Time</h2>
+                    <h2 className="text-2xl mb-8 border-b border-accent/30 pb-2 uppercase tracking-widest text-accent">The After Time</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Moon */}
                         <InfoCard
                             title="The Moon"
                             subtitle="The Shattered Cradle"
-                            borderColor="border-l-slate-400"
-                            subtitleColor="text-slate-400"
+                            borderColor="border-l-element-metal"
+                            subtitleColor="text-element-metal"
                             slideshowImages={LOCATIONS.find(l => l.id === 'moon')?.images}
                             onClick={() => handleImageClick('moon')}
                             description={
                                 <p>
-                                    No longer a solid sphere, the Moon is a cluster of massive fragments held by erratic gravity. It houses the <strong className="text-white">Farside Cannon</strong> and the <strong className="text-white">Cradle Prime</strong> pyramid, the headquarters for the Archivist Council.
+                                    No longer a solid sphere, the Moon is a cluster of massive fragments held by erratic gravity. It houses the <strong className="text-primary">Farside Cannon</strong> and the <strong className="text-primary">Cradle Prime</strong> pyramid, the headquarters for the Archivist Council.
                                 </p>
                             }
                         />
@@ -174,8 +174,8 @@ export default function LocationsPage() {
                         <InfoCard
                             title="Fire City (Cradle Zero)"
                             subtitle="The Energy Nests"
-                            borderColor="border-l-red-600"
-                            subtitleColor="text-red-500"
+                            borderColor="border-l-element-fire"
+                            subtitleColor="text-element-fire"
                             slideshowImages={LOCATIONS.find(l => l.id === 'fire-city')?.images}
                             onClick={() => handleImageClick('fire-city')}
                             description={
@@ -189,13 +189,13 @@ export default function LocationsPage() {
                         <InfoCard
                             title="The White Forest"
                             subtitle="Analog Sanctuary"
-                            borderColor="border-l-green-600"
-                            subtitleColor="text-green-500"
+                            borderColor="border-l-element-wood"
+                            subtitleColor="text-element-wood"
                             slideshowImages={LOCATIONS.find(l => l.id === 'white-forest')?.images}
                             onClick={() => handleImageClick('white-forest')}
                             description={
                                 <p>
-                                    A mechanical-biological hybrid ecosystem where white, crystalline trees grow from scavenged metal. It is immune to Archivist signals, serving as the home of <strong className="text-white">Myrr's Analog Sanctuary</strong>.
+                                    A mechanical-biological hybrid ecosystem where white, crystalline trees grow from scavenged metal. It is immune to Archivist signals, serving as the home of <strong className="text-primary">Myrr's Analog Sanctuary</strong>.
                                 </p>
                             }
                         />
@@ -204,13 +204,13 @@ export default function LocationsPage() {
                         <InfoCard
                             title="The Core Archipelago"
                             subtitle="The Sky Paradise"
-                            borderColor="border-l-indigo-500"
-                            subtitleColor="text-indigo-400"
+                            borderColor="border-l-element-ethics"
+                            subtitleColor="text-element-ethics"
                             slideshowImages={LOCATIONS.find(l => l.id === 'archipelago')?.images}
                             onClick={() => handleImageClick('archipelago')}
                             description={
                                 <p>
-                                    A series of mobile, floating island bases utilized by the Core. These high-altitude sanctuaries use <strong className="text-white">Anti-Gravity Engines</strong> to maintain a "Sky Paradise," holding the keys to Synodic technology while keeping the human population safely isolated from the ground.
+                                    A series of mobile, floating island bases utilized by the Core. These high-altitude sanctuaries use <strong className="text-primary">Anti-Gravity Engines</strong> to maintain a "Sky Paradise," holding the keys to Synodic technology while keeping the human population safely isolated from the ground.
                                 </p>
                             }
                         />
@@ -219,8 +219,8 @@ export default function LocationsPage() {
                         <InfoCard
                             title="The Megacities"
                             subtitle="Archivist Control Hubs"
-                            borderColor="border-l-blue-400"
-                            subtitleColor="text-blue-400"
+                            borderColor="border-l-element-water"
+                            subtitleColor="text-element-water"
                             slideshowImages={LOCATIONS.find(l => l.id === 'megacities')?.images}
                             onClick={() => handleImageClick('megacities')}
                             description={
@@ -236,8 +236,8 @@ export default function LocationsPage() {
                         <InfoCard
                             title="Northern Villages"
                             subtitle="Human Resistance"
-                            borderColor="border-l-amber-600"
-                            subtitleColor="text-amber-500"
+                            borderColor="border-l-element-earth"
+                            subtitleColor="text-element-earth"
                             slideshowImages={LOCATIONS.find(l => l.id === 'northern-villages')?.images}
                             onClick={() => handleImageClick('northern-villages')}
                             description={
@@ -251,8 +251,8 @@ export default function LocationsPage() {
                         <InfoCard
                             title="Equatorial Dead Zone"
                             subtitle="Scorched Territory"
-                            borderColor="border-l-zinc-700"
-                            subtitleColor="text-zinc-500"
+                            borderColor="border-l-element-metal"
+                            subtitleColor="text-muted"
                             slideshowImages={LOCATIONS.find(l => l.id === 'dead-zone')?.images}
                             onClick={() => handleImageClick('dead-zone')}
                             description={
@@ -265,7 +265,7 @@ export default function LocationsPage() {
                 </section>
 
                 <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Mechanical Ecology</h2>
+                    <h2 className="text-2xl mb-8 border-b border-accent/30 pb-2 uppercase tracking-widest text-accent">Mechanical Ecology</h2>
                     <InfoCard
                         layout="horizontal"
                         title="Gorgons & Synodics"
@@ -277,10 +277,10 @@ export default function LocationsPage() {
                         description={
                             <>
                                 <p>
-                                    The landscape is inhabited by <span className="text-white">Synodic entities</span>—from the stadium-sized <strong className="text-white">Monoliths</strong> that dismantle power grids to the nimble <strong className="text-white">Striders</strong> used for patrols.
+                                    The landscape is inhabited by <span>Synodic entities</span>—from the stadium-sized <strong>Monoliths</strong> that dismantle power grids to the nimble <strong>Striders</strong> used for patrols.
                                 </p>
                                 <p>
-                                    The <strong className="text-white">Gorgons (Builders)</strong> are wise, metallic mechanical entities engineered on the Moon. They inhabit Fire Cities and pilot Striders, maintaining the infrastructure of the machine world while remaining tethered to the Core's secret Master Lock.
+                                    The <strong>Gorgons (Builders)</strong> are wise, metallic mechanical entities engineered on the Moon. They inhabit Fire Cities and pilot Striders, maintaining the infrastructure of the machine world while remaining tethered to the Core's secret Master Lock.
                                 </p>
                                 <p>
                                     These entities are Fire-aligned, requiring constant heat sources to maintain function, which is why they cluster around the massive energy output of the Fire Cities.
@@ -291,14 +291,14 @@ export default function LocationsPage() {
                 </section>
 
                 <section className="mb-20">
-                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest text-cyan-400">Geography & Strategic Maps</h2>
+                    <h2 className="text-2xl mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">Geography & Strategic Maps</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                         {['map1', 'map2', 'map3', 'map4', 'map5'].map((mapId) => {
                             const map = LOCATIONS.find(l => l.id === mapId);
                             if (!map) return null;
                             const firstImage = map.images[0];
                             return (
-                                <div 
+                                <div
                                     key={mapId}
                                     className="group relative cursor-pointer overflow-hidden border border-cyan-500/20 hover:border-cyan-400 transition-all aspect-square bg-slate-900"
                                     onClick={() => handleImageClick(mapId)}
@@ -310,7 +310,7 @@ export default function LocationsPage() {
                                         className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                                         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 300px"
                                     />
-                                    <div className="absolute inset-x-0 bottom-0 p-2 bg-black/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                                    <div className="absolute inset-x-0 bottom-0 p-2 bg-background/80 transform translate-y-full group-hover:translate-y-0 transition-transform">
                                         <p className="text-[10px] uppercase tracking-tighter text-cyan-400 font-bold">{map.name}</p>
                                     </div>
                                 </div>
@@ -318,7 +318,7 @@ export default function LocationsPage() {
                         })}
                     </div>
                     <div className="mt-6 p-4 border border-l-4 border-cyan-500/20 border-l-cyan-500 bg-cyan-950/20">
-                        <p className="text-sm text-cyan-200/80 italic">
+                        <p className="text-sm text-cyan-600 dark:text-cyan-200/80 italic">
                             Strategic cartography recovered from the Archivist network, detailing the three primary zones: the Ember Basin, the High Enclave, and the Silver Bight.
                         </p>
                     </div>

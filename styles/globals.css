@@ -3,17 +3,50 @@
 @tailwind utilities;
 
 :root {
+  --foreground-rgb: 30, 30, 35;
+  --foreground-secondary-rgb: 70, 70, 80;
+  --foreground-muted-rgb: 120, 120, 130;
+  --background-start-rgb: 248, 248, 250;
+  --background-end-rgb: 255, 255, 255;
+  --accent-rgb: 0, 119, 170;
+  --accent-color: rgb(var(--accent-rgb));
+  --accent-bright-color: #0099cc;
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --element-wood: #0891b2;
+  --element-fire: #b91c1c;
+  --element-water: #1d4ed8;
+  --element-earth: #b45309;
+  --element-metal: #52525b;
+  --element-ethics-rgb: 126, 34, 206;
+  --element-ethics: rgb(var(--element-ethics-rgb));
+}
+
+[class~="dark"] {
   --foreground-rgb: 255, 255, 255;
+  --foreground-secondary-rgb: 200, 200, 210;
+  --foreground-muted-rgb: 150, 150, 160;
   --background-start-rgb: 10, 10, 15;
   --background-end-rgb: 0, 0, 0;
-  --accent-color: #00d4ff;
+  --accent-rgb: 0, 212, 255;
+  --accent-color: rgb(var(--accent-rgb));
+  --accent-bright-color: #00d4ff;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --element-wood: #22d3ee;
+  --element-fire: #f87171;
+  --element-water: #60a5fa;
+  --element-earth: #f59e0b;
+  --element-metal: #a1a1aa;
+  --element-ethics-rgb: 192, 132, 252;
+  --element-ethics: rgb(var(--element-ethics-rgb));
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)));
   min-height: 100vh;
 }
 
@@ -23,16 +56,123 @@ body {
   h2,
   h3,
   h4 {
-    @apply font-bold tracking-wider uppercase text-cyan-400;
+    @apply font-bold tracking-wider uppercase text-accent;
   }
 }
 
+/* Ensure headers inside markdown/prose also use theme colors */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply text-accent !important;
+}
+
 .text-glow {
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+@layer components {
+
+  /* Semantic Text Classes */
+  .text-primary {
+    color: rgb(var(--foreground-rgb));
+  }
+
+  .text-secondary {
+    color: rgb(var(--foreground-secondary-rgb));
+  }
+
+  .text-muted {
+    color: rgb(var(--foreground-muted-rgb));
+  }
+
+  .border-primary {
+    border-color: rgb(var(--foreground-rgb));
+  }
+
+  .border-secondary {
+    border-color: rgb(var(--foreground-secondary-rgb));
+  }
+
+  .border-muted {
+    border-color: rgb(var(--foreground-muted-rgb));
+  }
+
+  .text-accent {
+    color: var(--accent-color);
+  }
+
+  .text-accent-bright {
+    color: var(--accent-bright-color);
+  }
+
+  .text-element-wood {
+    color: var(--element-wood);
+  }
+
+  .text-element-fire {
+    color: var(--element-fire);
+  }
+
+  .text-element-water {
+    color: var(--element-water);
+  }
+
+  .text-element-earth {
+    color: var(--element-earth);
+  }
+
+  .text-element-metal {
+    color: var(--element-metal);
+  }
+
+  .text-element-ethics {
+    color: var(--element-ethics);
+  }
+
+  .text-link {
+    @apply text-accent hover:text-accent-bright transition-colors duration-200 cursor-pointer;
+  }
+
+  /* Button Classes */
+  .btn-primary {
+    @apply px-8 py-3 md:py-4 bg-accent font-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-accent/20 disabled:opacity-50;
+    color: rgb(var(--foreground-rgb));
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 md:py-4 border border-primary/20 hover:bg-primary/10 font-bold uppercase tracking-widest transition-all active:scale-95 disabled:opacity-50;
+    color: rgb(var(--foreground-rgb));
+  }
+
+  .btn-icon {
+    @apply p-3.5 bg-accent rounded-full shadow-lg shadow-accent/40 hover:brightness-110 hover:scale-110 active:scale-90 transition-all;
+  }
+
+  .btn-outline-cyan {
+    @apply px-6 py-2 bg-cyan-600/20 border border-cyan-500 text-cyan-400 rounded hover:bg-cyan-600/40 transition-colors uppercase text-sm tracking-widest font-semibold;
+  }
+
+  .btn-outline-green {
+    @apply px-6 py-2 bg-green-600/20 border border-green-500 text-green-400 rounded hover:bg-green-600/40 transition-colors uppercase text-sm tracking-widest font-semibold;
+  }
+
+  .btn-toggle-active {
+    @apply bg-accent text-background shadow-lg shadow-accent/50;
+  }
+
+  .btn-toggle-inactive {
+    @apply text-muted hover:text-primary transition-colors;
+  }
 }
 
 .glass-panel {
-  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-6;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  @apply rounded-lg p-6;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

@@ -83,13 +83,13 @@ def update_dashboard():
     def update_repo_section(content, repo_name, version, commits):
         # Update version
         content = re.sub(
-            rf'<h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: {repo_name}</h3>\s*<span className="text-\[10px\] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v.*?</span>',
-            f'<h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Repository: {repo_name}</h3>\n                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v{version}</span>',
+            rf'<h3 className="text-xs font-bold uppercase tracking-widest">Repository: {repo_name}</h3>\s*<span className="text-\[10px\] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v.*?</span>',
+            f'<h3 className="text-xs font-bold uppercase tracking-widest">Repository: {repo_name}</h3>\n                            <span className="text-[10px] bg-cyan-500/10 text-cyan-500 px-2 py-0.5 rounded border border-cyan-500/20">v{version}</span>',
             content
         )
         
         # Update commits
-        commit_html = '\n                            <div className="text-[10px] text-zinc-500 font-mono leading-tight">'
+        commit_html = '\n                            <div className="text-[10px] text-muted font-mono leading-tight">'
         for c in commits:
             commit_html += f'''
                                 <div className="flex gap-2">

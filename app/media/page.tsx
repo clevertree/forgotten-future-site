@@ -62,8 +62,8 @@ export default function MediaPage() {
                         <button
                             onClick={() => setIsFeedbackMode(!isFeedbackMode)}
                             className={`flex items-center gap-2 px-6 py-2 rounded-full border transition-all text-[10px] uppercase font-bold tracking-widest ${isFeedbackMode
-                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_15px_rgba(6,182,212,0.5)]'
-                                : 'bg-black border-white/10 text-zinc-500 hover:border-white/30'
+                                ? 'bg-cyan-500 border-cyan-400 text-black shadow-lg shadow-accent/50'
+                                : 'bg-black border-white/10 text-muted hover:border-white/30'
                                 }`}
                         >
                             <MessageSquare size={12} />
@@ -88,12 +88,12 @@ export default function MediaPage() {
                             <p className="text-cyan-500 text-sm mb-6 uppercase tracking-widest font-bold">
                                 Featuring song by Porcupine Tree • 1995
                             </p>
-                            <p className="text-gray-400 mb-8 leading-relaxed">
+                            <p className="text-secondary mb-8 leading-relaxed">
                                 This teaser serves as the atmospheric threshold for the <strong>Forgotten Future</strong> narrative.
                                 It depicts the final moments of the Pre-Time era, the shattering of the Moon, and the
                                 descent of the stadium-sized Monoliths.
                                 <br /><br />
-                                <span className="text-zinc-500 italic text-xs">Note: The full animated sequence is currently in production. The records below represent the finalized visual atmosphere and auditory foundation.</span>
+                                <span className="text-muted italic text-xs">Note: The full animated sequence is currently in production. The records below represent the finalized visual atmosphere and auditory foundation.</span>
                             </p>
                             <div className="mt-8">
                                 <AudioTrack
@@ -129,7 +129,7 @@ export default function MediaPage() {
             <section className="mb-24">
                 <div className="flex items-center justify-between mb-8 border-b border-cyan-500/30 pb-2">
                     <h2 className="text-xl md:text-2xl uppercase tracking-widest">Visual Schematics</h2>
-                    <span className="text-[9px] text-zinc-500 uppercase tracking-widest italic opacity-50">May contain visual spoilers</span>
+                    <span className="text-[9px] text-muted uppercase tracking-widest italic opacity-50">May contain visual spoilers</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {images.map((item, i) => {
@@ -143,7 +143,7 @@ export default function MediaPage() {
                                 onOpenComment={(path, anchorId) => setActiveComment({ path, anchorId })}
                             >
                                 <div className="glass-panel group cursor-pointer overflow-hidden" onClick={() => !isFeedbackMode && openImage(i)}>
-                                    <div className="relative aspect-video bg-zinc-900 mb-4 overflow-hidden rounded">
+                                    <div className="relative aspect-video bg-background/40 mb-4 overflow-hidden rounded">
                                         <Image
                                             src={item.src}
                                             alt={item.title}
@@ -153,7 +153,7 @@ export default function MediaPage() {
                                         />
                                     </div>
                                     <h3 className="text-sm uppercase tracking-widest mb-1 text-cyan-400 group-hover:text-glow transition-all">{item.title}</h3>
-                                    <p className="text-[10px] text-zinc-500 uppercase tracking-widest">{item.meta}</p>
+                                    <p className="text-[10px] text-muted uppercase tracking-widest">{item.meta}</p>
                                 </div>
                             </CommentAnchor>
                         );

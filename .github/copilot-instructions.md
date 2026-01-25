@@ -21,8 +21,8 @@ This project is the modern Next.js interface for the **Forgotten Future** narrat
 - **Syncing:** If you notice `COMMIT_HISTORY.md` is out of date, sync it immediately by running `git log --oneline > COMMIT_HISTORY.md`.
 
 ## Content Rules
-1. **Lem's POV:** The entire manuscript is written strictly in Lem's first-person POV. No other perspectives are featured.
-2. **Human Consciousness:** Lem and all Vessels are entirely human in their thoughts and reflections. Avoid mechanical metaphors for their internal experience.
+1. **Ren's POV:** The entire manuscript is written strictly in Ren's first-person POV. No other perspectives are featured.
+2. **Human Consciousness:** Ren and all Vessels are entirely human in their thoughts and reflections. Avoid mechanical metaphors for their internal experience.
 3. **Atmospheric Tone:** Use "Wellsian" clinical detachment mixed with cinematic awe.
 
 ## Technical Stack

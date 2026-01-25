@@ -24,7 +24,7 @@ describe('ManuscriptPage Component', () => {
     );
 
     // Check if the page title is correct
-    cy.get('h1').should('contain', "Manuscript: Lem's Memories");
+    cy.get('h1').should('contain', "Manuscript: Ren's Memories");
 
     // Wait for live data to load - Chapter 1 should eventually appear
     cy.contains('Outpost', { timeout: 15000 }).should('be.visible');

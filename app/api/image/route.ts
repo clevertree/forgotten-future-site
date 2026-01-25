@@ -58,6 +58,10 @@ export async function GET(request: NextRequest) {
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
 
+        // Get metadata to check for transparency
+        const metadata = await sharp(buffer).metadata();
+        const hasAlpha = metadata.hasAlpha;
+
         let transformer = sharp(buffer);
 
         if (width) {
@@ -70,7 +74,10 @@ export async function GET(request: NextRequest) {
         }
 
         const optimized = await transformer
-            .webp({ quality: 80 })
+            .webp({
+                quality: 80,
+                alphaQuality: hasAlpha ? 100 : undefined
+            })
             .toBuffer();
 
         return new NextResponse(optimized, {

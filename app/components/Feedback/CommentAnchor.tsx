@@ -40,7 +40,7 @@ export const CommentAnchor: React.FC<CommentAnchorProps> = ({
                         e.stopPropagation();
                         onOpenComment(path, anchorId);
                     }}
-                    className="p-2 text-cyan-500 hover:text-cyan-400 hover:scale-110 transition-transform bg-black/50 backdrop-blur-sm rounded-lg border border-cyan-500/30 shadow-[0_0_10px_rgba(6,182,212,0.2)] mt-1"
+                    className="p-2 text-cyan-500 hover:text-cyan-400 hover:scale-110 transition-transform bg-background/50 backdrop-blur-sm rounded-lg border border-cyan-500/30 shadow-md shadow-accent/20 mt-1"
                     title="Add comment"
                 >
                     <MessageSquarePlus size={20} />

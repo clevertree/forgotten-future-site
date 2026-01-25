@@ -184,10 +184,10 @@ These Intelligent Spiravi Cyborgs mimic humans in every way. They are very diffi
 Characters
 ==========
 
-Lem
+Ren
 ---
 
-The protagonist Lem lived an ordinary life as a conductor of a passenger train in the city until he was conscripted into the [Resistance Effort](pages/story.html#cataclysm) as a driver. During the moon assault, Lem is required to navigate a [RAV](pages/story.html#rav). Lem has no experience in fighting or warfare.
+The protagonist Ren lived an ordinary life as a conductor of a passenger train in the city until he was conscripted into the [Resistance Effort](pages/story.html#cataclysm) as a driver. During the moon assault, Ren is required to navigate a [RAV](pages/story.html#rav). Ren has no experience in fighting or warfare.
 
 Ma'adim
 -------

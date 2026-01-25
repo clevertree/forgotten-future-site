@@ -20,7 +20,7 @@ export default function HeroSlideshow({ images, videoSrc }: HeroSlideshowProps) 
 
     return (
         <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgb(var(--background-start-rgb))]/50 to-[rgb(var(--background-start-rgb))] z-10" />
 
             {/* Slideshow */}
             {images.map((src, i) => (

@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +9,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: 'rgb(var(--foreground-rgb))',
+        secondary: 'rgb(var(--foreground-secondary-rgb))',
+        muted: 'rgb(var(--foreground-muted-rgb))',
+        background: 'rgb(var(--background-start-rgb))',
+        accent: 'rgb(var(--accent-rgb) / <alpha-value>)',
+        'accent-bright': 'var(--accent-bright-color)',
+        'element-wood': 'var(--element-wood)',
+        'element-fire': 'var(--element-fire)',
+        'element-water': 'var(--element-water)',
+        'element-earth': 'var(--element-earth)',
+        'element-metal': 'var(--element-metal)',
+        'element-ethics': 'rgb(var(--element-ethics-rgb) / <alpha-value>)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +30,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 export default config

@@ -36,17 +36,17 @@ export const StickyNav: React.FC<StickyNavProps> = ({
     };
 
     return (
-        <div className={`sticky ${top} z-10 bg-black/80 backdrop-blur-sm py-4 border-b border-white/5 no-print mb-6 md:mb-12 ${className}`}>
+        <div className={`sticky ${top} z-10 bg-[rgb(var(--background-start-rgb))]/80 backdrop-blur-sm py-4 border-b border-[rgb(var(--foreground-rgb))]/10 no-print mb-6 md:mb-12 ${className}`}>
             {/* Mobile Dropdown */}
             <div className="md:hidden px-4 relative">
                 <select 
                     onChange={(e) => handleClick(e.target.value)}
                     value={activeId || ""}
-                    className="w-full bg-black/50 border border-cyan-500/30 text-cyan-500 text-[10px] font-bold uppercase tracking-widest px-4 py-3 rounded outline-none focus:border-cyan-500 transition-colors appearance-none cursor-pointer"
+                    className="w-full bg-[rgb(var(--background-start-rgb))]/50 border border-cyan-500/30 text-cyan-500 text-[10px] font-bold uppercase tracking-widest px-4 py-3 rounded outline-none focus:border-cyan-500 transition-colors appearance-none cursor-pointer"
                 >
                     <option value="" disabled>{mobileLabel}</option>
                     {sections.map((section) => (
-                        <option key={section.id} value={section.id} className="bg-zinc-900">
+                        <option key={section.id} value={section.id} className="bg-[rgb(var(--background-start-rgb))]">
                             {section.title}
                         </option>
                     ))}

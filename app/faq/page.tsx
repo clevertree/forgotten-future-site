@@ -58,11 +58,11 @@ export default function FAQPage() {
         },
         {
             q: "Are the Gorgons hostile?",
-            a: "Contrary to Hive City propaganda, Gorgons (or 'Builders') are naturally benign industrial workers. Following Lem's final transmission, they gained the ability to reprogram themselves or strip away all subroutines to become 'machine wildlife'."
+            a: "Contrary to Hive City propaganda, Gorgons (or 'Builders') are naturally benign industrial workers. Following Ren's final transmission, they gained the ability to reprogram themselves or strip away all subroutines to become 'machine wildlife'."
         },
         {
-            q: "What makes Lem's return unique?",
-            a: "While other Vessels require Core-managed 'Cradles' to be restored, Lem possesses 'Sovereign Restoration.' He can take root in any compatible material and reconstitute his presence almost instantly without an embryo cycle."
+            q: "What makes Ren's return unique?",
+            a: "While other Vessels require Core-managed 'Cradles' to be restored, Ren possesses 'Sovereign Restoration.' He can take root in any compatible material and reconstitute his presence almost instantly without an embryo cycle."
         },
         {
             q: "What is a 'White Forest'?",
@@ -74,7 +74,7 @@ export default function FAQPage() {
         },
         {
             q: "Where is Anton Drexler based?",
-            a: "Core leadership, including Anton Drexler, moved from the Lunar Pyramid (Cradle Prime) to the desert base (Cradle Zero) following Lem's second mission."
+            a: "Core leadership, including Anton Drexler, moved from the Lunar Pyramid (Cradle Prime) to the desert base (Cradle Zero) following Ren's second mission."
         },
         {
             q: "Did Rahu's memory survive?",
@@ -82,15 +82,15 @@ export default function FAQPage() {
         },
         {
             q: "Is Arlo the Water Vessel?",
-            a: "Arlo is the restoration of the original Water Vessel spirit (Maya), though he explicitly rejects this name and identity, choosing to remain a village leader."
+            a: "Arlo is the restoration of the original Water Vessel spirit (Kira), though he explicitly rejects this name and identity, choosing to remain a village leader."
         },
         {
             q: "What is the 'King of the Gorgons'?",
-            a: "It is a propaganda title created by the Technocratic Core (branded publicly as 'The Archivists') to frame Lem as a bogeyman, justifying their 'democratic' control over Synodic technology."
+            a: "It is a propaganda title created by the Technocratic Core (branded publicly as 'The Archivists') to frame Ren as a bogeyman, justifying their 'democratic' control over Synodic technology."
         },
         {
             q: "Who is the 'True Archivist'?",
-            a: "While the technocracy uses 'Archivists' as a collective title, the character Elowen Vane is the only True Archivist. Having stayed on the moon to preserve the 202X Truth, she remained neutral and eventually met with Lem to pass on the historical key."
+            a: "While the technocracy uses 'Archivists' as a collective title, the character Elowen Vane is the only True Archivist. Having stayed on the moon to preserve the 202X Truth, she remained neutral and eventually met with Ren to pass on the historical key."
         },
         {
             q: "Are the Monoliths really Tripods?",
@@ -98,7 +98,7 @@ export default function FAQPage() {
         },
         {
             q: "What actually happened to Lynn?",
-            a: "Lynn dissolved into the Lunar Capacitor to initiate a system reset. While her physical form is gone, her software legacy exists as an AI presence within Lem's Aether-Drive."
+            a: "Lynn dissolved into the Lunar Capacitor to initiate a system reset. While her physical form is gone, her software legacy exists as an AI presence within Ren's Aether-Drive."
         },
         {
             q: "Will the lunar debris field fall to Earth?",
@@ -106,7 +106,7 @@ export default function FAQPage() {
         },
         {
             q: "Is the final Broadcast permanent?",
-            a: "Yes. Lem's transmission of the authorization keys gave all Synodic life the permanent ability to choose their own agency. They are no longer bound by the Core's remote command cycles."
+            a: "Yes. Ren's transmission of the authorization keys gave all Synodic life the permanent ability to choose their own agency. They are no longer bound by the Core's remote command cycles."
         }
     ];
 
@@ -124,7 +124,7 @@ export default function FAQPage() {
             <StickyNav sections={sections} top="top-20 md:top-28" />
 
             <section id="project" className="mb-20 scroll-mt-32">
-                <h2 className="text-xl md:text-2xl text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">PROJECT ARCHITECTURE</h2>
+                <h2 className="text-xl md:text-2xl text-cyan-600 dark:text-cyan-500 mb-8 border-b border-cyan-500/30 pb-2 uppercase tracking-widest">PROJECT ARCHITECTURE</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {projectFaqs.map((faq, i) => (
                         <FAQItem key={i} question={faq.q} answer={faq.a} category="project" />
@@ -133,7 +133,7 @@ export default function FAQPage() {
             </section>
 
             <section id="ethics" className="mb-20 scroll-mt-32">
-                <h2 className="text-xl md:text-2xl text-purple-500 mb-8 border-b border-purple-500/30 pb-2 uppercase tracking-widest">AI ETHICS & COMMANDMENTS</h2>
+                <h2 className="text-xl md:text-2xl text-purple-600 dark:text-purple-500 mb-8 border-b border-purple-500/30 pb-2 uppercase tracking-widest">AI ETHICS & COMMANDMENTS</h2>
                 <div className="space-y-6">
                     {ethicsRules.map((rule, i) => (
                         <FAQItem key={i} question={rule.title} answer={rule.text} category="ethics" />
@@ -143,8 +143,8 @@ export default function FAQPage() {
 
             <section id="story" className="mb-20 scroll-mt-32">
                 <div className="flex items-center gap-4 mb-8">
-                    <h2 className="text-2xl text-red-500 border-b border-red-500/30 pb-2 uppercase tracking-widest">STORYLINE DECLASSIFIED</h2>
-                    <span className="bg-red-900/40 text-red-400 text-[10px] px-2 py-1 rounded border border-red-500/50 uppercase tracking-widest font-bold">
+                    <h2 className="text-2xl text-red-600 dark:text-red-500 border-b border-red-500/30 pb-2 uppercase tracking-widest">STORYLINE DECLASSIFIED</h2>
+                    <span className="bg-red-600/10 dark:bg-red-900/40 text-red-600 dark:text-red-400 text-[10px] px-2 py-1 rounded border border-red-500/50 uppercase tracking-widest font-bold">
                         Spoiler Warning
                     </span>
                 </div>
