@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.67",
+    "version": "v0.11.68",
     "commits": [
+      {
+        "sha": "3bcf98c",
+        "message": "feat: enhance media browser with looping navigation, filename previews, and fixed mobile nav menu",
+        "date": "2026-01-26T13:08:41.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/3bcf98c"
+      },
       {
         "sha": "d9549fe",
         "message": "feat: standardize UI with semantic theme colors, opaque header and rename characters",
@@ -64,12 +70,6 @@
         "message": "Update public manuscripts from story sync",
         "date": "2026-01-24T21:27:03.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/3c8a72f"
-      },
-      {
-        "sha": "f08fc50",
-        "message": "Sync manuscripts: Mineral rejection and LHC rumor updates",
-        "date": "2026-01-24T14:33:38.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/f08fc50"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { STORY_REPO_BASE, getStoryIndex, getStoryFile, FileTree } from '@/lib/remoteFiles';
 import { RemoteMarkdown } from '../../components/RemoteMarkdown';
@@ -9,6 +9,7 @@ import { Folder, File, ChevronRight, Home, Search, ChevronLeft } from 'lucide-re
 
 export default function BrowserPage() {
     const params = useParams();
+    const router = useRouter();
     const [index, setIndex] = useState<FileTree | null>(null);
     const [content, setContent] = useState<string | null>(null);
     const [metadata, setMetadata] = useState<any>(null);
@@ -204,7 +205,7 @@ export default function BrowserPage() {
                     <span>Story Explorer</span>
                 </div>
 
-                <div className="space-y-1">
+                <div className="hidden md:flex md:flex-col space-y-1">
                     <Link href="/browser" className={`flex items-center gap-2 px-3 py-2 rounded transition-colors ${!browsePath ? 'bg-cyan-500/20 text-cyan-600 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'}`}>
                         <Home size={16} />
                         <span>Root</span>
@@ -230,8 +231,67 @@ export default function BrowserPage() {
                     })}
                 </div>
 
-                {browsePathSegments.length > 0 && currentLevel && (
-                    <div className="mt-8 pt-8 border-t border-slate-200 dark:border-white/5">
+                {/* Mobile Navigation Dropdowns */}
+                <div className="md:hidden space-y-6">
+                    <div className="space-y-1">
+                        <label className="text-[10px] uppercase tracking-widest text-slate-500 px-1 opacity-60">Navigate Section</label>
+                        <div className="relative">
+                            <select 
+                                onChange={(e) => router.push(e.target.value)}
+                                value={browsePathSegments[0] ? `/browser/${browsePathSegments[0]}` : '/browser'}
+                                className="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-slate-700 dark:text-slate-200"
+                            >
+                                <option value="/browser">Root Explorer ({index?._count || 0} files)</option>
+                                {topSections.map(section => {
+                                    const sectionData = (index as any)[section];
+                                    const count = sectionData?._count || 0;
+                                    const title = sectionData?._title;
+                                    return (
+                                        <option key={section} value={`/browser/${section}`}>
+                                            {title || section.replace(/-/g, ' ')} ({count})
+                                        </option>
+                                    );
+                                })}
+                            </select>
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                <ChevronRight className="rotate-90" size={16} />
+                            </div>
+                        </div>
+                    </div>
+
+                    {browsePathSegments.length > 0 && currentLevel && Object.keys(currentLevel).some(k => k !== '_count' && isDir(currentLevel[k])) && (
+                        <div className="space-y-1 animate-in slide-in-from-top-2 duration-300">
+                            <label className="text-[10px] uppercase tracking-widest text-cyan-600 dark:text-cyan-500 px-1 font-bold">In This Directory</label>
+                            <div className="relative">
+                                <select 
+                                    onChange={(e) => router.push(e.target.value)}
+                                    // Use the current path as the indicator if possible
+                                    value={currentPath ? `/browser/${currentPath}` : `/browser/${browsePath}`}
+                                    className="w-full bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 dark:border-cyan-500/20 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-bold text-cyan-600 dark:text-cyan-400"
+                                >
+                                    <option value={`/browser/${browsePathSegments.slice(0, -1).join('/')}`}>... Back</option>
+                                    {Object.keys(currentLevel).filter(k => k !== '_count' && isDir(currentLevel[k])).map(name => {
+                                        const path = browsePath ? `${browsePath}/${name}` : name;
+                                        const sectionData = currentLevel[name];
+                                        const count = sectionData?._count || 0;
+                                        const title = sectionData?._title;
+                                        return (
+                                            <option key={name} value={`/browser/${path}`}>
+                                                {title || name.replace(/-/g, ' ')} ({count})
+                                            </option>
+                                        );
+                                    })}
+                                </select>
+                                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-cyan-500">
+                                    <Folder size={16} />
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+
+                {browsePathSegments.length > 0 && currentLevel && Object.keys(currentLevel).some(k => k !== '_count' && isDir(currentLevel[k])) && (
+                    <div className="hidden md:block mt-8 pt-8 border-t border-slate-200 dark:border-white/5">
                         <div className="px-3 mb-2 text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-500">Sub-Directories</div>
                         <div className="space-y-1">
                             {Object.keys(currentLevel).filter(k => k !== '_count' && isDir(currentLevel[k])).map(name => {

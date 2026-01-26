@@ -1,3 +1,4 @@
+3bcf98c feat: enhance media browser with looping navigation, filename previews, and fixed mobile nav menu
 d9549fe feat: standardize UI with semantic theme colors, opaque header and rename characters
 3c8a72f Update public manuscripts from story sync
 f08fc50 Sync manuscripts: Mineral rejection and LHC rumor updates
