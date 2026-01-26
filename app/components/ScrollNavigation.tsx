@@ -22,6 +22,10 @@ export default function ScrollNavigation() {
     }, [currentChapter]);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
                 setIsVisible(true);

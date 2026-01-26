@@ -21,7 +21,7 @@ export default function BrowserPage() {
     const [isSubDirOpen, setIsSubDirOpen] = useState(false);
 
     const slug = useMemo(() => Array.isArray(params.slug) ? params.slug : (params.slug ? [params.slug] : []), [params.slug]);
-    const currentPath = slug.join('/');
+    const currentPath = useMemo(() => slug.join('/'), [slug]);
 
     // Helper to determine if a value in the tree is a directory
     const isDir = (val: any) => val !== null && typeof val === 'object' && '_count' in val;
@@ -31,7 +31,7 @@ export default function BrowserPage() {
         if (!index || slug.length === 0) return { prev: null, next: null };
         const parentPath = slug.slice(0, -1);
         const fileName = slug[slug.length - 1];
-        
+
         let parent: any = index;
         for (const segment of parentPath) {
             if (parent && typeof parent === 'object' && segment in parent) {
@@ -78,12 +78,16 @@ export default function BrowserPage() {
 
     useEffect(() => {
         async function load() {
+            window.scrollTo(0, 0);
             try {
-                setLoading(true);
+                // Only show global loading if we don't have the index yet
+                if (!index) setLoading(true);
+
                 setImageLoaded(null);
                 setVideoLoaded(null);
                 setContent(null);
                 setMetadata(null);
+
                 const idx = await getStoryIndex();
                 setIndex(idx);
 
@@ -107,6 +111,7 @@ export default function BrowserPage() {
                     }
 
                     if (targetIsFile) {
+                        setLoading(true); // Loading actual file content
                         if (isImage(currentPath)) {
                             setImageLoaded(`${STORY_REPO_BASE}${currentPath}`);
                         } else if (isVideo(currentPath)) {
@@ -121,6 +126,7 @@ export default function BrowserPage() {
                         let foundPage = false;
                         for (const page of possiblePages) {
                             if (ptr[page] !== undefined && !isDir(ptr[page])) {
+                                setLoading(true);
                                 const fileContent = await getStoryFile(`${currentPath}/${page}`);
                                 setContent(fileContent);
                                 foundPage = true;
@@ -140,7 +146,7 @@ export default function BrowserPage() {
             }
         }
         load();
-    }, [currentPath, slug]);
+    }, [currentPath, slug, index]);
 
     if (loading && !index) {
         return <div className="container mx-auto p-12 text-center text-slate-500 animate-pulse">Initializing Neural Link...</div>;
@@ -169,7 +175,7 @@ export default function BrowserPage() {
         if (!prev || !next || total <= 1) return null;
         return (
             <div className="flex items-center justify-between w-full max-w-4xl mb-6 bg-white/5 dark:bg-white/5 p-2 rounded-lg border border-slate-200 dark:border-white/5 shadow-sm overflow-hidden">
-                <Link 
+                <Link
                     href={`/browser/${prev}`}
                     className="flex items-center gap-2 p-2 hover:bg-cyan-500/10 hover:text-cyan-500 rounded-lg transition-colors text-slate-400 group min-w-0 flex-1"
                     title={`Previous: ${prevName}`}
@@ -179,12 +185,12 @@ export default function BrowserPage() {
                         {prevName?.replace(/-/g, ' ')}
                     </span>
                 </Link>
-                
+
                 <div className="px-4 text-xs font-mono text-slate-500 whitespace-nowrap border-x border-slate-200 dark:border-white/5 mx-2">
                     <span className="text-cyan-500 font-bold">{currentIdx}</span> / {total}
                 </div>
 
-                <Link 
+                <Link
                     href={`/browser/${next}`}
                     className="flex items-center gap-2 p-2 hover:bg-cyan-500/10 hover:text-cyan-500 rounded-lg transition-colors text-slate-400 group min-w-0 flex-1 justify-end text-right"
                     title={`Next: ${nextName}`}
@@ -238,14 +244,14 @@ export default function BrowserPage() {
                     <div className="space-y-1">
                         <label className="text-[10px] uppercase tracking-widest text-slate-500 px-1 opacity-60">Navigate Section</label>
                         <div className="relative">
-                            <button 
+                            <button
                                 onClick={() => setIsSectionOpen(!isSectionOpen)}
                                 className="w-full flex items-center justify-between bg-background dark:bg-black/40 border border-foreground/10 rounded-xl p-4 text-sm outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-foreground"
                             >
                                 <div className="flex items-center gap-2">
                                     <Home size={16} className="text-cyan-500" />
                                     <span>
-                                        {browsePathSegments[0] 
+                                        {browsePathSegments[0]
                                             ? ((index as any)?.[browsePathSegments[0]]?._title || browsePathSegments[0].replace(/-/g, ' '))
                                             : "Root Explorer"}
                                     </span>
@@ -256,7 +262,7 @@ export default function BrowserPage() {
                             {isSectionOpen && (
                                 <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                                     <div className="max-h-[60vh] overflow-y-auto py-2">
-                                        <button 
+                                        <button
                                             onClick={() => { router.push('/browser'); setIsSectionOpen(false); }}
                                             className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${!browsePath ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
                                         >
@@ -269,7 +275,7 @@ export default function BrowserPage() {
                                             const count = sectionData?._count || 0;
                                             const title = sectionData?._title;
                                             return (
-                                                <button 
+                                                <button
                                                     key={section}
                                                     onClick={() => { router.push(`/browser/${section}`); setIsSectionOpen(false); }}
                                                     className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${active ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
@@ -289,7 +295,7 @@ export default function BrowserPage() {
                         <div className="space-y-1 animate-in slide-in-from-top-2 duration-300">
                             <label className="text-[10px] uppercase tracking-widest text-cyan-600 dark:text-cyan-500 px-1 font-bold">In This Directory</label>
                             <div className="relative">
-                                <button 
+                                <button
                                     onClick={() => setIsSubDirOpen(!isSubDirOpen)}
                                     className="w-full flex items-center justify-between bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 dark:border-cyan-500/20 rounded-xl p-4 text-sm outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-bold text-cyan-600 dark:text-cyan-400"
                                 >
@@ -303,7 +309,7 @@ export default function BrowserPage() {
                                 {isSubDirOpen && (
                                     <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-cyan-500/20 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                                         <div className="max-h-[60vh] overflow-y-auto py-2">
-                                            <button 
+                                            <button
                                                 onClick={() => { router.push(`/browser/${browsePathSegments.slice(0, -1).join('/')}`); setIsSubDirOpen(false); }}
                                                 className="w-full text-left px-4 py-3 text-sm text-slate-500 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors"
                                             >
@@ -315,7 +321,7 @@ export default function BrowserPage() {
                                                 const count = sectionData?._count || 0;
                                                 const title = sectionData?._title;
                                                 return (
-                                                    <button 
+                                                    <button
                                                         key={name}
                                                         onClick={() => { router.push(`/browser/${path}`); setIsSubDirOpen(false); }}
                                                         className="w-full text-left px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-cyan-500/10 transition-colors flex items-center justify-between"
@@ -384,9 +390,9 @@ export default function BrowserPage() {
                         {isViewingFile && (
                             <div className="pt-8 border-t border-slate-200 dark:border-white/5 flex justify-between items-center">
                                 <span className="text-xs text-slate-500 font-mono tracking-tighter">{currentPath}</span>
-                                <a 
+                                <a
                                     href={`${STORY_REPO_BASE.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/')}${currentPath}`}
-                                    target="_blank" 
+                                    target="_blank"
                                     rel="noreferrer"
                                     className="text-xs text-cyan-500 hover:underline"
                                 >
@@ -400,21 +406,21 @@ export default function BrowserPage() {
                         <NavControls />
                         <div className="relative group max-w-4xl w-full">
                             {metadata?._lqip && (
-                                <div 
+                                <div
                                     className="absolute inset-0 blur-2xl scale-105 opacity-50 rounded-2xl"
                                     style={{ backgroundImage: `url(${metadata._lqip})`, backgroundSize: 'cover' }}
                                 />
                             )}
-                            <img 
-                                src={getImageUrl(imageLoaded, 1200)} 
-                                alt={currentPath} 
+                            <img
+                                src={getImageUrl(imageLoaded, 1200)}
+                                alt={currentPath}
                                 className="rounded-2xl shadow-2xl border border-slate-200 dark:border-white/10 w-full relative z-10"
                             />
                             <div className="mt-4 flex justify-between items-center px-2">
                                 <span className="text-xs text-slate-500 font-mono tracking-tighter">{currentPath}</span>
-                                <a 
-                                    href={imageLoaded.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/')} 
-                                    target="_blank" 
+                                <a
+                                    href={imageLoaded.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/')}
+                                    target="_blank"
                                     rel="noreferrer"
                                     className="text-xs text-cyan-500 hover:underline"
                                 >
@@ -427,16 +433,16 @@ export default function BrowserPage() {
                     <div className="flex flex-col items-center gap-6 animate-in fade-in zoom-in duration-500">
                         <NavControls />
                         <div className="relative group max-w-4xl w-full">
-                            <video 
-                                src={videoLoaded} 
-                                controls 
+                            <video
+                                src={videoLoaded}
+                                controls
                                 className="rounded-2xl shadow-2xl border border-slate-200 dark:border-white/10 w-full"
                             />
                             <div className="mt-4 flex justify-between items-center px-2">
                                 <span className="text-xs text-slate-500 font-mono tracking-tighter">{currentPath}</span>
-                                <a 
-                                    href={videoLoaded.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/')} 
-                                    target="_blank" 
+                                <a
+                                    href={videoLoaded.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/')}
+                                    target="_blank"
                                     rel="noreferrer"
                                     className="text-xs text-cyan-500 hover:underline"
                                 >
@@ -469,17 +475,17 @@ export default function BrowserPage() {
                                         {isImg && <span className="text-[10px] px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400">Image</span>}
                                         {isVid && <span className="text-[10px] px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400">Video</span>}
                                     </div>
-                                    
+
                                     {isImg && (
                                         <div className="aspect-video w-full relative rounded-lg overflow-hidden border border-slate-100 dark:border-white/5 bg-slate-900/5 dark:bg-black/20">
                                             {lqip && (
-                                                <div 
+                                                <div
                                                     className="absolute inset-0 blur-xl scale-110 opacity-50"
                                                     style={{ backgroundImage: `url(${lqip})`, backgroundSize: 'cover' }}
                                                 />
                                             )}
-                                            <img 
-                                                src={getImageUrl(`${STORY_REPO_BASE}${path}`, 400)} 
+                                            <img
+                                                src={getImageUrl(`${STORY_REPO_BASE}${path}`, 400)}
                                                 alt={name}
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 relative z-10"
                                                 loading="lazy"

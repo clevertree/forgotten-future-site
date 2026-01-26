@@ -1,3 +1,6 @@
+beec7ef feat: custom mobile navigation dropdowns and themed header background
+457bdf7 style: use themed classes for mobile dropdowns
+741f151 feat: consolidate mobile browser navigation into dropdowns
 3bcf98c feat: enhance media browser with looping navigation, filename previews, and fixed mobile nav menu
 d9549fe feat: standardize UI with semantic theme colors, opaque header and rename characters
 3c8a72f Update public manuscripts from story sync

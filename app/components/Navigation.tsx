@@ -1,12 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { prefixPath } from '@/lib/utils';
 import ThemeSwitch from './ThemeSwitch';
 
-export default function Navigation() {
+const Navigation = memo(function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
@@ -86,4 +86,6 @@ export default function Navigation() {
             </div>
         </nav>
     );
-}
+})
+
+export default Navigation;
