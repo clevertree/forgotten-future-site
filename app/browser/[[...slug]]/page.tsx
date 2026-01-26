@@ -17,6 +17,8 @@ export default function BrowserPage() {
     const [videoLoaded, setVideoLoaded] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [isSectionOpen, setIsSectionOpen] = useState(false);
+    const [isSubDirOpen, setIsSubDirOpen] = useState(false);
 
     const slug = useMemo(() => Array.isArray(params.slug) ? params.slug : (params.slug ? [params.slug] : []), [params.slug]);
     const currentPath = slug.join('/');
@@ -199,7 +201,7 @@ export default function BrowserPage() {
     return (
         <div className="flex flex-col md:flex-row min-h-screen bg-slate-50/50 dark:bg-black/20">
             {/* Sidebar */}
-            <aside className="w-full md:w-80 border-r border-slate-200 dark:border-white/5 bg-white dark:bg-black/40 backdrop-blur-sm p-6 overflow-y-auto max-h-screen sticky top-0">
+            <aside className="w-full md:w-80 border-r border-slate-200 dark:border-white/5 bg-white dark:bg-black/40 backdrop-blur-sm p-6 md:overflow-y-auto max-h-screen sticky top-0 z-40">
                 <div className="flex items-center gap-2 mb-8 text-glow uppercase tracking-widest text-sm opacity-70 text-slate-900 dark:text-white">
                     <Search size={14} />
                     <span>Story Explorer</span>
@@ -236,26 +238,50 @@ export default function BrowserPage() {
                     <div className="space-y-1">
                         <label className="text-[10px] uppercase tracking-widest text-slate-500 px-1 opacity-60">Navigate Section</label>
                         <div className="relative">
-                            <select 
-                                onChange={(e) => router.push(e.target.value)}
-                                value={browsePathSegments[0] ? `/browser/${browsePathSegments[0]}` : '/browser'}
-                                className="w-full bg-background dark:bg-black/40 border border-foreground/10 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-foreground"
+                            <button 
+                                onClick={() => setIsSectionOpen(!isSectionOpen)}
+                                className="w-full flex items-center justify-between bg-background dark:bg-black/40 border border-foreground/10 rounded-xl p-4 text-sm outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-foreground"
                             >
-                                <option value="/browser" className="bg-background text-foreground">Root Explorer ({index?._count || 0} files)</option>
-                                {topSections.map(section => {
-                                    const sectionData = (index as any)[section];
-                                    const count = sectionData?._count || 0;
-                                    const title = sectionData?._title;
-                                    return (
-                                        <option key={section} value={`/browser/${section}`} className="bg-background text-foreground">
-                                            {title || section.replace(/-/g, ' ')} ({count})
-                                        </option>
-                                    );
-                                })}
-                            </select>
-                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
-                                <ChevronRight className="rotate-90" size={16} />
-                            </div>
+                                <div className="flex items-center gap-2">
+                                    <Home size={16} className="text-cyan-500" />
+                                    <span>
+                                        {browsePathSegments[0] 
+                                            ? ((index as any)?.[browsePathSegments[0]]?._title || browsePathSegments[0].replace(/-/g, ' '))
+                                            : "Root Explorer"}
+                                    </span>
+                                </div>
+                                <ChevronRight className={`transition-transform duration-300 ${isSectionOpen ? 'rotate-90' : 'rotate-0'}`} size={16} />
+                            </button>
+
+                            {isSectionOpen && (
+                                <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                                    <div className="max-h-[60vh] overflow-y-auto py-2">
+                                        <button 
+                                            onClick={() => { router.push('/browser'); setIsSectionOpen(false); }}
+                                            className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${!browsePath ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
+                                        >
+                                            <span>Root Explorer</span>
+                                            <span className="text-[10px] opacity-40">({index?._count || 0})</span>
+                                        </button>
+                                        {topSections.map(section => {
+                                            const sectionData = (index as any)[section];
+                                            const active = browsePathSegments[0] === section;
+                                            const count = sectionData?._count || 0;
+                                            const title = sectionData?._title;
+                                            return (
+                                                <button 
+                                                    key={section}
+                                                    onClick={() => { router.push(`/browser/${section}`); setIsSectionOpen(false); }}
+                                                    className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${active ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
+                                                >
+                                                    <span className="capitalize">{title || section.replace(/-/g, ' ')}</span>
+                                                    <span className="text-[10px] opacity-40">({count})</span>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
 
@@ -263,28 +289,45 @@ export default function BrowserPage() {
                         <div className="space-y-1 animate-in slide-in-from-top-2 duration-300">
                             <label className="text-[10px] uppercase tracking-widest text-cyan-600 dark:text-cyan-500 px-1 font-bold">In This Directory</label>
                             <div className="relative">
-                                <select 
-                                    onChange={(e) => router.push(e.target.value)}
-                                    // Use the current path as the indicator if possible
-                                    value={currentPath ? `/browser/${currentPath}` : `/browser/${browsePath}`}
-                                    className="w-full bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 dark:border-cyan-500/20 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-bold text-cyan-600 dark:text-cyan-400"
+                                <button 
+                                    onClick={() => setIsSubDirOpen(!isSubDirOpen)}
+                                    className="w-full flex items-center justify-between bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 dark:border-cyan-500/20 rounded-xl p-4 text-sm outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-bold text-cyan-600 dark:text-cyan-400"
                                 >
-                                    <option value={`/browser/${browsePathSegments.slice(0, -1).join('/')}`} className="bg-background text-foreground">... Back</option>
-                                    {Object.keys(currentLevel).filter(k => k !== '_count' && isDir(currentLevel[k])).map(name => {
-                                        const path = browsePath ? `${browsePath}/${name}` : name;
-                                        const sectionData = currentLevel[name];
-                                        const count = sectionData?._count || 0;
-                                        const title = sectionData?._title;
-                                        return (
-                                            <option key={name} value={`/browser/${path}`} className="bg-background text-foreground">
-                                                {title || name.replace(/-/g, ' ')} ({count})
-                                            </option>
-                                        );
-                                    })}
-                                </select>
-                                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-cyan-500">
-                                    <Folder size={16} />
-                                </div>
+                                    <div className="flex items-center gap-2 truncate">
+                                        <Folder size={16} />
+                                        <span>Explore Sub-folders</span>
+                                    </div>
+                                    <ChevronRight className={`transition-transform duration-300 ${isSubDirOpen ? 'rotate-90' : 'rotate-0'}`} size={16} />
+                                </button>
+
+                                {isSubDirOpen && (
+                                    <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-cyan-500/20 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                                        <div className="max-h-[60vh] overflow-y-auto py-2">
+                                            <button 
+                                                onClick={() => { router.push(`/browser/${browsePathSegments.slice(0, -1).join('/')}`); setIsSubDirOpen(false); }}
+                                                className="w-full text-left px-4 py-3 text-sm text-slate-500 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors"
+                                            >
+                                                ... Back to Parent
+                                            </button>
+                                            {Object.keys(currentLevel).filter(k => k !== '_count' && isDir(currentLevel[k])).map(name => {
+                                                const path = browsePath ? `${browsePath}/${name}` : name;
+                                                const sectionData = currentLevel[name];
+                                                const count = sectionData?._count || 0;
+                                                const title = sectionData?._title;
+                                                return (
+                                                    <button 
+                                                        key={name}
+                                                        onClick={() => { router.push(`/browser/${path}`); setIsSubDirOpen(false); }}
+                                                        className="w-full text-left px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-cyan-500/10 transition-colors flex items-center justify-between"
+                                                    >
+                                                        <span className="truncate">{title || name.replace(/-/g, ' ')}</span>
+                                                        <span className="text-[10px] opacity-40 flex-shrink-0">({count})</span>
+                                                    </button>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     )}

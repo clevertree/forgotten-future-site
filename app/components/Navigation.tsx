@@ -67,8 +67,8 @@ export default function Navigation() {
             </button>
 
             {/* Mobile Nav Overlay */}
-            <div className={`fixed inset-0 bg-white dark:bg-slate-950 z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20 text-primary">
+            <div className={`fixed inset-0 bg-background/95 backdrop-blur-xl z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20 text-foreground">
                     {navLinks.map(link => (
                         <Link
                             key={link.href}

@@ -77,7 +77,7 @@ export default function RootLayout({
             <body className="bg-background text-foreground transition-colors duration-300 selection:bg-accent/30">
                 <Providers>
                     <header className="fixed top-0 w-full z-[1000] no-print">
-                        <div className="absolute inset-0 bg-background border-b border-foreground/10 -z-10" />
+                        <div className="absolute inset-0 bg-background/95 backdrop-blur-md border-b border-foreground/10 -z-10" />
                         <Navigation />
                     </header>
 
