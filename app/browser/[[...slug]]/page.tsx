@@ -239,15 +239,15 @@ export default function BrowserPage() {
                             <select 
                                 onChange={(e) => router.push(e.target.value)}
                                 value={browsePathSegments[0] ? `/browser/${browsePathSegments[0]}` : '/browser'}
-                                className="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-slate-700 dark:text-slate-200"
+                                className="w-full bg-background dark:bg-black/40 border border-foreground/10 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-medium text-foreground"
                             >
-                                <option value="/browser">Root Explorer ({index?._count || 0} files)</option>
+                                <option value="/browser" className="bg-background text-foreground">Root Explorer ({index?._count || 0} files)</option>
                                 {topSections.map(section => {
                                     const sectionData = (index as any)[section];
                                     const count = sectionData?._count || 0;
                                     const title = sectionData?._title;
                                     return (
-                                        <option key={section} value={`/browser/${section}`}>
+                                        <option key={section} value={`/browser/${section}`} className="bg-background text-foreground">
                                             {title || section.replace(/-/g, ' ')} ({count})
                                         </option>
                                     );
@@ -269,14 +269,14 @@ export default function BrowserPage() {
                                     value={currentPath ? `/browser/${currentPath}` : `/browser/${browsePath}`}
                                     className="w-full bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 dark:border-cyan-500/20 rounded-xl p-4 text-sm appearance-none outline-none focus:ring-2 focus:ring-cyan-500/30 transition-all font-bold text-cyan-600 dark:text-cyan-400"
                                 >
-                                    <option value={`/browser/${browsePathSegments.slice(0, -1).join('/')}`}>... Back</option>
+                                    <option value={`/browser/${browsePathSegments.slice(0, -1).join('/')}`} className="bg-background text-foreground">... Back</option>
                                     {Object.keys(currentLevel).filter(k => k !== '_count' && isDir(currentLevel[k])).map(name => {
                                         const path = browsePath ? `${browsePath}/${name}` : name;
                                         const sectionData = currentLevel[name];
                                         const count = sectionData?._count || 0;
                                         const title = sectionData?._title;
                                         return (
-                                            <option key={name} value={`/browser/${path}`}>
+                                            <option key={name} value={`/browser/${path}`} className="bg-background text-foreground">
                                                 {title || name.replace(/-/g, ' ')} ({count})
                                             </option>
                                         );
