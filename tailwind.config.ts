@@ -10,10 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--foreground-rgb))',
-        secondary: 'rgb(var(--foreground-secondary-rgb))',
-        muted: 'rgb(var(--foreground-muted-rgb))',
-        background: 'rgb(var(--background-start-rgb))',
+        primary: 'rgb(var(--foreground-rgb) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground-rgb) / <alpha-value>)',
+        secondary: 'rgb(var(--foreground-secondary-rgb) / <alpha-value>)',
+        muted: 'rgb(var(--foreground-muted-rgb) / <alpha-value>)',
+        background: 'rgb(var(--background-start-rgb) / <alpha-value>)',
+        'background-end': 'rgb(var(--background-end-rgb) / <alpha-value>)',
         accent: 'rgb(var(--accent-rgb) / <alpha-value>)',
         'accent-bright': 'var(--accent-bright-color)',
         'element-wood': 'var(--element-wood)',

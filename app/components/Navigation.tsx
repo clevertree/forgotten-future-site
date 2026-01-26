@@ -11,16 +11,17 @@ export default function Navigation() {
 
     const navLinks = [
         { href: '/story', label: 'Story' },
+        { href: '/browser', label: 'Browser' },
         { href: '/characters', label: 'Characters' },
         { href: '/locations', label: 'Locations' },
+        // { href: '/media', label: 'Media' },
         { href: '/manuscript', label: 'Manuscript' },
-        { href: '/media', label: 'Media' },
         { href: '/game', label: 'Game' },
         { href: '/faq', label: 'FAQ' }
     ];
 
     return (
-        <nav className="container mx-auto px-6 py-4 flex justify-around items-center relative">
+        <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative">
             {/* Logo */}
             <Link href="/" className="flex items-center group z-[60]">
                 <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0">
@@ -33,7 +34,7 @@ export default function Navigation() {
                 </div>
                 <div className="relative h-8 md:h-12 w-36 md:w-52">
                     <Image
-                        src={prefixPath('/media/logo/ff-text.png')}
+                        src={prefixPath('/media/logo/ff-text.png?v=1')}
                         alt="Forgotten Future"
                         fill
                         className="object-contain"
@@ -66,7 +67,7 @@ export default function Navigation() {
             </button>
 
             {/* Mobile Nav Overlay */}
-            <div className={`fixed inset-0 bg-background z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed inset-0 bg-white dark:bg-slate-950 z-[50] transition-transform duration-500 lg:hidden overflow-y-auto ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="flex flex-col items-center justify-center min-h-full space-y-5 uppercase text-xl tracking-[0.3em] font-light py-20 text-primary">
                     {navLinks.map(link => (
                         <Link

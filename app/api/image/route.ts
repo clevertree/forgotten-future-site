@@ -34,6 +34,9 @@ export async function GET(request: NextRequest) {
                 'ffga.me',              // added per request
                 'localhost',
                 '127.0.0.1',
+                'raw.githubusercontent.com',
+                'githubusercontent.com',
+                'github.com',
                 'files.paradigmthreat.net', // Maybe they use images from there too?
                 'paradigmthreat.net'
             ];

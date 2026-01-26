@@ -43,11 +43,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  @apply text-foreground min-h-screen;
   background: linear-gradient(to bottom,
       rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb)));
-  min-height: 100vh;
 }
 
 @layer base {
@@ -159,7 +158,7 @@ body {
   }
 
   .btn-toggle-active {
-    @apply bg-accent text-background shadow-lg shadow-accent/50;
+    @apply bg-accent text-background shadow-xl shadow-accent/40 ring-2 ring-accent/20;
   }
 
   .btn-toggle-inactive {

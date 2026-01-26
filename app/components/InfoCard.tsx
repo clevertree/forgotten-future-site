@@ -97,7 +97,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
                     <div className="md:w-2/3">
                         <h3 className="text-2xl font-bold mb-1">{title}</h3>
                         {subtitle && <p className={`text-sm ${subtitleColor} uppercase tracking-widest mb-4 font-semibold`}>{subtitle}</p>}
-                        <div className="space-y-4 text-[rgb(var(--foreground-rgb))]/70 leading-relaxed">
+                        <div className="space-y-4 text-foreground/70 leading-relaxed">
                             {description}
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
             </div>
             <h3 className="text-2xl font-bold mb-1">{title}</h3>
             {subtitle && <p className={`text-sm ${subtitleColor} uppercase tracking-widest mb-4 font-semibold`}>{subtitle}</p>}
-            <div className="space-y-4 text-[rgb(var(--foreground-rgb))]/70">
+            <div className="space-y-4 text-foreground/70">
                 {description}
             </div>
         </div>

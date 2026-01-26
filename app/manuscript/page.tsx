@@ -357,11 +357,11 @@ function ManuscriptContent() {
 
                     <div ref={scrollContainerRef} className="space-y-12 h-[calc(100vh)] overflow-y-auto pr-4 scroll-smooth custom-scrollbar relative">
                         {isLoading ? (
-                            <div className="flex flex-col items-center justify-center py-24 text-[rgb(var(--foreground-muted-rgb))] uppercase tracking-widest text-xs">
+                            <div className="flex flex-col items-center justify-center py-24 text-muted uppercase tracking-widest text-xs">
                                 <div className="mb-4 animate-pulse">Scanning Aether-Drive...</div>
                             </div>
                         ) : parts.length === 0 ? (
-                            <div className="flex flex-col items-center justify-center py-24 text-[rgb(var(--foreground-muted-rgb))] uppercase tracking-widest text-xs">
+                            <div className="flex flex-col items-center justify-center py-24 text-muted uppercase tracking-widest text-xs">
                                 <div className="mb-4 text-red-500/50">Connection Failed: Data Not Found</div>
                                 <button
                                     onClick={() => window.location.reload()}
@@ -378,7 +378,7 @@ function ManuscriptContent() {
                                         {section.title}
                                         <span className="h-px bg-cyan-500/20 flex-grow"></span>
                                     </h2>
-                                    <p className="text-xs text-[rgb(var(--foreground-muted-rgb))] italic mb-8 text-center max-w-xl mx-auto">
+                                    <p className="text-xs text-muted italic mb-8 text-center max-w-xl mx-auto">
                                         {section.summary}
                                     </p>
                                     <div className="space-y-6">

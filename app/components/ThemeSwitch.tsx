@@ -17,38 +17,27 @@ export default function ThemeSwitch() {
         return <div className="p-2 w-9 h-9" />;
     }
 
+    const options = [
+        { id: 'light', Icon: Sun, title: 'Light Mode' },
+        { id: 'dark', Icon: Moon, title: 'Dark Mode' },
+        { id: 'system', Icon: Monitor, title: 'System Default' },
+    ];
+
     return (
-        <div className="flex items-center gap-1 bg-primary backdrop-blur-md border border-black/10 rounded-full p-1 h-fit">
-            <button
-                onClick={() => setTheme('light')}
-                className={`p-1.5 rounded-full ${theme === 'light'
-                    ? 'btn-toggle-active'
-                    : 'btn-toggle-inactive'
-                    }`}
-                title="Light Mode"
-            >
-                <Sun size={16} />
-            </button>
-            <button
-                onClick={() => setTheme('dark')}
-                className={`p-1.5 rounded-full ${theme === 'dark'
-                    ? 'btn-toggle-active'
-                    : 'btn-toggle-inactive'
-                    }`}
-                title="Dark Mode"
-            >
-                <Moon size={16} />
-            </button>
-            <button
-                onClick={() => setTheme('system')}
-                className={`p-1.5 rounded-full ${theme === 'system'
-                    ? 'btn-toggle-active'
-                    : 'btn-toggle-inactive'
-                    }`}
-                title="System Default"
-            >
-                <Monitor size={16} />
-            </button>
+        <div className="flex items-center gap-1 bg-primary/5 backdrop-blur-md border border-primary/10 rounded-full p-1 h-fit shadow-inner">
+            {options.map(({ id, Icon, title }) => (
+                <button
+                    key={id}
+                    onClick={() => setTheme(id)}
+                    className={`p-2 rounded-full transition-all duration-300 flex items-center justify-center ${theme === id
+                        ? 'btn-toggle-active scale-110 shadow-lg'
+                        : 'btn-toggle-inactive hover:bg-primary/10'
+                        }`}
+                    title={title}
+                >
+                    <Icon size={16} strokeWidth={theme === id ? 3 : 2} />
+                </button>
+            ))}
         </div>
     );
 }

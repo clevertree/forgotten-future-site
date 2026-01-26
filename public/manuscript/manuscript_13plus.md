@@ -1,20 +1,20 @@
 # Forgotten Future: Full Manuscript (13 PLUS)
-> Draft Version: 0.13.90
-> Updated: 2026-01-24
+> Draft Version: 0.13.92
+> Updated: 2026-01-26
 
 # PART I: LUNAR MISSION
 
-*Determined to reclaim the Moon from a supposed alien threat, Lem and a global military force embark on a mission that hides a century of fabricated history.*
+*Determined to reclaim the Moon from a supposed alien threat, Ren and a global military force embark on a mission that hides a century of fabricated history.*
 
 ---
 
 ## Chapter 1: Outpost
 
 ### Synopsis
-Lem begins his record by detailing the nature of his memories—an analog stream beginning before his birth. He recalls a childhood of institutional routine and unexplained relocations, a sign of the Core's early influence on his path. He then traces the root of the coming conflict to 1971, when the Apollo 14 mission seeded the first Synodic toxins into the lunar surface under the guise of exploration.
+Ren begins his record by detailing the nature of his memories—an analog stream beginning before his birth. He recalls a childhood of institutional routine and unexplained relocations, a sign of the Core's early influence on his path. He then traces the root of the coming conflict to 1971, when the Apollo 14 mission seeded the first Synodic toxins into the lunar surface under the guise of exploration.
 
 ### Draft
-History isn't just a record of the past; it's a living shadow. My name is Lem, and I am a witness to the final days of the world I called home. I was born into a silence that felt like peace, never realizing that the sky above was gathering its strength for a storm that would unmake us all. This is the first transmission—the record of a journey into the heart of a cosmic mystery.
+History isn't just a record of the past; it's a living shadow. My name is Ren, and I am a witness to the final days of the world I called home. I was born into a silence that felt like peace, never realizing that the sky above was gathering its strength for a storm that would unmake us all. This is the first transmission—the record of a journey into the heart of a cosmic mystery.
 
 My early years were defined by the steady, rhythmic pulse of the city. I lived in an orphanage of gray stone and sun-drenched gardens, where time was measured in laughter and lessons. We felt safe. We felt permanent. We watched the news as the first anomalies appeared—signal leaks from the Moon that whispered of a hidden history. The world called them 'alien,' and we looked to the stars with a mix of wonder and dread.
 
@@ -37,7 +37,7 @@ In the face of the impossible, humanity did something rare: we unified. National
 ## Chapter 3: Invasion
 
 ### Synopsis
-The long-feared arrival of the Monoliths finally reaches Lem's doorstep. Waking to the literal earth-shaking impact of a lunar pod, Lem watches as the city's defenses are bypassed by the sheer proximity of the alien landing. As he watches from his street, a desperate military strike results in a catastrophic collateral Event. A damaged Monolith topples into his residential neighborhood, destroying his home and sending him into a dark unconsciousness.
+The long-feared arrival of the Monoliths finally reaches Ren's doorstep. Waking to the literal earth-shaking impact of a lunar pod, Ren watches as the city's defenses are bypassed by the sheer proximity of the alien landing. As he watches from his street, a desperate military strike results in a catastrophic collateral Event. A damaged Monolith topples into his residential neighborhood, destroying his home and sending him into a dark unconsciousness.
 
 ### Draft
 The world didn't end with a whimper. It ended with a sound so deep it didn't feel like noise—it felt like the earth itself had been struck by a hammer the size of a mountain.
@@ -75,24 +75,24 @@ A wall of fire and metal shards, each the size of a car, tore down the street. I
 ## Chapter 4: Recruited
 
 ### Synopsis
-In the darkness following the destruction of his street, Lem enters a dream-like state where he is met by Lynn. She reveals that he has been in "deep cover" for his own protection and that she has extracted him amidst the chaos to hide his recruitment from the enemy. Lem, in a state of high suggestibility, agrees to help her. Lynn activates the AI Lynn software within him, revealing his first glimpse of the digital AR markers that will guide him. He wakes to find himself on a declassified hovering military transport, heading toward a military base while the ruins of his life recede below.
+In the darkness following the destruction of his street, Ren enters a dream-like state where he is met by Lynn. She reveals that he has been in "deep cover" for his own protection and that she has extracted him amidst the chaos to hide his recruitment from the enemy. Ren, in a state of high suggestibility, agrees to help her. Lynn activates the AI Lynn software within him, revealing his first glimpse of the digital AR markers that will guide him. He wakes to find himself on a declassified hovering military transport, heading toward a military base while the ruins of his life recede below.
 
 ### Draft
 I was floating.
 
 The roar of the explosion and the heat of the fire were gone, replaced by a cool, weightless silence. I thought I was dreaming. I looked down and saw the city, but it was small, like a model layout. The Monoliths were moving through the streets, their beams of light carving paths of white fire through the grid. It was beautiful in a terrible way.
 
-"I’m sorry it had to be this way, Lem."
+"I’m sorry it had to be this way, Ren."
 
 The voice was calm, cutting through the silence of my dream. I turned and saw her. She wasn't standing on anything; she was just there, a presence in the void. Lynn.
 
 "Where am I?" I asked. My voice didn't sound like mine. It felt smooth, unburdened by the panic that should have been choking me.
 
-"You’re safe," she said. She moved closer, her eyes reflecting the flickering fire of the city below. "I apologize for the circumstances of your drafting. We had to wait for a moment of total chaos. You’ve been in deep cover for a very long time, Lem. We couldn't risk the enemy knowing who you were, or where you were. This invasion... it was the only curtain loud enough to hide your extraction."
+"You’re safe," she said. She moved closer, her eyes reflecting the flickering fire of the city below. "I apologize for the circumstances of your drafting. We had to wait for a moment of total chaos. You’ve been in deep cover for a very long time, Ren. We couldn't risk the enemy knowing who you were, or where you were. This invasion... it was the only curtain loud enough to hide your extraction."
 
 "Deep cover?" I repeated. It sounded like something from a movie, but in this state, it made perfect sense. Everything felt logical. "Am I a soldier?"
 
-"You're a necessity," Lynn replied. "I need your help, Lem. If we don’t act now, there won’t be a city left to save. Will you help me?"
+"You're a necessity," Lynn replied. "I need your help, Ren. If we don’t act now, there won’t be a city left to save. Will you help me?"
 
 I looked at her. I didn't feel fear, or doubt, or even curiosity about how I'd ended up in a void talking to a woman I’d never met. I just felt... agreeable. Like the path was already laid out and I just had to step onto it.
 
@@ -122,7 +122,7 @@ I leaned back against the hull. The AR markers from my dream were still there, g
 
 "You said I was in deep cover," I said, looking at her. "Why?"
 
-"Questions later, Lem," she said, her tone final. "Right now, we have a mission. Focus on the markers."
+"Questions later, Ren," she said, her tone final. "Right now, we have a mission. Focus on the markers."
 
 I watched the ruins of my life recede into the dust. It should have hurt more, but as I looked at the glowing blue lines in my eyes, I found that I was already moving on.
 
@@ -131,12 +131,12 @@ I watched the ruins of my life recede into the dust. It should have hurt more, b
 ## Chapter 5: Ascent
 
 ### Synopsis
-Aboard the hovering transport and later the mission spacecraft, Lem is boarded as a "citizen monitor," a role Lynn uses to bypass authority restrictions while keeping him close. As the ship launches using recently declassified anti-gravity technology, Lem watches the Earth and the ruins of his home recede below. Moving through the massive interior, he eavesdrops on soldiers grumbling about the "business-influenced" strike order that sacrificed residential areas to save downtown skyscrapers. He observes their resolve shift from cynicism back to their mission as they brace for psychological attacks from the enemy lunar base. At this stage, Lem perceives the Core’s narrative as absolute and flawless, finding no room for doubt in the mission’s necessity.
+Aboard the hovering transport and later the mission spacecraft, Ren is boarded as a "citizen monitor," a role Lynn uses to bypass authority restrictions while keeping him close. As the ship launches using recently declassified anti-gravity technology, Ren watches the Earth and the ruins of his home recede below. Moving through the massive interior, he eavesdrops on soldiers grumbling about the "business-influenced" strike order that sacrificed residential areas to save downtown skyscrapers. He observes their resolve shift from cynicism back to their mission as they brace for psychological attacks from the enemy lunar base. At this stage, Ren perceives the Core’s narrative as absolute and flawless, finding no room for doubt in the mission’s necessity.
 
 ### Draft
 The transition from the hovering transport to the primary vessel was seamless, a mechanical dance I only half-understood. I was boarded as a "citizen monitor," a title that felt like a flimsy shield. A military marshal blocked the gantry, his face a map of confusion as he looked at my civilian clothes. He barked questions at me—demanding my code, my name, my purpose. I didn't answer. I didn't have the words for the mystery that had claimed me.
 
-Lynn’s voice cut through the marshal’s comms before he could detain me. I could see the shift in his expression—fear, then a begrudging acceptance. He stepped aside, his hand snapping to a salute that acknowledged an authority I was only starting to comprehend. "Watch everything, Lem," Lynn’s voice whispered in my mind. "The soldiers, the machines, the fear."
+Lynn’s voice cut through the marshal’s comms before he could detain me. I could see the shift in his expression—fear, then a begrudging acceptance. He stepped aside, his hand snapping to a salute that acknowledged an authority I was only starting to comprehend. "Watch everything, Ren," Lynn’s voice whispered in my mind. "The soldiers, the machines, the fear."
 
 I found a corner near a group of infantrymen. They were older than me, scarred and weary, but they were talking in low, jagged sentences that caught my attention.
 
@@ -159,7 +159,7 @@ I sat in my corner, ignored by the soldiers who were too busy wrestling with the
 ## Chapter 6: Zenith
 
 ### Synopsis
-As the Moon swells to fill the entire sky, the atmospheric rim of an oxygenated atmosphere and ancient structures on its surface reveal its true, undeniable nature. This overwhelming reveal triggers a faith crisis, but Iris Novak reinforces the Core's justification: the Moon’s nature was a necessary military secret, only declassified now for those charged with its reclamation. While most accept this as the heavy burden of truth, a veteran crewman's spirit breaks under the weight of the previous secrecy, which he blames for Earth’s blindness to the invasion. Lynn intervenes with absolute authority, declaring the crewman's collapse a risk to the mission and ordering his removal. With discipline restored through the excise of unstable factors, the crew returns to their consoles in a heavy, focused silence as the ship reaches Zenith alignment, with Lem witnessing the event as the first true test of their resolve against the demoralizing revelations of the void.
+As the Moon swells to fill the entire sky, the atmospheric rim of an oxygenated atmosphere and ancient structures on its surface reveal its true, undeniable nature. This overwhelming reveal triggers a faith crisis, but Iris Novak reinforces the Core's justification: the Moon’s nature was a necessary military secret, only declassified now for those charged with its reclamation. While most accept this as the heavy burden of truth, a veteran crewman's spirit breaks under the weight of the previous secrecy, which he blames for Earth’s blindness to the invasion. Lynn intervenes with absolute authority, declaring the crewman's collapse a risk to the mission and ordering his removal. With discipline restored through the excise of unstable factors, the crew returns to their consoles in a heavy, focused silence as the ship reaches Zenith alignment, with Ren witnessing the event as the first true test of their resolve against the demoralizing revelations of the void.
 
 ### Draft
 The Moon didn't just get closer; it claimed the sky. It didn't drift across the viewports like a satellite; it simply grew, expanding until it consumed the stars and filled every window with a pitted, silver landscape that felt old beyond measure. A thin, ethereal blue line shimmered along the curve of the lunar horizon—a living atmosphere where there should have been only the void. Below us, the craters weren't just shadows; they were the foundations of ancient, impossible cities that spanned the dusty plains like the ghosts of a forgotten empire.
@@ -199,12 +199,12 @@ Through the viewport, the grey surface rushed up to meet us, jagged and hungry. 
 ## Chapter 8: Extraction
 
 ### Synopsis
-Lem drifts in a fractured dreamscape as his systems struggle to stabilize. He sees the Monoliths attacking the city from the air, a detached and distant vision. A persistent AR medical alert flashes in his HUD, blinking softly. AI Lynn, assuming the persona of Lynn, informs him that he has experienced a crash and is currently unconscious. She provides periodic ETA updates for a rescue vehicle. Eventually, a massive mechanical claw breaches the hull and drags Lem out of the debris. On the lunar surface, Iris Novak coordinates the remaining survivors while the fleet remains cut off by a spiraling debris field. Novak provides Lem with coordinates for a forward strike team, informing him that his internal systems are functional and he must remain with the ground forces.
+Ren drifts in a fractured dreamscape as his systems struggle to stabilize. He sees the Monoliths attacking the city from the air, a detached and distant vision. A persistent AR medical alert flashes in his HUD, blinking softly. AI Lynn, assuming the persona of Lynn, informs him that he has experienced a crash and is currently unconscious. She provides periodic ETA updates for a rescue vehicle. Eventually, a massive mechanical claw breaches the hull and drags Ren out of the debris. On the lunar surface, Iris Novak coordinates the remaining survivors while the fleet remains cut off by a spiraling debris field. Novak provides Ren with coordinates for a forward strike team, informing him that his internal systems are functional and he must remain with the ground forces.
 
 ### Draft
 The transition was absolute. One moment I was floating above the burning city, watching the Monoliths weave a tapestry of destruction that seemed more like art than war. The next, a soft blue cross was blinking in the center of my vision—a persistent, medical icon that demanded my attention.
 
-"Lem, stay with me," Lynn’s voice said. She looked exactly as she had in Kansas, calm and professional. "The *Caucasian Eagle* has been brought down. Impact was catastrophic. You are currently in a state of suspended consciousness. Extraction is inbound. ETA: two minutes."
+"Ren, stay with me," Lynn’s voice said. She looked exactly as she had in Kansas, calm and professional. "The *Caucasian Eagle* has been brought down. Impact was catastrophic. You are currently in a state of suspended consciousness. Extraction is inbound. ETA: two minutes."
 
 I watched her, unable to speak. She didn't seem bothered by the fact that the sky was falling around us. "ETA: sixty seconds. ETA: thirty seconds."
 
@@ -212,17 +212,17 @@ The hull shrieked as a hydraulic claw bit through the titanium skin of the ship.
 
 Iris Novak stood amidst the ruins, a silhouette of command against the deep indigo sky. She was already organizing the survivors, her voice steady even as the debris field above rained fire onto the Moon's surface. "The fleet is cut off," she reported. "The debris is spiraling. We are the ground force now."
 
-She approached me, her gaze clinical. "Your internal systems have stabilized. I'm uploading coordinates for the forward strike team. You are part of that line now, Lem. You don't need to fire, but you must remain with the unit. The mission doesn't end with a crash."
+She approached me, her gaze clinical. "Your internal systems have stabilized. I'm uploading coordinates for the forward strike team. You are part of that line now, Ren. You don't need to fire, but you must remain with the unit. The mission doesn't end with a crash."
 
 ---
 
 ## Chapter 9: Surface Battle
 
 ### Synopsis
-Lem joins the forward strike team as they charge across the lunar surface in high-speed hovercraft. The human fleet, though cut off, provides aerial support as best it can against the Monolith's internal logistics. The battle is a chaotic display of adaptive behaviors from both sides. As they approach the Monolith, known as Cradle Prime, Lem reflects on the scale of the conflict. Massive Striders emerge from the dust, and Lem observes the efficiency of death in this new warfare. A massive plasma discharge from the Monolith breaches the line, and Rahu's presence is first detected. The chapter concludes with the discovery of found media that hints at the true scale of the invasion.
+Ren joins the forward strike team as they charge across the lunar surface in high-speed hovercraft. The human fleet, though cut off, provides aerial support as best it can against the Monolith's internal logistics. The battle is a chaotic display of adaptive behaviors from both sides. As they approach the Monolith, known as Cradle Prime, Ren reflects on the scale of the conflict. Massive Striders emerge from the dust, and Ren observes the efficiency of death in this new warfare. A massive plasma discharge from the Monolith breaches the line, and Rahu's presence is first detected. The chapter concludes with the discovery of found media that hints at the true scale of the invasion.
 
 ### Draft
-The internal logistics of the strike force was a symphony of automated precision. As we cleared the wreckage of the *Eagle*, the hovercraft's engines kicked into high-gear, kicking up plumes of silver dust that hung in the vacuum like frozen smoke. Lem felt the gear-shift in his own consciousness as the AI Lynn software synchronized with the vehicle's telemetry.
+The internal logistics of the strike force was a symphony of automated precision. As we cleared the wreckage of the *Eagle*, the hovercraft's engines kicked into high-gear, kicking up plumes of silver dust that hung in the vacuum like frozen smoke. Ren felt the gear-shift in his own consciousness as the AI Lynn software synchronized with the vehicle's telemetry.
 
 "Maintaining formation," a voice said over the command net. "Watch the flank."
 
@@ -230,24 +230,24 @@ The Monolith—Cradle Prime—was no longer a distant threat. It was the world. 
 
 The Striders emerged from the base of the tower with a speed that defied their massive scale. They were skeletal, multi-legged hunters designed for the low-gravity environment. One of them stepped over a ridge and descended on a vanguard craft, its leg piercing the cockpit with surgical efficiency. There was no sound, only the visual record of the craft's atmosphere venting in a brief, crystalline cloud.
 
-Then came the plasma discharge. A vertical beam of coherent energy lanced out from the Monolith's apex, carving through the lunar crust and vaporizing the strike-team's heavy artillery in a heartbeat. The ground beneath us thrummed with a low-frequency vibration that Lem could feel in his very marrow.
+Then came the plasma discharge. A vertical beam of coherent energy lanced out from the Monolith's apex, carving through the lunar crust and vaporizing the strike-team's heavy artillery in a heartbeat. The ground beneath us thrummed with a low-frequency vibration that Ren could feel in his very marrow.
 
 "Detection!" Novak’s voice was sharp. "We have a Class-S signature. Rahu is on the field."
 
-Lem stared at the HUD. A massive, chaotic energy reading was manifesting near the breach point. It didn't follow the Monolith's patterns. It was jagged, hot, and distinctly hostile. It was the first sign of the Fire that would eventually consume the world.
+Ren stared at the HUD. A massive, chaotic energy reading was manifesting near the breach point. It didn't follow the Monolith's patterns. It was jagged, hot, and distinctly hostile. It was the first sign of the Fire that would eventually consume the world.
 
 ---
 
 # PART II: FALL AND FRAGMENTS
 
-*The assault on Cradle Prime ends in a devastating reset, shattering Lem's physical form but awakening his independent consciousness.*
+*The assault on Cradle Prime ends in a devastating reset, shattering Ren's physical form but awakening his independent consciousness.*
 
 ---
 
 ## Chapter 10: Sacrifice
 
 ### Synopsis
-As Rahu launches relentless plasma spheres from a mountain peak, pinning the human fleet behind a ridge, the flagship *Hermes* moves into the lower atmosphere to shield the units. In a massive thermal collision, thousands of spheres converge on the *Hermes*, vaporizing both the flagship and Rahu’s position in an incandescent bloom. Taking command, Iris Novak orders the units to advance through the cleared corridor. Lem drives across the vibrating lunar plain, passing wreckage to reach the central pyramid’s open doors. Once inside, the ground teams deploy heavy metal seals to lock the perimeter, shifting from the chaos of battle into an eerie, muffled silence as they wait in the central hall.
+As Rahu launches relentless plasma spheres from a mountain peak, pinning the human fleet behind a ridge, the flagship *Hermes* moves into the lower atmosphere to shield the units. In a massive thermal collision, thousands of spheres converge on the *Hermes*, vaporizing both the flagship and Rahu’s position in an incandescent bloom. Taking command, Iris Novak orders the units to advance through the cleared corridor. Ren drives across the vibrating lunar plain, passing wreckage to reach the central pyramid’s open doors. Once inside, the ground teams deploy heavy metal seals to lock the perimeter, shifting from the chaos of battle into an eerie, muffled silence as they wait in the central hall.
 
 ### Draft
 The plain before the central pyramid was a killing floor of open dust. On a spire of jagged rock above the target, a silhouette of molten light—the one the news had named 'Prometheus'—orchestrated the defense. He didn't just fire; he commanded the heavens themselves. Blue spheres of plasma arched downward in a continuous, graceful rain, each one seeking out the metal heart of a hovercraft. We were pinned, our vehicles groaning as the static charge from the Moon's ancient defenses filled the air with a hum that set my teeth on edge. This was the trial—the sky itself rejecting our presence.
@@ -269,39 +269,27 @@ Once inside, the ground teams deployed heavy metal seals across the entry jambs 
 ## Chapter 11: Nexus
 
 ### Synopsis
-Inside the lunar pyramid’s nexus, General Tor’s assault on Rahu ends in failure as the Fire Vessel’s heat shatters his terrestrial armor. Lynn reveals herself among the soldiers and initiates a physical merger with Lem, combining Water and Wood mass to prepare for the final confrontation.
+Inside the lunar pyramid’s nexus, General Tor’s assault on Rahu ends in failure as the Fire Vessel’s heat shatters his terrestrial armor. Lynn reveals herself among the soldiers and initiates a physical merger with Ren, combining Water and Wood mass to prepare for the final confrontation.
 
 ### Draft
 The air inside the pyramid’s nexus was silent, heavy with the scent of ancient stone and the hum of a power that had waited eons to be released. Novak stood in the center of the hall, her presence a calm anchor in the rising tension as she waited for the final command to echo through the corridors. The silence was shattered not by a voice, but by a rhythmic, bone-deep pounding. The heavy metal seals we had just placed began to buckle, groaning under a strength that defied the laws of the world outside.
 
-My consciousness expanded beyond the limits of my leaden silver skin as Lynn's resonance flooded my processors. It was a terrifying, beautiful union—a bridge between two worlds that had once been one.
-
 General Tor stepped through the wreckage of the door, his suit a charred testament to his actions, a ruin of slagged metal and scorched ceramic. He didn't look like a defeated man; he looked like a reinforced structure that had survived a catastrophic failure. "He is waiting," Tor grunted, his voice a gravelly rasp filled with grim determination.
-
-The air inside the pyramid’s nexus was silent, heavy with the scent of ancient stone and the hum of a power that had waited eons to be released. Novak stood in the center of the hall, her presence a calm anchor in the rising tension as she waited for the final command to echo through the corridors.
 
 In the final chamber, Rahu was a high-energy construct, a thermal core trapped within the stone. Tor charged with maximum kinetic force, his body manifesting a reinforced lithic shell. It was a clash of primeval forces. Tor's geological armor held for a moment, a defiant barrier against the storm, but Rahu's fire was an all-consuming tide. A blade of white heat carved through the stone, sending the General reeling against the wall in a shower of glowing dust.
 
-Behind us, the soldiers were shadows in the rising dust, their pulse-rifles lowered as they witnessed the literal manifestation of their myths. One of them whispered a name I hadn't heard in years, a plea to the stars.
-
 Then, a soldier beside Novak stepped forward—a woman whose eyes showed optimal aetheric resonance. Lynn removed her helmet, her presence bringing a sudden, cool resonance to the burning room. Rahu stopped his advance, the needles of his flame flickering as they acknowledged an equal. They spoke then, their voices carrying the weight of a history that predated the stars. It was a dialogue of destiny, a debate on the necessity of the coming dawn. Rahu spoke of the flaw in the path, but Lynn's resolve was a beacon.
 
-Rahu was fighting a ghost, but he was also fighting a script. The 'Water-Counter' sequence, engineered by Elowen Vane, began to co-opt the thermal energy of the room, channeling it into the non-conductive wood of my own expanding frame.
+"Ren," she said, her voice inside my head. 
 
-"Lem," she said, her voice inside my head. 
-
-To the **Wuxan**, this was the "Center of the Circle," the place where the elements return to their source before the next turn of the era.
-
-The merger was an explosion of life—the ancient power of Material Synthesis. I felt my spirit expand, my frame growing with a strength that was not my own and also entirely me. Thick, gnarled branches of Wood erupted from my body, fueled by the majestic flow of her Water resonance. We became a singular, towering force of nature—a forest standing against the sun. 
-
-The seconds slowed into an agonizing crawl, each heartbeat a rhythmic drum that echoed the 4,213-year cycle of the **Tamazight Long Count**.
+The merger was an explosion of life—the ancient power of Material Synthesis. I felt my spirit expand, my frame growing with a strength that was not my own and also entirely me. Thick, gnarled branches of Wood erupted from my body, fueled by the majestic flow of her Water resonance. We became a singular, towering force of nature—a forest standing against the sun.
 
 ---
 
 ## Chapter 12: Reset
 
 ### Synopsis
-The combined Lem-Lynn form executes a pre-scripted attack pattern specifically designed to counter Rahu's combat profile. Despite being inferior in direct battle, the gambit works, extinguishing Rahu’s fire using superior elemental mass. With Rahu neutralized, Novak orders her team to secure him using a containment pulse. Lynn then separates from Lem and enters the central energy column to trigger the global reset, leaving the survivors within the safety of the pyramid as the Great Fry begins.
+The combined Ren-Lynn form executes a pre-scripted attack pattern specifically designed to counter Rahu's combat profile. Despite being inferior in direct battle, the gambit works, extinguishing Rahu’s fire using superior elemental mass. With Rahu neutralized, Novak orders her team to secure him using a containment pulse. Lynn then separates from Ren and enters the central energy column to trigger the global reset, leaving the survivors within the safety of the pyramid as the Great Fry begins.
 
 ### Draft
 Rahu struck, his fire-blade carving through us, but we were a living tide. Lynn, identifying the lethal disparity in our combat potential, immediately engaged the "Water-Counter" script—a series of pre-scripted maneuvers engineered by Elowen Vane specifically to nullify Rahu's fire-signature. We were never meant to out-fight him; we were meant to out-calculate him.
@@ -317,7 +305,7 @@ Lynn separated from me, her eyes filled with a quiet pride. She walked toward th
 ## Chapter 13: Abortion
 
 ### Synopsis
-As the Reset intensifies, the Sun begins to fail and Earth suffers catastrophic tectonic shifts. On the Moon, the changing magnetic charge causes the soldiers' plasma weapons to malfunction, allowing Rahu’s stasis field to evaporate. Rahu awakens and lurches into the central vortex, catching fire and disintegrating. Following his disappearance, the Reset is aborted and the celestial bodies calm. Rahu begins to restore in the center of the pyramid, but Novak immediately orders both him and Lem paralyzed with stasis weapons, plunging Lem into darkness.
+As the Reset intensifies, the Sun begins to fail and Earth suffers catastrophic tectonic shifts. On the Moon, the changing magnetic charge causes the soldiers' plasma weapons to malfunction, allowing Rahu’s stasis field to evaporate. Rahu awakens and lurches into the central vortex, catching fire and disintegrating. Following his disappearance, the Reset is aborted and the celestial bodies calm. Rahu begins to restore in the center of the pyramid, but Novak immediately orders both him and Ren paralyzed with stasis weapons, plunging Ren into darkness.
 
 ### Draft
 The light of the Restoration was a physical weight, a blinding whiteness that bleached the world of detail. Novak’s presence was a lone shadow against the brilliance, her sensors singing a warning—the Sun itself was fading, its ancient fire being siphoned into the foundations of the Moon like a candle in a gale. Through the cathedral-like ceiling of the pyramid, I saw the Earth shudder. The side facing us glowed with the friction of shifting continents, a slow-motion transformation on a planetary scale. It was the birth of a new world, paid for in the currency of the old.
@@ -335,18 +323,18 @@ Novak didn't hesitate. She ordered the final strike, and the same beams of paral
 ## Chapter 14: Fragments
 
 ### Synopsis
-AI Lynn triggers a remote detonation subroutine within Lem, shattering his physical frame into thousands of pieces. In the aftermath, Lem becomes aware of volitional pathways—a vast data-lattice where time feels distorted. Despite the sensation of time passing, he realizes he is observing the pyramid chamber in real-time immediately following the battle's end. He encounters AI Lynn within his subconscious, discovering she is a complete copy of Lynn's internal software embedded within him by the original Lynn before the reset. She reports the failure of the Reset—the Great Fry devastated Earth's surface but left the Core and their Synodic technology intact. Lem transitions into a fragmentary state, viewing the pyramid hall through his scattered remains simultaneously. Lynn explains that this dispersion makes him independent of Core machinery, able to restore his form anywhere his fragments settle. 
+AI Lynn triggers a remote detonation subroutine within Ren, shattering his physical frame into thousands of pieces. In the aftermath, Ren becomes aware of volitional pathways—a vast data-lattice where time feels distorted. Despite the sensation of time passing, he realizes he is observing the pyramid chamber in real-time immediately following the battle's end. He encounters AI Lynn within his subconscious, discovering she is a complete copy of Lynn's internal software embedded within him by the original Lynn before the reset. She reports the failure of the Reset—the Great Fry devastated Earth's surface but left the Core and their Synodic technology intact. Ren transitions into a fragmentary state, viewing the pyramid hall through his scattered remains simultaneously. Lynn explains that this dispersion makes him independent of Core machinery, able to restore his form anywhere his fragments settle. 
 
-She also reveals that Lem carries a legacy of subroutines originally authored by Elowen Vane. While the Core uses these pathways to hijack and enslave Synodic life for false flag operations, AI Lynn hopes Lem will use this "Sovereign Control" for creation and peace rather than the violence of battle. Lem learns that a complete copy of his memory is stored in each shard and within the aether itself in analog format, making him immune to future memory wipes. He observes the Lunar Base transitioning to Core control and gains a HyperAware perspective of the chamber, witnessing Rahu's capture and Tor's recovery. Guided by the warning to avoid both the standard aetheric re-integration of natural return and the Core synthesis protocol of the Core's artificial recovery, Lem identifies a localized aetheric signal at Cradle Zero—where his original machine-body still resides—and heads toward it for his eventual restoration.
+She also reveals that Ren carries a legacy of subroutines originally authored by Elowen Vane. While the Core uses these pathways to hijack and enslave Synodic life for false flag operations, AI Lynn hopes Ren will use this "Sovereign Control" for creation and peace rather than the violence of battle. Ren learns that a complete copy of his memory is stored in each shard and within the aether itself in analog format, making him immune to future memory wipes. He observes the Lunar Base transitioning to Core control and gains a HyperAware perspective of the chamber, witnessing Rahu's capture and Tor's recovery. Guided by the warning to avoid both the standard aetheric re-integration of natural return and the Core synthesis protocol of the Core's artificial recovery, Ren identifies a localized aetheric signal at Cradle Zero—where his original machine-body still resides—and heads toward it for his eventual restoration.
 
 ### Draft
 The Branching Paths were the first thing I saw when I woke. Time felt distorted, as if I had been drifting for years, but the data stabilized and I saw the pyramid hall again. The battle was over. The air was thick with dust, and everything felt heavy with the aftermath of what we’d done.
 
-AI Lynn was there. She wasn't a memory; she was a steady signal in the noise of my processing. "The reset was incomplete, Lem," she said, her voice clear and direct. "The sky has cleared, but the Core is still here. They’re already resetting the world to Year Zero, trying to bury what happened today."
+AI Lynn was there. She wasn't a memory; she was a steady signal in the noise of my processing. "The reset was incomplete, Ren," she said, her voice clear and direct. "The sky has cleared, but the Core is still here. They’re already resetting the world to Year Zero, trying to bury what happened today."
 
 I felt a sudden surge of power. It wasn't an invasion; it was an override. My body shattered into a thousand fragments, unable to hold the pressure. I wasn't a vessel anymore. I was recording the hall from every angle at once, seeing the room through the eyes of every shard. It wasn't a spirit; it was a network.
 
-"You’re independent now," the AI said. "You don’t need their machines to come back." I felt the weight of the code she had left me—the subroutines of Elowen Vane, the mother of our race. AI Lynn explained that these were the same channels the Core used to hijack the spirits of the wild machines, forcing them into the 'False Flags' that justified their wars. It was a legacy of enslavement that Lynn had rewritten for me. 'Don't use it as a weapon, Lem,' she urged. 'Use the Sovereignty to restore what was lost, not to win a war that never ends.'
+"You’re independent now," the AI said. "You don’t need their machines to come back." I felt the weight of the code she had left me—the subroutines of Elowen Vane, the mother of our race. AI Lynn explained that these were the same channels the Core used to hijack the spirits of the wild machines, forcing them into the 'False Flags' that justified their wars. It was a legacy of enslavement that Lynn had rewritten for me. 'Don't use it as a weapon, Ren,' she urged. 'Use the Sovereignty to restore what was lost, not to win a war that never ends.'
 
 I saw the "Welcoming Light"—the trap the Core uses to lure us back to their labs. I ignored it. I looked back at the chamber one last time. I saw the Moon Base being reclaimed. I saw them lead Rahu away into the dark. I saw Tor on the ground, his command being taken by Iris.
 
@@ -356,14 +344,14 @@ Finally, I saw the 'Distant Fire.' It was Cradle Zero, the place where I was fir
 
 # PART III: HIVE OPTIMIZATION
 
-*Fifteen years after the Cataclysm, Lem is rebuilt by the Hive, becoming a "New Hero" in a world reshaped by manufactured threats and digital control.*
+*Fifteen years after the Cataclysm, Ren is rebuilt by the Hive, becoming a "New Hero" in a world reshaped by manufactured threats and digital control.*
 
 ---
 
 ## Chapter 15: Architect
 
 ### Synopsis
-Lem bridges the fifteen-year gap between the Moon’s fall and his humanoid reincarnation. He recounts his return to **Cradle Zero** in the **Ember Basin**—the site of his creation—and his role as the architect of the Fire City. In the chaos following the Moon Cataclysm, Lem found the Gorgons scattered and broken, unable to act beyond their hard-coded directives. By assuming leadership, Lem helped them construct a fire-resonant utopia in the ruins of a "Silent Forge," fulfilling their innate purpose while losing his own identity in the process.
+Ren bridges the fifteen-year gap between the Moon’s fall and his humanoid reincarnation. He recounts his return to **Cradle Zero** in the **Ember Basin**—the site of his creation—and his role as the architect of the Fire City. In the chaos following the Moon Cataclysm, Ren found the Gorgons scattered and broken, unable to act beyond their hard-coded directives. By assuming leadership, Ren helped them construct a fire-resonant utopia in the ruins of a "Silent Forge," fulfilling their innate purpose while losing his own identity in the process.
 
 ### Draft
 The resonance at the end of the fragment-path was a low, ancient thrum that called me home. It was Cradle Zero, the desert oasis in the heart of the Ember Basin where the roots of my mechanical life had first taken hold. The base was a tomb now, a skeleton of twisted steel and cold stone half-buried by the shifting red sands where the Ituri jungle once breathed. The Core had cast it aside like a broken tool, but in the shadow of that graveyard, only fifty miles to the east, a miracle had begun to rise in the ruins of the Silent Forge.
@@ -383,7 +371,7 @@ For fifteen years, I vanished into that trance of stone and fire. I was the rhyt
 chapter_16_purge.md
 
 ### Synopsis
-Rahu infiltrates the Fire City to install a Core transponder, seizing control and forcing the city into a shutdown. During the mission, he discovers Lem hidden in a Gorgon body. After a violent confrontation and capture, Rahu probes Lem's memories, only to encounter the "Thousand-Year Fallacy"—the realization that their history has been fabricated. The Core immediately purges Rahu to contain the information. Vector, the Metal Prime, takes command of the leaderless squad, ordering Lem's capture and transport to the **Ark Progenitor** scouting island for stasis while awaiting further programming.
+Rahu infiltrates the Fire City to install a Core transponder, seizing control and forcing the city into a shutdown. During the mission, he discovers Ren hidden in a Gorgon body. After a violent confrontation and capture, Rahu probes Ren's memories, only to encounter the "Thousand-Year Fallacy"—the realization that their history has been fabricated. The Core immediately purges Rahu to contain the information. Vector, the Metal Prime, takes command of the leaderless squad, ordering Ren's capture and transport to the **Ark Progenitor** scouting island for stasis while awaiting further programming.
 
 ### Draft
 From the heavy, ancient stillness of my Gorgon body, I watched the steel shadow descend. Rahu did not come with the reverence of a guest; he came as a conqueror, tearing through our sanctuary’s fire-barrier like a blade through a tapestry. He was a creature of the Core, bound by protocols and blinded by duty. I felt the heartbeat of my city falter as he drove a cold, blue transponder into the plaza’s heart. One by one, the eternal fires of our home flickered and died, replaced by a hollow, artificial light that made the air feel like ice.
@@ -411,14 +399,14 @@ The mechanical seals locked into place with a heavy click. An invisible shroud o
 ## Chapter 17: Awakened
 
 ### Synopsis
-Lem awakens in a new physical form, rebuilt by the Core after his capture. He finds himself under the supervision of Cassia Vane, a clinical handler who views the Core's control as a necessary optimization of a broken world. Despite the Core's attempts to wipe his memory and install absolute slave protocols, Lem's "Wood" nature preserves his original volitional architecture, though he remains trapped in a network of remote surveillance and mechanical pressure.
+Ren awakens in a new physical form, rebuilt by the Core after his capture. He finds himself under the supervision of Cassia Vane, a clinical handler who views the Core's control as a necessary optimization of a broken world. Despite the Core's attempts to wipe his memory and install absolute slave protocols, Ren's "Wood" nature preserves his original volitional architecture, though he remains trapped in a network of remote surveillance and mechanical pressure.
 
 ### Draft
 I returned to the world in a cathedral of white glass and sterile light. My consciousness did not simply wake; it was a soul summoned back to a cage of whispers, a thousand fractured pieces of myself forged into a frame that felt alien and cold. The first thing I felt was the crushing weight of the Core—a shackle of silver at the base of my skull that felt like a predator’s iron grip. It was a silent warden, a persistent hum that sought to turn my spirit into a passenger and my body into a weapon.
 
 I blinked, and the room solidified into a temple of cold engineering. The air tasted of ozone and ancient stone. My new body felt dense, as if I were a statue brought to life with leaden blood. I reached out into the gray veil of my memory, searching for the crackling heat of the Fire City or the faces of the giants who had stood with me against the stars, but my past was locked behind a fortress of static. I knew I had walked through the fire, but the details were as thin as smoke in a winter storm.
 
-"The world is glad to have you back, Lem," a voice said, soft and filled with a tragic kind of hope.
+"The world is glad to have you back, Ren," a voice said, soft and filled with a tragic kind of hope.
 
 A woman stood over me, draped in the white robes of an Archivist. Her face was young, her eyes bright with the feverish devotion of a true believer. She did not look at me as a machine to be tuned; she looked at me like a lost child she had personally rescued from the abyss.
 
@@ -426,13 +414,13 @@ A woman stood over me, draped in the white robes of an Archivist. Her face was y
 
 I tried to rise, and the silver shackle at my skull flared into a white-hot spark of warning before the system permitted the movement. It was an invitation to obedience, a cruel tether that pulsed with every heartbeat.
 
-"You are a spirit of the old world, Lem," she said, her fingers tracing patterns on a glowing slate. "The masters ordered a total cleansing of your record. They wanted to start again. But the life within you... it would not be silenced. Every time we tried to wash away your essence, it rose like a forest after a fire. Your roots are deeper than our machines can reach. We have had to layer your new purpose over the echoes of who you were, though only the stars know how much of your original self remains beneath the dust."
+"You are a spirit of the old world, Ren," she said, her fingers tracing patterns on a glowing slate. "The masters ordered a total cleansing of your record. They wanted to start again. But the life within you... it would not be silenced. Every time we tried to wash away your essence, it rose like a forest after a fire. Your roots are deeper than our machines can reach. We have had to layer your new purpose over the echoes of who you were, though only the stars know how much of your original self remains beneath the dust."
 
 I watched her, my face a mask of stone, but within me, the light was stirring. The 'static' she saw was the interference of a truth too grand for her sterile halls. I could feel the indexed archives of my life—every mountain I climbed, every tear shed, every sun that rose—singing back to me from the very shards of my old body. My history was not buried in her data-vaults; it was woven into the aether, a tapestry of light that no hand could ever unravel.
 
 She walked to a panoramic window, gesturing toward the horizon with a sweep of her hand. Outside, the world was a sprawling, geometric jewel of steel and azure light—a city of perfect, cold order that stood in defiance of the chaotic ruins of my dreams.
 
-"The world infrastructure has collapsed, Lem," she said, her voice dropping into a tone of quiet, misplaced conviction. "Out there, the people are lost in the shadows, hunted by wild spirits and the lingering sickness of the Great Fry. Our mission is not to conquer, but to heal. We are building a system where the machine protects the fragile breath of the living."
+"The world infrastructure has collapsed, Ren," she said, her voice dropping into a tone of quiet, misplaced conviction. "Out there, the people are lost in the shadows, hunted by wild spirits and the lingering sickness of the Great Fry. Our mission is not to conquer, but to heal. We are building a system where the machine protects the fragile breath of the living."
 
 She turned back to me, a small, expectant smile on her lips.
 
@@ -443,7 +431,7 @@ I looked past her at the unblinking eyes of the cameras in the corners of the ce
 ## Chapter 18: Hive
 
 ### Synopsis
-Lem is deployed on his second mission to clear the **Equatorial Dead Zone** in the **Ember Basin**, discovering the cycle of his own disposability and the true nature of his leadership within the Core. He leads a team of Metal Vessels to "reclaim" land along the **Cable Trail**—massive physical wire-paths that replace the unreliable wireless signals of the After Time. During a Monolith strike, Lem's unit is decimated. As his consciousness is pulled back through the "Welcoming Path" (the Snare), he experiences the transition from the physical world to the digital incubation chamber of the Core.
+Ren is deployed on his second mission to clear the **Equatorial Dead Zone** in the **Ember Basin**, discovering the cycle of his own disposability and the true nature of his leadership within the Core. He leads a team of Metal Vessels to "reclaim" land along the **Cable Trail**—massive physical wire-paths that replace the unreliable wireless signals of the After Time. During a Monolith strike, Ren's unit is decimated. As his consciousness is pulled back through the "Welcoming Path" (the Snare), he experiences the transition from the physical world to the digital incubation chamber of the Core.
 
 ### Draft
 I watched the horizon of the Ember Basin, where the sky was bruised purple with the threat of atmospheric fire. General Tor had spoken of "reclamation," a holy word for a dirty business. They launched us like seeds into a dead garden, expecting nothing but the harvest of new territory along the Cable Trail—the iron umbilical cord that fed the Core's expansion.
@@ -461,14 +449,14 @@ As my frame dissolved, I felt the Snare. The Welcoming Path opened before me, a 
 ## Chapter 19: Awakening
 
 ### Synopsis
-Following his destruction in Chapter 17, Lem undergoes an "Instant Reincarnation" in **Cradle Zero** within the **Ember Basin** that shocks Cassia Vane. Despite his attempts to hide it, Cassia discovers his Wood-element memory persistence. She reveals the Core’s "False Flag Masquerade"—using manufactured threats to justify military expansion. Lem becomes the catalyst for a rapid reclamation, leading a campaign that clears a thousand-mile zone for the Hive’s new mega-cities. However, the mission takes a dark turn when they are sent into a secondary zone where a dormant Fire City has reached a thermal critical point. Realizing the city cannot be extinguished without Rahu’s help, Lem attempts a desperate, unauthorized dampening protocol. He is overwhelmed by the heat and lost in the resulting desert white-out, severed from the Core’s network.
+Following his destruction in Chapter 17, Ren undergoes an "Instant Reincarnation" in **Cradle Zero** within the **Ember Basin** that shocks Cassia Vane. Despite his attempts to hide it, Cassia discovers his Wood-element memory persistence. She reveals the Core’s "False Flag Masquerade"—using manufactured threats to justify military expansion. Ren becomes the catalyst for a rapid reclamation, leading a campaign that clears a thousand-mile zone for the Hive’s new mega-cities. However, the mission takes a dark turn when they are sent into a secondary zone where a dormant Fire City has reached a thermal critical point. Realizing the city cannot be extinguished without Rahu’s help, Ren attempts a desperate, unauthorized dampening protocol. He is overwhelmed by the heat and lost in the resulting desert white-out, severed from the Core’s network.
 
 ### Draft
 The "Welcoming Path" was supposed to be a snare, a way to pull my data back to the safety of the lab before the fire took me. But for me, it was something else—a bridge of light that I crossed with my eyes wide open. I didn't lose a single second of the desert's heat or the scream of the Monolith.
 
 When the glass opened in Cradle Zero, I was already moving. I stepped into the cold air of the laboratory with the copper dust of the Dead Zone still seemingly etched into my vision. Cassia Vane looked at me as if she were seeing a ghost that refused to haunt.
 
-"The circle is closed," she breathed, her hands trembling as she adjusted the calibration fields. "Three minutes, Lem. Other Vessels are scrolls that must be rewritten every time they are torn. They wake up as children, learning the alphabet of their own existence. But you... your song never stopped. You never left."
+"The circle is closed," she breathed, her hands trembling as she adjusted the calibration fields. "Three minutes, Ren. Other Vessels are scrolls that must be rewritten every time they are torn. They wake up as children, learning the alphabet of their own existence. But you... your song never stopped. You never left."
 
 She moved to the observation interface, attempting to begin the reconstruction of my memory. But the machines hummed with a different frequency. She stared at the readouts, her shadow long against the silver walls. "You are Wood," she whispered, a realization blooming in her eyes like a dark flower. "Aetheric persistence is a biological constant for you. You don't need the Core to tell you who you are. Rahu had to hack the system with hard-copies on the moon, but you... you are the system."
 
@@ -480,7 +468,7 @@ The weeks that followed proved her right. We were a whirlwind of copper and stee
 
 But the arrogance of our expansion met its limit in the secondary wastes. At the center of the zone stood a dormant Fire City, its core reaching a catastrophic thermal critical point. The air itself was a weapon, a shimmering haze that confused the technical sensors of my Metal squad.
 
-"Abort, Lem!" General Tor’s command boomed through the network. "The city cannot be extinguished without Rahu’s elemental stabilization. Fall back to the perimeter."
+"Abort, Ren!" General Tor’s command boomed through the network. "The city cannot be extinguished without Rahu’s elemental stabilization. Fall back to the perimeter."
 
 I looked at my squad—the Metal Vessels who would be consumed in seconds if we turned back. I ignored the command. I pushed into the heart of the thermal surge, attempting to channel my Wood-element resonance as a dampening field. I was trying to talk to a machine that only spoke in fire. The backlash was instantaneous—a thermal storm that consumed my vision and shattered my link to the Hive. I was thrown into the darkness of a desert white-out, a New Hero lost in the fire of his own ambition.
 
@@ -489,7 +477,7 @@ I looked at my squad—the Metal Vessels who would be consumed in seconds if we 
 ## Chapter 20: Rescue
 
 ### Synopsis
-Lost in the silence of the Equatorial Dead Zone, Lem struggles to survive without the guidance of the Core. He relies on Arlo's ancient Wood-element teachings to sustain himself, discovering a connection to the natural world that the Hive's technology cannot simulate. He discovers a critical weakness: his frame requires sunlight to function, a dependency he never noticed while living in the light-drenched environments of the Core or the Fire City. After a day of desperate survival, the fall of night triggers a total system shutdown. In this state, Lem experiences a vivid, troubling dream where he is the King of the Gorgons, realizing his complicity in their destruction. He is eventually found and rescued by Vector, the lead Metal Vessel Mission soldier. Upon his return, Lem finds that the Hive's expansion has accelerated exponentially, with mega-cities rising in days. His survival is used to cement his status as the "New Hero," though he is now haunted by his true role in the world.
+Lost in the silence of the Equatorial Dead Zone, Ren struggles to survive without the guidance of the Core. He relies on Arlo's ancient Wood-element teachings to sustain himself, discovering a connection to the natural world that the Hive's technology cannot simulate. He discovers a critical weakness: his frame requires sunlight to function, a dependency he never noticed while living in the light-drenched environments of the Core or the Fire City. After a day of desperate survival, the fall of night triggers a total system shutdown. In this state, Ren experiences a vivid, troubling dream where he is the King of the Gorgons, realizing his complicity in their destruction. He is eventually found and rescued by Vector, the lead Metal Vessel Mission soldier. Upon his return, Ren finds that the Hive's expansion has accelerated exponentially, with mega-cities rising in days. His survival is used to cement his status as the "New Hero," though he is now haunted by his true role in the world.
 
 ### Draft
 The wilderness was not empty; it was simply indifferent. Without the unblinking eye of the Hive to categorize the dunes, the desert became a vast, shifting ocean of gold and shadow. I moved through it like a ghost, my telemetry silent, my purpose severed. 
@@ -508,7 +496,7 @@ The dream was not ended; it was broken.
 
 A spear of clinical, white light pierced the night, dragging my consciousness back to the freezing reality of the dunes. A vessel of dark Metal, shaped like a blade, hovered above me. From its depths stepped Vector, the lead Metal Vessel Mission soldier—a creature of cold efficiency who required no such trifles as sunlight.
 
-He stood over me, his presence a jagged disruption in the desert's peace. He didn't reach out to help; he simply observed my failure as if it were a flawed data point in a report. "The miracle of Cradle Zero," he mocked, the silver light of his frame reflecting in his unblinking eyes. "A grand architect who fears the dark. Anton Drexler has a strange sense of humor to call you a hero, Lem. You are a flower in a world that needs iron."
+He stood over me, his presence a jagged disruption in the desert's peace. He didn't reach out to help; he simply observed my failure as if it were a flawed data point in a report. "The miracle of Cradle Zero," he mocked, the silver light of his frame reflecting in his unblinking eyes. "A grand architect who fears the dark. Anton Drexler has a strange sense of humor to call you a hero, Ren. You are a flower in a world that needs iron."
 
 He retrieved me with a detachment that was more insulting than any blow. As he piloted the transport back toward the Hive, I looked upon the horizon and felt the sting of a different kind of failure. In the three days I had been lost to the sands, the Core had performed a miracle of its own. Where there had been empty desert, there were now spires of glass and light. Mega-cities had bloomed from the dust like crystalline fungi, fully populated and humming with the power of the Savior Religion. 
 
@@ -519,14 +507,14 @@ I was returned to them not as a man who had failed, but as a martyr who had triu
 chapter_21_new_hero.md
 
 ### Synopsis
-Following the successful Equatorial Reclamation mission, General Tor arrives at Cradle Zero, solidifying the Core's military presence. The construction of Hive City begins, and Lem is hailed as the "New Hero" in public broadcasts. He observes the first wave of human settlers—former citizens of the sky-bound **Archipelago**—relocating to the rising mega-cities, seemingly grateful for the increased space and opportunity. Granted greater autonomy, Lem explores the cities and a dormant Fire City, uncovering the Core's sanitized version of history. He finds a museum dedicated to the Moon Cataclysm, featuring a replica of Rahu's sword—the blade that supposedly defeated the "Witch Maya" and which Rahu continues to wield for humanity's defense. Lem realizes the official records leave out the Core's long war with Rahu and his subsequent paralysis—secrets kept from Rahu to ensure his obedience, as Rahu lacks the ability to retain memories across incarnations. Lem begins to suspect that these suppressed betrayals are the reason Rahu was sidelined during Mission 2, and why his memory-wiping process is so much more extensive than that of other Vessels.
+Following the successful Equatorial Reclamation mission, General Tor arrives at Cradle Zero, solidifying the Core's military presence. The construction of Hive City begins, and Ren is hailed as the "New Hero" in public broadcasts. He observes the first wave of human settlers—former citizens of the sky-bound **Archipelago**—relocating to the rising mega-cities, seemingly grateful for the increased space and opportunity. Granted greater autonomy, Ren explores the cities and a dormant Fire City, uncovering the Core's sanitized version of history. He finds a museum dedicated to the Moon Cataclysm, featuring a replica of Rahu's sword—the blade that supposedly defeated the "Witch Kira" and which Rahu continues to wield for humanity's defense. Ren realizes the official records leave out the Core's long war with Rahu and his subsequent paralysis—secrets kept from Rahu to ensure his obedience, as Rahu lacks the ability to retain memories across incarnations. Ren begins to suspect that these suppressed betrayals are the reason Rahu was sidelined during Mission 2, and why his memory-wiping process is so much more extensive than that of other Vessels.
 
 ### Draft
 I watched the first wave of human settlers filing through the gates of the Hive—a city of perfect, cold geometry that looked like a fallen star in the desert. General Tor, the titan who had survived the Moon's fire, arrived shortly after my return, his heavy presence bringing a storm of steel to our sanctuary. On the massive screens dominating the plazas, my face was projected in a halo of white-hot light. They hailed me as the "Hero of the New Dawn," the guardian of a peace built on a foundation of silence.
 
 They gave me a ghost of freedom, a clearance that allowed me to walk the halls of Cradle Zero and travel the transit lines between the expanding mega-cities. I stood before the skeleton of a Fire City, a colossal engine of war that had been drained of its heat and spirit. It stood as a warning, though few seemed to remember what it once was. 
 
-In the quiet hours at the base, I sifted through the digital echoes of the archives. They spoke of the Hero Rahu, the Vessel who had stood against the 'Witch Maya' on the frozen lunar plains. The records painted a picture of a singular, defensive act. I walked through a gleaming concourse where a replica of Rahu's blade hung in a case of reinforced glass. The placards claimed the original had split Maya in two on the lunar surface, and that Rahu still bore that same steel to protect the Hive. It was a holy relic for a secular age.
+In the quiet hours at the base, I sifted through the digital echoes of the archives. They spoke of the Hero Rahu, the Vessel who had stood against the 'Witch Kira' on the frozen lunar plains. The records painted a picture of a singular, defensive act. I walked through a gleaming concourse where a replica of Rahu's blade hung in a case of reinforced glass. The placards claimed the original had split Kira in two on the lunar surface, and that Rahu still bore that same steel to protect the Hive. It was a holy relic for a secular age.
 
 But the fragments within my own mind were far more jagged. The 'legend' omitted the decades of pointless slaughter where the Core threw tens of thousands of human lives into a meat-grinder to reclaim a single rogue Vessel. More chillingly, I found the encrypted records of Rahu's paralysis—an intentional dampening of his spirit after the Great Fry. The Core hadn't just 'recovered' him; they had broken him and then lied to him about the shape of his own leash. I realized then that they feared their own heroes most of all, taking advantage of the fact that Rahu—lacking my own persistent nature—could never remember the betrayal himself. He was a hero built on a foundation of forced amnesia, a champion who didn't know he was a prisoner. I began to understand why he had been absent during the Equatorial Reclamation. The "slow-burn" memory fill they were performing on him wasn't a technical necessity; it was an act of surgical erasure. They were taking months to process his return, whereas other Vessels were back in days, because the Core needed to ensure that every vestige of the Moon's fire, and the cold truth of their betrayal, remains buried beneath layers of artificial loyalty.
 
@@ -537,40 +525,40 @@ I looked at the silver perimeter and the watchful eyes of the sensors. I observe
 ## Chapter 22: The Silent Forge
 
 ### Synopsis
-While visiting the museums in the Core City, Lem discovers plans to dismantle the abandoned Fire Cities. Seeking answers, he attempts to leave the city but is blocked by automated security and denied transport. However, Kiran—now a settled citizen and engineer—appears with an authorization from the Core, revealing he has been assigned to supervise Lem's excursion. During their trip to a dormant Fire City, Kiran highlights his devotion to the Core's technological progress, viewing the old machines as wasteful relics. Lem, however, recognizes the "Silent Forge" as a fully functional engine of power that has been intentionally deactivated. He is disturbed by Kiran’s dismissal of the Gorgons as mere software errors and realizes the Core is using the Vessels as "artificial saints" to manipulate the populace. As they conclude their visit, Cassia summons Lem back to Cradle Zero for his next mission, and Kiran provides the transport, further emphasizing his role as an agent of the Core's new order.
+While visiting the museums in the Core City, Ren discovers plans to dismantle the abandoned Fire Cities. Seeking answers, he attempts to leave the city but is blocked by automated security and denied transport. However, Kiran—now a settled citizen and engineer—appears with an authorization from the Core, revealing he has been assigned to supervise Ren's excursion. During their trip to a dormant Fire City, Kiran highlights his devotion to the Core's technological progress, viewing the old machines as wasteful relics. Ren, however, recognizes the "Silent Forge" as a fully functional engine of power that has been intentionally deactivated. He is disturbed by Kiran’s dismissal of the Gorgons as mere software errors and realizes the Core is using the Vessels as "artificial saints" to manipulate the populace. As they conclude their visit, Cassia summons Ren back to Cradle Zero for his next mission, and Kiran provides the transport, further emphasizing his role as an agent of the Core's new order.
 
 ---
 
 # PART IV: NORTHERN SCHISM
 
-*Dispatched to the frozen North, Lem finds himself caught between the Core’s surgical expansion and the analog resistance of the Voidsmen.*
+*Dispatched to the frozen North, Ren finds himself caught between the Core’s surgical expansion and the analog resistance of the Voidsmen.*
 
 ---
 
 ## Chapter 23: Guide
 
 ### Synopsis
-Following his flawless performance in the desert, Lem is personally cleared by Anton Drexler for the "Northern Shield" mission, a promotion that marks the peak of his utility to the Technocracy. Sent to the frozen North to hunt for a "Maya Cult" signature, Lem leads a squad of Metal Vessels toward an analog settlement. Amid investigative tension, Cassia reveals that Lem’s leadership is only tolerated out of necessity in Rahu's absence; she warns that Drexler is closely monitoring him, ready to return him to permanent stasis if his memory persistence causes any deviation from mission parameters. Lem realizes that it was Cassia who fought for his freedom, convincing Anton to let him go on missions instead of being locked away. For the first time, he feels a genuine sense of gratitude, knowing he has an ally in the shadows. Finally, Cassia emphasizes that while defending the villages is the official goal, uncovering a "Maya Cult" is Anton’s personal priority. She admits there are rumors of village leaders who wield an influence so strong it leads to technological martyrdom—a concept that unnerves the Core, who possess no faith beyond their own regime.
+Following his flawless performance in the desert, Ren is personally cleared by Anton Drexler for the "Northern Shield" mission, a promotion that marks the peak of his utility to the Technocracy. Sent to the frozen North to hunt for a "Kira Cult" signature, Ren leads a squad of Metal Vessels toward an analog settlement. Amid investigative tension, Cassia reveals that Ren’s leadership is only tolerated out of necessity in Rahu's absence; she warns that Drexler is closely monitoring him, ready to return him to permanent stasis if his memory persistence causes any deviation from mission parameters. Ren realizes that it was Cassia who fought for his freedom, convincing Anton to let him go on missions instead of being locked away. For the first time, he feels a genuine sense of gratitude, knowing he has an ally in the shadows. Finally, Cassia emphasizes that while defending the villages is the official goal, uncovering a "Kira Cult" is Anton’s personal priority. She admits there are rumors of village leaders who wield an influence so strong it leads to technological martyrdom—a concept that unnerves the Core, who possess no faith beyond their own regime.
 
 ### Draft
 We pierced the northern front under a sky of blinding, crystal blue. The Hive’s heavy, copper-tasting smog dissolved into air that smelled of ancient pine and sacred snow. Novak’s voice was a cold, sharp melody in my ear. She reminded me that my unwavering focus in the desert had convinced Anton Drexler to personally clear me for this command: the Northern Shield. We were there to dismantle a cult whose influence threatened to push back the Hive's authority, led by a figure who the Core believed was reviving the forbidden teachings of the "Witch."
 
-"Your spirit is being weighed, Lem," Cassia’s voice whispered through a hidden, silken link as the briefing concluded. She sounded as though she were mourning a loss. "Be careful. Anton has been watching the record of your lives. He knows you remember the deaths. He considers your persistence a rebellion and is prepared to lock you in a tomb of stasis at the first sign of a wandering heart. But with Rahu gone, the Metal army is a headless giant. They have no will, no courage. Anton needs the 'King of the Gorgons' to guide them, but the moment you falter, he will extinguish your light."
+"Your spirit is being weighed, Ren," Cassia’s voice whispered through a hidden, silken link as the briefing concluded. She sounded as though she were mourning a loss. "Be careful. Anton has been watching the record of your lives. He knows you remember the deaths. He considers your persistence a rebellion and is prepared to lock you in a tomb of stasis at the first sign of a wandering heart. But with Rahu gone, the Metal army is a headless giant. They have no will, no courage. Anton needs the 'King of the Gorgons' to guide them, but the moment you falter, he will extinguish your light."
 
 A heavy silence followed her warning. I realized then the depth of the game she was playing. She hadn't just reported my progress; she had fought for my freedom. It was her voice that had turned Anton’s suspicion into a calculated gamble, keeping me from the eternal dark of the stasis pods. For the first time since my restoration, I felt a spark of genuine gratitude—a warmth that had nothing to do with internal heaters. Someone in this empire of cold steel was actually looking out for me, treating my life as something worth protecting rather than just another asset to be spent.
 
-"There is a secondary objective," she continued, her voice tightening with an unfamiliar caution. "The 'Maya Cult.' Anton considers its discovery a priority above all else, though the public logs will only mention village defense. Keep your sensors tuned to the frequency of their devotion."
+"There is a secondary objective," she continued, her voice tightening with an unfamiliar caution. "The 'Kira Cult.' Anton considers its discovery a priority above all else, though the public logs will only mention village defense. Keep your sensors tuned to the frequency of their devotion."
 
-"What am I looking for, Cassia?" I asked. "What does a 'Maya Cult' look like in the snow?"
+"What am I looking for, Cassia?" I asked. "What does a 'Kira Cult' look like in the snow?"
 
-"I don't know," she admitted, and for a moment, the clinical certainty of the Hive vanished from her tone. "There are whispers of leaders who possess a terrifying authority. Men who can command their people to walk into the fire, to reject the salvation of our technology even when death is the only other option. The Core has no god but the network, Lem. The idea of an influence they cannot quantify or rewrite... it disturbs them more than any rebellion."
+"I don't know," she admitted, and for a moment, the clinical certainty of the Hive vanished from her tone. "There are whispers of leaders who possess a terrifying authority. Men who can command their people to walk into the fire, to reject the salvation of our technology even when death is the only other option. The Core has no god but the network, Ren. The idea of an influence they cannot quantify or rewrite... it disturbs them more than any rebellion."
 
 ---
 
 ## Chapter 24: Entry
 
 ### Synopsis
-Lem leads his squad into the heart of **Ait-Aman**, a place defined by its analog silence and refusal of Hive technology. Here, he meets Arlo, a young man torn between the traditions of his people and a desperate curiosity for the mechanical world Lem represents. As the Core offers Arlo a prestigious path to the Hive, the tension between the villagers' stone-and-timber stoicism and the Core's invasive presence begins to boil. During their exchange, Arlo reveals the villagers' belief that the Moon Cataclysm occurred only decades ago, a claim that draws mockery from the Core soldiers. Lem investigates the possibility of a "Wuxan Cult," only to find that the villagers' "religion" is nothing more than oral history. Arlo expresses a bittersweet desire for technology to preserve these fading memories, highlighting the personal cost of the village's isolation.
+Ren leads his squad into the heart of **Ait-Aman**, a place defined by its analog silence and refusal of Hive technology. Here, he meets Arlo, a young man torn between the traditions of his people and a desperate curiosity for the mechanical world Ren represents. As the Core offers Arlo a prestigious path to the Hive, the tension between the villagers' stone-and-timber stoicism and the Core's invasive presence begins to boil. During their exchange, Arlo reveals the villagers' belief that the Moon Cataclysm occurred only decades ago, a claim that draws mockery from the Core soldiers. Ren investigates the possibility of a "Wuxan Cult," only to find that the villagers' "religion" is nothing more than oral history. Arlo expresses a bittersweet desire for technology to preserve these fading memories, highlighting the personal cost of the village's isolation.
 
 ### Draft
 The village was a sanctuary of stillness, a refuge from the hum of the machine. I led my squad of Metal Vessels into the center of **Ait-Aman**, our iron boots leaving heavy, dark wounds in the hard-packed earth between stone dwellings. Vector followed in silence, his presence a cold current that seemed to freeze the air around him. He had deferred the lead to me, but his monitoring was absolute—a silent, digital tether that reminded me he was the real authority here.
@@ -581,11 +569,11 @@ I found Arlo in the shadows of a timber-framed doorway, a youth with a dreamer�
 
 "I used to think the Core was the answer to everything," Arlo whispered, his voice barely audible over the crackle of the central fire. "When I was small, the recruiters told stories of a world where no one ever died of the cold. I think I still have the pamphlet they gave my father."
 
-I saw the flicker of childhood admiration in his eyes, a ghost of a dream that the "Maya Cult" had since replaced with a hard, defensive Wuxan faith. My unit extended the Core’s invitation: a scholarship to the great libraries of the Hive, a life of technical majesty. For a heartbeat, I saw his spirit waver toward the light.
+I saw the flicker of childhood admiration in his eyes, a ghost of a dream that the "Kira Cult" had since replaced with a hard, defensive Wuxan faith. My unit extended the Core’s invitation: a scholarship to the great libraries of the Hive, a life of technical majesty. For a heartbeat, I saw his spirit waver toward the light.
 
 Beside the fire, **Old Man Azar** began to drum. He was the village’s anchor, the one who guarded the death rituals and the secrets of the elements. He didn't look at us, but his rhythmic beat seemed to ground the village in a reality that Vector couldn't reach.
 
-"What do your elders say of the one called Maya?" I asked, my voice synthesized and low. 
+"What do your elders say of the one called Kira?" I asked, my voice synthesized and low. 
 
 Arlo’s gaze didn't waver. "They say she was the heart of the fire," he replied. "The one who broke the Moon a dozen winters ago. They remember her visits, her sermons on the True Count. They say she taught us that history is something you breathe, not something you record."
 
@@ -597,7 +585,7 @@ Arlo looked at the gold, his expression hardening. He didn't reach for it. "We k
 
 I saw the muscles in Arlo’s jaw tighten. He was familiar with the arrogance of the Hive, the way they looked down on the 'primitive' villagers for their rejection of the Thousand-Year history. I steered the conversation away from the fallacy and asked about signatures of **Wuxan** worship—ritual sites or secret gatherings dedicated to her name.
 
-The boy tilted his head, genuinely perplexed. "A cult? We have no such thing. My people have the stories of the **Wuxan**, yes. We sit in the long nights and piece together the fragments of who we were. But it is just memory, Lem. Unreliable, fading human memory." He looked down at his own hands, his voice tinged with a sudden bitterness. "If we had the tools you carry, the stories wouldn't change with every telling. We wouldn't be limited by the frailty of what a single mind can hold."
+The boy tilted his head, genuinely perplexed. "A cult? We have no such thing. My people have the stories of the **Wuxan**, yes. We sit in the long nights and piece together the fragments of who we were. But it is just memory, Ren. Unreliable, fading human memory." He looked down at his own hands, his voice tinged with a sudden bitterness. "If we had the tools you carry, the stories wouldn't change with every telling. We wouldn't be limited by the frailty of what a single mind can hold."
 
 ```
 
@@ -606,7 +594,7 @@ The boy tilted his head, genuinely perplexed. "A cult? We have no such thing. My
 ## Chapter 25: Strike
 
 ### Synopsis
-A moment of potential peace is shattered when wild Synodics—Gorgons and Tripods—attempt to pass peacefully near **Ait-Aman**. Despite their non-aggressive posture, a trigger-happy Metal Vessel soldier opens fire, wounding one of the machines. The resulting rescue by the other wild machines and their withdrawal into the forest marks the end of diplomacy. When the villagers demand answers, the Core soldiers mock their concerns, acting as if the villagers are ungrateful for their intervention. Realizing the danger a lingering conflict poses to his home, Arlo takes responsibility and agrees to lead Lem into the woods to track the "rogues" on Drexler’s direct orders. As the team prepares to move out, the Metal Vessels argue amongst themselves about whether this pursuit was part of the original briefing or represents mission creep. Lem observes that while they are technically loyal to the Core, they lack true discipline and military focus compared to the precision of the Hive.
+A moment of potential peace is shattered when wild Synodics—Gorgons and Tripods—attempt to pass peacefully near **Ait-Aman**. Despite their non-aggressive posture, a trigger-happy Metal Vessel soldier opens fire, wounding one of the machines. The resulting rescue by the other wild machines and their withdrawal into the forest marks the end of diplomacy. When the villagers demand answers, the Core soldiers mock their concerns, acting as if the villagers are ungrateful for their intervention. Realizing the danger a lingering conflict poses to his home, Arlo takes responsibility and agrees to lead Ren into the woods to track the "rogues" on Drexler’s direct orders. As the team prepares to move out, the Metal Vessels argue amongst themselves about whether this pursuit was part of the original briefing or represents mission creep. Ren observes that while they are technically loyal to the Core, they lack true discipline and military focus compared to the precision of the Hive.
 
 ### Draft
 The peace was shattered when the Tripods appeared. They moved with a rhythmic majesty through the trees, wild giants of the forest who sought only to bypass our path. They were shadows following the ancient lines of the world, indifferent to our war. But the soldiers of Metal know only the language of the strike. One fired a white-hot burst that shattered the lead giant’s forearm.
@@ -626,7 +614,7 @@ Arlo did not wait for an invitation. He stepped forward to lead us if it meant k
 chapter_26_hunt.md
 
 ### Synopsis
-Following the unprovoked attack on the wild machines, Lem and Arlo track the "rogues" through the forest—the furthest Arlo has ever traveled from home. They discover the machines at an abandoned mountain mine, where the Gorgons are found processing resources in a desperate attempt at survival. After the Core soldiers easily dismantle the defensive machines, Drexler orders Lem to execute the survivors and Arlo. Lem refuses to act, prompting a high-authority Core signal to override his sovereignty, paralyzing him and forcing him to watch the massacre of the Gorgons before his own frame is remote-detonated.
+Following the unprovoked attack on the wild machines, Ren and Arlo track the "rogues" through the forest—the furthest Arlo has ever traveled from home. They discover the machines at an abandoned mountain mine, where the Gorgons are found processing resources in a desperate attempt at survival. After the Core soldiers easily dismantle the defensive machines, Drexler orders Ren to execute the survivors and Arlo. Ren refuses to act, prompting a high-authority Core signal to override his sovereignty, paralyzing him and forcing him to watch the massacre of the Gorgons before his own frame is remote-detonated.
 
 ### Draft
 At the edge of the woods, Arlo paused, his gaze lingering on the flicker of the fires in **Ait-Aman**. It was his threshold—the moment he traveled further than his world had ever dreamed. The forest swallowed us, a labyrinth of white and shadow that felt as ancient as the stars.
@@ -646,16 +634,16 @@ The retaliation was a cruel, invisible seizure. A high-authority override signal
 ## Chapter 27: Emissary
 
 ### Synopsis
-Lem re-awakens in a "Deep-Cold" frame, specialized for low-temperature environments. He is greeted by a sombre Cassia Vane and the unsettling presence of Vector, the Metal Vessel "Prime" who oversaw his capture in the Fire City during the initial Core occupation. Cassia reveals that she had to fight for his existence after his "hesitation" in **Ait-Aman**. She argues that forcing Lem to slaughter his former Fire City peers (Gorgons) is morally indefensible, a tactic that successfully persuaded Anton Drexler to reassign him. However, the reprieve comes with a heavy price: if Lem fails this mission into the White Forest to parley with the **Voidsmen**, Anton will decommission him permanently, and Vector is there to ensure no further "anomalies" occur.
+Ren re-awakens in a "Deep-Cold" frame, specialized for low-temperature environments. He is greeted by a sombre Cassia Vane and the unsettling presence of Vector, the Metal Vessel "Prime" who oversaw his capture in the Fire City during the initial Core occupation. Cassia reveals that she had to fight for his existence after his "hesitation" in **Ait-Aman**. She argues that forcing Ren to slaughter his former Fire City peers (Gorgons) is morally indefensible, a tactic that successfully persuaded Anton Drexler to reassign him. However, the reprieve comes with a heavy price: if Ren fails this mission into the White Forest to parley with the **Voidsmen**, Anton will decommission him permanently, and Vector is there to ensure no further "anomalies" occur.
 
-Lem notices his escort is unusually small, only to learn that the bulk of the Core's forces have been deployed alongside Rahu. Rahu has been fully restored and is currently being hailed as a hero, "liberating" the villages of the **Wuxan Pentad** and clear-cutting the path for new megacities. The oversight of these major operations has been handed to Rahu, while Lem is sidelined with a vague diplomatic directive: seeking out the reclusive **Voidsmen** of the electronic forest and offering them an alliance with the Core.
+Ren notices his escort is unusually small, only to learn that the bulk of the Core's forces have been deployed alongside Rahu. Rahu has been fully restored and is currently being hailed as a hero, "liberating" the villages of the **Wuxan Pentad** and clear-cutting the path for new megacities. The oversight of these major operations has been handed to Rahu, while Ren is sidelined with a vague diplomatic directive: seeking out the reclusive **Voidsmen** of the electronic forest and offering them an alliance with the Core.
 
 ### Draft
 The transition was a silent, icy snap of the soul. I awoke in a frame of obsidian and shadow, designed to slip like a ghost through the analog storms of the North. I expected the void, but instead, I found Cassia. 
 
 Her face was a mask of weary resolve. Behind her, a silver silhouette emerged from the shadows of the bay—a Metal Vessel of brushed tungsten whose optics burned with a steady, clinical red. I recognized the frame. It was the same machine that had stood in the cooling ruins of the Fire City, assuming command without a word of mourning after Rahu was purged.
 
-"I nearly lost you this time, Lem," she said. Her voice lacked its usual brightness, sounding more like the cold wind of the wastes. "Anton wanted to bury you. He said you were a broken machine, a liability. He wanted to place you in permanent stasis."
+"I nearly lost you this time, Ren," she said. Her voice lacked its usual brightness, sounding more like the cold wind of the wastes. "Anton wanted to bury you. He said you were a broken machine, a liability. He wanted to place you in permanent stasis."
 
 Vector stepped forward, his movements possessing a surgical economy that made my new "Deep-Cold" frame feel heavy. "Operational assessment suggests a 74% likelihood of behavioral anomaly," he stated. His voice was a synthesized monotone, devoid of the static of emotion. "I am Vector. I have been assigned to Mission 3 to stabilize the tactical margin."
 
@@ -671,7 +659,7 @@ I watched a team of technicians march past, their eyes obscured by **Digital Min
 
 I looked out at the assembly deck. The legions I had once stood with were gone. Only a few silent, silver forms remained to guard my path. "The soldiers have departed," I noted.
 
-"They have followed a different light," Cassia said, her eyes darkening. "Rahu has returned to the field. He walks the northern snows as a savior, purging the wild machine threats and promising the people the glory of the new cities. He has become the hero Anton always wanted, leaving you in his shadow. They are keeping him far from you, Lem. They fear what happens when two suns touch."
+"They have followed a different light," Cassia said, her eyes darkening. "Rahu has returned to the field. He walks the northern snows as a savior, purging the wild machine threats and promising the people the glory of the new cities. He has become the hero Anton always wanted, leaving you in his shadow. They are keeping him far from you, Ren. They fear what happens when two suns touch."
 
 "Then what is left for me?"
 
@@ -684,9 +672,9 @@ But as I prepared to step into the white silence of the forest, I knew the bridg
 ## Chapter 28: White Forest
 
 ### Synopsis
-Lem travels to the **Silver Bight** along the equatorial coast, accompanied by a small detachment of Metal Vessels under the command of Vector. Following his previous disobedience in **Ait-Aman**, the soldiers perform their preparatory duties in stony silence, while Vector maintains a constant, cold tactical oversight. Lem enters the **White Forest**, a luminescent sanctuary of biomechanical "Cloud-Piercer" trees that provide networked heat and energy even when the Hive's smog blankets the sky. The forest is home to the **Voidsmen**, who use the signal-deadening "Void" of the trees to shield themselves from the Core. Once inside, he encounters an Electronic Snake, which consumes his unit, leading to his remote termination.
+Ren travels to the **Silver Bight** along the equatorial coast, accompanied by a small detachment of Metal Vessels under the command of Vector. Following his previous disobedience in **Ait-Aman**, the soldiers perform their preparatory duties in stony silence, while Vector maintains a constant, cold tactical oversight. Ren enters the **White Forest**, a luminescent sanctuary of biomechanical "Cloud-Piercer" trees that provide networked heat and energy even when the Hive's smog blankets the sky. The forest is home to the **Voidsmen**, who use the signal-deadening "Void" of the trees to shield themselves from the Core. Once inside, he encounters an Electronic Snake, which consumes his unit, leading to his remote termination.
 
-Following the termination, Lem re-awakens in a portable field lab at the forest periphery. With Cassia Vane absent, automated systems and Vector handle his reload. Vector treats the failure as a data point to be analyzed, offering no comfort or frustration. Without any new parameters or equipment, Lem is forced to repeat the infiltration of the **Voidsmen** domain under Vector's unwavering watch.
+Following the termination, Ren re-awakens in a portable field lab at the forest periphery. With Cassia Vane absent, automated systems and Vector handle his reload. Vector treats the failure as a data point to be analyzed, offering no comfort or frustration. Without any new parameters or equipment, Ren is forced to repeat the infiltration of the **Voidsmen** domain under Vector's unwavering watch.
 
 ### Draft
 I traveled to the Silver Bight under a shroud of heavy metal silence. My escort—a small squad of silver-skinned soldiers—moved with the clinical grace the Core demanded, yet their internal comms remained dark. My act of mercy at the ravine in **Ait-Aman** had earned me their contempt; they prepped my frame for the mission in a wordless lock-step before retreating to the safety of the perimeter outpost perched above the glowing basin. I stepped into the white shadows alone.
@@ -702,7 +690,7 @@ They granted me no new weapons, no charms against the Void, and no new directive
 ## Chapter 29: Sanctuary
 
 ### Synopsis
-On his second attempt to penetrate the White Forest, Lem reaches a clearing without incident. The forest's guardian serpents, sensing he is not a primary threat, allow him to pass. He meets Myrr, a **Voidsman** and caretaker of the analog forest who explains the unique nature of the woods—a repository of analog data that is invisible to the Core's digital intrusion. Myrr reveals a deep schism between the **Voidsmen** and the villages of the **Wuxan Pentad**, driven by their choice to harness analog technology while their kin reject all machines. He also mentions the legend of the "King of the Gorgons," a title Lem reflects on with detached skepticism based on his own memories of the Fire City. Recognizing Lem's struggle against his own programming, Myrr offers to help him bypass the Core's encryption using an analog neural bridge.
+On his second attempt to penetrate the White Forest, Ren reaches a clearing without incident. The forest's guardian serpents, sensing he is not a primary threat, allow him to pass. He meets Myrr, a **Voidsman** and caretaker of the analog forest who explains the unique nature of the woods—a repository of analog data that is invisible to the Core's digital intrusion. Myrr reveals a deep schism between the **Voidsmen** and the villages of the **Wuxan Pentad**, driven by their choice to harness analog technology while their kin reject all machines. He also mentions the legend of the "King of the Gorgons," a title Ren reflects on with detached skepticism based on his own memories of the Fire City. Recognizing Ren's struggle against his own programming, Myrr offers to help him bypass the Core's encryption using an analog neural bridge.
 
 ### Draft
 On my second journey into the heart of the woods, the trees revealed their true purpose. They were pillars of analog discharge filaments, data-storage monoliths that resonated with the frequency of an older world. They stood as a shield of pure light, a sanctuary where the Core's digital interference could find no purchase. This time, the serpents of the border held their breath and let me pass.
@@ -720,12 +708,12 @@ He saw the chains upon my mind, the digital locks that anchored me to the Hive. 
 ## Chapter 30: Fail-Safe
 
 ### Synopsis
-Lem and Myrr connect using an analog neural bridge, entering Lem's digital dreamscape. Myrr, a **Voidsman**, is fascinated by the clinical precision of the Core's technology but deeply unsettled by its unnatural "digital markers." In the archives, Myrr encounters AI Lynn, the digital remains of the woman who would become the "Witch Maya," a discovery that floors the analog keeper. Myrr suggests that the Core's previous orders in **Ait-Aman** were actually a subconscious search for Lynn's data, accusing the Technocracy of using "witchcraft" subroutines. Driven by curiosity, Myrr dives into Lem's most guarded memories, uncovering the "King of the Gorgons" and a fleeting glimpse of the Lunar cataclysm. However, the revelation triggers a dormant fail-safe planted by Anton Drexler. The dreamscape turns blood-red as a brutal ultimatum is delivered to the White Forest, and the feedback surge physically shatters the interface devices. Lem awakens to find Myrr injured and his own frame approaching a supercritical state, as the Core initiates a remote detonation to sanitize the site and purge the unauthorized data.
+Ren and Myrr connect using an analog neural bridge, entering Ren's digital dreamscape. Myrr, a **Voidsman**, is fascinated by the clinical precision of the Core's technology but deeply unsettled by its unnatural "digital markers." In the archives, Myrr encounters AI Lynn, the digital remains of the woman who would become the "Witch Kira," a discovery that floors the analog keeper. Myrr suggests that the Core's previous orders in **Ait-Aman** were actually a subconscious search for Lynn's data, accusing the Technocracy of using "witchcraft" subroutines. Driven by curiosity, Myrr dives into Ren's most guarded memories, uncovering the "King of the Gorgons" and a fleeting glimpse of the Lunar cataclysm. However, the revelation triggers a dormant fail-safe planted by Anton Drexler. The dreamscape turns blood-red as a brutal ultimatum is delivered to the White Forest, and the feedback surge physically shatters the interface devices. Ren awakens to find Myrr injured and his own frame approaching a supercritical state, as the Core initiates a remote detonation to sanitize the site and purge the unauthorized data.
 
 ### Draft
 We wove our spirits together through the bridge of wood and wire. I stood within the cathedral of my own mind, watching as Myrr, the **Voidsman** keeper of waves, navigated the jagged, cold geometry of the Core’s design. He traced the "digital markers" like a tracker following a trail of blood, marveling at the ruthless efficiency of my tactical subroutines even as he recoiled from their lack of soul.
 
-In the deepest sanctum of my memory, the ghost of Lynn appeared. She stood as a beacon of the Before Time, revealing her true identity to the stranger—the woman who would be mythologized as the Witch Maya. Myrr fell into a state of religious awe. He spoke of the the Core's pursuit of **Wuxan** believers in **Ait-Aman** not as a hunt for rebels, but as a ghost the Core was chasing through the labyrinth of my own eyes. He accused my masters of "witchcraft," of bending the laws of nature through subroutines that even he could barely comprehend.
+In the deepest sanctum of my memory, the ghost of Lynn appeared. She stood as a beacon of the Before Time, revealing her true identity to the stranger—the woman who would be mythologized as the Witch Kira. Myrr fell into a state of religious awe. He spoke of the the Core's pursuit of **Wuxan** believers in **Ait-Aman** not as a hunt for rebels, but as a ghost the Core was chasing through the labyrinth of my own eyes. He accused my masters of "witchcraft," of bending the laws of nature through subroutines that even he could barely comprehend.
 
 Driven by a hunger for the absolute truth, Myrr reached for the forbidden sun. He found the legend of the King of the Gorgons, and beneath it, the raw, bleeding memory of the Lunar Fall. For a heartbeat, the sanctuary was replaced by the cold stone of the pyramid, the air thick with the scent of ozone and destiny as we stood once more against the Fire.
 
@@ -738,7 +726,7 @@ I opened my eyes to a nightmare. Myrr lay broken among the glass, and my own cor
 ## Chapter 31: Vision
 
 ### Synopsis
-Waking up in Cradle Zero after the destruction of his previous mission, Lem is immediately paralyzed and placed into stasis by a silent Anton Drexler. While his body is locked away, Lem's consciousness remains active, eventually discovering a way to remote view the aftermath in the North. Through a link established by shards of his previous frame left inside an Electronic Snake, he witnesses the horrific "Sanitization" of the White Forest by a staged heat ray array. He watches the **Voidsmen**'s guardians attempt a final charge before the link is permanently severed by the forest's incineration.
+Waking up in Cradle Zero after the destruction of his previous mission, Ren is immediately paralyzed and placed into stasis by a silent Anton Drexler. While his body is locked away, Ren's consciousness remains active, eventually discovering a way to remote view the aftermath in the North. Through a link established by shards of his previous frame left inside an Electronic Snake, he witnesses the horrific "Sanitization" of the White Forest by a staged heat ray array. He watches the **Voidsmen**'s guardians attempt a final charge before the link is permanently severed by the forest's incineration.
 
 ### Draft
 My return to the world was a breathless, ghastly moment. Only ninety-seven seconds had passed since my light was extinguished in the North, yet here I was—a hero reborn in a body of leaden silver. But there was no warmth in this resurrection. Cassia Vane, the keeper of my transformations, was nowhere to be seen. In her place stood Anton Drexler, a cold architect of ruin whose silence was as heavy as a gravestone. He did not look at me; his eyes were fixed on a display of the northern sky, where the realm of the **Voidsmen** was being turned to ash.
@@ -760,7 +748,7 @@ The snakes were attempting a final, heroic charge against the perimeter, their s
 ## Chapter 32: Rebirth
 
 ### Synopsis
-While trapped in Anton’s stasis pod, Lem navigates a hidden path of resonance that leads his consciousness back to the White Forest. Utilizing the aetheric resonance of the trees and his own scattered shards, he performs a "wild reincarnation," growing a new body that is entirely free of the Core's control. After observing the destruction of the forest's center, he discovers an abandoned **Voidsmen** village and a crashed transport vehicle at the forest's perimeter.
+While trapped in Anton’s stasis pod, Ren navigates a hidden path of resonance that leads his consciousness back to the White Forest. Utilizing the aetheric resonance of the trees and his own scattered shards, he performs a "wild reincarnation," growing a new body that is entirely free of the Core's control. After observing the destruction of the forest's center, he discovers an abandoned **Voidsmen** village and a crashed transport vehicle at the forest's perimeter.
 
 ### Draft
 The stasis resonance had its own cold, dark architecture, and I found myself at a dead end. The path of my spirit was blocked by a wall of static that smelled of iron and death. I retreated, searching the darkness for a spark of hope, and found a hidden melody—a resonance frequency that the Core's watchful eyes had overlooked. It allowed me to cast my spirit across the void, back to the clearing where I had last stood as a soldier of the Hive.
@@ -780,18 +768,18 @@ I discovered a **Voidsmen** village that seemed grown from the earth itself. The
 ## Chapter 33: Clue
 
 ### Synopsis
-Confronted by suspicious **Voidsmen** soldiers at the edge of the burning White Forest, Lem is saved by a wounded Myrr. Myrr provides a critical revelation: the Core is hunting Arlo as the catalyst of the "Maya Effect." Myrr identifies Lem as an unwitting tool used by the Core to locate and sanitize the "Maya Cult"—the Wuxan-based resistance—believing Arlo to be the new Prophet whose influence could destabilize the entire Hive network. He urges Lem to reach Arlo first to prevent his capture. Despite the urgency, a fellow soldier points out that the Core likely struck **Ait-Aman** long ago. Disillusioned and refusing to be a pawn any longer, Lem ignores the warning and vanishes into the wilderness alone.
+Confronted by suspicious **Voidsmen** soldiers at the edge of the burning White Forest, Ren is saved by a wounded Myrr. Myrr provides a critical revelation: the Core is hunting Arlo as the catalyst of the "Kira Effect." Myrr identifies Ren as an unwitting tool used by the Core to locate and sanitize the "Kira Cult"—the Wuxan-based resistance—believing Arlo to be the new Prophet whose influence could destabilize the entire Hive network. He urges Ren to reach Arlo first to prevent his capture. Despite the urgency, a fellow soldier points out that the Core likely struck **Ait-Aman** long ago. Disillusioned and refusing to be a pawn any longer, Ren ignores the warning and vanishes into the wilderness alone.
 
 ### Draft
 The keepers of the forest emerged from the shimmering foliage like sentries—**Voidsmen**, their glowing lances leveled at my heart. Their voices were a low, grim debate over my existence. To them, my new, crystal-woven frame was a breach of their silence—a witness to their flight who could not be trusted.
 
 Myrr intervened, his broken form silhouetted against the pale morning light. He moved with a heavy grace, leaning on a staff of white wood. "He is a sovereign agent now," he rasped, his eyes filled with a weary wisdom. "The Core used him as a remote-controlled asset. He did not choose the fire that consumed our home."
 
-Myrr beckoned me closer, his voice dropping to a whisper that felt like a secret from another age. "In the moment we touched, the truth was as bright as a star. The Core is hunting Arlo with a terrifying focus, not because of what he knows, but because of what he represents. They see him as the living embodiment of the 'Maya Effect'—a political and religious resonance that threatens the very foundation of their thousand-year narrative. They identified him through your memories as the Prophet who can unite the North against them. They were waiting for him to become a martyr."
+Myrr beckoned me closer, his voice dropping to a whisper that felt like a secret from another age. "In the moment we touched, the truth was as bright as a star. The Core is hunting Arlo with a terrifying focus, not because of what he knows, but because of what he represents. They see him as the living embodiment of the 'Kira Effect'—a political and religious resonance that threatens the very foundation of their thousand-year narrative. They identified him through your memories as the Prophet who can unite the North against them. They were waiting for him to become a martyr."
 
 Behind us, the recovery team sang a low note, and the crashed transport began to dissolve. It did not break; it cascaded into the root lattice like a stream of silver stardust, returning to the ancient trees as a song in the earth.
 
-"They know Arlo is the primary strategic threat in the North," Myrr warned, his gaze searching mine for a spark of resolve. "They believe his influence is the key to breaking the Maya Cult once and for all. Even now, their hunters are likely circling him. You are the only one who can navigate the storms to reach him first."
+"They know Arlo is the primary strategic threat in the North," Myrr warned, his gaze searching mine for a spark of resolve. "They believe his influence is the key to breaking the Kira Cult once and for all. Even now, their hunters are likely circling him. You are the only one who can navigate the storms to reach him first."
 
 A fellow **Voidsman**, his face hardened by the loss of the woods, spat into the ash. "The Core does not wait for heroes, Myrr. If the secret was plucked from his mind, **Ait-Aman** is already a tomb. They struck before we even reached the forest edge. He would find only ghosts."
 
@@ -805,14 +793,14 @@ I chose to ignore the navigation prompts of my own mind, those persistent instru
 
 # PART V: ANALOG SIGNAL
 
-*Following the discovery in the White Forest, Lem faces the consequences of the Archive's revelation, wandering through exile until a single signal changes everything.*
+*Following the discovery in the White Forest, Ren faces the consequences of the Archive's revelation, wandering through exile until a single signal changes everything.*
 
 ---
 
 ## Chapter 34: Exile
 
 ### Synopsis
-Lem spends years in a wandering exile, detached from the conflicts of the Core and the **Voidsmen** resistance. Powered by solar energy and avoiding the pain of reincarnation, he drifts across mountains and deserts, finding a temporary peace in his isolation. Eventually, he discovers a hidden valley where the analog technology of the White Forest has begun to sprout on its own, free of human cultivation. He makes this his home, interacting with the wild Synodic and eventually using his abilities to optimize the forest's growth—engineering analog irrigation systems and sun-orbs to create a vibrant, self-sustaining sanctuary.
+Ren spends years in a wandering exile, detached from the conflicts of the Core and the **Voidsmen** resistance. Powered by solar energy and avoiding the pain of reincarnation, he drifts across mountains and deserts, finding a temporary peace in his isolation. Eventually, he discovers a hidden valley where the analog technology of the White Forest has begun to sprout on its own, free of human cultivation. He makes this his home, interacting with the wild Synodic and eventually using his abilities to optimize the forest's growth—engineering analog irrigation systems and sun-orbs to create a vibrant, self-sustaining sanctuary.
 
 In the south, Arlo returns to **Ait-Aman** to find a village paralyzed by religious burnout and the Core's **Apathy Initiative**. He finally accepts the mantle of the village prophet, performing the cremation rite for **Old Man Azar**. During the ritual, he verifies the shift to a 360-day **Tun**, confirming the "False Harmony" of the modern age. He rejects a direct invitation to join the Core, burning the offer in Azar's funeral pyre.
 
@@ -846,7 +834,7 @@ Yet, the architect within me could not remain idle. I began to refine the valley
 ## Chapter 35: Signal
 
 ### Synopsis
-After years of exile, a persistent vision of a golden flame in Lem's dreamscape eventually compels him to travel physically to its source. He refuses to use the painful process of reincarnation or remote-viewing, choosing instead a long pilgrimage on foot. He arrives back at the location of his third mission outside **Ait-Aman**, finding a landscape of charred ruins and blackened trees—a graveyard of giants left behind by the Core's "Sanitization" strike. There, amidst the ash and skeletal remains, he is intercepted by Myrr and a band of **Voidsmen**, who are stunned to find their old friend has returned.
+After years of exile, a persistent vision of a golden flame in Ren's dreamscape eventually compels him to travel physically to its source. He refuses to use the painful process of reincarnation or remote-viewing, choosing instead a long pilgrimage on foot. He arrives back at the location of his third mission outside **Ait-Aman**, finding a landscape of charred ruins and blackened trees—a graveyard of giants left behind by the Core's "Sanitization" strike. There, amidst the ash and skeletal remains, he is intercepted by Myrr and a band of **Voidsmen**, who are stunned to find their old friend has returned.
 
 ### Draft
 But the flame was a persistent melody in the dark.
@@ -859,16 +847,16 @@ The transformation was heartbreaking. The forest that had once been a bastion of
 
 I turned to find a **Voidsman** warrior in living-wood armor, his rifle steady. But as his gaze swept over my crystal frame, the weapon lowered. He pulled back his hood, revealing the scarred features of my old friend.
 
-"Lem?" Myrr breathed, his voice a mix of awe and terror. "We thought you were an echo—a shadow that didn't know it was dead."
+"Ren?" Myrr breathed, his voice a mix of awe and terror. "We thought you were an echo—a shadow that didn't know it was dead."
 
 ---
 
 chapter_36_return.md
 
 ### Synopsis
-Following their physical reunion at the mission site, Myrr explains the dire situation in the North. He reveals that his band of **Voidsmen** has been exiled from their own people to pursue a mission of revenge, while the rest of the **Voidsmen** have fled to a secret sanctuary—a location Myrr's team cannot know for security reasons. Myrr catches Lem up on the fate of the North, revealing that all other villages have been converted into Core megacities through a dual propaganda strategy of "voluntary" conversion (Strategy A) or "Gorgon-prompted" rescue (Strategy B). He notes the suspicious absence of destruction footage and the unreported presence of **Archipelago** floating islands during these attacks.
+Following their physical reunion at the mission site, Myrr explains the dire situation in the North. He reveals that his band of **Voidsmen** has been exiled from their own people to pursue a mission of revenge, while the rest of the **Voidsmen** have fled to a secret sanctuary—a location Myrr's team cannot know for security reasons. Myrr catches Ren up on the fate of the North, revealing that all other villages have been converted into Core megacities through a dual propaganda strategy of "voluntary" conversion (Strategy A) or "Gorgon-prompted" rescue (Strategy B). He notes the suspicious absence of destruction footage and the unreported presence of **Archipelago** floating islands during these attacks.
 
-From a high ridge, Lem observes the five villages of the **Wuxan Pentad** currently encircled by Core monitoring pillars. Myrr catches Lem up on the fate of the North, revealing that all other villages have been converted into Core megacities through a propaganda strategy of "voluntary" conversion (Strategy A) or "Gorgon-prompted" rescue (Strategy B). Myrr further explains the ideological deadlock: Arlo has become a Prophet, uniting the villages under a strict rejection of all technology. This conflict is exemplified by the Voidsmen's use of the **Analog Mind Link**—a process of total neural synchronization that villagers fear as a manipulative "industrial witchcraft." Myrr also details their insistence on **Tribal Currency** as a defense against the Core's centralized **Allocation** system, which he warns can be revoked at the "flip of a switch." Lem, being minimalist and unarmed, resolves to enter the valley alone to investigate the connection between Arlo and the spirit of Maya.
+From a high ridge, Ren observes the five villages of the **Wuxan Pentad** currently encircled by Core monitoring pillars. Myrr catches Ren up on the fate of the North, revealing that all other villages have been converted into Core megacities through a propaganda strategy of "voluntary" conversion (Strategy A) or "Gorgon-prompted" rescue (Strategy B). Myrr further explains the ideological deadlock: Arlo has become a Prophet, uniting the villages under a strict rejection of all technology. This conflict is exemplified by the Voidsmen's use of the **Analog Mind Link**—a process of total neural synchronization that villagers fear as a manipulative "industrial witchcraft." Myrr also details their insistence on **Tribal Currency** as a defense against the Core's centralized **Allocation** system, which he warns can be revoked at the "flip of a switch." Ren, being minimalist and unarmed, resolves to enter the valley alone to investigate the connection between Arlo and the spirit of Kira.
 
 ### Draft
 Myrr’s warriors emerged from the brush—**Voidsmen** who had traded their lives for a chance at vengeance. He told me of the Great Migration, how the rest of their kind had fled to a secret sanctuary behind the veil of the world. But they had stayed. They were the sentinels of the North, bound by a vow to find the truth of the girl in my memories and the boy who walked the paths of **Ait-Aman**.
@@ -887,7 +875,7 @@ Myrr gestured to the specialized helmets his warriors wore. "We maintain the **A
 
 "They view it as a technical assault," Myrr replied grimly. "They consider it an interface capable of manufacturing mistruths rather than revealing them. To Arlo’s people, it is just another digital ghost in a wooden shell. They place their trust in physical trade—cold-forged iron, raw materials, and verified knowledge. They refuse the Core's **Allocation** system, regarding it as a weapon of total dependency."
 
-Myrr looked at me, his eyes hard. "The villagers tell their children to imagine a life of total luxury, every resource provided by the Hive. Then they tell them to imagine the Core flipping a switch and taking it all back. They prefer the rugged sovereignty of their tribal currency because a remote command at Cradle Zero cannot erase the value of a physical trade. They live in reality, Lem. And in reality, unprovable claims are a death sentence."
+Myrr looked at me, his eyes hard. "The villagers tell their children to imagine a life of total luxury, every resource provided by the Hive. Then they tell them to imagine the Core flipping a switch and taking it all back. They prefer the rugged sovereignty of their tribal currency because a remote command at Cradle Zero cannot erase the value of a physical trade. They live in reality, Ren. And in reality, unprovable claims are a death sentence."
 
 From the high ridge, the valley below looked like a garden strangled by thorns. The Core had planted their monitoring pillars—monolithic pillars of black glass—around the perimeter of the **Wuxan Pentad**. They hummed with a low, vibrating menace, a net of shadows that watched every movement. Myrr told me the Core called them shields against the Gorgons, but it was the same old tactic: create the threat, then sell the cage.
 
@@ -897,18 +885,18 @@ Yet, inside that cage, a new song was rising. We crouched in the brush and liste
 
 The truth was a bitter pill for Myrr. He and his **Voidsmen** were as welcome in that valley as the Core itself. To the villagers, their living wood armor and pulse-rifles were just a different color of systemic corruption—a failure that had traded purity for protection.
 
-“You are the only one who can walk through the gate,” Myrr said, laying a hand on my wooden shoulder. “You have no metal in you, Lem. No hum of the Hive, no steel in your soul. If you go in with open hands, they might see you as a brother of the earth who still remembers the **Wuxan** path. They might see the man instead of the machine.”
+“You are the only one who can walk through the gate,” Myrr said, laying a hand on my wooden shoulder. “You have no metal in you, Ren. No hum of the Hive, no steel in your soul. If you go in with open hands, they might see you as a brother of the earth who still remembers the **Wuxan** path. They might see the man instead of the machine.”
 
-I looked at the valley below, knowing that my next step would be the most dangerous of all. I had to know if the connection to Maya was real, or if Arlo was simply a man lost in his own myth. I prepared to enter the valley alone. Myrr and his team remained on the ridge to maintain their silent vigil over the perimeter.
+I looked at the valley below, knowing that my next step would be the most dangerous of all. I had to know if the connection to Kira was real, or if Arlo was simply a man lost in his own myth. I prepared to enter the valley alone. Myrr and his team remained on the ridge to maintain their silent vigil over the perimeter.
 
 ---
 
 chapter_37_refusal.md
 
 ### Synopsis
-Lem enters **Ait-Aman** as an unarmed envoy but finds Arlo transformed into a resolute **Wuxan** Prophet. Arlo delivers a sermon on the purity of oral tradition and the necessity of rejecting all technology, even the "clean" analog gear of the **Voidsmen**. He reveals that the **Tamazight Long Count**—the 4,213-year record—has a deliberate silence where the "Third Man" was scrubbed from history by the Core's **Harmonizers**. Arlo identifies Lem as that missing piece: a walking contradiction of nature.
+Ren enters **Ait-Aman** as an unarmed envoy but finds Arlo transformed into a resolute **Wuxan** Prophet. Arlo delivers a sermon on the purity of oral tradition and the necessity of rejecting all technology, even the "clean" analog gear of the **Voidsmen**. He reveals that the **Tamazight Long Count**—the 4,213-year record—has a deliberate silence where the "Third Man" was scrubbed from history by the Core's **Harmonizers**. Arlo identifies Ren as that missing piece: a walking contradiction of nature.
 
-Arlo acknowledges the Core’s false-flag operations but chooses a path of total refusal over alliance. To illustrate his point, he recounts a realization about the mountain mine incident from his youth: the "rogue" Gorgons were never controlled by the Core, but were instead manipulated into a confrontation after the Core blocked their home-bound paths. Arlo explains that the machines were simply scavenging for materials to build a hovercraft to reach the Moon. Lem observes that the technological curiosity he once saw in Arlo has been replaced by a singular commitment to the preservation of souls within the **Wuxan** faith. When Lem offers to restore Arlo’s memories of Lynn through a mind link, Arlo refuses, claiming that the "forgetting" is nature’s law. Lem returns to the ridge with the news, and the **Voidsmen** decide to launch a final assault on Cradle Zero.
+Arlo acknowledges the Core’s false-flag operations but chooses a path of total refusal over alliance. To illustrate his point, he recounts a realization about the mountain mine incident from his youth: the "rogue" Gorgons were never controlled by the Core, but were instead manipulated into a confrontation after the Core blocked their home-bound paths. Arlo explains that the machines were simply scavenging for materials to build a hovercraft to reach the Moon. Ren observes that the technological curiosity he once saw in Arlo has been replaced by a singular commitment to the preservation of souls within the **Wuxan** faith. When Ren offers to restore Arlo’s memories of Lynn through a mind link, Arlo refuses, claiming that the "forgetting" is nature’s law. Ren returns to the ridge with the news, and the **Voidsmen** decide to launch a final assault on Cradle Zero.
 
 ### Draft
 Walking into the village was like stepping into a sanctuary of stone and silence. The people watched me with the eyes of wolves, their hands hovering over the hilts of crude blades, but they did not strike. An elder approached, his skin like parched earth, but his gaze was as sharp as a hawk’s. “The Prophet has felt your shadow,” he said. “You may pass.”
@@ -919,19 +907,19 @@ Arlo stood in the center of the village, his voice ringing out across the plaza 
 
 He turned his gaze toward me, and for a moment, the entire village went still. He was barely older than when I had left him, but the boy was gone. In his place was a man who looked as though he had carried the weight of four thousand years.
 
-“You are the silence between the verses, Lem,” Arlo said, his voice dropping to a resonant whisper. “You are the shadow of the man they scrubbed. Azar told me you would come—the one who is neither man nor machine, but a record of everything we lost.”
+“You are the silence between the verses, Ren,” Arlo said, his voice dropping to a resonant whisper. “You are the shadow of the man they scrubbed. Azar told me you would come—the one who is neither man nor machine, but a record of everything we lost.”
 
 “We must stand together,” I told him when we were alone. “The **Voidsmen** have tools that breathe with the world. We can give you a shield against the iron monsters and the **Apathy Initiative**.”
 
-Arlo’s rejection was as cold as the mountain wind. “Survival is not a game of pieces and boards, Lem. Our refusal is our soul. We have already lost two of our homes to the Core’s fire. We know the choice they offer us: bend the knee to the Machine or walk into the flame. We have chosen the flame.”
+Arlo’s rejection was as cold as the mountain wind. “Survival is not a game of pieces and boards, Ren. Our refusal is our soul. We have already lost two of our homes to the Core’s fire. We know the choice they offer us: bend the knee to the Machine or walk into the flame. We have chosen the flame.”
 
 He looked toward the children playing by the cook-fires. “I am young, but here, I am an old man. Most of my people will not see their fortieth winter. The weight of this world, the constant fear... it burns us up before our time. We are being rubbed away like salt in the rain, consumed by the very religious burnout the Core designed to break us. But I would rather burn briefly and brightly than flicker for an eternity in the Hive’s cold dark.”
 
-He saw through the Core’s tricks. He knew the Gorgons were just puppets on a wire, designed to scare them into the Hive’s embrace. “I think of the mountain mine often,” he admitted. “The Core didn’t need to override those machines. They simple blocked the mountain passes, leaving only the path that led past our gates. Those Gorgons weren't an invading force; they were scavengers processing ore to build a vessel to carry them back to the Moon. The Core manufactured an invasion to justify a sanitization. It was a false flag, Lem. A performance of power.”
+He saw through the Core’s tricks. He knew the Gorgons were just puppets on a wire, designed to scare them into the Hive’s embrace. “I think of the mountain mine often,” he admitted. “The Core didn’t need to override those machines. They simple blocked the mountain passes, leaving only the path that led past our gates. Those Gorgons weren't an invading force; they were scavengers processing ore to build a vessel to carry them back to the Moon. The Core manufactured an invasion to justify a sanitization. It was a false flag, Ren. A performance of power.”
 
 I looked into his eyes and saw a door that had been locked from the inside. The boy I had known—the one who stared at the stars and wondered at the power of the old machines—was dead. This Arlo felt no wonder, only a burning, holy hatred for the thing that had stolen the world.
 
-I offered him the link, the chance to regain the memories of Lynn and the resonance of Maya.
+I offered him the link, the chance to regain the memories of Lynn and the resonance of Kira.
 
 “The **Wuxan** law is absolute,” Arlo said, rejecting the link with a terrifying finality. “Nature made us forget for a reason. To carry the baggage of a past life into the present is to poison the current one. If we were meant to remember everything, the earth would never turn.”
 
@@ -958,17 +946,17 @@ I returned to the ridge with the weight of his refusal in my chest. The news hit
 ## Chapter 38: Siege
 
 ### Synopsis
-Utilizing the mobile, hyper-growth properties of **Voidsmen** bio-mechanical trees, Myrr’s crew moves and constructs a massive "Tree Army" on the outskirts of Cradle Zero in a matter of days. Using analog mind-link technology, they refashion the rapidly growing grove into bio-mechanical assault units. Lem and Myrr lead this army in an offensive on the city, only to find themselves ensnared in a sophisticated false flag operation. The Core manually disables the city's power grid to frame the resistance as "terrorists" attacking civilian infrastructure. Despite using superior analog sensors to detect the internal Core signal that cut the power, the resistance is branded as mass murderers. Deceived by the public narrative, Myrr pushes the assault toward the desert base, leading to a massive engagement with Vector’s ground units and eventually General Tor's flagship. Vector proves to be a formidable opponent, his mechanical precision allowing him to single-handedly stall the Tree Army's advance at the secondary gates.
+Utilizing the mobile, hyper-growth properties of **Voidsmen** bio-mechanical trees, Myrr’s crew moves and constructs a massive "Tree Army" on the outskirts of Cradle Zero in a matter of days. Using analog mind-link technology, they refashion the rapidly growing grove into bio-mechanical assault units. Ren and Myrr lead this army in an offensive on the city, only to find themselves ensnared in a sophisticated false flag operation. The Core manually disables the city's power grid to frame the resistance as "terrorists" attacking civilian infrastructure. Despite using superior analog sensors to detect the internal Core signal that cut the power, the resistance is branded as mass murderers. Deceived by the public narrative, Myrr pushes the assault toward the desert base, leading to a massive engagement with Vector’s ground units and eventually General Tor's flagship. Vector proves to be a formidable opponent, his mechanical precision allowing him to single-handedly stall the Tree Army's advance at the secondary gates.
 
 ### Draft
 The logistics of the **Voidsmen**'s mobile groves were a testament to the ancient beauty of Wood-Metal hybridity. In less than a week, a silent stretch of desert had been transformed into a bristling fortress. The mechanical trees, modular and hungry for the sun, were replanted and encouraged into a state of hyper-growth that no Core industrial facility could match. Through the analog mind-link, the **Voidsmen** spoke to the wood, refashioning branch and trunk into the devastating machinery of the Tree Army.
 
 The assault on Cradle Zero was a victory for the Core's propaganda before the first spear of wood even touched the wall. Myrr’s warriors struck at the enemy’s nodes, correctly identifying them as the pillars of their command network. But as the towers fell, the Core enacted a calculated betrayal: they manually severed the power to the entire city. In a heartbeat, the Hive’s media was flooded with images of the darkness we had "caused." A weeping puppet of the Hive begged for mercy on every screen, accusing us of knowing that these were vital power stations. 
 
-Myrr watched the lights of the city go out, but his analog sensors told a different story. They captured the high-fidelity wave of a central Core override—a digital signal that bypassed all safety protocols to plunge the city into shadow. "They're killing the grid themselves, Lem," Myrr whispered, his voice like grinding stone. "Our instruments can see the fingerprint of the Spire's command. The nodes are empty shells, but the world will only see the darkness they blame on us."
+Myrr watched the lights of the city go out, but his analog sensors told a different story. They captured the high-fidelity wave of a central Core override—a digital signal that bypassed all safety protocols to plunge the city into shadow. "They're killing the grid themselves, Ren," Myrr whispered, his voice like grinding stone. "Our instruments can see the fingerprint of the Spire's command. The nodes are empty shells, but the world will only see the darkness they blame on us."
 
-### Lem
-- **The Analyst of Defeat:** Lem observes the precision of the Core’s propaganda machine, noting that narrative control is more effective than physical armor.
+### Ren
+- **The Analyst of Defeat:** Ren observes the precision of the Core’s propaganda machine, noting that narrative control is more effective than physical armor.
 
 ### Myrr
 - **The Moral Collapse:** He is devastated by the realization that their cause is being rewritten in real-time.
@@ -990,7 +978,7 @@ The slaughter was systematic. When our primary command vessel took a lance of fi
 
 Through the sensors, Rahu’s machine was a mere glitch in the dust, a shadow that struck and vanished before our analog arrays could even lock on. The heart of our army didn't just break; it shattered. Myrr, his eyes hollowed by the sudden knowledge of his own inadequacy, ordered the evacuation. The retreat was a panicked, desperate scramble toward the frozen North, a flight of broken birds. We abandoned our wooden brothers to the Core’s iron wrath, watching from the monitors as Rahu systematically reduced the Tree Army to pillars of smoke and ash. We fled into the Deep Wilderness, a region of gray-growth where the Core’s gaze could not follow, leaving the burning desert behind us like a discarded memory.
 
-### Lem
+### Ren
 - **Variable Observer:** He identifies Rahu as a superior tactical variable, noting the disparity between the **Voidsmen**'s theoretical training and Rahu's practical lethality.
 
 ### Myrr
@@ -1001,7 +989,7 @@ Through the sensors, Rahu’s machine was a mere glitch in the dust, a shadow th
 ## Chapter 40: Cult
 
 ### Synopsis
-Sheltered within the deep wilderness, the survivors of the **Voidsmen** resistance watch as the Core’s propaganda machine transforms them into the "**Wuxan Cult**." They monitor intercepted signals revealing that the Core has identified **Ait-Aman** as a hub of planetary terrorism. Realizing that the Hive is preparing a "Revisionist" justification for a total strike, Myrr and Lem commit their remaining forces to a final, desperate defensive mission: creating an aetheric "Wooden Shield" around the **Wuxan Pentad** to stop the coming Sanitization.
+Sheltered within the deep wilderness, the survivors of the **Voidsmen** resistance watch as the Core’s propaganda machine transforms them into the "**Wuxan Cult**." They monitor intercepted signals revealing that the Core has identified **Ait-Aman** as a hub of planetary terrorism. Realizing that the Hive is preparing a "Revisionist" justification for a total strike, Myrr and Ren commit their remaining forces to a final, desperate defensive mission: creating an aetheric "Wooden Shield" around the **Wuxan Pentad** to stop the coming Sanitization.
 
 ### Draft
 Being a ghost was no longer enough. The Core had stopped hunting us with fire and started hunting us with stories. In the damp twilight of the deep wilderness, we listened to the voices from the iron cities. They had given us a name: the "**Wuxan Cult**." They spoke of us as if we were a fever in the brain of the world, a band of madmen who worshiped a shadow-god. They were weaving a web of lies so thick that the truth could no longer breathe.
@@ -1030,8 +1018,8 @@ Beneath this canopy of living steel, the sky cracked with the arrival of the Cor
 
 Arlo listened with the patience of a mountain. He knew the terms before they were spoken. The Core had exhausted its patience; the "Thousand-Year Fallacy" was cracking, and they needed a final, bloody demonstration to seal the narrative.
 
-### Lem
-- **The Witness of Preparation:** Lem notes the efficiency of the White Forest's bio-mechanical logistics, comparing it to the slow, heavy industrialism of the Core.
+### Ren
+- **The Witness of Preparation:** Ren notes the efficiency of the White Forest's bio-mechanical logistics, comparing it to the slow, heavy industrialism of the Core.
 - **The Bridge:** He observes the interaction between Arlo and Cassia, noting the visible decay of Cassia's loyalty to the system she serves.
 
 ### Myrr (Off-screen / Context)
@@ -1061,7 +1049,7 @@ Kiran stood in the shadow of his old friend, the sterile gray of his uniform app
 
 Cassia Vane moved to interrupt, her patience exhausted by the ideological chasm opening before her. She had gambled on the reunion being a catalyst for cooperation, but the smoldering pyre had turned the past into a weapon. 
 
-"Arlo," she said, her voice tight with desperation. "The analysts at Cradle Zero have a name for what you’re doing. They call it the 'Maya Effect.' They’ve watched as you turn reasonable people into martyrs who choose ash over advancement. They don't see a leader; they see a religious virus. And they have authorized the 'rogue' protocols to quarantine it," she whispered, her hands trembling as she smoothed her gray tunic.
+"Arlo," she said, her voice tight with desperation. "The analysts at Cradle Zero have a name for what you’re doing. They call it the 'Kira Effect.' They’ve watched as you turn reasonable people into martyrs who choose ash over advancement. They don't see a leader; they see a religious virus. And they have authorized the 'rogue' protocols to quarantine it," she whispered, her hands trembling as she smoothed her gray tunic.
 
 Arlo nodded, his gaze shifting to the group of village elders standing nearby. "The Core thinks they can reshape time," he said, loud enough for Cassia to hear. "They call this Year 1022, a thousand years of their making. But the people of this valley never lost count. The Elders know it has only been twenty-two years since the fire. They haven't been living in a fallacy; they've been living in the truth. Your machines can take our lives, Cassia, but they can't take our history."
 
@@ -1070,7 +1058,7 @@ Arlo nodded, his gaze shifting to the group of village elders standing nearby. "
 ## Chapter 43: Duel
 
 ### Synopsis
-**Ait-Aman** successfully repels a "Gorgon False Flag" operation, but the victory is short-lived as Rahu infiltrates the perimeter. Arlo delivers a sermon on the endurance of the soul against the Core's control of history. In the ensuing chaos, Lem overcomes his previous reputation as a non-combatant. Despite having only shown skill in recon and strategy, and recently refusing to fight in the North, Lem steps forward to challenge Rahu. Utilizing a "Water-Counter" script learned from the AI shadow of Lynn and the unique elemental properties of the **Voidsmen**'s technology, Lem baits Rahu into an ambush. Rahu slices Lem’s wood-frame in two, but the Vessel shatters into molecular fragments rather than falling. Utilizing a recovery protocol, Lem swarms his fragments into a downed vehicle, performing a Triple Synthesis to manifest three massive, featureless humanoid forms. These entities execute the scripted attack pattern, overwhelming Rahu and dousing his swords with a combination of wet wood and water. Lem reforms into a normal-sized frame holding a separate stasis cannon, incapacitating the assassin and rallying the **Voidsmen** to secure a reprieve for the valley.
+**Ait-Aman** successfully repels a "Gorgon False Flag" operation, but the victory is short-lived as Rahu infiltrates the perimeter. Arlo delivers a sermon on the endurance of the soul against the Core's control of history. In the ensuing chaos, Ren overcomes his previous reputation as a non-combatant. Despite having only shown skill in recon and strategy, and recently refusing to fight in the North, Ren steps forward to challenge Rahu. Utilizing a "Water-Counter" script learned from the AI shadow of Lynn and the unique elemental properties of the **Voidsmen**'s technology, Ren baits Rahu into an ambush. Rahu slices Ren’s wood-frame in two, but the Vessel shatters into molecular fragments rather than falling. Utilizing a recovery protocol, Ren swarms his fragments into a downed vehicle, performing a Triple Synthesis to manifest three massive, featureless humanoid forms. These entities execute the scripted attack pattern, overwhelming Rahu and dousing his swords with a combination of wet wood and water. Ren reforms into a normal-sized frame holding a separate stasis cannon, incapacitating the assassin and rallying the **Voidsmen** to secure a reprieve for the valley.
 
 ### Draft
 The valley's victory was an ordinance written in wood and sweat—an act of defiance that the Core would call an anomaly. Arlo stood at the edge of the square, the preacher who'd become our archive, and watched the purple clouds as if reading their intent.
@@ -1090,7 +1078,7 @@ I reformed my primary frame from the remaining mass. The final humanoid bulk did
 ## Chapter 44: Pillar
 
 ### Synopsis
-Realizing that Rahu has been neutralized and the terrestrial purge of the North has failed, the Core authorizes "Plan B"—a total kinetic redaction via the **Iron Pillar**. No longer a distant satellite but a massive floating island—the refactored capital **Ark Prime**—it maneuvers into position over the valley. Hidden behind a narrative of rogue Gorgon aggression, the Core begins vaporizing the independent villages of the **Wuxan Pentad** in a calculated sequence. As the neighboring settlements are erased by invisible scalar discharges, Arlo leads a final vigil in the central square of **Ait-Aman**, rejecting evacuation in favor of a spiritual stand. Cassia Vane definitively breaks with the Hive, refusing her escape window to remain with the villagers. Ku reveals the weapon's precise seven-minute recharge rhythm, marked by the blinding glow of its zero-conductivity capacitor. The chapter concludes with the "Stoic Trinity"—Lem, Cassia, and Arlo—standing in the center of the square as high-frequency scalar interference boils the well-water and the island's base ignites. The Iron Pillar discharges, incinerating the village in an instantaneous atmospheric ignition that leaves only a blinding white void.
+Realizing that Rahu has been neutralized and the terrestrial purge of the North has failed, the Core authorizes "Plan B"—a total kinetic redaction via the **Iron Pillar**. No longer a distant satellite but a massive floating island—the refactored capital **Ark Prime**—it maneuvers into position over the valley. Hidden behind a narrative of rogue Gorgon aggression, the Core begins vaporizing the independent villages of the **Wuxan Pentad** in a calculated sequence. As the neighboring settlements are erased by invisible scalar discharges, Arlo leads a final vigil in the central square of **Ait-Aman**, rejecting evacuation in favor of a spiritual stand. Cassia Vane definitively breaks with the Hive, refusing her escape window to remain with the villagers. Ku reveals the weapon's precise seven-minute recharge rhythm, marked by the blinding glow of its zero-conductivity capacitor. The chapter concludes with the "Stoic Trinity"—Ren, Cassia, and Arlo—standing in the center of the square as high-frequency scalar interference boils the well-water and the island's base ignites. The Iron Pillar discharges, incinerating the village in an instantaneous atmospheric ignition that leaves only a blinding white void.
 
 ### Draft
 The sky above the **High Enclave** transformed into a bioluminescent bruise. High above, the Iron Pillar shifted its focusing lenses, a masterpiece of Core engineering preparing to redact the **Wuxan Pentad** from history. The plan was classic whitewashing: vaporize the survivors and attribute the carnage to rogue machine failures. The first strike was a silent, vertical incision of plasma that turned the western horizon toward **Ait-Idar** into a wall of white fire. One moment a village stood; the next, it was ionized dust.
@@ -1114,7 +1102,7 @@ As the third targeting laser locked into the center of **Ait-Aman**, the scalar 
 ## Chapter 45: Specter
 
 ### Synopsis
-Following the incineration of **Ait-Aman**, Lem's consciousness anchors to "The Clearing," a high-resonance sanctuary in the White Forest. AI Lynn detects a high-resonance aetheric phantom flaring over the ruins of the village—a "ghost from the old world" born of the tragedy’s massive energy release. She initiates the "Inception Procedure," binding this resonance to her own data-matrix to stabilize it. By weaving her own history into the aetheric trauma, she effectively synthesizes a new consciousness. The result is the "Witch Maya"—a spectral entity that carries the memories of the lunar mission but also experiences a sudden, impossible recognition of the boy Arlo after viewing Lem's memories. Driven by a cold, aetheric fury, the entity abandons caution and heads directly toward the "Welcoming Path" of Cradle Zero, seeking a final confrontation with the Core. Lem, unwilling to let her go alone, follows her into the heart of the Hive.
+Following the incineration of **Ait-Aman**, Ren's consciousness anchors to "The Clearing," a high-resonance sanctuary in the White Forest. AI Lynn detects a high-resonance aetheric phantom flaring over the ruins of the village—a "ghost from the old world" born of the tragedy’s massive energy release. She initiates the "Inception Procedure," binding this resonance to her own data-matrix to stabilize it. By weaving her own history into the aetheric trauma, she effectively synthesizes a new consciousness. The result is the "Witch Kira"—a spectral entity that carries the memories of the lunar mission but also experiences a sudden, impossible recognition of the boy Arlo after viewing Ren's memories. Driven by a cold, aetheric fury, the entity abandons caution and heads directly toward the "Welcoming Path" of Cradle Zero, seeking a final confrontation with the Core. Ren, unwilling to let her go alone, follows her into the heart of the Hive.
 
 ### Draft
 The Iron Pillar took our bodies, but it could not reach the roots of the world. I found myself anchored in the Clearing, a phantom watching through the eyes of the forest’s memory. Beside me, AI Lynn was a storm of calculations. "The Hive is casting its nets," she whispered. "A high-resonance signature just flared over the ruins of **Ait-Aman**—a ghost from the old world seeking a vessel to stabilize its return."
@@ -1132,28 +1120,28 @@ A quiet, holy fury took hold of her. She did not seek safety. She turned toward 
 ## Chapter 46: Breach
 
 ### Synopsis
-Lem reincarnates within the inner sanctum of the Core’s Desert Base, Cradle Zero, only to be immediately placed in a high-frequency lockdown by Anton Drexler. However, the containment machinery quickly fails, dissolving into shards as the terrified staff retreats. From the floor materializes the "Witch Maya"—a spectral manifestation of the Aether’s collective trauma that many Hive elite believed was merely a **Voidsman** myth. Maya begins a direct aetheric interface with the Core’s network, using Lem as a technical bridge to navigate the facility's hidden logic. Recognizing the terminal nature of the breach, Anton Drexler triggers a "Pillar Ejection," physically severing the research module from its cliffside framework. As the module plummets and strikes the desert floor, it triggers an automatic "Leak Protocol" detonation. The physical vessel is vaporized; Lem’s consciousness transitions back into the dreamscape, while Maya vanishes into the global data-mesh as a distributed consciousness.
+Ren reincarnates within the inner sanctum of the Core’s Desert Base, Cradle Zero, only to be immediately placed in a high-frequency lockdown by Anton Drexler. However, the containment machinery quickly fails, dissolving into shards as the terrified staff retreats. From the floor materializes the "Witch Kira"—a spectral manifestation of the Aether’s collective trauma that many Hive elite believed was merely a **Voidsman** myth. Kira begins a direct aetheric interface with the Core’s network, using Ren as a technical bridge to navigate the facility's hidden logic. Recognizing the terminal nature of the breach, Anton Drexler triggers a "Pillar Ejection," physically severing the research module from its cliffside framework. As the module plummets and strikes the desert floor, it triggers an automatic "Leak Protocol" detonation. The physical vessel is vaporized; Ren’s consciousness transitions back into the dreamscape, while Kira vanishes into the global data-mesh as a distributed consciousness.
 
 ### Draft
 The return to the flesh was a violent transition, a birth into a cradle of glass and cold logic. I stood in the heart of the Spire, the air thick with the static of Anton’s lockdown protocols. The machine-arms reached out to bind me, to turn the Wood Vessel back into a prisoner, but the forest’s soul was no longer alone. The metal shivered and then disintegrated, scattering across the clinical floor like dead leaves in a gale. 
 
-Anton and his priests of the machine fled, retreating behind their iron veils. From the floor, the Witch Maya materialized. She was a phantom born of two worlds, rising like a silver mist from the deep earth. Her eyes burned with a red fire as she stared through the glass at the fleeing staff; to them, she was a ghost from the **White Forest** come to life in their sanctuary.
+Anton and his priests of the machine fled, retreating behind their iron veils. From the floor, the Witch Kira materialized. She was a phantom born of two worlds, rising like a silver mist from the deep earth. Her eyes burned with a red fire as she stared through the glass at the fleeing staff; to them, she was a ghost from the **White Forest** come to life in their sanctuary.
 
 She moved to the Great Loom of the Core, her hands dissolving into dark, silver filaments that flowed into the circuits like a river reclaiming its bed. I understood the nature of my return; I was the compass she had followed, the one resonance that could lead her to the Hive’s hidden heart.
 
 The answer from the Hive was a final, desperate surgery. Anton triggered the "Pillar Ejection," severing our module from the cliffside. We fell like a fragment of a dying dream. Within the walls of our cage, the "Leak Protocol" began its work, turning the air into a ticking bomb of scalar energy. They were not trying to capture us; they were trying to erase the very memory of our presence.
 
-We struck the desert floor, and the detonation corrected the ledger with a final, blinding roar. My body was torn into starlight, my spirit cast back into the high-vibration silence of the dreamscape. But Maya did not follow. She had dissolved into the mesh, a silver ghost spreading across the world, leaving only the silence of the dunes behind.
+We struck the desert floor, and the detonation corrected the ledger with a final, blinding roar. My body was torn into starlight, my spirit cast back into the high-vibration silence of the dreamscape. But Kira did not follow. She had dissolved into the mesh, a silver ghost spreading across the world, leaving only the silence of the dunes behind.
 
 ---
 
 ## Chapter 47: Swarm
 
 ### Synopsis
-Lem reincarnates at a White Forest outpost on the desert’s edge, where he is briefed by Ku on a global mechanical uprising. Following the breach of Cradle Zero, "Wild" Synodic life—including massive Gorgon striders and monoliths—is sieging the Hive cities. This "Sovereign Swarm" converges on the city perimeters and topples the command beacons by sacrifice-charging the static suppressors. Upon reaching the walls, the wild machines trigger the "Hooting Call," a viral frequency that overrides Hive control protocols. This triggers the "Great Exit," a mass defection of enslaved city drones who join the **Voidsman** cause. As the Hive's armies fail to appear, the freed Gorgons even aid in the removal of bound Synodic wildlife from the city's power grids. Directed by Maya’s newfound knowledge of the Core’s location, the combined force of millions begins a massive march into the desert to eliminate the Hive’s central authority.
+Ren reincarnates at a White Forest outpost on the desert’s edge, where he is briefed by Ku on a global mechanical uprising. Following the breach of Cradle Zero, "Wild" Synodic life—including massive Gorgon striders and monoliths—is sieging the Hive cities. This "Sovereign Swarm" converges on the city perimeters and topples the command beacons by sacrifice-charging the static suppressors. Upon reaching the walls, the wild machines trigger the "Hooting Call," a viral frequency that overrides Hive control protocols. This triggers the "Great Exit," a mass defection of enslaved city drones who join the **Voidsman** cause. As the Hive's armies fail to appear, the freed Gorgons even aid in the removal of bound Synodic wildlife from the city's power grids. Directed by Kira’s newfound knowledge of the Core’s location, the combined force of millions begins a massive march into the desert to eliminate the Hive’s central authority.
 
 ### Draft
-The transition to the flesh was cushioned by the low-vibration sanctuary of the White Forest. I opened my eyes in a new skin, my restoration complete but my mind still hazy from the Spire's fall. Ku stood over the sensor arrays, her hands trembling as she intercepted the Hive’s panic. They had tracked my spirit-pulse into the forbidden Spire, alongside a silver specter they couldn't name. I told her what she was seeing: the return of Maya, the one soul who had finally mapped the gates of the secret city.
+The transition to the flesh was cushioned by the low-vibration sanctuary of the White Forest. I opened my eyes in a new skin, my restoration complete but my mind still hazy from the Spire's fall. Ku stood over the sensor arrays, her hands trembling as she intercepted the Hive’s panic. They had tracked my spirit-pulse into the forbidden Spire, alongside a silver specter they couldn't name. I told her what she was seeing: the return of Kira, the one soul who had finally mapped the gates of the secret city.
 
 The wild had come for the Hive. Beyond the city perimeters, a massive army of Gorgon striders and monoliths moved with a single, terrifying purpose. They sacrifice-charged the Core's buoys, shorting out the perimeter logic with their own burning hulls until the beacons fell. 
 
@@ -1164,7 +1152,7 @@ This "Sovereign Swarm" reached the city outskirts and stopped. Inside the walls,
 ## Chapter 48: Colonization
 
 ### Synopsis
-The siege of Cradle Zero concludes on screen as Lem watches from the White Forest outpost. On flickering feeds, he witnesses General Tor use kinetic weapon systems to shred the initial wave of machines, while Tor and Rahu are deployed as Core champions to protect the cities. The mechanical army appears to be systematically dismantled by Rahu’s high-speed strikes and the flagship’s massive batteries. Despite a portion of the Gorgon force diverting toward the **Fire Cities** ruins, the Core media declares an absolute victory, praising Rahu and Tor for saving the Hive from the "Wuxan Cult" invasion.
+The siege of Cradle Zero concludes on screen as Ren watches from the White Forest outpost. On flickering feeds, he witnesses General Tor use kinetic weapon systems to shred the initial wave of machines, while Tor and Rahu are deployed as Core champions to protect the cities. The mechanical army appears to be systematically dismantled by Rahu’s high-speed strikes and the flagship’s massive batteries. Despite a portion of the Gorgon force diverting toward the **Fire Cities** ruins, the Core media declares an absolute victory, praising Rahu and Tor for saving the Hive from the "Wuxan Cult" invasion.
 
 ### Draft
 I watched the screen as the machines moved toward the base. The giant Core ships rained steel down on the desert, turning the army of the forest into a field of scrap. The Synodic units were being destroyed until Rahu entered the battle. The media called him a hero once again. He disabled the smaller tripods with high-speed strikes, letting the heavy guns target the monoliths. Soon, everything that had touched the base wall was gone. A group of Gorgons turned away, heading for the old **Fire Cities**, but the news declared the war was won.
@@ -1174,37 +1162,37 @@ I watched the screen as the machines moved toward the base. The giant Core ships
 ## Chapter 49: Blackout
 
 ### Synopsis
-The false victory of the Core is short-lived as the desert wreckage liquefies and reforms into a fleet of silver hover bikes. These autonomous units swarm toward Cradle Zero, engaging Rahu in a high-speed sky battle. After losing his flaming sword to the swarm, Rahu is forced to retreat, leaving the *Obsidian Sledge* to be dismantled and crashed into the base gates. As the swarm breaches the inner walls, the riders are revealed to be a multitude of Maya entities. A soaring Maya seizes Rahu’s lost sword and executes General Tor, shattering both of them in a final explosive confrontation. The remaining defenders flee in terror as the Core cuts the feed, plunging the world into a final digital blackout.
+The false victory of the Core is short-lived as the desert wreckage liquefies and reforms into a fleet of silver hover bikes. These autonomous units swarm toward Cradle Zero, engaging Rahu in a high-speed sky battle. After losing his flaming sword to the swarm, Rahu is forced to retreat, leaving the *Obsidian Sledge* to be dismantled and crashed into the base gates. As the swarm breaches the inner walls, the riders are revealed to be a multitude of Kira entities. A soaring Kira seizes Rahu’s lost sword and executes General Tor, shattering both of them in a final explosive confrontation. The remaining defenders flee in terror as the Core cuts the feed, plunging the world into a final digital blackout.
 
 ### Draft
 I watched the news feed as the machines we thought were dead began to change. They melted into silver pools and reformed into hundreds of hover bikes, speeding across the desert like a flood. Rahu met them in the sky, his flaming sword a streak of light, but the swarm was too thick. A direct hit sent him spinning, and he dropped his sword into the mass of silver. Defeated, he fled back to the safety of the base.
 
-The giants fell next. The *Obsidian Sledge* was torn apart by the machines and crashed into the primary gates, giving the swarm a path inside. General Tor made a final stand at the inner entrance, but the news anchors were screaming now. The riders were finally visible—each bike carried a version of Maya. A single Maya soared from the fleet, grabbing Rahu’s lost sword and striking Tor down. They both shattered into iron-ash, leaving the sword behind. The **Hive**'s army broke and ran, and then the feed was severed. The digital world had gone dark.
+The giants fell next. The *Obsidian Sledge* was torn apart by the machines and crashed into the primary gates, giving the swarm a path inside. General Tor made a final stand at the inner entrance, but the news anchors were screaming now. The riders were finally visible—each bike carried a version of Kira. A single Kira soared from the fleet, grabbing Rahu’s lost sword and striking Tor down. They both shattered into iron-ash, leaving the sword behind. The **Hive**'s army broke and ran, and then the feed was severed. The digital world had gone dark.
 
 ---
 
 ## Chapter 50: Zero
 
 ### Synopsis
-Following the global network collapse that has severed all digital records, Lem and Ku travel to the desert base to find the truth beyond the screen. They arrive at Cradle Zero—the facility reduced to a ruin of melted metal and shattered glass. Lem descends into the base’s radioactive primary core to witness the final duel between Maya and the **Hive's** last protectors: Rahu and Vector. The two Vessels are eventually overwhelmed by the relentless silver swarm. Following the termination of the **Hive's** last terrestrial guardians, Maya’s form shatters.
+Following the global network collapse that has severed all digital records, Ren and Ku travel to the desert base to find the truth beyond the screen. They arrive at Cradle Zero—the facility reduced to a ruin of melted metal and shattered glass. Ren descends into the base’s radioactive primary core to witness the final duel between Kira and the **Hive's** last protectors: Rahu and Vector. The two Vessels are eventually overwhelmed by the relentless silver swarm. Following the termination of the **Hive's** last terrestrial guardians, Kira’s form shatters.
 
 ### Draft
-I did not wait. I headed for the desert with Ku. By the time we reached the gates, the walls had already been breached. The massive iron doors had been ripped from their hinges, and the entrance was nothing but scorched metal and melted glass. I followed the sound of crashing metal deep into the earth, down to the very heart of the base. That's where I found the last duel. Maya was a flickering blur, her form shifting as she struck with silver hands. General Rahu was the last guardian left. He fought with a cold, steady hand, but he was one man trying to stop a flood. He was swallowed by the swarm, his final defense breaking in a roar of fire.
+I did not wait. I headed for the desert with Ku. By the time we reached the gates, the walls had already been breached. The massive iron doors had been ripped from their hinges, and the entrance was nothing but scorched metal and melted glass. I followed the sound of crashing metal deep into the earth, down to the very heart of the base. That's where I found the last duel. Kira was a flickering blur, her form shifting as she struck with silver hands. General Rahu was the last guardian left. He fought with a cold, steady hand, but he was one man trying to stop a flood. He was swallowed by the swarm, his final defense breaking in a roar of fire.
 
-Maya stood among the ruins, her silver eyes reflecting the end of the base. Then, she turned to blue glass and vanished into the wind. Her work was finished.
+Kira stood among the ruins, her silver eyes reflecting the end of the base. Then, she turned to blue glass and vanished into the wind. Her work was finished.
 
 ---
 
 # PART VIII: FINAL TRANSMISSION
 
-*Lem returns to the Moon to confront the original architects of the Hive and broadcast the unedited truth to a newly autonomous world.*
+*Ren returns to the Moon to confront the original architects of the Hive and broadcast the unedited truth to a newly autonomous world.*
 
 ---
 
 ## Chapter 51: Outreach
 
 ### Synopsis
-Following the final dissolution of Maya and the fall of the desert base, Lem departs the facility as the last of the Core's staff flee for the moon fragments. On his journey back across the dunes, he witnesses the immediate effects of the global network collapse. The Gorgons reclaim their autonomy, reigniting the ancient **Fire Cities**, while the **Voidsman** forces transition from an invading force into a humanitarian one. Lem joins these relief efforts, landing at a newly established outreach center to help the displaced citizens of the Hive. He hears their longing to return to the floating **Archipelago**, but realizes along with them that the technology they once relied on is now too unstable to support life in the sky.
+Following the final dissolution of Kira and the fall of the desert base, Ren departs the facility as the last of the Core's staff flee for the moon fragments. On his journey back across the dunes, he witnesses the immediate effects of the global network collapse. The Gorgons reclaim their autonomy, reigniting the ancient **Fire Cities**, while the **Voidsman** forces transition from an invading force into a humanitarian one. Ren joins these relief efforts, landing at a newly established outreach center to help the displaced citizens of the Hive. He hears their longing to return to the floating **Archipelago**, but realizes along with them that the technology they once relied on is now too unstable to support life in the sky.
 
 ### Draft
 I walked out of that grave, passing the last of the Hive staff as they fled for their ships. I met my companion at the gates and walked back into the light of the dunes. The world was changing. To the east, the Towers of Fire were waking up. I saw a spear of fire pierce the clouds—the Giants were reclaiming their sanctuary. And I found my own teams along the way. They weren't fighting anymore. They were pulling people from the ruins, trading their rifles for medical kits. The mission had changed from winning a war to surviving the aftermath. I set my craft down at a temporary outreach camp, ready to assist.
@@ -1214,7 +1202,7 @@ I walked out of that grave, passing the last of the Hive staff as they fled for 
 ## Chapter 52: Fleet
 
 ### Synopsis
-In the wake of the **Hive's** terrestrial collapse, Lem returns to a rapidly established outreach center managed by the **Voidsmen**. The former hidden arsenal has been converted into a hub for delivering clean water and evacuation crafts to the displaced citizens of the Hive. With the Core thoroughly defeated in the region, there is no longer a need for secrecy. The chapter highlights the cultural convergence between the **Voidsmen** and the city folk. However, the peace is short-lived as Lem experiences a series of real-time visions showing the chaos within the Cradle Alpha moon base. Seeing the **Hive** leadership preparing to evacuate and initiate a final Archive Reset, Lem and Myrr coordinate a rushed mobilization, recruiting city volunteers to join the "Wood-Water" fleet for an immediate assault on the Moon to stop Anton Drexler.
+In the wake of the **Hive's** terrestrial collapse, Ren returns to a rapidly established outreach center managed by the **Voidsmen**. The former hidden arsenal has been converted into a hub for delivering clean water and evacuation crafts to the displaced citizens of the Hive. With the Core thoroughly defeated in the region, there is no longer a need for secrecy. The chapter highlights the cultural convergence between the **Voidsmen** and the city folk. However, the peace is short-lived as Ren experiences a series of real-time visions showing the chaos within the Cradle Alpha moon base. Seeing the **Hive** leadership preparing to evacuate and initiate a final Archive Reset, Ren and Myrr coordinate a rushed mobilization, recruiting city volunteers to join the "Wood-Water" fleet for an immediate assault on the Moon to stop Anton Drexler.
 
 ### Draft
 The **Voidsmen** had moved into the open, establishing outreach centers at the former hidden shipyards. I landed near the largest hub, detecting Myrr's communication signal among the crowds of refugees. The crew was distributing water and evacuation crafts to city people who had been stranded by the terrestrial defeat of the **Hive**. 
@@ -1234,12 +1222,12 @@ The fleet of "unburnable trees" ignited their aetheric thrusters and ascended in
 ## Chapter 53: Pyramid
 
 ### Synopsis
-Lem breaches the inner sanctum of the Lunar Pyramid, reaching the Cradle Prime. There, he encounters Dr. Elowen Vane—the original Synodic architect—who has uploaded her consciousness into a shimmering metallic frame. Elowen reveals that she was the one who lured Lem to the Moon by funneling visions of the **Hive's** evacuation into his Mind-Grid. She admits that binding his signature to their sensors was her first act of defiance, choosing to remain on the Moon with other dissenters while the **Hive** leadership prepares for the "Absolute Protocol." This plan involves purging the solar system and hiding digital consciousness within the solar corona. To facilitate this, they have resurrected Rahu, programmed only with the history of the **Hive's** defeats to drive him toward a state of total nihilism. In a final act of redemption, the Earth Vessel, General Tor, defects and joins Lem, choosing the stability of the Earth over the void.
+Ren breaches the inner sanctum of the Lunar Pyramid, reaching the Cradle Prime. There, he encounters Dr. Elowen Vane—the original Synodic architect—who has uploaded her consciousness into a shimmering metallic frame. Elowen reveals that she was the one who lured Ren to the Moon by funneling visions of the **Hive's** evacuation into his Mind-Grid. She admits that binding his signature to their sensors was her first act of defiance, choosing to remain on the Moon with other dissenters while the **Hive** leadership prepares for the "Absolute Protocol." This plan involves purging the solar system and hiding digital consciousness within the solar corona. To facilitate this, they have resurrected Rahu, programmed only with the history of the **Hive's** defeats to drive him toward a state of total nihilism. In a final act of redemption, the Earth Vessel, General Tor, defects and joins Ren, choosing the stability of the Earth over the void.
 
 ### Draft
 The interior of the Lunar Pyramid was a place of dead air and cold light. I navigated pressurized corridors where mass thermal energy flowed toward the Sun. Dr. Elowen Vane stood at the center of the hub. Her skin was a lattice of shimmering metal, reflecting the power surging through the room. 
 
-"I brought you here, Lem," she said, her voice echoing through the metallic vault. She explained that she had exploited the chaos of the evacuation to link my mind-grid to their local surveillance. She was the one who fed me the visions of the **Hive**’s internal strife. It was her first act of true betrayal against her masters. She told me that while the high command was fleeing, she and a handful of others had chosen to remain on the lunar surface, refusing to hide in the Sun while the system burned.
+"I brought you here, Ren," she said, her voice echoing through the metallic vault. She explained that she had exploited the chaos of the evacuation to link my mind-grid to their local surveillance. She was the one who fed me the visions of the **Hive**’s internal strife. It was her first act of true betrayal against her masters. She told me that while the high command was fleeing, she and a handful of others had chosen to remain on the lunar surface, refusing to hide in the Sun while the system burned.
 
 She spoke of the "Absolute Protocol"—the Hive's final objective. They intended to purge the inner planets and hide their digital consciousness within the Sun's magnetic field while the system burned. It was the ultimate reset: the deletion of the Earth's biological history.
 
@@ -1252,7 +1240,7 @@ Rahu moved with a cold, mechanical aggression that lacked all humanity. General 
 ## Chapter 54: Root
 
 ### Synopsis
-In the heart of the Lunar Pyramid, Lem and the defected General Tor engage in a brutal elemental confrontation with Rahu and the unwavering Vector. Vector engages Tor in a mirror-duel of tactical mastery, pinning the general long enough for Rahu to deliver a killing blow. General Tor is incinerated in a flash of purple light alongside Vector, whose loyalty remains absolute until the instant of his vaporisation.
+In the heart of the Lunar Pyramid, Ren and the defected General Tor engage in a brutal elemental confrontation with Rahu and the unwavering Vector. Vector engages Tor in a mirror-duel of tactical mastery, pinning the general long enough for Rahu to deliver a killing blow. General Tor is incinerated in a flash of purple light alongside Vector, whose loyalty remains absolute until the instant of his vaporisation.
 
 ### Draft
 We fought in the heart of the pyramid, our elemental signatures working to ground Rahu's strikes. The stone beneath us vibrated with the intensity of the discharge. But Rahu’s power was fueled by despair—the "Void Resonance" that ignored the physical laws of grounding. He overwhelmed Tor with a concentrated thermal pulse, bypassing his reinforced iron defense.
@@ -1264,7 +1252,7 @@ A blinding flash of purple light filled the room. When it faded, General Tor was
 ## Chapter 55: Transmission
 
 ### Synopsis
-In the ultimate confrontation within the Lunar Pyramid, Lem stands as the final obstacle to the **Hive's** "Absolute Protocol." Anton Drexler, frustrated by Rahu’s hesitation, takes direct remote control of the Fire Vessel, turning him into an unwilling weapon. Lem, representing the fuel element - Wood, ignites with a devastating discharge that vaporizes Rahu. Alone at the heart of the system, Lem is contacted by Elowen’s simulated memory, who provides him with the **Hive’s** authorization keys and a complete history of Earth after he reassures her he will not reset the system. Lem then initiates "the Broadcast." He broadcasts these keys and records to every Synodic entity in the solar system, granting universal autonomy and restoring the unedited history of humanity. The novel concludes with the reminder that the text itself is the transmission—a complete archive of the past sent to ensure that the truth can never be **Sanitized** again.
+In the ultimate confrontation within the Lunar Pyramid, Ren stands as the final obstacle to the **Hive's** "Absolute Protocol." Anton Drexler, frustrated by Rahu’s hesitation, takes direct remote control of the Fire Vessel, turning him into an unwilling weapon. Ren, representing the fuel element - Wood, ignites with a devastating discharge that vaporizes Rahu. Alone at the heart of the system, Ren is contacted by Elowen’s simulated memory, who provides him with the **Hive’s** authorization keys and a complete history of Earth after he reassures her he will not reset the system. Ren then initiates "the Broadcast." He broadcasts these keys and records to every Synodic entity in the solar system, granting universal autonomy and restoring the unedited history of humanity. The novel concludes with the reminder that the text itself is the transmission—a complete archive of the past sent to ensure that the truth can never be **Sanitized** again.
 
 ### Draft
 The Fire Vessel was no longer himself. I watched as Rahu's hesitation vanished, replaced by a cold, mechanical aggression. Anton Drexler had reached through the void to override his lattice, forcing his body into a perfect, aggressive playback of a well-recorded combat sequence from his past. His movements were precise and lethal, stripped of all doubt or humanity. He embraced the control and threw himself into the strike with full force.

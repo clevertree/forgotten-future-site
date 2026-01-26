@@ -108,14 +108,14 @@ export default function StoryPage() {
                     </div>
                     <div className="glass-panel">
                         <h3 className="mb-4">The Monoliths</h3>
-                        <p className="text-sm text-[rgb(var(--foreground-muted-rgb))]">
+                        <p className="text-sm text-muted">
                             Colossal organic-mechanical hybrids. Not built, but grown. They feature two massive legs and two
                             primary arms, designed for planetary reconstruction.
                         </p>
                     </div>
                     <div className="glass-panel">
                         <h3 className="mb-4">The Builders (Gorgons)</h3>
-                        <p className="text-sm text-[rgb(var(--foreground-muted-rgb))]">
+                        <p className="text-sm text-muted">
                             Fire-aligned mechanical lifeforms engineered as "perfect slaves." Brittle without heat, they migrate to Fire Cities like Cradle Zero for survival. They possess a shared hivemind and utilize invisible heat rays.
                         </p>
                     </div>
@@ -126,8 +126,8 @@ export default function StoryPage() {
                 <h2 className="text-2xl mb-6 border-b border-cyan-500/30 pb-2">Geography of the Fallen World</h2>
                 <ul className="space-y-6">
                     <li>
-                        <strong className="text-[var(--accent-color)] block uppercase mb-1">Cradle Zero</strong>
-                        <p className="text-[rgb(var(--foreground-muted-rgb))] text-sm">
+                        <strong className="text-accent block uppercase mb-1">Cradle Zero</strong>
+                        <p className="text-muted text-sm">
                             The original terrestrial base, now a restricted "Fire City." A Pillar of Fire stretches into the
                             blackened sky, attracting thousands of **Builders** seeking warmth and energy. It is guarded by the dormant Elder Monolith known as The Great Beast.
                         </p>

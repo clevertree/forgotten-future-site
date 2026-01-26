@@ -1,6 +1,6 @@
 {
   "name": "forgotten-future-site",
-  "version": "0.11.67",
+  "version": "0.11.68",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,6 +26,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.0",
+    "remark-gfm": "^4.0.1",
     "sass": "^1.68.0",
     "sharp": "^0.34.5"
   },

@@ -38,7 +38,7 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({
                             Chapter {chapter.id}: {chapter.title}
                         </h3>
                         {chapter.timestamp && (
-                            <div className="text-[10px] text-[rgb(var(--foreground-muted-rgb))] uppercase tracking-widest mt-1">
+                            <div className="text-[10px] text-muted uppercase tracking-widest mt-1">
                                 EST. {chapter.timestamp}
                             </div>
                         )}
@@ -64,7 +64,7 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({
                         )}
                     </div>
                 </div>
-                <div className="prose dark:prose-invert prose-sm max-w-none text-[rgb(var(--foreground-secondary-rgb))] leading-relaxed italic">
+                <div className="prose dark:prose-invert prose-sm max-w-none text-secondary leading-relaxed italic">
                     {(chapter.summary || chapter.content).split('\n').map((para, i) => (
                         para.trim() && <p key={i}>{para}</p>
                     ))}

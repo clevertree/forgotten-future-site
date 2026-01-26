@@ -1,3 +1,4 @@
+d9549fe feat: standardize UI with semantic theme colors, opaque header and rename characters
 3c8a72f Update public manuscripts from story sync
 f08fc50 Sync manuscripts: Mineral rejection and LHC rumor updates
 2d6ba91 Sync manuscripts from ff-story

@@ -190,7 +190,7 @@ export default function ScrollNavigation() {
                 } max-md:left-1/2 max-md:-translate-x-1/2 max-md:right-auto max-md:flex-row max-md:bottom-8`}
         >
             {isFullText && currentChapter !== null && (
-                <div className="flex items-center gap-1 bg-[rgb(var(--background-start-rgb))]/90 backdrop-blur-xl border border-cyan-500/20 p-1 rounded-full shadow-lg shadow-accent/15 transition-all">
+                <div className="flex items-center gap-1 bg-background/90 backdrop-blur-xl border border-cyan-500/20 p-1 rounded-full shadow-lg shadow-accent/15 transition-all">
                     <button
                         onClick={() => scrollToChapter(Math.max(1, currentChapter - 1))}
                         className="p-2 hover:bg-cyan-500/20 text-cyan-400 rounded-full transition-colors active:scale-90 disabled:opacity-30"

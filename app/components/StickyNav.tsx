@@ -16,11 +16,11 @@ interface StickyNavProps {
     mobileLabel?: string;
 }
 
-export const StickyNav: React.FC<StickyNavProps> = ({ 
-    sections, 
-    activeId, 
-    onSectionClick, 
-    className = '', 
+export const StickyNav: React.FC<StickyNavProps> = ({
+    sections,
+    activeId,
+    onSectionClick,
+    className = '',
     top = 'top-20 md:top-28',
     mobileLabel = "Jump to Section..."
 }) => {
@@ -36,17 +36,17 @@ export const StickyNav: React.FC<StickyNavProps> = ({
     };
 
     return (
-        <div className={`sticky ${top} z-10 bg-[rgb(var(--background-start-rgb))]/80 backdrop-blur-sm py-4 border-b border-[rgb(var(--foreground-rgb))]/10 no-print mb-6 md:mb-12 ${className}`}>
+        <div className={`sticky ${top} z-10 bg-background/80 backdrop-blur-sm py-4 border-b border-foreground/10 no-print mb-6 md:mb-12 ${className}`}>
             {/* Mobile Dropdown */}
             <div className="md:hidden px-4 relative">
-                <select 
+                <select
                     onChange={(e) => handleClick(e.target.value)}
                     value={activeId || ""}
-                    className="w-full bg-[rgb(var(--background-start-rgb))]/50 border border-cyan-500/30 text-cyan-500 text-[10px] font-bold uppercase tracking-widest px-4 py-3 rounded outline-none focus:border-cyan-500 transition-colors appearance-none cursor-pointer"
+                    className="w-full bg-background/50 border border-cyan-500/30 text-cyan-500 text-[10px] font-bold uppercase tracking-widest px-4 py-3 rounded outline-none focus:border-cyan-500 transition-colors appearance-none cursor-pointer"
                 >
                     <option value="" disabled>{mobileLabel}</option>
                     {sections.map((section) => (
-                        <option key={section.id} value={section.id} className="bg-[rgb(var(--background-start-rgb))]">
+                        <option key={section.id} value={section.id} className="bg-background">
                             {section.title}
                         </option>
                     ))}
@@ -63,9 +63,8 @@ export const StickyNav: React.FC<StickyNavProps> = ({
                     <button
                         key={section.id}
                         onClick={() => handleClick(section.id)}
-                        className={`px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95 ${
-                            activeId === section.id ? 'bg-cyan-500/10 border-cyan-500' : ''
-                        }`}
+                        className={`px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest border border-cyan-500/30 text-cyan-500 hover:bg-cyan-500/10 transition-all active:scale-95 ${activeId === section.id ? 'bg-cyan-500/10 border-cyan-500' : ''
+                            }`}
                     >
                         {section.title}
                     </button>

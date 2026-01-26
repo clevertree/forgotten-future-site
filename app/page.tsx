@@ -35,10 +35,10 @@ export default function Home() {
     ];
 
     return (
-        <main className="min-h-screen selection:bg-cyan-500/30">
+        <main className="min-h-screen selection:bg-accent/30">
             <PwaRedirect />
             {/* Hero Section */}
-            <section className="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-[rgb(var(--foreground-rgb))]/10">
+            <section className="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-foreground/10">
                 <HeroSlideshow images={heroImages} videoSrc={prefixPath('/media/bg_glitch.mp4')} />
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
