@@ -1,3 +1,5 @@
+cd4b78e update git history and manuscripts
+1fdc640 refactor project browser into components and custom hook
 efb4e6b Update characters and locations pages with additional images and sync media subdirectories
 b9c82e4 Performance optimizations, client-side routing, and caching fixes
 beec7ef feat: custom mobile navigation dropdowns and themed header background

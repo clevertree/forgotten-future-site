@@ -1,11 +1,21 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useFileBrowser } from '@/lib/hooks/useFileBrowser';
 import { Sidebar } from './Sidebar';
 import { Breadcrumbs } from './Breadcrumbs';
 import { FileGrid } from './FileGrid';
 import { ContentViewer } from './ContentViewer';
+import { SlideshowControls } from './SlideshowControls';
+import { SlideshowPlayer, SlideshowConfig } from './SlideshowPlayer';
+import { getAllImages } from '@/lib/browserUtils';
+
+const DEFAULT_CONFIG: SlideshowConfig = {
+    recursive: true,
+    random: false,
+    animate: true,
+    interval: 8,
+};
 
 export default function ProjectBrowser() {
     const {
@@ -31,6 +41,37 @@ export default function ProjectBrowser() {
         total
     } = useFileBrowser();
 
+    const [isSlideshowActive, setIsSlideshowActive] = useState(false);
+    const [config, setConfig] = useState<SlideshowConfig>(DEFAULT_CONFIG);
+
+    // Persist and load config
+    useEffect(() => {
+        const saved = localStorage.getItem('ff-slideshow-config');
+        if (saved) {
+            try {
+                setConfig(JSON.parse(saved));
+            } catch (e) {
+                console.error('Failed to load slideshow config', e);
+            }
+        }
+    }, []);
+
+    const updateConfig = (newConfig: SlideshowConfig) => {
+        setConfig(newConfig);
+        localStorage.setItem('ff-slideshow-config', JSON.stringify(newConfig));
+    };
+
+    // Auto-pause slideshow on navigation
+    useEffect(() => {
+        setIsSlideshowActive(false);
+    }, [slug]);
+
+    const slideshowImages = useMemo(() => {
+        if (!index) return [];
+        // If we are at root, collect all. If deep, collect from currentLevel.
+        return getAllImages(currentLevel || index, browsePath, config.recursive);
+    }, [index, currentLevel, browsePath, config.recursive]);
+
     if (loading && !index) {
         return <div className="container mx-auto p-12 text-center text-slate-500 animate-pulse">Initializing Neural Link...</div>;
     }
@@ -50,7 +91,18 @@ export default function ProjectBrowser() {
             />
 
             <main className="flex-1 p-6 md:p-12 overflow-x-hidden">
-                <Breadcrumbs slug={slug} />
+                <div className="flex items-start justify-between gap-4 mb-8">
+                    <div className="min-w-0 flex-1">
+                        <Breadcrumbs slug={slug} />
+                    </div>
+                    <div className="shrink-0 pt-0.5">
+                        <SlideshowControls
+                            config={config}
+                            onChangeConfig={updateConfig}
+                            onStart={() => setIsSlideshowActive(true)}
+                        />
+                    </div>
+                </div>
 
                 {loading ? (
                     <div className="text-slate-500 dark:text-slate-400 animate-pulse">Decrypting vessel...</div>
@@ -76,6 +128,15 @@ export default function ProjectBrowser() {
                     />
                 )}
             </main>
+
+            {isSlideshowActive && (
+                <SlideshowPlayer
+                    images={slideshowImages}
+                    onClose={() => setIsSlideshowActive(false)}
+                    config={config}
+                    onChangeConfig={updateConfig}
+                />
+            )}
         </div>
     );
 }
