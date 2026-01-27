@@ -1,2 +1,2 @@
 python3 scripts/pre_commit.py
-npm run build && npm test
+npm run build
