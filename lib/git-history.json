@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.94",
+    "version": "v0.13.96",
     "commits": [
+      {
+        "sha": "c8633bc",
+        "message": "regenerate index.json and manuscripts",
+        "date": "2026-01-27T14:49:38.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/c8633bc"
+      },
       {
         "sha": "f54d480",
         "message": "organize documentation into docs folder",
@@ -14,12 +20,6 @@
         "message": "Organize media subdirectories and update world-building",
         "date": "2026-01-27T13:51:31.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/0e6edcb"
-      },
-      {
-        "sha": "4fb9a2d",
-        "message": "add titles to files",
-        "date": "2026-01-26T12:33:33.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/4fb9a2d"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.74",
+    "version": "v0.11.75",
     "commits": [
+      {
+        "sha": "7d474a4",
+        "message": "implement query-string fallback for project browser to support static export",
+        "date": "2026-01-27T14:43:09.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/7d474a4"
+      },
       {
         "sha": "0c68ce4",
         "message": "add fullscreen toggle to slideshow and fix z-index layering",
@@ -64,12 +70,6 @@
         "message": "update git history and manuscripts",
         "date": "2026-01-27T14:08:15.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/cd4b78e"
-      },
-      {
-        "sha": "1fdc640",
-        "message": "refactor project browser into components and custom hook",
-        "date": "2026-01-27T14:07:59.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/1fdc640"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

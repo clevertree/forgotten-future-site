@@ -31,6 +31,7 @@ export function useFileBrowser() {
             try {
                 if (!index) setLoading(true);
 
+                setError(null);
                 setImageLoaded(null);
                 setVideoLoaded(null);
                 setContent(null);
@@ -59,13 +60,17 @@ export function useFileBrowser() {
 
                     if (targetIsFile) {
                         setLoading(true);
-                        if (isImage(currentPath)) {
-                            setImageLoaded(`${STORY_REPO_BASE}${currentPath}`);
-                        } else if (isVideo(currentPath)) {
-                            setVideoLoaded(`${STORY_REPO_BASE}${currentPath}`);
-                        } else {
-                            const fileContent = await getStoryFile(currentPath);
-                            setContent(fileContent);
+                        try {
+                            if (isImage(currentPath)) {
+                                setImageLoaded(`${STORY_REPO_BASE}${currentPath}`);
+                            } else if (isVideo(currentPath)) {
+                                setVideoLoaded(`${STORY_REPO_BASE}${currentPath}`);
+                            } else {
+                                const fileContent = await getStoryFile(currentPath);
+                                setContent(fileContent);
+                            }
+                        } catch (e) {
+                            setError(`Failed to load file: ${currentPath}. It may have been relocated.`);
                         }
                     } else if (ptr) {
                         const possiblePages = ['page.md', 'README.md', 'index.md'];
@@ -73,20 +78,30 @@ export function useFileBrowser() {
                         for (const page of possiblePages) {
                             if (ptr[page] !== undefined && !isDir(ptr[page])) {
                                 setLoading(true);
-                                const fileContent = await getStoryFile(`${currentPath}/${page}`);
-                                setContent(fileContent);
-                                foundPage = true;
-                                break;
+                                try {
+                                    const fileContent = await getStoryFile(`${currentPath}/${page}`);
+                                    setContent(fileContent);
+                                    foundPage = true;
+                                    break;
+                                } catch (e) {
+                                    // Silently continue to next possible page
+                                }
                             }
                         }
                         if (!foundPage) setContent(null);
+                    } else {
+                        setError(`Resource not found: ${currentPath}`);
                     }
                 } else {
                     setContent(null);
                 }
             } catch (err) {
                 console.error(err);
-                setError('Failed to load storage. Is GitHub up?');
+                if (!index) {
+                    setError('Failed to load storage index. Is GitHub up?');
+                } else {
+                    setError('An unexpected error occurred while browsing.');
+                }
             } finally {
                 setLoading(false);
             }

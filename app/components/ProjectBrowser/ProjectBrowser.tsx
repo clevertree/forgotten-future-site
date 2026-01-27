@@ -8,7 +8,8 @@ import { FileGrid } from './FileGrid';
 import { ContentViewer } from './ContentViewer';
 import { SlideshowControls } from './SlideshowControls';
 import { SlideshowPlayer, SlideshowConfig } from './SlideshowPlayer';
-import { getAllImages } from '@/lib/browserUtils';
+import { getAllImages, getBrowserLink } from '@/lib/browserUtils';
+import Link from 'next/link';
 
 const DEFAULT_CONFIG: SlideshowConfig = {
     recursive: true,
@@ -76,10 +77,6 @@ export default function ProjectBrowser() {
         return <div className="container mx-auto p-12 text-center text-slate-500 animate-pulse">Initializing Neural Link...</div>;
     }
 
-    if (error) {
-        return <div className="container mx-auto p-12 text-center text-red-500">{error}</div>;
-    }
-
     return (
         <div className="flex flex-col md:flex-row min-h-screen bg-slate-50/50 dark:bg-black/20">
             <Sidebar
@@ -104,7 +101,17 @@ export default function ProjectBrowser() {
                     </div>
                 </div>
 
-                {loading ? (
+                {error ? (
+                    <div className="container mx-auto p-12 text-center">
+                        <div className="text-red-500 mb-4 font-mono text-sm">{error}</div>
+                        <Link 
+                            href={getBrowserLink()}
+                            className="text-xs text-cyan-500 hover:underline"
+                        >
+                            Back to Root
+                        </Link>
+                    </div>
+                ) : loading ? (
                     <div className="text-slate-500 dark:text-slate-400 animate-pulse">Decrypting vessel...</div>
                 ) : (content || imageLoaded || videoLoaded) ? (
                     <ContentViewer

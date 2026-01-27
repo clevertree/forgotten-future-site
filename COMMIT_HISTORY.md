@@ -1,3 +1,4 @@
+0a875ba fix pre-commit by disabling cypress test and sync dashboard
 7d474a4 implement query-string fallback for project browser to support static export
 0c68ce4 add fullscreen toggle to slideshow and fix z-index layering
 cd4b78e update git history and manuscripts
