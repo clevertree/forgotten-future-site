@@ -4,6 +4,12 @@
     "version": "v0.13.94",
     "commits": [
       {
+        "sha": "f54d480",
+        "message": "organize documentation into docs folder",
+        "date": "2026-01-27T14:08:03.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/f54d480"
+      },
+      {
         "sha": "0e6edcb",
         "message": "Organize media subdirectories and update world-building",
         "date": "2026-01-27T13:51:31.000Z",
@@ -14,12 +20,6 @@
         "message": "add titles to files",
         "date": "2026-01-26T12:33:33.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/4fb9a2d"
-      },
-      {
-        "sha": "a0e0046",
-        "message": "Refactor: update indexing script and regenerate index.json with counts",
-        "date": "2026-01-26T12:13:42.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/a0e0046"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,25 +51,25 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.72",
+    "version": "v0.11.73",
     "commits": [
       {
-        "sha": "efb4e6b",
-        "message": "Update characters and locations pages with additional images and sync media subdirectories",
-        "date": "2026-01-27T13:52:39.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/efb4e6b"
+        "sha": "0c68ce4",
+        "message": "add fullscreen toggle to slideshow and fix z-index layering",
+        "date": "2026-01-27T14:31:10.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/0c68ce4"
       },
       {
-        "sha": "b9c82e4",
-        "message": "Performance optimizations, client-side routing, and caching fixes",
-        "date": "2026-01-26T14:59:45.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/b9c82e4"
+        "sha": "cd4b78e",
+        "message": "update git history and manuscripts",
+        "date": "2026-01-27T14:08:15.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/cd4b78e"
       },
       {
-        "sha": "beec7ef",
-        "message": "feat: custom mobile navigation dropdowns and themed header background",
-        "date": "2026-01-26T13:25:46.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/beec7ef"
+        "sha": "1fdc640",
+        "message": "refactor project browser into components and custom hook",
+        "date": "2026-01-27T14:07:59.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/1fdc640"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { getBrowserLink } from '@/lib/browserUtils';
 
 interface NavControlsProps {
     prev: string | null;
@@ -26,7 +27,7 @@ export const NavControls: React.FC<NavControlsProps> = ({
     return (
         <div className="flex items-center justify-between w-full max-w-4xl mb-6 bg-white/5 dark:bg-white/5 p-2 rounded-lg border border-slate-200 dark:border-white/5 shadow-sm overflow-hidden">
             <Link
-                href={`/browser/${prev}`}
+                href={getBrowserLink(prev)}
                 className="flex items-center gap-2 p-2 hover:bg-cyan-500/10 hover:text-cyan-500 rounded-lg transition-colors text-slate-400 group min-w-0 flex-1"
                 title={`Previous: ${prevName}`}
             >
@@ -41,7 +42,7 @@ export const NavControls: React.FC<NavControlsProps> = ({
             </div>
 
             <Link
-                href={`/browser/${next}`}
+                href={getBrowserLink(next)}
                 className="flex items-center gap-2 p-2 hover:bg-cyan-500/10 hover:text-cyan-500 rounded-lg transition-colors text-slate-400 group min-w-0 flex-1 justify-end text-right"
                 title={`Next: ${nextName}`}
             >

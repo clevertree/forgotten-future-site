@@ -1,12 +1,13 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import { STORY_REPO_BASE, getStoryIndex, getStoryFile, FileTree } from '@/lib/remoteFiles';
 import { isDir, isImage, isVideo, formatSlug } from '@/lib/browserUtils';
 
 export function useFileBrowser() {
     const params = useParams();
+    const searchParams = useSearchParams();
     const [index, setIndex] = useState<FileTree | null>(null);
     const [content, setContent] = useState<string | null>(null);
     const [metadata, setMetadata] = useState<any>(null);
@@ -15,7 +16,13 @@ export function useFileBrowser() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    const slug = useMemo(() => formatSlug(params.slug), [params.slug]);
+    const slug = useMemo(() => {
+        if (params.slug) return formatSlug(params.slug);
+        const pathParam = searchParams.get('path');
+        if (pathParam) return pathParam.split('/').filter(Boolean);
+        return [];
+    }, [params.slug, searchParams]);
+
     const currentPath = useMemo(() => slug.join('/'), [slug]);
 
     useEffect(() => {

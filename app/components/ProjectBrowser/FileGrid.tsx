@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Folder, File } from 'lucide-react';
 import { STORY_REPO_BASE } from '@/lib/remoteFiles';
-import { isDir, isImage, isVideo, getImageUrl } from '@/lib/browserUtils';
+import { isDir, isImage, isVideo, getImageUrl, getBrowserLink } from '@/lib/browserUtils';
 
 interface FileGridProps {
     currentLevel: any;
@@ -45,7 +45,7 @@ export const FileGrid: React.FC<FileGridProps> = ({ currentLevel, browsePath }) 
                 return (
                     <Link
                         key={name}
-                        href={`/browser/${path}`}
+                        href={getBrowserLink(path)}
                         className="group p-4 rounded-xl border border-slate-200 dark:border-white/5 bg-white dark:bg-white/[0.02] hover:bg-slate-50 dark:hover:bg-white/[0.05] hover:border-cyan-500/30 transition-all flex flex-col gap-3 shadow-sm hover:shadow-md dark:shadow-none"
                     >
                         <div className="flex items-center justify-between gap-2 overflow-hidden">

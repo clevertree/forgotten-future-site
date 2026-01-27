@@ -10,6 +10,14 @@ export const formatSlug = (slug: string | string[] | undefined): string[] => {
     return Array.isArray(slug) ? slug : (slug ? [slug] : []);
 };
 
+export const getBrowserLink = (path: string = '') => {
+    const isStatic = process.env.NEXT_PUBLIC_IS_STATIC === 'true';
+    if (isStatic) {
+        return path ? `/browser/?path=${path}` : '/browser/';
+    }
+    return `/browser/${path}`;
+};
+
 /**
  * Recursively collects all image paths from a FileTree.
  */

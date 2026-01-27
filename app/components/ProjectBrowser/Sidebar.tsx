@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Folder, Home, Search, ChevronRight } from 'lucide-react';
 import { FileTree } from '@/lib/remoteFiles';
-import { isDir } from '@/lib/browserUtils';
+import { isDir, getBrowserLink } from '@/lib/browserUtils';
 
 interface SidebarProps {
     index: FileTree | null;
@@ -34,7 +34,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
 
             <div className="hidden md:flex md:flex-col space-y-1">
-                <Link href="/browser" className={`flex items-center gap-2 px-3 py-2 rounded transition-colors ${!browsePath ? 'bg-cyan-500/20 text-cyan-600 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'}`}>
+                <Link href={getBrowserLink()} className={`flex items-center gap-2 px-3 py-2 rounded transition-colors ${!browsePath ? 'bg-cyan-500/20 text-cyan-600 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'}`}>
                     <Home size={16} />
                     <span>Root</span>
                     <span className="ml-auto text-[10px] opacity-40">({index?._count || 0})</span>
@@ -48,7 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     return (
                         <Link
                             key={section}
-                            href={`/browser/${section}`}
+                            href={getBrowserLink(section)}
                             className={`flex items-center gap-2 px-3 py-2 rounded transition-colors ${active ? 'bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 font-bold' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/5'}`}
                         >
                             <Folder size={16} className={active ? 'text-cyan-600 dark:text-cyan-400' : 'text-slate-400 dark:text-slate-500'} />
@@ -83,7 +83,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                                 <div className="max-h-[60vh] overflow-y-auto py-2">
                                     <button
-                                        onClick={() => { router.push('/browser'); setIsSectionOpen(false); }}
+                                        onClick={() => { router.push(getBrowserLink()); setIsSectionOpen(false); }}
                                         className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${!browsePath ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
                                     >
                                         <span>Root Explorer</span>
@@ -97,7 +97,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                         return (
                                             <button
                                                 key={section}
-                                                onClick={() => { router.push(`/browser/${section}`); setIsSectionOpen(false); }}
+                                                onClick={() => { router.push(getBrowserLink(section)); setIsSectionOpen(false); }}
                                                 className={`w-full text-left px-4 py-3 text-sm hover:bg-cyan-500/10 transition-colors flex items-center justify-between ${active ? 'text-cyan-600 dark:text-cyan-400 font-bold bg-cyan-500/5' : 'text-slate-600 dark:text-slate-400'}`}
                                             >
                                                 <span className="capitalize">{title || section.replace(/-/g, ' ')}</span>
@@ -130,7 +130,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-slate-900 border border-cyan-500/20 dark:border-white/10 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                                     <div className="max-h-[60vh] overflow-y-auto py-2">
                                         <button
-                                            onClick={() => { router.push(`/browser/${browsePathSegments.slice(0, -1).join('/')}`); setIsSubDirOpen(false); }}
+                                            onClick={() => { router.push(getBrowserLink(browsePathSegments.slice(0, -1).join('/'))); setIsSubDirOpen(false); }}
                                             className="w-full text-left px-4 py-3 text-sm text-slate-500 hover:bg-slate-100 dark:hover:bg-white/5 transition-colors"
                                         >
                                             ... Back to Parent
@@ -143,7 +143,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                             return (
                                                 <button
                                                     key={name}
-                                                    onClick={() => { router.push(`/browser/${path}`); setIsSubDirOpen(false); }}
+                                                    onClick={() => { router.push(getBrowserLink(path)); setIsSubDirOpen(false); }}
                                                     className="w-full text-left px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-cyan-500/10 transition-colors flex items-center justify-between"
                                                 >
                                                     <span className="truncate">{title || name.replace(/-/g, ' ')}</span>
@@ -172,7 +172,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             return (
                                 <Link
                                     key={name}
-                                    href={`/browser/${path}`}
+                                    href={getBrowserLink(path)}
                                     className={`flex items-center gap-2 px-3 py-1.5 rounded text-sm transition-colors ${active ? 'text-cyan-600 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/5'}`}
                                 >
                                     <ChevronRight size={12} className={active ? 'rotate-90' : ''} />
