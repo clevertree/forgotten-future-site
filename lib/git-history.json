@@ -1,8 +1,14 @@
 {
   "ff-story": {
     "name": "Story",
-    "version": "v0.13.93",
+    "version": "v0.13.94",
     "commits": [
+      {
+        "sha": "0e6edcb",
+        "message": "Organize media subdirectories and update world-building",
+        "date": "2026-01-27T13:51:31.000Z",
+        "url": "https://github.com/clevertree/ff-story/commit/0e6edcb"
+      },
       {
         "sha": "4fb9a2d",
         "message": "add titles to files",
@@ -14,12 +20,6 @@
         "message": "Refactor: update indexing script and regenerate index.json with counts",
         "date": "2026-01-26T12:13:42.000Z",
         "url": "https://github.com/clevertree/ff-story/commit/a0e0046"
-      },
-      {
-        "sha": "b5659aa",
-        "message": "chore: global character rename (Lem->Ren, Maya->Kira) and manuscript sync",
-        "date": "2026-01-25T19:15:22.000Z",
-        "url": "https://github.com/clevertree/ff-story/commit/b5659aa"
       }
     ],
     "repoUrl": "https://github.com/clevertree/ff-story/commits/main/"
@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.70",
+    "version": "v0.11.71",
     "commits": [
+      {
+        "sha": "b9c82e4",
+        "message": "Performance optimizations, client-side routing, and caching fixes",
+        "date": "2026-01-26T14:59:45.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/b9c82e4"
+      },
       {
         "sha": "beec7ef",
         "message": "feat: custom mobile navigation dropdowns and themed header background",
@@ -64,12 +70,6 @@
         "message": "style: use themed classes for mobile dropdowns",
         "date": "2026-01-26T13:17:31.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/457bdf7"
-      },
-      {
-        "sha": "741f151",
-        "message": "feat: consolidate mobile browser navigation into dropdowns",
-        "date": "2026-01-26T13:14:21.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/741f151"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"

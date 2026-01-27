@@ -1,3 +1,4 @@
+efb4e6b Update characters and locations pages with additional images and sync media subdirectories
 b9c82e4 Performance optimizations, client-side routing, and caching fixes
 beec7ef feat: custom mobile navigation dropdowns and themed header background
 457bdf7 style: use themed classes for mobile dropdowns
