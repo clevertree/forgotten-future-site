@@ -51,8 +51,14 @@
   },
   "forgotten-future-site": {
     "name": "Site",
-    "version": "v0.11.71",
+    "version": "v0.11.72",
     "commits": [
+      {
+        "sha": "efb4e6b",
+        "message": "Update characters and locations pages with additional images and sync media subdirectories",
+        "date": "2026-01-27T13:52:39.000Z",
+        "url": "https://github.com/clevertree/forgotten-future-site/commit/efb4e6b"
+      },
       {
         "sha": "b9c82e4",
         "message": "Performance optimizations, client-side routing, and caching fixes",
@@ -64,12 +70,6 @@
         "message": "feat: custom mobile navigation dropdowns and themed header background",
         "date": "2026-01-26T13:25:46.000Z",
         "url": "https://github.com/clevertree/forgotten-future-site/commit/beec7ef"
-      },
-      {
-        "sha": "457bdf7",
-        "message": "style: use themed classes for mobile dropdowns",
-        "date": "2026-01-26T13:17:31.000Z",
-        "url": "https://github.com/clevertree/forgotten-future-site/commit/457bdf7"
       }
     ],
     "repoUrl": "https://github.com/clevertree/forgotten-future-site/commits/master/"
