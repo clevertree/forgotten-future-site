@@ -1,3 +1,4 @@
+b9c82e4 Performance optimizations, client-side routing, and caching fixes
 beec7ef feat: custom mobile navigation dropdowns and themed header background
 457bdf7 style: use themed classes for mobile dropdowns
 741f151 feat: consolidate mobile browser navigation into dropdowns

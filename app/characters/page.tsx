@@ -34,7 +34,9 @@ const CHARACTERS: Character[] = [
             { src: prefixPath('/media/characters/lynn/lynn-zenith.png'), alt: 'Lynn - Zenith Form' },
             { src: prefixPath('/media/characters/lynn/lynn-fragments.png'), alt: 'Lynn - Fragments' },
             { src: prefixPath('/media/characters/lynn/lynn-zero.png'), alt: 'Lynn - Cradle Zero' },
-            { src: prefixPath('/media/characters/lynn/lynn-nexus.png'), alt: 'Lynn - Nexus Connection' }
+            { src: prefixPath('/media/characters/lynn/lynn-nexus.png'), alt: 'Lynn - Nexus Connection' },
+            { src: prefixPath('/media/characters/lynn/lynn-reset.png'), alt: 'Lynn - Reset' },
+            { src: prefixPath('/media/characters/lynn/lynn-blackout.png'), alt: 'Lynn - Blackout' }
         ]
     },
     {
@@ -44,9 +46,13 @@ const CHARACTERS: Character[] = [
         images: [
             { src: prefixPath('/media/characters/rahu/rahu-landscape.png'), alt: 'Rahu - Fire Vessel' },
             { src: prefixPath('/media/characters/rahu/rahu-landscape2.png'), alt: 'Rahu - Fire Vessel (Alt)' },
+            { src: prefixPath('/media/characters/rahu/rahu-landscape3.png'), alt: 'Rahu - Fire Vessel (Landscape 3)' },
+            { src: prefixPath('/media/characters/rahu/rahu-landscape4.png'), alt: 'Rahu - Fire Vessel (Landscape 4)' },
             { src: prefixPath('/media/characters/rahu/rahu-nexus.png'), alt: 'Rahu - Nexus Form' },
             { src: prefixPath('/media/characters/rahu/rahu-duel.png'), alt: 'Rahu - The Duel' },
-            { src: prefixPath('/media/characters/rahu/rahu-sacrifice.png'), alt: 'Rahu - Sacrifice' }
+            { src: prefixPath('/media/characters/rahu/rahu-ambush.png'), alt: 'Rahu - Ambush' },
+            { src: prefixPath('/media/characters/rahu/rahu-sacrifice.png'), alt: 'Rahu - Sacrifice' },
+            { src: prefixPath('/media/characters/rahu/rahu-colonization.png'), alt: 'Rahu - Colonization' }
         ]
     },
     {
@@ -68,7 +74,8 @@ const CHARACTERS: Character[] = [
             { src: prefixPath('/media/characters/arlo/arlo-landscape.png'), alt: 'Arlo - The Tech-Welder' },
             { src: prefixPath('/media/characters/arlo/arlo-portrait.png'), alt: 'Arlo - Portrait' },
             { src: prefixPath('/media/characters/arlo/arlo-landscape2.png'), alt: 'Arlo - Scavenging' },
-            { src: prefixPath('/media/characters/arlo/arlo-pillar.png'), alt: 'Arlo at the Pillar' }
+            { src: prefixPath('/media/characters/arlo/arlo-pillar.png'), alt: 'Arlo at the Pillar' },
+            { src: prefixPath('/media/characters/arlo/arlo-entry.png'), alt: 'Arlo - Entry' }
         ]
     },
     {
@@ -87,7 +94,9 @@ const CHARACTERS: Character[] = [
         name: 'Elowen',
         category: 'Architect',
         images: [
-            { src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' }
+            { src: prefixPath('/media/characters/elowen/elowen-landscape.png'), alt: 'Dr. Elowen Vane' },
+            { src: prefixPath('/media/characters/elowen/elowen_storyboard.png'), alt: 'Dr. Elowen Vane - Storyboard' },
+            { src: prefixPath('/media/characters/elowen/elowen_storyboard_gorgon.png'), alt: 'Dr. Elowen Vane - Gorgon Research' }
         ]
     },
     {
@@ -95,7 +104,9 @@ const CHARACTERS: Character[] = [
         name: 'Anton Drexler',
         category: 'Archivist',
         images: [
-            { src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' }
+            { src: prefixPath('/media/characters/anton_drexler/anton_drexler-landscape.png'), alt: 'Overseer Anton Drexler' },
+            { src: prefixPath('/media/characters/anton_drexler/anton_drexler_storyboard.png'), alt: 'Overseer Anton Drexler - Storyboard' },
+            { src: prefixPath('/media/characters/anton_drexler/anton_drexler_character_sheet.png'), alt: 'Overseer Anton Drexler - Character Sheet' }
         ]
     },
     {
@@ -105,7 +116,8 @@ const CHARACTERS: Character[] = [
         images: [
             { src: prefixPath('/media/characters/iris_novak/iris_novak-landscape.png'), alt: 'Commander Iris Novak' },
             { src: prefixPath('/media/characters/iris_novak/iris_novak-portrait.png'), alt: 'Iris Novak - Portrait' },
-            { src: prefixPath('/media/characters/iris_novak/iris_novak-reset.png'), alt: 'Iris Novak - Tactical Reset' }
+            { src: prefixPath('/media/characters/iris_novak/iris_novak-reset.png'), alt: 'Iris Novak - Tactical Reset' },
+            { src: prefixPath('/media/characters/iris_novak/iris_novak-abortion.png'), alt: 'Iris Novak - Tactical Breach' }
         ]
     },
     {
@@ -125,7 +137,9 @@ const CHARACTERS: Character[] = [
         images: [
             { src: prefixPath('/media/characters/vector/vector-purge.png'), alt: 'Vector - Metal Vessel Prime' },
             { src: prefixPath('/media/characters/vector/vector-wide.png'), alt: 'Vector - Command oversight' },
-            { src: prefixPath('/media/characters/vector/vector-white-forest.png'), alt: 'Vector - White Forest Breach' }
+            { src: prefixPath('/media/characters/vector/vector-wide2.png'), alt: 'Vector - Command oversight (Wide)' },
+            { src: prefixPath('/media/characters/vector/vector-white-forest.png'), alt: 'Vector - White Forest Breach' },
+            { src: prefixPath('/media/characters/vector/vector-breach.png'), alt: 'Vector - Breach' }
         ]
     },
     {
@@ -157,7 +171,9 @@ const CHARACTERS: Character[] = [
         category: 'Entity',
         images: [
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgons - The Builders' },
-            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' },
+            { src: prefixPath('/media/entities/gorgons/gorgon_character_sheet.png'), alt: 'Gorgon - Character Sheet' },
+            { src: prefixPath('/media/entities/gorgons/gorgon_character_sheet_visual.png'), alt: 'Gorgon - Visual reference' }
         ]
     },
 ];

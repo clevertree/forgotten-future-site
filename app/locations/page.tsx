@@ -18,16 +18,22 @@ const LOCATIONS: Location[] = [
         id: 'moon',
         name: 'The Moon',
         category: 'Celestial',
-        images: [{ src: prefixPath('/media/settings/after-time/moon.png'), alt: 'The Shattered Cradle - Lunar Fragments' }]
+        images: [
+            { src: prefixPath('/media/settings/after-time/moon/moon.png'), alt: 'The Shattered Cradle - Lunar Fragments' },
+            { src: prefixPath('/media/settings/after-time/moon/moon1.png'), alt: 'Lunar Fragments - Detailed' },
+            { src: prefixPath('/media/settings/after-time/moon/moon2.png'), alt: 'Lunar Fragments - Horizon' },
+            { src: prefixPath('/media/settings/after-time/moon/moon4.png'), alt: 'Lunar Fragments - Close-up' }
+        ]
     },
     {
         id: 'fire-city',
         name: 'Fire City (Cradle Zero)',
         category: 'Industrial',
         images: [
-            { src: prefixPath('/media/settings/after-time/fire_city.png'), alt: 'Fire City - The Energy Nests' },
-            { src: prefixPath('/media/settings/after-time/fire_city2.png'), alt: 'Fire City - Surface Vents' },
-            { src: prefixPath('/media/settings/after-time/cradle_zero_as_fire_city.png'), alt: 'Cradle Zero as a Fire City' }
+            { src: prefixPath('/media/settings/after-time/fire_city/fire_city.png'), alt: 'Fire City - The Energy Nests' },
+            { src: prefixPath('/media/settings/after-time/fire_city/fire_city2.png'), alt: 'Fire City - Surface Vents' },
+            { src: prefixPath('/media/settings/after-time/fire_city/fire_city3.png'), alt: 'Fire City - Energy Core' },
+            { src: prefixPath('/media/settings/after-time/fire_city/cradle_zero_as_fire_city.png'), alt: 'Cradle Zero as a Fire City' }
         ]
     },
     {
@@ -35,8 +41,9 @@ const LOCATIONS: Location[] = [
         name: 'The White Forest',
         category: 'Ecological',
         images: [
-            { src: prefixPath('/media/settings/after-time/white_forest.png'), alt: 'The White Forest - Mechanical-Biological Hybrid' },
-            { src: prefixPath('/media/settings/after-time/white_forest2.png'), alt: 'White Forest - Internal Glow' }
+            { src: prefixPath('/media/settings/after-time/white_forest/white_forest.png'), alt: 'The White Forest - Mechanical-Biological Hybrid' },
+            { src: prefixPath('/media/settings/after-time/white_forest/white_forest2.png'), alt: 'White Forest - Internal Glow' },
+            { src: prefixPath('/media/settings/after-time/white_forest/white_forest3.png'), alt: 'White Forest - Crystalline Growth' }
         ]
     },
     {
@@ -44,31 +51,37 @@ const LOCATIONS: Location[] = [
         name: 'Northern Villages',
         category: 'Settlement',
         images: [
-            { src: prefixPath('/media/settings/after-time/northern_villages_ait_aman.png'), alt: 'Northern Villages - Ait Aman' },
-            { src: prefixPath('/media/settings/after-time/northern_villages.png'), alt: 'Northern Villages - Human Resistance' },
-            { src: prefixPath('/media/settings/after-time/northern_villages2.png'), alt: 'Northern Villages - Winter Settlement' }
+            { src: prefixPath('/media/settings/after-time/northern_villages/northern_villages_ait_aman.png'), alt: 'Northern Villages - Ait Aman' },
+            { src: prefixPath('/media/settings/after-time/northern_villages/northern_villages.png'), alt: 'Northern Villages - Human Resistance' },
+            { src: prefixPath('/media/settings/after-time/northern_villages/northern_villages2.png'), alt: 'Northern Villages - Winter Settlement' },
+            { src: prefixPath('/media/settings/after-time/northern_villages/northern_villages_storyboard.png'), alt: 'Northern Villages - Storyboard' }
         ]
     },
     {
         id: 'archipelago',
         name: 'The Core Archipelago',
         category: 'Military',
-        images: [{ src: prefixPath('/media/settings/after-time/archipelago-desktop.png'), alt: 'The Core Archipelago - Floating Island Bases' }]
+        images: [
+            { src: prefixPath('/media/settings/after-time/archipelago/archipelago-desktop.png'), alt: 'The Core Archipelago - Floating Island Bases' },
+            { src: prefixPath('/media/settings/after-time/archipelago/archipelago-portrait.png'), alt: 'The Core Archipelago - Vertical Profile' },
+            { src: prefixPath('/media/settings/after-time/archipelago/archipelago_storyboard.png'), alt: 'The Core Archipelago - Storyboard' }
+        ]
     },
     {
         id: 'megacities',
         name: 'The Megacities',
         category: 'Urban',
         images: [
-            { src: prefixPath('/media/settings/after-time/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
-            { src: prefixPath('/media/settings/after-time/megacities2.png'), alt: 'Megacities - Aerial View' }
+            { src: prefixPath('/media/settings/after-time/megacities/megacities.png'), alt: 'Megacities - Archivist Control Hubs' },
+            { src: prefixPath('/media/settings/after-time/megacities/megacities2.png'), alt: 'Megacities - Aerial View' },
+            { src: prefixPath('/media/settings/after-time/megacities/megacities3.png'), alt: 'Megacities - Control Center' }
         ]
     },
     {
         id: 'dead-zone',
         name: 'The Equatorial Dead Zone',
         category: 'Wasteland',
-        images: [{ src: prefixPath('/media/settings/after-time/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' }]
+        images: [{ src: prefixPath('/media/settings/after-time/fire_city/dead_zone.png'), alt: 'The Dead Zone - Scorched Earth' }]
     },
     {
         id: 'gorgons',
@@ -76,7 +89,9 @@ const LOCATIONS: Location[] = [
         category: 'Entity Habitat',
         images: [
             { src: prefixPath('/media/entities/gorgons/gorgons-landscape.png'), alt: 'Gorgon Builders' },
-            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' }
+            { src: prefixPath('/media/entities/gorgons/gorgons-landscape2.png'), alt: 'Gorgon Industrial Site' },
+            { src: prefixPath('/media/entities/gorgons/gorgon_character_sheet.png'), alt: 'Gorgon - Character Sheet' },
+            { src: prefixPath('/media/entities/gorgons/gorgon_character_sheet_visual.png'), alt: 'Gorgon - Visual Reference' }
         ]
     },
     { id: 'map1', name: 'Global Projection', category: 'Geography', images: [{ src: prefixPath('/media/geography/map1.png'), alt: 'Global Map of the After Time' }] },
